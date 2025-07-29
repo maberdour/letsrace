@@ -11,9 +11,6 @@
       margin: 0;
       padding: 2rem;
     }
-    h1 {
-      text-align: center;
-    }
     .event {
       background: white;
       border-radius: 8px;
@@ -35,18 +32,17 @@
   </style>
 </head>
 <body>
-  <h1>Track Events</h1>
   <div id="events">Loading events...</div>
 
   <script src="render.js"></script>
   <script>
-    const jsonUrl = "https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=track";
+    renderHeader("Track Events");
 
-    fetch(jsonUrl)
+    fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=track")
       .then(res => res.json())
       .then(data => renderEvents(data, "events"))
       .catch(() => {
-        document.getElementById("events").innerHTML = "<p>Error loading events.</p>";
+        document.getElementById("events").innerHTML = "Error loading events.";
       });
   </script>
 </body>
