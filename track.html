@@ -1,77 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Track Cycling Events</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Track Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: sans-serif;
-      padding: 1rem;
-      background: #f7f7f7;
-      color: #333;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
     }
     h1 {
       text-align: center;
-      margin-bottom: 1rem;
     }
     .event {
       background: white;
       border-radius: 8px;
       padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 1rem auto;
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .event h2 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.1rem;
+      margin-top: 0;
     }
     .event a {
-      color: #0077cc;
+      color: #007acc;
       text-decoration: none;
     }
     .event a:hover {
       text-decoration: underline;
     }
-    .event p {
-      margin: 0.25rem 0;
-    }
   </style>
 </head>
 <body>
-  <h1>Track Cycling Events</h1>
+  <h1>Track Events</h1>
   <div id="events">Loading events...</div>
 
+  <script src="render.js"></script>
   <script>
-    const url = "https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=track";
+    const jsonUrl = "https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=track";
 
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById('events');
-        if (!data.length) {
-          container.innerHTML = "<p>No upcoming events found.</p>";
-          return;
-        }
-        const html = data.map(row => {
-          const [eventDate, title, discipline, location, link] = row;
-          const formattedDate = new Date(eventDate).toLocaleDateString('en-GB', {
-            weekday: 'short', year: 'numeric', month: 'short', day: 'numeric'
-          });
-          return `
-            <div class="event">
-              <h2><a href="${link}" target="_blank">${title}</a></h2>
-              <p><strong>Date:</strong> ${formattedDate}</p>
-              <p><strong>Location:</strong> ${location}</p>
-              <p><strong>Type:</strong> ${discipline}</p>
-            </div>
-          `;
-        }).join('');
-        container.innerHTML = html;
-      })
-      .catch(error => {
-        document.getElementById('events').innerHTML = "<p>Error loading events.</p>";
-        console.error("Failed to load events:", error);
+    fetch(jsonUrl)
+      .then(res => res.json())
+      .then(data => renderEvents(data, "events"))
+      .catch(() => {
+        document.getElementById("events").innerHTML = "<p>Error loading events.</p>";
       });
   </script>
 </body>
