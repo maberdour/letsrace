@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Cycling Events</title>
+  <meta charset="UTF-8" />
+  <title>Youth Cycling Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+    }
+
+    header p {
+      color: #555;
+    }
+
+    .categories {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .categories a {
+      display: block;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #0077cc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: background 0.2s;
+    }
+
+    .categories a:hover {
+      background: #e6f2ff;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Cycling Events</h1>
-  <p>This site is hosted with GitHub Pages.</p>
+  <header>
+    <h1>Youth Cycling Events</h1>
+    <p>Find upcoming races by category — updated daily</p>
+  </header>
+
+  <div class="categories">
+    <a href="road.html">Road</a>
+    <a href="track.html">Track</a>
+    <a href="mtb.html">MTB</a>
+    <a href="bmx.html">BMX</a>
+    <a href="cyclo-cross.html">Cyclo-Cross</a>
+    <a href="time-trial.html">Time Trial</a>
+    <a href="hill-climb.html">Hill Climb</a>
+    <a href="speedway.html">Speedway</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Youth Cycling Events
+  </footer>
 </body>
 </html>
