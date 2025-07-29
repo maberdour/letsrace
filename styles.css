@@ -48,3 +48,20 @@ nav a:hover {
 .event a:hover {
   text-decoration: underline;
 }
+
+.category-link {
+  display: block;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #0077cc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s;
+}
+.category-link:hover {
+  background: #e6f2ff;
+}
