@@ -7,24 +7,29 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Youth Cycling Events</h1>
-    <p>Find upcoming races by category — updated daily</p>
-  </header>
+  <div id="events"></div>
 
-  <div class="categories">
-    <a href="road.html">Road</a>
-    <a href="track.html">Track</a>
-    <a href="mtb.html">MTB</a>
-    <a href="bmx.html">BMX</a>
-    <a href="cyclo-cross.html">Cyclo-Cross</a>
-    <a href="time-trial.html">Time Trial</a>
-    <a href="hill-climb.html">Hill Climb</a>
-    <a href="speedway.html">Speedway</a>
-  </div>
-
-  <footer>
-    &copy; 2025 Youth Cycling Events
-  </footer>
+  <script src="render.js"></script>
+  <script>
+    renderHeader("Welcome to Youth Cycling Events");
+    document.getElementById("events").innerHTML = `
+      <div style="max-width: 600px; margin: 2rem auto;">
+        <p style="font-size: 1.1rem;">
+          Browse upcoming races across all youth cycling disciplines.
+          This site is updated daily and covers events across the UK.
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;">
+          <a href="road.html" class="category-link">Road</a>
+          <a href="track.html" class="category-link">Track</a>
+          <a href="mtb.html" class="category-link">MTB</a>
+          <a href="bmx.html" class="category-link">BMX</a>
+          <a href="cyclo-cross.html" class="category-link">Cyclo-Cross</a>
+          <a href="time-trial.html" class="category-link">Time Trial</a>
+          <a href="hill-climb.html" class="category-link">Hill Climb</a>
+          <a href="speedway.html" class="category-link">Speedway</a>
+        </div>
+      </div>
+    `;
+  </script>
 </body>
 </html>
