@@ -26,7 +26,7 @@ function renderEvents(data, containerId) {
   }
 
   const html = data.map(row => {
-    const [eventDate, title, discipline, location, url] = row;
+    const [eventDate, title, discipline, location, url, addedDate] = row;
     const d = new Date(eventDate);
     const formatted = d.toLocaleDateString("en-GB", {
       weekday: "short",
@@ -35,12 +35,18 @@ function renderEvents(data, containerId) {
       year: "numeric"
     });
 
+    // Check if added within last 7 days
+    const added = new Date(addedDate);
+    const now = new Date();
+    const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
+    const isNewlyAdded = added > sevenDaysAgo;
+
     return `
-      <div class="event">
+      <div class="event ${isNewlyAdded ? 'newly-added' : ''}">
         <h2><a href="${url}" target="_blank">${title}</a></h2>
         <p><strong>Date:</strong> ${formatted}</p>
         <p><strong>Location:</strong> ${location}</p>
-        <p><strong>Discipline:</strong> ${discipline}</p>
+        ${isNewlyAdded ? '<p class="new-label"><strong>Added in the past 7 days</strong></p>' : ''}
       </div>
     `;
   }).join("");

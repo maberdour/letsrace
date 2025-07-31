@@ -67,6 +67,18 @@ nav a:hover {
   background: #e6f2ff;
 }
 
+/* Newly added event styles */
+.event.newly-added {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+}
+
+.new-label {
+  color: #856404;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
 /* Burger icon styles */
 #burger-menu {
   display: none;
