@@ -79,6 +79,34 @@ nav a:hover {
   margin-top: 0.5rem;
 }
 
+/* No events found styling */
+.no-events {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.no-events-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.no-events h3 {
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.no-events p {
+  color: #888;
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Burger icon styles */
 #burger-menu {
   display: none;

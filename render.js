@@ -21,7 +21,12 @@ function renderHeader(title) {
 function renderEvents(data, containerId) {
   const container = document.getElementById(containerId);
   if (!data.length) {
-    container.innerHTML = "<p>No upcoming events found.</p>";
+    container.innerHTML = `
+      <div class="no-events">
+        <h3>No upcoming events found</h3>
+        <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
+      </div>
+    `;
     return;
   }
 
