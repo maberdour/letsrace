@@ -10,6 +10,7 @@ header {
   color: white;
   padding: 1rem;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
@@ -64,4 +65,65 @@ nav a:hover {
 }
 .category-link:hover {
   background: #e6f2ff;
+}
+
+/* Burger icon styles */
+#burger-menu {
+  display: none;
+  width: 30px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#burger-menu span {
+  display: block;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Mobile nav styles */
+#mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0; right: 0;
+  width: 200px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding-top: 60px;
+}
+#mobile-nav.open {
+  display: block;
+}
+#mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+#mobile-nav li {
+  margin: 20px 0;
+}
+#mobile-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Show burger only on mobile */
+@media (max-width: 768px) {
+  #burger-menu {
+    display: flex;
+  }
+  header nav {
+    display: none;
+  }
 }

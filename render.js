@@ -1,6 +1,6 @@
 function renderHeader(title) {
   document.body.insertAdjacentHTML("afterbegin", `
-    <header style="background:#0077cc;color:white;padding:1rem;text-align:center;">
+    <header style="background:#0077cc;color:white;padding:1rem;text-align:center;position:relative;">
       <h1 style="margin:0;font-size:1.5rem;">Youth Cycling Events</h1>
       <nav style="margin-top:0.5rem;">
         <a href="index.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Home</a>
@@ -15,6 +15,7 @@ function renderHeader(title) {
       </nav>
     </header>
   `);
+  createBurgerMenu();
 }
 
 function renderEvents(data, containerId) {
@@ -45,4 +46,51 @@ function renderEvents(data, containerId) {
   }).join("");
 
   container.innerHTML = html;
+}
+
+// Burger menu and mobile nav rendering
+function createBurgerMenu() {
+  // Create burger icon
+  const burger = document.createElement('div');
+  burger.id = 'burger-menu';
+  burger.innerHTML = `
+    <span></span>
+    <span></span>
+    <span></span>
+  `;
+
+  // Create nav menu (same links as header)
+  const nav = document.createElement('nav');
+  nav.id = 'mobile-nav';
+  nav.innerHTML = `
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="road.html">Road</a></li>
+      <li><a href="track.html">Track</a></li>
+      <li><a href="mtb.html">MTB</a></li>
+      <li><a href="bmx.html">BMX</a></li>
+      <li><a href="cyclo-cross.html">Cyclo-Cross</a></li>
+      <li><a href="time-trial.html">Time Trial</a></li>
+      <li><a href="hill-climb.html">Hill Climb</a></li>
+      <li><a href="speedway.html">Speedway</a></li>
+    </ul>
+  `;
+
+  // Append burger to header, nav to body
+  const header = document.querySelector('header');
+  if (header) header.appendChild(burger);
+  document.body.appendChild(nav);
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    burger.classList.toggle('open');
+  });
+
+  // Close menu when a link is clicked
+  nav.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('open');
+      burger.classList.remove('open');
+    }
+  });
 }
