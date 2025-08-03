@@ -11,13 +11,13 @@
 
   <script src="render.js"></script>
   <script>
-    renderHeader("MTB Events");
+    renderHeader("MTB");
 
     fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=mtb")
       .then(res => res.json())
-      .then(data => renderEvents(data, "events"))
+      .then(data => renderEvents(data, "events", "MTB"))
       .catch(() => {
-        document.getElementById("events").innerHTML = "Error loading events.";
+        renderEvents([], "events", "MTB");
       });
   </script>
 </body>

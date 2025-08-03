@@ -11,13 +11,13 @@
 
   <script src="render.js"></script>
   <script>
-    renderHeader("Time Trial Events");
+    renderHeader("Time Trial");
 
     fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=time-trial")
       .then(res => res.json())
-      .then(data => renderEvents(data, "events"))
+      .then(data => renderEvents(data, "events", "Time Trial"))
       .catch(() => {
-        document.getElementById("events").innerHTML = "Error loading events.";
+        renderEvents([], "events", "Time Trial");
       });
   </script>
 </body>

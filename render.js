@@ -1,8 +1,8 @@
 function renderHeader(title) {
   document.body.insertAdjacentHTML("afterbegin", `
     <header style="background:#0077cc;color:white;padding:1rem;text-align:center;position:relative;">
-      <h1 style="margin:0;font-size:1.5rem;">Youth Cycling Events</h1>
-      <nav style="margin-top:0.5rem;">
+      <h1 style="margin:0;font-size:2rem;font-weight:700;letter-spacing:0.5px;font-family:'Courier New',monospace;">letsrace.cc</h1>
+      <nav style="margin-top:1rem;">
         <a href="index.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Home</a>
         <a href="road.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Road</a>
         <a href="track.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Track</a>
@@ -18,19 +18,36 @@ function renderHeader(title) {
   createBurgerMenu();
 }
 
-function renderEvents(data, containerId) {
+function renderEvents(data, containerId, pageTitle) {
   const container = document.getElementById(containerId);
+  const updateDate = new Date().toLocaleDateString('en-GB', { 
+    weekday: 'short', 
+    year: 'numeric', 
+    month: 'short', 
+    day: 'numeric', 
+    hour: '2-digit', 
+    minute: '2-digit' 
+  });
+
+  let contentHtml = `
+    <div class="content-container">
+      <h2 class="page-title">${pageTitle}</h2>
+      <div class="update-time">Updated on ${updateDate}</div>
+  `;
+
   if (!data.length) {
-    container.innerHTML = `
+    contentHtml += `
       <div class="no-events">
-        <h3>No upcoming events found</h3>
-        <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
+          <h3>No upcoming events found</h3>
+          <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
+        </div>
       </div>
     `;
+    container.innerHTML = contentHtml + '</div>';
     return;
   }
 
-  const html = data.map(row => {
+  const eventsHtml = data.map(row => {
     const [eventDate, title, discipline, location, url, addedDate] = row;
     const d = new Date(eventDate);
     const formatted = d.toLocaleDateString("en-GB", {
@@ -56,7 +73,7 @@ function renderEvents(data, containerId) {
     `;
   }).join("");
 
-  container.innerHTML = html;
+  container.innerHTML = contentHtml + eventsHtml + '</div>';
 }
 
 // Burger menu and mobile nav rendering

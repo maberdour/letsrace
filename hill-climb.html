@@ -9,15 +9,15 @@
 <body>
   <div id="events">Loading events...</div>
 
-  <script src="render.js"></script>
+  <script src="render.js?v=1"></script>
   <script>
-    renderHeader("Hill Climb Events");
+    renderHeader("Hill Climb");
 
     fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=hill-climb")
       .then(res => res.json())
-      .then(data => renderEvents(data, "events"))
+      .then(data => renderEvents(data, "events", "Hill Climb"))
       .catch(() => {
-        document.getElementById("events").innerHTML = "Error loading events.";
+        renderEvents([], "events", "Hill Climb");
       });
   </script>
 </body>

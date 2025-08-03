@@ -11,13 +11,13 @@
 
   <script src="render.js"></script>
   <script>
-    renderHeader("Cyclo-Cross Events");
+    renderHeader("Cyclo-Cross");
 
     fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=cyclo-cross")
       .then(res => res.json())
-      .then(data => renderEvents(data, "events"))
+      .then(data => renderEvents(data, "events", "Cyclo-Cross"))
       .catch(() => {
-        document.getElementById("events").innerHTML = "Error loading events.";
+        renderEvents([], "events", "Cyclo-Cross");
       });
   </script>
 </body>
