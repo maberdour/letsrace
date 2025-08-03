@@ -10,11 +10,11 @@
   <div id="events">Loading events...</div>
   <script src="render.js"></script>
   <script>
-    renderHeader("Road Events");
+    renderHeader("Road");
     fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=road")
       .then(res => res.json())
-      .then(data => renderEvents(data, "events"))
-      .catch(() => document.getElementById("events").innerHTML = "Error loading events.");
+      .then(data => renderEvents(data, "events", "Road"))
+      .catch(() => renderEvents([], "events", "Road"));
   </script>
 </body>
 </html>

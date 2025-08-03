@@ -28,12 +28,28 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.content-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.update-time {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
 .event {
   background: white;
   border-radius: 8px;
   padding: 1rem;
-  margin: 1rem auto;
-  max-width: 600px;
+  margin: 1rem 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
