@@ -24,9 +24,7 @@ function renderEvents(data, containerId, pageTitle) {
     weekday: 'short', 
     year: 'numeric', 
     month: 'short', 
-    day: 'numeric', 
-    hour: '2-digit', 
-    minute: '2-digit' 
+    day: 'numeric'
   });
 
   let contentHtml = `
@@ -38,9 +36,8 @@ function renderEvents(data, containerId, pageTitle) {
   if (!data.length) {
     contentHtml += `
       <div class="no-events">
-          <h3>No upcoming events found</h3>
-          <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
-        </div>
+        <h3>No upcoming events found</h3>
+        <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
       </div>
     `;
     container.innerHTML = contentHtml + '</div>';
