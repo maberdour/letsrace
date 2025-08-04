@@ -4,28 +4,70 @@ function Convert-MarkdownToHtml {
         [string]$markdown
     )
     
-    # Replace headers
-    $html = $markdown -replace '^# (.*?)$', '<h1>$1</h1>' `
-                      -replace '^## (.*?)$', '<h2>$1</h2>' `
-                      -replace '^### (.*?)$', '<h3>$3</h3>'
+    # Split content into lines for better processing
+    $lines = $markdown -split "`n"
+    $html = ""
+    $inList = $false
     
-    # Replace bold text
-    $html = $html -replace '\*\*(.*?)\*\*', '<strong>$1</strong>'
+    for ($i = 0; $i -lt $lines.Count; $i++) {
+        $line = $lines[$i].Trim()
+        
+        # Skip empty lines
+        if ([string]::IsNullOrWhiteSpace($line)) {
+            if (-not $inList) {
+                $html += "`n"
+            }
+            continue
+        }
+        
+        # Process headers
+        if ($line -match '^# (.+)$') {
+            $html += "<h1>$($matches[1])</h1>`n"
+            continue
+        }
+        if ($line -match '^## (.+)$') {
+            $html += "<h2>$($matches[1])</h2>`n"
+            continue
+        }
+        
+        # Process horizontal rules
+        if ($line -eq '---') {
+            $html += "<hr>`n"
+            continue
+        }
+        
+        # Process list items
+        if ($line -match '^\- (.+)$') {
+            if (-not $inList) {
+                $html += "<ul>`n"
+                $inList = $true
+            }
+            $content = $matches[1]
+            # Process bold text within list items
+            $content = $content -replace '\*\*(.*?)\*\*', '<strong>$1</strong>'
+            $html += "  <li>$content</li>`n"
+            continue
+        } elseif ($inList) {
+            $html += "</ul>`n"
+            $inList = $false
+        }
+        
+        # Process links
+        $line = $line -replace '\[(.*?)\]\((.*?)\)', '<a href="$2">$1</a>'
+        
+        # Process bold text
+        $line = $line -replace '\*\*(.*?)\*\*', '<strong>$1</strong>'
+        
+        # Process regular paragraphs
+        if (-not [string]::IsNullOrWhiteSpace($line)) {
+            $html += "<p>$line</p>`n"
+        }
+    }
     
-    # Replace links
-    $html = $html -replace '\[(.*?)\]\((.*?)\)', '<a href="$2">$1</a>'
-    
-    # Replace horizontal rules
-    $html = $html -replace '^---$', '<hr>'
-    
-    # Replace bullet points
-    $html = $html -replace '^\- (.*?)$', '<li>$1</li>'
-    
-    # Wrap lists in ul tags
-    $html = $html -replace '(?ms)(<li>.*?</li>(\r?\n)*)+', '<ul>$0</ul>'
-    
-    # Replace paragraphs (lines with content)
-    $html = $html -replace '(?m)^(?!<[uh][lr1-6>]|<li>|<p>).+', '<p>$0</p>'
+    # Close any open list
+    if ($inList) {
+        $html += "</ul>`n"
+    }
     
     return $html
 }
