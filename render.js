@@ -16,6 +16,7 @@ function renderHeader(title) {
         <a href="time-trial.html" class="${currentPage === 'time-trial.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Time Trial</a>
         <a href="hill-climb.html" class="${currentPage === 'hill-climb.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Hill Climb</a>
         <a href="speedway.html" class="${currentPage === 'speedway.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Speedway</a>
+        <a href="about.html" class="${currentPage === 'about.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">About</a>
       </nav>
     </header>
   `);
@@ -104,6 +105,7 @@ function createBurgerMenu() {
       <li><a href="time-trial.html" class="${currentPage === 'time-trial.html' ? 'current' : ''}">Time Trial</a></li>
       <li><a href="hill-climb.html" class="${currentPage === 'hill-climb.html' ? 'current' : ''}">Hill Climb</a></li>
       <li><a href="speedway.html" class="${currentPage === 'speedway.html' ? 'current' : ''}">Speedway</a></li>
+      <li><a href="about.html" class="${currentPage === 'about.html' ? 'current' : ''}">About</a></li>
     </ul>
   `;
 
