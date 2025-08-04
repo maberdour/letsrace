@@ -90,16 +90,14 @@ $htmlDocument = @"
   </style>
 </head>
 <body>
-  <div id="content">Loading...</div>
+  <div class="about-content">
+    $aboutHtml
+  </div>
 
-  <script src="render.js"></script>
+  <script src="render.js?v=1"></script>
   <script>
     renderHeader("About");
-    document.getElementById("content").innerHTML = `
-      <div class="about-content">
-        $aboutHtml
-      </div>
-    `;
+    renderFooter();
   </script>
 </body>
 </html>
