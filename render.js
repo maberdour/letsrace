@@ -1,17 +1,21 @@
+// Get current page filename
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
 function renderHeader(title) {
+  
   document.body.insertAdjacentHTML("afterbegin", `
     <header style="background:#0077cc;color:white;padding:1rem;text-align:center;position:relative;">
       <h1 style="margin:0;font-size:2rem;font-weight:700;letter-spacing:0.5px;font-family:'Courier New',monospace;">letsrace.cc</h1>
       <nav style="margin-top:1rem;">
-        <a href="index.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Home</a>
-        <a href="road.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Road</a>
-        <a href="track.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Track</a>
-        <a href="mtb.html" style="color:white;margin:0 0.5rem;text-decoration:none;">MTB</a>
-        <a href="bmx.html" style="color:white;margin:0 0.5rem;text-decoration:none;">BMX</a>
-        <a href="cyclo-cross.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Cyclo-Cross</a>
-        <a href="time-trial.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Time Trial</a>
-        <a href="hill-climb.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Hill Climb</a>
-        <a href="speedway.html" style="color:white;margin:0 0.5rem;text-decoration:none;">Speedway</a>
+        <a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Home</a>
+        <a href="road.html" class="${currentPage === 'road.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Road</a>
+        <a href="track.html" class="${currentPage === 'track.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Track</a>
+        <a href="mtb.html" class="${currentPage === 'mtb.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">MTB</a>
+        <a href="bmx.html" class="${currentPage === 'bmx.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">BMX</a>
+        <a href="cyclo-cross.html" class="${currentPage === 'cyclo-cross.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Cyclo-Cross</a>
+        <a href="time-trial.html" class="${currentPage === 'time-trial.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Time Trial</a>
+        <a href="hill-climb.html" class="${currentPage === 'hill-climb.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Hill Climb</a>
+        <a href="speedway.html" class="${currentPage === 'speedway.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Speedway</a>
       </nav>
     </header>
   `);
@@ -31,6 +35,7 @@ function renderEvents(data, containerId, pageTitle) {
     <div class="content-container">
       <h2 class="page-title">${pageTitle}</h2>
       <div class="update-time">Updated on ${updateDate}</div>
+      <div class="events-list">
   `;
 
   if (!data.length) {
@@ -40,7 +45,7 @@ function renderEvents(data, containerId, pageTitle) {
         <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
       </div>
     `;
-    container.innerHTML = contentHtml + '</div>';
+    container.innerHTML = contentHtml + '</div></div>';
     return;
   }
 
@@ -70,7 +75,7 @@ function renderEvents(data, containerId, pageTitle) {
     `;
   }).join("");
 
-  container.innerHTML = contentHtml + eventsHtml + '</div>';
+  container.innerHTML = contentHtml + eventsHtml + '</div></div>';
 }
 
 // Burger menu and mobile nav rendering
@@ -89,15 +94,15 @@ function createBurgerMenu() {
   nav.id = 'mobile-nav';
   nav.innerHTML = `
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="road.html">Road</a></li>
-      <li><a href="track.html">Track</a></li>
-      <li><a href="mtb.html">MTB</a></li>
-      <li><a href="bmx.html">BMX</a></li>
-      <li><a href="cyclo-cross.html">Cyclo-Cross</a></li>
-      <li><a href="time-trial.html">Time Trial</a></li>
-      <li><a href="hill-climb.html">Hill Climb</a></li>
-      <li><a href="speedway.html">Speedway</a></li>
+      <li><a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
+      <li><a href="road.html" class="${currentPage === 'road.html' ? 'current' : ''}">Road</a></li>
+      <li><a href="track.html" class="${currentPage === 'track.html' ? 'current' : ''}">Track</a></li>
+      <li><a href="mtb.html" class="${currentPage === 'mtb.html' ? 'current' : ''}">MTB</a></li>
+      <li><a href="bmx.html" class="${currentPage === 'bmx.html' ? 'current' : ''}">BMX</a></li>
+      <li><a href="cyclo-cross.html" class="${currentPage === 'cyclo-cross.html' ? 'current' : ''}">Cyclo-Cross</a></li>
+      <li><a href="time-trial.html" class="${currentPage === 'time-trial.html' ? 'current' : ''}">Time Trial</a></li>
+      <li><a href="hill-climb.html" class="${currentPage === 'hill-climb.html' ? 'current' : ''}">Hill Climb</a></li>
+      <li><a href="speedway.html" class="${currentPage === 'speedway.html' ? 'current' : ''}">Speedway</a></li>
     </ul>
   `;
 
