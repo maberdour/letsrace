@@ -7,7 +7,14 @@
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="events">Loading events...</div>
+  <div id="events">
+    <div class="content-container">
+      <div class="loading-message">
+        <div class="spinner"></div>
+        <p>Loading events...</p>
+      </div>
+    </div>
+  </div>
   <script src="render.js"></script>
   <script>
     renderHeader("Road");
