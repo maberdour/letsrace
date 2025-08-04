@@ -93,6 +93,7 @@ function createBurgerMenu() {
   const nav = document.createElement('nav');
   nav.id = 'mobile-nav';
   nav.innerHTML = `
+    <div id="close-menu"></div>
     <ul>
       <li><a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
       <li><a href="road.html" class="${currentPage === 'road.html' ? 'current' : ''}">Road</a></li>
@@ -118,7 +119,7 @@ function createBurgerMenu() {
 
   // Close menu when a link is clicked
   nav.addEventListener('click', function(e) {
-    if (e.target.tagName === 'A') {
+    if (e.target.tagName === 'A' || e.target.id === 'close-menu') {
       nav.classList.remove('open');
       burger.classList.remove('open');
     }
