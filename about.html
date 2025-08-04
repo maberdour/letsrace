@@ -52,14 +52,8 @@
   </style>
 </head>
 <body>
-  <div id="content">Loading...</div>
-
-  <script src="render.js"></script>
-  <script>
-    renderHeader("About");
-    document.getElementById("content").innerHTML = 
-      <div class="about-content">
-        <p># About LetsRace.cc</p>
+  <div class="about-content">
+    <p># About LetsRace.cc</p>
 <p></p>
 <p>Welcome to <strong>LetsRace.cc</strong> – your go-to source for youth cycling events across the UK.</p>
 <p></p>
@@ -104,8 +98,12 @@
 <p></p>
 <p><strong>Email:</strong> <a href="mailto:hello@letsrace.cc">hello@letsrace.cc</a></p>
 
-      </div>
-    ;
+  </div>
+
+  <script src="render.js?v=1"></script>
+  <script>
+    renderHeader("About");
+    renderFooter();
   </script>
 </body>
 </html>

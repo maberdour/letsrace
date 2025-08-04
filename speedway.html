@@ -16,9 +16,10 @@
     </div>
   </div>
 
-  <script src="render.js"></script>
+  <script src="render.js?v=1"></script>
   <script>
     renderHeader("Speedway");
+    renderFooter();
 
     fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=speedway")
       .then(res => res.json())

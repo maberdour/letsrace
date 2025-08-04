@@ -1,6 +1,15 @@
 // Get current page filename
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
+function renderFooter() {
+  const currentYear = new Date().getFullYear();
+  document.body.insertAdjacentHTML("beforeend", `
+    <footer>
+      <p>&copy; ${currentYear} LetsRace.cc | <a href="about.html">About</a> | <a href="mailto:hello@letsrace.cc">Contact</a></p>
+    </footer>
+  `);
+}
+
 function renderHeader(title) {
   
   document.body.insertAdjacentHTML("afterbegin", `
