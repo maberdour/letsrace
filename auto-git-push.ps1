@@ -7,7 +7,7 @@ function Convert-MarkdownToHtml {
     # Replace headers
     $html = $markdown -replace '^# (.*?)$', '<h1>$1</h1>' `
                       -replace '^## (.*?)$', '<h2>$1</h2>' `
-                      -replace '^### (.*?)$', '<h3>$1</h3>'
+                      -replace '^### (.*?)$', '<h3>$3</h3>'
     
     # Replace bold text
     $html = $html -replace '\*\*(.*?)\*\*', '<strong>$1</strong>'
@@ -18,17 +18,20 @@ function Convert-MarkdownToHtml {
     # Replace horizontal rules
     $html = $html -replace '^---$', '<hr>'
     
-    # Replace line breaks
-    $html = $html -replace '  $', '<br>'
+    # Replace bullet points
+    $html = $html -replace '^\- (.*?)$', '<li>$1</li>'
+    
+    # Wrap lists in ul tags
+    $html = $html -replace '(?ms)(<li>.*?</li>(\r?\n)*)+', '<ul>$0</ul>'
     
     # Replace paragraphs (lines with content)
-    $html = $html -replace '(?m)^(?!\s*$|<).+', '<p>$0</p>'
+    $html = $html -replace '(?m)^(?!<[uh][lr1-6>]|<li>|<p>).+', '<p>$0</p>'
     
     return $html
 }
 
 # Read about.md and convert to HTML
-$aboutMd = Get-Content -Path "about.md" -Raw
+$aboutMd = Get-Content -Path "about.md" -Raw -Encoding UTF8
 $aboutHtml = Convert-MarkdownToHtml -markdown $aboutMd
 
 # Create the complete HTML document
@@ -102,7 +105,7 @@ $htmlDocument = @"
 </html>
 "@
 
-# Write the HTML file
+# Write the HTML file with UTF-8 encoding
 $htmlDocument | Out-File -FilePath "about.html" -Encoding UTF8
 
 Write-Host "Updated about.html from about.md"
