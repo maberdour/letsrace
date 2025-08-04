@@ -28,6 +28,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
+nav a.current, #mobile-nav a.current {
+  font-weight: bold;
+  text-decoration: none !important;
+  border-bottom: 3px solid white;
+  padding-bottom: 3px;
+}
+
 .content-container {
   max-width: 800px;
   margin: 2rem auto;
