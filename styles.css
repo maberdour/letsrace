@@ -62,25 +62,99 @@ nav a.current, #mobile-nav a.current {
   font-size: 0.9rem;
 }
 
-.event {
-  background: white;
-  border-radius: 8px;
+
+
+.date-square {
+  background: #0077cc;
+  color: white;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  min-width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1rem;
+}
+
+.day-number {
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.1rem;
+}
+
+.month {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.event-content {
+  flex: 1;
   padding: 1rem;
-  margin: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .event h2 {
-  margin-top: 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
 }
 
-.event a {
-  color: #007acc;
+.event {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  padding: 0;
+  margin: 1.2rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
-.event a:hover {
-  text-decoration: underline;
+.event:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: inherit;
+  background: #f8f9fa;
+}
+
+.event h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.event-location {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.new-badge {
+  background: #ffc107;
+  color: #856404;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  align-self: flex-start;
+  margin-top: 0.5rem;
 }
 
 .category-link {
@@ -284,6 +358,35 @@ footer a:hover {
 
 /* Media queries */
 @media (max-width: 768px) {
+  .event {
+    margin: 0.8rem 0;
+  }
+  
+  .date-square {
+    min-width: 80px;
+    padding: 0.8rem 1rem;
+  }
+  
+  .day-name, .month {
+    font-size: 0.8rem;
+  }
+  
+  .day-number {
+    font-size: 1.8rem;
+  }
+  
+  .event-content {
+    padding: 0.8rem;
+  }
+  
+  .event h2 {
+    font-size: 1rem;
+  }
+  
+  .event-location {
+    font-size: 0.85rem;
+  }
+
   #burger-menu {
     display: flex;
   }

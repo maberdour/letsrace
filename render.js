@@ -75,12 +75,11 @@ function renderEvents(data, containerId, pageTitle) {
   const eventsHtml = data.map(row => {
     const [eventDate, title, discipline, location, url, addedDate] = row;
     const d = new Date(eventDate);
-    const formatted = d.toLocaleDateString("en-GB", {
-      weekday: "short",
-      day: "numeric",
-      month: "short",
-      year: "numeric"
-    });
+    
+    // Format date components for the new design
+    const dayName = d.toLocaleDateString("en-GB", { weekday: "short" }).toUpperCase();
+    const day = d.getDate().toString().padStart(2, '0');
+    const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
 
     // Check if added within last 7 days
     const added = new Date(addedDate);
@@ -89,12 +88,18 @@ function renderEvents(data, containerId, pageTitle) {
     const isNewlyAdded = added > sevenDaysAgo;
 
     return `
-      <div class="event ${isNewlyAdded ? 'newly-added' : ''}">
-        <h2><a href="${url}" target="_blank">${title}</a></h2>
-        <p><strong>Date:</strong> ${formatted}</p>
-        <p><strong>Location:</strong> ${location}</p>
-        ${isNewlyAdded ? '<p class="new-label"><strong>Added in the past 7 days</strong></p>' : ''}
-      </div>
+      <a href="${url}" target="_blank" class="event ${isNewlyAdded ? 'newly-added' : ''}">
+        <div class="date-square">
+          <div class="day-name">${dayName}</div>
+          <div class="day-number">${day}</div>
+          <div class="month">${month}</div>
+        </div>
+        <div class="event-content">
+          <h2>${title}</h2>
+          <p class="event-location">${location}</p>
+          ${isNewlyAdded ? '<span class="new-badge">NEW</span>' : ''}
+        </div>
+      </a>
     `;
   }).join("");
 
