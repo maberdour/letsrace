@@ -369,6 +369,29 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Homepage specific styles */
+body.homepage {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+body.homepage header {
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+
+@media (max-width: 768px) {
+  body.homepage {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  body.homepage header {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}
+
 /* Media queries */
 @media (max-width: 768px) {
   body {
