@@ -17,13 +17,18 @@
   </div>
 
   <script src="render.js?v=1"></script>
+  <script src="cache.js?v=1"></script>
   <script>
     renderHeader("Time Trial");
     renderFooter();
 
-    fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=time-trial")
-      .then(res => res.json())
-      .then(data => renderEvents(data, "events", "Time Trial"))
+    // Start preloading other categories immediately
+    preloadOtherCategories("time-trial");
+
+    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=time-trial", "time-trial")
+      .then(data => {
+        renderEvents(data, "events", "Time Trial");
+      })
       .catch(() => {
         renderEvents([], "events", "Time Trial");
       });

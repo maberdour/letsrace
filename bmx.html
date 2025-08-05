@@ -17,13 +17,18 @@
   </div>
 
   <script src="render.js?v=1"></script>
+  <script src="cache.js?v=1"></script>
   <script>
     renderHeader("BMX");
     renderFooter();
 
-    fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=bmx")
-      .then(res => res.json())
-      .then(data => renderEvents(data, "events", "BMX"))
+    // Start preloading other categories immediately
+    preloadOtherCategories("bmx");
+
+    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=bmx", "bmx")
+      .then(data => {
+        renderEvents(data, "events", "BMX");
+      })
       .catch(() => {
         renderEvents([], "events", "BMX");
       });
