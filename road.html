@@ -16,12 +16,18 @@
     </div>
   </div>
   <script src="render.js?v=1"></script>
+  <script src="cache.js?v=1"></script>
   <script>
     renderHeader("Road");
     renderFooter();
-    fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=road")
-      .then(res => res.json())
-      .then(data => renderEvents(data, "events", "Road"))
+    
+    // Start preloading other categories immediately (don't wait for current page)
+    preloadOtherCategories("road");
+    
+    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=road", "road")
+      .then(data => {
+        renderEvents(data, "events", "Road");
+      })
       .catch(() => renderEvents([], "events", "Road"));
   </script>
 </body>

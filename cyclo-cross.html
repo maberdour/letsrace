@@ -17,13 +17,18 @@
   </div>
 
   <script src="render.js?v=1"></script>
+  <script src="cache.js?v=1"></script>
   <script>
     renderHeader("Cyclo-Cross");
     renderFooter();
 
-    fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=cyclo-cross")
-      .then(res => res.json())
-      .then(data => renderEvents(data, "events", "Cyclo-Cross"))
+    // Start preloading other categories immediately
+    preloadOtherCategories("cyclo-cross");
+
+    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=cyclo-cross", "cyclo-cross")
+      .then(data => {
+        renderEvents(data, "events", "Cyclo-Cross");
+      })
       .catch(() => {
         renderEvents([], "events", "Cyclo-Cross");
       });

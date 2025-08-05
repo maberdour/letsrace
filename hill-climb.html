@@ -17,13 +17,18 @@
   </div>
 
   <script src="render.js?v=1"></script>
+  <script src="cache.js?v=1"></script>
   <script>
     renderHeader("Hill Climb");
     renderFooter();
 
-    fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=hill-climb")
-      .then(res => res.json())
-      .then(data => renderEvents(data, "events", "Hill Climb"))
+    // Start preloading other categories immediately
+    preloadOtherCategories("hill-climb");
+
+    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=hill-climb", "hill-climb")
+      .then(data => {
+        renderEvents(data, "events", "Hill Climb");
+      })
       .catch(() => {
         renderEvents([], "events", "Hill Climb");
       });
