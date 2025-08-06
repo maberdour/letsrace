@@ -67,9 +67,9 @@ nav a.current, #mobile-nav a.current {
 .date-square {
   background: #0077cc;
   color: white;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 0.8rem;
   text-align: center;
-  min-width: 100px;
+  min-width: 85px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -414,8 +414,8 @@ body.homepage header {
   }
   
   .date-square {
-    min-width: 80px;
-    padding: 0.6rem 0.8rem;
+    min-width: 70px;
+    padding: 0.6rem 0.6rem;
   }
   
   .day-name, .month {
