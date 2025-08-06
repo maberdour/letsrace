@@ -67,9 +67,9 @@ nav a.current, #mobile-nav a.current {
 .date-square {
   background: #0077cc;
   color: white;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1rem;
   text-align: center;
-  min-width: 90px;
+  min-width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,21 +77,21 @@ nav a.current, #mobile-nav a.current {
 }
 
 .day-name {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .day-number {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   font-weight: bold;
   line-height: 1;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .month {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
@@ -148,7 +148,7 @@ nav a.current, #mobile-nav a.current {
   padding: 0.2rem 0.5rem;
   border-radius: 12px;
   align-self: flex-start;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .category-link {
@@ -414,16 +414,16 @@ body.homepage header {
   }
   
   .date-square {
-    min-width: 70px;
+    min-width: 80px;
     padding: 0.6rem 0.8rem;
   }
   
   .day-name, .month {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   
   .day-number {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   
   .event-content {
