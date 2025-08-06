@@ -8,8 +8,8 @@ Youth cycling is thriving – but event information can be scattered and hard to
 **LetsRace.cc** was created to meet the need for:
 - a clear view of upcoming events for young riders 
 - better visibility for grassroots clubs and race organisers  
-- an easier way for families to plan and support their riders’ journeys.
+- an easier way for families to plan and support their riders' journeys.
 
-## What’s coming next
+## What's coming next
 This site is just getting started and is being updated regularly. If you've got an idea for how to improve it, please let me know.
 **Email:** [hello@letsrace.cc](mailto:hello@letsrace.cc)
