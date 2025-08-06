@@ -22,10 +22,18 @@ function Convert-MarkdownToHtml {
         
         # Process headers
         if ($line -match '^# (.+)$') {
+            if ($inList) {
+                $html += "</ul>`n"
+                $inList = $false
+            }
             $html += "<h1>$($matches[1])</h1>`n"
             continue
         }
         if ($line -match '^## (.+)$') {
+            if ($inList) {
+                $html += "</ul>`n"
+                $inList = $false
+            }
             $html += "<h2>$($matches[1])</h2>`n"
             continue
         }
