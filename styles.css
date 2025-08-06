@@ -445,3 +445,74 @@ body.homepage header {
     display: none;
   }
 }
+
+/* About page styles */
+.about-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: #000;
+}
+
+.about-content p {
+  margin: 1rem 0;
+  line-height: 1.6;
+  color: #000;
+}
+
+.about-content ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.about-content li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #000;
+}
+
+.about-content hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.about-content strong {
+  color: #000;
+}
+
+.about-content a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Homepage welcome section styles */
+.homepage-welcome {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.homepage-welcome p {
+  font-size: 1.1rem;
+}
+
+.homepage-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
