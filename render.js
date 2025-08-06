@@ -27,7 +27,7 @@ function renderHeader(title) {
   
   document.body.insertAdjacentHTML("afterbegin", `
     <header style="background:#0077cc;color:white;padding:1rem;text-align:center;position:relative;">
-      <h1 style="margin:0;font-size:2rem;font-weight:700;letter-spacing:0.5px;font-family:'Courier New',monospace;">letsrace.cc</h1>
+      <h1 style="margin:0;font-size:2rem;font-weight:700;letter-spacing:0.5px;font-family:'Courier New',monospace;"><a href="index.html" style="color:white;text-decoration:none;">letsrace.cc</a></h1>
       <nav style="margin-top:1rem;">
         <a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Home</a>
         <a href="road.html" class="${currentPage === 'road.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Road</a>
