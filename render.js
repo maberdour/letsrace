@@ -104,6 +104,28 @@ function renderEvents(data, containerId, pageTitle) {
   }).join("");
 
   container.innerHTML = contentHtml + eventsHtml + '</div></div>';
+  
+  // Add click tracking to event cards
+  const eventCards = container.querySelectorAll('.event');
+  eventCards.forEach((card, index) => {
+    card.addEventListener('click', function(e) {
+      const [eventDate, title, discipline, location, url, addedDate] = data[index];
+      
+      // Track the click with GoatCounter
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({
+          path: 'event-click',
+          title: title,
+          event: true,
+          custom: {
+            discipline: discipline,
+            location: location,
+            event_date: eventDate
+          }
+        });
+      }
+    });
+  });
 }
 
 // Burger menu and mobile nav rendering
