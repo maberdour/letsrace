@@ -95,9 +95,9 @@ function renderEvents(data, containerId, pageTitle) {
           <div class="month">${month}</div>
         </div>
         <div class="event-content">
+          ${isNewlyAdded ? '<span class="new-badge">NEW</span>' : ''}
           <h2>${title}</h2>
           <p class="event-location">${location}</p>
-          ${isNewlyAdded ? '<span class="new-badge">NEW</span>' : ''}
         </div>
       </a>
     `;
