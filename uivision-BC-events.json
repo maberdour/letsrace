@@ -1,0 +1,168 @@
+{
+  "Name": "BC Events",
+  "CreationDate": "2025-8-7",
+  "Commands": [
+    {
+      "Command": "XRun",
+      "Target": "cmd.exe",
+      "Value": "/c del \"H:\\My Drive\\Projects\\05 SEYC\\UIVision\\datasources\\event_data.csv\"",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "store // fast",
+      "Value": "!replayspeed",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "https://www.britishcycling.org.uk/events?region_id%5B%5D=1&region_id%5B%5D=4&region_id%5B%5D=16&zuv_bc_licence_discipline_id%5B%5D=33&zuv_bc_licence_discipline_id%5B%5D=2&zuv_bc_licence_discipline_id%5B%5D=43&zuv_bc_licence_discipline_id%5B%5D=27&zuv_bc_licence_discipline_id%5B%5D=35&zuv_bc_licence_discipline_id%5B%5D=14&zuv_bc_licence_discipline_id%5B%5D=657&zuv_bc_licence_discipline_id%5B%5D=658&zuv_bc_licence_discipline_id%5B%5D=53&zuv_bc_licence_discipline_id%5B%5D=74&zuv_bc_licence_discipline_id%5B%5D=655&zuv_bc_licence_discipline_id%5B%5D=656&zuv_bc_licence_discipline_id%5B%5D=64&zuv_bc_licence_discipline_id%5B%5D=13&zuv_bc_licence_discipline_id%5B%5D=46&zuv_bc_licence_discipline_id%5B%5D=28",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "continuePagination",
+      "Description": ""
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${continuePagination} == 1",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeXpathCount",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//a[contains(@class, 'event--race__title')])",
+      "Value": "filesCount",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Number of rows to extract = ${filesCount}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "loopCount",
+      "Description": ""
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${loopCount} <= ${filesCount}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Loop number: ${loopCount}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//td[contains(@class, 'event--date__column')])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//a[contains(@class, 'event--race__title')])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//td[contains(@class, 'event--type__row')])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//td[6])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "storeAttribute",
+      "Target": "xpath=(//a[@class='button-expand show-races event--race__title'])[${loopCount}]@href",
+      "Value": "!csvLine",
+      "Description": ""
+    },
+    {
+      "Command": "csvSave",
+      "Target": "event_data",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(${loopCount}) + 1;",
+      "Value": "loopCount",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "verifyElementPresent",
+      "Target": "xpath=//div[@class='pagination']//a[contains(@class, 'next') and @href]",
+      "Value": "true",
+      "Description": ""
+    },
+    {
+      "Command": "if_v2",
+      "Target": "${!statusOK}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[@class='pagination']//a[contains(@class, 'next') and @href]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "No more next page. Stopping.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "continuePagination",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}
