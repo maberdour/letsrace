@@ -516,3 +516,87 @@ body.homepage header {
   gap: 1rem;
   margin-top: 2rem;
 }
+
+/* Region selector styles */
+.region-selector {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.region-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.region-selector select {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.region-selector select:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.1);
+}
+
+/* Region filter styles */
+.region-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background: #e3f2fd;
+  border-radius: 6px;
+  border: 1px solid #bbdefb;
+}
+
+.region-badge {
+  background: #0077cc;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.clear-filter {
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.clear-filter:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive region selector */
+@media (max-width: 768px) {
+  .region-selector {
+    margin: 1rem 0;
+    padding: 0.75rem;
+  }
+  
+  .region-selector select {
+    max-width: 100%;
+  }
+  
+  .region-filter {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

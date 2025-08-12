@@ -13,27 +13,68 @@ async src="//gc.zgo.at/count.js"></script>
   <div id="events"></div>
 
   <script src="render.js?v=1"></script>
+  <script src="cache.js?v=1"></script>
   <script>
     renderHeader("Welcome");
     renderFooter();
+    
+    // Start preloading all data in the background (don't block page display)
+    setTimeout(() => {
+      if (typeof preloadOtherCategories === 'function') {
+        preloadOtherCategories("homepage");
+      }
+    }, 100);
     document.getElementById("events").innerHTML = `
       <div class="homepage-welcome">
         <p>
           Browse upcoming races across all youth cycling disciplines.
-          This site is updated daily and currently covers events across South East UK.
+          This site is updated daily and currently covers events across the UK.
         </p>
+        
+        <div class="region-selector">
+          <label for="region-select">Select your region:</label>
+          <select id="region-select" onchange="updateRegionLinks()">
+            <option value="">All Regions</option>
+            <option value="south-east">South East</option>
+            <option value="south-west">South West</option>
+            <option value="london">London</option>
+            <option value="east">East</option>
+            <option value="midlands">Midlands</option>
+            <option value="north-west">North West</option>
+            <option value="north-east">North East</option>
+            <option value="yorkshire">Yorkshire</option>
+            <option value="wales">Wales</option>
+            <option value="scotland">Scotland</option>
+            <option value="northern-ireland">Northern Ireland</option>
+          </select>
+        </div>
+        
         <div class="homepage-categories">
-          <a href="road.html" class="category-link">Road</a>
-          <a href="track.html" class="category-link">Track</a>
-          <a href="mtb.html" class="category-link">MTB</a>
-          <a href="bmx.html" class="category-link">BMX</a>
-          <a href="cyclo-cross.html" class="category-link">Cyclo-Cross</a>
-          <a href="time-trial.html" class="category-link">Time Trial</a>
-          <a href="hill-climb.html" class="category-link">Hill Climb</a>
-          <a href="speedway.html" class="category-link">Speedway</a>
+          <a href="road.html" class="category-link" data-category="road">Road</a>
+          <a href="track.html" class="category-link" data-category="track">Track</a>
+          <a href="mtb.html" class="category-link" data-category="mtb">MTB</a>
+          <a href="bmx.html" class="category-link" data-category="bmx">BMX</a>
+          <a href="cyclo-cross.html" class="category-link" data-category="cyclo-cross">Cyclo-Cross</a>
+          <a href="time-trial.html" class="category-link" data-category="time-trial">Time Trial</a>
+          <a href="hill-climb.html" class="category-link" data-category="hill-climb">Hill Climb</a>
+          <a href="speedway.html" class="category-link" data-category="speedway">Speedway</a>
         </div>
       </div>
     `;
+    
+    // Initialize region links
+    updateRegionLinks();
+    
+    // Set region selector to match URL parameter if present
+    const urlParams = new URLSearchParams(window.location.search);
+    const regionParam = urlParams.get('region');
+    if (regionParam) {
+      const regionSelect = document.getElementById('region-select');
+      if (regionSelect) {
+        regionSelect.value = regionParam;
+        updateRegionLinks();
+      }
+    }
   </script>
 </body>
 </html>

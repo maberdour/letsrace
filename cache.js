@@ -68,6 +68,20 @@ class EventCache {
     }
   }
 
+  // Clear caches for a specific region
+  clearRegionCaches(region) {
+    try {
+      const keys = Object.keys(localStorage);
+      keys.forEach(key => {
+        if (key.startsWith(this.cachePrefix) && key.includes(`_${region}`)) {
+          localStorage.removeItem(key);
+        }
+      });
+    } catch (e) {
+      console.warn('Failed to clear region caches:', e);
+    }
+  }
+
   // Check if cache exists and is valid
   hasValidCache(category) {
     return this.getCache(category) !== null;
@@ -90,13 +104,19 @@ class EventCache {
 
 // Global cache instance
 const eventCache = new EventCache();
+window.eventCache = eventCache; // Make it globally accessible
 
 // Enhanced fetch function with caching and timeout
 async function fetchWithCache(url, category) {
+  // Extract region parameter from URL for cache key
+  const urlObj = new URL(url);
+  const region = urlObj.searchParams.get('region') || '';
+  const cacheKey = region ? `${category}_${region}` : category;
+  
   // Try to get from cache first
-  const cachedData = eventCache.getCache(category);
+  const cachedData = eventCache.getCache(cacheKey);
   if (cachedData) {
-    console.log(`Using cached data for ${category}`);
+    console.log(`Using cached data for ${cacheKey}`);
     return cachedData;
   }
 
@@ -118,7 +138,7 @@ async function fetchWithCache(url, category) {
     const data = await response.json();
     
     // Store in cache
-    eventCache.setCache(category, data);
+    eventCache.setCache(cacheKey, data);
     
     return data;
   } catch (error) {
@@ -126,7 +146,7 @@ async function fetchWithCache(url, category) {
     if (error.name === 'AbortError') {
       console.log('Request timed out, showing cached data if available');
       // Return cached data even if expired as fallback
-      const expiredCache = eventCache.getExpiredCache(category);
+      const expiredCache = eventCache.getExpiredCache(cacheKey);
       if (expiredCache) {
         return expiredCache;
       }
@@ -135,28 +155,59 @@ async function fetchWithCache(url, category) {
   }
 }
 
-// Preload data for other categories in parallel
+// Preload data for all categories and regions in parallel
 function preloadOtherCategories(currentCategory) {
   const categories = ['road', 'mtb', 'track', 'bmx', 'cyclo-cross', 'time-trial', 'hill-climb', 'speedway'];
+  const regions = ['', 'south-east', 'south-west', 'london', 'east', 'midlands', 'north-west', 'north-east', 'yorkshire', 'wales', 'scotland', 'northern-ireland'];
   const baseUrl = 'https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=';
   
   // Create array of promises for parallel loading
-  const preloadPromises = categories
-    .filter(category => category !== currentCategory && !eventCache.hasValidCache(category))
-    .map(category => 
-      fetch(baseUrl + category)
+  const preloadPromises = [];
+  
+  categories.forEach(category => {
+    regions.forEach(region => {
+      const cacheKey = region ? `${category}_${region}` : category;
+      
+      // Skip if we already have valid cache for this combination
+      if (eventCache.hasValidCache(cacheKey)) {
+        return;
+      }
+      
+      const url = baseUrl + category + (region ? `&region=${region}` : '');
+      const promise = fetch(url)
         .then(res => res.json())
         .then(data => {
-          eventCache.setCache(category, data);
-          console.log(`Preloaded ${category} data`);
+          eventCache.setCache(cacheKey, data);
+          console.log(`Preloaded ${cacheKey} data`);
         })
         .catch(() => {
-          console.log(`Failed to preload ${category} data`);
-        })
-    );
+          console.log(`Failed to preload ${cacheKey} data`);
+        });
+      
+      preloadPromises.push(promise);
+    });
+  });
   
-  // Execute all preloads in parallel
-  Promise.all(preloadPromises)
-    .then(() => console.log('All preloading completed'))
-    .catch(() => console.log('Some preloading failed'));
+  // Execute all preloads in parallel (but limit concurrent requests to avoid overwhelming the server)
+  const batchSize = currentCategory === 'homepage' ? 3 : 5; // Smaller batches on homepage
+  const processBatch = async (batch) => {
+    await Promise.all(batch);
+  };
+  
+  // Add a small delay on homepage to not block initial page load
+  const startPreloading = () => {
+    for (let i = 0; i < preloadPromises.length; i += batchSize) {
+      const batch = preloadPromises.slice(i, i + batchSize);
+      processBatch(batch).catch(() => console.log('Some preloading failed'));
+    }
+  };
+  
+  if (currentCategory === 'homepage') {
+    // Delay preloading on homepage to prioritize page display
+    setTimeout(startPreloading, 500);
+  } else {
+    startPreloading();
+  }
+  
+  console.log(`Started preloading ${preloadPromises.length} data combinations`);
 } 
