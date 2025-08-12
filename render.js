@@ -61,7 +61,20 @@ function renderEvents(data, containerId, pageTitle) {
       <div class="events-list">
   `;
 
-  if (!data.length) {
+  // Handle both old array format and new structured format
+  let events = [];
+  if (Array.isArray(data)) {
+    // Old format: array of arrays
+    events = data;
+  } else if (data && data.events && Array.isArray(data.events)) {
+    // New format: structured object with events array
+    events = data.events;
+  } else {
+    // Fallback: empty array
+    events = [];
+  }
+
+  if (!events.length) {
     contentHtml += `
       <div class="no-events">
         <h3>No upcoming events found</h3>
@@ -72,8 +85,24 @@ function renderEvents(data, containerId, pageTitle) {
     return;
   }
 
-  const eventsHtml = data.map(row => {
-    const [eventDate, title, discipline, location, url, addedDate] = row;
+  const eventsHtml = events.map(event => {
+    // Handle both old array format and new object format
+    let eventDate, title, discipline, location, url, region, imported;
+    
+    if (Array.isArray(event)) {
+      // Old format: [date, name, discipline, location, url, region?, imported?]
+      [eventDate, title, discipline, location, url, region, imported] = event;
+    } else {
+      // New format: {date, name, discipline, location, url, region, imported}
+      eventDate = event.date;
+      title = event.name;
+      discipline = event.discipline;
+      location = event.location;
+      url = event.url;
+      region = event.region;
+      imported = event.imported;
+    }
+    
     const d = new Date(eventDate);
     
     // Format date components for the new design
@@ -82,7 +111,7 @@ function renderEvents(data, containerId, pageTitle) {
     const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
 
     // Check if added within last 7 days
-    const added = new Date(addedDate);
+    const added = new Date(imported || addedDate || '');
     const now = new Date();
     const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
     const isNewlyAdded = added > sevenDaysAgo;
@@ -97,7 +126,7 @@ function renderEvents(data, containerId, pageTitle) {
         <div class="event-content">
           ${isNewlyAdded ? '<span class="new-badge">NEW</span>' : ''}
           <h2>${title}</h2>
-          <p class="event-location">${location}</p>
+          <p class="event-location">${location}${region ? ` • ${region}` : ''}</p>
         </div>
       </a>
     `;
@@ -109,7 +138,19 @@ function renderEvents(data, containerId, pageTitle) {
   const eventCards = container.querySelectorAll('.event');
   eventCards.forEach((card, index) => {
     card.addEventListener('click', function(e) {
-      const [eventDate, title, discipline, location, url, addedDate] = data[index];
+      const event = events[index];
+      
+      // Extract event data based on format
+      let eventDate, title, discipline, location, region;
+      if (Array.isArray(event)) {
+        [eventDate, title, discipline, location, , region] = event;
+      } else {
+        eventDate = event.date;
+        title = event.name;
+        discipline = event.discipline;
+        location = event.location;
+        region = event.region;
+      }
       
       // Track the click with GoatCounter
       if (window.goatcounter && window.goatcounter.count) {
@@ -120,6 +161,7 @@ function renderEvents(data, containerId, pageTitle) {
           custom: {
             discipline: discipline,
             location: location,
+            region: region || '',
             event_date: eventDate
           }
         });
