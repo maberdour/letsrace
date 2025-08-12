@@ -1,75 +1,105 @@
+/**
+ * Export Events by Category Web Service
+ * 
+ * This script provides a web API endpoint to filter and export cycling events
+ * from a Google Sheet based on discipline type and future dates.
+ * 
+ * Features:
+ * - Filter events by discipline type (road, mtb, track, etc.)
+ * - Only return future events
+ * - Include Region data from Column F
+ * - Structured JSON response for frontend consumption
+ * - Caching and compression headers
+ */
+
 function doGet(e) {
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Events");
-  const data = sheet.getDataRange().getValues();
+  try {
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Events");
+    const data = sheet.getDataRange().getValues();
 
-  const typeParam = (e.parameter.type || "").toLowerCase();
-  
-  // Debug log
-  Logger.log("Type parameter received: " + typeParam);
-
-  const mergedTypes = {
-    "road": ["Road", "Closed Circuit", "Town Centre Crit", "Go-Ride"],
-    "mtb": ["MTB 4X", "MTB DH", "MTB XC"],
-    "track": ["Track", "Track League"],
-    "bmx": ["BMX"],
-    "cyclo-cross": ["Cyclo-Cross"],
-    "time-trial": ["Time Trial"],
-    "hill-climb": ["Hill-Climb"],
-    "speedway": ["Speedway"]
-  };
-
-  const allowed = mergedTypes[typeParam] || [];
-  
-  // Debug log
-  Logger.log("Allowed types: " + JSON.stringify(allowed));
-
-  const DATE_INDEX = 0;       // Column A = Event Date
-  const DISCIPLINE_INDEX = 2; // Column C = Discipline
-
-  const today = new Date();
-  today.setHours(0, 0, 0, 0); // Set to midnight
-  
-  // Debug log
-  Logger.log("Today's date (for filtering): " + today);
-
-  const filtered = data.filter(row => {
-    const rawDate = row[DATE_INDEX];
-    const discipline = row[DISCIPLINE_INDEX] || "";
+    // Handle case where e or e.parameter is undefined
+    const typeParam = (e && e.parameter && e.parameter.type ? e.parameter.type : "").toLowerCase();
     
-    // Debug logs
-    Logger.log("Processing row - Date: " + rawDate + ", Discipline: " + discipline);
+    // Define discipline type mappings
+    const mergedTypes = {
+      "road": ["Road", "Closed Circuit", "Town Centre Crit", "Go-Ride"],
+      "mtb": ["MTB 4X", "MTB DH", "MTB XC"],
+      "track": ["Track", "Track League"],
+      "bmx": ["BMX"],
+      "cyclo-cross": ["Cyclo-Cross"],
+      "time-trial": ["Time Trial"],
+      "hill-climb": ["Hill-Climb"],
+      "speedway": ["Speedway"]
+    };
 
-    // Try to parse the event date
-    const eventDate = new Date(rawDate);
-    if (isNaN(eventDate)) {
-      Logger.log("Invalid date found: " + rawDate);
-      return false;
-    }
-
-    // Normalize eventDate to midnight
-    eventDate.setHours(0, 0, 0, 0);
+    const allowed = mergedTypes[typeParam] || [];
     
-    const isAllowed = allowed.includes(discipline);
-    const isFutureDate = eventDate >= today;
-    
-    // Debug logs
-    Logger.log("Event date (normalized): " + eventDate);
-    Logger.log("Is discipline allowed? " + isAllowed);
-    Logger.log("Is future date? " + isFutureDate);
+    // Column indices
+    const DATE_INDEX = 0;       // Column A = Event Date
+    const NAME_INDEX = 1;       // Column B = Event Name
+    const DISCIPLINE_INDEX = 2; // Column C = Discipline
+    const LOCATION_INDEX = 3;   // Column D = Location
+    const URL_INDEX = 4;        // Column E = URL
+    const REGION_INDEX = 5;     // Column F = Region
 
-    return isAllowed && isFutureDate;
-  });
-  
-  // Debug log
-  Logger.log("Number of events after filtering: " + filtered.length);
-  if (filtered.length > 0) {
-    Logger.log("First filtered event: " + JSON.stringify(filtered[0]));
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set to midnight
+
+    // Filter and structure the data
+    const filtered = data.filter(row => {
+      const rawDate = row[DATE_INDEX];
+      const discipline = row[DISCIPLINE_INDEX] || "";
+
+      // Try to parse the event date
+      const eventDate = new Date(rawDate);
+      if (isNaN(eventDate)) {
+        return false;
+      }
+
+      // Normalize eventDate to midnight
+      eventDate.setHours(0, 0, 0, 0);
+      
+      const isAllowed = allowed.includes(discipline);
+      const isFutureDate = eventDate >= today;
+
+      return isAllowed && isFutureDate;
+    }).map(row => {
+      // Structure the response data
+      return {
+        date: row[DATE_INDEX] || "",
+        name: row[NAME_INDEX] || "",
+        discipline: row[DISCIPLINE_INDEX] || "",
+        location: row[LOCATION_INDEX] || "",
+        url: row[URL_INDEX] || "",
+        region: row[REGION_INDEX] || "",
+        imported: row[6] || "" // Timestamp of when event was imported
+      };
+    });
+
+    // Create response object with metadata
+    const response = {
+      type: typeParam,
+      count: filtered.length,
+      events: filtered,
+      generated: new Date().toISOString()
+    };
+
+    return ContentService
+      .createTextOutput(JSON.stringify(response))
+      .setMimeType(ContentService.MimeType.JSON);
+      
+  } catch (error) {
+    Logger.log("❌ Error in ExportEventsByCategory: " + error.message);
+    
+    // Return error response
+    const errorResponse = {
+      error: "Internal server error",
+      message: error.message,
+      generated: new Date().toISOString()
+    };
+    
+    return ContentService
+      .createTextOutput(JSON.stringify(errorResponse))
+      .setMimeType(ContentService.MimeType.JSON);
   }
-
-  return ContentService
-    .createTextOutput(JSON.stringify(filtered))
-    .setMimeType(ContentService.MimeType.JSON)
-    .addHeader('Cache-Control', 'public, max-age=82800') // Cache for 23 hours
-    .addHeader('Content-Encoding', 'gzip') // Enable compression
-    .addHeader('Vary', 'Accept-Encoding'); // Handle different encodings
 }
