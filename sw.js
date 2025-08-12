@@ -15,7 +15,8 @@ self.addEventListener('install', event => {
     caches.open(CACHE_NAME)
       .then(cache => {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        // Only cache critical assets immediately
+        return cache.addAll(['/', '/styles.css']);
       })
   );
 });

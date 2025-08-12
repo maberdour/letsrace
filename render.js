@@ -1,8 +1,5 @@
-// Get current page filename
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
-// Register service worker for caching
-if ('serviceWorker' in navigator) {
+// Register service worker for caching (only in production)
+if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
       .then(registration => {
@@ -50,6 +47,12 @@ function renderHeader(title) {
 
 function renderEvents(data, containerId, pageTitle) {
   const container = document.getElementById(containerId);
+  
+  if (!container) {
+    console.error('Container element not found:', containerId);
+    return;
+  }
+  
   const updateDate = new Date().toLocaleDateString('en-GB', { 
     weekday: 'short', 
     year: 'numeric', 
@@ -91,6 +94,7 @@ function renderEvents(data, containerId, pageTitle) {
 
   // Handle both old array format and new structured format
   let events = [];
+  
   if (Array.isArray(data)) {
     // Old format: array of arrays
     events = data;
@@ -100,17 +104,6 @@ function renderEvents(data, containerId, pageTitle) {
   } else {
     // Fallback: empty array
     events = [];
-  }
-
-  if (!events.length) {
-    contentHtml += `
-      <div class="no-events">
-        <h3>No upcoming events found</h3>
-        <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
-      </div>
-    `;
-    container.innerHTML = contentHtml + '</div></div>';
-    return;
   }
 
   // Filter events by region if specified
@@ -124,6 +117,18 @@ function renderEvents(data, containerId, pageTitle) {
       }
       return normalizeRegionName(eventRegion) === selectedRegion;
     });
+  }
+
+  // Check for no events after filtering
+  if (!events.length) {
+    contentHtml += `
+      <div class="no-events">
+        <h3>No upcoming events found</h3>
+        <p>Check back soon for new events, or browse other cycling disciplines using the navigation above.</p>
+      </div>
+    `;
+    container.innerHTML = contentHtml + '</div></div>';
+    return;
   }
 
   const eventsHtml = events.map(event => {
@@ -281,17 +286,18 @@ function normalizeRegionName(regionName) {
 // Get display name for region code
 function getRegionDisplayName(regionCode) {
   const regionMap = {
+    'central': 'Central',
+    'east-midlands': 'East Midlands',
+    'eastern': 'Eastern',
+    'north-east': 'North East',
+    'north-west': 'North West',
+    'scotland': 'Scotland',
+    'south': 'South',
     'south-east': 'South East',
     'south-west': 'South West',
-    'london': 'London',
-    'east': 'East',
-    'midlands': 'Midlands',
-    'north-west': 'North West',
-    'north-east': 'North East',
-    'yorkshire': 'Yorkshire',
     'wales': 'Wales',
-    'scotland': 'Scotland',
-    'northern-ireland': 'Northern Ireland'
+    'west-midlands': 'West Midlands',
+    'yorkshire': 'Yorkshire'
   };
   return regionMap[regionCode] || regionCode;
 }
@@ -349,17 +355,18 @@ function showRegionSelector() {
           margin-bottom: 1rem;
         ">
           <option value="">All Regions</option>
+          <option value="central">Central</option>
+          <option value="east-midlands">East Midlands</option>
+          <option value="eastern">Eastern</option>
+          <option value="north-east">North East</option>
+          <option value="north-west">North West</option>
+          <option value="scotland">Scotland</option>
+          <option value="south">South</option>
           <option value="south-east">South East</option>
           <option value="south-west">South West</option>
-          <option value="london">London</option>
-          <option value="east">East</option>
-          <option value="midlands">Midlands</option>
-          <option value="north-west">North West</option>
-          <option value="north-east">North East</option>
-          <option value="yorkshire">Yorkshire</option>
           <option value="wales">Wales</option>
-          <option value="scotland">Scotland</option>
-          <option value="northern-ireland">Northern Ireland</option>
+          <option value="west-midlands">West Midlands</option>
+          <option value="yorkshire">Yorkshire</option>
         </select>
         <div style="display: flex; gap: 1rem; justify-content: center;">
           <button onclick="applyRegionFilter()" style="

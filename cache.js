@@ -120,14 +120,15 @@ async function fetchWithCache(url, category) {
     return cachedData;
   }
 
-  // If not in cache, fetch from server with timeout
+  // If not in cache, fetch from server with shorter timeout
   console.log(`Fetching fresh data for ${category}`);
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+    const timeoutId = setTimeout(() => controller.abort(), 8000); // Increased to 8s for reliability
     
     const response = await fetch(url, {
-      signal: controller.signal
+      signal: controller.signal,
+      priority: 'high' // Request high priority for main content
     });
     
     clearTimeout(timeoutId);
@@ -143,29 +144,42 @@ async function fetchWithCache(url, category) {
     return data;
   } catch (error) {
     console.error('Fetch error:', error);
-    if (error.name === 'AbortError') {
-      console.log('Request timed out, showing cached data if available');
-      // Return cached data even if expired as fallback
-      const expiredCache = eventCache.getExpiredCache(cacheKey);
-      if (expiredCache) {
-        return expiredCache;
-      }
+    
+    // Always try to return expired cache as fallback
+    const expiredCache = eventCache.getExpiredCache(cacheKey);
+    if (expiredCache) {
+      console.log(`Using expired cache for ${cacheKey} as fallback`);
+      return expiredCache;
     }
-    throw error;
+    
+    // If no cache at all, return empty array instead of throwing
+    console.log(`No cache available for ${cacheKey}, returning empty array`);
+    return [];
   }
 }
 
-// Preload data for all categories and regions in parallel
+// Smart preloading - only preload what's likely to be needed
 function preloadOtherCategories(currentCategory) {
-  const categories = ['road', 'mtb', 'track', 'bmx', 'cyclo-cross', 'time-trial', 'hill-climb', 'speedway'];
-  const regions = ['', 'south-east', 'south-west', 'london', 'east', 'midlands', 'north-west', 'north-east', 'yorkshire', 'wales', 'scotland', 'northern-ireland'];
+  // Skip preloading on homepage for instant loading
+  if (currentCategory === 'homepage') {
+    console.log('Skipping preloading on homepage for instant loading');
+    return;
+  }
+  
+  // Only preload the most popular categories and regions
+  const priorityCategories = ['road', 'mtb', 'track', 'bmx'];
+  const priorityRegions = ['', 'south-east', 'south-west', 'central']; // Most popular regions
+  
   const baseUrl = 'https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=';
   
-  // Create array of promises for parallel loading
+  // Create array of promises for priority preloading
   const preloadPromises = [];
   
-  categories.forEach(category => {
-    regions.forEach(region => {
+  priorityCategories.forEach(category => {
+    // Skip current category since it's already loading
+    if (category === currentCategory) return;
+    
+    priorityRegions.forEach(region => {
       const cacheKey = region ? `${category}_${region}` : category;
       
       // Skip if we already have valid cache for this combination
@@ -188,26 +202,21 @@ function preloadOtherCategories(currentCategory) {
     });
   });
   
-  // Execute all preloads in parallel (but limit concurrent requests to avoid overwhelming the server)
-  const batchSize = currentCategory === 'homepage' ? 3 : 5; // Smaller batches on homepage
-  const processBatch = async (batch) => {
-    await Promise.all(batch);
-  };
-  
-  // Add a small delay on homepage to not block initial page load
-  const startPreloading = () => {
-    for (let i = 0; i < preloadPromises.length; i += batchSize) {
-      const batch = preloadPromises.slice(i, i + batchSize);
-      processBatch(batch).catch(() => console.log('Some preloading failed'));
+  // Defer preloading to avoid blocking the main page load
+  setTimeout(() => {
+    if (preloadPromises.length > 0) {
+      console.log(`Starting deferred preloading of ${preloadPromises.length} priority combinations`);
+      
+      // Execute preloads with very limited concurrency
+      const batchSize = 2; // Reduced from 5 to 2
+      const processBatch = async (batch) => {
+        await Promise.all(batch);
+      };
+      
+      for (let i = 0; i < preloadPromises.length; i += batchSize) {
+        const batch = preloadPromises.slice(i, i + batchSize);
+        processBatch(batch).catch(() => console.log('Some preloading failed'));
+      }
     }
-  };
-  
-  if (currentCategory === 'homepage') {
-    // Delay preloading on homepage to prioritize page display
-    setTimeout(startPreloading, 500);
-  } else {
-    startPreloading();
-  }
-  
-  console.log(`Started preloading ${preloadPromises.length} data combinations`);
+  }, 2000); // Wait 2 seconds before starting preloading
 } 
