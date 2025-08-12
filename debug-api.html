@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Debug Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+        .loading { background: #fff3cd; border-color: #ffeaa7; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>API Debug Test</h1>
+    
+    <button onclick="testRoadAPI()">Test Road API</button>
+    <button onclick="testMTBAPI()">Test MTB API</button>
+    <button onclick="clearResults()">Clear Results</button>
+    
+    <div id="results"></div>
+
+    <script>
+        function addResult(message, type = 'info') {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = `test-result ${type}`;
+            div.innerHTML = `<strong>${new Date().toLocaleTimeString()}:</strong> ${message}`;
+            results.appendChild(div);
+        }
+
+        function clearResults() {
+            document.getElementById('results').innerHTML = '';
+        }
+
+        async function testAPI(category) {
+            const url = `https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=${category}`;
+            
+            addResult(`Testing ${category} API...`, 'loading');
+            addResult(`URL: ${url}`, 'info');
+            
+            try {
+                const startTime = Date.now();
+                
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => {
+                    controller.abort();
+                    addResult(`Request timed out after 10 seconds`, 'error');
+                }, 10000);
+                
+                const response = await fetch(url, {
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                const endTime = Date.now();
+                
+                addResult(`Response status: ${response.status}`, response.ok ? 'success' : 'error');
+                addResult(`Response time: ${endTime - startTime}ms`, 'info');
+                
+                if (!response.ok) {
+                    addResult(`HTTP Error: ${response.status} ${response.statusText}`, 'error');
+                    return;
+                }
+                
+                const data = await response.json();
+                addResult(`Data received: ${Array.isArray(data) ? data.length : 'Not an array'} items`, 'success');
+                
+                if (Array.isArray(data) && data.length > 0) {
+                    addResult(`First event: ${JSON.stringify(data[0], null, 2)}`, 'success');
+                } else {
+                    addResult(`No events found or empty array`, 'info');
+                }
+                
+            } catch (error) {
+                addResult(`Error: ${error.message}`, 'error');
+                if (error.name === 'AbortError') {
+                    addResult(`Request was aborted due to timeout`, 'error');
+                }
+            }
+        }
+
+        function testRoadAPI() {
+            testAPI('road');
+        }
+
+        function testMTBAPI() {
+            testAPI('mtb');
+        }
+
+        // Auto-test on page load
+        window.addEventListener('load', () => {
+            addResult('Page loaded, ready for testing', 'info');
+        });
+    </script>
+</body>
+</html>

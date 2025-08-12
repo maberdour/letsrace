@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Time Trial Events</title>
+  <title>{{CATEGORY_NAME}} Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Find youth cycling events across the UK – including road races, BMX, cyclo-cross, MTB, and more. LetsRace.cc makes it easy to discover, share, and support grassroots bike racing." />
   
@@ -21,14 +21,14 @@
     <h1><a href="index.html">letsrace.cc</a></h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="road.html">Road</a>
-      <a href="track.html">Track</a>
-      <a href="mtb.html">MTB</a>
-      <a href="bmx.html">BMX</a>
-      <a href="cyclo-cross.html">Cyclo-Cross</a>
-      <a href="time-trial.html" class="current">Time Trial</a>
-      <a href="hill-climb.html">Hill Climb</a>
-      <a href="speedway.html">Speedway</a>
+      <a href="road.html" class="{{ROAD_CURRENT}}">Road</a>
+      <a href="track.html" class="{{TRACK_CURRENT}}">Track</a>
+      <a href="mtb.html" class="{{MTB_CURRENT}}">MTB</a>
+      <a href="bmx.html" class="{{BMX_CURRENT}}">BMX</a>
+      <a href="cyclo-cross.html" class="{{CX_CURRENT}}">Cyclo-Cross</a>
+      <a href="time-trial.html" class="{{TT_CURRENT}}">Time Trial</a>
+      <a href="hill-climb.html" class="{{HC_CURRENT}}">Hill Climb</a>
+      <a href="speedway.html" class="{{SPEEDWAY_CURRENT}}">Speedway</a>
       <a href="about.html">About</a>
     </nav>
   </header>
@@ -51,24 +51,6 @@
     // Get current page filename
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
-    // Function to preserve region parameter in navigation links
-    function preserveRegionInLinks() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const regionParam = urlParams.get('region');
-      
-      if (regionParam) {
-        // Update header navigation links
-        const headerLinks = document.querySelectorAll('header nav a');
-        headerLinks.forEach(link => {
-          const href = link.getAttribute('href');
-          if (href && !href.includes('about.html') && !href.includes('index.html')) {
-            const baseHref = href.split('?')[0];
-            link.href = `${baseHref}?region=${regionParam}`;
-          }
-        });
-      }
-    }
-    
     // Burger menu functionality
     function createBurgerMenu() {
       // Create burger icon
@@ -80,11 +62,6 @@
         <span></span>
       `;
 
-      // Get region parameter for burger menu links
-      const urlParams = new URLSearchParams(window.location.search);
-      const regionParam = urlParams.get('region');
-      const regionSuffix = regionParam ? `?region=${regionParam}` : '';
-
       // Create nav menu (same links as header)
       const nav = document.createElement('nav');
       nav.id = 'mobile-nav';
@@ -92,14 +69,14 @@
         <div id="close-menu"></div>
         <ul>
           <li><a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
-          <li><a href="road.html${regionSuffix}" class="${currentPage === 'road.html' ? 'current' : ''}">Road</a></li>
-          <li><a href="track.html${regionSuffix}" class="${currentPage === 'track.html' ? 'current' : ''}">Track</a></li>
-          <li><a href="mtb.html${regionSuffix}" class="${currentPage === 'mtb.html' ? 'current' : ''}">MTB</a></li>
-          <li><a href="bmx.html${regionSuffix}" class="${currentPage === 'bmx.html' ? 'current' : ''}">BMX</a></li>
-          <li><a href="cyclo-cross.html${regionSuffix}" class="${currentPage === 'cyclo-cross.html' ? 'current' : ''}">Cyclo-Cross</a></li>
-          <li><a href="time-trial.html${regionSuffix}" class="${currentPage === 'time-trial.html' ? 'current' : ''}">Time Trial</a></li>
-          <li><a href="hill-climb.html${regionSuffix}" class="${currentPage === 'hill-climb.html' ? 'current' : ''}">Hill Climb</a></li>
-          <li><a href="speedway.html${regionSuffix}" class="${currentPage === 'speedway.html' ? 'current' : ''}">Speedway</a></li>
+          <li><a href="road.html" class="${currentPage === 'road.html' ? 'current' : ''}">Road</a></li>
+          <li><a href="track.html" class="${currentPage === 'track.html' ? 'current' : ''}">Track</a></li>
+          <li><a href="mtb.html" class="${currentPage === 'mtb.html' ? 'current' : ''}">MTB</a></li>
+          <li><a href="bmx.html" class="${currentPage === 'bmx.html' ? 'current' : ''}">BMX</a></li>
+          <li><a href="cyclo-cross.html" class="${currentPage === 'cyclo-cross.html' ? 'current' : ''}">Cyclo-Cross</a></li>
+          <li><a href="time-trial.html" class="${currentPage === 'time-trial.html' ? 'current' : ''}">Time Trial</a></li>
+          <li><a href="hill-climb.html" class="${currentPage === 'hill-climb.html' ? 'current' : ''}">Hill Climb</a></li>
+          <li><a href="speedway.html" class="${currentPage === 'speedway.html' ? 'current' : ''}">Speedway</a></li>
           <li><a href="about.html" class="${currentPage === 'about.html' ? 'current' : ''}">About</a></li>
         </ul>
       `;
@@ -123,23 +100,33 @@
       });
     }
     
-    // Initialize burger menu and preserve region
+    // Initialize burger menu
     createBurgerMenu();
-    preserveRegionInLinks();
   </script>
 
   <!-- Load non-critical scripts after page load -->
   <script>
-    // Load analytics after page load (only in production)
-    if (window.location.protocol === 'https:') {
-      setTimeout(() => {
-        const script = document.createElement('script');
-        script.src = '//gc.zgo.at/count.js';
-        script.setAttribute('data-goatcounter', 'https://letsrace.goatcounter.com/count');
-        script.async = true;
-        document.head.appendChild(script);
-      }, 1000);
-    }
+    // Defer service worker registration
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      }
+    });
+    
+    // Load analytics after page load
+    setTimeout(() => {
+      const script = document.createElement('script');
+      script.src = '//gc.zgo.at/count.js';
+      script.setAttribute('data-goatcounter', 'https://letsrace.goatcounter.com/count');
+      script.async = true;
+      document.head.appendChild(script);
+    }, 1000);
   </script>
 
   <script src="render.js?v=1"></script>
@@ -148,23 +135,23 @@
     // Add a safety timeout to prevent infinite loading
     const loadingTimeout = setTimeout(() => {
       console.log('Loading timeout reached, showing empty state');
-      renderEvents([], "events", "Time Trial");
+      renderEvents([], "events", "{{CATEGORY_NAME}}");
     }, 15000); // 15 second safety timeout
     
     // Load main content first, then preload in background
-    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=time-trial", "time-trial")
+    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type={{CATEGORY}}", "{{CATEGORY}}")
       .then(data => {
         clearTimeout(loadingTimeout);
-        renderEvents(data, "events", "Time Trial");
+        renderEvents(data, "events", "{{CATEGORY_NAME}}");
         // Start preloading after main content is loaded
-        setTimeout(() => preloadOtherCategories("time-trial"), 100);
+        setTimeout(() => preloadOtherCategories("{{CATEGORY}}"), 100);
       })
       .catch((error) => {
         clearTimeout(loadingTimeout);
-        console.error('Failed to load Time Trial events:', error);
-        renderEvents([], "events", "Time Trial");
+        console.error('Failed to load {{CATEGORY_NAME}} events:', error);
+        renderEvents([], "events", "{{CATEGORY_NAME}}");
         // Start preloading even if main content fails
-        setTimeout(() => preloadOtherCategories("time-trial"), 100);
+        setTimeout(() => preloadOtherCategories("{{CATEGORY}}"), 100);
       });
   </script>
 </body>

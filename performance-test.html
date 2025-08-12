@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Performance Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .test-result { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+    .fast { background: #d4edda; border-color: #c3e6cb; }
+    .slow { background: #f8d7da; border-color: #f5c6cb; }
+  </style>
+</head>
+<body>
+  <h1>Performance Test Results</h1>
+  <div id="results"></div>
+
+  <script>
+    const results = [];
+    
+    // Measure page load time
+    window.addEventListener('load', () => {
+      const loadTime = performance.now();
+      results.push({
+        metric: 'Page Load Time',
+        value: loadTime.toFixed(2) + 'ms',
+        status: loadTime < 1000 ? 'fast' : 'slow'
+      });
+      
+      // Measure DOM content loaded
+      const domReady = performance.getEntriesByType('navigation')[0]?.domContentLoadedEventEnd || 0;
+      results.push({
+        metric: 'DOM Content Loaded',
+        value: domReady.toFixed(2) + 'ms',
+        status: domReady < 500 ? 'fast' : 'slow'
+      });
+      
+      // Measure first contentful paint
+      const fcp = performance.getEntriesByName('first-contentful-paint')[0]?.startTime || 0;
+      if (fcp > 0) {
+        results.push({
+          metric: 'First Contentful Paint',
+          value: fcp.toFixed(2) + 'ms',
+          status: fcp < 1000 ? 'fast' : 'slow'
+        });
+      }
+      
+      displayResults();
+    });
+    
+    function displayResults() {
+      const container = document.getElementById('results');
+      results.forEach(result => {
+        const div = document.createElement('div');
+        div.className = `test-result ${result.status}`;
+        div.innerHTML = `
+          <strong>${result.metric}:</strong> ${result.value}
+          <span style="color: ${result.status === 'fast' ? 'green' : 'red'}">
+            (${result.status === 'fast' ? '✓ Fast' : '✗ Slow'})
+          </span>
+        `;
+        container.appendChild(div);
+      });
+    }
+  </script>
+</body>
+</html>
