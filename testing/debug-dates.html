@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Debug Dates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <h1>Debug Date Parsing</h1>
+  <div id="debug-output"></div>
+
+  <script>
+    // Test the date parsing logic
+    function testDateParsing() {
+      const output = document.getElementById('debug-output');
+      
+      // Test with various date formats
+      const testDates = [
+        '', // empty string
+        '2024-01-15', // ISO format
+        '15/01/2024', // UK format
+        '2024-01-15T10:30:00', // ISO with time
+        'Invalid Date', // invalid
+        null, // null
+        undefined // undefined
+      ];
+      
+      const now = new Date();
+      const daysAgo = new Date(now.getTime() - (1 * 24 * 60 * 60 * 1000)); // 1 day ago
+      
+      let html = '<h2>Date Parsing Test</h2>';
+      html += '<p><strong>Current time:</strong> ' + now.toISOString() + '</p>';
+      html += '<p><strong>1 day ago:</strong> ' + daysAgo.toISOString() + '</p>';
+      html += '<table border="1" style="border-collapse: collapse; width: 100%;">';
+      html += '<tr><th>Input</th><th>Parsed Date</th><th>Is Valid</th><th>Is Newer than 1 day ago</th><th>Would Show NEW</th></tr>';
+      
+      testDates.forEach(input => {
+        const parsed = new Date(input || '');
+        const isValid = !isNaN(parsed.getTime());
+        const isNewer = isValid && parsed > daysAgo;
+        const wouldShowNew = isValid && isNewer;
+        
+        html += '<tr>';
+        html += '<td>' + (input === null ? 'null' : input === undefined ? 'undefined' : '"' + input + '"') + '</td>';
+        html += '<td>' + (isValid ? parsed.toISOString() : 'Invalid Date') + '</td>';
+        html += '<td>' + isValid + '</td>';
+        html += '<td>' + isNewer + '</td>';
+        html += '<td>' + wouldShowNew + '</td>';
+        html += '</tr>';
+      });
+      
+      html += '</table>';
+      
+      // Now fetch real data
+      html += '<h2>Real Data Test</h2>';
+      html += '<div id="real-data"></div>';
+      
+      output.innerHTML = html;
+      
+      // Fetch real data
+      fetch("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=road")
+        .then(response => response.json())
+        .then(data => {
+          const realDataDiv = document.getElementById('real-data');
+          
+          // Debug the API response structure
+          realDataDiv.innerHTML = '<h3>API Response Structure:</h3><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+          
+          // Check if data has the expected structure
+          if (!data || !data.events || !Array.isArray(data.events)) {
+            realDataDiv.innerHTML += '<p><strong>Error:</strong> API response does not have expected structure. Expected data.events array.</p>';
+            return;
+          }
+          
+          let realHtml = '<h3>Event Data Analysis:</h3>';
+          realHtml += '<table border="1" style="border-collapse: collapse; width: 100%;">';
+          realHtml += '<tr><th>Event Name</th><th>Imported Value</th><th>Parsed Date</th><th>Is Valid</th><th>Is Newer than 1 day ago</th><th>Would Show NEW</th></tr>';
+          
+          const now = new Date();
+          const daysAgo = new Date(now.getTime() - (1 * 24 * 60 * 60 * 1000));
+          
+          data.events.forEach(event => {
+            const imported = event.imported || '';
+            const parsed = new Date(imported);
+            const isValid = !isNaN(parsed.getTime());
+            const isNewer = isValid && parsed > daysAgo;
+            const wouldShowNew = isValid && isNewer;
+            
+            realHtml += '<tr>';
+            realHtml += '<td>' + event.name + '</td>';
+            realHtml += '<td>' + (imported === '' ? '(empty)' : imported) + '</td>';
+            realHtml += '<td>' + (isValid ? parsed.toISOString() : 'Invalid Date') + '</td>';
+            realHtml += '<td>' + isValid + '</td>';
+            realHtml += '<td>' + isNewer + '</td>';
+            realHtml += '<td>' + wouldShowNew + '</td>';
+            realHtml += '</tr>';
+          });
+          
+          realHtml += '</table>';
+          realDataDiv.innerHTML += realHtml;
+        })
+        .catch(error => {
+          document.getElementById('real-data').innerHTML = '<p>Error fetching data: ' + error.message + '</p>';
+        });
+    }
+    
+    // Run the test when page loads
+    window.addEventListener('load', testDateParsing);
+  </script>
+</body>
+</html>
