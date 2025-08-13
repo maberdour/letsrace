@@ -3,7 +3,7 @@
 // ============================================================================
 
 // Number of days after which an event is no longer considered "NEW"
-const NEW_EVENT_DAYS = 1;
+const NEW_EVENT_DAYS = 2;
 
 // ============================================================================
 // END CONFIGURATION
@@ -60,6 +60,10 @@ function renderHeader(title) {
 }
 
 function renderEvents(data, containerId, pageTitle) {
+  console.log('renderEvents called with data:', data);
+  console.log('Data type:', typeof data);
+  console.log('Data structure:', JSON.stringify(data, null, 2));
+  
   const container = document.getElementById(containerId);
   
   if (!container) {
@@ -321,10 +325,28 @@ function renderEvents(data, containerId, pageTitle) {
     const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
 
     // Check if added within the configured number of days
-    const added = new Date(imported || addedDate || '');
+    const added = new Date(imported || '');
     const now = new Date();
     const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
-    const isNewlyAdded = added > daysAgo;
+    
+    // Debug logging to understand what's happening
+    console.log('Event:', title);
+    console.log('Imported value:', imported);
+    console.log('Added date:', added);
+    console.log('Is valid date:', !isNaN(added.getTime()));
+    console.log('Days ago threshold:', daysAgo);
+    console.log('Is newer than threshold:', added > daysAgo);
+    
+    // More robust date comparison - normalize to midnight for both dates
+    let isNewlyAdded = false;
+    if (!isNaN(added.getTime())) {
+      const addedMidnight = new Date(added.getFullYear(), added.getMonth(), added.getDate());
+      const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
+      isNewlyAdded = addedMidnight > daysAgoMidnight;
+      console.log('Normalized comparison - Added midnight:', addedMidnight, 'Days ago midnight:', daysAgoMidnight, 'Is newer:', isNewlyAdded);
+    } else {
+      console.log('No valid imported date found - treating as NOT new');
+    }
 
     return `
       <a href="${url}" target="_blank" class="event ${isNewlyAdded ? 'newly-added' : ''}">
