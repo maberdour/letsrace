@@ -78,8 +78,23 @@ function renderEvents(data, containerId, pageTitle) {
     day: 'numeric'
   });
 
-  // Get region filter from URL
-  const selectedRegion = getRegionFromUrl();
+  // Get region filter from localStorage or URL
+  let selectedRegion = getRegionFromUrl();
+  
+  // If no region in URL, check localStorage
+  if (!selectedRegion) {
+    const storedRegions = localStorage.getItem('selectedRegions');
+    if (storedRegions) {
+      try {
+        const regions = JSON.parse(storedRegions);
+        if (regions.length > 0) {
+          selectedRegion = regions.join(',');
+        }
+      } catch (e) {
+        console.error('Error parsing stored regions:', e);
+      }
+    }
+  }
   
   // Create the main container with sidebar and content
   let contentHtml = `
@@ -88,69 +103,72 @@ function renderEvents(data, containerId, pageTitle) {
       <aside class="region-sidebar">
         <div class="region-sidebar-content">
           <h3>Filter by Region</h3>
-          <div class="region-checkboxes">
-            <label class="region-checkbox">
-              <input type="checkbox" value="central" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              Central
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="east-midlands" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              East Midlands
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="eastern" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              Eastern
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="north-east" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              North East
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="north-west" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              North West
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="scotland" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              Scotland
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="south" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              South
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="south-east" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              South East
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="south-west" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              South West
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="wales" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              Wales
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="west-midlands" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              West Midlands
-            </label>
-            <label class="region-checkbox">
-              <input type="checkbox" value="yorkshire" onchange="updateEventRegionFilter()">
-              <span class="checkmark"></span>
-              Yorkshire
-            </label>
+                     <div class="region-checkboxes">
+             <label class="region-checkbox">
+               <input type="checkbox" value="central">
+               <span class="checkmark"></span>
+               Central
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="east-midlands">
+               <span class="checkmark"></span>
+               East Midlands
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="eastern">
+               <span class="checkmark"></span>
+               Eastern
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="north-east">
+               <span class="checkmark"></span>
+               North East
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="north-west">
+               <span class="checkmark"></span>
+               North West
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="scotland">
+               <span class="checkmark"></span>
+               Scotland
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="south">
+               <span class="checkmark"></span>
+               South
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="south-east">
+               <span class="checkmark"></span>
+               South East
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="south-west">
+               <span class="checkmark"></span>
+               South West
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="wales">
+               <span class="checkmark"></span>
+               Wales
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="west-midlands">
+               <span class="checkmark"></span>
+               West Midlands
+             </label>
+             <label class="region-checkbox">
+               <input type="checkbox" value="yorkshire">
+               <span class="checkmark"></span>
+               Yorkshire
+             </label>
+           </div>
+          <div class="region-sidebar-buttons">
+            <button class="apply-filter-btn" onclick="applyEventRegionFilter()">Apply Filter</button>
+            <button class="clear-regions-btn" onclick="clearEventRegionFilter()">Reset</button>
           </div>
-          <button class="clear-regions-btn" onclick="clearEventRegionFilter()">Clear All</button>
         </div>
       </aside>
 
@@ -169,69 +187,69 @@ function renderEvents(data, containerId, pageTitle) {
             <div class="mobile-filter-panel" id="event-mobile-filter-panel">
               <div class="mobile-region-checkboxes">
                 <label class="region-checkbox">
-                  <input type="checkbox" value="central" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="central">
                   <span class="checkmark"></span>
                   Central
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="east-midlands" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="east-midlands">
                   <span class="checkmark"></span>
                   East Midlands
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="eastern" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="eastern">
                   <span class="checkmark"></span>
                   Eastern
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="north-east" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="north-east">
                   <span class="checkmark"></span>
                   North East
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="north-west" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="north-west">
                   <span class="checkmark"></span>
                   North West
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="scotland" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="scotland">
                   <span class="checkmark"></span>
                   Scotland
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="south" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="south">
                   <span class="checkmark"></span>
                   South
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="south-east" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="south-east">
                   <span class="checkmark"></span>
                   South East
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="south-west" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="south-west">
                   <span class="checkmark"></span>
                   South West
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="wales" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="wales">
                   <span class="checkmark"></span>
                   Wales
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="west-midlands" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="west-midlands">
                   <span class="checkmark"></span>
                   West Midlands
                 </label>
                 <label class="region-checkbox">
-                  <input type="checkbox" value="yorkshire" onchange="updateEventRegionFilter()">
+                  <input type="checkbox" value="yorkshire">
                   <span class="checkmark"></span>
                   Yorkshire
                 </label>
               </div>
-              <div class="mobile-filter-buttons">
-                <button class="clear-regions-btn" onclick="clearEventRegionFilter()">Clear All</button>
+              <div class="region-sidebar-buttons">
                 <button class="apply-filter-btn" onclick="applyEventRegionFilter()">Apply Filter</button>
+                <button class="clear-regions-btn" onclick="clearEventRegionFilter()">Reset</button>
               </div>
             </div>
           </div>
@@ -253,6 +271,8 @@ function renderEvents(data, containerId, pageTitle) {
     events = [];
   }
 
+
+
   // Filter events by region if specified
   if (selectedRegion) {
     const selectedRegions = selectedRegion.split(',').map(r => normalizeRegionName(r));
@@ -264,7 +284,10 @@ function renderEvents(data, containerId, pageTitle) {
         eventRegion = event.region || '';
       }
       const normalizedEventRegion = normalizeRegionName(eventRegion);
-      return selectedRegions.includes(normalizedEventRegion);
+      // Use exact matching instead of includes() to avoid partial matches
+      return selectedRegions.some(selectedRegion => 
+        normalizedEventRegion === selectedRegion
+      );
     });
   }
 
@@ -673,9 +696,16 @@ function createBurgerMenu() {
 }
 
 // Event page region filter functions
-function updateEventRegionFilter() {
-  const checkedBoxes = document.querySelectorAll('.region-checkbox input:checked');
-  const selectedRegions = Array.from(checkedBoxes).map(cb => cb.value);
+
+function applyEventRegionFilter() {
+  const selectedRegions = getSelectedRegions();
+  
+  // Store selected regions in localStorage for persistence
+  if (selectedRegions.length > 0) {
+    localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
+  } else {
+    localStorage.removeItem('selectedRegions');
+  }
   
   // Update URL with selected regions
   const url = new URL(window.location);
@@ -686,11 +716,6 @@ function updateEventRegionFilter() {
   }
   window.history.replaceState({}, '', url);
   
-  // Don't reload immediately - let user make multiple selections
-  // The filter will be applied when they're done selecting
-}
-
-function applyEventRegionFilter() {
   // Reload the page to apply the filter
   window.location.reload();
 }
@@ -699,12 +724,11 @@ function clearEventRegionFilter() {
   const checkboxes = document.querySelectorAll('.region-checkbox input');
   checkboxes.forEach(cb => cb.checked = false);
   
-  // Update URL to remove region parameter
-  const url = new URL(window.location);
-  url.searchParams.delete('region');
-  window.history.replaceState({}, '', url);
+  // Clear localStorage
+  localStorage.removeItem('selectedRegions');
   
-  // Don't reload immediately - let user apply when ready
+  // Apply the filter to show all events
+  applyEventRegionFilter();
 }
 
 function toggleEventMobileFilter() {
@@ -721,16 +745,39 @@ function toggleEventMobileFilter() {
   }
 }
 
+function getSelectedRegions() {
+  const checkboxes = document.querySelectorAll('.region-checkbox input:checked');
+  return Array.from(checkboxes).map(cb => cb.value);
+}
+
 function setInitialEventCheckboxStates() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const regionParam = urlParams.get('region');
+  // Check localStorage first, then URL parameters
+  let regions = [];
+  
+  // Try to get from localStorage
+  const storedRegions = localStorage.getItem('selectedRegions');
+  if (storedRegions) {
+    try {
+      regions = JSON.parse(storedRegions);
+    } catch (e) {
+      console.error('Error parsing stored regions:', e);
+    }
+  }
+  
+  // If no stored regions, check URL parameters
+  if (regions.length === 0) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const regionParam = urlParams.get('region');
+    if (regionParam) {
+      regions = regionParam.split(',');
+    }
+  }
   
   // Set all checkbox states (both desktop and mobile)
   const allCheckboxes = document.querySelectorAll('.region-checkbox input');
   allCheckboxes.forEach(cb => cb.checked = false);
   
-  if (regionParam) {
-    const regions = regionParam.split(',');
+  if (regions.length > 0) {
     regions.forEach(region => {
       const checkboxes = document.querySelectorAll(`.region-checkbox input[value="${region}"]`);
       checkboxes.forEach(checkbox => {

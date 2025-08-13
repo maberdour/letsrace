@@ -40,162 +40,165 @@
         <h3>Filter by Region</h3>
         <div class="region-checkboxes">
           <label class="region-checkbox">
-            <input type="checkbox" value="central" onchange="updateRegionLinks()">
+            <input type="checkbox" value="central">
             <span class="checkmark"></span>
             Central
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="east-midlands" onchange="updateRegionLinks()">
+            <input type="checkbox" value="east-midlands">
             <span class="checkmark"></span>
             East Midlands
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="eastern" onchange="updateRegionLinks()">
+            <input type="checkbox" value="eastern">
             <span class="checkmark"></span>
             Eastern
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="north-east" onchange="updateRegionLinks()">
+            <input type="checkbox" value="north-east">
             <span class="checkmark"></span>
             North East
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="north-west" onchange="updateRegionLinks()">
+            <input type="checkbox" value="north-west">
             <span class="checkmark"></span>
             North West
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="scotland" onchange="updateRegionLinks()">
+            <input type="checkbox" value="scotland">
             <span class="checkmark"></span>
             Scotland
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="south" onchange="updateRegionLinks()">
+            <input type="checkbox" value="south">
             <span class="checkmark"></span>
             South
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="south-east" onchange="updateRegionLinks()">
+            <input type="checkbox" value="south-east">
             <span class="checkmark"></span>
             South East
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="south-west" onchange="updateRegionLinks()">
+            <input type="checkbox" value="south-west">
             <span class="checkmark"></span>
             South West
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="wales" onchange="updateRegionLinks()">
+            <input type="checkbox" value="wales">
             <span class="checkmark"></span>
             Wales
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="west-midlands" onchange="updateRegionLinks()">
+            <input type="checkbox" value="west-midlands">
             <span class="checkmark"></span>
             West Midlands
           </label>
           <label class="region-checkbox">
-            <input type="checkbox" value="yorkshire" onchange="updateRegionLinks()">
+            <input type="checkbox" value="yorkshire">
             <span class="checkmark"></span>
             Yorkshire
           </label>
         </div>
-        <button class="clear-regions-btn" onclick="clearAllRegions()">Clear All</button>
+        <div class="region-sidebar-buttons">
+          <button class="apply-filter-btn" onclick="applyHomepageRegionFilter()">Apply Filter</button>
+          <button class="clear-regions-btn" onclick="clearAllRegions()">Reset</button>
+        </div>
       </div>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="homepage-welcome">
-        <p>
-          Browse upcoming races across all youth cycling disciplines.
-          This site is updated daily and currently covers events across the UK.
-        </p>
-        
-        <!-- Mobile Region Filter -->
-        <div class="mobile-region-filter">
-          <button class="mobile-filter-btn" onclick="toggleMobileFilter()">
-            <span class="filter-icon">📍</span>
-            Filter by Region
-          </button>
-          <div class="mobile-filter-panel" id="mobile-filter-panel">
-            <div class="mobile-region-checkboxes">
-              <label class="region-checkbox">
-                <input type="checkbox" value="central" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                Central
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="east-midlands" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                East Midlands
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="eastern" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                Eastern
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="north-east" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                North East
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="north-west" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                North West
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="scotland" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                Scotland
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="south" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                South
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="south-east" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                South East
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="south-west" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                South West
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="wales" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                Wales
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="west-midlands" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                West Midlands
-              </label>
-              <label class="region-checkbox">
-                <input type="checkbox" value="yorkshire" onchange="updateRegionLinks()">
-                <span class="checkmark"></span>
-                Yorkshire
-              </label>
-            </div>
-            <button class="clear-regions-btn" onclick="clearAllRegions()">Clear All</button>
-          </div>
-        </div>
-        
-        <div class="homepage-categories">
-          <a href="pages/road.html" class="category-link" data-category="road">Road</a>
-          <a href="pages/track.html" class="category-link" data-category="track">Track</a>
-          <a href="pages/mtb.html" class="category-link" data-category="mtb">MTB</a>
-          <a href="pages/bmx.html" class="category-link" data-category="bmx">BMX</a>
-          <a href="pages/cyclo-cross.html" class="category-link" data-category="cyclo-cross">Cyclo-Cross</a>
-          <a href="pages/time-trial.html" class="category-link" data-category="time-trial">Time Trial</a>
-          <a href="pages/hill-climb.html" class="category-link" data-category="hill-climb">Hill Climb</a>
-          <a href="pages/speedway.html" class="category-link" data-category="speedway">Speedway</a>
-        </div>
-      </div>
+             <div class="homepage-welcome">
+         <p>
+           Browse upcoming races across all youth cycling disciplines.
+           This site is updated daily and currently covers events across the UK.
+         </p>
+         
+         <!-- Mobile Region Filter -->
+         <div class="mobile-region-filter">
+           <button class="mobile-filter-btn" onclick="toggleMobileFilter()">
+             <span class="filter-icon">📍</span>
+             Filter by Region
+           </button>
+           <div class="mobile-filter-panel" id="mobile-filter-panel">
+             <div class="mobile-region-checkboxes">
+               <label class="region-checkbox">
+                 <input type="checkbox" value="central">
+                 <span class="checkmark"></span>
+                 Central
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="east-midlands">
+                 <span class="checkmark"></span>
+                 East Midlands
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="eastern">
+                 <span class="checkmark"></span>
+                 Eastern
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="north-east">
+                 <span class="checkmark"></span>
+                 North East
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="north-west">
+                 <span class="checkmark"></span>
+                 North West
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="scotland">
+                 <span class="checkmark"></span>
+                 Scotland
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="south">
+                 <span class="checkmark"></span>
+                 South
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="south-east">
+                 <span class="checkmark"></span>
+                 South East
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="south-west">
+                 <span class="checkmark"></span>
+                 South West
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="wales">
+                 <span class="checkmark"></span>
+                 Wales
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="west-midlands">
+                 <span class="checkmark"></span>
+                 West Midlands
+               </label>
+               <label class="region-checkbox">
+                 <input type="checkbox" value="yorkshire">
+                 <span class="checkmark"></span>
+                 Yorkshire
+               </label>
+             </div>
+             <div class="region-sidebar-buttons">
+               <button class="apply-filter-btn" onclick="applyHomepageRegionFilter()">Apply Filter</button>
+               <button class="clear-regions-btn" onclick="clearAllRegions()">Reset</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+       <h2 style="text-align: center; color: #0077cc; font-size: 2rem; margin-bottom: 2rem; font-weight: bold;">New Events</h2>
+       <div id="new-events">
+         <div class="loading-message">
+           <div class="spinner"></div>
+           <p>Loading new events...</p>
+         </div>
+       </div>
     </main>
   </div>
 
@@ -208,49 +211,20 @@
     // Get current page filename
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
-    // Region link update function for checkboxes
-    function updateRegionLinks() {
-      const categoryLinks = document.querySelectorAll('.category-link');
-      const checkedBoxes = document.querySelectorAll('.region-checkbox input:checked');
-      const selectedRegions = Array.from(checkedBoxes).map(cb => cb.value);
-      
-      categoryLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        const baseHref = href.split('?')[0];
-        if (selectedRegions.length > 0) {
-          const regionParam = selectedRegions.join(',');
-          link.href = `${baseHref}?region=${regionParam}`;
-        } else {
-          link.href = baseHref;
-        }
-      });
-    }
-    
-    // Clear all region selections
-    function clearAllRegions() {
-      const checkboxes = document.querySelectorAll('.region-checkbox input');
-      checkboxes.forEach(cb => cb.checked = false);
-      updateRegionLinks();
-    }
+                   // Clear all region selections
+      function clearAllRegions() {
+        const checkboxes = document.querySelectorAll('.region-checkbox input');
+        checkboxes.forEach(cb => cb.checked = false);
+        // Clear localStorage
+        localStorage.removeItem('selectedRegions');
+        // Apply the filter to show all events
+        applyHomepageRegionFilter();
+      }
     
     // Toggle mobile filter panel
     function toggleMobileFilter() {
       const panel = document.getElementById('mobile-filter-panel');
       panel.classList.toggle('active');
-    }
-    
-    // Set region checkboxes to match URL parameter if present
-    const urlParams = new URLSearchParams(window.location.search);
-    const regionParam = urlParams.get('region');
-    if (regionParam) {
-      const regions = regionParam.split(',');
-      regions.forEach(region => {
-        const checkbox = document.querySelector(`.region-checkbox input[value="${region}"]`);
-        if (checkbox) {
-          checkbox.checked = true;
-        }
-      });
-      updateRegionLinks();
     }
     
     // Burger menu functionality
@@ -302,11 +276,137 @@
       });
     }
     
-    // Initialize burger menu
-    createBurgerMenu();
-  </script>
+                   // Initialize burger menu
+      createBurgerMenu();
+      
+      // Set initial checkbox states based on localStorage
+      function setInitialHomepageCheckboxStates() {
+        const storedRegions = localStorage.getItem('selectedRegions');
+        if (storedRegions) {
+          try {
+            const regions = JSON.parse(storedRegions);
+            const allCheckboxes = document.querySelectorAll('.region-checkbox input');
+            allCheckboxes.forEach(cb => cb.checked = false);
+            
+            regions.forEach(region => {
+              const checkboxes = document.querySelectorAll(`.region-checkbox input[value="${region}"]`);
+              checkboxes.forEach(checkbox => {
+                checkbox.checked = true;
+              });
+            });
+          } catch (e) {
+            console.error('Error parsing stored regions:', e);
+          }
+        }
+      }
+      
+      // Set initial states when page loads
+      setInitialHomepageCheckboxStates();
+     
+     // Homepage region filter functionality
+     let filteredEvents = [];
+     let allEventsData = [];
+     
+           function applyHomepageRegionFilter() {
+        const selectedRegions = getSelectedRegions();
+        const container = document.getElementById('new-events');
+        
+        // Store selected regions in localStorage for persistence
+        if (selectedRegions.length > 0) {
+          localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
+        } else {
+          localStorage.removeItem('selectedRegions');
+        }
+        
+        if (selectedRegions.length === 0) {
+          // No filters selected, show all events
+          filteredEvents = allEventsData;
+        } else {
+          // Filter events by selected regions
+          filteredEvents = allEventsData.filter(event => {
+            const eventRegion = event.region || '';
+            const normalizedEventRegion = normalizeRegionName(eventRegion);
+            return selectedRegions.some(region => {
+              const normalizedRegion = normalizeRegionName(region);
+              return normalizedEventRegion === normalizedRegion;
+            });
+          });
+        }
+        
+        // Update display with filtered events
+        updateHomepageDisplay();
+      }
+     
+     function getSelectedRegions() {
+       const checkboxes = document.querySelectorAll('.region-checkbox input:checked');
+       return Array.from(checkboxes).map(cb => cb.value);
+     }
+     
+     function updateHomepageDisplay() {
+       const container = document.getElementById('new-events');
+       
+       if (filteredEvents.length === 0) {
+         container.innerHTML = '<div class="no-events"><p>No events found for the selected regions.</p></div>';
+         return;
+       }
+       
+       // Filter for new events only
+       const newEvents = filteredEvents.filter(event => {
+         const imported = event.imported || '';
+         const added = new Date(imported);
+         const now = new Date();
+         const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
+         
+         if (!isNaN(added.getTime())) {
+           const addedMidnight = new Date(added.getFullYear(), added.getMonth(), added.getDate());
+           const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
+           return addedMidnight > daysAgoMidnight;
+         }
+         return false;
+       });
+       
+       if (newEvents.length === 0) {
+         container.innerHTML = '<div class="no-events"><p>No new events found for the selected regions.</p></div>';
+         return;
+       }
+       
+       // Render the filtered new events
+       const eventsHtml = renderHomepageEventsHtml(newEvents);
+       container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
+     }
+     
+     function renderHomepageEventsHtml(events) {
+       if (events.length === 0) return '';
+       
+       const sortedEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date));
+       
+       return sortedEvents.map(event => {
+         const d = new Date(event.date);
+         const dayName = d.toLocaleDateString("en-GB", { weekday: "short" }).toUpperCase();
+         const day = d.getDate().toString().padStart(2, '0');
+         const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
+         
+         return `
+           <a href="${event.url}" target="_blank" class="event newly-added">
+             <div class="date-square">
+               <div class="day-name">${dayName}</div>
+               <div class="day-number">${day}</div>
+               <div class="month">${month}</div>
+             </div>
+             <div class="event-content">
+               <span class="new-badge">NEW</span>
+               <h2>${event.name}</h2>
+               <p class="event-location">${event.location}${event.region ? ` • ${event.region}` : ''}</p>
+             </div>
+           </a>
+         `;
+       }).join("");
+     }
+   </script>
 
   <!-- Load non-critical scripts after page load -->
+  <script src="assets/js/render.js?v=4"></script>
+  <script src="assets/js/cache.js?v=1"></script>
   <script>
     // Defer service worker registration
     window.addEventListener('load', () => {
@@ -329,6 +429,157 @@
       script.async = true;
       document.head.appendChild(script);
     }, 1000);
+    
+         // Load all new events with progressive loading
+     async function loadAllNewEvents() {
+       const categories = ['road', 'track', 'mtb', 'bmx', 'cyclo-cross', 'time-trial', 'hill-climb', 'speedway'];
+       const allEvents = [];
+       let hasDisplayedEvents = false;
+       
+       // Update loading message to show progress
+       const container = document.getElementById('new-events');
+       container.innerHTML = '<div class="loading-message"><div class="spinner"></div><p>Loading new events...</p></div>';
+       
+               // Function to filter and display new events
+        function filterAndDisplayNewEvents(events) {
+          const newEvents = events.filter(event => {
+            const imported = event.imported || '';
+            const added = new Date(imported);
+            const now = new Date();
+            const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000)); // Use constant from render.js
+            
+            if (!isNaN(added.getTime())) {
+              const addedMidnight = new Date(added.getFullYear(), added.getMonth(), added.getDate());
+              const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
+              return addedMidnight > daysAgoMidnight;
+            }
+            return false;
+          });
+          
+          return newEvents;
+        }
+       
+       // Function to render events HTML
+       function renderEventsHtml(events) {
+         if (events.length === 0) return '';
+         
+         const sortedEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date));
+         
+         return sortedEvents.map(event => {
+           const d = new Date(event.date);
+           const dayName = d.toLocaleDateString("en-GB", { weekday: "short" }).toUpperCase();
+           const day = d.getDate().toString().padStart(2, '0');
+           const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
+           
+                       return `
+              <a href="${event.url}" target="_blank" class="event newly-added">
+                <div class="date-square">
+                  <div class="day-name">${dayName}</div>
+                  <div class="day-number">${day}</div>
+                  <div class="month">${month}</div>
+                </div>
+                <div class="event-content">
+                  <span class="new-badge">NEW</span>
+                  <h2>${event.name}</h2>
+                  <p class="event-location">${event.location}${event.region ? ` • ${event.region}` : ''}</p>
+                </div>
+              </a>
+            `;
+         }).join("");
+       }
+       
+                       // Function to update display progressively
+         function updateDisplay() {
+                  // Store all events data for filtering
+        allEventsData = allEvents;
+        
+
+           
+           // Check if there are stored region filters and apply them
+           const storedRegions = localStorage.getItem('selectedRegions');
+           if (storedRegions) {
+             try {
+               const regions = JSON.parse(storedRegions);
+               if (regions.length > 0) {
+                 // Apply the stored filter
+                 filteredEvents = allEvents.filter(event => {
+                   const eventRegion = event.region || '';
+                   const normalizedEventRegion = normalizeRegionName(eventRegion);
+                   return regions.some(region => {
+                     const normalizedRegion = normalizeRegionName(region);
+                     return normalizedEventRegion === normalizedRegion;
+                   });
+                 });
+                 // Update display with filtered events
+                 updateHomepageDisplay();
+                 return;
+               }
+             } catch (e) {
+               console.error('Error parsing stored regions:', e);
+             }
+           }
+           
+           const newEvents = filterAndDisplayNewEvents(allEvents);
+           console.log('Total events loaded:', allEvents.length, 'New events found:', newEvents.length);
+           
+           if (newEvents.length > 0) {
+             const eventsHtml = renderEventsHtml(newEvents);
+             container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
+             hasDisplayedEvents = true;
+           } else if (allEvents.length > 0 && !hasDisplayedEvents) {
+             container.innerHTML = '<div class="no-events"><p>No new events found. Check back soon!</p></div>';
+           }
+         }
+       
+       // Load categories progressively
+       for (const category of categories) {
+         try {
+           const data = await fetchWithCache(`https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=${category}`, category);
+           
+           let events = [];
+           if (data && data.events && Array.isArray(data.events)) {
+             events = data.events;
+           } else if (Array.isArray(data)) {
+             // Handle raw array format
+             events = data.map(row => {
+               if (Array.isArray(row) && row.length >= 7) {
+                 return {
+                   date: row[0] || "",
+                   name: row[1] || "",
+                   discipline: row[2] || "",
+                   location: row[3] || "",
+                   url: row[4] || "",
+                   region: row[5] || "",
+                   imported: row[6] || ""
+                 };
+               }
+               return null;
+             }).filter(event => event !== null);
+           }
+           
+           allEvents.push(...events);
+           
+           // Update display after each category loads
+           updateDisplay();
+           
+         } catch (error) {
+           console.error(`Failed to load ${category} events:`, error);
+         }
+       }
+       
+       // Final update to ensure we show the complete result
+       updateDisplay();
+     }
+    
+         // Load new events when page loads with timeout
+     const loadTimeout = setTimeout(() => {
+       const container = document.getElementById('new-events');
+       container.innerHTML = '<div class="no-events"><p>Loading took too long. Please refresh the page or try again later.</p></div>';
+     }, 30000); // 30 second timeout
+     
+     loadAllNewEvents().finally(() => {
+       clearTimeout(loadTimeout);
+     });
   </script>
 </body>
 </html>
