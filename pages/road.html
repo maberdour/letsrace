@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Speedway Events</title>
+  <title>Road Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Find youth cycling events across the UK – including road races, BMX, cyclo-cross, MTB, and more. LetsRace.cc makes it easy to discover, share, and support grassroots bike racing." />
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
   
   <!-- DNS prefetch for external resources -->
   <link rel="dns-prefetch" href="//gc.zgo.at">
@@ -18,17 +18,17 @@
 </head>
 <body>
   <header>
-    <h1><a href="index.html">letsrace.cc</a></h1>
+    <h1><a href="../index.html">letsrace.cc</a></h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="road.html">Road</a>
+      <a href="../index.html">Home</a>
+      <a href="road.html" class="current">Road</a>
       <a href="track.html">Track</a>
       <a href="mtb.html">MTB</a>
       <a href="bmx.html">BMX</a>
       <a href="cyclo-cross.html">Cyclo-Cross</a>
       <a href="time-trial.html">Time Trial</a>
       <a href="hill-climb.html">Hill Climb</a>
-      <a href="speedway.html" class="current">Speedway</a>
+      <a href="speedway.html">Speedway</a>
       <a href="about.html">About</a>
     </nav>
   </header>
@@ -91,7 +91,7 @@
       nav.innerHTML = `
         <div id="close-menu"></div>
         <ul>
-          <li><a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
+          <li><a href="../index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
           <li><a href="road.html${regionSuffix}" class="${currentPage === 'road.html' ? 'current' : ''}">Road</a></li>
           <li><a href="track.html${regionSuffix}" class="${currentPage === 'track.html' ? 'current' : ''}">Track</a></li>
           <li><a href="mtb.html${regionSuffix}" class="${currentPage === 'mtb.html' ? 'current' : ''}">MTB</a></li>
@@ -142,30 +142,31 @@
     }
   </script>
 
-  <script src="render.js?v=1"></script>
-  <script src="cache.js?v=1"></script>
+  <script src="../assets/js/render.js?v=1"></script>
+  <script src="../assets/js/cache.js?v=1"></script>
   <script>
     // Add a safety timeout to prevent infinite loading
     const loadingTimeout = setTimeout(() => {
       console.log('Loading timeout reached, showing empty state');
-      renderEvents([], "events", "Speedway");
+      renderEvents([], "events", "Road");
     }, 15000); // 15 second safety timeout
     
     // Load main content first, then preload in background
-    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=speedway", "speedway")
+    fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=road", "road")
       .then(data => {
         clearTimeout(loadingTimeout);
-        renderEvents(data, "events", "Speedway");
+        renderEvents(data, "events", "Road");
         // Start preloading after main content is loaded
-        setTimeout(() => preloadOtherCategories("speedway"), 100);
+        setTimeout(() => preloadOtherCategories("road"), 100);
       })
       .catch((error) => {
         clearTimeout(loadingTimeout);
-        console.error('Failed to load Speedway events:', error);
-        renderEvents([], "events", "Speedway");
+        console.error('Failed to load road events:', error);
+        renderEvents([], "events", "Road");
         // Start preloading even if main content fails
-        setTimeout(() => preloadOtherCategories("speedway"), 100);
+        setTimeout(() => preloadOtherCategories("road"), 100);
       });
   </script>
 </body>
 </html>
+

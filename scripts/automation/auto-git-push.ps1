@@ -102,6 +102,10 @@ try {
 }
 
 try {
+    # Change to repository root for git operations
+    Write-Host "Changing to repository root..." -ForegroundColor Cyan
+    Set-Location -Path "../../"
+    
     # Stage all changes
     Write-Host "Staging all changes..." -ForegroundColor Cyan
     git add .
