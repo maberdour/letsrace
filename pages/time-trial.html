@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Find youth cycling events across the UK – including road races, BMX, cyclo-cross, MTB, and more. LetsRace.cc makes it easy to discover, share, and support grassroots bike racing." />
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
   
   <!-- DNS prefetch for external resources -->
   <link rel="dns-prefetch" href="//gc.zgo.at">
@@ -18,9 +18,9 @@
 </head>
 <body>
   <header>
-    <h1><a href="index.html">letsrace.cc</a></h1>
+    <h1><a href="../index.html">letsrace.cc</a></h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="../index.html">Home</a>
       <a href="road.html">Road</a>
       <a href="track.html">Track</a>
       <a href="mtb.html">MTB</a>
@@ -91,7 +91,7 @@
       nav.innerHTML = `
         <div id="close-menu"></div>
         <ul>
-          <li><a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
+          <li><a href="../index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
           <li><a href="road.html${regionSuffix}" class="${currentPage === 'road.html' ? 'current' : ''}">Road</a></li>
           <li><a href="track.html${regionSuffix}" class="${currentPage === 'track.html' ? 'current' : ''}">Track</a></li>
           <li><a href="mtb.html${regionSuffix}" class="${currentPage === 'mtb.html' ? 'current' : ''}">MTB</a></li>
@@ -142,8 +142,8 @@
     }
   </script>
 
-  <script src="render.js?v=1"></script>
-  <script src="cache.js?v=1"></script>
+  <script src="../assets/js/render.js?v=1"></script>
+  <script src="../assets/js/cache.js?v=1"></script>
   <script>
     // Add a safety timeout to prevent infinite loading
     const loadingTimeout = setTimeout(() => {
@@ -169,3 +169,4 @@
   </script>
 </body>
 </html>
+
