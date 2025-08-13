@@ -38,6 +38,32 @@ body {
   border-radius: 4px; 
 }
 
+.new-events-section {
+  margin: 2rem 0;
+}
+
+.new-events-section h2 {
+  text-align: center;
+  color: #0077cc;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Homepage specific events list styling */
+.new-events-section .events-list {
+  /* Use same styling as category pages */
+}
+
+.event-discipline {
+  margin: 0.5rem 0 0 0;
+  color: #0077cc;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .homepage-categories { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
@@ -708,9 +734,22 @@ body.homepage header {
   display: block;
 }
 
+/* Button container for region sidebar */
+.region-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.region-sidebar-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 .clear-regions-btn {
-  width: 100%;
-  padding: 0.75rem;
+  flex: 1;
+  padding: 0.75rem 1rem;
   background: #6c757d;
   color: white;
   border: none;
@@ -718,6 +757,7 @@ body.homepage header {
   font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  min-width: 0;
 }
 
 .clear-regions-btn:hover {
@@ -872,15 +912,30 @@ body.homepage header {
   background: #007bff;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 0.9rem;
   flex: 1;
+  min-width: 0;
+  transition: background-color 0.2s ease;
 }
 
 .apply-filter-btn:hover {
   background: #0056b3;
+}
+
+/* Button container for region sidebar */
+.region-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.region-sidebar-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 /* Mobile responsive styles */

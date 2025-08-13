@@ -33,13 +33,167 @@
     </nav>
   </header>
 
-  <div id="events">
-    <div class="content-container">
-      <div class="loading-message">
-        <div class="spinner"></div>
-        <p>Loading events...</p>
+  <div class="main-container">
+    <!-- Desktop Region Sidebar -->
+    <aside class="region-sidebar">
+      <div class="region-sidebar-content">
+        <h3>Filter by Region</h3>
+        <div class="region-checkboxes">
+          <label class="region-checkbox">
+            <input type="checkbox" value="central">
+            <span class="checkmark"></span>
+            Central
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="east-midlands">
+            <span class="checkmark"></span>
+            East Midlands
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="eastern">
+            <span class="checkmark"></span>
+            Eastern
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="north-east">
+            <span class="checkmark"></span>
+            North East
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="north-west">
+            <span class="checkmark"></span>
+            North West
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="scotland">
+            <span class="checkmark"></span>
+            Scotland
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="south">
+            <span class="checkmark"></span>
+            South
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="south-east">
+            <span class="checkmark"></span>
+            South East
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="south-west">
+            <span class="checkmark"></span>
+            South West
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="wales">
+            <span class="checkmark"></span>
+            Wales
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="west-midlands">
+            <span class="checkmark"></span>
+            West Midlands
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="yorkshire">
+            <span class="checkmark"></span>
+            Yorkshire
+          </label>
+        </div>
+        <div class="region-sidebar-buttons">
+          <button class="apply-filter-btn" onclick="applyCategoryRegionFilter()">Apply Filter</button>
+          <button class="clear-regions-btn" onclick="clearAllRegions()">Reset</button>
+        </div>
       </div>
-    </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Mobile Region Filter -->
+      <div class="mobile-region-filter">
+        <button class="mobile-filter-btn" onclick="toggleMobileFilter()">
+          <span class="filter-icon">📍</span>
+          Filter by Region
+        </button>
+        <div class="mobile-filter-panel" id="mobile-filter-panel">
+          <div class="mobile-region-checkboxes">
+            <label class="region-checkbox">
+              <input type="checkbox" value="central">
+              <span class="checkmark"></span>
+              Central
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="east-midlands">
+              <span class="checkmark"></span>
+              East Midlands
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="eastern">
+              <span class="checkmark"></span>
+              Eastern
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="north-east">
+              <span class="checkmark"></span>
+              North East
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="north-west">
+              <span class="checkmark"></span>
+              North West
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="scotland">
+              <span class="checkmark"></span>
+              Scotland
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="south">
+              <span class="checkmark"></span>
+              South
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="south-east">
+              <span class="checkmark"></span>
+              South East
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="south-west">
+              <span class="checkmark"></span>
+              South West
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="wales">
+              <span class="checkmark"></span>
+              Wales
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="west-midlands">
+              <span class="checkmark"></span>
+              West Midlands
+            </label>
+            <label class="region-checkbox">
+              <input type="checkbox" value="yorkshire">
+              <span class="checkmark"></span>
+              Yorkshire
+            </label>
+          </div>
+          <div class="region-sidebar-buttons">
+            <button class="apply-filter-btn" onclick="applyCategoryRegionFilter()">Apply Filter</button>
+            <button class="clear-regions-btn" onclick="clearAllRegions()">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="events">
+        <div class="content-container">
+          <div class="loading-message">
+            <div class="spinner"></div>
+            <p>Loading events...</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 
   <footer>
@@ -126,6 +280,62 @@
     // Initialize burger menu and preserve region
     createBurgerMenu();
     preserveRegionInLinks();
+    
+    // Category page region filter functionality
+    let categoryFilteredEvents = [];
+    let categoryAllEventsData = [];
+    
+    // Clear all region selections
+    function clearAllRegions() {
+      const checkboxes = document.querySelectorAll('.region-checkbox input');
+      checkboxes.forEach(cb => cb.checked = false);
+      // Apply the filter to show all events
+      applyCategoryRegionFilter();
+    }
+    
+    // Toggle mobile filter panel
+    function toggleMobileFilter() {
+      const panel = document.getElementById('mobile-filter-panel');
+      panel.classList.toggle('active');
+    }
+    
+    function applyCategoryRegionFilter() {
+      const selectedRegions = getSelectedRegions();
+      const container = document.getElementById('events');
+      
+      if (selectedRegions.length === 0) {
+        // No filters selected, show all events
+        categoryFilteredEvents = categoryAllEventsData;
+      } else {
+        // Filter events by selected regions
+        categoryFilteredEvents = categoryAllEventsData.filter(event => {
+          const eventRegion = event.region || '';
+          return selectedRegions.some(region => 
+            eventRegion.toLowerCase().includes(region.toLowerCase())
+          );
+        });
+      }
+      
+      // Update display with filtered events
+      updateCategoryDisplay();
+    }
+    
+    function getSelectedRegions() {
+      const checkboxes = document.querySelectorAll('.region-checkbox input:checked');
+      return Array.from(checkboxes).map(cb => cb.value);
+    }
+    
+    function updateCategoryDisplay() {
+      const container = document.getElementById('events');
+      
+      if (categoryFilteredEvents.length === 0) {
+        container.innerHTML = '<div class="no-events"><p>No events found for the selected regions.</p></div>';
+        return;
+      }
+      
+      // Render the filtered events using the existing renderEvents function
+      renderEvents(categoryFilteredEvents, "events", "Cyclo-Cross");
+    }
   </script>
 
   <!-- Load non-critical scripts after page load -->
@@ -142,7 +352,7 @@
     }
   </script>
 
-  <script src="../assets/js/render.js?v=1"></script>
+  <script src="../assets/js/render.js?v=4"></script>
   <script src="../assets/js/cache.js?v=1"></script>
   <script>
     // Add a safety timeout to prevent infinite loading
@@ -155,13 +365,18 @@
     fetchWithCache("https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=cyclo-cross", "cyclo-cross")
       .then(data => {
         clearTimeout(loadingTimeout);
+        // Store all events data for filtering
+        categoryAllEventsData = data && data.events ? data.events : [];
+        categoryFilteredEvents = categoryAllEventsData;
         renderEvents(data, "events", "Cyclo-Cross");
         // Start preloading after main content is loaded
         setTimeout(() => preloadOtherCategories("cyclo-cross"), 100);
       })
       .catch((error) => {
         clearTimeout(loadingTimeout);
-        console.error('Failed to load Cyclo-Cross events:', error);
+        console.error('Failed to load cyclo-cross events:', error);
+        categoryAllEventsData = [];
+        categoryFilteredEvents = [];
         renderEvents([], "events", "Cyclo-Cross");
         // Start preloading even if main content fails
         setTimeout(() => preloadOtherCategories("cyclo-cross"), 100);
