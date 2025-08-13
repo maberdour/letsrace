@@ -1,3 +1,14 @@
+// ============================================================================
+// CONFIGURATION - Easy to edit settings for website maintainers
+// ============================================================================
+
+// Number of days after which an event is no longer considered "NEW"
+const NEW_EVENT_DAYS = 1;
+
+// ============================================================================
+// END CONFIGURATION
+// ============================================================================
+
 // Register service worker for caching (only in production)
 if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
   window.addEventListener('load', () => {
@@ -119,6 +130,25 @@ function renderEvents(data, containerId, pageTitle) {
     });
   }
 
+  // Sort events by date (regardless of region)
+  events.sort((a, b) => {
+    let dateA, dateB;
+    
+    if (Array.isArray(a)) {
+      dateA = new Date(a[0]); // date is at index 0 in old format
+    } else {
+      dateA = new Date(a.date);
+    }
+    
+    if (Array.isArray(b)) {
+      dateB = new Date(b[0]); // date is at index 0 in old format
+    } else {
+      dateB = new Date(b.date);
+    }
+    
+    return dateA - dateB; // Sort in ascending order (earliest dates first)
+  });
+
   // Check for no events after filtering
   if (!events.length) {
     contentHtml += `
@@ -156,11 +186,11 @@ function renderEvents(data, containerId, pageTitle) {
     const day = d.getDate().toString().padStart(2, '0');
     const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
 
-    // Check if added within last 7 days
+    // Check if added within the configured number of days
     const added = new Date(imported || addedDate || '');
     const now = new Date();
-    const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
-    const isNewlyAdded = added > sevenDaysAgo;
+    const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
+    const isNewlyAdded = added > daysAgo;
 
     return `
       <a href="${url}" target="_blank" class="event ${isNewlyAdded ? 'newly-added' : ''}">
