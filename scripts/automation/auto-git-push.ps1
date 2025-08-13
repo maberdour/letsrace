@@ -110,9 +110,15 @@ try {
     Write-Host "Staging all changes..." -ForegroundColor Cyan
     git add .
     
-    # Commit with a timestamped message
-    $commitMessage = "Auto-commit: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
-    Write-Host "Committing changes..." -ForegroundColor Cyan
+    # Prompt for commit message
+    Write-Host "Enter a commit message (or press Enter for default):" -ForegroundColor Yellow
+    $userMessage = Read-Host
+    if ([string]::IsNullOrWhiteSpace($userMessage)) {
+        $commitMessage = "Auto-commit: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+    } else {
+        $commitMessage = $userMessage
+    }
+    Write-Host "Committing changes with message: $commitMessage" -ForegroundColor Cyan
     git commit -m "$commitMessage"
     
     # Push to the current branch
