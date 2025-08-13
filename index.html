@@ -33,43 +33,170 @@
     </nav>
   </header>
 
-  <div id="events">
-    <div class="homepage-welcome">
-      <p>
-        Browse upcoming races across all youth cycling disciplines.
-        This site is updated daily and currently covers events across the UK.
-      </p>
-      
-      <div class="region-selector">
-        <label for="region-select">Select your region:</label>
-        <select id="region-select" onchange="updateRegionLinks()">
-          <option value="">All Regions</option>
-          <option value="central">Central</option>
-          <option value="east-midlands">East Midlands</option>
-          <option value="eastern">Eastern</option>
-          <option value="north-east">North East</option>
-          <option value="north-west">North West</option>
-          <option value="scotland">Scotland</option>
-          <option value="south">South</option>
-          <option value="south-east">South East</option>
-          <option value="south-west">South West</option>
-          <option value="wales">Wales</option>
-          <option value="west-midlands">West Midlands</option>
-          <option value="yorkshire">Yorkshire</option>
-        </select>
+  <div class="main-container">
+    <!-- Desktop Region Sidebar -->
+    <aside class="region-sidebar">
+      <div class="region-sidebar-content">
+        <h3>Filter by Region</h3>
+        <div class="region-checkboxes">
+          <label class="region-checkbox">
+            <input type="checkbox" value="central" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            Central
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="east-midlands" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            East Midlands
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="eastern" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            Eastern
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="north-east" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            North East
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="north-west" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            North West
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="scotland" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            Scotland
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="south" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            South
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="south-east" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            South East
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="south-west" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            South West
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="wales" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            Wales
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="west-midlands" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            West Midlands
+          </label>
+          <label class="region-checkbox">
+            <input type="checkbox" value="yorkshire" onchange="updateRegionLinks()">
+            <span class="checkmark"></span>
+            Yorkshire
+          </label>
+        </div>
+        <button class="clear-regions-btn" onclick="clearAllRegions()">Clear All</button>
       </div>
-      
-      <div class="homepage-categories">
-        <a href="pages/road.html" class="category-link" data-category="road">Road</a>
-        <a href="pages/track.html" class="category-link" data-category="track">Track</a>
-        <a href="pages/mtb.html" class="category-link" data-category="mtb">MTB</a>
-        <a href="pages/bmx.html" class="category-link" data-category="bmx">BMX</a>
-        <a href="pages/cyclo-cross.html" class="category-link" data-category="cyclo-cross">Cyclo-Cross</a>
-        <a href="pages/time-trial.html" class="category-link" data-category="time-trial">Time Trial</a>
-        <a href="pages/hill-climb.html" class="category-link" data-category="hill-climb">Hill Climb</a>
-        <a href="pages/speedway.html" class="category-link" data-category="speedway">Speedway</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="homepage-welcome">
+        <p>
+          Browse upcoming races across all youth cycling disciplines.
+          This site is updated daily and currently covers events across the UK.
+        </p>
+        
+        <!-- Mobile Region Filter -->
+        <div class="mobile-region-filter">
+          <button class="mobile-filter-btn" onclick="toggleMobileFilter()">
+            <span class="filter-icon">📍</span>
+            Filter by Region
+          </button>
+          <div class="mobile-filter-panel" id="mobile-filter-panel">
+            <div class="mobile-region-checkboxes">
+              <label class="region-checkbox">
+                <input type="checkbox" value="central" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                Central
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="east-midlands" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                East Midlands
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="eastern" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                Eastern
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="north-east" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                North East
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="north-west" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                North West
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="scotland" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                Scotland
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="south" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                South
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="south-east" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                South East
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="south-west" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                South West
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="wales" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                Wales
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="west-midlands" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                West Midlands
+              </label>
+              <label class="region-checkbox">
+                <input type="checkbox" value="yorkshire" onchange="updateRegionLinks()">
+                <span class="checkmark"></span>
+                Yorkshire
+              </label>
+            </div>
+            <button class="clear-regions-btn" onclick="clearAllRegions()">Clear All</button>
+          </div>
+        </div>
+        
+        <div class="homepage-categories">
+          <a href="pages/road.html" class="category-link" data-category="road">Road</a>
+          <a href="pages/track.html" class="category-link" data-category="track">Track</a>
+          <a href="pages/mtb.html" class="category-link" data-category="mtb">MTB</a>
+          <a href="pages/bmx.html" class="category-link" data-category="bmx">BMX</a>
+          <a href="pages/cyclo-cross.html" class="category-link" data-category="cyclo-cross">Cyclo-Cross</a>
+          <a href="pages/time-trial.html" class="category-link" data-category="time-trial">Time Trial</a>
+          <a href="pages/hill-climb.html" class="category-link" data-category="hill-climb">Hill Climb</a>
+          <a href="pages/speedway.html" class="category-link" data-category="speedway">Speedway</a>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <footer>
@@ -81,28 +208,49 @@
     // Get current page filename
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
-    // Simple region link update function (no external dependencies)
+    // Region link update function for checkboxes
     function updateRegionLinks() {
-      const regionSelect = document.getElementById('region-select');
       const categoryLinks = document.querySelectorAll('.category-link');
-      const selectedRegion = regionSelect.value;
+      const checkedBoxes = document.querySelectorAll('.region-checkbox input:checked');
+      const selectedRegions = Array.from(checkedBoxes).map(cb => cb.value);
       
       categoryLinks.forEach(link => {
         const href = link.getAttribute('href');
         const baseHref = href.split('?')[0];
-        link.href = selectedRegion ? `${baseHref}?region=${selectedRegion}` : baseHref;
+        if (selectedRegions.length > 0) {
+          const regionParam = selectedRegions.join(',');
+          link.href = `${baseHref}?region=${regionParam}`;
+        } else {
+          link.href = baseHref;
+        }
       });
     }
     
-    // Set region selector to match URL parameter if present
+    // Clear all region selections
+    function clearAllRegions() {
+      const checkboxes = document.querySelectorAll('.region-checkbox input');
+      checkboxes.forEach(cb => cb.checked = false);
+      updateRegionLinks();
+    }
+    
+    // Toggle mobile filter panel
+    function toggleMobileFilter() {
+      const panel = document.getElementById('mobile-filter-panel');
+      panel.classList.toggle('active');
+    }
+    
+    // Set region checkboxes to match URL parameter if present
     const urlParams = new URLSearchParams(window.location.search);
     const regionParam = urlParams.get('region');
     if (regionParam) {
-      const regionSelect = document.getElementById('region-select');
-      if (regionSelect) {
-        regionSelect.value = regionParam;
-        updateRegionLinks();
-      }
+      const regions = regionParam.split(',');
+      regions.forEach(region => {
+        const checkbox = document.querySelector(`.region-checkbox input[value="${region}"]`);
+        if (checkbox) {
+          checkbox.checked = true;
+        }
+      });
+      updateRegionLinks();
     }
     
     // Burger menu functionality
