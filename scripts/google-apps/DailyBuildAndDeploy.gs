@@ -544,11 +544,17 @@ function normalizeType(typeValue) {
     'tt': 'Time Trial',
     'time trial': 'Time Trial',
     'hill climb': 'Hill Climb',
+    'hill-climb': 'Hill Climb',
     'hillclimb': 'Hill Climb',
     'mtb': 'MTB',
+    'mtb xc': 'MTB',
+    'mtb dh': 'MTB',
+    'mtb 4x': 'MTB',
     'bmx': 'BMX',
     'track': 'Track',
+    'track league': 'Track',
     'road': 'Road',
+    'closed circuit': 'Road',
     'speedway': 'Speedway'
   };
   
