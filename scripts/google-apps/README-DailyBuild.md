@@ -9,7 +9,7 @@ This Google Apps Script automatically converts Google Sheet data into static JSO
 - **Type Partitioning**: Creates separate JSON files for each event type
 - **Facets Index**: Builds searchable index with counts and regions
 - **GitHub Integration**: Commits files via GitHub Contents API
-- **Automated Triggers**: Runs daily at 05:30 Europe/London time
+- **Automated Triggers**: Runs daily at 03:30 Europe/London time
 
 ## File Structure
 
@@ -67,7 +67,7 @@ If you don't have a GitHub token yet:
 
 ### 2. Create Daily Trigger
 
-Run the `createDailyTrigger()` function to set up automatic daily execution at 05:30 Europe/London time.
+Run the `createDailyTrigger()` function to set up automatic daily execution at 03:30 Europe/London time.
 
 ### 3. Test the Build
 

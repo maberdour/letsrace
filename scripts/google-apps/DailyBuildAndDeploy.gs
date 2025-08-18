@@ -357,12 +357,12 @@ function createDailyTrigger() {
   ScriptApp.newTrigger('dailyBuild')
     .timeBased()
     .everyDays(1)
-    .atHour(5)
+    .atHour(3)
     .nearMinute(30)
     .inTimezone(CONFIG.SITE_TIMEZONE)
     .create();
   
-  Logger.log("✅ Daily trigger created for 05:30 Europe/London");
+  Logger.log("✅ Daily trigger created for 03:30 Europe/London");
 }
 
 /**
