@@ -35,9 +35,35 @@ The script generates the following file structure in the GitHub repository:
 
 ### 1. Set GitHub Token
 
-Run the `setGitHubToken()` function to store your GitHub personal access token in Script Properties.
+**IMPORTANT**: You must manually set your GitHub personal access token in Script Properties:
 
-**Note**: The script includes a pre-configured token for the specified repository.
+1. Go to your Google Apps Script project
+2. Click on "Project Settings" (gear icon)
+3. Click on "Script Properties" tab
+4. Add a new property:
+   - **Key**: `GITHUB_TOKEN`
+   - **Value**: Your GitHub personal access token
+5. Click "Add script property" and save
+
+**Security Note**: Never hardcode tokens in your script. Always use Script Properties for sensitive data.
+
+#### Creating a GitHub Personal Access Token
+
+If you don't have a GitHub token yet:
+
+1. Go to GitHub.com and sign in
+2. Click your profile picture → "Settings"
+3. Scroll down to "Developer settings" (bottom left)
+4. Click "Personal access tokens" → "Tokens (classic)"
+5. Click "Generate new token" → "Generate new token (classic)"
+6. Give it a descriptive name (e.g., "LetsRace Daily Build")
+7. Set expiration (recommend 90 days or custom)
+8. Select scopes:
+   - ✅ `repo` (Full control of private repositories)
+   - ✅ `workflow` (Update GitHub Action workflows)
+9. Click "Generate token"
+10. **Copy the token immediately** (you won't see it again)
+11. Use this token in the Script Properties setup above
 
 ### 2. Create Daily Trigger
 
@@ -188,10 +214,15 @@ The script provides detailed logging throughout the process:
 
 ### Common Issues
 
-1. **GitHub API Errors**: Check token permissions and repository access
-2. **Invalid Dates**: Review date formats in the Google Sheet
-3. **Unknown Types**: Add new type mappings to the `normalizeType()` function
-4. **Large Shards**: Consider implementing monthly splits for types with >5000 events
+1. **GitHub Push Protection Blocked**: If you see "Push cannot contain secrets" error:
+   - The script no longer contains hardcoded tokens
+   - Set your token manually in Script Properties as described above
+   - If you previously committed a token, you may need to rotate it
+
+2. **GitHub API Errors**: Check token permissions and repository access
+3. **Invalid Dates**: Review date formats in the Google Sheet
+4. **Unknown Types**: Add new type mappings to the `normalizeType()` function
+5. **Large Shards**: Consider implementing monthly splits for types with >5000 events
 
 ### Debugging
 
