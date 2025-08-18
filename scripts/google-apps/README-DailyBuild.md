@@ -1,0 +1,219 @@
+# Daily Build and Deploy Script
+
+This Google Apps Script automatically converts Google Sheet data into static JSON files and commits them to a GitHub repository for website deployment.
+
+## Features
+
+- **Data Processing**: Reads events from Google Sheet and normalizes data
+- **Future Events Only**: Filters to events from today onwards (Europe/London timezone)
+- **Type Partitioning**: Creates separate JSON files for each event type
+- **Facets Index**: Builds searchable index with counts and regions
+- **GitHub Integration**: Commits files via GitHub Contents API
+- **Automated Triggers**: Runs daily at 05:30 Europe/London time
+
+## File Structure
+
+The script generates the following file structure in the GitHub repository:
+
+```
+/data/
+├── type/
+│   ├── road.v20241218.json
+│   ├── track.v20241218.json
+│   ├── bmx.v20241218.json
+│   ├── mtb.v20241218.json
+│   ├── cyclo-cross.v20241218.json
+│   ├── speedway.v20241218.json
+│   ├── time-trial.v20241218.json
+│   └── hill-climb.v20241218.json
+├── index/
+│   └── facets.v20241218.json
+└── manifest.json
+```
+
+## Setup Instructions
+
+### 1. Set GitHub Token
+
+Run the `setGitHubToken()` function to store your GitHub personal access token in Script Properties.
+
+**Note**: The script includes a pre-configured token for the specified repository.
+
+### 2. Create Daily Trigger
+
+Run the `createDailyTrigger()` function to set up automatic daily execution at 05:30 Europe/London time.
+
+### 3. Test the Build
+
+Run the `dailyBuild()` function to test the complete process and verify everything works correctly.
+
+## Configuration
+
+The script is configured with the following constants:
+
+- **Spreadsheet ID**: `1r3GiuG-VF-wo-rwC6e8a25DjmN2dSmNtjpbAIUOk9Js`
+- **Sheet Name**: `Events`
+- **GitHub Owner**: `maberdour`
+- **GitHub Repository**: `letsrace`
+- **Target Branch**: `main`
+- **Timezone**: `Europe/London`
+
+## Data Processing
+
+### Input Format
+
+The script expects a Google Sheet with the following columns (no header row):
+
+| Column | Index | Description |
+|--------|-------|-------------|
+| A | 0 | Event Date |
+| B | 1 | Event Name |
+| C | 2 | Event Type |
+| D | 3 | Location |
+| E | 4 | URL |
+| F | 5 | Region |
+| G | 6 | Date Added |
+
+### Output Format
+
+Each event is normalized to the following JSON schema:
+
+```json
+{
+  "id": "string",
+  "name": "string",
+  "type": "Road|Track|BMX|MTB|Cyclo Cross|Speedway|Time Trial|Hill Climb",
+  "region": "string",
+  "venue": "string",
+  "postcode": "string|null",
+  "date": "YYYY-MM-DD",
+  "start_time": "HH:mm|null",
+  "url": "string",
+  "source": "string",
+  "last_updated": "YYYY-MM-DDTHH:mm:ssZ"
+}
+```
+
+### Data Normalization
+
+- **Types**: Mapped to canonical list with common variants supported
+- **Regions**: Canonicalized using predefined mappings
+- **Dates**: Converted to ISO format (YYYY-MM-DD) in Europe/London timezone
+- **IDs**: Deterministic SHA-1 hash based on name, date, and venue
+- **Whitespace**: Trimmed and condensed
+
+## Event Types
+
+The script supports these canonical event types:
+
+- Road
+- Track
+- BMX
+- MTB
+- Cyclo Cross
+- Speedway
+- Time Trial
+- Hill Climb
+
+## Region Mapping
+
+Regions are mapped to standardized names:
+
+- London & South East
+- South West
+- Midlands
+- North West
+- North East
+- Yorkshire
+- East
+- Wales
+- Scotland
+- Northern Ireland
+
+## Functions Reference
+
+### Main Functions
+
+- `dailyBuild()` - Main function that runs the complete build process
+- `createDailyTrigger()` - Sets up daily automation trigger
+- `setGitHubToken()` - Stores GitHub token in Script Properties
+
+### Utility Functions
+
+- `getGitHubToken()` - Retrieves token from Script Properties
+- `isoLocalDateUK(date)` - Converts date to YYYY-MM-DD in Europe/London
+- `nowISO()` - Returns current time in ISO format (UTC)
+- `toKebabCase(type)` - Converts type to kebab-case for filenames
+- `hashId(input)` - Generates deterministic SHA-1 hash
+- `putGithubFile(path, content, message)` - Commits file to GitHub
+
+### Data Processing Functions
+
+- `readSheetData()` - Reads data from Google Sheet
+- `processSheetData(sheetData)` - Normalizes and validates data
+- `partitionByType(events)` - Groups events by type
+- `buildFacetsIndex(events)` - Creates searchable index
+- `parseEventDate(dateValue)` - Parses various date formats
+- `normalizeType(typeValue)` - Maps to canonical types
+- `normalizeRegion(regionValue)` - Canonicalizes regions
+
+## Error Handling
+
+The script includes comprehensive error handling:
+
+- Invalid dates are logged and skipped
+- Unknown event types are logged and skipped
+- GitHub API errors are logged with full response details
+- Large shard warnings (>5000 events) are logged
+- All errors are logged with row numbers for debugging
+
+## Logging
+
+The script provides detailed logging throughout the process:
+
+- Number of rows read from sheet
+- Number of rows skipped with reasons
+- Events processed per type
+- Files committed to GitHub
+- Build summary with counts
+
+## Security
+
+- GitHub token is stored securely in Script Properties
+- Token is never logged or exposed in output
+- All API requests use HTTPS
+- Error responses don't expose sensitive information
+
+## Troubleshooting
+
+### Common Issues
+
+1. **GitHub API Errors**: Check token permissions and repository access
+2. **Invalid Dates**: Review date formats in the Google Sheet
+3. **Unknown Types**: Add new type mappings to the `normalizeType()` function
+4. **Large Shards**: Consider implementing monthly splits for types with >5000 events
+
+### Debugging
+
+- Check the Apps Script execution logs for detailed error messages
+- Verify Google Sheet permissions and data format
+- Test individual functions before running the full build
+- Review GitHub repository permissions and branch protection rules
+
+## Performance Considerations
+
+- The script processes data in memory for efficiency
+- Large datasets (>10,000 events) may require optimization
+- GitHub API rate limits are respected with proper error handling
+- Empty shards are still written to maintain consistent structure
+
+## Future Enhancements
+
+Potential improvements for future versions:
+
+- Monthly data splits for large event types
+- Incremental updates instead of full rebuilds
+- Data validation rules and schema enforcement
+- Backup and rollback capabilities
+- Performance monitoring and metrics
+- Webhook notifications for build status

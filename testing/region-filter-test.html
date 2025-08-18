@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region Filter Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .region-checkbox {
+            display: block;
+            margin: 10px 0;
+        }
+        .region-checkbox input {
+            margin-right: 10px;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .status {
+            margin: 20px 0;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Region Filter Test</h1>
+    
+    <div class="status" id="status">
+        Status: Ready to test
+    </div>
+    
+    <h3>Test Steps:</h3>
+    <ol>
+        <li>Select a region (e.g., "Central")</li>
+        <li>Click "Apply Filter"</li>
+        <li>Unselect the region</li>
+        <li>Click "Apply Filter" again</li>
+        <li>Verify that the region is properly unselected</li>
+    </ol>
+    
+    <h3>Region Selection:</h3>
+    <label class="region-checkbox">
+        <input type="checkbox" value="central"> Central
+    </label>
+    <label class="region-checkbox">
+        <input type="checkbox" value="east-midlands"> East Midlands
+    </label>
+    <label class="region-checkbox">
+        <input type="checkbox" value="eastern"> Eastern
+    </label>
+    
+    <div class="buttons">
+        <button onclick="applyFilter()">Apply Filter</button>
+        <button onclick="clearFilter()">Reset</button>
+        <button onclick="checkState()">Check Current State</button>
+    </div>
+    
+    <div id="output"></div>
+    
+    <script>
+        // Simulate the filter functions from the main site
+        function applyFilter() {
+            const selectedRegions = getSelectedRegions();
+            const status = document.getElementById('status');
+            const output = document.getElementById('output');
+            
+            // Store selected regions in localStorage for persistence
+            if (selectedRegions.length > 0) {
+                localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
+                status.textContent = `Status: Applied filter with regions: ${selectedRegions.join(', ')}`;
+            } else {
+                localStorage.removeItem('selectedRegions');
+                status.textContent = 'Status: Applied filter with no regions (showing all events)';
+            }
+            
+            output.innerHTML = `<p>Selected regions: ${selectedRegions.length > 0 ? selectedRegions.join(', ') : 'None (all events)'}</p>`;
+            output.innerHTML += `<p>localStorage: ${localStorage.getItem('selectedRegions') || 'null'}</p>`;
+        }
+        
+        function clearFilter() {
+            const checkboxes = document.querySelectorAll('.region-checkbox input');
+            checkboxes.forEach(cb => cb.checked = false);
+            
+            // Clear localStorage
+            localStorage.removeItem('selectedRegions');
+            
+            // Apply the filter to show all events
+            applyFilter();
+        }
+        
+        function getSelectedRegions() {
+            const checkboxes = document.querySelectorAll('.region-checkbox input:checked');
+            return Array.from(checkboxes).map(cb => cb.value);
+        }
+        
+        function checkState() {
+            const selectedRegions = getSelectedRegions();
+            const storedRegions = localStorage.getItem('selectedRegions');
+            const output = document.getElementById('output');
+            
+            output.innerHTML = `
+                <h4>Current State:</h4>
+                <p>Checked checkboxes: ${selectedRegions.join(', ') || 'None'}</p>
+                <p>localStorage: ${storedRegions || 'null'}</p>
+                <p>Parsed localStorage: ${storedRegions ? JSON.parse(storedRegions).join(', ') : 'null'}</p>
+            `;
+        }
+        
+        // Set initial checkbox states based on localStorage
+        function setInitialCheckboxStates() {
+            const storedRegions = localStorage.getItem('selectedRegions');
+            const allCheckboxes = document.querySelectorAll('.region-checkbox input');
+            
+            // Always start with all checkboxes unchecked
+            allCheckboxes.forEach(cb => cb.checked = false);
+            
+            if (storedRegions) {
+                try {
+                    const regions = JSON.parse(storedRegions);
+                    
+                    if (regions.length > 0) {
+                        regions.forEach(region => {
+                            const checkboxes = document.querySelectorAll(`.region-checkbox input[value="${region}"]`);
+                            checkboxes.forEach(checkbox => {
+                                checkbox.checked = true;
+                            });
+                        });
+                    }
+                } catch (e) {
+                    console.error('Error parsing stored regions:', e);
+                }
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                setInitialCheckboxStates();
+                checkState();
+            }, 10);
+        });
+    </script>
+</body>
+</html>

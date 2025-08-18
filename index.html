@@ -282,26 +282,33 @@
       // Set initial checkbox states based on localStorage
       function setInitialHomepageCheckboxStates() {
         const storedRegions = localStorage.getItem('selectedRegions');
+        const allCheckboxes = document.querySelectorAll('.region-checkbox input');
+        
+        // Always start with all checkboxes unchecked
+        allCheckboxes.forEach(cb => cb.checked = false);
+        
         if (storedRegions) {
           try {
             const regions = JSON.parse(storedRegions);
-            const allCheckboxes = document.querySelectorAll('.region-checkbox input');
-            allCheckboxes.forEach(cb => cb.checked = false);
             
-            regions.forEach(region => {
-              const checkboxes = document.querySelectorAll(`.region-checkbox input[value="${region}"]`);
-              checkboxes.forEach(checkbox => {
-                checkbox.checked = true;
+            if (regions.length > 0) {
+              regions.forEach(region => {
+                const checkboxes = document.querySelectorAll(`.region-checkbox input[value="${region}"]`);
+                checkboxes.forEach(checkbox => {
+                  checkbox.checked = true;
+                });
               });
-            });
+            }
           } catch (e) {
             console.error('Error parsing stored regions:', e);
           }
         }
       }
       
-      // Set initial states when page loads
-      setInitialHomepageCheckboxStates();
+      // Set initial states when page loads with a small delay to ensure DOM is ready
+      setTimeout(() => {
+        setInitialHomepageCheckboxStates();
+      }, 10);
      
      // Homepage region filter functionality
      let filteredEvents = [];
@@ -405,7 +412,7 @@
    </script>
 
   <!-- Load non-critical scripts after page load -->
-  <script src="assets/js/render.js?v=4"></script>
+  <script src="assets/js/render.js?v=7"></script>
   <script src="assets/js/cache.js?v=1"></script>
   <script>
     // Defer service worker registration

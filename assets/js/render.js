@@ -80,15 +80,19 @@ function renderEvents(data, containerId, pageTitle) {
 
   // Get region filter from localStorage or URL
   let selectedRegion = getRegionFromUrl();
+  console.log('Initial selectedRegion from URL:', selectedRegion);
   
   // If no region in URL, check localStorage
   if (!selectedRegion) {
     const storedRegions = localStorage.getItem('selectedRegions');
+    console.log('Stored regions from localStorage:', storedRegions);
     if (storedRegions) {
       try {
         const regions = JSON.parse(storedRegions);
+        console.log('Parsed regions:', regions);
         if (regions.length > 0) {
           selectedRegion = regions.join(',');
+          console.log('Final selectedRegion from localStorage:', selectedRegion);
         }
       } catch (e) {
         console.error('Error parsing stored regions:', e);
@@ -166,8 +170,8 @@ function renderEvents(data, containerId, pageTitle) {
              </label>
            </div>
           <div class="region-sidebar-buttons">
-            <button class="apply-filter-btn" onclick="applyEventRegionFilter()">Apply Filter</button>
-            <button class="clear-regions-btn" onclick="clearEventRegionFilter()">Reset</button>
+            <button class="apply-filter-btn">Apply Filter</button>
+            <button class="clear-regions-btn">Reset</button>
           </div>
         </div>
       </aside>
@@ -248,8 +252,8 @@ function renderEvents(data, containerId, pageTitle) {
                 </label>
               </div>
               <div class="region-sidebar-buttons">
-                <button class="apply-filter-btn" onclick="applyEventRegionFilter()">Apply Filter</button>
-                <button class="clear-regions-btn" onclick="clearEventRegionFilter()">Reset</button>
+                <button class="apply-filter-btn">Apply Filter</button>
+                <button class="clear-regions-btn">Reset</button>
               </div>
             </div>
           </div>
@@ -273,23 +277,8 @@ function renderEvents(data, containerId, pageTitle) {
 
 
 
-  // Filter events by region if specified
-  if (selectedRegion) {
-    const selectedRegions = selectedRegion.split(',').map(r => normalizeRegionName(r));
-    events = events.filter(event => {
-      let eventRegion = '';
-      if (Array.isArray(event)) {
-        eventRegion = event[5] || ''; // region is at index 5 in old format
-      } else {
-        eventRegion = event.region || '';
-      }
-      const normalizedEventRegion = normalizeRegionName(eventRegion);
-      // Use exact matching instead of includes() to avoid partial matches
-      return selectedRegions.some(selectedRegion => 
-        normalizedEventRegion === selectedRegion
-      );
-    });
-  }
+  // Don't filter events by region here - let applyEventRegionFilter handle it dynamically
+  // This allows the filter to work correctly when modifying it on subsequent pages
 
   // Sort events by date (regardless of region)
   events.sort((a, b) => {
@@ -322,6 +311,7 @@ function renderEvents(data, containerId, pageTitle) {
     return;
   }
 
+  console.log('Total events to render:', events.length);
   const eventsHtml = events.map(event => {
     // Handle both old array format and new object format
     let eventDate, title, discipline, location, url, region, imported;
@@ -389,8 +379,165 @@ function renderEvents(data, containerId, pageTitle) {
 
   container.innerHTML = contentHtml + eventsHtml + '</div></div></main></div>';
   
-  // Set initial checkbox states based on URL parameters (for desktop sidebar)
-  setInitialEventCheckboxStates();
+  // Debug: Check how many events are actually in the DOM
+  setTimeout(() => {
+    const allEventsInDOM = document.querySelectorAll('.event');
+    console.log('Events actually rendered in DOM:', allEventsInDOM.length);
+    
+      // Apply initial filter if there are selected regions
+  if (selectedRegion) {
+    console.log('Applying initial filter for:', selectedRegion);
+    // Use a longer timeout to ensure DOM is fully ready
+    setTimeout(() => {
+      window.applyEventRegionFilter();
+    }, 200);
+  }
+  }, 100);
+  
+    // Set initial checkbox states based on URL parameters (for desktop sidebar)
+  // Use a timeout to ensure DOM is fully ready
+  setTimeout(() => {
+    setInitialEventCheckboxStates();
+    
+              // Add event listeners to checkboxes for immediate filtering
+     const checkboxes = document.querySelectorAll('.region-checkbox input');
+     checkboxes.forEach((checkbox, index) => {
+       // Store a reference to the change handler function so we can remove it later
+       const changeHandler = function(e) {
+         console.log(`Checkbox ${index} changed:`, checkbox.value, checkbox.checked);
+         
+         // Get all currently checked checkboxes (including this one that just changed)
+         const checkedBoxes = document.querySelectorAll('.region-checkbox input:checked');
+         const selectedRegions = Array.from(checkedBoxes).map(cb => cb.value);
+         
+         console.log('Selected regions after checkbox change:', selectedRegions);
+         
+         // Update localStorage
+         if (selectedRegions.length > 0) {
+           localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
+         } else {
+           localStorage.removeItem('selectedRegions');
+         }
+         
+         // Update URL
+         const url = new URL(window.location);
+         if (selectedRegions.length > 0) {
+           url.searchParams.set('region', selectedRegions.join(','));
+         } else {
+           url.searchParams.delete('region');
+         }
+         window.history.replaceState({}, '', url);
+         
+         // Don't reload immediately - let the user use the Apply Filter button
+         console.log('Checkbox state updated. Use Apply Filter button to apply changes.');
+       };
+       
+       // Add the event listener to the checkbox
+       checkbox.addEventListener('change', changeHandler);
+     });
+    
+          // Add debugging for button clicks
+      const applyButtons = document.querySelectorAll('.apply-filter-btn');
+      const clearButtons = document.querySelectorAll('.clear-regions-btn');
+      console.log('Found apply buttons:', applyButtons.length);
+      console.log('Found clear buttons:', clearButtons.length);
+      
+      // Add event listeners to Apply Filter buttons
+      applyButtons.forEach((button, index) => {
+       console.log(`Apply Button ${index}:`, button);
+       
+       // Test if the button is actually clickable
+       console.log(`Apply Button ${index} clickable test:`, button.offsetWidth > 0 && button.offsetHeight > 0);
+       console.log(`Apply Button ${index} onclick attribute:`, button.getAttribute('onclick'));
+       
+       console.log(`Adding click listener to Apply Filter Button ${index}`);
+       button.addEventListener('click', function(e) {
+         console.log(`=== Apply Filter Button ${index} clicked ===`);
+         console.log(`Apply Filter Button ${index} clicked via event listener!`);
+         console.log('Event:', e);
+         console.log('Window applyEventRegionFilter exists:', typeof window.applyEventRegionFilter);
+         console.log('Current page URL:', window.location.href);
+         
+         // Prevent default and stop propagation to ensure our handler runs
+         e.preventDefault();
+         e.stopPropagation();
+         
+         // Try to call the function directly
+         if (typeof window.applyEventRegionFilter === 'function') {
+           console.log('Calling applyEventRegionFilter directly...');
+           window.applyEventRegionFilter();
+         } else {
+           console.log('applyEventRegionFilter is not a function!');
+         }
+       });
+       console.log(`Click listener added to Apply Filter Button ${index}`);
+       
+       // Also add a mousedown listener as backup
+       button.addEventListener('mousedown', function(e) {
+         console.log(`Apply Button ${index} mousedown detected!`);
+       });
+       
+       // Test if we can actually interact with the button
+       if (index === 0) { // Only for the first (desktop) button
+         console.log('Testing Apply button interaction...');
+       }
+      
+      // Also test onclick attribute directly
+      const onclickAttr = button.getAttribute('onclick');
+      if (onclickAttr) {
+        console.log(`Apply Button ${index} onclick attribute found:`, onclickAttr);
+      } else {
+        console.log(`Apply Button ${index} no onclick attribute found`);
+      }
+    });
+    
+    // Add event listeners to Clear Filter buttons
+    clearButtons.forEach((button, index) => {
+     console.log(`Clear Button ${index}:`, button);
+     
+     // Test if the button is actually clickable
+     console.log(`Clear Button ${index} clickable test:`, button.offsetWidth > 0 && button.offsetHeight > 0);
+     console.log(`Clear Button ${index} onclick attribute:`, button.getAttribute('onclick'));
+     
+     console.log(`Adding click listener to Clear Filter Button ${index}`);
+     button.addEventListener('click', function(e) {
+       console.log(`Clear Filter Button ${index} clicked via event listener!`);
+       console.log('Event:', e);
+       console.log('Window clearEventRegionFilter exists:', typeof window.clearEventRegionFilter);
+       
+       // Prevent default and stop propagation to ensure our handler runs
+       e.preventDefault();
+       e.stopPropagation();
+       
+       // Try to call the function directly
+       if (typeof window.clearEventRegionFilter === 'function') {
+         console.log('Calling clearEventRegionFilter directly...');
+         window.clearEventRegionFilter();
+       } else {
+         console.log('clearEventRegionFilter is not a function!');
+       }
+     });
+     console.log(`Click listener added to Clear Filter Button ${index}`);
+     
+     // Also add a mousedown listener as backup
+     button.addEventListener('mousedown', function(e) {
+       console.log(`Clear Button ${index} mousedown detected!`);
+     });
+     
+     // Test if we can actually interact with the button
+     if (index === 0) { // Only for the first (desktop) button
+       console.log('Testing Clear button interaction...');
+     }
+    
+    // Also test onclick attribute directly
+    const onclickAttr = button.getAttribute('onclick');
+    if (onclickAttr) {
+      console.log(`Clear Button ${index} onclick attribute found:`, onclickAttr);
+    } else {
+      console.log(`Clear Button ${index} no onclick attribute found`);
+    }
+  });
+  }, 10);
   
   // Add click tracking to event cards
   const eventCards = container.querySelectorAll('.event');
@@ -697,14 +844,25 @@ function createBurgerMenu() {
 
 // Event page region filter functions
 
-function applyEventRegionFilter() {
+// Make function globally available
+console.log('Defining applyEventRegionFilter function globally');
+window.applyEventRegionFilter = function() {
+  console.log('=== applyEventRegionFilter START ===');
+  console.log('applyEventRegionFilter - function called');
+  console.log('Current page URL:', window.location.href);
+  console.log('Current page pathname:', window.location.pathname);
+  console.log('Timestamp:', new Date().toISOString());
+  
   const selectedRegions = getSelectedRegions();
+  console.log('applyEventRegionFilter - selectedRegions:', selectedRegions);
   
   // Store selected regions in localStorage for persistence
   if (selectedRegions.length > 0) {
     localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
+    console.log('Stored regions in localStorage:', selectedRegions);
   } else {
     localStorage.removeItem('selectedRegions');
+    console.log('Removed regions from localStorage');
   }
   
   // Update URL with selected regions
@@ -715,23 +873,94 @@ function applyEventRegionFilter() {
     url.searchParams.delete('region');
   }
   window.history.replaceState({}, '', url);
+  console.log('Updated URL:', url.toString());
   
-  // Reload the page to apply the filter
-  window.location.reload();
+  // Filter events immediately without page reload
+  console.log('Filtering events immediately...');
+  console.log('Selected regions to filter by:', selectedRegions);
+  
+  // Get all events from the current page
+  const eventElements = document.querySelectorAll('.event');
+  console.log('Found event elements:', eventElements.length);
+  
+  let visibleCount = 0;
+  let hiddenCount = 0;
+  
+  eventElements.forEach((eventElement, index) => {
+    const locationElement = eventElement.querySelector('.event-location');
+    if (locationElement) {
+      const locationText = locationElement.textContent.trim();
+      console.log(`Event ${index} location text: "${locationText}"`);
+      
+      // Extract region from location text (format: "Location • Region")
+      const regionMatch = locationText.match(/•\s*(.+)$/);
+      const eventRegion = regionMatch ? regionMatch[1].trim() : '';
+      console.log(`Event ${index} extracted region: "${eventRegion}"`);
+      
+      if (selectedRegions.length === 0) {
+        // No filters selected, show all events
+        eventElement.style.display = 'flex';
+        visibleCount++;
+        console.log(`Event ${index}: ${eventRegion} - SHOW (no filters)`);
+      } else {
+        // Check if event region matches any selected region
+        const normalizedEventRegion = normalizeRegionName(eventRegion);
+        console.log(`Event ${index} normalized region: "${normalizedEventRegion}"`);
+        
+        const shouldShow = selectedRegions.some(region => {
+          const normalizedRegion = normalizeRegionName(region);
+          const matches = normalizedEventRegion === normalizedRegion;
+          console.log(`Comparing: "${normalizedEventRegion}" with "${normalizedRegion}" = ${matches}`);
+          return matches;
+        });
+        
+        eventElement.style.display = shouldShow ? 'flex' : 'none';
+        if (shouldShow) {
+          visibleCount++;
+          console.log(`Event ${index}: ${eventRegion} (${normalizedEventRegion}) - SHOW`);
+        } else {
+          hiddenCount++;
+          console.log(`Event ${index}: ${eventRegion} (${normalizedEventRegion}) - HIDE`);
+        }
+      }
+    } else {
+      // If no location element found, hide the event
+      eventElement.style.display = 'none';
+      hiddenCount++;
+      console.log(`Event ${index}: No location element - HIDE`);
+    }
+  });
+  
+  console.log(`Filtering complete: ${visibleCount} visible, ${hiddenCount} hidden`);
+  
+  // Update the results count
+  const visibleEvents = document.querySelectorAll('.event[style*="display: flex"], .event:not([style*="display: none"])');
+  console.log('Visible events after filtering:', visibleEvents.length);
+  
+  // Update any results count display
+  const resultsCountElement = document.querySelector('.results-count');
+  if (resultsCountElement) {
+    resultsCountElement.textContent = `${visibleEvents.length} events found`;
+  }
 }
 
-function clearEventRegionFilter() {
+window.clearEventRegionFilter = function() {
   const checkboxes = document.querySelectorAll('.region-checkbox input');
   checkboxes.forEach(cb => cb.checked = false);
   
   // Clear localStorage
   localStorage.removeItem('selectedRegions');
   
-  // Apply the filter to show all events
-  applyEventRegionFilter();
+  // Update URL to remove region parameter
+  const url = new URL(window.location);
+  url.searchParams.delete('region');
+  window.history.replaceState({}, '', url);
+  
+  // Reload the page to show all events
+  window.location.reload();
 }
 
-function toggleEventMobileFilter() {
+window.toggleEventMobileFilter = function() {
   const panel = document.getElementById('event-mobile-filter-panel');
   const isOpening = !panel.classList.contains('active');
   panel.classList.toggle('active');
@@ -746,8 +975,30 @@ function toggleEventMobileFilter() {
 }
 
 function getSelectedRegions() {
+  // Get ALL checkboxes first to see their states
+  const allCheckboxes = document.querySelectorAll('.region-checkbox input');
+  console.log('getSelectedRegions - all checkboxes found:', allCheckboxes.length);
+  
+  // Log the state of each checkbox with more detail
+  allCheckboxes.forEach((cb, index) => {
+    console.log(`Checkbox ${index}: value="${cb.value}", checked=${cb.checked}, visible=${cb.offsetParent !== null}`);
+  });
+  
+  // Now get only the checked ones
   const checkboxes = document.querySelectorAll('.region-checkbox input:checked');
-  return Array.from(checkboxes).map(cb => cb.value);
+  console.log('getSelectedRegions - checked checkboxes:', checkboxes.length);
+  const regions = Array.from(checkboxes).map(cb => cb.value);
+  console.log('getSelectedRegions - raw regions:', regions);
+  
+  // Remove duplicates while preserving order
+  const uniqueRegions = [...new Set(regions)];
+  console.log('getSelectedRegions - unique regions:', uniqueRegions);
+  
+  // Also log what's in localStorage for comparison
+  const storedRegions = localStorage.getItem('selectedRegions');
+  console.log('getSelectedRegions - storedRegions from localStorage:', storedRegions);
+  
+  return uniqueRegions;
 }
 
 function setInitialEventCheckboxStates() {
@@ -756,9 +1007,11 @@ function setInitialEventCheckboxStates() {
   
   // Try to get from localStorage
   const storedRegions = localStorage.getItem('selectedRegions');
+  console.log('setInitialEventCheckboxStates - storedRegions:', storedRegions);
   if (storedRegions) {
     try {
       regions = JSON.parse(storedRegions);
+      console.log('setInitialEventCheckboxStates - parsed regions:', regions);
     } catch (e) {
       console.error('Error parsing stored regions:', e);
     }
@@ -768,15 +1021,20 @@ function setInitialEventCheckboxStates() {
   if (regions.length === 0) {
     const urlParams = new URLSearchParams(window.location.search);
     const regionParam = urlParams.get('region');
+    console.log('setInitialEventCheckboxStates - regionParam from URL:', regionParam);
     if (regionParam) {
       regions = regionParam.split(',');
     }
   }
   
+  // Always set checkbox states from stored regions on page load
+  // This ensures consistent state restoration
+  
   // Set all checkbox states (both desktop and mobile)
   const allCheckboxes = document.querySelectorAll('.region-checkbox input');
   allCheckboxes.forEach(cb => cb.checked = false);
   
+  // Only check boxes if there are regions to check
   if (regions.length > 0) {
     regions.forEach(region => {
       const checkboxes = document.querySelectorAll(`.region-checkbox input[value="${region}"]`);
@@ -785,4 +1043,7 @@ function setInitialEventCheckboxStates() {
       });
     });
   }
+  
+  // Log for debugging
+  console.log('Set initial checkbox states. Regions:', regions, 'Checkboxes found:', allCheckboxes.length);
 }

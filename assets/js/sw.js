@@ -1,4 +1,4 @@
-const CACHE_NAME = 'letsrace-v1';
+const CACHE_NAME = 'letsrace-v4';
 const CACHE_EXPIRY = 23 * 60 * 60 * 1000; // 23 hours
 
 // URLs to cache
