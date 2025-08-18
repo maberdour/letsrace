@@ -1,0 +1,15 @@
+{
+  "type": {
+    "road": "/data/type/road.v20250818.json",
+    "track": "/data/type/track.v20250818.json",
+    "bmx": "/data/type/bmx.v20250818.json",
+    "mtb": "/data/type/mtb.v20250818.json",
+    "cyclo-cross": "/data/type/cyclo-cross.v20250818.json",
+    "speedway": "/data/type/speedway.v20250818.json",
+    "time-trial": "/data/type/time-trial.v20250818.json",
+    "hill-climb": "/data/type/hill-climb.v20250818.json"
+  },
+  "index": {
+    "facets": "/data/index/facets.v20250818.json"
+  }
+}
