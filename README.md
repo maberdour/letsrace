@@ -60,7 +60,8 @@ Events are automatically fetched from British Cycling and other sources. The sit
 ### Key Files
 - `index.html` - Homepage
 - `assets/css/styles.css` - Main stylesheet
-- `assets/js/render.js` - Event rendering logic
+- `assets/js/render.js` - Core rendering functions (header, footer, caching)
+- `assets/js/events-page.js` - Event page system
 - `assets/js/cache.js` - Caching system
 - `content/about.md` - About page content
 

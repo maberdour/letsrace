@@ -32,7 +32,7 @@
 **Result**: Burger menu works perfectly on all pages.
 
 ### 3. **Event Page Loading Speed** ✅ FIXED
-**Problem**: Event pages (road.html, mtb.html, etc.) were "painfully slow to load".
+**Problem**: Event pages (road.html, mtb.html, etc.) were "painfully slow to load". *Note: These old event pages have been removed and replaced with the new system.*
 
 **Root Causes**:
 - **Aggressive preloading**: 96 parallel API requests blocking main content
@@ -94,13 +94,14 @@ const priorityRegions = ['', 'south-east', 'south-west', 'central'];
 
 **Root Cause**: Only `road.html` and `mtb.html` had been updated with the optimized structure, while other category pages still used the old loading pattern.
 
-**Solution Applied**:
-- ✅ **Updated `cyclo-cross.html`** with optimized structure
-- ✅ **Updated `time-trial.html`** with optimized structure  
-- ✅ **Updated `hill-climb.html`** with optimized structure
-- ✅ **Updated `speedway.html`** with optimized structure
-- ✅ **Updated `track.html`** with optimized structure
-- ✅ **Updated `bmx.html`** with optimized structure
+**Solution Applied**: *Note: All old event pages have been removed and replaced with the new system.*
+
+- ✅ **Updated `cyclo-cross.html`** with optimized structure *(removed)*
+- ✅ **Updated `time-trial.html`** with optimized structure *(removed)*
+- ✅ **Updated `hill-climb.html`** with optimized structure *(removed)*
+- ✅ **Updated `speedway.html`** with optimized structure *(removed)*
+- ✅ **Updated `track.html`** with optimized structure *(removed)*
+- ✅ **Updated `bmx.html`** with optimized structure *(removed)*
 
 **Changes Applied to Each Page**:
 - **Inlined header and footer HTML** for instant page structure
@@ -183,8 +184,8 @@ const priorityRegions = ['', 'south-east', 'south-west', 'central'];
 
 ### **Core Files**:
 - `index.html` - Homepage optimization
-- `road.html` - Event page optimization
-- `mtb.html` - Event page optimization
+- `road.html` - Event page optimization *(removed)*
+- `mtb.html` - Event page optimization *(removed)*
 - `styles.css` - Consolidated all styles
 - `cache.js` - Smart preloading implementation
 - `sw.js` - Optimized service worker

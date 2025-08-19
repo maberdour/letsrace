@@ -11,7 +11,7 @@
  * - Commits files to GitHub via Contents API
  * - Manages daily triggers for automation
  * 
- * Setup Notes:
+ * Setup Notes:Q
  * 1. Run setGitHubToken() to set your GitHub token in Script Properties
  * 2. Run createDailyTrigger() to set up the daily automation
  * 3. Test with dailyBuild() to verify everything works
@@ -106,16 +106,22 @@ function dailyBuild() {
     const today = new Date();
     const dateString = Utilities.formatDate(today, CONFIG.SITE_TIMEZONE, 'yyyyMMdd');
     
-    // Step 6: Commit files to GitHub
+    // Step 6: Create new events file (events from last 7 days)
+    const newEvents = createNewEventsFile(processedData.events);
+    const newEventsFilename = `/data/new-events.v${dateString}.json`;
+    putGithubFile(newEventsFilename, JSON.stringify(newEvents, null, 2), 
+                  `chore(data): daily build ${isoLocalDateUK(today)}`);
+    
+    // Step 7: Commit files to GitHub
     const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString);
     
-    // Step 7: Write manifest
-    const manifest = createManifest(committedFiles, dateString);
+    // Step 8: Write manifest
+    const manifest = createManifest(committedFiles, dateString, newEventsFilename);
     putGithubFile('/data/manifest.json', JSON.stringify(manifest, null, 2), 
                   `chore(data): daily build ${isoLocalDateUK(today)}`);
     
     // Step 8: Log summary
-    logBuildSummary(sheetData.length, processedData.skipped, partitionedData, committedFiles);
+    logBuildSummary(sheetData.length, processedData.skipped, partitionedData, committedFiles, dateString);
     
     Logger.log("🎉 Daily build completed successfully!");
     
@@ -193,7 +199,7 @@ function processSheetData(sheetData) {
         start_time: extractStartTime(row[COLUMNS.EVENT_DATE]),
         url: normalizeValue(row[COLUMNS.URL]),
         source: "Google Sheet",
-        last_updated: nowISO()
+        last_updated: parseDateAdded(row[COLUMNS.DATE_ADDED]) || nowISO()
       };
       
       events.push(event);
@@ -310,19 +316,43 @@ function commitFilesToGitHub(partitionedData, facets, dateString) {
 }
 
 /**
+ * Create new events file (events from last 7 days)
+ */
+function createNewEventsFile(events) {
+  const sevenDaysAgo = new Date();
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  sevenDaysAgo.setHours(0, 0, 0, 0);
+  
+  const newEvents = events.filter(event => {
+    const lastUpdated = new Date(event.last_updated);
+    return lastUpdated > sevenDaysAgo;
+  });
+  
+  Logger.log(`📅 New events file: ${newEvents.length} events from last 7 days`);
+  
+  return {
+    events: newEvents,
+    last_build: nowISO(),
+    total_new_events: newEvents.length,
+    cutoff_date: isoLocalDateUK(sevenDaysAgo)
+  };
+}
+
+/**
  * Create manifest pointing to today's files
  */
-function createManifest(committedFiles, dateString) {
+function createManifest(committedFiles, dateString, newEventsFilename) {
   return {
     type: committedFiles.type,
-    index: committedFiles.index
+    index: committedFiles.index,
+    new_events: newEventsFilename
   };
 }
 
 /**
  * Log build summary
  */
-function logBuildSummary(totalRows, skippedRows, partitionedData, committedFiles) {
+function logBuildSummary(totalRows, skippedRows, partitionedData, committedFiles, dateString) {
   Logger.log("📋 Build Summary:");
   Logger.log(`   Total rows read: ${totalRows}`);
   Logger.log(`   Rows skipped: ${skippedRows}`);
@@ -338,6 +368,7 @@ function logBuildSummary(totalRows, skippedRows, partitionedData, committedFiles
     Logger.log(`     ${committedFiles.type[type]}`);
   });
   Logger.log(`     ${committedFiles.index.facets}`);
+  Logger.log(`     /data/new-events.v${dateString}.json`);
   Logger.log(`     /data/manifest.json`);
 }
 
@@ -588,6 +619,40 @@ function extractPostcode(location) {
   // UK postcode pattern
   const postcodeMatch = location.match(/[A-Z]{1,2}[0-9][A-Z0-9]? ?[0-9][A-Z]{2}/i);
   return postcodeMatch ? postcodeMatch[0].toUpperCase() : null;
+}
+
+/**
+ * Parse date added from Column G
+ */
+function parseDateAdded(dateValue) {
+  if (!dateValue) return null;
+  
+  try {
+    // Handle Date objects
+    if (dateValue instanceof Date) {
+      return dateValue.toISOString();
+    }
+    
+    // Handle string dates
+    if (typeof dateValue === 'string') {
+      // Try parsing various formats
+      const parsed = new Date(dateValue);
+      if (!isNaN(parsed.getTime())) {
+        return parsed.toISOString();
+      }
+      
+      // Try UK date format (dd/mm/yyyy)
+      const ukMatch = dateValue.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+      if (ukMatch) {
+        const date = new Date(ukMatch[3], ukMatch[2] - 1, ukMatch[1]);
+        return date.toISOString();
+      }
+    }
+    
+    return null;
+  } catch (error) {
+    return null;
+  }
 }
 
 /**

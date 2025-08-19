@@ -21,14 +21,14 @@
     <h1><a href="index.html">letsrace.cc</a></h1>
     <nav>
       <a href="index.html" class="current">Home</a>
-      <a href="pages/road.html">Road</a>
-      <a href="pages/track.html">Track</a>
-      <a href="pages/mtb.html">MTB</a>
-      <a href="pages/bmx.html">BMX</a>
-      <a href="pages/cyclo-cross.html">Cyclo-Cross</a>
-      <a href="pages/time-trial.html">Time Trial</a>
-      <a href="pages/hill-climb.html">Hill Climb</a>
-      <a href="pages/speedway.html">Speedway</a>
+      <a href="pages/road/">Road</a>
+      <a href="pages/track/">Track</a>
+      <a href="pages/mtb/">MTB</a>
+      <a href="pages/bmx/">BMX</a>
+      <a href="pages/cyclo-cross/">Cyclo-Cross</a>
+      <a href="pages/time-trial/">Time Trial</a>
+      <a href="pages/hill-climb/">Hill Climb</a>
+      <a href="pages/speedway/">Speedway</a>
       <a href="pages/about.html">About</a>
     </nav>
   </header>
@@ -245,14 +245,14 @@
         <div id="close-menu"></div>
         <ul>
           <li><a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
-          <li><a href="pages/road.html" class="${currentPage === 'road.html' ? 'current' : ''}">Road</a></li>
-          <li><a href="pages/track.html" class="${currentPage === 'track.html' ? 'current' : ''}">Track</a></li>
-          <li><a href="pages/mtb.html" class="${currentPage === 'mtb.html' ? 'current' : ''}">MTB</a></li>
-          <li><a href="pages/bmx.html" class="${currentPage === 'bmx.html' ? 'current' : ''}">BMX</a></li>
-          <li><a href="pages/cyclo-cross.html" class="${currentPage === 'cyclo-cross.html' ? 'current' : ''}">Cyclo-Cross</a></li>
-          <li><a href="pages/time-trial.html" class="${currentPage === 'time-trial.html' ? 'current' : ''}">Time Trial</a></li>
-          <li><a href="pages/hill-climb.html" class="${currentPage === 'hill-climb.html' ? 'current' : ''}">Hill Climb</a></li>
-          <li><a href="pages/speedway.html" class="${currentPage === 'speedway.html' ? 'current' : ''}">Speedway</a></li>
+          <li><a href="pages/road/" class="${currentPage === 'road' ? 'current' : ''}">Road</a></li>
+          <li><a href="pages/track/" class="${currentPage === 'track' ? 'current' : ''}">Track</a></li>
+          <li><a href="pages/mtb/" class="${currentPage === 'mtb' ? 'current' : ''}">MTB</a></li>
+          <li><a href="pages/bmx/" class="${currentPage === 'bmx' ? 'current' : ''}">BMX</a></li>
+          <li><a href="pages/cyclo-cross/" class="${currentPage === 'cyclo-cross' ? 'current' : ''}">Cyclo-Cross</a></li>
+          <li><a href="pages/time-trial/" class="${currentPage === 'time-trial' ? 'current' : ''}">Time Trial</a></li>
+          <li><a href="pages/hill-climb/" class="${currentPage === 'hill-climb' ? 'current' : ''}">Hill Climb</a></li>
+          <li><a href="pages/speedway/" class="${currentPage === 'speedway' ? 'current' : ''}">Speedway</a></li>
           <li><a href="pages/about.html" class="${currentPage === 'about.html' ? 'current' : ''}">About</a></li>
         </ul>
       `;
@@ -437,146 +437,105 @@
       document.head.appendChild(script);
     }, 1000);
     
-         // Load all new events with progressive loading
-     async function loadAllNewEvents() {
-       const categories = ['road', 'track', 'mtb', 'bmx', 'cyclo-cross', 'time-trial', 'hill-climb', 'speedway'];
-       const allEvents = [];
-       let hasDisplayedEvents = false;
-       
-       // Update loading message to show progress
-       const container = document.getElementById('new-events');
-       container.innerHTML = '<div class="loading-message"><div class="spinner"></div><p>Loading new events...</p></div>';
-       
-               // Function to filter and display new events
-        function filterAndDisplayNewEvents(events) {
-          const newEvents = events.filter(event => {
-            const imported = event.imported || '';
-            const added = new Date(imported);
-            const now = new Date();
-            const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000)); // Use constant from render.js
-            
-            if (!isNaN(added.getTime())) {
-              const addedMidnight = new Date(added.getFullYear(), added.getMonth(), added.getDate());
-              const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
-              return addedMidnight > daysAgoMidnight;
-            }
-            return false;
-          });
-          
-          return newEvents;
-        }
-       
-       // Function to render events HTML
-       function renderEventsHtml(events) {
-         if (events.length === 0) return '';
-         
-         const sortedEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date));
-         
-         return sortedEvents.map(event => {
-           const d = new Date(event.date);
-           const dayName = d.toLocaleDateString("en-GB", { weekday: "short" }).toUpperCase();
-           const day = d.getDate().toString().padStart(2, '0');
-           const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
-           
-                       return `
-              <a href="${event.url}" target="_blank" class="event newly-added">
-                <div class="date-square">
-                  <div class="day-name">${dayName}</div>
-                  <div class="day-number">${day}</div>
-                  <div class="month">${month}</div>
-                </div>
-                <div class="event-content">
-                  <span class="new-badge">NEW</span>
-                  <h2>${event.name}</h2>
-                  <p class="event-location">${event.location}${event.region ? ` • ${event.region}` : ''}</p>
-                </div>
-              </a>
-            `;
-         }).join("");
-       }
-       
-                       // Function to update display progressively
-         function updateDisplay() {
-                  // Store all events data for filtering
-        allEventsData = allEvents;
+                   // Load new events from dedicated file
+      async function loadAllNewEvents() {
+        const container = document.getElementById('new-events');
+        container.innerHTML = '<div class="loading-message"><div class="spinner"></div><p>Loading new events...</p></div>';
         
-
-           
-           // Check if there are stored region filters and apply them
-           const storedRegions = localStorage.getItem('selectedRegions');
-           if (storedRegions) {
-             try {
-               const regions = JSON.parse(storedRegions);
-               if (regions.length > 0) {
-                 // Apply the stored filter
-                 filteredEvents = allEvents.filter(event => {
-                   const eventRegion = event.region || '';
-                   const normalizedEventRegion = normalizeRegionName(eventRegion);
-                   return regions.some(region => {
-                     const normalizedRegion = normalizeRegionName(region);
-                     return normalizedEventRegion === normalizedRegion;
-                   });
-                 });
-                 // Update display with filtered events
-                 updateHomepageDisplay();
-                 return;
-               }
-             } catch (e) {
-               console.error('Error parsing stored regions:', e);
-             }
-           }
-           
-           const newEvents = filterAndDisplayNewEvents(allEvents);
-           console.log('Total events loaded:', allEvents.length, 'New events found:', newEvents.length);
-           
-           if (newEvents.length > 0) {
-             const eventsHtml = renderEventsHtml(newEvents);
-             container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
-             hasDisplayedEvents = true;
-           } else if (allEvents.length > 0 && !hasDisplayedEvents) {
-             container.innerHTML = '<div class="no-events"><p>No new events found. Check back soon!</p></div>';
-           }
-         }
-       
-       // Load categories progressively
-       for (const category of categories) {
-         try {
-           const data = await fetchWithCache(`https://script.google.com/macros/s/AKfycby1IBTyMP-KaiE26FYsxGe1TrmGdLDU-80nV2jZ9luZrkXaBVS3lVFttlLoDIWUX_HuSQ/exec?type=${category}`, category);
-           
-           let events = [];
-           if (data && data.events && Array.isArray(data.events)) {
-             events = data.events;
-           } else if (Array.isArray(data)) {
-             // Handle raw array format
-             events = data.map(row => {
-               if (Array.isArray(row) && row.length >= 7) {
-                 return {
-                   date: row[0] || "",
-                   name: row[1] || "",
-                   discipline: row[2] || "",
-                   location: row[3] || "",
-                   url: row[4] || "",
-                   region: row[5] || "",
-                   imported: row[6] || ""
-                 };
-               }
-               return null;
-             }).filter(event => event !== null);
-           }
-           
-           allEvents.push(...events);
-           
-           // Update display after each category loads
-           updateDisplay();
-           
-         } catch (error) {
-           console.error(`Failed to load ${category} events:`, error);
-         }
-       }
-       
-       // Final update to ensure we show the complete result
-       updateDisplay();
-     }
+        try {
+          // First, get the manifest to find the new events file
+          const manifestResponse = await fetch('/data/manifest.json');
+          if (!manifestResponse.ok) {
+            throw new Error('Failed to load manifest');
+          }
+          const manifest = await manifestResponse.json();
+          
+          if (!manifest.new_events) {
+            throw new Error('New events file not found in manifest');
+          }
+          
+          // Load the new events file
+          const newEventsResponse = await fetch(manifest.new_events);
+          if (!newEventsResponse.ok) {
+            throw new Error('Failed to load new events');
+          }
+          const newEventsData = await newEventsResponse.json();
+          
+          if (!newEventsData.events || !Array.isArray(newEventsData.events)) {
+            throw new Error('Invalid new events data format');
+          }
+          
+          const allEvents = newEventsData.events;
+          allEventsData = allEvents; // Store for filtering
+          
+          console.log('New events loaded:', allEvents.length);
+          
+          // Check if there are stored region filters and apply them
+          const storedRegions = localStorage.getItem('selectedRegions');
+          if (storedRegions) {
+            try {
+              const regions = JSON.parse(storedRegions);
+              if (regions.length > 0) {
+                // Apply the stored filter
+                filteredEvents = allEvents.filter(event => {
+                  const eventRegion = event.region || '';
+                  const normalizedEventRegion = normalizeRegionName(eventRegion);
+                  return regions.some(region => {
+                    const normalizedRegion = normalizeRegionName(region);
+                    return normalizedEventRegion === normalizedRegion;
+                  });
+                });
+                // Update display with filtered events
+                updateHomepageDisplay();
+                return;
+              }
+            } catch (e) {
+              console.error('Error parsing stored regions:', e);
+            }
+          }
+          
+          // No filters, show all new events
+          if (allEvents.length > 0) {
+            const eventsHtml = renderEventsHtml(allEvents);
+            container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
+          } else {
+            container.innerHTML = '<div class="no-events"><p>No new events found. Check back soon!</p></div>';
+          }
+          
+        } catch (error) {
+          console.error('Failed to load new events:', error);
+          container.innerHTML = '<div class="no-events"><p>Sorry, we couldn\'t load the new events. Please try refreshing the page.</p></div>';
+        }
+      }
+      
+      // Function to render events HTML
+      function renderEventsHtml(events) {
+        if (events.length === 0) return '';
+        
+        const sortedEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date));
+        
+        return sortedEvents.map(event => {
+          const d = new Date(event.date);
+          const dayName = d.toLocaleDateString("en-GB", { weekday: "short" }).toUpperCase();
+          const day = d.getDate().toString().padStart(2, '0');
+          const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
+          
+          return `
+            <a href="${event.url}" target="_blank" class="event newly-added">
+              <div class="date-square">
+                <div class="day-name">${dayName}</div>
+                <div class="day-number">${day}</div>
+                <div class="month">${month}</div>
+              </div>
+              <div class="event-content">
+                <span class="new-badge">NEW</span>
+                <h2>${event.name}</h2>
+                <p class="event-location">${event.venue}${event.region ? ` • ${event.region}` : ''}</p>
+              </div>
+            </a>
+          `;
+        }).join("");
+      }
     
          // Load new events when page loads with timeout
      const loadTimeout = setTimeout(() => {
