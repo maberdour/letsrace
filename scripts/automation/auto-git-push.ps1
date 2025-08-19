@@ -10,6 +10,10 @@ try {
     Write-Host "Changing to repository root..." -ForegroundColor Cyan
     Set-Location -Path "../../"
     
+    # Pull latest changes first to avoid conflicts
+    Write-Host "Pulling latest changes..." -ForegroundColor Cyan
+    git pull origin main
+    
     # Stage all changes
     Write-Host "Staging all changes..." -ForegroundColor Cyan
     git add .
