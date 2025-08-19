@@ -187,20 +187,25 @@ function processSheetData(sheetData) {
       // Normalize region
       const normalizedRegion = normalizeRegion(row[COLUMNS.REGION]);
       
-      // Create event object
-      const event = {
-        id: hashId(`${row[COLUMNS.NAME]}|${eventDate}|${row[COLUMNS.LOCATION]}`),
-        name: normalizeValue(row[COLUMNS.NAME]),
-        type: normalizedType,
-        region: normalizedRegion,
-        venue: normalizeValue(row[COLUMNS.LOCATION]),
-        postcode: extractPostcode(row[COLUMNS.LOCATION]),
-        date: isoLocalDateUK(eventDate),
-        start_time: extractStartTime(row[COLUMNS.EVENT_DATE]),
-        url: normalizeValue(row[COLUMNS.URL]),
-        source: "Google Sheet",
-        last_updated: parseDateAdded(row[COLUMNS.DATE_ADDED]) || nowISO()
-      };
+             // Create event object
+       const event = {
+         id: hashId(`${row[COLUMNS.NAME]}|${eventDate}|${row[COLUMNS.LOCATION]}`),
+         name: normalizeValue(row[COLUMNS.NAME]),
+         type: normalizedType,
+         region: normalizedRegion,
+         venue: normalizeValue(row[COLUMNS.LOCATION]),
+         postcode: extractPostcode(row[COLUMNS.LOCATION]),
+         date: isoLocalDateUK(eventDate),
+         start_time: extractStartTime(row[COLUMNS.EVENT_DATE]),
+         url: normalizeValue(row[COLUMNS.URL]),
+         source: "Google Sheet",
+         last_updated: parseDateAdded(row[COLUMNS.DATE_ADDED]) || nowISO()
+       };
+       
+       // Log if Column G parsing failed
+       if (!parseDateAdded(row[COLUMNS.DATE_ADDED])) {
+         Logger.log(`⚠️ Row ${index + 1}: Column G parsing failed for "${row[COLUMNS.NAME]}" - Column G value: "${row[COLUMNS.DATE_ADDED]}"`);
+       }
       
       events.push(event);
       
@@ -323,12 +328,31 @@ function createNewEventsFile(events) {
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
   sevenDaysAgo.setHours(0, 0, 0, 0);
   
+  Logger.log(`🔍 Filtering events from last 7 days (since ${isoLocalDateUK(sevenDaysAgo)})`);
+  
+  let parsedCount = 0;
+  let fallbackCount = 0;
+  
   const newEvents = events.filter(event => {
     const lastUpdated = new Date(event.last_updated);
+    
+    // Check if this is a fallback timestamp (today's time)
+    const now = new Date();
+    const isFallback = lastUpdated.getTime() > now.getTime() - (24 * 60 * 60 * 1000); // Within last 24 hours
+    
+    if (isFallback) {
+      fallbackCount++;
+    } else {
+      parsedCount++;
+    }
+    
     return lastUpdated > sevenDaysAgo;
   });
   
   Logger.log(`📅 New events file: ${newEvents.length} events from last 7 days`);
+  if (fallbackCount > 0) {
+    Logger.log(`⚠️ Warning: ${fallbackCount} events have fallback dates (Column G parsing failed)`);
+  }
   
   return {
     events: newEvents,
@@ -625,7 +649,9 @@ function extractPostcode(location) {
  * Parse date added from Column G
  */
 function parseDateAdded(dateValue) {
-  if (!dateValue) return null;
+  if (!dateValue) {
+    return null;
+  }
   
   try {
     // Handle Date objects
@@ -635,7 +661,7 @@ function parseDateAdded(dateValue) {
     
     // Handle string dates
     if (typeof dateValue === 'string') {
-      // Try parsing various formats
+      // Try parsing the datetime format: "2025-08-19 03:15:26"
       const parsed = new Date(dateValue);
       if (!isNaN(parsed.getTime())) {
         return parsed.toISOString();
@@ -647,10 +673,47 @@ function parseDateAdded(dateValue) {
         const date = new Date(ukMatch[3], ukMatch[2] - 1, ukMatch[1]);
         return date.toISOString();
       }
+      
+      // Try other common formats
+      const formats = [
+        /(\d{4})-(\d{1,2})-(\d{1,2})/, // yyyy-mm-dd
+        /(\d{1,2})-(\d{1,2})-(\d{4})/, // mm-dd-yyyy or dd-mm-yyyy
+        /(\d{1,2})\.(\d{1,2})\.(\d{4})/, // dd.mm.yyyy
+        /(\d{1,2})\-(\d{1,2})\-(\d{4})/  // dd-mm-yyyy
+      ];
+      
+      for (let i = 0; i < formats.length; i++) {
+        const match = dateValue.match(formats[i]);
+        if (match) {
+          let date;
+          if (i === 0) {
+            // yyyy-mm-dd
+            date = new Date(match[1], match[2] - 1, match[3]);
+          } else if (i === 1) {
+            // Try both mm-dd-yyyy and dd-mm-yyyy
+            const mmdd = new Date(match[3], match[1] - 1, match[2]);
+            const ddmm = new Date(match[3], match[2] - 1, match[1]);
+            // Use the one that makes more sense (month <= 12)
+            date = match[1] <= 12 ? mmdd : ddmm;
+          } else {
+            // dd.mm.yyyy or dd-mm-yyyy
+            date = new Date(match[3], match[2] - 1, match[1]);
+          }
+          
+          if (!isNaN(date.getTime())) {
+            return date.toISOString();
+          }
+        }
+      }
+      
+      Logger.log(`❌ Could not parse date: "${dateValue}"`);
+      return null;
     }
     
+    Logger.log(`❌ Unknown date type: ${typeof dateValue} - "${dateValue}"`);
     return null;
   } catch (error) {
+    Logger.log(`❌ Error parsing date "${dateValue}": ${error.message}`);
     return null;
   }
 }

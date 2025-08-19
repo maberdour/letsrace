@@ -41,6 +41,7 @@ body {
   position: sticky;
   top: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
 }
 
 .region-sidebar h3 {
@@ -324,11 +325,12 @@ main h1 {
 .filters {
   background: #ffffff;
   border-radius: 8px;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   height: fit-content;
   position: sticky;
   top: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
 }
 
 .filters::before {
@@ -338,7 +340,7 @@ main h1 {
   font-size: 1rem;
   color: #333;
   margin-bottom: 0.5rem;
-  margin-top: 0;
+  margin-top: -0.5rem;
   position: relative;
 }
 
@@ -546,6 +548,12 @@ main h1 {
   background: #ffffff;
 }
 
+/* Newly added events styling */
+#event-list li.newly-added {
+  background: #fff8e1;
+  border-left: 4px solid #ff8c00;
+}
+
 /* Date square */
 .date-square {
   background: #0077cc;
@@ -628,6 +636,44 @@ main h1 {
   gap: 1rem;
 }
 
+/* ==========================================================================
+   ABOUT PAGE STYLES
+   ========================================================================== */
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 2rem 0 1rem 0;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-content ul {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.about-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
 .region-sidebar-buttons {
   display: flex;
   gap: 0.5rem;
@@ -645,10 +691,26 @@ main h1 {
    ========================================================================== */
 
 footer {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #eee;
+  margin-top: 1rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 1.5rem;
+  background: #333;
+  color: white;
   text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: white;
 }
 
 #build-stamp {
@@ -791,6 +853,12 @@ footer {
     padding: 0.5rem;
   }
   
+  footer {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 1rem;
+  }
+  
   header {
     padding: 1rem;
     margin-left: -0.5rem;
@@ -919,6 +987,11 @@ footer {
   .filters::before {
     margin-top: -4rem;
   }
+  
+  .filters {
+    margin-top: -4rem;
+    padding-top: 5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -934,8 +1007,8 @@ footer {
     order: 1;
     width: 100%;
     max-width: none;
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    margin: 0.5rem 0 0 0;
   }
   
   .filter-toggle-btn {

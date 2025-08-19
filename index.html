@@ -192,7 +192,7 @@
          </div>
        </div>
        
-       <h2 style="text-align: center; color: #0077cc; font-size: 2rem; margin-bottom: 2rem; font-weight: bold;">New Events</h2>
+       <h2 id="new-events-title" style="text-align: center; color: #0077cc; font-size: 2rem; margin-bottom: 2rem; font-weight: bold;">New Events</h2>
        <div id="new-events">
          <div class="loading-message">
            <div class="spinner"></div>
@@ -354,6 +354,11 @@
        
        if (filteredEvents.length === 0) {
          container.innerHTML = '<div class="no-events"><p>No events found for the selected regions.</p></div>';
+         // Update the title for no events
+         const titleElement = document.getElementById('new-events-title');
+         if (titleElement) {
+           titleElement.textContent = 'New Events';
+         }
          return;
        }
        
@@ -374,12 +379,22 @@
        
        if (newEvents.length === 0) {
          container.innerHTML = '<div class="no-events"><p>No new events found for the selected regions.</p></div>';
+         // Update the title for no events
+         const titleElement = document.getElementById('new-events-title');
+         if (titleElement) {
+           titleElement.textContent = 'New Events';
+         }
          return;
        }
        
        // Render the filtered new events
        const eventsHtml = renderHomepageEventsHtml(newEvents);
        container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
+       // Update the title with the filtered count
+       const titleElement = document.getElementById('new-events-title');
+       if (titleElement) {
+         titleElement.textContent = `${newEvents.length} New Events`;
+       }
      }
      
      function renderHomepageEventsHtml(events) {
@@ -498,8 +513,18 @@
           if (allEvents.length > 0) {
             const eventsHtml = renderEventsHtml(allEvents);
             container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
+            // Update the title with the count
+            const titleElement = document.getElementById('new-events-title');
+            if (titleElement) {
+              titleElement.textContent = `${allEvents.length} New Events`;
+            }
           } else {
             container.innerHTML = '<div class="no-events"><p>No new events found. Check back soon!</p></div>';
+            // Update the title for no events
+            const titleElement = document.getElementById('new-events-title');
+            if (titleElement) {
+              titleElement.textContent = 'New Events';
+            }
           }
           
         } catch (error) {

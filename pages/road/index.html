@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Events - LetsRace</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="description" content="Find road cycling events across the UK">
+    
+    <!-- Other type pages only need to change:
+         - <title> and <meta name="description"> content
+         - <body data-type="..."> value -->
+</head>
+<body data-type="road">
+    <header>
+        <h1><a href="/index.html">letsrace.cc</a></h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/road/" class="current">Road</a>
+            <a href="/pages/track/">Track</a>
+            <a href="/pages/mtb/">MTB</a>
+            <a href="/pages/bmx/">BMX</a>
+            <a href="/pages/cyclo-cross/">Cyclo-Cross</a>
+            <a href="/pages/time-trial/">Time Trial</a>
+            <a href="/pages/hill-climb/">Hill Climb</a>
+            <a href="/pages/speedway/">Speedway</a>
+            <a href="/pages/about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Road Events</h1>
+        <div class="update-time">Updated on Tue, 19 Aug 2025</div>
+        
+        <div class="events-page-container">
+            <!-- Filter Controls -->
+            <div class="filters">
+                <div class="filter-group">
+                    <button class="filter-toggle-btn" id="filter-toggle">
+                        <span class="filter-toggle-text">Filter by Region</span>
+                        <span class="filter-toggle-icon">▼</span>
+                    </button>
+                    <div class="filter-content" id="filter-content">
+                        <div class="region-checkboxes" id="region-checkboxes">
+                            <div class="loading-message">Loading regions...</div>
+                        </div>
+                        <div class="filter-buttons">
+                            <button class="apply-filter-btn" id="apply-filter">Apply Filter</button>
+                            <button class="clear-regions-btn" id="clear-regions">Clear All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results -->
+            <div class="results">
+                <div id="result-count" aria-live="polite">Loading events...</div>
+                
+                <div id="empty-state" hidden>
+                    No events match your filters.
+                </div>
+                
+                <ul id="event-list" role="list">
+                    <!-- Events will be populated by JavaScript -->
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <small id="build-stamp">Loading...</small>
+        </footer>
+    </main>
+    
+    <!-- Load the events page module -->
+    <script type="module" src="/assets/js/events-page.js"></script>
+</body>
+</html>
