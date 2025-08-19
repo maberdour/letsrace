@@ -11,5 +11,6 @@
   },
   "index": {
     "facets": "/data/index/facets.v20250819.json"
-  }
+  },
+  "new_events": "/data/new-events.v20250819.json"
 }
