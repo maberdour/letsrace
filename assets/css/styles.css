@@ -323,13 +323,13 @@ main h1 {
 
 /* Filters sidebar */
 .filters {
-  background: #ffffff;
+  background: transparent;
   border-radius: 8px;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   height: fit-content;
   position: sticky;
   top: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   margin-top: 1rem;
 }
 
@@ -1008,7 +1008,7 @@ footer a:visited {
     order: 1;
     width: 100%;
     max-width: none;
-    padding: 1rem;
+    padding: 0;
     margin: 0.5rem 0 0 0;
   }
   
@@ -1016,6 +1016,8 @@ footer a:visited {
     display: block;
     width: 100%;
     font-weight: normal;
+    margin: 0 auto;
+    max-width: none;
   }
   
   .filter-content {
