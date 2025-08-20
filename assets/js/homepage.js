@@ -44,6 +44,17 @@ function getSelectedRegions() {
   return Array.from(checkboxes).map(cb => cb.value);
 }
 
+// Load saved regions from localStorage
+function loadSavedRegions() {
+  try {
+    const saved = localStorage.getItem('selectedRegions');
+    return saved ? JSON.parse(saved) : [];
+  } catch (error) {
+    console.error('Error loading saved regions:', error);
+    return [];
+  }
+}
+
 // Filter events based on criteria
 function filterEvents(events, filters) {
   const today = getTodayDate();
@@ -147,6 +158,8 @@ function updateDate() {
   }
 }
 
+
+
 // Main initialization function
 function initHomepage() {
   console.log('🚀 Homepage module initializing...');
@@ -234,6 +247,28 @@ function initHomepage() {
   let allEvents = [];
   let facets = null;
   
+  // Ensure filter state is properly restored
+  function restoreFilterState() {
+    const savedRegions = loadSavedRegions();
+    console.log('🔄 Restoring filter state:', savedRegions);
+    
+    // Update desktop checkboxes
+    const desktopCheckboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+    desktopCheckboxes.forEach(cb => {
+      cb.checked = savedRegions.includes(cb.value);
+    });
+    
+    // Update mobile checkboxes
+    if (mobileRegionCheckboxes) {
+      const mobileCheckboxes = mobileRegionCheckboxes.querySelectorAll('input[type="checkbox"]');
+      mobileCheckboxes.forEach(cb => {
+        cb.checked = savedRegions.includes(cb.value);
+      });
+    }
+    
+    console.log('✅ Filter state restored');
+  }
+  
   // Fetch data and initialize page
   async function initializePage() {
     try {
@@ -242,10 +277,13 @@ function initHomepage() {
       // Fetch manifest
       console.log('📄 Fetching manifest...');
       const manifestResponse = await fetch('/data/manifest.json');
+      console.log('📄 Manifest response status:', manifestResponse.status, manifestResponse.statusText);
+      
       if (!manifestResponse.ok) {
         console.error('❌ Manifest fetch failed:', manifestResponse.status, manifestResponse.statusText);
         throw new Error(`Failed to fetch manifest: ${manifestResponse.status}`);
       }
+      
       const manifest = await manifestResponse.json();
       console.log('✅ Manifest loaded:', manifest);
       
@@ -261,10 +299,16 @@ function initHomepage() {
       console.log('🔗 Fetching data files:', { facetsUrl, newEventsUrl });
       
       // Fetch facets and new events in parallel
+      console.log('🔗 Fetching facets from:', facetsUrl);
+      console.log('🔗 Fetching new events from:', newEventsUrl);
+      
       const [facetsResponse, newEventsResponse] = await Promise.all([
         fetch(facetsUrl),
         fetch(newEventsUrl)
       ]);
+      
+      console.log('📄 Facets response status:', facetsResponse.status, facetsResponse.statusText);
+      console.log('📄 New events response status:', newEventsResponse.status, newEventsResponse.statusText);
       
       if (!facetsResponse.ok) {
         console.error('❌ Facets fetch failed:', facetsResponse.status, facetsResponse.statusText);
@@ -286,9 +330,12 @@ function initHomepage() {
       console.log('✅ Data loaded:', { facetsCount: facets.regions?.length, eventsCount: allEvents.length });
       
       // Populate region checkboxes
+      const savedRegions = loadSavedRegions();
+      console.log('🔍 Loading saved regions:', savedRegions); // Debug log
+
       const regionHtml = facets.regions.map(region => `
         <label class="region-checkbox">
-          <input type="checkbox" value="${region}">
+          <input type="checkbox" value="${region}"${savedRegions.includes(region) ? ' checked' : ''}>
           <span class="checkmark"></span>
           ${region}
         </label>
@@ -296,10 +343,23 @@ function initHomepage() {
       
       regionCheckboxes.innerHTML = regionHtml;
       
-      // Populate mobile region checkboxes
+      // Populate mobile region checkboxes with same saved state
       if (mobileRegionCheckboxes) {
-        mobileRegionCheckboxes.innerHTML = regionHtml;
+        mobileRegionCheckboxes.innerHTML = facets.regions.map(region => `
+          <label class="region-checkbox">
+            <input type="checkbox" value="${region}"${savedRegions.includes(region) ? ' checked' : ''}>
+            <span class="checkmark"></span>
+            ${region}
+          </label>
+        `).join('');
       }
+
+      // Debug: Verify checkboxes are properly set
+      console.log('🔍 After populating checkboxes:');
+      const desktopCheckboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]:checked');
+      const mobileCheckboxes = mobileRegionCheckboxes ? mobileRegionCheckboxes.querySelectorAll('input[type="checkbox"]:checked') : [];
+      console.log('Desktop checked:', Array.from(desktopCheckboxes).map(cb => cb.value));
+      console.log('Mobile checked:', Array.from(mobileCheckboxes).map(cb => cb.value));
       
       // Update build stamp
       updateBuildStamp(document.getElementById('build-stamp'), facets);
@@ -307,11 +367,19 @@ function initHomepage() {
       // Update the date
       updateDate();
       
-      // Apply initial filters
+      // Restore filter state FIRST (before applying filters)
+      restoreFilterState();
+      
+      // Then apply filters with the restored state
       applyFilters();
       
     } catch (error) {
-      console.error('Failed to initialize homepage:', error);
+      console.error('❌ Failed to initialize homepage:', error);
+      console.error('❌ Error details:', {
+        message: error.message,
+        stack: error.stack,
+        name: error.name
+      });
       newEventsContainer.innerHTML = `
         <div class="no-events">
           <p>Sorry, we couldn't load the new events. Please try refreshing the page.</p>
@@ -325,6 +393,9 @@ function initHomepage() {
     const filters = {
       regions: getSelectedRegions()
     };
+    
+    console.log('🔍 applyFilters called with regions:', filters.regions);
+    console.log('🔍 Total events loaded:', allEvents.length);
     
     // Filter for new events only (events updated within last 7 days)
     const newEvents = allEvents.filter(event => {
@@ -341,13 +412,19 @@ function initHomepage() {
       return false;
     });
     
+    console.log('🔍 Events after "new" filter:', newEvents.length);
+    
     // Apply region filtering
     const filteredEvents = filters.regions.length > 0 
       ? newEvents.filter(event => filters.regions.includes(event.region))
       : newEvents;
     
+    console.log('🔍 Events after region filter:', filteredEvents.length);
+    
     // Sort and render
     const sortedEvents = sortEvents(filteredEvents);
+    console.log('🔍 Final sorted events:', sortedEvents.length);
+    
     renderHomepageEvents(sortedEvents, newEventsContainer, newEventsTitle);
     
     // Update result count

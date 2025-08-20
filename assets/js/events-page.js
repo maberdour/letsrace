@@ -60,6 +60,17 @@ function getSelectedRegions() {
   return Array.from(checkboxes).map(cb => cb.value);
 }
 
+// Load saved regions from localStorage
+function loadSavedRegions() {
+  try {
+    const saved = localStorage.getItem('selectedRegions');
+    return saved ? JSON.parse(saved) : [];
+  } catch (error) {
+    console.error('Error loading saved regions:', error);
+    return [];
+  }
+}
+
 // Filter events based on criteria
 function filterEvents(events, filters) {
   const today = getTodayDate();
@@ -313,9 +324,10 @@ export function initEventsPage() {
       console.log('✅ Data loaded:', { facetsCount: facets.regions?.length, eventsCount: allEvents.length });
       
       // Populate region checkboxes
+      const savedRegions = loadSavedRegions();
       regionCheckboxes.innerHTML = facets.regions.map(region => `
         <label class="region-checkbox">
-          <input type="checkbox" value="${region}"${initialParams.regions.includes(region) ? ' checked' : ''}>
+          <input type="checkbox" value="${region}"${savedRegions.includes(region) ? ' checked' : ''}>
           <span class="checkmark"></span>
           ${region}
         </label>
@@ -355,6 +367,13 @@ export function initEventsPage() {
     
     // Update URL
     updateUrl(filters);
+    
+    // Store selected regions in localStorage for persistence
+    if (filters.regions.length > 0) {
+      localStorage.setItem('selectedRegions', JSON.stringify(filters.regions));
+    } else {
+      localStorage.removeItem('selectedRegions');
+    }
     
     // Track analytics
     trackAnalytics('filter_change', {
