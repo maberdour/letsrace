@@ -333,7 +333,7 @@ main h1 {
   margin-top: 1rem;
 }
 
-/* Homepage filter content should be visible by default */
+/* Homepage filter content should be visible by default on desktop only */
 .homepage .filter-content {
   display: block !important;
 }
@@ -1043,6 +1043,19 @@ footer a:visited {
   
   .filter-content.expanded {
     display: block;
+  }
+  
+  /* Override homepage filter behavior on mobile */
+  .homepage .filter-content {
+    display: none !important;
+  }
+  
+  .homepage .filter-toggle-btn {
+    display: block !important;
+  }
+  
+  .homepage .filter-content.expanded {
+    display: block !important;
   }
   
   .results {

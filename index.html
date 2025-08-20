@@ -44,18 +44,18 @@
                      <button class="filter-toggle-btn" id="filter-toggle">
                          <span class="filter-toggle-text">Filter by Region</span>
                          <span class="filter-toggle-icon">▼</span>
-                     </button>
+           </button>
                      <div class="filter-content" id="filter-content">
                          <div class="region-checkboxes" id="region-checkboxes">
                              <div class="loading-message">Loading regions...</div>
-                         </div>
+             </div>
                          <div class="filter-buttons">
                              <button class="clear-regions-btn" id="clear-regions">Clear All</button>
-                         </div>
-                     </div>
-                 </div>
              </div>
-             
+           </div>
+         </div>
+       </div>
+       
              <!-- Results -->
              <div class="results">
                  <div id="result-count" aria-live="polite">Loading events...</div>
@@ -64,49 +64,49 @@
                      No events match your filters.
                  </div>
                  
-                 <div id="new-events">
-                     <div class="loading-message">
-                         <div class="spinner"></div>
-                         <p>Loading new events...</p>
-                     </div>
-                 </div>
-             </div>
+       <div id="new-events">
+         <div class="loading-message">
+           <div class="spinner"></div>
+           <p>Loading new events...</p>
          </div>
-        
+       </div>
+             </div>
+  </div>
+
         <!-- Footer -->
-        <footer>
+  <footer>
             <small id="build-stamp">Loading...</small>
-        </footer>
+  </footer>
         </main>
 
      <!-- Load the homepage module -->
    <script type="module" src="/assets/js/homepage.js"></script>
 
-     <!-- Load non-critical scripts after page load -->
-   <script src="assets/js/render.js?v=7"></script>
-   <script src="assets/js/cache.js?v=1"></script>
-   <script>
-     // Defer service worker registration
-     window.addEventListener('load', () => {
-       if ('serviceWorker' in navigator) {
-         navigator.serviceWorker.register('/assets/js/sw.js')
-           .then(registration => {
-             console.log('SW registered: ', registration);
-           })
-           .catch(registrationError => {
-             console.log('SW registration failed: ', registrationError);
-           });
-       }
-     });
-     
-     // Load analytics after page load
-     setTimeout(() => {
-       const script = document.createElement('script');
-       script.src = '//gc.zgo.at/count.js';
-       script.setAttribute('data-goatcounter', 'https://letsrace.goatcounter.com/count');
-       script.async = true;
-       document.head.appendChild(script);
-     }, 1000);
-   </script>
+  <!-- Load non-critical scripts after page load -->
+  <script src="assets/js/render.js?v=7"></script>
+  <script src="assets/js/cache.js?v=1"></script>
+  <script>
+    // Defer service worker registration
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/assets/js/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      }
+    });
+    
+    // Load analytics after page load
+    setTimeout(() => {
+      const script = document.createElement('script');
+      script.src = '//gc.zgo.at/count.js';
+      script.setAttribute('data-goatcounter', 'https://letsrace.goatcounter.com/count');
+      script.async = true;
+      document.head.appendChild(script);
+    }, 1000);
+  </script>
 </body>
 </html>
