@@ -246,7 +246,6 @@ export function initEventsPage() {
   
   // Get DOM elements
   const regionCheckboxes = document.getElementById('region-checkboxes');
-  const applyFilterButton = document.getElementById('apply-filter');
   const clearRegionsButton = document.getElementById('clear-regions');
   const resultCount = document.getElementById('result-count');
   const emptyState = document.getElementById('empty-state');
@@ -256,7 +255,7 @@ export function initEventsPage() {
   const filterContent = document.getElementById('filter-content');
   
   // Validate required elements
-  if (!regionCheckboxes || !applyFilterButton || !clearRegionsButton || 
+  if (!regionCheckboxes || !clearRegionsButton || 
       !resultCount || !emptyState || !eventList || !buildStamp) {
     console.error('Missing required DOM elements for events page');
     return;
@@ -374,8 +373,7 @@ export function initEventsPage() {
     }
   });
   
-  // Apply filter button
-  applyFilterButton.addEventListener('click', applyFilters);
+  // Apply filter button removed - filtering is now instant
   
   // Clear regions button
   clearRegionsButton.addEventListener('click', () => {

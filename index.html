@@ -33,544 +33,80 @@
     </nav>
   </header>
 
-  <div class="main-container">
-    <!-- Desktop Region Sidebar -->
-    <aside class="region-sidebar">
-      <div class="region-sidebar-content">
-        <h3>Filter by Region</h3>
-        <div class="region-checkboxes">
-          <label class="region-checkbox">
-            <input type="checkbox" value="central">
-            <span class="checkmark"></span>
-            Central
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="east-midlands">
-            <span class="checkmark"></span>
-            East Midlands
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="eastern">
-            <span class="checkmark"></span>
-            Eastern
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="north-east">
-            <span class="checkmark"></span>
-            North East
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="north-west">
-            <span class="checkmark"></span>
-            North West
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="scotland">
-            <span class="checkmark"></span>
-            Scotland
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="south">
-            <span class="checkmark"></span>
-            South
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="south-east">
-            <span class="checkmark"></span>
-            South East
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="south-west">
-            <span class="checkmark"></span>
-            South West
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="wales">
-            <span class="checkmark"></span>
-            Wales
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="west-midlands">
-            <span class="checkmark"></span>
-            West Midlands
-          </label>
-          <label class="region-checkbox">
-            <input type="checkbox" value="yorkshire">
-            <span class="checkmark"></span>
-            Yorkshire
-          </label>
-        </div>
-        <div class="region-sidebar-buttons">
-          <button class="apply-filter-btn" onclick="applyHomepageRegionFilter()">Apply Filter</button>
-          <button class="clear-regions-btn" onclick="clearAllRegions()">Reset</button>
-        </div>
-      </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="main-content">
-             <div class="homepage-welcome">
-         <p>
-           Browse upcoming races across all youth cycling disciplines.
-           This site is updated daily and currently covers events across the UK.
-         </p>
+                  <main>
+         <h1 id="new-events-title">New Events</h1>
+         <div class="update-time">Updated on Tue, 19 Aug 2025</div>
          
-         <!-- Mobile Region Filter -->
-         <div class="mobile-region-filter">
-           <button class="mobile-filter-btn" onclick="toggleMobileFilter()">
-             <span class="filter-icon">📍</span>
-             Filter by Region
-           </button>
-           <div class="mobile-filter-panel" id="mobile-filter-panel">
-             <div class="mobile-region-checkboxes">
-               <label class="region-checkbox">
-                 <input type="checkbox" value="central">
-                 <span class="checkmark"></span>
-                 Central
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="east-midlands">
-                 <span class="checkmark"></span>
-                 East Midlands
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="eastern">
-                 <span class="checkmark"></span>
-                 Eastern
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="north-east">
-                 <span class="checkmark"></span>
-                 North East
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="north-west">
-                 <span class="checkmark"></span>
-                 North West
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="scotland">
-                 <span class="checkmark"></span>
-                 Scotland
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="south">
-                 <span class="checkmark"></span>
-                 South
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="south-east">
-                 <span class="checkmark"></span>
-                 South East
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="south-west">
-                 <span class="checkmark"></span>
-                 South West
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="wales">
-                 <span class="checkmark"></span>
-                 Wales
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="west-midlands">
-                 <span class="checkmark"></span>
-                 West Midlands
-               </label>
-               <label class="region-checkbox">
-                 <input type="checkbox" value="yorkshire">
-                 <span class="checkmark"></span>
-                 Yorkshire
-               </label>
+         <div class="events-page-container">
+             <!-- Filter Controls -->
+             <div class="filters">
+                 <div class="filter-group">
+                     <button class="filter-toggle-btn" id="filter-toggle">
+                         <span class="filter-toggle-text">Filter by Region</span>
+                         <span class="filter-toggle-icon">▼</span>
+                     </button>
+                     <div class="filter-content" id="filter-content">
+                         <div class="region-checkboxes" id="region-checkboxes">
+                             <div class="loading-message">Loading regions...</div>
+                         </div>
+                         <div class="filter-buttons">
+                             <button class="clear-regions-btn" id="clear-regions">Clear All</button>
+                         </div>
+                     </div>
+                 </div>
              </div>
-             <div class="region-sidebar-buttons">
-               <button class="apply-filter-btn" onclick="applyHomepageRegionFilter()">Apply Filter</button>
-               <button class="clear-regions-btn" onclick="clearAllRegions()">Reset</button>
+             
+             <!-- Results -->
+             <div class="results">
+                 <div id="result-count" aria-live="polite">Loading events...</div>
+                 
+                 <div id="empty-state" hidden>
+                     No events match your filters.
+                 </div>
+                 
+                 <div id="new-events">
+                     <div class="loading-message">
+                         <div class="spinner"></div>
+                         <p>Loading new events...</p>
+                     </div>
+                 </div>
              </div>
-           </div>
          </div>
-       </div>
-       
-       <h2 id="new-events-title" style="text-align: center; color: #0077cc; font-size: 2rem; margin-bottom: 2rem; font-weight: bold;">New Events</h2>
-       <div id="new-events">
-         <div class="loading-message">
-           <div class="spinner"></div>
-           <p>Loading new events...</p>
-         </div>
-       </div>
-    </main>
-  </div>
-
-  <footer>
-    <p>&copy; 2024 LetsRace.cc | <a href="pages/about.html">About</a> | <a href="mailto:hello@letsrace.cc">Contact</a></p>
-  </footer>
-
-  <!-- Defer non-critical JavaScript -->
-  <script>
-    // Get current page filename
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
-                   // Clear all region selections
-      function clearAllRegions() {
-        const checkboxes = document.querySelectorAll('.region-checkbox input');
-        checkboxes.forEach(cb => cb.checked = false);
-        // Clear localStorage
-        localStorage.removeItem('selectedRegions');
-        // Apply the filter to show all events
-        applyHomepageRegionFilter();
-      }
-    
-    // Toggle mobile filter panel
-    function toggleMobileFilter() {
-      const panel = document.getElementById('mobile-filter-panel');
-      panel.classList.toggle('active');
-    }
-    
-    // Burger menu functionality
-    function createBurgerMenu() {
-      // Create burger icon
-      const burger = document.createElement('div');
-      burger.id = 'burger-menu';
-      burger.innerHTML = `
-        <span></span>
-        <span></span>
-        <span></span>
-      `;
-
-      // Create nav menu (same links as header)
-      const nav = document.createElement('nav');
-      nav.id = 'mobile-nav';
-      nav.innerHTML = `
-        <div id="close-menu"></div>
-        <ul>
-          <li><a href="index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
-          <li><a href="pages/road/" class="${currentPage === 'road' ? 'current' : ''}">Road</a></li>
-          <li><a href="pages/track/" class="${currentPage === 'track' ? 'current' : ''}">Track</a></li>
-          <li><a href="pages/mtb/" class="${currentPage === 'mtb' ? 'current' : ''}">MTB</a></li>
-          <li><a href="pages/bmx/" class="${currentPage === 'bmx' ? 'current' : ''}">BMX</a></li>
-          <li><a href="pages/cyclo-cross/" class="${currentPage === 'cyclo-cross' ? 'current' : ''}">Cyclo-Cross</a></li>
-          <li><a href="pages/time-trial/" class="${currentPage === 'time-trial' ? 'current' : ''}">Time Trial</a></li>
-          <li><a href="pages/hill-climb/" class="${currentPage === 'hill-climb' ? 'current' : ''}">Hill Climb</a></li>
-          <li><a href="pages/speedway/" class="${currentPage === 'speedway' ? 'current' : ''}">Speedway</a></li>
-          <li><a href="pages/about.html" class="${currentPage === 'about.html' ? 'current' : ''}">About</a></li>
-        </ul>
-      `;
-
-      // Append burger to header, nav to body
-      const header = document.querySelector('header');
-      if (header) header.appendChild(burger);
-      document.body.appendChild(nav);
-
-      burger.addEventListener('click', () => {
-        nav.classList.toggle('open');
-        burger.classList.toggle('open');
-      });
-
-      // Close menu when a link is clicked
-      nav.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A' || e.target.id === 'close-menu') {
-          nav.classList.remove('open');
-          burger.classList.remove('open');
-        }
-      });
-    }
-    
-                   // Initialize burger menu
-      createBurgerMenu();
-      
-      // Set initial checkbox states based on localStorage
-      function setInitialHomepageCheckboxStates() {
-        const storedRegions = localStorage.getItem('selectedRegions');
-        const allCheckboxes = document.querySelectorAll('.region-checkbox input');
         
-        // Always start with all checkboxes unchecked
-        allCheckboxes.forEach(cb => cb.checked = false);
-        
-        if (storedRegions) {
-          try {
-            const regions = JSON.parse(storedRegions);
-            
-            if (regions.length > 0) {
-              regions.forEach(region => {
-                const checkboxes = document.querySelectorAll(`.region-checkbox input[value="${region}"]`);
-                checkboxes.forEach(checkbox => {
-                  checkbox.checked = true;
-                });
-              });
-            }
-          } catch (e) {
-            console.error('Error parsing stored regions:', e);
-          }
-        }
-      }
-      
-      // Set initial states when page loads with a small delay to ensure DOM is ready
-      setTimeout(() => {
-        setInitialHomepageCheckboxStates();
-      }, 10);
-     
-     // Homepage region filter functionality
-     let filteredEvents = [];
-     let allEventsData = [];
-     
-           function applyHomepageRegionFilter() {
-        const selectedRegions = getSelectedRegions();
-        const container = document.getElementById('new-events');
-        
-        // Store selected regions in localStorage for persistence
-        if (selectedRegions.length > 0) {
-          localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
-        } else {
-          localStorage.removeItem('selectedRegions');
-        }
-        
-        if (selectedRegions.length === 0) {
-          // No filters selected, show all events
-          filteredEvents = allEventsData;
-        } else {
-          // Filter events by selected regions
-          filteredEvents = allEventsData.filter(event => {
-            const eventRegion = event.region || '';
-            const normalizedEventRegion = normalizeRegionName(eventRegion);
-            return selectedRegions.some(region => {
-              const normalizedRegion = normalizeRegionName(region);
-              return normalizedEventRegion === normalizedRegion;
-            });
-          });
-        }
-        
-        // Update display with filtered events
-        updateHomepageDisplay();
-      }
-     
-     function getSelectedRegions() {
-       const checkboxes = document.querySelectorAll('.region-checkbox input:checked');
-       return Array.from(checkboxes).map(cb => cb.value);
-     }
-     
-     function updateHomepageDisplay() {
-       const container = document.getElementById('new-events');
-       
-       if (filteredEvents.length === 0) {
-         container.innerHTML = '<div class="no-events"><p>No events found for the selected regions.</p></div>';
-         // Update the title for no events
-         const titleElement = document.getElementById('new-events-title');
-         if (titleElement) {
-           titleElement.textContent = 'New Events';
-         }
-         return;
+        <!-- Footer -->
+        <footer>
+            <small id="build-stamp">Loading...</small>
+        </footer>
+        </main>
+
+     <!-- Load the homepage module -->
+   <script type="module" src="/assets/js/homepage.js"></script>
+
+     <!-- Load non-critical scripts after page load -->
+   <script src="assets/js/render.js?v=7"></script>
+   <script src="assets/js/cache.js?v=1"></script>
+   <script>
+     // Defer service worker registration
+     window.addEventListener('load', () => {
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/assets/js/sw.js')
+           .then(registration => {
+             console.log('SW registered: ', registration);
+           })
+           .catch(registrationError => {
+             console.log('SW registration failed: ', registrationError);
+           });
        }
-       
-       // Filter for new events only
-       const newEvents = filteredEvents.filter(event => {
-         const imported = event.imported || '';
-         const added = new Date(imported);
-         const now = new Date();
-         const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
-         
-         if (!isNaN(added.getTime())) {
-           const addedMidnight = new Date(added.getFullYear(), added.getMonth(), added.getDate());
-           const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
-           return addedMidnight > daysAgoMidnight;
-         }
-         return false;
-       });
-       
-       if (newEvents.length === 0) {
-         container.innerHTML = '<div class="no-events"><p>No new events found for the selected regions.</p></div>';
-         // Update the title for no events
-         const titleElement = document.getElementById('new-events-title');
-         if (titleElement) {
-           titleElement.textContent = 'New Events';
-         }
-         return;
-       }
-       
-       // Render the filtered new events
-       const eventsHtml = renderHomepageEventsHtml(newEvents);
-       container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
-       // Update the title with the filtered count
-       const titleElement = document.getElementById('new-events-title');
-       if (titleElement) {
-         titleElement.textContent = `${newEvents.length} New Events`;
-       }
-     }
-     
-     function renderHomepageEventsHtml(events) {
-       if (events.length === 0) return '';
-       
-       const sortedEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date));
-       
-       return sortedEvents.map(event => {
-         const d = new Date(event.date);
-         const dayName = d.toLocaleDateString("en-GB", { weekday: "short" }).toUpperCase();
-         const day = d.getDate().toString().padStart(2, '0');
-         const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
-         
-         return `
-           <a href="${event.url}" target="_blank" class="event newly-added">
-             <div class="date-square">
-               <div class="day-name">${dayName}</div>
-               <div class="day-number">${day}</div>
-               <div class="month">${month}</div>
-             </div>
-             <div class="event-content">
-               <span class="new-badge">NEW</span>
-               <h2>${event.name}</h2>
-               <p class="event-location">${event.location}${event.region ? ` • ${event.region}` : ''}</p>
-             </div>
-           </a>
-         `;
-       }).join("");
-     }
-   </script>
-
-  <!-- Load non-critical scripts after page load -->
-  <script src="assets/js/render.js?v=7"></script>
-  <script src="assets/js/cache.js?v=1"></script>
-  <script>
-    // Defer service worker registration
-    window.addEventListener('load', () => {
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/assets/js/sw.js')
-          .then(registration => {
-            console.log('SW registered: ', registration);
-          })
-          .catch(registrationError => {
-            console.log('SW registration failed: ', registrationError);
-          });
-      }
-    });
-    
-    // Load analytics after page load
-    setTimeout(() => {
-      const script = document.createElement('script');
-      script.src = '//gc.zgo.at/count.js';
-      script.setAttribute('data-goatcounter', 'https://letsrace.goatcounter.com/count');
-      script.async = true;
-      document.head.appendChild(script);
-    }, 1000);
-    
-                   // Load new events from dedicated file
-      async function loadAllNewEvents() {
-        const container = document.getElementById('new-events');
-        container.innerHTML = '<div class="loading-message"><div class="spinner"></div><p>Loading new events...</p></div>';
-        
-        try {
-          // First, get the manifest to find the new events file
-          const manifestResponse = await fetch('/data/manifest.json');
-          if (!manifestResponse.ok) {
-            throw new Error('Failed to load manifest');
-          }
-          const manifest = await manifestResponse.json();
-          
-          if (!manifest.new_events) {
-            throw new Error('New events file not found in manifest');
-          }
-          
-          // Load the new events file
-          const newEventsResponse = await fetch(manifest.new_events);
-          if (!newEventsResponse.ok) {
-            throw new Error('Failed to load new events');
-          }
-          const newEventsData = await newEventsResponse.json();
-          
-          if (!newEventsData.events || !Array.isArray(newEventsData.events)) {
-            throw new Error('Invalid new events data format');
-          }
-          
-          const allEvents = newEventsData.events;
-          allEventsData = allEvents; // Store for filtering
-          
-          console.log('New events loaded:', allEvents.length);
-          
-          // Check if there are stored region filters and apply them
-          const storedRegions = localStorage.getItem('selectedRegions');
-          if (storedRegions) {
-            try {
-              const regions = JSON.parse(storedRegions);
-              if (regions.length > 0) {
-                // Apply the stored filter
-                filteredEvents = allEvents.filter(event => {
-                  const eventRegion = event.region || '';
-                  const normalizedEventRegion = normalizeRegionName(eventRegion);
-                  return regions.some(region => {
-                    const normalizedRegion = normalizeRegionName(region);
-                    return normalizedEventRegion === normalizedRegion;
-                  });
-                });
-                // Update display with filtered events
-                updateHomepageDisplay();
-                return;
-              }
-            } catch (e) {
-              console.error('Error parsing stored regions:', e);
-            }
-          }
-          
-          // No filters, show all new events
-          if (allEvents.length > 0) {
-            const eventsHtml = renderEventsHtml(allEvents);
-            container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
-            // Update the title with the count
-            const titleElement = document.getElementById('new-events-title');
-            if (titleElement) {
-              titleElement.textContent = `${allEvents.length} New Events`;
-            }
-          } else {
-            container.innerHTML = '<div class="no-events"><p>No new events found. Check back soon!</p></div>';
-            // Update the title for no events
-            const titleElement = document.getElementById('new-events-title');
-            if (titleElement) {
-              titleElement.textContent = 'New Events';
-            }
-          }
-          
-        } catch (error) {
-          console.error('Failed to load new events:', error);
-          container.innerHTML = '<div class="no-events"><p>Sorry, we couldn\'t load the new events. Please try refreshing the page.</p></div>';
-        }
-      }
-      
-      // Function to render events HTML
-      function renderEventsHtml(events) {
-        if (events.length === 0) return '';
-        
-        const sortedEvents = events.sort((a, b) => new Date(a.date) - new Date(b.date));
-        
-        return sortedEvents.map(event => {
-          const d = new Date(event.date);
-          const dayName = d.toLocaleDateString("en-GB", { weekday: "short" }).toUpperCase();
-          const day = d.getDate().toString().padStart(2, '0');
-          const month = d.toLocaleDateString("en-GB", { month: "short" }).toUpperCase();
-          
-          return `
-            <a href="${event.url}" target="_blank" class="event newly-added">
-              <div class="date-square">
-                <div class="day-name">${dayName}</div>
-                <div class="day-number">${day}</div>
-                <div class="month">${month}</div>
-              </div>
-              <div class="event-content">
-                <span class="new-badge">NEW</span>
-                <h2>${event.name}</h2>
-                <p class="event-location">${event.venue}${event.region ? ` • ${event.region}` : ''}</p>
-              </div>
-            </a>
-          `;
-        }).join("");
-      }
-    
-         // Load new events when page loads with timeout
-     const loadTimeout = setTimeout(() => {
-       const container = document.getElementById('new-events');
-       container.innerHTML = '<div class="no-events"><p>Loading took too long. Please refresh the page or try again later.</p></div>';
-     }, 30000); // 30 second timeout
-     
-     loadAllNewEvents().finally(() => {
-       clearTimeout(loadTimeout);
      });
-  </script>
+     
+     // Load analytics after page load
+     setTimeout(() => {
+       const script = document.createElement('script');
+       script.src = '//gc.zgo.at/count.js';
+       script.setAttribute('data-goatcounter', 'https://letsrace.goatcounter.com/count');
+       script.async = true;
+       document.head.appendChild(script);
+     }, 1000);
+   </script>
 </body>
 </html>

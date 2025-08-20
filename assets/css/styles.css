@@ -34,13 +34,13 @@ body {
 
 /* Region sidebar */
 .region-sidebar {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 1.5rem;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
   height: fit-content;
   position: sticky;
   top: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   margin-top: 1rem;
 }
 
@@ -323,15 +323,26 @@ main h1 {
 
 /* Filters sidebar */
 .filters {
-  background: transparent;
+  background: #ffffff;
   border-radius: 8px;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   height: fit-content;
   position: sticky;
   top: 2rem;
-  box-shadow: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
 }
+
+/* Homepage filter content should be visible by default */
+.homepage .filter-content {
+  display: block !important;
+}
+
+.homepage .filter-toggle-btn {
+  display: none !important;
+}
+
+
 
 .filters::before {
   content: "Filter by Region";
@@ -678,6 +689,12 @@ main h1 {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.5rem;
+}
+
+/* Make single button take full width */
+.region-sidebar-buttons .clear-regions-btn:only-child {
+  flex: 1;
+  width: 100%;
 }
 
 /* Main Content */
@@ -1063,17 +1080,17 @@ footer a:visited {
   /* Mobile region checkboxes */
   .mobile-region-checkboxes {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
   }
   
   .mobile-region-checkboxes .region-checkbox {
-    flex: 0 0 auto;
-    padding: 0.5rem 1rem;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    width: 100%;
+    padding: 0.75rem 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
     margin: 0;
   }
   
