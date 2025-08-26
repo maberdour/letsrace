@@ -23,9 +23,9 @@ function doGet(e) {
     // Define discipline type mappings
     const mergedTypes = {
       "road": ["Road", "Closed Circuit", "Town Centre Crit", "Go-Ride"],
-      "mtb": ["MTB 4X", "MTB DH", "MTB XC"],
+      "mtb": ["MTB 4X", "MTB DH", "MTB XC", "MTB Enduro"],
       "track": ["Track", "Track League"],
-      "bmx": ["BMX"],
+      "bmx": ["BMX", "BMX Freestyle"],
       "cyclo-cross": ["Cyclo-Cross"],
       "time-trial": ["Time Trial"],
       "hill-climb": ["Hill-Climb"],

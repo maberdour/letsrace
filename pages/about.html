@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - LetsRace.cc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About LetsRace.cc - your go-to source for youth cycling events across the UK. Find, share and support youth cycling events in your region." />
+  
+  <link rel="stylesheet" href="../assets/css/styles.css?v=2">
+  
+  <!-- DNS prefetch for external resources -->
+  <link rel="dns-prefetch" href="//gc.zgo.at">
+  <link rel="dns-prefetch" href="//script.google.com">
+  
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
+  <link rel="preconnect" href="https://script.google.com" crossorigin>
+</head>
+<body>
+  <header>
+    <h1><a href="../index.html">letsrace.cc</a></h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="road/">Road</a>
+      <a href="track/">Track</a>
+      <a href="mtb/">MTB</a>
+      <a href="bmx/">BMX</a>
+      <a href="cyclo-cross/">Cyclo-Cross</a>
+      <a href="time-trial/">Time Trial</a>
+      <a href="hill-climb/">Hill Climb</a>
+      <a href="speedway/">Speedway</a>
+      <a href="about.html" class="current">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about-content">
+      <h1>About</h1>
+      
+      <p>Welcome to <strong>LetsRace.cc</strong> – your go-to source for youth cycling events across the UK.</p>
+      
+      <p>Whether you're a young rider, a parent, or a club coach, the goal is simple: <strong>to make it easier to find, share and support youth cycling events in your region.</strong></p>
+      
+      <p>This site curates listings from British Cycling and beyond – covering everything from <strong>road races and track meets</strong> to <strong>BMX, cyclo-cross, MTB, time trials, hill climbs</strong>, and more. You'll find upcoming races, locations, and entry links, all in one place.</p>
+
+      <h2>Why is this site needed?</h2>
+      
+      <p>Youth cycling is thriving – but event information can be scattered and hard to track down, or buried in websites that are really difficult to use, particularly for those new to the sport. This site aims to solve that.</p>
+      
+      <p><strong>LetsRace.cc</strong> was created to meet the need for:</p>
+      <ul>
+        <li>a clear view of upcoming events for young riders</li>
+        <li>better visibility for grassroots clubs and race organisers</li>
+        <li>an easier way for families to plan and support their riders' journeys.</li>
+      </ul>
+
+      <h2>What's coming next</h2>
+      
+      <p>This site is just getting started and is being updated regularly. If you've got an idea for how to improve it, please let me know.</p>
+      
+      <p><strong>Email:</strong> <a href="mailto:hello@letsrace.cc">hello@letsrace.cc</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <small id="build-stamp">Loading...</small>
+    </footer>
+  </main>
+
+  <!-- Load non-critical scripts after page load -->
+  <script src="../assets/js/cache.js?v=1"></script>
+  <script>
+    // Defer service worker registration
+    window.addEventListener('load', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../assets/js/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      }
+    });
+    
+    // Update build stamp for About page
+    document.addEventListener('DOMContentLoaded', () => {
+      const buildStamp = document.getElementById('build-stamp');
+      if (buildStamp) {
+        const now = new Date();
+        buildStamp.textContent = now.toLocaleDateString('en-GB', { 
+          weekday: 'short', 
+          year: 'numeric', 
+          month: 'short', 
+          day: 'numeric' 
+        });
+      }
+    });
+  </script>
+</body>
+</html>

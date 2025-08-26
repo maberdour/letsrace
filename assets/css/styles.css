@@ -17,6 +17,74 @@ body {
    HOMEPAGE STYLES
    ========================================================================== */
 
+/* ==========================================================================
+   ABOUT PAGE STYLES
+   ========================================================================== */
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.about-content h1 {
+  color: #0077cc;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.about-content h2 {
+  color: #0077cc;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 0.5rem;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.about-content ul {
+  margin: 1rem 0 1rem 2rem;
+}
+
+.about-content li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.about-content a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 1rem;
+  }
+  
+  .about-content h1 {
+    font-size: 2rem;
+  }
+  
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-content p,
+  .about-content li {
+    font-size: 1rem;
+  }
+}
+
 /* Critical styles for instant loading */
 .homepage { 
   min-height: 100vh; 

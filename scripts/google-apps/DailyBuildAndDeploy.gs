@@ -650,11 +650,15 @@ function normalizeType(typeValue) {
     'mtb xc': 'MTB',
     'mtb dh': 'MTB',
     'mtb 4x': 'MTB',
+    'mtb enduro': 'MTB',
     'bmx': 'BMX',
+    'bmx freestyle': 'BMX',
     'track': 'Track',
     'track league': 'Track',
     'road': 'Road',
     'closed circuit': 'Road',
+    'town centre crit': 'Road',
+    'go-ride': 'Road',
     'speedway': 'Speedway'
   };
   

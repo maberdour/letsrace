@@ -23,10 +23,9 @@ if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
 }
 
 function renderFooter() {
-  const currentYear = new Date().getFullYear();
   document.body.insertAdjacentHTML("beforeend", `
     <footer>
-      <p>&copy; ${currentYear} LetsRace.cc | <a href="about.html">About</a> | <a href="mailto:hello@letsrace.cc">Contact</a></p>
+      <small id="build-stamp">Loading...</small>
     </footer>
   `);
 }
