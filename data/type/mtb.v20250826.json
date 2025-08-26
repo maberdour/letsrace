@@ -221,6 +221,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "075dddcb",
+    "name": "Scottish Schools Mountain Bike Championships",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Comrie Croft - Baincroft, Perthshire",
+    "postcode": null,
+    "date": "2025-09-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/314310/Scottish-Schools-Mountain-Bike-Championships",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-26T13:11:00.000Z"
+  },
+  {
     "id": "e3848d56",
     "name": "Lloyds National Downhill Series 2025 Round 5 - Revolution",
     "type": "MTB",
@@ -232,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/313225/Lloyds-National-Downhill-Series-2025-Round-5---Revolution",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "1ab8c950",
+    "name": "Scottish National Enduro Championships 2025 / Scottish Enduro Series: Round 3 (Ballo)",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Ballo Woods , Perth",
+    "postcode": null,
+    "date": "2025-09-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/324160/Scottish-National-Enduro-Championships-2025--Scottish-Enduro-Series-Round-3-Ballo",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-26T13:11:00.000Z"
   },
   {
     "id": "bc42cf7c",
@@ -310,6 +336,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/325678/Bedgebury-Forest-CC---2025-XC-Race-Series---Event-5",
     "source": "Google Sheet",
     "last_updated": "2025-08-22T02:15:26.000Z"
+  },
+  {
+    "id": "c3bf48eb",
+    "name": "Scottish Enduro Series 2025: Round 4 (Ae Forest)",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Ae Forest, Dumfries & Galloway",
+    "postcode": null,
+    "date": "2025-10-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/324161/Scottish-Enduro-Series-2025-Round-4-Ae-Forest",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-26T13:11:00.000Z"
   },
   {
     "id": "08380d9f",

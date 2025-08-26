@@ -416,6 +416,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "12567549",
+    "name": "Lloyds National Track Series Round 2 - Black Line GP",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2025-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/322407/Lloyds-National-Track-Series-Round-2---Black-Line-GP",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-26T13:11:00.000Z"
+  },
+  {
     "id": "07dc6d9a",
     "name": "Monday Night Track League 2025 Round 27",
     "type": "Track",
