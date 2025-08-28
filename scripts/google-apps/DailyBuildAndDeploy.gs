@@ -116,7 +116,10 @@ function dailyBuild() {
     // Step 9: Commit all files to GitHub in a single batch (including manifest)
     const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest);
     
-    // Step 10: Log summary
+    // Step 10: Clean up old files (older than 7 days)
+    cleanupOldFiles();
+
+    // Step 11: Log summary
     logBuildSummary(sheetData.length, processedData.skipped, partitionedData, committedFiles, dateString);
     
     Logger.log("🎉 Daily build completed successfully!");
@@ -505,6 +508,98 @@ function logBuildSummary(totalRows, skippedRows, partitionedData, committedFiles
   Logger.log(`     ${committedFiles.index.facets}`);
   Logger.log(`     /data/new-events.v${dateString}.json`);
   Logger.log(`     /data/manifest.json`);
+}
+
+/**
+ * Clean up old files (older than 7 days)
+ */
+function cleanupOldFiles() {
+  const token = getGitHubToken();
+  const cutoffDate = new Date();
+  cutoffDate.setDate(cutoffDate.getDate() - 7);
+  const cutoffDateString = Utilities.formatDate(cutoffDate, CONFIG.SITE_TIMEZONE, 'yyyyMMdd');
+  
+  Logger.log(`🧹 Cleaning up files older than ${cutoffDateString}...`);
+  
+  // Get all files in the repository
+  const filesResponse = UrlFetchApp.fetch(
+    `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/git/trees/${CONFIG.TARGET_BRANCH}?recursive=1`,
+    {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    }
+  );
+  
+  if (filesResponse.getResponseCode() !== 200) {
+    Logger.log(`❌ Failed to get repository files: ${filesResponse.getResponseCode()}`);
+    return;
+  }
+  
+  const tree = JSON.parse(filesResponse.getContentText());
+  const filesToDelete = [];
+  
+  // Find old versioned files
+  tree.tree.forEach(item => {
+    if (item.type === 'blob' && item.path.startsWith('data/')) {
+      const match = item.path.match(/\.v(\d{8})\.json$/);
+      if (match && match[1] < cutoffDateString) {
+        filesToDelete.push({
+          path: item.path,
+          sha: item.sha
+        });
+      }
+    }
+  });
+  
+  if (filesToDelete.length === 0) {
+    Logger.log("✅ No old files to delete");
+    return;
+  }
+  
+  Logger.log(`🗑️ Deleting ${filesToDelete.length} old files...`);
+  
+  // Delete files in batches (GitHub API limit)
+  const batchSize = 10;
+  for (let i = 0; i < filesToDelete.length; i += batchSize) {
+    const batch = filesToDelete.slice(i, i + batchSize);
+    
+    for (const fileInfo of batch) {
+      try {
+        const deleteResponse = UrlFetchApp.fetch(
+          `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/contents/${fileInfo.path}`,
+          {
+            method: 'DELETE',
+            headers: {
+              'Authorization': `token ${token}`,
+              'Accept': 'application/vnd.github.v3+json',
+              'Content-Type': 'application/json'
+            },
+            payload: JSON.stringify({
+              message: `chore: remove old file ${fileInfo.path}`,
+              sha: fileInfo.sha
+            })
+          }
+        );
+        
+        if (deleteResponse.getResponseCode() === 200) {
+          Logger.log(`✅ Deleted: ${fileInfo.path}`);
+        } else {
+          Logger.log(`❌ Failed to delete ${fileInfo.path}: ${deleteResponse.getResponseCode()}`);
+        }
+      } catch (error) {
+        Logger.log(`❌ Error deleting ${fileInfo.path}: ${error.message}`);
+      }
+    }
+    
+    // Rate limiting - wait between batches
+    if (i + batchSize < filesToDelete.length) {
+      Utilities.sleep(1000);
+    }
+  }
+  
+  Logger.log(`✅ Cleanup completed. Deleted ${filesToDelete.length} files.`);
 }
 
 /**
