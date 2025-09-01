@@ -23,9 +23,17 @@ if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
 }
 
 function renderFooter() {
+  const currentDate = new Date().toLocaleDateString('en-GB', { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  });
   document.body.insertAdjacentHTML("beforeend", `
     <footer>
-      <small id="build-stamp">Loading...</small>
+      <small>
+        LetsRace.cc | Supporting youth cycling across the UK | Last updated: ${currentDate}
+        <span id="build-stamp" style="display: none;"></span>
+      </small>
     </footer>
   `);
 }

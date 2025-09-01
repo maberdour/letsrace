@@ -61,14 +61,16 @@
       <p><strong>Email:</strong> <a href="mailto:hello@letsrace.cc">hello@letsrace.cc</a></p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-      <small id="build-stamp">Loading...</small>
-    </footer>
+
   </main>
 
   <!-- Load non-critical scripts after page load -->
   <script src="../assets/js/cache.js?v=1"></script>
+  <script src="../assets/js/render.js"></script>
+  <script>
+    // Render footer
+    renderFooter();
+  </script>
   <script>
     // Defer service worker registration
     window.addEventListener('load', () => {

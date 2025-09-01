@@ -73,18 +73,19 @@
              </div>
   </div>
 
-                 <!-- Footer -->
-       <footer>
-         <small id="build-stamp">Loading...</small>
-       </footer>
+
         </main>
 
      <!-- Load the homepage module -->
    <script type="module" src="/assets/js/homepage.js"></script>
 
   <!-- Load non-critical scripts after page load -->
-  <script src="assets/js/render.js?v=7"></script>
+  <script src="assets/js/render.js?v=8"></script>
   <script src="assets/js/cache.js?v=1"></script>
+  <script>
+    // Render footer
+    renderFooter();
+  </script>
   <script>
     // Defer service worker registration
     window.addEventListener('load', () => {
