@@ -521,7 +521,6 @@ function cleanupOldFiles() {
   
   Logger.log(`🧹 Cleaning up files older than ${cutoffDateString}...`);
   
-  // Get all files in the repository
   const filesResponse = UrlFetchApp.fetch(
     `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/git/trees/${CONFIG.TARGET_BRANCH}?recursive=1`,
     {
@@ -540,15 +539,11 @@ function cleanupOldFiles() {
   const tree = JSON.parse(filesResponse.getContentText());
   const filesToDelete = [];
   
-  // Find old versioned files
   tree.tree.forEach(item => {
     if (item.type === 'blob' && item.path.startsWith('data/')) {
       const match = item.path.match(/\.v(\d{8})\.json$/);
       if (match && match[1] < cutoffDateString) {
-        filesToDelete.push({
-          path: item.path,
-          sha: item.sha
-        });
+        filesToDelete.push(item.path);
       }
     }
   });
@@ -558,47 +553,8 @@ function cleanupOldFiles() {
     return;
   }
   
-  Logger.log(`🗑️ Deleting ${filesToDelete.length} old files...`);
-  
-  // Delete files in batches (GitHub API limit)
-  const batchSize = 10;
-  for (let i = 0; i < filesToDelete.length; i += batchSize) {
-    const batch = filesToDelete.slice(i, i + batchSize);
-    
-    for (const fileInfo of batch) {
-      try {
-        const deleteResponse = UrlFetchApp.fetch(
-          `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/contents/${fileInfo.path}`,
-          {
-            method: 'DELETE',
-            headers: {
-              'Authorization': `token ${token}`,
-              'Accept': 'application/vnd.github.v3+json',
-              'Content-Type': 'application/json'
-            },
-            payload: JSON.stringify({
-              message: `chore: remove old file ${fileInfo.path}`,
-              sha: fileInfo.sha
-            })
-          }
-        );
-        
-        if (deleteResponse.getResponseCode() === 200) {
-          Logger.log(`✅ Deleted: ${fileInfo.path}`);
-        } else {
-          Logger.log(`❌ Failed to delete ${fileInfo.path}: ${deleteResponse.getResponseCode()}`);
-        }
-      } catch (error) {
-        Logger.log(`❌ Error deleting ${fileInfo.path}: ${error.message}`);
-      }
-    }
-    
-    // Rate limiting - wait between batches
-    if (i + batchSize < filesToDelete.length) {
-      Utilities.sleep(1000);
-    }
-  }
-  
+  Logger.log(`🗑️ Deleting ${filesToDelete.length} old files in a single commit...`);
+  batchDeleteFromGitHub(filesToDelete, `chore: remove ${filesToDelete.length} old data files`);
   Logger.log(`✅ Cleanup completed. Deleted ${filesToDelete.length} files.`);
 }
 
@@ -890,6 +846,71 @@ function extractStartTime(dateTimeValue) {
   }
   
   return null;
+}
+
+function batchDeleteFromGitHub(paths, commitMessage) {
+  const token = getGitHubToken();
+  const commitUrl = `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/commits/${CONFIG.TARGET_BRANCH}`;
+
+  const commitResponse = UrlFetchApp.fetch(commitUrl, {
+    method: 'GET',
+    headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+  });
+  if (commitResponse.getResponseCode() !== 200) {
+    throw new Error(`Failed to get current commit: ${commitResponse.getResponseCode()}`);
+  }
+  const currentCommit = JSON.parse(commitResponse.getContentText());
+  const baseTreeSha = currentCommit.commit.tree.sha;
+
+  const treeItems = paths.map(p => ({
+    path: p.replace(/^\//, ''),
+    mode: '100644',
+    type: 'blob',
+    sha: null
+  }));
+
+  const treeResponse = UrlFetchApp.fetch(`https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/git/trees`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `token ${token}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    },
+    payload: JSON.stringify({ base_tree: baseTreeSha, tree: treeItems })
+  });
+  if (treeResponse.getResponseCode() !== 201) {
+    throw new Error(`Failed to create delete tree: ${treeResponse.getResponseCode()} - ${treeResponse.getContentText()}`);
+  }
+  const tree = JSON.parse(treeResponse.getContentText());
+
+  const commitResponse2 = UrlFetchApp.fetch(`https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/git/commits`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `token ${token}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    },
+    payload: JSON.stringify({ message: commitMessage, tree: tree.sha, parents: [currentCommit.sha] })
+  });
+  if (commitResponse2.getResponseCode() !== 201) {
+    throw new Error(`Failed to create delete commit: ${commitResponse2.getResponseCode()} - ${commitResponse2.getContentText()}`);
+  }
+  const commit = JSON.parse(commitResponse2.getContentText());
+
+  const refResponse = UrlFetchApp.fetch(`https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/git/refs/heads/${CONFIG.TARGET_BRANCH}`, {
+    method: 'PATCH',
+    headers: {
+      'Authorization': `token ${token}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    },
+    payload: JSON.stringify({ sha: commit.sha })
+  });
+  if (refResponse.getResponseCode() !== 200) {
+    throw new Error(`Failed to update branch (delete): ${refResponse.getResponseCode()} - ${refResponse.getContentText()}`);
+  }
+
+  Logger.log(`✅ Batch deleted ${paths.length} files in a single commit`);
 }
 
 
