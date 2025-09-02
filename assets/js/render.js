@@ -5,6 +5,8 @@
 // Number of days after which an event is no longer considered "NEW"
 const NEW_EVENT_DAYS = 7;
 
+// Version: 11 - Fixed navigation paths with absolute URLs
+
 // ============================================================================
 // END CONFIGURATION
 // ============================================================================
@@ -41,26 +43,35 @@ function renderFooter() {
 function renderHeader(title) {
   // Determine if we're in a subdirectory (pages/)
   const isInSubdirectory = window.location.pathname.includes('/pages/');
-  const basePath = isInSubdirectory ? '../' : '';
   
   // Get current page for navigation highlighting
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   
+  // Build navigation links with correct paths
+  const navLinks = [
+    { href: isInSubdirectory ? '/index.html' : 'index.html', text: 'Home', current: currentPage === 'index.html' },
+    { href: isInSubdirectory ? '/pages/road/' : 'pages/road/', text: 'Road', current: currentPage === 'road' },
+    { href: isInSubdirectory ? '/pages/track/' : 'pages/track/', text: 'Track', current: currentPage === 'track' },
+    { href: isInSubdirectory ? '/pages/mtb/' : 'pages/mtb/', text: 'MTB', current: currentPage === 'mtb' },
+    { href: isInSubdirectory ? '/pages/bmx/' : 'pages/bmx/', text: 'BMX', current: currentPage === 'bmx' },
+    { href: isInSubdirectory ? '/pages/cyclo-cross/' : 'pages/cyclo-cross/', text: 'Cyclo-Cross', current: currentPage === 'cyclo-cross' },
+    { href: isInSubdirectory ? '/pages/time-trial/' : 'pages/time-trial/', text: 'Time Trial', current: currentPage === 'time-trial' },
+    { href: isInSubdirectory ? '/pages/hill-climb/' : 'pages/hill-climb/', text: 'Hill Climb', current: currentPage === 'hill-climb' },
+    { href: isInSubdirectory ? '/pages/speedway/' : 'pages/speedway/', text: 'Speedway', current: currentPage === 'speedway' },
+    { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' }
+  ];
+  
+  // Build navigation HTML
+  const navHTML = navLinks.map(link => 
+    `<a href="${link.href}" class="${link.current ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">${link.text}</a>`
+  ).join('');
+  
   document.body.insertAdjacentHTML("afterbegin", `
     <header style="background:#0077cc;color:white;padding:1rem;text-align:center;position:relative;">
-      <h1 style="margin:0;font-size:2rem;font-weight:700;letter-spacing:0.5px;font-family:'Courier New',monospace;"><a href="${basePath}index.html" style="color:white;text-decoration:none;">letsrace.cc</a></h1>
-              <nav style="margin-top:1rem;">
-          <a href="${basePath}index.html" class="${currentPage === 'index.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Home</a>
-          <a href="${basePath}pages/road/" class="${currentPage === 'road' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Road</a>
-          <a href="${basePath}pages/track/" class="${currentPage === 'track' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Track</a>
-          <a href="${basePath}pages/mtb/" class="${currentPage === 'mtb' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">MTB</a>
-          <a href="${basePath}pages/bmx/" class="${currentPage === 'bmx' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">BMX</a>
-          <a href="${basePath}pages/cyclo-cross/" class="${currentPage === 'cyclo-cross' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Cyclo-Cross</a>
-          <a href="${basePath}pages/time-trial/" class="${currentPage === 'time-trial' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Time Trial</a>
-          <a href="${basePath}pages/hill-climb/" class="${currentPage === 'hill-climb' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Hill Climb</a>
-          <a href="${basePath}pages/speedway/" class="${currentPage === 'speedway' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">Speedway</a>
-          <a href="${basePath}pages/about.html" class="${currentPage === 'about.html' ? 'current' : ''}" style="color:white;margin:0 0.5rem;text-decoration:none;">About</a>
-        </nav>
+      <h1 style="margin:0;font-size:2rem;font-weight:700;letter-spacing:0.5px;font-family:'Courier New',monospace;"><a href="${isInSubdirectory ? '../index.html' : 'index.html'}" style="color:white;text-decoration:none;">letsrace.cc</a></h1>
+      <nav style="margin-top:1rem;">
+        ${navHTML}
+      </nav>
     </header>
   `);
   
@@ -123,25 +134,34 @@ function createBurgerMenu() {
   // Get current page for burger menu links
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const isInSubdirectory = window.location.pathname.includes('/pages/');
-  const basePath = isInSubdirectory ? '../' : '';
+  
+  // Build navigation links with correct paths (same logic as header)
+  const navLinks = [
+    { href: isInSubdirectory ? '/index.html' : 'index.html', text: 'Home', current: currentPage === 'index.html' },
+    { href: isInSubdirectory ? '/pages/road/' : 'pages/road/', text: 'Road', current: currentPage === 'road' },
+    { href: isInSubdirectory ? '/pages/track/' : 'pages/track/', text: 'Track', current: currentPage === 'track' },
+    { href: isInSubdirectory ? '/pages/mtb/' : 'pages/mtb/', text: 'MTB', current: currentPage === 'mtb' },
+    { href: isInSubdirectory ? '/pages/bmx/' : 'pages/bmx/', text: 'BMX', current: currentPage === 'bmx' },
+    { href: isInSubdirectory ? '/pages/cyclo-cross/' : 'pages/cyclo-cross/', text: 'Cyclo-Cross', current: currentPage === 'cyclo-cross' },
+    { href: isInSubdirectory ? '/pages/time-trial/' : 'pages/time-trial/', text: 'Time Trial', current: currentPage === 'time-trial' },
+    { href: isInSubdirectory ? '/pages/hill-climb/' : 'pages/hill-climb/', text: 'Hill Climb', current: currentPage === 'hill-climb' },
+    { href: isInSubdirectory ? '/pages/speedway/' : 'pages/speedway/', text: 'Speedway', current: currentPage === 'speedway' },
+    { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' }
+  ];
+  
+  // Build navigation HTML
+  const navHTML = navLinks.map(link => 
+    `<li><a href="${link.href}" class="${link.current ? 'current' : ''}">${link.text}</a></li>`
+  ).join('');
 
   // Create nav menu (same links as header)
   const nav = document.createElement('nav');
   nav.id = 'mobile-nav';
   nav.innerHTML = `
     <div id="close-menu"></div>
-          <ul>
-        <li><a href="${basePath}index.html" class="${currentPage === 'index.html' ? 'current' : ''}">Home</a></li>
-        <li><a href="${basePath}pages/road/" class="${currentPage === 'road' ? 'current' : ''}">Road</a></li>
-        <li><a href="${basePath}pages/track/" class="${currentPage === 'track' ? 'current' : ''}">Track</a></li>
-        <li><a href="${basePath}pages/mtb/" class="${currentPage === 'mtb' ? 'current' : ''}">MTB</a></li>
-        <li><a href="${basePath}pages/bmx/" class="${currentPage === 'bmx' ? 'current' : ''}">BMX</a></li>
-        <li><a href="${basePath}pages/cyclo-cross/" class="${currentPage === 'cyclo-cross' ? 'current' : ''}">Cyclo-Cross</a></li>
-        <li><a href="${basePath}pages/time-trial/" class="${currentPage === 'time-trial' ? 'current' : ''}">Time Trial</a></li>
-        <li><a href="${basePath}pages/hill-climb/" class="${currentPage === 'hill-climb' ? 'current' : ''}">Hill Climb</a></li>
-        <li><a href="${basePath}pages/speedway/" class="${currentPage === 'speedway' ? 'current' : ''}">Speedway</a></li>
-        <li><a href="${basePath}pages/about.html" class="${currentPage === 'about.html' ? 'current' : ''}">About</a></li>
-      </ul>
+    <ul>
+      ${navHTML}
+    </ul>
   `;
 
   // Append burger to header, nav to body
