@@ -117,19 +117,6 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
-    "id": "4561e493",
-    "name": "Hillingdon Slipstreamers Autumn Circuit Race",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2025-10-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/314883/Hillingdon-Slipstreamers-Autumn-Circuit-Race",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
     "id": "369a7d75",
     "name": "Hillingdon Slipstreamers Autumn Series #2",
     "type": "Road",
@@ -139,32 +126,6 @@
     "date": "2025-10-25",
     "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/323746/Hillingdon-Slipstreamers-Autumn-Series-2-",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "369a7d75",
-    "name": "Hillingdon Slipstreamers Autumn Series #2",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2025-10-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323746/Hillingdon-Slipstreamers-Autumn-Series-2-",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "da6ec23e",
-    "name": "Hillingdon Slipstreamers Autumn Series #3",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2025-11-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323747/Hillingdon-Slipstreamers-Autumn-Series-3",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
