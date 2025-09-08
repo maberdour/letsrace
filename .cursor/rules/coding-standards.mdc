@@ -38,16 +38,19 @@ alwaysApply: false
 
 ## Performance Standards
 - Inline critical CSS for immediate page rendering
-- Defer non-critical JavaScript until after page load
-- Use DNS prefetch and preconnect for external resources
+- Load CSS synchronously for static sites (no async loading needed)
+- **Eliminate unnecessary HTTP requests** - load data files directly, not through manifests
+- **For static sites: minimize HTTP requests to essential files only**
+- Use DNS prefetch only for external resources (analytics)
 - Implement smart caching with 23-hour expiry for event data
-- Limit concurrent API requests to prevent overload (max 2 concurrent)
+- Load JavaScript files in parallel, not sequentially
 - Use debounced input handling (200ms) for better performance
 - Implement progressive enhancement approach
 - **DO NOT use service workers on GitHub Pages** (causes 404 errors)
 - Use request timeouts (5s) to prevent hanging requests
 - Implement AbortController for proper request cancellation
 - Add cache-busting headers to prevent stale data issues
+- **Target: Static sites should load in under 1 second**
 
 ## Error Handling
 - Include comprehensive error handling for network failures

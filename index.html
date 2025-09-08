@@ -144,17 +144,11 @@
     }
   </style>
   
-  <!-- Load full stylesheet asynchronously -->
-  <link rel="preload" href="assets/css/styles.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="assets/css/styles.css?v=3"></noscript>
+  <!-- Load full stylesheet synchronously for faster rendering -->
+  <link rel="stylesheet" href="assets/css/styles.css?v=3">
   
-  <!-- DNS prefetch for external resources -->
+  <!-- DNS prefetch for analytics only -->
   <link rel="dns-prefetch" href="//gc.zgo.at">
-  <link rel="dns-prefetch" href="//script.google.com">
-  
-  <!-- Preconnect to external domains for faster loading -->
-  <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
-  <link rel="preconnect" href="https://script.google.com" crossorigin>
 </head>
 <body class="homepage">
 
@@ -202,14 +196,12 @@
 
         </main>
 
-     <!-- Load the homepage script -->
-   <script src="/assets/js/homepage.js"></script>
-
-  <!-- Load non-critical scripts after page load -->
-             <script src="assets/js/render.js?v=11"></script>
+  <!-- Load all scripts in parallel for faster execution -->
+  <script src="assets/js/render.js?v=11"></script>
   <script src="assets/js/cache.js?v=1"></script>
+  <script src="/assets/js/homepage.js"></script>
   <script>
-    // Render header and footer
+    // Render header and footer immediately
     renderHeader("Home");
     renderFooter();
   </script>

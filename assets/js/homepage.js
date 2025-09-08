@@ -303,44 +303,12 @@ function initHomepage() {
       recordMilestone('initialization_start');
       console.log('🔄 Starting homepage data fetch...');
       
-      // Fetch manifest with timeout and error handling
-      console.log('📄 Fetching manifest...');
-      const manifestController = new AbortController();
-      const manifestTimeout = setTimeout(() => {
-        console.warn('Manifest fetch timeout');
-        manifestController.abort();
-      }, 5000);
+      // Direct URLs for facets and new events (no manifest needed)
+      const facetsUrl = '/data/index/facets.v20250908.json';
+      const newEventsUrl = '/data/new-events.v20250908.json';
       
-      const manifestResponse = await fetch('/data/manifest.json', {
-        signal: manifestController.signal,
-        headers: {
-          'Cache-Control': 'no-cache',
-          'Pragma': 'no-cache'
-        }
-      });
-      
-      clearTimeout(manifestTimeout);
-      console.log('📄 Manifest response status:', manifestResponse.status, manifestResponse.statusText);
-      recordMilestone('manifest_fetched');
-      
-      if (!manifestResponse.ok) {
-        console.error('❌ Manifest fetch failed:', manifestResponse.status, manifestResponse.statusText);
-        throw new Error(`Failed to fetch manifest: ${manifestResponse.status}`);
-      }
-      
-      const manifest = await manifestResponse.json();
-      console.log('✅ Manifest loaded:', manifest);
-      
-      // Get URLs for facets and new events
-      const facetsUrl = manifest.index.facets;
-      const newEventsUrl = manifest.new_events;
-      
-      if (!facetsUrl || !newEventsUrl) {
-        console.error('❌ Invalid manifest structure:', { facetsUrl, newEventsUrl });
-        throw new Error('Invalid manifest structure');
-      }
-      
-      console.log('🔗 Fetching data files:', { facetsUrl, newEventsUrl });
+      console.log('🔗 Fetching data files directly:', { facetsUrl, newEventsUrl });
+      recordMilestone('data_fetch_start');
       
       // Fetch facets and new events in parallel with individual timeouts
       console.log('🔗 Fetching facets from:', facetsUrl);
