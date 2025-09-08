@@ -11,6 +11,10 @@ alwaysApply: false
 - Add JSDoc comments for functions
 - Keep functions focused and single-purpose
 - Use async/await for asynchronous operations
+- **CRITICAL: NEVER use `type="module"` unless the JavaScript file is actually written as an ES module**
+- **CRITICAL: Regular JavaScript files must be loaded without `type="module"` attribute**
+- **CRITICAL: Only use `type="module"` for files that use ES6 import/export syntax**
+- **CRITICAL: Test JavaScript loading in browser console to ensure no module errors**
 
 ## CSS
 - Use Tailwind CSS classes when possible
@@ -77,3 +81,11 @@ alwaysApply: false
 - **Do not add new features or functionality unless explicitly asked**
 - **Preserve existing code structure and styling unless specifically asked to change it**
 - **If unsure whether a change is needed, ask the user first**
+
+## Critical JavaScript Loading Standards
+- **NEVER use `type="module"` on regular JavaScript files**
+- **ALWAYS verify JavaScript files load without errors before deployment**
+- **If a JavaScript file uses ES6 import/export, it MUST be loaded with `type="module"`**
+- **If a JavaScript file does NOT use import/export, it MUST be loaded WITHOUT `type="module"`**
+- **Test all JavaScript loading in browser console to catch module errors early**
+- **Module loading errors can break entire websites - this is a CRITICAL requirement**
