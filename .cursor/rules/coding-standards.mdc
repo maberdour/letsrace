@@ -66,3 +66,14 @@ alwaysApply: false
 - Maintain proper heading hierarchy (h1, h2, h3, etc.)
 - Use role="list" for event lists
 - Implement aria-live="polite" for dynamic content updates
+
+## Code Modification Standards
+- **ONLY make changes that are explicitly requested by the user**
+- **NEVER modify code that the user did not ask to be changed**
+- **Make minimal, targeted changes - only touch what needs to be fixed**
+- **If fixing one issue, do not modify unrelated code**
+- **When asked to fix a specific problem, only fix that problem**
+- **Do not "improve" or "enhance" code unless specifically requested**
+- **Do not add new features or functionality unless explicitly asked**
+- **Preserve existing code structure and styling unless specifically asked to change it**
+- **If unsure whether a change is needed, ask the user first**
