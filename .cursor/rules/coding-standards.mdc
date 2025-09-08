@@ -95,6 +95,13 @@ alwaysApply: false
 - **MANDATORY: Update any related standards that could prevent similar issues**
 - **This process ensures continuous improvement and prevents recurring mistakes**
 
+## Navigation Standards
+- **MANDATORY: All navigation arrays must include ALL site pages**
+- **MANDATORY: When adding new pages, update ALL navigation functions**
+- **MANDATORY: Navigation must be consistent between desktop and mobile**
+- **MANDATORY: Test navigation on all pages to ensure all links work**
+- **MANDATORY: Navigation links must handle both subdirectory and root directory paths correctly**
+
 ## Critical JavaScript Loading Standards
 - **NEVER use `type="module"` on regular JavaScript files**
 - **ALWAYS verify JavaScript files load without errors before deployment**
