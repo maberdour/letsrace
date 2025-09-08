@@ -37,8 +37,8 @@ description: "Design and user experience standards for LetsRace"
 - Minimize HTTP requests
 
 ## Performance Optimization Standards
-- Homepage load time target: Under 0.5 second
-- Event page load time target: Under 0.5 seconds
+- Homepage load time target: Under 3 seconds (realistic for GitHub Pages)
+- Event page load time target: Under 3 seconds
 - Inline critical CSS for immediate page rendering
 - Defer non-critical JavaScript until after page load
 - Use DNS prefetch and preconnect for external resources
@@ -46,19 +46,25 @@ description: "Design and user experience standards for LetsRace"
 - Limit concurrent API requests to prevent overload (max 2 concurrent)
 - Use debounced input handling (200ms) for better performance
 - Implement progressive enhancement approach
-- Use service workers for offline functionality
+- **DO NOT use service workers on GitHub Pages** (causes 404 errors and 15+ second delays)
+- Add favicon files to prevent 404 requests
+- Use Content Security Policy to prevent browser extension interference
 
 ## Loading Sequence Standards
 1. Critical content first (header, footer, main data)
-2. Non-critical content deferred (analytics, service worker)
+2. Non-critical content deferred (analytics only - no service worker)
 3. Background preloading after main content loads
 4. Limited concurrency to prevent API overload
+5. Favicon and essential assets loaded immediately
 
 ## Network Optimization
 - DNS prefetch for external domains
 - Preconnect for faster connection establishment
 - High priority requests for main content
 - Reduced timeouts for faster fallbacks (5s for main content, 10s for preloading)
+- Cache-busting headers to prevent stale data
+- AbortController for proper request cancellation
+- Content Security Policy to prevent extension interference
 
 ## User Experience Standards
 - No loading message flash - basic page structure appears instantly

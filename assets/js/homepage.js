@@ -297,15 +297,29 @@ function initHomepage() {
     console.log('✅ Filter state restored');
   }
   
-  // Fetch data and initialize page
+  // Fetch data and initialize page with enhanced error handling
   async function initializePage() {
     try {
       recordMilestone('initialization_start');
       console.log('🔄 Starting homepage data fetch...');
       
-      // Fetch manifest
+      // Fetch manifest with timeout and error handling
       console.log('📄 Fetching manifest...');
-      const manifestResponse = await fetch('/data/manifest.json');
+      const manifestController = new AbortController();
+      const manifestTimeout = setTimeout(() => {
+        console.warn('Manifest fetch timeout');
+        manifestController.abort();
+      }, 5000);
+      
+      const manifestResponse = await fetch('/data/manifest.json', {
+        signal: manifestController.signal,
+        headers: {
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache'
+        }
+      });
+      
+      clearTimeout(manifestTimeout);
       console.log('📄 Manifest response status:', manifestResponse.status, manifestResponse.statusText);
       recordMilestone('manifest_fetched');
       
@@ -328,14 +342,42 @@ function initHomepage() {
       
       console.log('🔗 Fetching data files:', { facetsUrl, newEventsUrl });
       
-      // Fetch facets and new events in parallel
+      // Fetch facets and new events in parallel with individual timeouts
       console.log('🔗 Fetching facets from:', facetsUrl);
       console.log('🔗 Fetching new events from:', newEventsUrl);
       
+      const facetsController = new AbortController();
+      const newEventsController = new AbortController();
+      
+      const facetsTimeout = setTimeout(() => {
+        console.warn('Facets fetch timeout');
+        facetsController.abort();
+      }, 5000);
+      
+      const newEventsTimeout = setTimeout(() => {
+        console.warn('New events fetch timeout');
+        newEventsController.abort();
+      }, 5000);
+      
       const [facetsResponse, newEventsResponse] = await Promise.all([
-        fetch(facetsUrl),
-        fetch(newEventsUrl)
+        fetch(facetsUrl, {
+          signal: facetsController.signal,
+          headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache'
+          }
+        }),
+        fetch(newEventsUrl, {
+          signal: newEventsController.signal,
+          headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache'
+          }
+        })
       ]);
+      
+      clearTimeout(facetsTimeout);
+      clearTimeout(newEventsTimeout);
       
       console.log('📄 Facets response status:', facetsResponse.status, facetsResponse.statusText);
       console.log('📄 New events response status:', newEventsResponse.status, newEventsResponse.statusText);
@@ -412,11 +454,34 @@ function initHomepage() {
         stack: error.stack,
         name: error.name
       });
+      
+      // Show user-friendly error message with retry option
       newEventsContainer.innerHTML = `
-        <div class="no-events">
-          <p>Sorry, we couldn't load the new events. Please try refreshing the page.</p>
+        <div class="error-message">
+          <p><strong>Unable to load events</strong></p>
+          <p>We're having trouble loading the latest events. This might be due to:</p>
+          <ul style="text-align: left; display: inline-block; margin: 1rem 0;">
+            <li>Network connectivity issues</li>
+            <li>Server maintenance</li>
+            <li>Browser cache problems</li>
+          </ul>
+          <button class="retry-button" onclick="window.location.reload()">
+            🔄 Try Again
+          </button>
+          <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+            If the problem persists, please check your internet connection or try again later.
+          </p>
         </div>
       `;
+      
+      // Track error for analytics
+      if (window.gtag) {
+        window.gtag('event', 'page_error', {
+          error_type: 'initialization_failed',
+          error_message: error.message,
+          error_name: error.name
+        });
+      }
     }
   }
   

@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Find youth cycling events across the UK – including road races, BMX, cyclo-cross, MTB, and more. LetsRace.cc makes it easy to discover, share, and support grassroots bike racing." />
   
+  <!-- Content Security Policy to prevent extension interference -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https:; font-src 'self' https: data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  
+  <!-- Favicon links -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/Favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Favicon-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/Favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/Favicon-512.png">
+  
   <!-- Critical CSS inlined for immediate page rendering -->
   <style>
     /* Critical styles for instant loading */
@@ -219,18 +229,8 @@
     renderFooter();
   </script>
   <script>
-    // Defer service worker registration
-    window.addEventListener('load', () => {
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/assets/js/sw.js')
-          .then(registration => {
-            console.log('SW registered: ', registration);
-          })
-          .catch(registrationError => {
-            console.log('SW registration failed: ', registrationError);
-          });
-      }
-    });
+    // Service worker registration removed to prevent 404 errors
+    // GitHub Pages doesn't support service workers in the root directory
     
     // Load analytics after page load
     setTimeout(() => {

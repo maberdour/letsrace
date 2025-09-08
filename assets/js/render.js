@@ -11,18 +11,8 @@ const NEW_EVENT_DAYS = 7;
 // END CONFIGURATION
 // ============================================================================
 
-// Register service worker for caching (only in production)
-if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(registration => {
-        console.log('SW registered: ', registration);
-      })
-      .catch(registrationError => {
-        console.log('SW registration failed: ', registrationError);
-      });
-  });
-}
+// Service worker registration removed to prevent 404 errors
+// GitHub Pages doesn't support service workers in the root directory
 
 function renderFooter() {
   const currentDate = new Date().toLocaleDateString('en-GB', { 

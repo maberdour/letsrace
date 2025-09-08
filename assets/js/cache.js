@@ -106,7 +106,7 @@ class EventCache {
 const eventCache = new EventCache();
 window.eventCache = eventCache; // Make it globally accessible
 
-// Enhanced fetch function with caching and timeout
+// Enhanced fetch function with caching, timeout, and better error handling
 async function fetchWithCache(url, category) {
   // Extract region parameter from URL for cache key
   const urlObj = new URL(url);
@@ -120,30 +120,43 @@ async function fetchWithCache(url, category) {
     return cachedData;
   }
 
-  // If not in cache, fetch from server with shorter timeout
+  // If not in cache, fetch from server with optimized timeout
   console.log(`Fetching fresh data for ${category}`);
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 8000); // Increased to 8s for reliability
+    const timeoutId = setTimeout(() => {
+      console.warn(`Request timeout for ${category}`);
+      controller.abort();
+    }, 5000); // Reduced to 5s for faster failure recovery
     
     const response = await fetch(url, {
       signal: controller.signal,
-      priority: 'high' // Request high priority for main content
+      priority: 'high',
+      // Add headers to prevent caching issues
+      headers: {
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache'
+      }
     });
     
     clearTimeout(timeoutId);
     
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error(`HTTP error! status: ${response.status} ${response.statusText}`);
     }
+    
     const data = await response.json();
     
-    // Store in cache
-    eventCache.setCache(cacheKey, data);
+    // Validate data before caching
+    if (Array.isArray(data) || (typeof data === 'object' && data !== null)) {
+      eventCache.setCache(cacheKey, data);
+    } else {
+      console.warn(`Invalid data format for ${category}:`, typeof data);
+    }
     
     return data;
   } catch (error) {
-    console.error('Fetch error:', error);
+    console.error(`Fetch error for ${category}:`, error.name, error.message);
     
     // Always try to return expired cache as fallback
     const expiredCache = eventCache.getExpiredCache(cacheKey);
