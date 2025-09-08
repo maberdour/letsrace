@@ -312,46 +312,12 @@ export function initEventsPage() {
       recordMilestone('initialization_start');
       console.log('🔄 Starting data fetch...');
       
-      // Fetch manifest with timeout and error handling
-      console.log('📄 Fetching manifest...');
-      const manifestController = new AbortController();
-      const manifestTimeout = setTimeout(() => manifestController.abort(), 10000); // 10 second timeout
+      // Direct URLs for facets and type shard (no manifest needed)
+      const typeShardUrl = `/data/type/${pageType}.v20250908.json`;
+      const facetsUrl = '/data/index/facets.v20250908.json';
       
-      const manifestResponse = await fetch('/data/manifest.json', {
-        signal: manifestController.signal,
-        headers: {
-          'Accept': 'application/json',
-          'Cache-Control': 'no-cache'
-        }
-      });
-      
-      clearTimeout(manifestTimeout);
-      
-      if (!manifestResponse.ok) {
-        console.error('❌ Manifest fetch failed:', manifestResponse.status, manifestResponse.statusText);
-        throw new Error(`Failed to fetch manifest: ${manifestResponse.status}`);
-      }
-      
-      const manifest = await manifestResponse.json();
-      
-      // Validate manifest structure
-      if (!manifest || !manifest.type || !manifest.index) {
-        throw new Error('Invalid manifest structure received');
-      }
-      
-      console.log('✅ Manifest loaded:', manifest);
-      recordMilestone('manifest_fetched');
-      
-      // Get URLs for this page type
-      const typeShardUrl = manifest.type[pageType];
-      const facetsUrl = manifest.index.facets;
-      
-      if (!typeShardUrl || !facetsUrl) {
-        console.error('❌ Invalid manifest structure:', { typeShardUrl, facetsUrl });
-        throw new Error('Invalid manifest structure');
-      }
-      
-      console.log('🔗 Fetching data files:', { typeShardUrl, facetsUrl });
+      console.log('🔗 Fetching data files directly:', { typeShardUrl, facetsUrl });
+      recordMilestone('data_fetch_start');
       
       // Fetch facets and type shard in parallel with timeout and error handling
       const facetsController = new AbortController();

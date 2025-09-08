@@ -41,6 +41,7 @@ alwaysApply: false
 - Load CSS synchronously for static sites (no async loading needed)
 - **Eliminate unnecessary HTTP requests** - load data files directly, not through manifests
 - **For static sites: minimize HTTP requests to essential files only**
+- **Apply performance optimizations to ALL pages** - homepage and event pages must have identical performance
 - Use DNS prefetch only for external resources (analytics)
 - Implement smart caching with 23-hour expiry for event data
 - Load JavaScript files in parallel, not sequentially
@@ -84,6 +85,15 @@ alwaysApply: false
 - **Do not add new features or functionality unless explicitly asked**
 - **Preserve existing code structure and styling unless specifically asked to change it**
 - **If unsure whether a change is needed, ask the user first**
+
+## Post-Fix Analysis Requirements
+- **MANDATORY: After fixing any code issue, analyze the root cause of the error**
+- **MANDATORY: Update relevant MDC files to prevent the same error from recurring**
+- **MANDATORY: Document the specific error pattern and how to avoid it**
+- **MANDATORY: Add preventive measures to coding standards**
+- **MANDATORY: Consider if the error indicates a broader systemic issue**
+- **MANDATORY: Update any related standards that could prevent similar issues**
+- **This process ensures continuous improvement and prevents recurring mistakes**
 
 ## Critical JavaScript Loading Standards
 - **NEVER use `type="module"` on regular JavaScript files**

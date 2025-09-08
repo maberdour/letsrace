@@ -53,11 +53,11 @@
         
     </main>
     
-    <!-- Load the events page module -->
-    <script type="module" src="/assets/js/events-page.js"></script>
+    <!-- Load all scripts in parallel for faster execution -->
     <script src="/assets/js/render.js?v=11"></script>
+    <script type="module" src="/assets/js/events-page.js"></script>
     <script>
-        // Render header and footer
+        // Render header and footer immediately
         renderHeader("Track");
         renderFooter();
     </script>
