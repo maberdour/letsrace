@@ -1,0 +1,68 @@
+---
+title: "Deployment Rules"
+description: "Rules for deployment and automation"
+---
+
+# Deployment Rules
+
+## GitHub Pages
+- index.html must stay in root directory
+- Use CNAME file for custom domain (letsrace.cc)
+- Deploy from main branch
+- All static assets must be in appropriate directories
+
+## Automation
+- Daily build runs at 03:30 UK time (Europe/London timezone)
+- Use PowerShell scripts for Windows automation
+- Google Apps Scripts handle data processing and GitHub integration
+- Automated git push via auto-git-push.ps1
+
+## Content Updates
+- About page updates via pull-about.ps1 script
+- Event data updates automatically via Google Sheets
+- Use pull-about.bat for easy execution
+- Maintain separation between content (markdown) and presentation (HTML)
+
+## Data Processing
+- Filter events to future dates only
+- Normalize event types and regions
+- Generate versioned JSON files
+- Create searchable facets index
+- Handle duplicate detection based on date and name
+
+## Google Apps Script Configuration
+- Spreadsheet ID: `1r3GiuG-VF-wo-rwC6e8a25DjmN2dSmNtjpbAIUOk9Js`
+- Sheet Name: `Events`
+- GitHub Owner: `maberdour`
+- GitHub Repository: `letsrace`
+- Target Branch: `main`
+- Timezone: `Europe/London`
+
+## Security Requirements
+- Never hardcode GitHub tokens in scripts
+- Store tokens in Script Properties only
+- Use HTTPS for all API requests
+- Don't expose sensitive information in error responses
+- Rotate tokens if previously committed to repository
+
+## Data Schema Requirements
+- Input: Google Sheet with columns A-G (Date, Name, Type, Location, URL, Region, Date Added)
+- Output: Normalized JSON with consistent schema
+- Event IDs: Deterministic SHA-1 hash based on name, date, and venue
+- Date format: YYYY-MM-DD in Europe/London timezone
+- Time format: HH:mm or null for start times
+
+## Error Handling Standards
+- Log invalid dates and skip them
+- Log unknown event types and skip them
+- Log GitHub API errors with full response details
+- Log large shard warnings (>5000 events)
+- Include row numbers in error logs for debugging
+- Implement comprehensive logging throughout process
+
+## Performance Considerations
+- Process data in memory for efficiency
+- Handle large datasets (>10,000 events) with optimization
+- Respect GitHub API rate limits
+- Write empty shards to maintain consistent structure
+- Use parallel data fetching where possible

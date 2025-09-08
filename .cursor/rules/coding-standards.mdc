@@ -1,0 +1,61 @@
+---
+description: "Standards for JavaScript, CSS, and HTML in the LetsRace project"
+alwaysApply: false
+---
+# Coding Standards
+
+## JavaScript
+- Use modern ES6+ syntax
+- Prefer const/let over var
+- Use meaningful variable names
+- Add JSDoc comments for functions
+- Keep functions focused and single-purpose
+- Use async/await for asynchronous operations
+
+## CSS
+- Use Tailwind CSS classes when possible
+- Follow BEM methodology for custom CSS
+- Keep styles in assets/css/styles.css
+- Use CSS custom properties for consistent theming
+- Ensure responsive design with mobile-first approach
+
+## HTML
+- Use semantic HTML5 elements
+- Ensure accessibility with proper ARIA labels
+- Keep index.html in root for GitHub Pages deployment
+- Use proper heading hierarchy (h1, h2, h3, etc.)
+- Include alt text for all images
+
+## File Organization
+- Keep related functionality together
+- Separate concerns (rendering, caching, events)
+- Use descriptive file names
+- Maintain consistent indentation (2 spaces)
+
+## Performance Standards
+- Inline critical CSS for immediate page rendering
+- Defer non-critical JavaScript until after page load
+- Use DNS prefetch and preconnect for external resources
+- Implement smart caching with 23-hour expiry for event data
+- Limit concurrent API requests to prevent overload (max 2 concurrent)
+- Use debounced input handling (200ms) for better performance
+- Implement progressive enhancement approach
+- Use service workers for offline functionality
+
+## Error Handling
+- Include comprehensive error handling for network failures
+- Provide graceful fallbacks for missing data
+- Log errors with detailed context for debugging
+- Handle invalid dates and data formats gracefully
+- Implement safety timeouts to prevent infinite loading (15 seconds)
+- Use try-catch blocks for async operations
+
+## Accessibility Standards
+- Use proper ARIA labels and live regions
+- Implement keyboard navigation support
+- Ensure screen reader friendly structure
+- Use semantic HTML5 elements
+- Include alt text for all images
+- Maintain proper heading hierarchy (h1, h2, h3, etc.)
+- Use role="list" for event lists
+- Implement aria-live="polite" for dynamic content updates

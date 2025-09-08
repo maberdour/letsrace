@@ -1,0 +1,77 @@
+---
+title: "UI/UX Guidelines"
+description: "Design and user experience standards for LetsRace"
+---
+
+# UI/UX Guidelines
+
+## Design Principles
+- Clean, modern interface focused on youth cycling events
+- Mobile-first responsive design
+- Fast loading and performance optimized
+- Accessible to all users
+
+## Layout Standards
+- H1 headings should be left aligned across all pages
+- Footer should be specified in one place rather than hardcoded on every page
+- Use consistent spacing and typography
+- Maintain visual hierarchy with proper heading structure
+
+## Color Scheme
+- Use Tailwind CSS color palette
+- Category-specific colors for event types (e.g., bg-category-hillclimb)
+- Dark mode support with proper contrast
+- Consistent use of neutral colors for text and backgrounds
+
+## User Experience
+- Clear navigation between event categories
+- Easy filtering by region and event type
+- Fast search and filtering capabilities
+- Intuitive event information display
+- Responsive design for all device sizes
+
+## Performance
+- Implement caching for better performance
+- Optimize images and assets
+- Use service workers for offline functionality
+- Minimize HTTP requests
+
+## Performance Optimization Standards
+- Homepage load time target: Under 0.5 second
+- Event page load time target: Under 0.5 seconds
+- Inline critical CSS for immediate page rendering
+- Defer non-critical JavaScript until after page load
+- Use DNS prefetch and preconnect for external resources
+- Implement smart caching with 23-hour expiry for event data
+- Limit concurrent API requests to prevent overload (max 2 concurrent)
+- Use debounced input handling (200ms) for better performance
+- Implement progressive enhancement approach
+- Use service workers for offline functionality
+
+## Loading Sequence Standards
+1. Critical content first (header, footer, main data)
+2. Non-critical content deferred (analytics, service worker)
+3. Background preloading after main content loads
+4. Limited concurrency to prevent API overload
+
+## Network Optimization
+- DNS prefetch for external domains
+- Preconnect for faster connection establishment
+- High priority requests for main content
+- Reduced timeouts for faster fallbacks (5s for main content, 10s for preloading)
+
+## User Experience Standards
+- No loading message flash - basic page structure appears instantly
+- Clear feedback for empty states ("No upcoming events found")
+- Preserve region parameters across navigation
+- URL state management for filter persistence
+- Graceful error handling with helpful messages
+- Responsive design for all device sizes
+- Fast search and filtering capabilities
+- Intuitive event information display
+
+## Analytics and Tracking
+- Automatic tracking of filter changes
+- Event click tracking (if Plausible is available)
+- No tracking without user consent
+- Production-only analytics loading to prevent local file:// errors

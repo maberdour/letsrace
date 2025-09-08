@@ -1,0 +1,62 @@
+---
+title: "Content Management Rules"
+description: "Standards for content creation, updates, and management in LetsRace"
+---
+
+# Content Management Rules
+
+## About Page Content
+- Source content in `content/about.md` (markdown format)
+- Use `pull-about.ps1` script for updates
+- Use `pull-about.bat` for easy execution
+- Maintain separation between content (markdown) and presentation (HTML)
+- Keep `about.md` in version control for content history
+
+## Markdown Support
+- Use basic markdown formatting:
+  - `# Heading` → `<h1>Heading</h1>`
+  - `## Subheading` → `<h2>Subheading</h2>`
+  - `**bold text**` → `<strong>bold text</strong>`
+  - `[link text](url)` → `<a href="url">link text</a>`
+  - `- list item` → `<li>list item</li>`
+  - Regular paragraphs automatically wrapped in `<p>` tags
+
+## Content Update Workflow
+1. Edit `content/about.md` with content changes
+2. Run `pull-about.bat` or `.\pull-about.ps1`
+3. Preview changes (optional: use `-DryRun` flag)
+4. The `about.html` file is automatically updated
+5. Deploy the updated `about.html` file
+
+## Content Quality Standards
+- Use clear, accessible language
+- Provide helpful information for newcomers to the sport
+- Include contact information: hello@letsrace.cc
+- Maintain consistent tone and voice
+- Focus on practical, actionable information
+
+## Troubleshooting Content Issues
+- **PowerShell Execution Policy**: If you get execution policy errors, run:
+  ```powershell
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+  ```
+- **Network Issues**: Check internet connection if script can't fetch markdown content
+- **File Permissions**: Ensure write permissions in the directory
+- **Script Preservation**: Script preserves HTML structure, header, footer, and styling
+- **Content Updates**: Only content within `<div class="about-content">` is updated
+
+## Content Structure Standards
+- Use proper heading hierarchy
+- Include descriptive meta descriptions
+- Provide clear navigation paths
+- Maintain consistent formatting
+- Use semantic HTML structure
+- Include proper alt text for images
+- Ensure content is mobile-friendly
+
+## Version Control for Content
+- Keep source markdown files in version control
+- Track content changes and history
+- Maintain backup of content files
+- Use descriptive commit messages for content updates
+- Separate content changes from code changes in commits

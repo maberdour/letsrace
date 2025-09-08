@@ -1,0 +1,57 @@
+---
+title: "Project Conventions"
+description: "File organization and naming conventions for LetsRace"
+---
+
+# Project Conventions
+
+## File Organization
+- Static assets go in `assets/`
+- Category pages go in `pages/`
+- Automation scripts go in `scripts/`
+- Documentation goes in `docs/`
+- Test files go in `testing/`
+- Content files go in `content/`
+
+## Naming Conventions
+- Use kebab-case for file names (e.g., `events-page.js`)
+- Use camelCase for JavaScript variables and functions
+- Use PascalCase for CSS classes when not using Tailwind
+- Use UPPER_CASE for constants
+- Use descriptive names that indicate purpose
+
+## Data Files
+- Event data files use versioned naming: `type.v20250902.json`
+- Keep manifest.json in data/ directory
+- Use consistent date format: YYYYMMDD
+- Separate data by event type in `data/type/` directory
+
+## Event Types
+- Road, Track, BMX, MTB, Cyclo-Cross, Speedway, Time Trial, Hill Climb
+- Use consistent naming across all files
+- Map variations to canonical types in Google Apps Scripts
+- Use kebab-case for URL paths (e.g., `/pages/cyclo-cross/`)
+- Set body data-type attribute for JavaScript detection (e.g., `data-type="cyclo-cross"`)
+
+## Data Schema Standards
+- Event IDs: 8-character SHA1 prefix for deterministic identification
+- Date format: YYYY-MM-DD in Europe/London timezone
+- Time format: HH:mm or null for start times
+- JSON structure: Consistent schema across all event data files
+- Versioned files: Use format `type.vYYYYMMDD.json` for data files
+- Manifest structure: Must include `type` and `index` properties
+
+## Required HTML Structure
+- Event pages must include specific IDs: `filter-region`, `filter-from`, `filter-to`, `filter-reset`
+- Results section: `result-count`, `empty-state`, `event-list`
+- Footer: `build-stamp` for build information
+- Use `role="list"` for event lists
+- Include `aria-live="polite"` for dynamic content updates
+
+## Google Apps Script Conventions
+- Store sensitive data (tokens) in Script Properties, never hardcode
+- Use Europe/London timezone for all date operations
+- Implement comprehensive error handling and logging
+- Use deterministic SHA-1 hashing for event IDs
+- Normalize data types and regions to canonical forms
+- Filter to future events only (from today onwards)
