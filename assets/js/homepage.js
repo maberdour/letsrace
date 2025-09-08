@@ -7,7 +7,35 @@
  * - Mobile filter panel functionality
  * - Burger menu functionality
  * - Analytics tracking
+ * - Performance monitoring
  */
+
+// Performance monitoring
+const performanceMetrics = {
+  startTime: performance.now(),
+  milestones: {}
+};
+
+function recordMilestone(name) {
+  performanceMetrics.milestones[name] = performance.now() - performanceMetrics.startTime;
+  console.log(`⏱️ ${name}: ${performanceMetrics.milestones[name].toFixed(2)}ms`);
+}
+
+function logPerformanceSummary() {
+  const totalTime = performance.now() - performanceMetrics.startTime;
+  console.log('📊 Performance Summary:', {
+    totalLoadTime: `${totalTime.toFixed(2)}ms`,
+    milestones: performanceMetrics.milestones
+  });
+  
+  // Log to analytics if available
+  if (window.gtag) {
+    window.gtag('event', 'page_performance', {
+      load_time: Math.round(totalTime),
+      milestones: performanceMetrics.milestones
+    });
+  }
+}
 
 // Number of days after which an event is no longer considered "NEW"
 const NEW_EVENT_DAYS = 7;
@@ -272,12 +300,14 @@ function initHomepage() {
   // Fetch data and initialize page
   async function initializePage() {
     try {
+      recordMilestone('initialization_start');
       console.log('🔄 Starting homepage data fetch...');
       
       // Fetch manifest
       console.log('📄 Fetching manifest...');
       const manifestResponse = await fetch('/data/manifest.json');
       console.log('📄 Manifest response status:', manifestResponse.status, manifestResponse.statusText);
+      recordMilestone('manifest_fetched');
       
       if (!manifestResponse.ok) {
         console.error('❌ Manifest fetch failed:', manifestResponse.status, manifestResponse.statusText);
@@ -372,6 +402,8 @@ function initHomepage() {
       
       // Then apply filters with the restored state
       applyFilters();
+      recordMilestone('page_fully_loaded');
+      logPerformanceSummary();
       
     } catch (error) {
       console.error('❌ Failed to initialize homepage:', error);

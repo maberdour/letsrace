@@ -7,7 +7,35 @@
  * - URL state management
  * - Accessible rendering
  * - Analytics tracking
+ * - Performance monitoring
  */
+
+// Performance monitoring
+const performanceMetrics = {
+  startTime: performance.now(),
+  milestones: {}
+};
+
+function recordMilestone(name) {
+  performanceMetrics.milestones[name] = performance.now() - performanceMetrics.startTime;
+  console.log(`⏱️ ${name}: ${performanceMetrics.milestones[name].toFixed(2)}ms`);
+}
+
+function logPerformanceSummary() {
+  const totalTime = performance.now() - performanceMetrics.startTime;
+  console.log('📊 Performance Summary:', {
+    totalLoadTime: `${totalTime.toFixed(2)}ms`,
+    milestones: performanceMetrics.milestones
+  });
+  
+  // Log to analytics if available
+  if (window.gtag) {
+    window.gtag('event', 'page_performance', {
+      load_time: Math.round(totalTime),
+      milestones: performanceMetrics.milestones
+    });
+  }
+}
 
 // Number of days after which an event is no longer considered "NEW"
 const NEW_EVENT_DAYS = 7;
@@ -281,17 +309,38 @@ export function initEventsPage() {
   // Fetch data and initialize page
   async function initializePage() {
     try {
+      recordMilestone('initialization_start');
       console.log('🔄 Starting data fetch...');
       
-      // Fetch manifest
+      // Fetch manifest with timeout and error handling
       console.log('📄 Fetching manifest...');
-      const manifestResponse = await fetch('/data/manifest.json');
+      const manifestController = new AbortController();
+      const manifestTimeout = setTimeout(() => manifestController.abort(), 10000); // 10 second timeout
+      
+      const manifestResponse = await fetch('/data/manifest.json', {
+        signal: manifestController.signal,
+        headers: {
+          'Accept': 'application/json',
+          'Cache-Control': 'no-cache'
+        }
+      });
+      
+      clearTimeout(manifestTimeout);
+      
       if (!manifestResponse.ok) {
         console.error('❌ Manifest fetch failed:', manifestResponse.status, manifestResponse.statusText);
         throw new Error(`Failed to fetch manifest: ${manifestResponse.status}`);
       }
+      
       const manifest = await manifestResponse.json();
+      
+      // Validate manifest structure
+      if (!manifest || !manifest.type || !manifest.index) {
+        throw new Error('Invalid manifest structure received');
+      }
+      
       console.log('✅ Manifest loaded:', manifest);
+      recordMilestone('manifest_fetched');
       
       // Get URLs for this page type
       const typeShardUrl = manifest.type[pageType];
@@ -304,11 +353,31 @@ export function initEventsPage() {
       
       console.log('🔗 Fetching data files:', { typeShardUrl, facetsUrl });
       
-      // Fetch facets and type shard in parallel
+      // Fetch facets and type shard in parallel with timeout and error handling
+      const facetsController = new AbortController();
+      const eventsController = new AbortController();
+      const facetsTimeout = setTimeout(() => facetsController.abort(), 10000);
+      const eventsTimeout = setTimeout(() => eventsController.abort(), 10000);
+      
       const [facetsResponse, eventsResponse] = await Promise.all([
-        fetch(facetsUrl),
-        fetch(typeShardUrl)
+        fetch(facetsUrl, {
+          signal: facetsController.signal,
+          headers: {
+            'Accept': 'application/json',
+            'Cache-Control': 'no-cache'
+          }
+        }),
+        fetch(typeShardUrl, {
+          signal: eventsController.signal,
+          headers: {
+            'Accept': 'application/json',
+            'Cache-Control': 'no-cache'
+          }
+        })
       ]);
+      
+      clearTimeout(facetsTimeout);
+      clearTimeout(eventsTimeout);
       
       if (!facetsResponse.ok) {
         console.error('❌ Facets fetch failed:', facetsResponse.status, facetsResponse.statusText);
@@ -321,7 +390,17 @@ export function initEventsPage() {
       
       facets = await facetsResponse.json();
       allEvents = await eventsResponse.json();
+      
+      // Validate data structure
+      if (!facets || !Array.isArray(facets.regions)) {
+        throw new Error('Invalid facets data structure received');
+      }
+      if (!Array.isArray(allEvents)) {
+        throw new Error('Invalid events data structure received');
+      }
+      
       console.log('✅ Data loaded:', { facetsCount: facets.regions?.length, eventsCount: allEvents.length });
+      recordMilestone('data_loaded');
       
       // Populate region checkboxes
       const savedRegions = loadSavedRegions();
@@ -341,15 +420,47 @@ export function initEventsPage() {
       
       // Apply initial filters
       applyFilters();
+      recordMilestone('page_fully_loaded');
+      logPerformanceSummary();
       
     } catch (error) {
       console.error('Failed to initialize events page:', error);
+      
+      // Provide specific error messages based on error type
+      let errorMessage = 'Sorry, we couldn\'t load the events data.';
+      let userAction = 'Please try refreshing the page.';
+      
+      if (error.name === 'AbortError') {
+        errorMessage = 'The request timed out.';
+        userAction = 'Please check your internet connection and try again.';
+      } else if (error.message.includes('Failed to fetch')) {
+        errorMessage = 'Network error occurred.';
+        userAction = 'Please check your internet connection and try again.';
+      } else if (error.message.includes('HTTP 404')) {
+        errorMessage = 'Event data not found.';
+        userAction = 'The page may need to be updated. Please try refreshing.';
+      } else if (error.message.includes('HTTP 500')) {
+        errorMessage = 'Server error occurred.';
+        userAction = 'Please try again in a few minutes.';
+      } else if (error.message.includes('Invalid')) {
+        errorMessage = 'Data format error.';
+        userAction = 'Please try refreshing the page.';
+      }
+      
       eventList.innerHTML = `
         <li>
-          <p>Sorry, we couldn't load the events data. Please try refreshing the page.</p>
+          <div class="error-message">
+            <p><strong>${errorMessage}</strong></p>
+            <p>${userAction}</p>
+            <button onclick="window.location.reload()" class="retry-button">Retry</button>
+          </div>
         </li>
       `;
       resultCount.textContent = 'Error loading events';
+      
+      // Hide loading states
+      const loadingMessages = document.querySelectorAll('.loading-message');
+      loadingMessages.forEach(msg => msg.style.display = 'none');
     }
   }
   
