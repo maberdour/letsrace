@@ -86,11 +86,8 @@ body {
 }
 
 /* Critical styles for instant loading */
-.homepage { 
-  min-height: 100vh; 
-}
 
-/* Homepage main container layout */
+/* Main container layout */
 .main-container {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -119,18 +116,6 @@ body {
   font-weight: bold;
 }
 
-.homepage-welcome { 
-  max-width: 800px; 
-  margin: 2rem auto; 
-  padding: 0; 
-  text-align: center; 
-}
-
-.homepage-welcome p { 
-  font-size: 1.2rem; 
-  color: #333; 
-  margin-bottom: 2rem; 
-}
 
 .region-selector { 
   margin: 2rem 0; 
@@ -170,7 +155,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Homepage events display */
+/* Events display */
 .events-list {
   display: flex;
   flex-direction: column;
@@ -253,12 +238,6 @@ body {
   display: none;
 }
 
-.homepage-categories { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  gap: 1rem; 
-  margin: 2rem 0; 
-}
 
 .category-link { 
   display: block; 
@@ -359,6 +338,8 @@ main h1 {
   margin-left: calc(300px + 2rem);
 }
 
+
+
 .update-time {
   font-size: 1rem;
   color: #666;
@@ -401,14 +382,6 @@ main h1 {
   margin-top: 1rem;
 }
 
-/* Homepage filter content should be visible by default on desktop only */
-.homepage .filter-content {
-  display: block !important;
-}
-
-.homepage .filter-toggle-btn {
-  display: none !important;
-}
 
 
 
@@ -765,11 +738,7 @@ main h1 {
   width: 100%;
 }
 
-/* Main Content */
-.main-content {
-  flex: 1;
-  padding: 2rem;
-}
+/* Main Content - no longer used, now uses .results like event pages */
 
 /* ==========================================================================
    FOOTER
@@ -982,7 +951,7 @@ footer a:visited {
     display: none;
   }
   
-  /* Mobile homepage layout */
+  /* Mobile layout */
   .main-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -1113,18 +1082,6 @@ footer a:visited {
     display: block;
   }
   
-  /* Override homepage filter behavior on mobile */
-  .homepage .filter-content {
-    display: none !important;
-  }
-  
-  .homepage .filter-toggle-btn {
-    display: block !important;
-  }
-  
-  .homepage .filter-content.expanded {
-    display: block !important;
-  }
   
   .results {
     order: 2;
@@ -1183,25 +1140,4 @@ footer a:visited {
     background-color: #0077cc;
   }
   
-  /* Mobile homepage event cards */
-  .homepage .events-list {
-    gap: 0;
-  }
-  
-  .homepage .event {
-    margin: 0 0 1rem 0 !important;
-  }
-  
-  .homepage .event-content {
-    padding: 0.75rem;
-  }
-  
-  .homepage .new-events-section {
-    margin: 1rem 0;
-  }
-  
-  .homepage .new-events-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
 }

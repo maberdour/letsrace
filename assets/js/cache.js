@@ -149,7 +149,7 @@ async function fetchWithCache(url, category) {
     
     // Validate data before caching
     if (Array.isArray(data) || (typeof data === 'object' && data !== null)) {
-      eventCache.setCache(cacheKey, data);
+    eventCache.setCache(cacheKey, data);
     } else {
       console.warn(`Invalid data format for ${category}:`, typeof data);
     }

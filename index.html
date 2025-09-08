@@ -26,10 +26,6 @@
       padding: 2rem;
     }
     
-    .homepage { 
-      min-height: 100vh; 
-    }
-    
     main {
       max-width: 1200px;
       margin: 0 auto;
@@ -40,20 +36,13 @@
       color: #0077cc;
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
-      text-align: left;
+      text-align: center;
     }
     
     .update-time {
       color: #666;
       font-size: 0.9rem;
       margin-bottom: 2rem;
-    }
-    
-    .events-page-container {
-      background: white;
-      border-radius: 8px;
-      padding: 2rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     
     .filters {
@@ -152,10 +141,6 @@
       h1 {
         font-size: 2rem;
       }
-      
-      .events-page-container {
-        padding: 1rem;
-      }
     }
   </style>
   
@@ -174,45 +159,45 @@
 <body class="homepage">
 
 
-                  <main>
-         <h1 id="new-events-title">New Events</h1>
-         <div class="update-time">Updated on Tue, 19 Aug 2025</div>
-         
-         <div class="events-page-container">
-             <!-- Filter Controls -->
-             <div class="filters">
-                 <div class="filter-group">
-                     <button class="filter-toggle-btn" id="filter-toggle">
-                         <span class="filter-toggle-text">Filter by Region</span>
-                         <span class="filter-toggle-icon">▼</span>
-           </button>
-                     <div class="filter-content" id="filter-content">
-                         <div class="region-checkboxes" id="region-checkboxes">
-                             <div class="loading-message">Loading regions...</div>
-             </div>
-                         <div class="filter-buttons">
-                             <button class="clear-regions-btn" id="clear-regions">Clear All</button>
-             </div>
-           </div>
-         </div>
-       </div>
-       
-             <!-- Results -->
-             <div class="results">
-                 <div id="result-count" aria-live="polite">Loading events...</div>
-                 
-                 <div id="empty-state" hidden>
-                     No events match your filters.
-                 </div>
-                 
-       <div id="new-events">
-         <div class="loading-message">
-           <div class="spinner"></div>
-           <p>Loading new events...</p>
-         </div>
-       </div>
-             </div>
-  </div>
+    <main>
+        <h1 id="new-events-title">New Events</h1>
+        <div class="update-time">Updated on Tue, 19 Aug 2025</div>
+        
+        <div class="events-page-container">
+            <!-- Filter Controls -->
+            <div class="filters">
+                <div class="filter-group">
+                    <button class="filter-toggle-btn" id="filter-toggle">
+                        <span class="filter-toggle-text">Filter by Region</span>
+                        <span class="filter-toggle-icon">▼</span>
+                    </button>
+                    <div class="filter-content" id="filter-content">
+                        <div class="region-checkboxes" id="region-checkboxes">
+                            <div class="loading-message">Loading regions...</div>
+                        </div>
+                        <div class="filter-buttons">
+                            <button class="clear-regions-btn" id="clear-regions">Clear All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results -->
+            <div class="results">
+                <div id="result-count" aria-live="polite">Loading events...</div>
+                
+                <div id="empty-state" hidden>
+                    No events match your filters.
+                </div>
+                
+                <div id="new-events">
+                    <div class="loading-message">
+                        <div class="spinner"></div>
+                        <p>Loading new events...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         </main>
