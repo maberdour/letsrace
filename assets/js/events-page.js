@@ -227,61 +227,8 @@ export function initEventsPage() {
     return;
   }
   
-  // Create burger menu for mobile
-  function createBurgerMenu() {
-    // Create burger icon
-    const burger = document.createElement('div');
-    burger.id = 'burger-menu';
-    burger.innerHTML = `
-      <span></span>
-      <span></span>
-      <span></span>
-    `;
-
-    // Create nav menu (same links as header)
-    const nav = document.createElement('nav');
-    nav.id = 'mobile-nav';
-    
-    // Determine current page for highlighting
-    const currentPage = pageType;
-    
-    nav.innerHTML = `
-      <div id="close-menu"></div>
-      <ul>
-        <li><a href="/index.html" class="${currentPage === 'home' ? 'current' : ''}">Home</a></li>
-        <li><a href="/pages/road/" class="${currentPage === 'road' ? 'current' : ''}">Road</a></li>
-        <li><a href="/pages/track/" class="${currentPage === 'track' ? 'current' : ''}">Track</a></li>
-        <li><a href="/pages/mtb/" class="${currentPage === 'mtb' ? 'current' : ''}">MTB</a></li>
-        <li><a href="/pages/bmx/" class="${currentPage === 'bmx' ? 'current' : ''}">BMX</a></li>
-        <li><a href="/pages/cyclo-cross/" class="${currentPage === 'cyclo-cross' ? 'current' : ''}">Cyclo-Cross</a></li>
-        <li><a href="/pages/time-trial/" class="${currentPage === 'time-trial' ? 'current' : ''}">Time Trial</a></li>
-        <li><a href="/pages/hill-climb/" class="${currentPage === 'hill-climb' ? 'current' : ''}">Hill Climb</a></li>
-        <li><a href="/pages/speedway/" class="${currentPage === 'speedway' ? 'current' : ''}">Speedway</a></li>
-        <li><a href="/pages/about.html" class="${currentPage === 'about' ? 'current' : ''}">About</a></li>
-      </ul>
-    `;
-
-    // Append burger to header, nav to body
-    const header = document.querySelector('header');
-    if (header) header.appendChild(burger);
-    document.body.appendChild(nav);
-
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      burger.classList.toggle('open');
-    });
-
-    // Close menu when a link is clicked
-    nav.addEventListener('click', function(e) {
-      if (e.target.tagName === 'A' || e.target.id === 'close-menu') {
-        nav.classList.remove('open');
-        burger.classList.remove('open');
-      }
-    });
-  }
   
-  // Initialize burger menu
-  createBurgerMenu();
+  // Burger menu is now handled by render.js
   
   // Get DOM elements
   const regionCheckboxes = document.getElementById('region-checkboxes');

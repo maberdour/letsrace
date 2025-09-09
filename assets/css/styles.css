@@ -829,7 +829,7 @@ footer a:visited {
   height: 100%;
   background: #fff;
   box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-  z-index: 1000;
+  z-index: 1003;
   padding-top: 60px;
 }
 
@@ -872,7 +872,7 @@ footer a:visited {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  z-index: 1002;
+  z-index: 1004;
 }
 
 #close-menu::before,

@@ -31,11 +31,6 @@ function renderHeader(title) {
     }
   }
   
-  // Debug logging
-  console.log('Debug - Pathname:', window.location.pathname);
-  console.log('Debug - Current Page:', currentPage);
-  console.log('Debug - Is in subdirectory:', isInSubdirectory);
-  
   // Build navigation links with correct paths
   const navLinks = [
     { href: isInSubdirectory ? '/index.html' : 'index.html', text: 'Home', current: currentPage === 'index.html' },
@@ -49,12 +44,6 @@ function renderHeader(title) {
     { href: isInSubdirectory ? '/pages/speedway/' : 'pages/speedway/', text: 'Speedway', current: currentPage === 'speedway' },
     { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' }
   ];
-  
-  // Debug logging for navigation links
-  console.log('Debug - Navigation links:');
-  navLinks.forEach(link => {
-    console.log(`  ${link.text}: current=${link.current}, href=${link.href}`);
-  });
   
   // Generate navigation HTML
   const navHTML = navLinks.map(link => 
@@ -79,54 +68,108 @@ function toggleMobileNav() {
   }
 }
 
-// Add mobile menu button for small screens
-function addMobileMenuButton() {
-  const header = document.querySelector('header');
-  if (header && window.innerWidth <= 768) {
-    const existingButton = header.querySelector('.mobile-menu-btn');
-    if (!existingButton) {
-      const button = document.createElement('button');
-      button.className = 'mobile-menu-btn';
-      button.innerHTML = '☰';
-      button.style.cssText = `
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: block;
-      `;
-      button.onclick = toggleMobileNav;
-      header.appendChild(button);
-      
-      // Hide nav on mobile by default
-      const nav = header.querySelector('nav');
-      if (nav) {
-        nav.style.display = 'none';
-      }
+// Create unified burger menu for all pages
+function createBurgerMenu() {
+  // Check if burger menu already exists
+  if (document.querySelector('#burger-menu')) {
+    return;
+  }
+
+  // Create burger icon
+  const burger = document.createElement('div');
+  burger.id = 'burger-menu';
+  burger.innerHTML = `
+    <span></span>
+    <span></span>
+    <span></span>
+  `;
+
+  // Create nav menu with proper current page detection
+  const nav = document.createElement('nav');
+  nav.id = 'mobile-nav';
+  
+  // Get current page for highlighting (using the same logic as renderHeader)
+  let currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const isInSubdirectory = window.location.pathname.includes('/pages/');
+  
+  // Handle category pages that end with '/' - get the category name from the path
+  if (currentPage === '' && isInSubdirectory) {
+    const pathParts = window.location.pathname.split('/').filter(part => part !== '');
+    currentPage = pathParts[pathParts.length - 1];
+  }
+  
+  // Handle the case where currentPage is still empty or 'index.html' but we're in a subdirectory
+  if ((currentPage === '' || currentPage === 'index.html') && isInSubdirectory) {
+    const pathParts = window.location.pathname.split('/').filter(part => part !== '');
+    if (pathParts.length >= 2) {
+      currentPage = pathParts[pathParts.length - 1];
     }
+  }
+  
+  // Map current page to the expected format
+  const pageMap = {
+    'index.html': 'home',
+    'road': 'road',
+    'track': 'track',
+    'mtb': 'mtb',
+    'bmx': 'bmx',
+    'cyclo-cross': 'cyclo-cross',
+    'time-trial': 'time-trial',
+    'hill-climb': 'hill-climb',
+    'speedway': 'speedway',
+    'about.html': 'about'
+  };
+  
+  const currentPageKey = pageMap[currentPage] || 'home';
+  
+  nav.innerHTML = `
+    <div id="close-menu"></div>
+    <ul>
+      <li><a href="/index.html" class="${currentPageKey === 'home' ? 'current' : ''}">Home</a></li>
+      <li><a href="/pages/road/" class="${currentPageKey === 'road' ? 'current' : ''}">Road</a></li>
+      <li><a href="/pages/track/" class="${currentPageKey === 'track' ? 'current' : ''}">Track</a></li>
+      <li><a href="/pages/mtb/" class="${currentPageKey === 'mtb' ? 'current' : ''}">MTB</a></li>
+      <li><a href="/pages/bmx/" class="${currentPageKey === 'bmx' ? 'current' : ''}">BMX</a></li>
+      <li><a href="/pages/cyclo-cross/" class="${currentPageKey === 'cyclo-cross' ? 'current' : ''}">Cyclo-Cross</a></li>
+      <li><a href="/pages/time-trial/" class="${currentPageKey === 'time-trial' ? 'current' : ''}">Time Trial</a></li>
+      <li><a href="/pages/hill-climb/" class="${currentPageKey === 'hill-climb' ? 'current' : ''}">Hill Climb</a></li>
+      <li><a href="/pages/speedway/" class="${currentPageKey === 'speedway' ? 'current' : ''}">Speedway</a></li>
+      <li><a href="/pages/about.html" class="${currentPageKey === 'about' ? 'current' : ''}">About</a></li>
+    </ul>
+  `;
+
+  // Append burger to header, nav to body
+  const header = document.querySelector('header');
+  if (header) header.appendChild(burger);
+  document.body.appendChild(nav);
+
+  // Add event listeners
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    burger.classList.toggle('open');
+    
+    // Ensure burger menu is hidden when mobile nav is open
+    if (nav.classList.contains('open')) {
+      burger.style.display = 'none';
+    } else {
+      burger.style.display = 'flex';
+    }
+  });
+
+  // Close menu when clicking close button
+  const closeMenu = document.getElementById('close-menu');
+  if (closeMenu) {
+    closeMenu.addEventListener('click', () => {
+      nav.classList.remove('open');
+      burger.classList.remove('open');
+      burger.style.display = 'flex'; // Show burger menu again
+    });
   }
 }
 
 // Initialize mobile menu on page load
 document.addEventListener('DOMContentLoaded', () => {
-  addMobileMenuButton();
-  
-  // Re-check on window resize
-  window.addEventListener('resize', () => {
-    const nav = document.querySelector('header nav');
-    const button = document.querySelector('.mobile-menu-btn');
-    
-    if (window.innerWidth > 768) {
-      if (nav) nav.style.display = 'block';
-      if (button) button.style.display = 'none';
-    } else {
-      if (button) button.style.display = 'block';
-    }
-  });
+  createBurgerMenu();
 });
 
 // Enhanced event rendering with better error handling
