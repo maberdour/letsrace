@@ -15,7 +15,26 @@ function renderHeader(title) {
   const isInSubdirectory = window.location.pathname.includes('/pages/');
   
   // Get current page for navigation highlighting
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  let currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  
+  // Handle category pages that end with '/' - get the category name from the path
+  if (currentPage === '' && isInSubdirectory) {
+    const pathParts = window.location.pathname.split('/').filter(part => part !== '');
+    currentPage = pathParts[pathParts.length - 1]; // Get the last non-empty part
+  }
+  
+  // Handle the case where currentPage is still empty or 'index.html' but we're in a subdirectory
+  if ((currentPage === '' || currentPage === 'index.html') && isInSubdirectory) {
+    const pathParts = window.location.pathname.split('/').filter(part => part !== '');
+    if (pathParts.length >= 2) { // Should have ['pages', 'category']
+      currentPage = pathParts[pathParts.length - 1]; // Get the category name
+    }
+  }
+  
+  // Debug logging
+  console.log('Debug - Pathname:', window.location.pathname);
+  console.log('Debug - Current Page:', currentPage);
+  console.log('Debug - Is in subdirectory:', isInSubdirectory);
   
   // Build navigation links with correct paths
   const navLinks = [
@@ -30,6 +49,12 @@ function renderHeader(title) {
     { href: isInSubdirectory ? '/pages/speedway/' : 'pages/speedway/', text: 'Speedway', current: currentPage === 'speedway' },
     { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' }
   ];
+  
+  // Debug logging for navigation links
+  console.log('Debug - Navigation links:');
+  navLinks.forEach(link => {
+    console.log(`  ${link.text}: current=${link.current}, href=${link.href}`);
+  });
   
   // Generate navigation HTML
   const navHTML = navLinks.map(link => 
@@ -279,8 +304,14 @@ function renderRegionFilters(regions, container, onFilterChange) {
 
 // Enhanced navigation rendering for mobile
 function renderMobileNavigation() {
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  let currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const isInSubdirectory = window.location.pathname.includes('/pages/');
+  
+  // Handle category pages that end with '/' - get the category name from the path
+  if (currentPage === '' && isInSubdirectory) {
+    const pathParts = window.location.pathname.split('/').filter(part => part !== '');
+    currentPage = pathParts[pathParts.length - 1]; // Get the last non-empty part
+  }
   
   // Build navigation links with correct paths (same logic as header)
   const navLinks = [
