@@ -2,10 +2,10 @@
  * Import CSV Events Script
  * 
  * This script imports cycling events from a CSV file in Google Drive into a Google Sheet.
- * It prevents duplicates based on event date and name, and normalizes date formatting.
+ * It prevents duplicates based on British Cycling event ID (when available) or date + event name.
  * 
  * Features:
- * - Duplicate detection using date + event name
+ * - Duplicate detection using BC event ID (primary) or date + event name (fallback)
  * - Date normalization to "DAY dd/mm/yy" format
  * - URL normalization for British Cycling links
  * - Timestamp tracking for imported events
@@ -41,8 +41,10 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
     sheetData.forEach(row => {
       const dateKey = getDateKeyForDuplicateDetection(row[0]);
       const name = normalizeValue(row[1]);
-      if (dateKey && name) {
-        existingKeys.add(`${dateKey}|${name}`);
+      const url = row[4] || '';
+      const key = generateDuplicateKey(dateKey, name, url);
+      if (key) {
+        existingKeys.add(key);
       }
     });
 
@@ -55,7 +57,7 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
       const displayDate = normalizeDate(row[0]);
       const name = normalizeValue(row[1]);
       const rawUrl = row[4] ? row[4].toString().trim() : '';
-      const key = `${dateKey}|${name}`;
+      const key = generateDuplicateKey(dateKey, name, rawUrl);
 
       // Skip if event already exists
       if (existingKeys.has(key)) return;
@@ -66,6 +68,11 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
       // Normalize URL for British Cycling links
       if (rawUrl.startsWith('/events')) {
         row[4] = 'https://www.britishcycling.org.uk' + rawUrl;
+      }
+
+      // Map region to correct name (Column F = Region)
+      if (row[5]) {
+        row[5] = mapBCRegion(row[5]);
       }
 
       // Add timestamp and add to new rows
@@ -195,4 +202,68 @@ function normalizeValue(value) {
 function formatDateTime(date) {
   const pad = n => String(n).padStart(2, '0');
   return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
+}
+
+/**
+ * Extracts British Cycling event ID from URL
+ * @param {string} url - The event URL
+ * @return {string} BC event ID or empty string if not found
+ */
+function extractBCEventId(url) {
+  if (!url) return '';
+  
+  // Match patterns like:
+  // https://www.britishcycling.org.uk/events/details/322407/
+  // /events/details/322407/
+  const bcMatch = url.match(/\/events\/details\/(\d+)\/?/);
+  return bcMatch ? bcMatch[1] : '';
+}
+
+/**
+ * Maps British Cycling region names to standardized region names
+ * @param {string} bcRegion - The region name from British Cycling
+ * @return {string} Standardized region name
+ */
+function mapBCRegion(bcRegion) {
+  if (!bcRegion) return '';
+  
+  const regionMappings = {
+    'South East': 'London & South East',
+    'South West': 'South West',
+    'Midlands': 'East Midlands', // Default Midlands to East Midlands
+    'West Midlands': 'West Midlands',
+    'East Midlands': 'East Midlands',
+    'North West': 'North West',
+    'North East': 'North East',
+    'Yorkshire': 'Yorkshire & Humber',
+    'Yorkshire & Humber': 'Yorkshire & Humber',
+    'East': 'Eastern',
+    'Eastern': 'Eastern',
+    'Wales': 'Wales',
+    'Scotland': 'Scotland',
+    'Central': 'Central',
+    'South': 'South'
+  };
+  
+  return regionMappings[bcRegion] || bcRegion;
+}
+
+/**
+ * Generates a unique key for duplicate detection
+ * Prioritizes BC event ID when available, falls back to date + name
+ * @param {string} dateKey - Normalized date key
+ * @param {string} name - Event name
+ * @param {string} url - Event URL
+ * @return {string} Unique key for duplicate detection
+ */
+function generateDuplicateKey(dateKey, name, url) {
+  const bcEventId = extractBCEventId(url);
+  
+  // If it's a BC event with an ID, use that as the primary key
+  if (bcEventId) {
+    return `bc:${bcEventId}`;
+  }
+  
+  // Fall back to date + name for non-BC events
+  return `date:${dateKey}|${name}`;
 }

@@ -253,9 +253,11 @@ function initHomepage() {
       recordMilestone('initialization_start');
       console.log('🔄 Starting homepage data fetch...');
       
-      // Direct URLs for facets and new events (no manifest needed)
-      const facetsUrl = '/data/index/facets.v20250908.json';
-      const newEventsUrl = '/data/new-events.v20250908.json';
+      // Load manifest to get latest file versions
+      const manifestResponse = await fetch('/data/manifest.json');
+      const manifest = await manifestResponse.json();
+      const facetsUrl = manifest.index.facets;
+      const newEventsUrl = manifest.new_events;
       
       console.log('🔗 Fetching data files directly:', { facetsUrl, newEventsUrl });
       recordMilestone('data_fetch_start');

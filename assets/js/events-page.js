@@ -259,9 +259,11 @@ export function initEventsPage() {
       recordMilestone('initialization_start');
       console.log('🔄 Starting data fetch...');
       
-      // Direct URLs for facets and type shard (no manifest needed)
-      const typeShardUrl = `/data/type/${pageType}.v20250908.json`;
-      const facetsUrl = '/data/index/facets.v20250908.json';
+      // Load manifest to get latest file versions
+      const manifestResponse = await fetch('/data/manifest.json');
+      const manifest = await manifestResponse.json();
+      const typeShardUrl = manifest.type[pageType];
+      const facetsUrl = manifest.index.facets;
       
       console.log('🔗 Fetching data files directly:', { typeShardUrl, facetsUrl });
       recordMilestone('data_fetch_start');

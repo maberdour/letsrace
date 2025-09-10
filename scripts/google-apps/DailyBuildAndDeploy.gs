@@ -31,32 +31,21 @@ const CONFIG = {
 // Canonical event types
 const CANONICAL_TYPES = ["Road", "Track", "BMX", "MTB", "Cyclo Cross", "Speedway", "Time Trial", "Hill Climb"];
 
-// Region canonicalization map
-const REGION_MAPPINGS = {
-  "london": "London & South East",
-  "south east": "London & South East",
-  "southeast": "London & South East",
-  "south east england": "London & South East",
-  "south west": "South West",
-  "southwest": "South West",
-  "south west england": "South West",
-  "midlands": "Midlands",
-  "west midlands": "Midlands",
-  "east midlands": "Midlands",
-  "north west": "North West",
-  "northwest": "North West",
-  "north west england": "North West",
-  "north east": "North East",
-  "northeast": "North East",
-  "north east england": "North East",
-  "yorkshire": "Yorkshire",
-  "yorkshire & humber": "Yorkshire",
-  "east": "East",
-  "east of england": "East",
-  "wales": "Wales",
-  "scotland": "Scotland",
-  "northern ireland": "Northern Ireland"
-};
+// Valid regions (already correctly set by ImportCSV.gs)
+const VALID_REGIONS = [
+  'Central',
+  'Eastern', 
+  'London & South East',
+  'East Midlands',
+  'West Midlands',
+  'North East',
+  'North West',
+  'Scotland',
+  'South',
+  'South West',
+  'Wales',
+  'Yorkshire & Humber'
+];
 
 // Column indices (no header row)
 const COLUMNS = {
@@ -183,15 +172,15 @@ function processSheetData(sheetData) {
         return;
       }
       
-      // Normalize region
-      const normalizedRegion = normalizeRegion(row[COLUMNS.REGION]);
+      // Use region directly (already correctly set by ImportCSV.gs)
+      const region = row[COLUMNS.REGION] || 'Unknown';
       
       // Create event object
       const event = {
         id: hashId(`${row[COLUMNS.NAME]}|${eventDate}|${row[COLUMNS.LOCATION]}`),
         name: normalizeValue(row[COLUMNS.NAME]),
         type: normalizedType,
-        region: normalizedRegion,
+        region: region,
         venue: normalizeValue(row[COLUMNS.LOCATION]),
         postcode: extractPostcode(row[COLUMNS.LOCATION]),
         date: isoLocalDateUK(eventDate),
@@ -279,7 +268,7 @@ function buildFacetsIndex(events) {
   
   return {
     types: CANONICAL_TYPES,
-    regions: Array.from(regions).sort(),
+    regions: VALID_REGIONS,
     counts: counts,
     last_build: nowISO()
   };
@@ -714,16 +703,6 @@ function normalizeType(typeValue) {
   };
   
   return variants[normalized.toLowerCase()] || null;
-}
-
-/**
- * Normalize region using mapping
- */
-function normalizeRegion(regionValue) {
-  if (!regionValue) return 'Unknown';
-  
-  const normalized = normalizeValue(regionValue).toLowerCase();
-  return REGION_MAPPINGS[normalized] || regionValue;
 }
 
 /**
