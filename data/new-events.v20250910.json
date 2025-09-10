@@ -30,7 +30,7 @@
       "id": "a6251b92",
       "name": "Nuneaton BMX Round 5 2025 Series",
       "type": "BMX",
-      "region": "Midlands",
+      "region": "West Midlands",
       "venue": "Nuneaton BMX Track, Warwickshire",
       "postcode": null,
       "date": "2025-09-20",
@@ -56,7 +56,7 @@
       "id": "d0dff222",
       "name": "Challenge Tires London and South East CX League - Round 02",
       "type": "Cyclo Cross",
-      "region": "London & South East",
+      "region": "South East",
       "venue": "Crystal Palace Park, London",
       "postcode": null,
       "date": "2025-09-21",
@@ -160,7 +160,7 @@
       "id": "3214f33c",
       "name": "Challenge Tires London and South East CX League - Round 04",
       "type": "Cyclo Cross",
-      "region": "London & South East",
+      "region": "South East",
       "venue": "Herne Hill Velodrome, London",
       "postcode": null,
       "date": "2025-10-05",
@@ -290,7 +290,7 @@
       "id": "c7280a19",
       "name": "Deep South 2025-26 Round 5",
       "type": "BMX",
-      "region": "London & South East",
+      "region": "South East",
       "venue": "Runnymede BMX Track, Surrey",
       "postcode": null,
       "date": "2026-02-08",
@@ -430,7 +430,7 @@
       "last_updated": "2025-09-10T02:15:33.000Z"
     }
   ],
-  "last_build": "2025-09-10T02:25:12.815Z",
+  "last_build": "2025-09-10T17:44:54.295Z",
   "total_new_events": 33,
   "cutoff_date": "2025-09-03"
 }
