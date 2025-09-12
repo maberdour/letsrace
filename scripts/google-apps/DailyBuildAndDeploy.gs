@@ -73,6 +73,11 @@ function dailyBuild() {
     const processedData = processSheetData(sheetData);
     Logger.log(`✅ Processed ${processedData.events.length} valid events (skipped ${processedData.skipped} rows)`);
     
+    // Send email alert if any rows were skipped
+    if (processedData.skippedRows && processedData.skippedRows.length > 0) {
+      sendSkippedRowsAlert(processedData.skippedRows);
+    }
+    
     // Step 3: Partition by type and sort
     const partitionedData = partitionByType(processedData.events);
     
@@ -139,13 +144,30 @@ function readSheetData() {
 function processSheetData(sheetData) {
   const events = [];
   let skipped = 0;
+  const skippedRows = [];
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   
   sheetData.forEach((row, index) => {
     try {
-      // Skip empty rows
-      if (!row[COLUMNS.EVENT_DATE] || !row[COLUMNS.NAME]) {
+      // Skip empty rows or rows with missing required fields
+      if (!row[COLUMNS.EVENT_DATE] || !row[COLUMNS.NAME] || !row[COLUMNS.TYPE] || !row[COLUMNS.LOCATION] || !row[COLUMNS.URL] || !row[COLUMNS.REGION]) {
+        const missingFields = [];
+        if (!row[COLUMNS.EVENT_DATE]) missingFields.push('Date');
+        if (!row[COLUMNS.NAME]) missingFields.push('Name');
+        if (!row[COLUMNS.TYPE]) missingFields.push('Type');
+        if (!row[COLUMNS.LOCATION]) missingFields.push('Location');
+        if (!row[COLUMNS.URL]) missingFields.push('URL');
+        if (!row[COLUMNS.REGION]) missingFields.push('Region');
+        
+        skippedRows.push({
+          row: index + 1,
+          eventName: row[COLUMNS.NAME] || 'Unknown',
+          missingFields: missingFields,
+          reason: 'Missing required fields'
+        });
+        
+        Logger.log(`⚠️ Row ${index + 1}: Skipping due to missing fields - ${missingFields.join(', ')}`);
         skipped++;
         return;
       }
@@ -153,6 +175,12 @@ function processSheetData(sheetData) {
       // Parse and validate date
       const eventDate = parseEventDate(row[COLUMNS.EVENT_DATE]);
       if (!eventDate) {
+        skippedRows.push({
+          row: index + 1,
+          eventName: row[COLUMNS.NAME] || 'Unknown',
+          missingFields: [],
+          reason: `Invalid date '${row[COLUMNS.EVENT_DATE]}'`
+        });
         Logger.log(`⚠️ Row ${index + 1}: Invalid date '${row[COLUMNS.EVENT_DATE]}'`);
         skipped++;
         return;
@@ -167,6 +195,12 @@ function processSheetData(sheetData) {
       // Normalize type
       const normalizedType = normalizeType(row[COLUMNS.TYPE]);
       if (!normalizedType) {
+        skippedRows.push({
+          row: index + 1,
+          eventName: row[COLUMNS.NAME] || 'Unknown',
+          missingFields: [],
+          reason: `Unknown type '${row[COLUMNS.TYPE]}'`
+        });
         Logger.log(`⚠️ Row ${index + 1}: Unknown type '${row[COLUMNS.TYPE]}'`);
         skipped++;
         return;
@@ -178,10 +212,10 @@ function processSheetData(sheetData) {
       // Create event object
       const event = {
         id: hashId(`${row[COLUMNS.NAME]}|${eventDate}|${row[COLUMNS.LOCATION]}`),
-        name: normalizeValue(row[COLUMNS.NAME]),
+        name: normalizeEventName(row[COLUMNS.NAME]),
         type: normalizedType,
         region: region,
-        venue: normalizeValue(row[COLUMNS.LOCATION]),
+        venue: normalizeEventName(row[COLUMNS.LOCATION]),
         postcode: extractPostcode(row[COLUMNS.LOCATION]),
         date: isoLocalDateUK(eventDate),
         start_time: extractStartTime(row[COLUMNS.EVENT_DATE]),
@@ -198,12 +232,18 @@ function processSheetData(sheetData) {
       events.push(event);
       
     } catch (error) {
+      skippedRows.push({
+        row: index + 1,
+        eventName: row[COLUMNS.NAME] || 'Unknown',
+        missingFields: [],
+        reason: `Processing error: ${error.message}`
+      });
       Logger.log(`⚠️ Row ${index + 1}: Error processing - ${error.message}`);
       skipped++;
     }
   });
   
-  return { events, skipped };
+  return { events, skipped, skippedRows };
 }
 
 /**
@@ -714,6 +754,20 @@ function normalizeValue(value) {
 }
 
 /**
+ * Normalize event names for display (preserves case and applies title case)
+ */
+function normalizeEventName(value) {
+  if (!value) return '';
+  
+  const normalized = value.toString().trim().replace(/\s+/g, ' ');
+  
+  // Apply title case to the event name
+  return normalized.replace(/\w\S*/g, (txt) => {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
+
+/**
  * Extract postcode from location string
  */
 function extractPostcode(location) {
@@ -890,6 +944,56 @@ function batchDeleteFromGitHub(paths, commitMessage) {
   }
 
   Logger.log(`✅ Batch deleted ${paths.length} files in a single commit`);
+}
+
+/**
+ * Sends email alert for skipped rows during build process
+ * @param {Array} skippedRows - Array of skipped row information
+ */
+function sendSkippedRowsAlert(skippedRows) {
+  try {
+    const subject = `⚠️ Skipped Rows Alert - Daily Build Process`;
+    const timestamp = new Date().toISOString();
+    
+    let body = `Rows were skipped during the daily build process at ${timestamp}:\n\n`;
+    
+    // Group skipped rows by reason
+    const groupedByReason = {};
+    skippedRows.forEach(row => {
+      if (!groupedByReason[row.reason]) {
+        groupedByReason[row.reason] = [];
+      }
+      groupedByReason[row.reason].push(row);
+    });
+    
+    // Add details for each reason
+    Object.keys(groupedByReason).forEach(reason => {
+      const rows = groupedByReason[reason];
+      body += `${reason} (${rows.length} row${rows.length > 1 ? 's' : ''}):\n`;
+      
+      rows.forEach(row => {
+        body += `  Row ${row.row}: "${row.eventName}"`;
+        if (row.missingFields && row.missingFields.length > 0) {
+          body += ` - Missing: ${row.missingFields.join(', ')}`;
+        }
+        body += `\n`;
+      });
+      body += `\n`;
+    });
+    
+    body += `Please review the Google Sheet and ensure all required fields are populated.\n\n`;
+    body += `This alert was generated automatically by the LetsRace build system.`;
+    
+    MailApp.sendEmail({
+      to: 'hello@letsrace.cc',
+      subject: subject,
+      body: body
+    });
+    
+    Logger.log(`📧 Email alert sent for ${skippedRows.length} skipped row(s)`);
+  } catch (error) {
+    Logger.log(`❌ Failed to send email alert: ${error.message}`);
+  }
 }
 
 
