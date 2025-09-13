@@ -143,19 +143,6 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
-    "id": "8b19df6d",
-    "name": "Western Cyclo Cross League Round 1 - Purdown - Winter 2025/2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Purdown, Bristol",
-    "postcode": null,
-    "date": "2025-09-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325060/western-cyclo-cross-league-round-1---purdown---winter-20252026",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
     "id": "ba593ed6",
     "name": "Western Cyclo-cross League Round 1 - Purdown - Winter 2025/2026",
     "type": "Cyclo Cross",
@@ -507,19 +494,6 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
-    "id": "2c97fab3",
-    "name": "Western Cyclo Cross League Round 3 - Pittville Park - Season 2025/2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2025-09-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325059/western-cyclo-cross-league-round-3---pittville-park---season-20252026",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
     "id": "f1a2137b",
     "name": "Western Cyclo-cross League Round 3 - Pittville Park - Season 2025/2026",
     "type": "Cyclo Cross",
@@ -674,19 +648,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/325347/hupcc-scottish-cyclocross-series-round-2-knockburn-loch",
     "source": "Google Sheet",
     "last_updated": "2025-09-02T02:15:44.000Z"
-  },
-  {
-    "id": "1d26dea7",
-    "name": "Leicestershire Cyclo Cross League Rd 1 promoted by Leicester Forest CC",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Western Park, Leicester",
-    "postcode": null,
-    "date": "2025-10-12",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325116/leicestershire-cyclo-cross-league-rd-1-promoted-by-leicester-forest-cc",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
   },
   {
     "id": "aaef8767",
@@ -1077,19 +1038,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/324647/shimano-lazer-wmccl-round-8",
     "source": "Google Sheet",
     "last_updated": "2025-08-28T02:15:27.000Z"
-  },
-  {
-    "id": "dcc4903d",
-    "name": "VC Revolution Cross - Eastern League 2025/26 Round 5",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Valley Green Farm , Mount Bures",
-    "postcode": null,
-    "date": "2025-11-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324556/vc-revolution-cross----eastern-league-202526-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
     "id": "896ded83",
