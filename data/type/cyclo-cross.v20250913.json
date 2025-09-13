@@ -234,19 +234,6 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
-    "id": "12434913",
-    "name": "HUPcc Scottish Cyclo-cross Series: Round 1 Brechin",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Brechin Equestrian Centre, Angus",
-    "postcode": null,
-    "date": "2025-09-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325117/hupcc-scottish-cyclo-cross-series-round-1-brechin",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-19T02:15:26.000Z"
-  },
-  {
     "id": "f0233cb1",
     "name": "HUPcc Scottish Cyclocross Series Round 1: Brechin",
     "type": "Cyclo Cross",
@@ -284,19 +271,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/325630/pauls-50th-anniversary-cross---western-cyclo-cross-league-round-2----winter-20252026",
     "source": "Google Sheet",
     "last_updated": "2025-08-27T02:15:28.000Z"
-  },
-  {
-    "id": "1ed878cd",
-    "name": "Paul's 50th Anniversary Cross, Western Cyclo Cross League Round 2",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Stroud Leisure Centre, Gloucestershire",
-    "postcode": null,
-    "date": "2025-09-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325630/pauls-50th-anniversary-cross--western-cyclo-cross-league-round-2-",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-22T02:15:26.000Z"
   },
   {
     "id": "e503f8fa",
@@ -518,19 +492,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/322640/lloyds-cyclo-cross-national-trophy-series-202526-round-1",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "f6f635ab",
-    "name": "CCXL #4 Bicester Millenium",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Wheatley Park School, Oxfordshire",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325629/ccxl-4-bicester-millenium",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-02T02:15:44.000Z"
   },
   {
     "id": "8d896eb6",
@@ -845,19 +806,6 @@
     "last_updated": "2025-09-04T02:15:25.000Z"
   },
   {
-    "id": "459de758",
-    "name": "CCXL #6 Northants Sport",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Delepre Abbey , Northamptonshire",
-    "postcode": null,
-    "date": "2025-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325892/ccxl-6-northants-sport",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-02T02:15:44.000Z"
-  },
-  {
     "id": "6bbcaa3c",
     "name": "Challenge Tires London and South East CX League - Round 05",
     "type": "Cyclo Cross",
@@ -895,19 +843,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/324206/cxne-202526-round-4",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "58b5156c",
-    "name": "HUPcc Scottish Cyclo Cross Series Round 3: Camperdown Park",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Camperdown Country Park Cycle Centre, Angus",
-    "postcode": null,
-    "date": "2025-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324791/hupcc-scottish-cyclo-cross-series-round-3-camperdown-park",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-19T02:15:26.000Z"
   },
   {
     "id": "8b9d1b2a",
@@ -1220,19 +1155,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/323752/south-west-regional-championships-incorporating-swcx-202526-round-6",
     "source": "Google Sheet",
     "last_updated": "2025-08-22T02:15:26.000Z"
-  },
-  {
-    "id": "d48bb3fa",
-    "name": "SWCX 2025/26 Round 6",
-    "type": "Cyclo Cross",
-    "region": "South West",
-    "venue": "Torbay Velopark, Devon",
-    "postcode": null,
-    "date": "2025-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323752/swcx-202526-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
   },
   {
     "id": "ea6e2442",
