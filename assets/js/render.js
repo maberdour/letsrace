@@ -3,7 +3,7 @@ function renderFooter() {
   document.body.insertAdjacentHTML("beforeend", `
     <footer>
       <small>
-        LetsRace.cc | Supporting youth cycling across the UK | Last updated: 8 September 2025
+        LetsRace.cc | Supporting youth cycling across the UK
         <span id="build-stamp" style="display: none;">Last updated: Mon, 8 Sept 2025</span>
       </small>
     </footer>
