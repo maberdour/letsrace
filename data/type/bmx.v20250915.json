@@ -26,19 +26,6 @@
     "last_updated": "2025-09-05T02:15:27.000Z"
   },
   {
-    "id": "a6251b92",
-    "name": "Nuneaton BMX Round 5 2025 Series",
-    "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Nuneaton BMX Track, Warwickshire",
-    "postcode": null,
-    "date": "2025-09-20",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324495/nuneaton-bmx-round-5-2025-series",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
-  },
-  {
     "id": "ade4d068",
     "name": "Peterborough club race",
     "type": "BMX",
@@ -75,7 +62,7 @@
     "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/326139/bath-bmx-club-champs-2025",
     "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
+    "last_updated": "2025-08-30T02:15:25.000Z"
   },
   {
     "id": "ece16d5a",

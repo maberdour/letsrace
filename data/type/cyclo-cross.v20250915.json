@@ -91,19 +91,6 @@
     "last_updated": "2025-08-22T02:15:26.000Z"
   },
   {
-    "id": "f0233cb1",
-    "name": "HUPcc Scottish Cyclocross Series Round 1: Brechin",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Brechin Equestrian Centre, Angus",
-    "postcode": null,
-    "date": "2025-09-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325117/hupcc-scottish-cyclocross-series-round-1-brechin",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
-  },
-  {
     "id": "750cf7e0",
     "name": "NWCCA 2025/26 Round 2 - North Cheshire Clarion cross",
     "type": "Cyclo Cross",
@@ -128,19 +115,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/325630/pauls-50th-anniversary-cross---western-cyclo-cross-league-round-2----winter-20252026",
     "source": "Google Sheet",
     "last_updated": "2025-08-27T02:15:28.000Z"
-  },
-  {
-    "id": "e1d2880e",
-    "name": "Paul's 50th Anniversary Cross - Western Cyclo-cross League Round 2 - Winter 2025/2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Stroud Leisure Centre, Gloucestershire",
-    "postcode": null,
-    "date": "2025-09-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325630/pauls-50th-anniversary-cross---western-cyclo-cross-league-round-2----winter-20252026",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
   },
   {
     "id": "e503f8fa",
@@ -351,19 +325,6 @@
     "last_updated": "2025-08-27T02:15:28.000Z"
   },
   {
-    "id": "f1a2137b",
-    "name": "Western Cyclo-cross League Round 3 - Pittville Park - Season 2025/2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2025-09-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325059/western-cyclo-cross-league-round-3---pittville-park---season-20252026",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
-  },
-  {
     "id": "4291f0a2",
     "name": "Lloyds Cyclo-cross National Trophy Series 2025/26 Round 1",
     "type": "Cyclo Cross",
@@ -390,19 +351,6 @@
     "last_updated": "2025-09-04T02:15:25.000Z"
   },
   {
-    "id": "8d896eb6",
-    "name": "CCXL #4 Bicester Millennium CC",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Wheatley Park School, Oxfordshire",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325629/ccxl-4-bicester-millennium-cc",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
-  },
-  {
     "id": "3214f33c",
     "name": "Challenge Tires London and South East CX League - Round 04",
     "type": "Cyclo Cross",
@@ -414,19 +362,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/324372/challenge-tires-london-and-south-east-cx-league---round-04",
     "source": "Google Sheet",
     "last_updated": "2025-09-06T02:15:27.000Z"
-  },
-  {
-    "id": "3214f33c",
-    "name": "Challenge Tires London and South East CX League - Round 04",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324372/challenge-tires-london-and-south-east-cx-league---round-04",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
   },
   {
     "id": "1425ebbf",
@@ -518,19 +453,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/325116/leicestershire-cyclo-cross-league-rd-1-promoted-by-leicester-forest-cc",
     "source": "Google Sheet",
     "last_updated": "2025-08-29T02:15:25.000Z"
-  },
-  {
-    "id": "aaef8767",
-    "name": "Leicestershire Cyclo-cross League Rd 1 promoted by Leicester Forest CC",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Western Park, Leicester",
-    "postcode": null,
-    "date": "2025-10-12",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325116/leicestershire-cyclo-cross-league-rd-1-promoted-by-leicester-forest-cc",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
   },
   {
     "id": "dc7009bc",
@@ -660,19 +582,6 @@
     "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/323750/swcx-202526-round-4",
     "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
-  },
-  {
-    "id": "9dcc6643",
-    "name": "VC Revolution Cross - Eastern League 2025/26 Round 5",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Valley Green Farm , Mount Bures",
-    "postcode": null,
-    "date": "2025-10-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324556/vc-revolution-cross----eastern-league-202526-round-5",
-    "source": "Google Sheet",
     "last_updated": "2025-08-20T02:15:27.000Z"
   },
   {
@@ -686,7 +595,7 @@
     "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/324556/vc-revolution-cross----eastern-league-202526-round-5",
     "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
+    "last_updated": "2025-08-20T02:15:27.000Z"
   },
   {
     "id": "2c64de1d",
@@ -754,19 +663,6 @@
     "last_updated": "2025-09-04T02:15:25.000Z"
   },
   {
-    "id": "bb5a592b",
-    "name": "CCXL #6 Kettering CC",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Delepre Abbey , Northamptonshire",
-    "postcode": null,
-    "date": "2025-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325892/ccxl-6-kettering-cc",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
-  },
-  {
     "id": "6bbcaa3c",
     "name": "Challenge Tires London and South East CX League - Round 05",
     "type": "Cyclo Cross",
@@ -817,19 +713,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/324791/hupcc-scottish-cyclocross-series-round-3-camperdown-park",
     "source": "Google Sheet",
     "last_updated": "2025-08-22T02:15:26.000Z"
-  },
-  {
-    "id": "8b9d1b2a",
-    "name": "HUPcc Scottish Cyclocross Series Round 3: Camperdown Park",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Camperdown Country Park Cycle Centre, Angus",
-    "postcode": null,
-    "date": "2025-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324791/hupcc-scottish-cyclocross-series-round-3-camperdown-park",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
   },
   {
     "id": "3e85968c",
@@ -1116,19 +999,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/323752/south-west-regional-championships-incorporating-swcx-202526-round-6",
     "source": "Google Sheet",
     "last_updated": "2025-08-22T02:15:26.000Z"
-  },
-  {
-    "id": "1c282c52",
-    "name": "South West Regional Championships incorporating SWCX 2025/26 Round 6",
-    "type": "Cyclo Cross",
-    "region": "South West",
-    "venue": "Torbay Velopark, Devon",
-    "postcode": null,
-    "date": "2025-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323752/south-west-regional-championships-incorporating-swcx-202526-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
   },
   {
     "id": "ea6e2442",

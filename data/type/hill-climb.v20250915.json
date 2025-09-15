@@ -78,6 +78,19 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
+    "id": "75f64764",
+    "name": "PPYCC Youth Hill Climb (part of Le Col South Downs Hill Climb Series)",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Bazehill Road, East Sussex",
+    "postcode": null,
+    "date": "2025-09-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/322871/ppycc-youth-hill-climb-part-of-le-col-south-downs-hill-climb-series",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
     "id": "e08f7f48",
     "name": "Allen Valley Velo - Allendale",
     "type": "Hill Climb",
@@ -234,11 +247,11 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
-    "id": "791ef902",
+    "id": "8dc9569e",
     "name": "Bowden Hill Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Wiltshire | 1 miles | UH80 | Bowden Hill",
+    "venue": "Wiltshire | 1.2 miles | UH80 | Bowden Hill",
     "postcode": null,
     "date": "2025-09-27",
     "start_time": "00:00",
@@ -494,19 +507,6 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
-    "id": "3b94bccf",
-    "name": "Coventry Cycling Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "Warwickshire | 1 miles | KH5",
-    "postcode": null,
-    "date": "2025-10-04",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/36926-coventry-cycling-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T07:41:47.000Z"
-  },
-  {
     "id": "91a403e3",
     "name": "Coventry Cycling Club Hill Climb",
     "type": "Hill Climb",
@@ -516,6 +516,19 @@
     "date": "2025-10-04",
     "start_time": "00:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/36928-coventry-cycling-club-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-11T07:41:47.000Z"
+  },
+  {
+    "id": "3b94bccf",
+    "name": "Coventry Cycling Club Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Warwickshire | 1 miles | KH5",
+    "postcode": null,
+    "date": "2025-10-04",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/36926-coventry-cycling-club-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
@@ -663,11 +676,11 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
-    "id": "d272fc50",
+    "id": "2573eb7d",
     "name": "North Hampshire RC Club Sydmonton Hil climb 0.5 Miles",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1 miles | HHC009 | Watership Down",
+    "venue": "Hampshire | 845 yards | HHC009 | Watership Down",
     "postcode": null,
     "date": "2025-10-05",
     "start_time": "00:00",
@@ -806,11 +819,11 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
-    "id": "1d2a9a38",
+    "id": "27f8360c",
     "name": "Yeovil Cycling Club Club Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1 miles | UHC56",
+    "venue": "Somerset | 1197 yards | UHC56 | Ham Hill",
     "postcode": null,
     "date": "2025-10-05",
     "start_time": "00:00",
@@ -910,15 +923,15 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
-    "id": "f2616165",
-    "name": "Zurbaran Racing Wear Bank Hill Climb",
+    "id": "41f2b150",
+    "name": "Zurbaran Racing Upthank Bank Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "County Durham | 1.1 miles | THC43",
+    "venue": "County Durham | 1584 yards | THC41 | Unthank Bank",
     "postcode": null,
     "date": "2025-10-11",
     "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/32231-zurbaran-racing-wear-bank-hill-climb",
+    "url": "https://www.cyclingtimetrials.org.uk/events/32231-zurbaran-racing-upthank-bank-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
@@ -1066,11 +1079,11 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
-    "id": "59e711f7",
+    "id": "1910fa7e",
     "name": "Yeovil Cycling Club Club Hill Climb - Reserve Date",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1 miles | UHC56",
+    "venue": "Somerset | 1197 yards | UHC56 | Ham Hill",
     "postcode": null,
     "date": "2025-10-12",
     "start_time": "00:00",
@@ -1090,6 +1103,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/31470-birdy-brow-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2025-09-11T07:41:47.000Z"
+  },
+  {
+    "id": "f603a7ed",
+    "name": "Dean Hill Hill Climb",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Wiltshire | 880 yards | P14HC | Dean Hill",
+    "postcode": "P14HC",
+    "date": "2025-10-18",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/43335-dean-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-15T12:30:41.000Z"
   },
   {
     "id": "771f20ed",
@@ -1248,6 +1274,19 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
+    "id": "b639595e",
+    "name": "Oxford University Cycling Club Hill Climb: Wytham Woods",
+    "type": "Hill Climb",
+    "region": "Central",
+    "venue": "Oxfordshire | 1 miles | HHC035 | Wytham Woods",
+    "postcode": null,
+    "date": "2025-10-25",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/43365-oxford-university-cycling-club-hill-climb-wytham-woods",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-15T12:30:41.000Z"
+  },
+  {
     "id": "ca94fcc0",
     "name": "Cambridge University CC Hill Climb",
     "type": "Hill Climb",
@@ -1274,15 +1313,15 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
-    "id": "914c313e",
-    "name": "RTTC National Hill Climb Championship",
+    "id": "a6a970bd",
+    "name": "RTTC National Hill Climb Championship fuelled by OGT",
     "type": "Hill Climb",
     "region": "East Midlands",
     "venue": "Derbyshire | 880 yards | AHC/6CH",
     "postcode": null,
     "date": "2025-10-26",
     "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/32184-rttc-national-hill-climb-championship",
+    "url": "https://www.cyclingtimetrials.org.uk/events/32184-rttc-national-hill-climb-championship-fuelled-by-ogt",
     "source": "Google Sheet",
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
@@ -1352,19 +1391,6 @@
     "last_updated": "2025-09-12T15:13:13.000Z"
   },
   {
-    "id": "367d6cce",
-    "name": "Calder Clarion Cycling Club 5 mile NYD time trial",
-    "type": "Hill Climb",
-    "region": "Yorkshire & Humber",
-    "venue": "V919",
-    "postcode": null,
-    "date": "2026-01-01",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/33458-calder-clarion-cycling-club-5-mile-nyd-time-trial",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T07:41:47.000Z"
-  },
-  {
     "id": "b42dfd80",
     "name": "CC Bexley Club Hill Climb",
     "type": "Hill Climb",
@@ -1374,32 +1400,6 @@
     "date": "2026-08-20",
     "start_time": "00:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/33044-cc-bexley-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-12T15:13:13.000Z"
-  },
-  {
-    "id": "b42dfd80",
-    "name": "CC Bexley Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "Kent | 1 miles | QHC/5 | STANSTED HILL",
-    "postcode": null,
-    "date": "2026-08-20",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/33044-cc-bexley-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T07:41:47.000Z"
-  },
-  {
-    "id": "40db9359",
-    "name": "CC Bexley Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "Kent | 1 miles | QHC/5 | STANSTED HILL",
-    "postcode": null,
-    "date": "2026-08-20",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/35626-cc-bexley-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2025-09-12T15:13:13.000Z"
   },
@@ -1414,6 +1414,6 @@
     "start_time": "00:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/35626-cc-bexley-hill-climb",
     "source": "Google Sheet",
-    "last_updated": "2025-09-11T07:41:47.000Z"
+    "last_updated": "2025-09-12T15:13:13.000Z"
   }
 ]

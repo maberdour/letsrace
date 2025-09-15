@@ -13,19 +13,6 @@
     "last_updated": "2025-08-27T02:15:28.000Z"
   },
   {
-    "id": "75f64764",
-    "name": "PPYCC Youth Hill Climb (part of Le Col South Downs Hill Climb Series)",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Bazehill Road, East Sussex",
-    "postcode": null,
-    "date": "2025-09-20",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/322871/ppycc-youth-hill-climb-part-of-le-col-south-downs-hill-climb-series",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-14T02:15:24.000Z"
-  },
-  {
     "id": "f6efb0e7",
     "name": "Matlock CC Darley Moor Circuit Race #6",
     "type": "Road",
@@ -50,6 +37,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/326397/british-cycling-pathway-bmx-sx-rsr-3-eastern-2025",
     "source": "Google Sheet",
     "last_updated": "2025-09-05T02:15:27.000Z"
+  },
+  {
+    "id": "d38d293b",
+    "name": "Cleveland Coureurs 10 Croft event",
+    "type": "Road",
+    "region": "North East",
+    "venue": "North Yorkshire | 10 miles | T10C",
+    "postcode": null,
+    "date": "2025-10-12",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/32233-cleveland-coureurs-10-croft-event",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-15T12:30:41.000Z"
+  },
+  {
+    "id": "13df6bf9",
+    "name": "RTTC National Closed Circuit Championship",
+    "type": "Road",
+    "region": "North East",
+    "venue": "North Yorkshire | 10 miles | T10C",
+    "postcode": null,
+    "date": "2025-10-12",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/32251-rttc-national-closed-circuit-championship",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-15T12:30:41.000Z"
   },
   {
     "id": "4561e493",
