@@ -286,6 +286,19 @@
     "last_updated": "2025-09-11T07:41:47.000Z"
   },
   {
+    "id": "1bfd52dc",
+    "name": "Acme Whs (Rhondda) CC Club 2",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "2 miles | RCHC/21T",
+    "postcode": null,
+    "date": "2025-09-28",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/41391-acme-whs-rhondda-cc-club-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-15T12:30:41.000Z"
+  },
+  {
     "id": "3932bad2",
     "name": "Arthurs Seat Hill Climb",
     "type": "Hill Climb",
@@ -570,6 +583,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/31077-sussex-ca-bostal-blaster",
     "source": "Google Sheet",
     "last_updated": "2025-09-11T07:41:47.000Z"
+  },
+  {
+    "id": "db2cc2c1",
+    "name": "Acme Whs (Rhondda) CC Club 2",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "2 miles | RCHC/21T",
+    "postcode": null,
+    "date": "2025-10-05",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/41406-acme-whs-rhondda-cc-club-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-15T12:30:41.000Z"
   },
   {
     "id": "42800d01",
