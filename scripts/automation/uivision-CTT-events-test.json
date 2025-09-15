@@ -1,0 +1,133 @@
+{
+    "Name": "CTT-Events-Test",
+    "CreationDate": "2025-9-12",
+    "Commands": [
+      {
+        "Command": "store",
+        "Target": "https://www.cyclingtimetrials.org.uk/event-finder?viewAs=list&ag=youth&tt=hillClimb",
+        "Value": "url1",
+        "Description": "Hill Climb URL"
+      },
+      {
+        "Command": "store",
+        "Target": "https://www.cyclingtimetrials.org.uk/event-finder?viewAs=list&ag=youth&ct=closedCircuit",
+        "Value": "url2",
+        "Description": "Closed Circuit URL"
+      },
+      {
+        "Command": "store",
+        "Target": "1",
+        "Value": "urlIndex",
+        "Description": "URL counter"
+      },
+      {
+        "Command": "echo",
+        "Target": "Starting URL loop test...",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "while_v2",
+        "Target": "${urlIndex} <= 2",
+        "Value": "",
+        "Description": "Loop through URLs"
+      },
+      {
+        "Command": "echo",
+        "Target": "=== Processing URL ${urlIndex} ===",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "if",
+        "Target": "${urlIndex} == 1",
+        "Value": "",
+        "Description": "Check if first URL"
+      },
+      {
+        "Command": "echo",
+        "Target": "Opening Hill Climb URL: ${url1}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "open",
+        "Target": "${url1}",
+        "Value": "",
+        "Description": "Open Hill Climb URL"
+      },
+      {
+        "Command": "pause",
+        "Target": "3000",
+        "Value": "",
+        "Description": "Wait 3 seconds"
+      },
+      {
+        "Command": "echo",
+        "Target": "Hill Climb page loaded successfully",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "else",
+        "Target": "",
+        "Value": "",
+        "Description": "Else second URL"
+      },
+      {
+        "Command": "echo",
+        "Target": "Opening Closed Circuit URL: ${url2}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "open",
+        "Target": "${url2}",
+        "Value": "",
+        "Description": "Open Closed Circuit URL"
+      },
+      {
+        "Command": "pause",
+        "Target": "3000",
+        "Value": "",
+        "Description": "Wait 3 seconds"
+      },
+      {
+        "Command": "echo",
+        "Target": "Closed Circuit page loaded successfully",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "end",
+        "Target": "",
+        "Value": "",
+        "Description": "End if statement"
+      },
+      {
+        "Command": "echo",
+        "Target": "URL ${urlIndex} processing complete",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "executeScript_Sandbox",
+        "Target": "return Number(${urlIndex}) + 1;",
+        "Value": "urlIndex",
+        "Description": "Increment URL counter"
+      },
+      {
+        "Command": "end",
+        "Target": "",
+        "Value": "",
+        "Description": "End of URL loop"
+      },
+      {
+        "Command": "echo",
+        "Target": "URL loop test completed successfully!",
+        "Value": "",
+        "Description": ""
+      }
+    ]
+  }
+

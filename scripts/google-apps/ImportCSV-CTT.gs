@@ -2,10 +2,11 @@
  * Import CSV Cycling Time Trials Events Script
  * 
  * This script imports CTT events from a CSV file in Google Drive into a Google Sheet.
- * It prevents duplicates based on CTT event ID (when available) or date + event name.
+ * It detects duplicates based on CTT event ID and overwrites existing events with new data.
  * 
  * Features:
- * - Duplicate detection using CTT event ID (primary) or date + event name (fallback)
+ * - Duplicate detection using CTT event ID only
+ * - Overwrites existing events with updated data instead of skipping
  * - Date normalization to "DAY dd/mm/yy" format
  * - URL normalization for CTT links
  * - County to UK region mapping
@@ -38,37 +39,31 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     const sheetData = sheet.getDataRange().getValues();
 
-    // Build set of existing event keys for duplicate detection
-    const existingKeys = new Set();
-    sheetData.forEach(row => {
-      const dateKey = getDateKeyForDuplicateDetection(row[0]);
-      const name = normalizeValue(row[1]);
+    // Build map of existing event IDs to row numbers for duplicate detection
+    const existingEventIds = new Map(); // eventId -> rowNumber
+    sheetData.forEach((row, index) => {
       const url = row[4] || '';
-      const key = generateCTTDuplicateKey(dateKey, name, url);
-      if (key) {
-        existingKeys.add(key);
+      const eventId = extractCTTEventId(url);
+      if (eventId) {
+        existingEventIds.set(eventId, index + 1); // +1 because sheet rows are 1-based
       }
     });
 
     const now = formatDateTime(new Date());
     const newRows = [];
+    const rowsToUpdate = []; // Array of {rowNumber, data} for existing events
 
     // Process each CSV row
     csvData.forEach(row => {
-      const dateKey = getDateKeyForDuplicateDetection(row[0]);
       const displayDate = normalizeDate(row[0]);
       const name = normalizeEventName(row[1]); // Preserve case for display
-      const nameForDedup = normalizeValue(row[1]); // Lowercase for duplicate detection
       const eventType = row[2] || '';
       const courseInfo = row[3] || '';
       const rawUrl = row[4] ? row[4].toString().trim() : '';
-      const key = generateCTTDuplicateKey(dateKey, nameForDedup, rawUrl);
+      const eventId = extractCTTEventId(rawUrl);
 
       // Debug logging
       Logger.log(`Original date: "${row[0]}", Display date: "${displayDate}", Date type: ${typeof row[0]}`);
-
-      // Skip if event already exists
-      if (existingKeys.has(key)) return;
 
       // Parse course information to extract region (but keep full course info as location)
       const { region } = parseCourseInfo(courseInfo);
@@ -83,7 +78,7 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
         row[4] = 'https://www.cyclingtimetrials.org.uk/' + cleanUrl;
       }
 
-      // Create the row for the sheet: Date, Name, Event Type, Location (Full Course Info), URL, Region, Timestamp
+      // Create the row for the sheet: Date, Name, Event Type, Location (Full Course Info), URL, Region, Date Created, Date Updated
       const sheetRow = [
         displayDate,           // Column A: Event Date
         name,                  // Column B: Event Name  
@@ -91,11 +86,51 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
         courseInfo,            // Column D: Location (Full course info as-is)
         row[4],                // Column E: URL
         region,                // Column F: Region
-        now                    // Column G: Import Timestamp
+        now,                   // Column G: Date Created (for new events)
+        ''                     // Column H: Date Updated (will be set for updates)
       ];
 
-      newRows.push(sheetRow);
+      // Check if this event ID already exists
+      if (eventId && existingEventIds.has(eventId)) {
+        const existingRowNumber = existingEventIds.get(eventId);
+        const existingRowData = sheetData[existingRowNumber - 1]; // Convert to 0-based index
+        
+        // Preserve the existing Event Type field (Column C) from the sheet
+        const existingEventType = existingRowData[2] || ''; // Column C (index 2)
+        sheetRow[2] = existingEventType; // Keep the existing event type, don't overwrite
+        
+        // Preserve the existing Region field (Column F) from the sheet
+        const existingRegion = existingRowData[5] || ''; // Column F (index 5)
+        sheetRow[5] = existingRegion; // Keep the existing region, don't overwrite
+        
+        // Preserve the existing Date Created field (Column G) from the sheet
+        const existingDateCreated = existingRowData[6] || ''; // Column G (index 6)
+        sheetRow[6] = existingDateCreated; // Keep the existing date created, don't overwrite
+        
+        // Set Date Updated for existing events
+        sheetRow[7] = now; // Column H: Date Updated
+        
+        // Compare data to see if anything has changed
+        if (hasDataChanged(existingRowData, sheetRow)) {
+          Logger.log(`🔄 Updating existing CTT event ID ${eventId} in row ${existingRowNumber} (data changed)`);
+          rowsToUpdate.push({ rowNumber: existingRowNumber, data: sheetRow });
+        } else {
+          Logger.log(`ℹ️ CTT event ID ${eventId} in row ${existingRowNumber} unchanged, skipping update`);
+        }
+      } else {
+        // New event - add to new rows
+        newRows.push(sheetRow);
+      }
     });
+
+    // Update existing rows
+    if (rowsToUpdate.length > 0) {
+      rowsToUpdate.forEach(({ rowNumber, data }) => {
+        const range = sheet.getRange(rowNumber, 1, 1, data.length);
+        range.setValues([data]);
+      });
+      Logger.log(`🔄 Updated ${rowsToUpdate.length} existing CTT events.`);
+    }
 
     // Add new rows to sheet
     if (newRows.length > 0) {
@@ -103,6 +138,13 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
       Logger.log(`✅ Added ${newRows.length} new CTT events.`);
     } else {
       Logger.log("ℹ️ No new CTT events to add.");
+    }
+
+    // Summary
+    if (rowsToUpdate.length === 0 && newRows.length === 0) {
+      Logger.log("ℹ️ No CTT events to process.");
+    } else {
+      Logger.log(`📊 Import summary: ${newRows.length} new, ${rowsToUpdate.length} updated`);
     }
   } catch (error) {
     Logger.log("❌ Error importing CTT events: " + error.message);
@@ -319,10 +361,52 @@ function extractCTTEventId(url) {
   if (!url) return '';
   
   // Match patterns like:
-  // https://www.cyclingtimetrials.org.uk/event-details/12345
-  // /event-details/12345
-  const cttMatch = url.match(/\/event-details\/(\d+)\/?/);
+  // https://www.cyclingtimetrials.org.uk/events/30497-north-road-hill-climb
+  // /events/30497-north-road-hill-climb
+  const cttMatch = url.match(/\/events\/(\d+)(?:-|$|\/)/);
   return cttMatch ? cttMatch[1] : '';
+}
+
+/**
+ * Compares existing row data with new data to determine if an update is needed
+ * @param {Array} existingRow - The existing row data from the sheet
+ * @param {Array} newRow - The new row data from CSV
+ * @return {boolean} True if data has changed and needs updating
+ */
+function hasDataChanged(existingRow, newRow) {
+  if (!existingRow || !newRow) return true;
+  
+  // Compare relevant columns (skip Date Created and Date Updated columns)
+  // CTT sheet structure: Date, Name, Event Type, Location, URL, Region, Date Created, Date Updated
+  // We want to compare columns 0-5 (Date through Region), skip columns 6-7 (Date Created, Date Updated)
+  const columnsToCompare = Math.min(existingRow.length - 2, newRow.length - 2, 6); // Compare first 6 columns only
+  
+  for (let i = 0; i < columnsToCompare; i++) {
+    const existingValue = existingRow[i] || '';
+    const newValue = newRow[i] || '';
+    
+    // Special handling for date column (column 0) and name column (column 1)
+    let normalizedExisting, normalizedNew;
+    if (i === 0) {
+      // For dates, normalize both to the same format for comparison
+      normalizedExisting = normalizeDate(existingValue);
+      normalizedNew = normalizeDate(newValue);
+    } else if (i === 1) {
+      // For names, normalize both to lowercase for comparison (preserve case in display)
+      normalizedExisting = normalizeValue(existingValue);
+      normalizedNew = normalizeValue(newValue);
+    } else {
+      // For other columns, use string comparison
+      normalizedExisting = String(existingValue).trim();
+      normalizedNew = String(newValue).trim();
+    }
+    
+    if (normalizedExisting !== normalizedNew) {
+      return true; // Data has changed
+    }
+  }
+  
+  return false; // No changes detected
 }
 
 /**
@@ -383,8 +467,8 @@ function getDateKeyForDuplicateDetection(value) {
         return `${currentYear}-${month}-${day}`;
       }
       
-      // Handle CTT format: dd-Mon (current year assumed)
-      const cttMonthMatch = value.match(/^(\d{1,2})-([A-Za-z]{3})$/);
+      // Handle CTT format: dd Mon (current year assumed)
+      const cttMonthMatch = value.match(/^(\d{1,2})\s+([A-Za-z]{3})$/);
       if (cttMonthMatch) {
         const [ , d, monthName ] = cttMonthMatch;
         const day = d.padStart(2, '0');
@@ -474,8 +558,8 @@ function normalizeDate(value) {
         return result;
       }
       
-      // Handle CTT format: dd-Mon (current year assumed)
-      const cttMonthMatch = str.match(/^(\d{1,2})-([A-Za-z]{3})$/);
+      // Handle CTT format: dd Mon (current year assumed)
+      const cttMonthMatch = str.match(/^(\d{1,2})\s+([A-Za-z]{3})$/);
       if (cttMonthMatch) {
         Logger.log(`Found CTT month format: "${str}"`);
         const [ , d, monthName ] = cttMonthMatch;

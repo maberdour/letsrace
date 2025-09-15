@@ -1,0 +1,348 @@
+{
+    "Name": "CTT-Events",
+    "CreationDate": "2025-9-12",
+    "Commands": [
+      {
+        "Command": "store",
+        "Target": "https://www.cyclingtimetrials.org.uk/event-finder?viewAs=list&ag=youth&tt=hillClimb",
+        "Value": "url1",
+        "Description": "Hill Climb URL"
+      },
+      {
+        "Command": "store",
+        "Target": "https://www.cyclingtimetrials.org.uk/event-finder?viewAs=list&ag=youth&ct=closedCircuit",
+        "Value": "url2",
+        "Description": "Closed Circuit URL"
+      },
+      {
+        "Command": "store",
+        "Target": "1",
+        "Value": "urlIndex",
+        "Description": "URL counter"
+      },
+      {
+        "Command": "while_v2",
+        "Target": "${urlIndex} <= 2",
+        "Value": "",
+        "Description": "Loop through URLs"
+      },
+      {
+        "Command": "if",
+        "Target": "${urlIndex} == 1",
+        "Value": "",
+        "Description": "Check if first URL"
+      },
+      {
+        "Command": "open",
+        "Target": "${url1}",
+        "Value": "",
+        "Description": "Open Hill Climb URL"
+      },
+      {
+        "Command": "else",
+        "Target": "",
+        "Value": "",
+        "Description": "Else second URL"
+      },
+      {
+        "Command": "open",
+        "Target": "${url2}",
+        "Value": "",
+        "Description": "Open Closed Circuit URL"
+      },
+      {
+        "Command": "end",
+        "Target": "",
+        "Value": "",
+        "Description": "End if statement"
+      },
+      {
+        "Command": "comment",
+        "Target": "Page-Down to end of page",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "bringBrowserToForeground",
+        "Target": "",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XClick",
+        "Target": "xpath=//span[@class=\"block archivo_e255c303-module__RfbGYW__className text-[12pt] md:text-[11pt] xl:text-[11pt] font-[900] leading-tight text-neutral-950 dark:text-neutral-300 md:pl-14\"]",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "XType",
+        "Target": "${KEY_END}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "1000",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "storeXpathCount",
+        "Target": "xpath=(//span[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] uppercase leading-tight text-neutral-950 dark:text-neutral-300')])",
+        "Value": "filesCount",
+        "Description": ""
+      },
+      {
+        "Command": "echo",
+        "Target": "Number of rows to extract = ${filesCount}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "store",
+        "Target": "1",
+        "Value": "loopCount",
+        "Description": ""
+      },
+      {
+        "Command": "while_v2",
+        "Target": "${loopCount} <= ${filesCount}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "echo",
+        "Target": "Loop number: ${loopCount}",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "storeText",
+        "Target": "xpath=(//span[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] uppercase leading-tight text-neutral-950 dark:text-neutral-300')])[${loopCount}]",
+        "Value": "!csvLine",
+        "Description": "Event Date"
+      },
+      {
+        "Command": "storeText",
+        "Target": "xpath=(//h4[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] leading-tight text-neutral-950 dark:text-neutral-300')])[${loopCount}]",
+        "Value": "!csvLine",
+        "Description": "Event Title"
+      },
+      {
+        "Command": "if",
+        "Target": "${urlIndex} == 1",
+        "Value": "",
+        "Description": "Check if first URL for event type"
+      },
+      {
+        "Command": "store",
+        "Target": "Hill Climb",
+        "Value": "!csvLine",
+        "Description": "Event Type - Hill Climb"
+      },
+      {
+        "Command": "else",
+        "Target": "",
+        "Value": "",
+        "Description": "Else second URL"
+      },
+      {
+        "Command": "store",
+        "Target": "Closed Circuit",
+        "Value": "!csvLine",
+        "Description": "Event Type - Closed Circuit"
+      },
+      {
+        "Command": "end",
+        "Target": "",
+        "Value": "",
+        "Description": "End if statement for event type"
+      },
+      {
+        "Command": "storeText",
+        "Target": "xpath=(//p[contains(@class,'block archivo_e255c303-module__RfbGYW__className text-[12pt] md:text-[11pt] xl:text-[11pt] font-[600] text-neutral-950 dark:text-neutral-300')])[${loopCount}]",
+        "Value": "!csvLine",
+        "Description": "Event Location"
+      },
+      {
+        "Command": "storeAttribute",
+        "Target": "xpath=(//div[contains(@class,\"grid\") and contains(@class,\"gap-4\")]//a[starts-with(@href,\"/events/\")])[${loopCount}]@href",
+        "Value": "!csvLine",
+        "Description": "URL"
+      },
+      {
+        "Command": "csvSave",
+        "Target": "ctt_event_data",
+        "Value": "",
+        "Description": ""
+      },
+      {
+        "Command": "executeScript_Sandbox",
+        "Target": "return Number(${loopCount}) + 1;",
+        "Value": "loopCount",
+        "Description": ""
+      },
+      {
+        "Command": "end",
+        "Target": "",
+        "Value": "",
+        "Description": "End of row loop"
+      },
+      {
+        "Command": "executeScript_Sandbox",
+        "Target": "return Number(${urlIndex}) + 1;",
+        "Value": "urlIndex",
+        "Description": "Increment URL counter"
+      },
+      {
+        "Command": "end",
+        "Target": "",
+        "Value": "",
+        "Description": "End of URL loop"
+      }
+    ]
+  }
