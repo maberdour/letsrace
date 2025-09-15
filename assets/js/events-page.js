@@ -114,14 +114,14 @@ function filterEvents(events, filters) {
   });
 }
 
-// Sort events by date then name, limit to 50
+// Sort events by date then name
 function sortEvents(events) {
   return events.sort((a, b) => {
     if (a.date !== b.date) {
       return a.date.localeCompare(b.date);
     }
     return a.name.localeCompare(b.name);
-  }).slice(0, 50); // Limit to 50 events
+  });
 }
 
 // Render event card

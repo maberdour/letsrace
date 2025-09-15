@@ -38,7 +38,7 @@ function logPerformanceSummary() {
 }
 
 // Number of days after which an event is no longer considered "NEW"
-const NEW_EVENT_DAYS = 7;
+const NEW_EVENT_DAYS = 2;
 
 // Debounce utility
 function debounce(func, wait) {
@@ -98,14 +98,14 @@ function filterEvents(events, filters) {
   });
 }
 
-// Sort events by date then name, limit to 50
+// Sort events by date then name
 function sortEvents(events) {
   return events.sort((a, b) => {
     if (a.date !== b.date) {
       return a.date.localeCompare(b.date);
     }
     return a.name.localeCompare(b.name);
-  }).slice(0, 50); // Limit to 50 events
+  });
 }
 
 // Render homepage event card
@@ -134,10 +134,10 @@ function renderHomepageEventCard(event) {
 // Render events for homepage
 function renderHomepageEvents(events, container, titleElement) {
   if (events.length === 0) {
-    container.innerHTML = '<div class="no-events"><p>No new events found for the selected regions.</p></div>';
-    if (titleElement) {
-      titleElement.textContent = 'New Events';
-    }
+    container.innerHTML = '<div class="no-events"><p>No recently added events found for the selected regions.</p></div>';
+  if (titleElement) {
+    titleElement.textContent = 'Recently Added Events';
+  }
     return;
   }
   
@@ -145,7 +145,7 @@ function renderHomepageEvents(events, container, titleElement) {
   container.innerHTML = `<div class="events-list">${eventsHtml}</div>`;
   
   if (titleElement) {
-    titleElement.textContent = 'New Events';
+    titleElement.textContent = 'Recently Added Events';
   }
 }
 
@@ -444,14 +444,10 @@ function initHomepage() {
     
     renderHomepageEvents(sortedEvents, newEventsContainer, newEventsTitle);
     
-    // Update result count
+    // Hide result count
     const resultCount = document.getElementById('result-count');
     if (resultCount) {
-      if (sortedEvents.length === 0) {
-        resultCount.textContent = 'No upcoming events';
-      } else {
-        resultCount.textContent = `${sortedEvents.length} upcoming events`;
-      }
+      resultCount.style.display = 'none';
     }
     
     // Store selected regions in localStorage for persistence
