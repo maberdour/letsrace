@@ -1,0 +1,240 @@
+{
+  "Name": "BC-Events-Test",
+  "CreationDate": "2025-9-15",
+  "Commands": [
+    {
+      "Command": "store",
+      "Target": "https://www.britishcycling.org.uk/events?hc%5B%5D=1&zuv_bc_licence_discipline_id%5B%5D=33&zuv_bc_licence_discipline_id%5B%5D=2&zuv_bc_licence_discipline_id%5B%5D=43&zuv_bc_licence_discipline_id%5B%5D=27&zuv_bc_licence_discipline_id%5B%5D=35&zuv_bc_licence_discipline_id%5B%5D=61&zuv_bc_licence_discipline_id%5B%5D=402&zuv_bc_licence_discipline_id%5B%5D=412&zuv_bc_licence_discipline_id%5B%5D=422&zuv_bc_licence_discipline_id%5B%5D=432&zuv_bc_licence_discipline_id%5B%5D=442&zuv_bc_licence_discipline_id%5B%5D=452&zuv_bc_licence_discipline_id%5B%5D=462&zuv_bc_licence_discipline_id%5B%5D=472&zuv_bc_licence_discipline_id%5B%5D=482&zuv_bc_licence_discipline_id%5B%5D=492&zuv_bc_licence_discipline_id%5B%5D=532&zuv_bc_licence_discipline_id%5B%5D=542&zuv_bc_licence_discipline_id%5B%5D=552&zuv_bc_licence_discipline_id%5B%5D=562&zuv_bc_licence_discipline_id%5B%5D=572&zuv_bc_licence_discipline_id%5B%5D=582&zuv_bc_licence_discipline_id%5B%5D=592&zuv_bc_licence_discipline_id%5B%5D=602&zuv_bc_licence_discipline_id%5B%5D=612&zuv_bc_licence_discipline_id%5B%5D=622&zuv_bc_licence_discipline_id%5B%5D=312&zuv_bc_licence_discipline_id%5B%5D=322&zuv_bc_licence_discipline_id%5B%5D=332&zuv_bc_licence_discipline_id%5B%5D=705&zuv_bc_licence_discipline_id%5B%5D=14&zuv_bc_licence_discipline_id%5B%5D=657&zuv_bc_licence_discipline_id%5B%5D=658&zuv_bc_licence_discipline_id%5B%5D=53&zuv_bc_licence_discipline_id%5B%5D=74&zuv_bc_licence_discipline_id%5B%5D=655&zuv_bc_licence_discipline_id%5B%5D=656&zuv_bc_licence_discipline_id%5B%5D=64&zuv_bc_licence_discipline_id%5B%5D=13&zuv_bc_licence_discipline_id%5B%5D=692&zuv_bc_licence_discipline_id%5B%5D=693&zuv_bc_licence_discipline_id%5B%5D=46&zuv_bc_licence_discipline_id%5B%5D=28",
+      "Value": "url1",
+      "Description": "Store England events URL"
+    },
+    {
+      "Command": "store",
+      "Target": "https://www.britishcycling.org.uk/events?hc%5B%5D=2&zuv_bc_licence_discipline_id%5B%5D=33&zuv_bc_licence_discipline_id%5B%5D=2&zuv_bc_licence_discipline_id%5B%5D=43&zuv_bc_licence_discipline_id%5B%5D=27&zuv_bc_licence_discipline_id%5B%5D=35&zuv_bc_licence_discipline_id%5B%5D=61&zuv_bc_licence_discipline_id%5B%5D=402&zuv_bc_licence_discipline_id%5B%5D=412&zuv_bc_licence_discipline_id%5B%5D=422&zuv_bc_licence_discipline_id%5B%5D=432&zuv_bc_licence_discipline_id%5B%5D=442&zuv_bc_licence_discipline_id%5B%5D=452&zuv_bc_licence_discipline_id%5B%5D=462&zuv_bc_licence_discipline_id%5B%5D=472&zuv_bc_licence_discipline_id%5B%5D=482&zuv_bc_licence_discipline_id%5B%5D=492&zuv_bc_licence_discipline_id%5B%5D=532&zuv_bc_licence_discipline_id%5B%5D=542&zuv_bc_licence_discipline_id%5B%5D=552&zuv_bc_licence_discipline_id%5B%5D=562&zuv_bc_licence_discipline_id%5B%5D=572&zuv_bc_licence_discipline_id%5B%5D=582&zuv_bc_licence_discipline_id%5B%5D=592&zuv_bc_licence_discipline_id%5B%5D=602&zuv_bc_licence_discipline_id%5B%5D=612&zuv_bc_licence_discipline_id%5B%5D=622&zuv_bc_licence_discipline_id%5B%5D=312&zuv_bc_licence_discipline_id%5B%5D=322&zuv_bc_licence_discipline_id%5B%5D=332&zuv_bc_licence_discipline_id%5B%5D=705&zuv_bc_licence_discipline_id%5B%5D=14&zuv_bc_licence_discipline_id%5B%5D=657&zuv_bc_licence_discipline_id%5B%5D=658&zuv_bc_licence_discipline_id%5B%5D=53&zuv_bc_licence_discipline_id%5B%5D=74&zuv_bc_licence_discipline_id%5B%5D=655&zuv_bc_licence_discipline_id%5B%5D=656&zuv_bc_licence_discipline_id%5B%5D=64&zuv_bc_licence_discipline_id%5B%5D=13&zuv_bc_licence_discipline_id%5B%5D=692&zuv_bc_licence_discipline_id%5B%5D=693&zuv_bc_licence_discipline_id%5B%5D=46&zuv_bc_licence_discipline_id%5B%5D=28",
+      "Value": "url2",
+      "Description": "Store Scotland events URL"
+    },
+    {
+      "Command": "store",
+      "Target": "https://www.britishcycling.org.uk/events?hc%5B%5D=3&region_id%5B%5D=1&zuv_bc_licence_discipline_id%5B%5D=33&zuv_bc_licence_discipline_id%5B%5D=2&zuv_bc_licence_discipline_id%5B%5D=43&zuv_bc_licence_discipline_id%5B%5D=27&zuv_bc_licence_discipline_id%5B%5D=35&zuv_bc_licence_discipline_id%5B%5D=61&zuv_bc_licence_discipline_id%5B%5D=402&zuv_bc_licence_discipline_id%5B%5D=412&zuv_bc_licence_discipline_id%5B%5D=422&zuv_bc_licence_discipline_id%5B%5D=432&zuv_bc_licence_discipline_id%5B%5D=442&zuv_bc_licence_discipline_id%5B%5D=452&zuv_bc_licence_discipline_id%5B%5D=462&zuv_bc_licence_discipline_id%5B%5D=472&zuv_bc_licence_discipline_id%5B%5D=482&zuv_bc_licence_discipline_id%5B%5D=492&zuv_bc_licence_discipline_id%5B%5D=532&zuv_bc_licence_discipline_id%5B%5D=542&zuv_bc_licence_discipline_id%5B%5D=552&zuv_bc_licence_discipline_id%5B%5D=562&zuv_bc_licence_discipline_id%5B%5D=572&zuv_bc_licence_discipline_id%5B%5D=582&zuv_bc_licence_discipline_id%5B%5D=592&zuv_bc_licence_discipline_id%5B%5D=602&zuv_bc_licence_discipline_id%5B%5D=612&zuv_bc_licence_discipline_id%5B%5D=622&zuv_bc_licence_discipline_id%5B%5D=312&zuv_bc_licence_discipline_id%5B%5D=322&zuv_bc_licence_discipline_id%5B%5D=332&zuv_bc_licence_discipline_id%5B%5D=705&zuv_bc_licence_discipline_id%5B%5D=14&zuv_bc_licence_discipline_id%5B%5D=657&zuv_bc_licence_discipline_id%5B%5D=658&zuv_bc_licence_discipline_id%5B%5D=53&zuv_bc_licence_discipline_id%5B%5D=74&zuv_bc_licence_discipline_id%5B%5D=655&zuv_bc_licence_discipline_id%5B%5D=656&zuv_bc_licence_discipline_id%5B%5D=64&zuv_bc_licence_discipline_id%5B%5D=13&zuv_bc_licence_discipline_id%5B%5D=692&zuv_bc_licence_discipline_id%5B%5D=693&zuv_bc_licence_discipline_id%5B%5D=46&zuv_bc_licence_discipline_id%5B%5D=28",
+      "Value": "url3",
+      "Description": "Store Wales events URL"
+    },
+    {
+      "Command": "store",
+      "Target": "3",
+      "Value": "maxUrls",
+      "Description": "Set maximum number of URLs to process - UPDATE THIS when adding new URLs"
+    },
+    {
+      "Command": "XRun",
+      "Target": "cmd.exe",
+      "Value": "/c del \"H:\\My Drive\\Projects\\05 SEYC\\UIVision\\datasources\\event_data.csv\"",
+      "Description": "Clear existing CSV file"
+    },
+    {
+      "Command": "store",
+      "Target": "fast",
+      "Value": "!replayspeed",
+      "Description": "Set replay speed to fast"
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "urlIndex",
+      "Description": "Initialize URL counter"
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${urlIndex} <= ${maxUrls}",
+      "Value": "",
+      "Description": "Loop through all URLs"
+    },
+    {
+      "Command": "echo",
+      "Target": "Processing URL${urlIndex}",
+      "Value": "",
+      "Description": "Log current URL being processed"
+    },
+    {
+      "Command": "if",
+      "Target": "${urlIndex} == 1",
+      "Value": "",
+      "Description": "Check if processing URL 1"
+    },
+    {
+      "Command": "open",
+      "Target": "${url1}",
+      "Value": "",
+      "Description": "Open URL 1"
+    },
+    {
+      "Command": "elseIf",
+      "Target": "${urlIndex} == 2",
+      "Value": "",
+      "Description": "Check if processing URL 2"
+    },
+    {
+      "Command": "open",
+      "Target": "${url2}",
+      "Value": "",
+      "Description": "Open URL 2"
+    },
+    {
+      "Command": "elseIf",
+      "Target": "${urlIndex} == 3",
+      "Value": "",
+      "Description": "Check if processing URL 3"
+    },
+    {
+      "Command": "open",
+      "Target": "${url3}",
+      "Value": "",
+      "Description": "Open URL 3"
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End URL selection"
+    },
+    {
+      "Command": "wait",
+      "Target": "3",
+      "Value": "",
+      "Description": "Wait for page to load"
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "continuePagination",
+      "Description": "Initialize pagination flag"
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${continuePagination} == 1",
+      "Value": "",
+      "Description": "Loop through pagination"
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "loopCount",
+      "Description": "Initialize loop counter"
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${loopCount} <= 50",
+      "Value": "",
+      "Description": "Loop through events on current page"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[@class='event-card'][${loopCount}]",
+      "Value": "",
+      "Description": "Click on event card"
+    },
+    {
+      "Command": "wait",
+      "Target": "2",
+      "Value": "",
+      "Description": "Wait for event details to load"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=//h1",
+      "Value": "eventName",
+      "Description": "Extract event name"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=//div[@class='event-date']",
+      "Value": "eventDate",
+      "Description": "Extract event date"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=//div[@class='event-location']",
+      "Value": "eventLocation",
+      "Description": "Extract event location"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=//div[@class='event-type']",
+      "Value": "eventType",
+      "Description": "Extract event type"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=//a[@class='event-url']",
+      "Value": "eventUrl",
+      "Description": "Extract event URL"
+    },
+    {
+      "Command": "XRun",
+      "Target": "cmd.exe",
+      "Value": "/c echo \"${eventName}\",\"${eventDate}\",\"${eventLocation}\",\"${eventType}\",\"${eventUrl}\" >> \"H:\\My Drive\\Projects\\05 SEYC\\UIVision\\datasources\\event_data.csv\"",
+      "Description": "Append event data to CSV"
+    },
+    {
+      "Command": "goBack",
+      "Target": "",
+      "Value": "",
+      "Description": "Go back to events list"
+    },
+    {
+      "Command": "wait",
+      "Target": "1",
+      "Value": "",
+      "Description": "Wait for page to load"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(${loopCount}) + 1;",
+      "Value": "loopCount",
+      "Description": "Increment loop counter"
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End event loop"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//a[@class='next-page']",
+      "Value": "",
+      "Description": "Click next page"
+    },
+    {
+      "Command": "wait",
+      "Target": "2",
+      "Value": "",
+      "Description": "Wait for next page to load"
+    },
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "continuePagination",
+      "Description": "Stop pagination if no next page"
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End pagination loop"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(${urlIndex}) + 1;",
+      "Value": "urlIndex",
+      "Description": "Increment URL counter for next iteration"
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End URL loop"
+    }
+  ]
+}

@@ -7,7 +7,8 @@
   <meta name="description" content="Find youth cycling events across the UK – including road races, BMX, cyclo-cross, MTB, and more. LetsRace.cc makes it easy to discover, share, and support grassroots bike racing." />
   
   <!-- Content Security Policy to prevent extension interference -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https:; font-src 'self' https: data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   
   <!-- Favicon links -->
   <link rel="icon" type="image/png" sizes="32x32" href="/Favicon-32.png">
@@ -149,6 +150,8 @@
   
   <!-- DNS prefetch for analytics only -->
   <link rel="dns-prefetch" href="//gc.zgo.at">
+  <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
+  <link rel="preconnect" href="https://letsrace.goatcounter.com" crossorigin>
 </head>
 <body class="homepage">
 
@@ -212,7 +215,7 @@
     // Load analytics after page load
     setTimeout(() => {
       const script = document.createElement('script');
-      script.src = '//gc.zgo.at/count.js';
+      script.src = 'https://gc.zgo.at/count.js';
       script.setAttribute('data-goatcounter', 'https://letsrace.goatcounter.com/count');
       script.async = true;
       document.head.appendChild(script);
