@@ -1,0 +1,18 @@
+Contact: mailto:security@letsrace.cc
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://letsrace.cc/.well-known/security.txt
+Policy: https://letsrace.cc/pages/about.html
+
+# LetsRace.cc Security Contact
+# 
+# If you discover a security vulnerability, please report it responsibly:
+# - Email: security@letsrace.cc
+# - Include detailed information about the vulnerability
+# - Allow reasonable time for response and remediation
+# 
+# This is a community-driven platform supporting youth cycling events
+# across the UK. We take security seriously and appreciate responsible
+# disclosure of any security concerns.
+#
+# For general inquiries, visit our about page: https://letsrace.cc/pages/about.html
