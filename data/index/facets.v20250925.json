@@ -33,9 +33,9 @@
     "Time Trial": 1,
     "Hill Climb": 93,
     "Scotland": 22,
-    "London & South East": 29,
+    "London & South East": 32,
     "South": 29,
-    "Eastern": 23,
+    "Eastern": 20,
     "East Midlands": 35,
     "Wales": 34,
     "Yorkshire & Humber": 16,
@@ -91,8 +91,8 @@
     "BMX|London & South East": 1,
     "BMX|South West": 4,
     "Road|South": 1,
-    "Track|Eastern": 3,
+    "Track|London & South East": 3,
     "BMX|Central": 2
   },
-  "last_build": "2025-09-25T02:25:13.637Z"
+  "last_build": "2025-09-25T19:04:08.590Z"
 }
