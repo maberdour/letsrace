@@ -157,32 +157,6 @@
       "last_updated": "2025-09-19T02:15:24.000Z"
     },
     {
-      "id": "e58e8fb9",
-      "name": "The London BMX Winter Series 2025-2026 Round 1",
-      "type": "BMX",
-      "region": "Central",
-      "venue": "Hayes Hawks BMX Track, Middlesex",
-      "postcode": null,
-      "date": "2025-10-19",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/327113/the-london-bmx-winter-series-2025-2026-round-1",
-      "source": "Google Sheet",
-      "last_updated": "2025-09-19T02:15:24.000Z"
-    },
-    {
-      "id": "9953bd21",
-      "name": "Leicestershire Cyclo-cross League Rd 5 promoted by RFW",
-      "type": "Cyclo Cross",
-      "region": "Central",
-      "venue": "West Glebe Park, Northants",
-      "postcode": null,
-      "date": "2026-01-18",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/326137/leicestershire-cyclo-cross-league-rd-5-promoted-by-rfw",
-      "source": "Google Sheet",
-      "last_updated": "2025-09-20T02:15:26.000Z"
-    },
-    {
       "id": "9953bd21",
       "name": "Leicestershire Cyclo-cross League Rd 5 promoted by RFW",
       "type": "Cyclo Cross",
@@ -300,7 +274,7 @@
       "last_updated": "2025-09-25T02:15:24.000Z"
     }
   ],
-  "last_build": "2025-09-25T19:04:08.606Z",
-  "total_new_events": 23,
+  "last_build": "2025-09-25T19:05:20.990Z",
+  "total_new_events": 21,
   "cutoff_date": "2025-09-18"
 }
