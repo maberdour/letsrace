@@ -109,11 +109,8 @@ function dailyBuild() {
     
     // Step 9: Commit all files to GitHub in a single batch (including manifest)
     const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest);
-    
-    // Step 10: Clean up old files (older than 7 days)
-    cleanupOldFiles();
 
-    // Step 11: Log summary
+    // Step 10: Log summary
     logBuildSummary(sheetData.length, processedData.skipped, partitionedData, committedFiles, dateString);
     
     Logger.log("🎉 Daily build completed successfully!");
@@ -373,8 +370,26 @@ function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, new
       message: `chore(data): daily build ${dateString}`
     });
   }
-  
-  // Commit all files in a single batch
+
+  // Determine old files to delete (older than 7 days) and include deletions in the same commit
+  try {
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - 7);
+    const cutoffDateString = Utilities.formatDate(cutoffDate, CONFIG.SITE_TIMEZONE, 'yyyyMMdd');
+    const filesToDelete = listOldDataFilesForDeletion(cutoffDateString);
+    if (filesToDelete.length > 0) {
+      filesToDelete.forEach(p => {
+        filesToCommit.push({ path: `/${p}`, delete: true, message: `chore: remove old data file ${p}` });
+      });
+      Logger.log(`🧹 Including ${filesToDelete.length} old files for deletion in the same commit`);
+    } else {
+      Logger.log('✅ No old files to delete');
+    }
+  } catch (e) {
+    Logger.log(`⚠️ Skipped deletion scan due to error: ${e.message}`);
+  }
+
+  // Commit all files and deletions in a single batch
   batchCommitToGitHub(filesToCommit, `chore(data): daily build ${dateString}`);
   
   return committedFiles;
@@ -406,13 +421,24 @@ function batchCommitToGitHub(files, commitMessage) {
     const currentCommit = JSON.parse(commitResponse.getContentText());
     const baseTreeSha = currentCommit.commit.tree.sha;
     
-    // Create tree with all files
-    const treeItems = files.map(file => ({
-      path: file.path.substring(1), // Remove leading slash
-      mode: '100644',
-      type: 'blob',
-      content: file.content
-    }));
+    // Create tree with all files (adds/updates) and deletions (sha: null)
+    const treeItems = files.map(file => {
+      const path = file.path.substring(1); // Remove leading slash
+      if (file.delete === true) {
+        return {
+          path: path,
+          mode: '100644',
+          type: 'blob',
+          sha: null
+        };
+      }
+      return {
+        path: path,
+        mode: '100644',
+        type: 'blob',
+        content: file.content
+      };
+    });
     
     // Create tree
     const treeResponse = UrlFetchApp.fetch(`https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/git/trees`, {
@@ -478,6 +504,40 @@ function batchCommitToGitHub(files, commitMessage) {
     Logger.log(`❌ Batch commit failed: ${error.message}`);
     throw error;
   }
+}
+
+/**
+ * List old data files to delete (older than provided cutoff yyyymmdd)
+ */
+function listOldDataFilesForDeletion(cutoffDateString) {
+  const token = getGitHubToken();
+  const filesResponse = UrlFetchApp.fetch(
+    `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/git/trees/${CONFIG.TARGET_BRANCH}?recursive=1`,
+    {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    }
+  );
+
+  if (filesResponse.getResponseCode() !== 200) {
+    throw new Error(`Failed to get repository files: ${filesResponse.getResponseCode()}`);
+  }
+
+  const tree = JSON.parse(filesResponse.getContentText());
+  const filesToDelete = [];
+
+  tree.tree.forEach(item => {
+    if (item.type === 'blob' && item.path.startsWith('data/')) {
+      const match = item.path.match(/\.v(\d{8})\.json$/);
+      if (match && match[1] < cutoffDateString) {
+        filesToDelete.push(item.path);
+      }
+    }
+  });
+
+  return filesToDelete;
 }
 
 /**

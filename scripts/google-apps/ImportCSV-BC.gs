@@ -71,6 +71,12 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         row[5] = mapBCRegion(row[5]);
       }
 
+      // Override region to "London & South East" if Location contains "London"
+      const location = row[3] || ''; // Column D (Location)
+      if (location.toString().toLowerCase().includes('london')) {
+        row[5] = 'London & South East'; // Column F (Region)
+      }
+
       // Add timestamps for new events
       row.push(now); // Date Created
       row.push('');  // Date Updated (will be set for updates)
@@ -84,9 +90,15 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         const existingEventType = existingRowData[2] || ''; // Column C (index 2)
         row[2] = existingEventType; // Keep the existing event type, don't overwrite
         
-        // Preserve the existing Region field (Column F) from the sheet
-        const existingRegion = existingRowData[5] || ''; // Column F (index 5)
-        row[5] = existingRegion; // Keep the existing region, don't overwrite
+        // Apply London region logic only if Location contains "London"
+        const location = row[3] || ''; // Column D (Location) from CSV
+        if (location.toString().toLowerCase().includes('london')) {
+          row[5] = 'London & South East'; // Column F (Region) - override with London region
+        } else {
+          // Preserve the existing Region field (Column F) from the sheet if not London
+          const existingRegion = existingRowData[5] || ''; // Column F (index 5)
+          row[5] = existingRegion; // Keep the existing region, don't overwrite
+        }
         
         // Preserve the existing Date Created field (Column G) from the sheet
         const existingDateCreated = existingRowData[6] || ''; // Column G (index 6)
