@@ -1,31 +1,5 @@
 [
   {
-    "id": "9597c14f",
-    "name": "Convene ESG Track League - Round 24",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2025-09-24",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/315713/convene-esg-track-league---round-24",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "ff38add4",
-    "name": "CANCELLED: Monday Night Track League 2025 Round 20 (Cancelled)",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-09-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312946/cancelled-monday-night-track-league-2025-round-20",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
     "id": "c8ce1a3f",
     "name": "Derby Arena Youth Track League Event 9",
     "type": "Track",
@@ -146,7 +120,7 @@
     "id": "bad40246",
     "name": "London Youth Track League 2025-6: Round 1",
     "type": "Track",
-    "region": "Eastern",
+    "region": "London & South East",
     "venue": "Lee Valley Velodrome, London",
     "postcode": null,
     "date": "2025-10-16",
@@ -341,7 +315,7 @@
     "id": "c90019dd",
     "name": "London Youth Track League 2025-6: Round 2",
     "type": "Track",
-    "region": "Eastern",
+    "region": "London & South East",
     "venue": "Lee Valley Velodrome, London",
     "postcode": null,
     "date": "2025-11-06",
@@ -471,7 +445,7 @@
     "id": "2021856c",
     "name": "London Youth Track League 2025-6: Round 3",
     "type": "Track",
-    "region": "Eastern",
+    "region": "London & South East",
     "venue": "Lee Valley Velodrome, London",
     "postcode": null,
     "date": "2025-11-20",
@@ -806,19 +780,6 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
-    "id": "db9de96c",
-    "name": "Icebreaker 2026 Youth Endurance Series Round 3",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Newport",
-    "postcode": null,
-    "date": "2026-03-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326849/icebreaker-2026-youth-endurance-series-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-17T02:15:25.000Z"
-  },
-  {
     "id": "a221fc83",
     "name": "Monsters of Track - Round 5",
     "type": "Track",
@@ -830,6 +791,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/315925/monsters-of-track---round-5",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "7faf5951",
+    "name": "TO BE RESCHEDULED Icebreaker 2026 Youth Endurance Series Round 3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Newport",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/326849/to-be-rescheduled-icebreaker-2026-youth-endurance-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
     "id": "c549f556",
