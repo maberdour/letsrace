@@ -12,5 +12,8 @@
   "index": {
     "facets": "/data/index/facets.v20251007.json"
   },
+  "homepage": {
+    "stats": "/data/homepage-stats.v20251007.json"
+  },
   "new_events": "/data/new-events.v20251007.json"
 }
