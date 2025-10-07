@@ -92,10 +92,15 @@ function dailyBuild() {
     const newEvents = createNewEventsFile(processedData.events);
     const newEventsFilename = `/data/new-events.v${dateString}.json`;
     
-    // Step 7: Create temporary committedFiles structure for manifest
+    // Step 7: Create homepage stats file
+    const homepageStats = createHomepageStats(partitionedData);
+    const homepageStatsFilename = `/data/homepage-stats.v${dateString}.json`;
+    
+    // Step 8: Create temporary committedFiles structure for manifest
     const tempCommittedFiles = {
       type: {},
-      index: {}
+      index: {},
+      homepage: {}
     };
     
     // Build the file paths that will be committed
@@ -103,14 +108,15 @@ function dailyBuild() {
       tempCommittedFiles.type[type] = `/data/type/${type}.v${dateString}.json`;
     });
     tempCommittedFiles.index.facets = `/data/index/facets.v${dateString}.json`;
+    tempCommittedFiles.homepage.stats = homepageStatsFilename;
     
-    // Step 8: Create manifest
+    // Step 9: Create manifest
     const manifest = createManifest(tempCommittedFiles, dateString, newEventsFilename);
     
-    // Step 9: Commit all files to GitHub in a single batch (including manifest)
-    const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest);
+    // Step 10: Commit all files to GitHub in a single batch (including manifest)
+    const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename);
 
-    // Step 10: Log summary
+    // Step 11: Log summary
     logBuildSummary(sheetData.length, processedData.skipped, partitionedData, committedFiles, dateString);
     
     Logger.log("🎉 Daily build completed successfully!");
@@ -312,12 +318,39 @@ function buildFacetsIndex(events) {
 }
 
 /**
+ * Create homepage stats for quick tile loading
+ */
+function createHomepageStats(partitionedData) {
+  const stats = {
+    disciplines: {},
+    last_build: nowISO(),
+    total_events: 0
+  };
+  
+  // Count events for each discipline
+  CANONICAL_TYPES.forEach(type => {
+    const kebabType = toKebabCase(type);
+    const count = partitionedData[kebabType] ? partitionedData[kebabType].length : 0;
+    stats.disciplines[kebabType] = {
+      name: type,
+      count: count
+    };
+    stats.total_events += count;
+  });
+  
+  Logger.log(`📊 Homepage stats: ${stats.total_events} total events across ${CANONICAL_TYPES.length} disciplines`);
+  
+  return stats;
+}
+
+/**
  * Commit all files to GitHub in a single batch commit
  */
-function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest) {
+function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename) {
   const committedFiles = {
     type: {},
-    index: {}
+    index: {},
+    homepage: {}
   };
   
   // Prepare all files for batch commit
@@ -361,6 +394,15 @@ function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, new
     content: JSON.stringify(newEvents, null, 2),
     message: `chore(data): daily build ${dateString}`
   });
+  
+  // Add homepage stats file
+  filesToCommit.push({
+    path: homepageStatsFilename,
+    content: JSON.stringify(homepageStats, null, 2),
+    message: `chore(data): daily build ${dateString}`
+  });
+  
+  committedFiles.homepage.stats = homepageStatsFilename;
   
   // Add manifest file if provided
   if (manifest) {
@@ -572,6 +614,7 @@ function createManifest(committedFiles, dateString, newEventsFilename) {
   return {
     type: committedFiles.type,
     index: committedFiles.index,
+    homepage: committedFiles.homepage,
     new_events: newEventsFilename
   };
 }
@@ -595,6 +638,7 @@ function logBuildSummary(totalRows, skippedRows, partitionedData, committedFiles
     Logger.log(`     ${committedFiles.type[type]}`);
   });
   Logger.log(`     ${committedFiles.index.facets}`);
+  Logger.log(`     ${committedFiles.homepage.stats}`);
   Logger.log(`     /data/new-events.v${dateString}.json`);
   Logger.log(`     /data/manifest.json`);
 }
