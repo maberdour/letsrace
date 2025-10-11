@@ -1,96 +1,5 @@
 [
   {
-    "id": "4291f0a2",
-    "name": "Lloyds Cyclo-cross National Trophy Series 2025/26 Round 1",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Moorways Leisure Centre, Derbyshire",
-    "postcode": null,
-    "date": "2025-10-04",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/322640/lloyds-cyclo-cross-national-trophy-series-202526-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "8d896eb6",
-    "name": "CCXL #4 Bicester Millennium CC",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Wheatley Park School, Oxfordshire",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325629/ccxl-4-bicester-millennium-cc",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-04T02:15:25.000Z"
-  },
-  {
-    "id": "3214f33c",
-    "name": "Challenge Tires London and South East CX League - Round 04",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324372/challenge-tires-london-and-south-east-cx-league---round-04",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-06T02:15:27.000Z"
-  },
-  {
-    "id": "2b849743",
-    "name": "Lincolnshire Cyclo-cross 2025/2026 Race #3 (Lincoln Cycling Club) - 5th Oct 2025",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Cinder Plot, Lincoln",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327074/lincolnshire-cyclo-cross-20252026-race-3-lincoln-cycling-club---5th-oct-2025",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-19T02:15:24.000Z"
-  },
-  {
-    "id": "1425ebbf",
-    "name": "SWCX 2025/26 Round 2",
-    "type": "Cyclo Cross",
-    "region": "South West",
-    "venue": "Redruth School, Cornwall",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323748/swcx-202526-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
-  },
-  {
-    "id": "403b6940",
-    "name": "Wessex Cyclocross League Round 5 - VC Venta",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Chilton Manor Farm, Alresford",
-    "postcode": null,
-    "date": "2025-10-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324565/wessex-cyclocross-league-round-5---vc-venta",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-29T02:15:25.000Z"
-  },
-  {
-    "id": "ce4f223a",
-    "name": "Autumn 2025 Nocturne Cross Series Event 3",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Costello Stadium, Yorkshire",
-    "postcode": null,
-    "date": "2025-10-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326184/autumn-2025-nocturne-cross-series-event-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-30T02:15:25.000Z"
-  },
-  {
     "id": "5607d305",
     "name": "CCXL #5 Hemel Hempstead CC",
     "type": "Cyclo Cross",
@@ -611,19 +520,6 @@
     "last_updated": "2025-10-03T02:15:31.000Z"
   },
   {
-    "id": "896ded83",
-    "name": "CCXL #7 Equipe Velo",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Milton Keynes Bowl, Buckinghamshire",
-    "postcode": null,
-    "date": "2025-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325893/ccxl-7-equipe-velo",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-10T02:15:33.000Z"
-  },
-  {
     "id": "272fbbdf",
     "name": "Grity NDCXL R4 Markeaton",
     "type": "Cyclo Cross",
@@ -832,6 +728,19 @@
     "last_updated": "2025-09-10T02:15:33.000Z"
   },
   {
+    "id": "9b44dff1",
+    "name": "CCXL #7 Equipe Velo incorporating Central Regional Championships",
+    "type": "Cyclo Cross",
+    "region": "Central",
+    "venue": "Milton Keynes Bowl, Buckinghamshire",
+    "postcode": null,
+    "date": "2025-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/325893/ccxl-7-equipe-velo-incorporating-central-regional-championships",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-10T02:15:33.000Z"
+  },
+  {
     "id": "df81f77c",
     "name": "Eastern Region Cyclo-Cross Championships incorporating Eastern League 2025/26 Rd 7",
     "type": "Cyclo Cross",
@@ -856,6 +765,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327114/shimano-lazer-wmccl-round-9---incorporating-west-midlands-regional-championships",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "a93d6da5",
+    "name": "South East Regional Championships 2025/26",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Cyclopark, Kent",
+    "postcode": null,
+    "date": "2025-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327906/south-east-regional-championships-202526",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
     "id": "1c282c52",
