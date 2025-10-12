@@ -13,6 +13,20 @@ body {
   padding: 2rem;
 }
 
+/* Global H1 Styles - applies to all pages */
+h1 {
+  color: #0077cc;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Global H2 Styles - applies to all pages */
+h2 {
+  color: #0077cc;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* ==========================================================================
    HOMEPAGE STYLES
    ========================================================================== */
@@ -20,16 +34,15 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  margin-bottom: 3rem;
-  padding: 1rem 0 0.5rem 0;
-  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem 0.5rem 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero h1 {
-  color: #0077cc;
-  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-weight: bold;
   text-align: center;
   margin-left: 0;
 }
@@ -73,13 +86,14 @@ body {
 .tiles-section {
   margin-bottom: 3rem;
   text-align: center;
+  padding: 1rem 2rem 2rem 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tiles-section h2 {
-  color: #0077cc;
-  font-size: 2rem;
   margin-bottom: 2rem;
-  font-weight: bold;
 }
 
 /* Tiles Grid */
@@ -182,10 +196,7 @@ body {
 }
 
 .events-stats h2 {
-  color: #0077cc;
-  font-size: 2rem;
   margin-bottom: 2rem;
-  font-weight: bold;
 }
 
 .stats-grid {
@@ -226,10 +237,7 @@ body {
 }
 
 .trust-section h2 {
-  color: #0077cc;
-  font-size: 1.8rem;
   margin-bottom: 1rem;
-  font-weight: bold;
 }
 
 .trust-section p {
@@ -266,10 +274,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
   .hero-subtitle {
     font-size: 1rem;
   }
@@ -303,10 +307,6 @@ body {
     font-size: 0.75rem;
   }
   
-  .events-stats h2 {
-    font-size: 1.5rem;
-  }
-  
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
@@ -318,10 +318,6 @@ body {
   
   .trust-section {
     padding: 1.5rem;
-  }
-  
-  .trust-section h2 {
-    font-size: 1.5rem;
   }
   
   .trust-section p {
@@ -341,15 +337,11 @@ body {
 }
 
 .about-content h1 {
-  color: #0077cc;
-  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: left;
 }
 
 .about-content h2 {
-  color: #0077cc;
-  font-size: 1.8rem;
   margin: 2rem 0 1rem 0;
   border-bottom: 2px solid #0077cc;
   padding-bottom: 0.5rem;
@@ -381,14 +373,6 @@ body {
 @media (max-width: 768px) {
   .about-content {
     padding: 1rem;
-  }
-  
-  .about-content h1 {
-    font-size: 2rem;
-  }
-  
-  .about-content h2 {
-    font-size: 1.5rem;
   }
   
   .about-content p,
@@ -452,10 +436,7 @@ body {
 
 .new-events-section h2 {
   text-align: center;
-  color: #0077cc;
-  font-size: 2rem;
   margin-bottom: 2rem;
-  font-weight: bold;
 }
 
 .event-discipline {
@@ -524,8 +505,6 @@ body {
   margin: 0 0 0.5rem 0;
   font-size: 1.2rem;
   line-height: 1.3;
-  color: #0077cc;
-  font-weight: bold;
 }
 
 .event-content p {
@@ -643,8 +622,6 @@ main {
 
 
 main h1 {
-  font-size: 2rem;
-  color: #333;
   margin-bottom: 0.5rem;
   text-align: left;
   margin-left: calc(300px + 2rem);
@@ -1011,15 +988,7 @@ main h1 {
 }
 
 .about-content h1 {
-  font-size: 2rem;
-  color: #333;
   margin-bottom: 1rem;
-}
-
-.about-content h2 {
-  font-size: 1.5rem;
-  color: #333;
-  margin: 2rem 0 1rem 0;
 }
 
 .about-content p {
@@ -1246,7 +1215,6 @@ footer a:visited {
   
   main h1 {
     margin-left: 0;
-    margin-bottom: 0.5rem;
   }
   
   .update-time {
