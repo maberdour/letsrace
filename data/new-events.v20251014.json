@@ -3,7 +3,7 @@
     {
       "id": "7eafb547",
       "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M1",
-      "type": "Road",
+      "type": "BMX",
       "region": "Wales",
       "venue": "Cardiff BMX Club, Wales",
       "postcode": null,
@@ -16,7 +16,7 @@
     {
       "id": "e023c706",
       "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF1",
-      "type": "Road",
+      "type": "BMX",
       "region": "South",
       "venue": "Gosport BMX Club, Hampshire",
       "postcode": null,
@@ -42,7 +42,7 @@
     {
       "id": "ac0f5bda",
       "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #2",
-      "type": "Road",
+      "type": "BMX",
       "region": "South",
       "venue": "Gosport BMX Club, Hampshire",
       "postcode": null,
@@ -66,7 +66,7 @@
       "last_updated": "2025-10-07T02:15:26.000Z"
     }
   ],
-  "last_build": "2025-10-14T02:25:13.041Z",
+  "last_build": "2025-10-14T18:02:58.936Z",
   "total_new_events": 5,
   "cutoff_date": "2025-10-07"
 }
