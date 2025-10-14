@@ -1,83 +1,5 @@
 [
   {
-    "id": "bb175d10",
-    "name": "Monday Night Track League 2025 Round 21",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-10-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312947/monday-night-track-league-2025-round-21",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
-    "id": "20f015db",
-    "name": "Derby Arena Youth Track League Event 10",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Velodrome, Derby",
-    "postcode": null,
-    "date": "2025-10-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326677/derby-arena-youth-track-league-event-10",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
-  },
-  {
-    "id": "b01933c2",
-    "name": "2025/26 Glasgow Track League Round 2",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2025-10-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326689/202526-glasgow-track-league-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-15T12:31:48.000Z"
-  },
-  {
-    "id": "aeabca69",
-    "name": "Manchester Regional Track League 2025 #8 (MRTL)",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester",
-    "postcode": null,
-    "date": "2025-10-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325291/manchester-regional-track-league-2025-8-mrtl",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-29T02:15:25.000Z"
-  },
-  {
-    "id": "3ae56fab",
-    "name": "Monday Night Track League 2025 Round 22",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-10-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312948/monday-night-track-league-2025-round-22",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
-    "id": "cc42ac21",
-    "name": "Newport Live Endurance Track League #1",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2025-10-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326469/newport-live-endurance-track-league-1-",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
-  },
-  {
     "id": "bad40246",
     "name": "London Youth Track League 2025-6: Round 1",
     "type": "Track",
@@ -297,6 +219,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/325295/manchester-regional-track-league-2025-12-mrtl",
     "source": "Google Sheet",
     "last_updated": "2025-08-29T02:15:25.000Z"
+  },
+  {
+    "id": "cc2134f7",
+    "name": "Calshot Caudron Series Rd2",
+    "type": "Track",
+    "region": "South",
+    "venue": "Calshot Velodrome, Hampshire",
+    "postcode": null,
+    "date": "2025-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/325672/calshot-caudron-series-rd2",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
     "id": "f9e999e1",
