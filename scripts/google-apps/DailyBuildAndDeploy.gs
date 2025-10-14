@@ -195,8 +195,8 @@ function processSheetData(sheetData) {
         return;
       }
       
-      // Normalize type
-      const normalizedType = normalizeType(row[COLUMNS.TYPE]);
+      // Normalize type (pass event name for Go-Ride discipline detection, and URL for Closed Circuit source detection)
+      const normalizedType = normalizeType(row[COLUMNS.TYPE], row[COLUMNS.NAME], row[COLUMNS.URL]);
       if (!normalizedType) {
         skippedRows.push({
           row: index + 1,
@@ -809,9 +809,57 @@ function parseEventDate(dateValue) {
 }
 
 /**
+ * Detect discipline from event name for Go-Ride events
+ */
+function detectDisciplineFromName(eventName) {
+  if (!eventName) return null;
+  
+  const nameLower = eventName.toLowerCase();
+  
+  // Check for discipline keywords in order of specificity
+  // Check Cyclo-Cross variations first (before "cross" matches)
+  if (nameLower.includes('cyclo-cross') || nameLower.includes('cyclocross') || nameLower.includes('cyclo cross')) {
+    return 'Cyclo Cross';
+  }
+  
+  // Check for CX (common abbreviation for Cyclo-Cross)
+  if (nameLower.match(/\bcx\b/)) {
+    return 'Cyclo Cross';
+  }
+  
+  // Check for BMX
+  if (nameLower.includes('bmx')) {
+    return 'BMX';
+  }
+  
+  // Check for MTB
+  if (nameLower.includes('mtb') || nameLower.includes('mountain bike')) {
+    return 'MTB';
+  }
+  
+  // Check for Track
+  if (nameLower.includes('track')) {
+    return 'Track';
+  }
+  
+  // Check for Speedway
+  if (nameLower.includes('speedway')) {
+    return 'Speedway';
+  }
+  
+  // Check for Road last (most common, so default if no other match)
+  if (nameLower.includes('road')) {
+    return 'Road';
+  }
+  
+  // Default to Road if no discipline detected
+  return 'Road';
+}
+
+/**
  * Normalize event type to canonical list
  */
-function normalizeType(typeValue) {
+function normalizeType(typeValue, eventName = null, eventUrl = null) {
   if (!typeValue) return null;
   
   const normalized = normalizeValue(typeValue);
@@ -819,6 +867,23 @@ function normalizeType(typeValue) {
   // Direct matches
   if (CANONICAL_TYPES.includes(normalized)) {
     return normalized;
+  }
+  
+  // Special handling for Closed Circuit - depends on source
+  if (normalized.toLowerCase() === 'closed circuit') {
+    if (eventUrl && eventUrl.includes('cyclingtimetrials.org.uk')) {
+      // CTT import -> Time Trial
+      Logger.log(`🔍 Closed Circuit from CTT: "${eventName}" -> categorized as Time Trial`);
+      return 'Time Trial';
+    } else if (eventUrl && eventUrl.includes('britishcycling.org.uk')) {
+      // BC import -> Road
+      Logger.log(`🔍 Closed Circuit from BC: "${eventName}" -> categorized as Road`);
+      return 'Road';
+    } else {
+      // Default to Road if source cannot be determined
+      Logger.log(`⚠️ Closed Circuit with unknown source: "${eventName}" -> defaulting to Road`);
+      return 'Road';
+    }
   }
   
   // Common variants
@@ -840,11 +905,16 @@ function normalizeType(typeValue) {
     'track': 'Track',
     'track league': 'Track',
     'road': 'Road',
-    'closed circuit': 'Road',
     'town centre crit': 'Road',
-    'go-ride': 'Road',
     'speedway': 'Speedway'
   };
+  
+  // Special handling for Go-Ride events
+  if (normalized.toLowerCase() === 'go-ride') {
+    const detectedDiscipline = detectDisciplineFromName(eventName);
+    Logger.log(`🔍 Go-Ride event detected: "${eventName}" -> categorized as ${detectedDiscipline}`);
+    return detectedDiscipline;
+  }
   
   return variants[normalized.toLowerCase()] || null;
 }
