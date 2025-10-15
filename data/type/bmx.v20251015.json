@@ -1,16 +1,16 @@
 [
   {
-    "id": "0e002b76",
-    "name": "Racing Under The Roof 2025/26 Round One (EXPERT)",
+    "id": "e023c706",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF1",
     "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
     "postcode": null,
-    "date": "2025-10-12",
+    "date": "2025-10-17",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326023/racing-under-the-roof-202526-round-one-expert",
+    "url": "https://www.britishcycling.org.uk/events/details/327908/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff1",
     "source": "Google Sheet",
-    "last_updated": "2025-08-30T02:15:25.000Z"
+    "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
     "id": "3d164093",
@@ -37,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327721/bmx-east-winter-series-20252026-round-2",
     "source": "Google Sheet",
     "last_updated": "2025-10-01T02:15:26.000Z"
+  },
+  {
+    "id": "7eafb547",
+    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M1",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Cardiff BMX Club, Wales",
+    "postcode": null,
+    "date": "2025-10-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327910/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m1",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
     "id": "762952c7",
@@ -154,6 +167,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327722/bmx-east-winter-series-20252026-round-3",
     "source": "Google Sheet",
     "last_updated": "2025-10-01T02:15:26.000Z"
+  },
+  {
+    "id": "ac0f5bda",
+    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #2",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2025-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327909/british-cycling-pathway-development-centre-bmx---south-zone-1-25-26-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
     "id": "076a77f7",
