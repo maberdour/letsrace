@@ -1,3 +1,84 @@
+// Update Newly Added Events count in homepage CTA
+(function updateNewEventsCount() {
+  try {
+    fetch('/data/manifest.json')
+      .then(r => r.json())
+      .then(manifest => fetch(manifest.new_events))
+      .then(r => r.json())
+      .then(data => {
+        const countEl = document.getElementById('new-events-count');
+        const wrapperEl = document.getElementById('new-events-count-wrapper');
+        if (countEl && typeof data.total_new_events === 'number') {
+          countEl.textContent = String(data.total_new_events);
+          if (wrapperEl && Number(data.total_new_events) === 0) {
+            wrapperEl.style.display = 'none';
+          }
+        }
+      })
+      .catch(() => {});
+  } catch (_) {}
+})();
+
+// Tabs logic for tiles
+function initTilesTabs() {
+  const disciplineTab = document.getElementById('discipline-tiles-tab');
+  const regionTab = document.getElementById('region-tiles-tab');
+  const disciplinePanel = document.getElementById('discipline-tiles-panel');
+  const regionPanel = document.getElementById('region-tiles-panel');
+  if (!disciplineTab || !regionTab || !disciplinePanel || !regionPanel) return;
+
+  function setUrl(tab) {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      params.set('tab', tab === 'discipline' ? 'disciplines' : 'regions');
+      const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+      window.history.replaceState(null, '', newUrl);
+    } catch (_) {}
+  }
+
+  function activate(tab) {
+    const isDiscipline = tab === 'discipline';
+    disciplineTab.classList.toggle('active', isDiscipline);
+    regionTab.classList.toggle('active', !isDiscipline);
+    disciplineTab.setAttribute('aria-selected', String(isDiscipline));
+    regionTab.setAttribute('aria-selected', String(!isDiscipline));
+    disciplinePanel.classList.toggle('hidden', !isDiscipline);
+    regionPanel.classList.toggle('hidden', isDiscipline);
+    setUrl(tab);
+  }
+
+  disciplineTab.addEventListener('click', (e) => {
+    e.preventDefault();
+    activate('discipline');
+  });
+  regionTab.addEventListener('click', (e) => {
+    e.preventDefault();
+    activate('region');
+  });
+
+  // Initialize from URL (?tab=regions|disciplines) or last region selection in localStorage
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const tabParam = (params.get('tab') || '').toLowerCase();
+    if (tabParam === 'regions' || tabParam === 'disciplines') {
+      activate(tabParam === 'regions' ? 'region' : 'discipline');
+    } else {
+      // No tab param: infer from saved regions
+      let savedRegions = [];
+      try {
+        const raw = localStorage.getItem('selectedRegions');
+        savedRegions = raw ? JSON.parse(raw) : [];
+      } catch (_) { savedRegions = []; }
+      if (Array.isArray(savedRegions) && savedRegions.length > 0) {
+        activate('region');
+      } else {
+        activate('discipline');
+      }
+    }
+  } catch (_) {
+    activate('discipline');
+  }
+}
 /**
  * Homepage Module - New Structure
  * 
@@ -151,6 +232,19 @@ async function loadRegionStats() {
 function initHomepage() {
   console.log('🚀 Homepage module initializing...');
   recordMilestone('initialization_start');
+  // Ensure region tile links have properly encoded region parameters
+  try {
+    const regionLinks = document.querySelectorAll('.region-tiles-grid a');
+    regionLinks.forEach(link => {
+      const titleEl = link.querySelector('h3');
+      if (!titleEl) return;
+      const regionName = titleEl.textContent.trim();
+      const url = new URL('/pages/road/', window.location.origin);
+      url.searchParams.set('region', regionName);
+      // Assign encoded href relative to site root
+      link.setAttribute('href', url.pathname + '?' + url.searchParams.toString());
+    });
+  } catch (_) {}
   
   // Load discipline counts and region stats in parallel
   Promise.all([
@@ -196,7 +290,8 @@ function initHomepage() {
 
 // Auto-initialize if module is loaded directly
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initHomepage);
+  document.addEventListener('DOMContentLoaded', () => { initHomepage(); initTilesTabs(); });
 } else {
   initHomepage();
+  initTilesTabs();
 }

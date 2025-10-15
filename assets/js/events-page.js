@@ -63,8 +63,15 @@ function getTodayDate() {
 // Parse URL parameters
 function parseUrlParams() {
   const params = new URLSearchParams(window.location.search);
+  // Handle both 'regions' (plural) and 'region' (singular) parameters
+  let regions = [];
+  if (params.get('regions')) {
+    regions = params.get('regions').split(',');
+  } else if (params.get('region')) {
+    regions = [params.get('region')];
+  }
   return {
-    regions: params.get('regions') ? params.get('regions').split(',') : []
+    regions: regions
   };
 }
 
@@ -319,9 +326,13 @@ export function initEventsPage() {
       
       // Populate region checkboxes
       const savedRegions = loadSavedRegions();
+      const urlParams = parseUrlParams();
+      // Use URL parameters if present, otherwise fall back to saved regions
+      const initialRegions = urlParams.regions.length > 0 ? urlParams.regions : savedRegions;
+      
       regionCheckboxes.innerHTML = facets.regions.map(region => `
         <label class="region-checkbox">
-          <input type="checkbox" value="${region}"${savedRegions.includes(region) ? ' checked' : ''}>
+          <input type="checkbox" value="${region}"${initialRegions.includes(region) ? ' checked' : ''}>
           <span class="checkmark"></span>
           ${region}
         </label>
