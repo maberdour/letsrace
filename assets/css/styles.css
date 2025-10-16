@@ -1356,6 +1356,10 @@ footer a:visited {
     padding: 0;
   }
   
+  main {
+    padding: 0 1rem;
+  }
+  
   footer {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
