@@ -795,6 +795,31 @@ main h1 {
   margin-left: 0;
 }
 
+/* Intro text section positioning */
+.intro-text-section {
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-style: normal;
+}
+
+/* Desktop: position in main content column */
+@media (min-width: 769px) {
+  .intro-text-section {
+    grid-column: 2; /* Position in main content column (second column) */
+  }
+}
+
+/* Mobile: position in single column layout */
+@media (max-width: 768px) {
+  .intro-text-section {
+    grid-column: 1; /* Position in single column */
+  }
+}
+
 /* Main layout - two columns */
 .events-page-container {
   display: grid;
