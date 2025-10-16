@@ -795,28 +795,17 @@ main h1 {
   margin-left: 0;
 }
 
-/* Intro text section positioning */
-.intro-text-section {
-  margin-bottom: 1rem;
-}
-
+/* Intro text styling for newly added events page */
 .intro-text {
   margin: 0 0 1rem 0;
   color: #666;
   font-style: normal;
 }
 
-/* Desktop: position in main content column */
+/* Position intro-text in main content column on desktop */
 @media (min-width: 769px) {
-  .intro-text-section {
-    grid-column: 2; /* Position in main content column (second column) */
-  }
-}
-
-/* Mobile: position in single column layout */
-@media (max-width: 768px) {
-  .intro-text-section {
-    grid-column: 1; /* Position in single column */
+  .intro-text {
+    margin-left: calc(300px + 2rem); /* Align with main content area */
   }
 }
 
