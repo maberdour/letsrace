@@ -1,18 +1,5 @@
 [
   {
-    "id": "0e002b76",
-    "name": "Racing Under The Roof 2025/26 Round One (EXPERT)",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2025-10-12",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326023/racing-under-the-roof-202526-round-one-expert",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-30T02:15:25.000Z"
-  },
-  {
     "id": "3d164093",
     "name": "BMX East Winter Series 2025/2026 Round 2",
     "type": "BMX",
@@ -37,6 +24,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327721/bmx-east-winter-series-20252026-round-2",
     "source": "Google Sheet",
     "last_updated": "2025-10-01T02:15:26.000Z"
+  },
+  {
+    "id": "7eafb547",
+    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M1",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Cardiff BMX Club, Wales",
+    "postcode": null,
+    "date": "2025-10-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327910/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m1",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
     "id": "762952c7",
@@ -50,19 +50,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/327641/nuneaton-bmx-round-6-2025-series",
     "source": "Google Sheet",
     "last_updated": "2025-09-30T02:15:25.000Z"
-  },
-  {
-    "id": "83f5e5dc",
-    "name": "Peterborough club race",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2025-10-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319765/peterborough-club-race-",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-26T13:11:00.000Z"
   },
   {
     "id": "e58e8fb9",
@@ -89,6 +76,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/326133/deep-south-2025-26-round-1",
     "source": "Google Sheet",
     "last_updated": "2025-09-03T02:15:30.000Z"
+  },
+  {
+    "id": "e139687c",
+    "name": "Nuneaton BMX Round 7 2025 Series",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Nuneaton BMX Track, Warwickshire",
+    "postcode": null,
+    "date": "2025-10-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328117/nuneaton-bmx-round-7-2025-series",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-16T02:15:24.000Z"
+  },
+  {
+    "id": "5b727e39",
+    "name": "Peterborough BMX Winter Series - Round 1",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Peterborough BMX Track, PETERBOROUGH",
+    "postcode": null,
+    "date": "2025-10-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/319765/peterborough-bmx-winter-series---round-1-",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-26T13:11:00.000Z"
   },
   {
     "id": "f8cefa92",
@@ -143,6 +156,19 @@
     "last_updated": "2025-08-26T13:11:00.000Z"
   },
   {
+    "id": "0f0cea3c",
+    "name": "Racing Under The Roof 2025/26 Round Two (EXPERT)",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2025-11-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327937/racing-under-the-roof-202526-round-two-expert",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-16T02:15:24.000Z"
+  },
+  {
     "id": "9ef51cc4",
     "name": "BMX East Winter Series 2025/2026 Round 3",
     "type": "BMX",
@@ -154,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327722/bmx-east-winter-series-20252026-round-3",
     "source": "Google Sheet",
     "last_updated": "2025-10-01T02:15:26.000Z"
+  },
+  {
+    "id": "ac0f5bda",
+    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #2",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2025-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327909/british-cycling-pathway-development-centre-bmx---south-zone-1-25-26-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
     "id": "076a77f7",
