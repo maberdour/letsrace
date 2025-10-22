@@ -185,6 +185,7 @@ function initNewlyAddedPage() {
   
   // Get DOM elements
   const regionCheckboxes = document.getElementById('region-checkboxes');
+  const selectAllRegionsButton = document.getElementById('select-all-regions');
   const clearRegionsButton = document.getElementById('clear-regions');
   const newEventsContainer = document.getElementById('new-events');
   const newEventsTitle = document.getElementById('new-events-title');
@@ -430,6 +431,15 @@ function initNewlyAddedPage() {
       debouncedApplyFilters();
     }
   });
+  
+  // Select all regions button
+  if (selectAllRegionsButton) {
+    selectAllRegionsButton.addEventListener('click', () => {
+      const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => cb.checked = true);
+      applyFilters();
+    });
+  }
   
   // Clear regions button
   clearRegionsButton.addEventListener('click', () => {

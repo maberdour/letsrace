@@ -142,120 +142,87 @@
   <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
   <link rel="preconnect" href="https://letsrace.goatcounter.com" crossorigin>
 </head>
-<body class="homepage">
+<body class="homepage" data-type="homepage">
 
 
     <main>
         <!-- Hero Section -->
         <section class="hero">
             <h1>Find Youth Cycling Races Across the UK</h1>
-            <p>LetsRace.cc brings youth cycling events into one place. We aggregate and standardise listings from multiple sources including British Cycling and CTT, then publish clear, family-friendly event pages updated daily. No more hunting around on multiple sites — just accurate dates, locations and entry links.</p> 
-        </section>
-
-        <!-- Prominent link to Newly Added Events -->
-        <section class="new-events">
-            <a href="/pages/newly-added.html" class="new-events-link">View Newly Added Events <span id="new-events-count-wrapper">(<span id="new-events-count">0</span>)</span></a>
+            <p>Select your region to view upcoming races near you.</p> 
         </section>
 
         <!-- Upcoming Youth Cycle Races -->
         <section class="upcoming-races-section">
-            <h2>Upcoming youth cycle races</h2>
-            
-            <!-- Tiles Tabs -->
-            <div class="tiles-tabs" role="tablist" aria-label="Browse tiles">
-                <button type="button" class="tile-tab active" role="tab" aria-selected="true" aria-controls="discipline-tiles-panel" id="discipline-tiles-tab">Races by Discipline</button>
-                <button type="button" class="tile-tab" role="tab" aria-selected="false" aria-controls="region-tiles-panel" id="region-tiles-tab">Races by Region</button>
-            </div>
-            
-            <!-- Discipline Tiles Grid -->
-            <div class="discipline-tiles-section" id="discipline-tiles-panel" role="tabpanel" aria-labelledby="discipline-tiles-tab">
-                <div class="discipline-tiles-grid">
-                <a href="/pages/road/" class="empty-tile">
-                    <h3>Road</h3>
-                    <span class="tile-number">888</span>
-                </a>
-                <a href="/pages/track/" class="empty-tile">
-                    <h3>Track</h3>
-                    <span class="tile-number">888</span>
-                </a>
-                <a href="/pages/bmx/" class="empty-tile">
-                    <h3>BMX</h3>
-                    <span class="tile-number">888</span>
-                </a>
-                <a href="/pages/mtb/" class="empty-tile">
-                    <h3>MTB</h3>
-                    <span class="tile-number">888</span>
-                </a>
-                <a href="/pages/cyclo-cross/" class="empty-tile">
-                    <h3>Cyclo-Cross</h3>
-                    <span class="tile-number">888</span>
-                </a>
-                <a href="/pages/speedway/" class="empty-tile">
-                    <h3>Speedway</h3>
-                    <span class="tile-number">888</span>
-                </a>
-                <a href="/pages/time-trial/" class="empty-tile">
-                    <h3>Time Trial</h3>
-                    <span class="tile-number">888</span>
-                </a>
-                <a href="/pages/hill-climb/" class="empty-tile">
-                    <h3>Hill Climb</h3>
-                    <span class="tile-number">888</span>
-                </a>
+            <div class="events-page-container">
+                <!-- Filter Controls -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <button class="filter-toggle-btn" id="filter-toggle">
+                            <span class="filter-toggle-text">Filter by Region</span>
+                            <span class="filter-toggle-icon">▼</span>
+                        </button>
+                        <div class="filter-content" id="filter-content">
+                            <div class="region-checkboxes" id="region-checkboxes">
+                                <div class="loading-message">Loading regions...</div>
+                            </div>
+                        <div class="filter-buttons">
+                            <button class="select-all-regions-btn" id="select-all-regions">Select All</button>
+                            <button class="clear-regions-btn" id="clear-regions">Clear All</button>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Region Tiles Grid -->
-            <div class="region-tiles-section hidden" id="region-tiles-panel" role="tabpanel" aria-labelledby="region-tiles-tab">
-                <div class="region-tiles-grid">
-                <a href="/pages/road/?region=Central" class="empty-tile">
-                    <h3>Central</h3>
-                    <span class="tile-number">14</span>
-                </a>
-                <a href="/pages/road/?region=Eastern" class="empty-tile">
-                    <h3>Eastern</h3>
-                    <span class="tile-number">17</span>
-                </a>
-                <a href="/pages/road/?region=London & South East" class="empty-tile">
-                    <h3>London & South East</h3>
-                    <span class="tile-number">16</span>
-                </a>
-                <a href="/pages/road/?region=East Midlands" class="empty-tile">
-                    <h3>East Midlands</h3>
-                    <span class="tile-number">22</span>
-                </a>
-                <a href="/pages/road/?region=West Midlands" class="empty-tile">
-                    <h3>West Midlands</h3>
-                    <span class="tile-number">12</span>
-                </a>
-                <a href="/pages/road/?region=North East" class="empty-tile">
-                    <h3>North East</h3>
-                    <span class="tile-number">8</span>
-                </a>
-                <a href="/pages/road/?region=North West" class="empty-tile">
-                    <h3>North West</h3>
-                    <span class="tile-number">20</span>
-                </a>
-                <a href="/pages/road/?region=Scotland" class="empty-tile">
-                    <h3>Scotland</h3>
-                    <span class="tile-number">16</span>
-                </a>
-                <a href="/pages/road/?region=South" class="empty-tile">
-                    <h3>South</h3>
-                    <span class="tile-number">20</span>
-                </a>
-                <a href="/pages/road/?region=South West" class="empty-tile">
-                    <h3>South West</h3>
-                    <span class="tile-number">15</span>
-                </a>
-                <a href="/pages/road/?region=Wales" class="empty-tile">
-                    <h3>Wales</h3>
-                    <span class="tile-number">28</span>
-                </a>
-                <a href="/pages/road/?region=Yorkshire & Humber" class="empty-tile">
-                    <h3>Yorkshire & Humber</h3>
-                    <span class="tile-number">10</span>
-                </a>
+                
+                <!-- Results -->
+                <div class="results">
+                    <div id="result-count" aria-live="polite" style="display: none;"></div>
+                    <div id="empty-state" hidden style="display: none;"></div>
+                    <ul id="event-list" role="list" style="display: none;"></ul>
+                    <div id="build-stamp" style="display: none;"></div>
+                    
+                    <!-- Discipline Tiles Grid -->
+                    <div class="discipline-tiles-section" id="discipline-tiles-panel">
+                        <div class="discipline-tiles-grid">
+                        <a href="/pages/road/" class="empty-tile">
+                            <h3>Road</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        <a href="/pages/track/" class="empty-tile">
+                            <h3>Track</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        <a href="/pages/bmx/" class="empty-tile">
+                            <h3>BMX</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        <a href="/pages/mtb/" class="empty-tile">
+                            <h3>MTB</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        <a href="/pages/cyclo-cross/" class="empty-tile">
+                            <h3>Cyclo-Cross</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        <a href="/pages/speedway/" class="empty-tile">
+                            <h3>Speedway</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        <a href="/pages/time-trial/" class="empty-tile">
+                            <h3>Time Trial</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        <a href="/pages/hill-climb/" class="empty-tile">
+                            <h3>Hill Climb</h3>
+                            <span class="tile-number"></span>
+                        </a>
+                        </div>
+                        
+                        <!-- Prominent link to Newly Added Events -->
+                        <div class="new-events">
+                            <a href="/pages/newly-added.html" class="new-events-link">View Newly Added Events <span id="new-events-count-wrapper">(<span id="new-events-count">0</span>)</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

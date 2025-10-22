@@ -239,6 +239,7 @@ export function initEventsPage() {
   
   // Get DOM elements
   const regionCheckboxes = document.getElementById('region-checkboxes');
+  const selectAllRegionsButton = document.getElementById('select-all-regions');
   const clearRegionsButton = document.getElementById('clear-regions');
   const resultCount = document.getElementById('result-count');
   const emptyState = document.getElementById('empty-state');
@@ -430,6 +431,15 @@ export function initEventsPage() {
   });
   
   // Apply filter button removed - filtering is now instant
+  
+  // Select all regions button
+  if (selectAllRegionsButton) {
+    selectAllRegionsButton.addEventListener('click', () => {
+      const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => cb.checked = true);
+      applyFilters();
+    });
+  }
   
   // Clear regions button
   clearRegionsButton.addEventListener('click', () => {

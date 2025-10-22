@@ -1,82 +1,232 @@
 // Update Newly Added Events count in homepage CTA
-(function updateNewEventsCount() {
+let newEventsCountUpdated = false;
+function updateNewEventsCount() {
+  if (newEventsCountUpdated) {
+    console.log('⚠️ New events count already updated, skipping...');
+    return;
+  }
+  
+  console.log('🔄 Updating new events count...');
+  newEventsCountUpdated = true;
+  
   try {
     fetch('/data/manifest.json')
       .then(r => r.json())
-      .then(manifest => fetch(manifest.new_events))
+      .then(manifest => {
+        console.log('📋 Manifest loaded:', manifest);
+        return fetch(manifest.new_events);
+      })
       .then(r => r.json())
       .then(data => {
+        console.log('📊 New events data:', data);
+        console.log('📅 Cutoff date:', data.cutoff_date);
+        console.log('📅 Last build:', data.last_build);
+        console.log('📅 Current date:', new Date().toISOString());
+        
+        // Check if events are actually "new" based on current date
+        const cutoffDate = new Date(data.cutoff_date);
+        const currentDate = new Date();
+        const daysSinceCutoff = Math.floor((currentDate - cutoffDate) / (1000 * 60 * 60 * 24));
+        console.log('📊 Days since cutoff:', daysSinceCutoff);
+        
         const countEl = document.getElementById('new-events-count');
         const wrapperEl = document.getElementById('new-events-count-wrapper');
+        console.log('🎯 DOM elements:', { countEl, wrapperEl });
         if (countEl && typeof data.total_new_events === 'number') {
+          console.log('✅ Setting count to:', data.total_new_events);
           countEl.textContent = String(data.total_new_events);
           if (wrapperEl && Number(data.total_new_events) === 0) {
             wrapperEl.style.display = 'none';
           }
+        } else {
+          console.log('❌ Failed to update count:', { countEl: !!countEl, total_new_events: data.total_new_events });
         }
       })
-      .catch(() => {});
-  } catch (_) {}
-})();
+      .catch(error => {
+        console.error('❌ Error updating new events count:', error);
+        newEventsCountUpdated = false; // Reset flag on error
+      });
+  } catch (error) {
+    console.error('❌ Error in updateNewEventsCount:', error);
+    newEventsCountUpdated = false; // Reset flag on error
+  }
+}
 
-// Tabs logic for tiles
-function initTilesTabs() {
-  const disciplineTab = document.getElementById('discipline-tiles-tab');
-  const regionTab = document.getElementById('region-tiles-tab');
+// Initialize discipline tiles - no tabs needed
+function initDisciplineTiles() {
   const disciplinePanel = document.getElementById('discipline-tiles-panel');
-  const regionPanel = document.getElementById('region-tiles-panel');
-  if (!disciplineTab || !regionTab || !disciplinePanel || !regionPanel) return;
+  if (!disciplinePanel) return;
 
-  function setUrl(tab) {
-    try {
-      const params = new URLSearchParams(window.location.search);
-      params.set('tab', tab === 'discipline' ? 'disciplines' : 'regions');
-      const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
-      window.history.replaceState(null, '', newUrl);
-    } catch (_) {}
+  // Ensure discipline panel is visible
+  disciplinePanel.classList.remove('hidden');
+}
+
+// Initialize region filters for homepage
+async function initHomepageRegionFilters() {
+  const regionCheckboxes = document.getElementById('region-checkboxes');
+  const selectAllRegionsButton = document.getElementById('select-all-regions');
+  const clearRegionsButton = document.getElementById('clear-regions');
+  
+  if (!regionCheckboxes || !clearRegionsButton) {
+    console.error('Missing region filter elements');
+    return;
   }
 
-  function activate(tab) {
-    const isDiscipline = tab === 'discipline';
-    disciplineTab.classList.toggle('active', isDiscipline);
-    regionTab.classList.toggle('active', !isDiscipline);
-    disciplineTab.setAttribute('aria-selected', String(isDiscipline));
-    regionTab.setAttribute('aria-selected', String(!isDiscipline));
-    disciplinePanel.classList.toggle('hidden', !isDiscipline);
-    regionPanel.classList.toggle('hidden', isDiscipline);
-    setUrl(tab);
-  }
+  let facets = null;
 
-  disciplineTab.addEventListener('click', (e) => {
-    e.preventDefault();
-    activate('discipline');
-  });
-  regionTab.addEventListener('click', (e) => {
-    e.preventDefault();
-    activate('region');
-  });
-
-  // Initialize from URL (?tab=regions|disciplines) or last region selection in localStorage
   try {
-    const params = new URLSearchParams(window.location.search);
-    const tabParam = (params.get('tab') || '').toLowerCase();
-    if (tabParam === 'regions' || tabParam === 'disciplines') {
-      activate(tabParam === 'regions' ? 'region' : 'discipline');
-    } else {
-      // No tab param: infer from saved regions
-      let savedRegions = [];
-      try {
-        const raw = localStorage.getItem('selectedRegions');
-        savedRegions = raw ? JSON.parse(raw) : [];
-      } catch (_) { savedRegions = []; }
-      if (Array.isArray(savedRegions) && savedRegions.length > 0) {
-        activate('region');
-      } else {
-        activate('discipline');
-      }
+    console.log('🔄 Loading regions for homepage...');
+    
+    // Load manifest to get facets URL
+    const manifestResponse = await fetch('/data/manifest.json');
+    const manifest = await manifestResponse.json();
+    const facetsUrl = manifest.index.facets;
+    
+    // Fetch facets data
+    const facetsResponse = await fetch(facetsUrl);
+    if (!facetsResponse.ok) {
+      throw new Error(`Failed to fetch facets: ${facetsResponse.status}`);
     }
-  } catch (_) {
-    activate('discipline');
+    
+    facets = await facetsResponse.json();
+    
+    if (!facets || !Array.isArray(facets.regions)) {
+      throw new Error('Invalid facets data structure');
+    }
+    
+    console.log('✅ Regions loaded:', facets.regions.length);
+    
+    // Load saved regions from localStorage
+    let savedRegions = [];
+    try {
+      const saved = localStorage.getItem('selectedRegions');
+      savedRegions = saved ? JSON.parse(saved) : [];
+    } catch (error) {
+      console.error('Error loading saved regions:', error);
+    }
+    
+    // Populate region checkboxes
+    regionCheckboxes.innerHTML = facets.regions.map(region => `
+      <label class="region-checkbox">
+        <input type="checkbox" value="${region}"${savedRegions.includes(region) ? ' checked' : ''}>
+        <span class="checkmark"></span>
+        ${region}
+      </label>
+    `).join('');
+    
+    // Function to update discipline counts based on selected regions
+    function updateDisciplineCounts(selectedRegions) {
+      const disciplineElements = {
+        'road': document.querySelector('[href="/pages/road/"] .tile-number'),
+        'track': document.querySelector('[href="/pages/track/"] .tile-number'),
+        'bmx': document.querySelector('[href="/pages/bmx/"] .tile-number'),
+        'mtb': document.querySelector('[href="/pages/mtb/"] .tile-number'),
+        'cyclo-cross': document.querySelector('[href="/pages/cyclo-cross/"] .tile-number'),
+        'speedway': document.querySelector('[href="/pages/speedway/"] .tile-number'),
+        'time-trial': document.querySelector('[href="/pages/time-trial/"] .tile-number'),
+        'hill-climb': document.querySelector('[href="/pages/hill-climb/"] .tile-number')
+      };
+      
+      // Discipline name mapping for the data
+      const disciplineMapping = {
+        'road': 'Road',
+        'track': 'Track',
+        'bmx': 'BMX',
+        'mtb': 'MTB',
+        'cyclo-cross': 'Cyclo Cross',
+        'speedway': 'Speedway',
+        'time-trial': 'Time Trial',
+        'hill-climb': 'Hill Climb'
+      };
+      
+      Object.keys(disciplineElements).forEach(discipline => {
+        const element = disciplineElements[discipline];
+        if (!element) return;
+        
+        let count = 0;
+        
+        if (selectedRegions.length === 0) {
+          // No regions selected - show total counts
+          const disciplineName = disciplineMapping[discipline];
+          count = facets.counts[disciplineName] || 0;
+        } else {
+          // Calculate count for selected regions
+          const disciplineName = disciplineMapping[discipline];
+          selectedRegions.forEach(region => {
+            const key = `${disciplineName}|${region}`;
+            count += facets.counts[key] || 0;
+          });
+        }
+        
+        element.textContent = count;
+      });
+    }
+    
+    // Add event listeners
+    regionCheckboxes.addEventListener('change', (e) => {
+      if (e.target.type === 'checkbox') {
+        const selectedRegions = Array.from(regionCheckboxes.querySelectorAll('input[type="checkbox"]:checked'))
+          .map(cb => cb.value);
+        
+        // Update discipline counts
+        updateDisciplineCounts(selectedRegions);
+        
+        // Store in localStorage
+        if (selectedRegions.length > 0) {
+          localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
+        } else {
+          localStorage.removeItem('selectedRegions');
+        }
+        
+        console.log('🔍 Selected regions:', selectedRegions);
+      }
+    });
+    
+    // Select all regions button
+    if (selectAllRegionsButton) {
+      selectAllRegionsButton.addEventListener('click', () => {
+        const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => cb.checked = true);
+        
+        const selectedRegions = Array.from(checkboxes).map(cb => cb.value);
+        updateDisciplineCounts(selectedRegions);
+        
+        // Store in localStorage
+        localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
+        
+        console.log('✅ Selected all regions');
+      });
+    }
+    
+    clearRegionsButton.addEventListener('click', () => {
+      const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => cb.checked = false);
+      localStorage.removeItem('selectedRegions');
+      
+      // Update counts to show totals
+      updateDisciplineCounts([]);
+      
+      console.log('🧹 Cleared all regions');
+    });
+    
+    // Filter toggle functionality
+    const filterToggle = document.getElementById('filter-toggle');
+    const filterContent = document.getElementById('filter-content');
+    
+    if (filterToggle && filterContent) {
+      filterToggle.addEventListener('click', () => {
+        filterToggle.classList.toggle('expanded');
+        filterContent.classList.toggle('expanded');
+      });
+    }
+    
+    // Initialize with saved regions or show totals
+    const initialSelectedRegions = savedRegions.length > 0 ? savedRegions : [];
+    updateDisciplineCounts(initialSelectedRegions);
+    
+  } catch (error) {
+    console.error('❌ Failed to load regions:', error);
+    regionCheckboxes.innerHTML = '<div class="error-message">Failed to load regions</div>';
   }
 }
 /**
@@ -84,7 +234,6 @@ function initTilesTabs() {
  * 
  * Handles:
  * - Loading discipline tile event counts
- * - Loading region statistics
  * - Performance monitoring
  * - Analytics tracking
  */
@@ -127,130 +276,24 @@ function trackAnalytics(action, data = {}) {
 }
 
 
-// Load discipline event counts from homepage stats
+// Load discipline event counts from homepage stats (now handled by region filters)
 async function loadDisciplineCounts() {
-  try {
-    recordMilestone('discipline_counts_start');
-    
-    // Load manifest to get latest homepage stats file
-    const manifestResponse = await fetch('/data/manifest.json');
-    const manifest = await manifestResponse.json();
-    
-    // Load homepage stats file
-    const statsUrl = manifest.homepage?.stats || '/data/homepage-stats.v20250107.json';
-    const response = await fetch(statsUrl);
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch homepage stats: ${response.status}`);
-    }
-    
-    const stats = await response.json();
-    
-    // Update the UI with the counts from stats
-    Object.keys(stats.disciplines).forEach(discipline => {
-      const disciplineData = stats.disciplines[discipline];
-      const element = document.querySelector(`[href="/pages/${discipline}/"] .tile-number`);
-      if (element) {
-        element.textContent = disciplineData.count;
-      }
-    });
-    
-    recordMilestone('discipline_counts_loaded');
-    console.log('✅ Homepage stats loaded:', stats);
-    
-  } catch (error) {
-    console.error('❌ Failed to load homepage stats:', error);
-    
-    // Show error state - keep placeholder numbers
-    console.log('⚠️ Using placeholder numbers due to load error');
-  }
+  // This function is now handled by initHomepageRegionFilters()
+  // which loads counts from facets data and updates based on region selection
+  console.log('📊 Discipline counts now handled by region filters');
 }
 
-// Load region statistics
-async function loadRegionStats() {
-  try {
-    recordMilestone('region_stats_start');
-      
-      // Load manifest to get latest file versions
-      const manifestResponse = await fetch('/data/manifest.json');
-      const manifest = await manifestResponse.json();
-      const facetsUrl = manifest.index.facets;
-    
-    const response = await fetch(facetsUrl);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch facets: ${response.status}`);
-    }
-    
-    const facets = await response.json();
-    
-    // Create stats grid
-    const statsGrid = document.getElementById('stats-grid');
-    if (!statsGrid) return;
-    
-    if (!facets.regions || !Array.isArray(facets.regions)) {
-      statsGrid.innerHTML = '<div class="no-stats">No region data available</div>';
-      return;
-    }
-    
-    // Filter regions that have totals and create stat cards
-    const regionStats = facets.regions
-      .filter(region => region.total && region.total > 0)
-      .map(region => ({
-        name: region.name,
-        count: region.total
-      }))
-      .sort((a, b) => b.count - a.count); // Sort by count descending
-    
-    if (regionStats.length === 0) {
-      statsGrid.innerHTML = '<div class="no-stats">No region statistics available</div>';
-      return;
-    }
-    
-    const statsHtml = regionStats.map(stat => `
-      <div class="stat-card">
-        <h3>${stat.name}</h3>
-        <div class="count">${stat.count}</div>
-      </div>
-    `).join('');
-    
-    statsGrid.innerHTML = statsHtml;
-    
-    recordMilestone('region_stats_loaded');
-    console.log('✅ Region stats loaded:', regionStats.length, 'regions');
-    
-  } catch (error) {
-    console.error('❌ Failed to load region stats:', error);
-    
-    const statsGrid = document.getElementById('stats-grid');
-    if (statsGrid) {
-      statsGrid.innerHTML = '<div class="error-message">Failed to load statistics</div>';
-    }
-  }
-}
 
 // Main initialization function
 function initHomepage() {
   console.log('🚀 Homepage module initializing...');
   recordMilestone('initialization_start');
-  // Ensure region tile links have properly encoded region parameters
-  try {
-    const regionLinks = document.querySelectorAll('.region-tiles-grid a');
-    regionLinks.forEach(link => {
-      const titleEl = link.querySelector('h3');
-      if (!titleEl) return;
-      const regionName = titleEl.textContent.trim();
-      const url = new URL('/pages/road/', window.location.origin);
-      url.searchParams.set('region', regionName);
-      // Assign encoded href relative to site root
-      link.setAttribute('href', url.pathname + '?' + url.searchParams.toString());
-    });
-  } catch (_) {}
   
-  // Load discipline counts and region stats in parallel
-  Promise.all([
-    loadDisciplineCounts(),
-    loadRegionStats()
-  ]).then(() => {
+  // Update new events count
+  updateNewEventsCount();
+  
+  // Load discipline counts
+  loadDisciplineCounts().then(() => {
     recordMilestone('page_fully_loaded');
     logPerformanceSummary();
     console.log('✅ Homepage fully loaded');
@@ -290,8 +333,13 @@ function initHomepage() {
 
 // Auto-initialize if module is loaded directly
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => { initHomepage(); initTilesTabs(); });
+  document.addEventListener('DOMContentLoaded', () => { 
+    initHomepage(); 
+    initDisciplineTiles(); 
+    initHomepageRegionFilters();
+  });
 } else {
   initHomepage();
-  initTilesTabs();
+  initDisciplineTiles();
+  initHomepageRegionFilters();
 }
