@@ -96,13 +96,14 @@ async function initHomepageRegionFilters() {
     
     console.log('✅ Regions loaded:', facets.regions.length);
     
-    // Load saved regions from localStorage
+    // Load saved regions from localStorage, or select all regions by default
     let savedRegions = [];
     try {
       const saved = localStorage.getItem('selectedRegions');
-      savedRegions = saved ? JSON.parse(saved) : [];
+      savedRegions = saved ? JSON.parse(saved) : facets.regions; // Select all regions by default
     } catch (error) {
       console.error('Error loading saved regions:', error);
+      savedRegions = facets.regions; // Select all regions by default on error
     }
     
     // Populate region checkboxes
@@ -146,9 +147,8 @@ async function initHomepageRegionFilters() {
         let count = 0;
         
         if (selectedRegions.length === 0) {
-          // No regions selected - show total counts
-          const disciplineName = disciplineMapping[discipline];
-          count = facets.counts[disciplineName] || 0;
+          // No regions selected - show 0 counts
+          count = 0;
         } else {
           // Calculate count for selected regions
           const disciplineName = disciplineMapping[discipline];
@@ -174,7 +174,7 @@ async function initHomepageRegionFilters() {
         // Store in localStorage
         if (selectedRegions.length > 0) {
           localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
-        } else {
+    } else {
           localStorage.removeItem('selectedRegions');
         }
         
@@ -203,7 +203,7 @@ async function initHomepageRegionFilters() {
       checkboxes.forEach(cb => cb.checked = false);
       localStorage.removeItem('selectedRegions');
       
-      // Update counts to show totals
+      // Update counts to show 0 (no regions selected)
       updateDisciplineCounts([]);
       
       console.log('🧹 Cleared all regions');
@@ -220,9 +220,8 @@ async function initHomepageRegionFilters() {
       });
     }
     
-    // Initialize with saved regions or show totals
-    const initialSelectedRegions = savedRegions.length > 0 ? savedRegions : [];
-    updateDisciplineCounts(initialSelectedRegions);
+    // Initialize with saved regions or all regions by default
+    updateDisciplineCounts(savedRegions);
     
   } catch (error) {
     console.error('❌ Failed to load regions:', error);

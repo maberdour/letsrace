@@ -405,10 +405,10 @@ function initNewlyAddedPage() {
     
     console.log('🔍 Events after "new" filter:', newEvents.length);
     
-    // Apply region filtering
+    // Apply region filtering - if no regions selected, show no events
     const filteredEvents = filters.regions.length > 0 
       ? newEvents.filter(event => filters.regions.includes(event.region))
-      : newEvents;
+      : [];
     
     console.log('🔍 Events after region filter:', filteredEvents.length);
     

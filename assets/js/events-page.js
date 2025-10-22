@@ -114,8 +114,9 @@ function filterEvents(events, filters) {
     // Only show events from today onwards
     if (event.date < today) return false;
     
-    // Region filtering
-    if (filters.regions.length > 0 && !filters.regions.includes(event.region)) return false;
+    // Region filtering - if no regions selected, show no events
+    if (filters.regions.length === 0) return false;
+    if (!filters.regions.includes(event.region)) return false;
     
     return true;
   });
