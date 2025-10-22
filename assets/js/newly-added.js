@@ -37,7 +37,7 @@ function logPerformanceSummary() {
 }
 
 // Number of days after which an event is no longer considered "NEW"
-const NEW_EVENT_DAYS = 2;
+const NEW_EVENT_DAYS = 7;
 
 // Debounce utility
 function debounce(func, wait) {
@@ -374,16 +374,31 @@ function initNewlyAddedPage() {
     console.log('🔍 Total events loaded:', allEvents.length);
     
     // Filter for new events only (events updated within last 7 days)
+    const now = new Date();
+    const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
+    console.log('📅 Current date:', now.toISOString());
+    console.log('📅 Cutoff date (7 days ago):', daysAgo.toISOString());
+    console.log('📅 NEW_EVENT_DAYS:', NEW_EVENT_DAYS);
+    
     const newEvents = allEvents.filter(event => {
       const lastUpdated = event.last_updated || '';
       const updated = new Date(lastUpdated);
-      const now = new Date();
-      const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
       
       if (!isNaN(updated.getTime())) {
         const updatedMidnight = new Date(updated.getFullYear(), updated.getMonth(), updated.getDate());
         const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
-        return updatedMidnight > daysAgoMidnight;
+        const isNew = updatedMidnight > daysAgoMidnight;
+        
+        if (isNew) {
+          console.log('✅ New event found:', {
+            name: event.name,
+            last_updated: lastUpdated,
+            updatedMidnight: updatedMidnight.toISOString(),
+            daysAgoMidnight: daysAgoMidnight.toISOString()
+          });
+        }
+        
+        return isNew;
       }
       return false;
     });
