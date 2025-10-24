@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "id": "4c0b05c0",
+      "name": "NWCCA 2025/26 Round 8 - Weaver Valley Cross",
+      "type": "Cyclo Cross",
+      "region": "North West",
+      "venue": "Cheshire Showground, Tabley",
+      "postcode": null,
+      "date": "2026-01-18",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/324581/nwcca-202526-round-8---weaver-valley-cross",
+      "source": "Google Sheet",
+      "last_updated": "2025-10-20T02:15:25.000Z"
+    },
+    {
+      "id": "ac4c7461",
+      "name": "Wessex Cyclocross League Round 10 - Take 3 Tri",
+      "type": "Cyclo Cross",
+      "region": "Central",
+      "venue": "Abingdon Airfield, Oxfordshire",
+      "postcode": null,
+      "date": "2025-12-14",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/328016/wessex-cyclocross-league-round-10---take-3-tri",
+      "source": "Google Sheet",
+      "last_updated": "2025-10-20T02:15:25.000Z"
+    },
+    {
+      "id": "ac4c7461",
+      "name": "Wessex Cyclocross League Round 10 - Take 3 Tri",
+      "type": "Cyclo Cross",
+      "region": "Central",
+      "venue": "Abingdon Airfield, Oxfordshire",
+      "postcode": null,
+      "date": "2025-12-14",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/328016/wessex-cyclocross-league-round-10---take-3-tri",
+      "source": "Google Sheet",
+      "last_updated": "2025-10-20T02:15:25.000Z"
+    }
+  ],
+  "last_build": "2025-10-24T02:25:15.170Z",
+  "total_new_events": 3,
+  "cutoff_date": "2025-10-17"
+}
