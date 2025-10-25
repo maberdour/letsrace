@@ -1,18 +1,5 @@
 [
   {
-    "id": "0c99bb10",
-    "name": "MIJ Downhill 2025 Round 5",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2025-10-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312177/mij-downhill-2025-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
     "id": "2d6437bb",
     "name": "Racers Guild Racing - Works Components Super Cup '25. Round 5 Little Bringe.",
     "type": "MTB",
