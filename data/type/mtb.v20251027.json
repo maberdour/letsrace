@@ -1,31 +1,5 @@
 [
   {
-    "id": "0c99bb10",
-    "name": "MIJ Downhill 2025 Round 5",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2025-10-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312177/mij-downhill-2025-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "2d6437bb",
-    "name": "Racers Guild Racing - Works Components Super Cup '25. Round 5 Little Bringe.",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Stile Cop, Staffordshire",
-    "postcode": null,
-    "date": "2025-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327187/racers-guild-racing---works-components-super-cup-25-round-5-little-bringe",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-19T02:15:24.000Z"
-  },
-  {
     "id": "12639dc4",
     "name": "B-BUDDIES Off-Road Halloween TT",
     "type": "MTB",
