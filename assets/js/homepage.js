@@ -23,23 +23,54 @@ function updateNewEventsCount() {
         console.log('📅 Last build:', data.last_build);
         console.log('📅 Current date:', new Date().toISOString());
         
-        // Check if events are actually "new" based on current date
-        const cutoffDate = new Date(data.cutoff_date);
-        const currentDate = new Date();
-        const daysSinceCutoff = Math.floor((currentDate - cutoffDate) / (1000 * 60 * 60 * 24));
-        console.log('📊 Days since cutoff:', daysSinceCutoff);
+        // Use same 7-day logic as newly added page
+        const NEW_EVENT_DAYS = 7;
+        const now = new Date();
+        const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
+        
+        console.log('📅 Current date:', now.toISOString());
+        console.log('📅 Cutoff date (7 days ago):', daysAgo.toISOString());
+        console.log('📅 NEW_EVENT_DAYS:', NEW_EVENT_DAYS);
+        
+        // Filter events using same logic as newly added page
+        const newEvents = data.events.filter(event => {
+          const lastUpdated = event.last_updated || '';
+          const updated = new Date(lastUpdated);
+          
+          if (!isNaN(updated.getTime())) {
+            const updatedMidnight = new Date(updated.getFullYear(), updated.getMonth(), updated.getDate());
+            const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
+            const isNew = updatedMidnight > daysAgoMidnight;
+            
+            if (isNew) {
+              console.log('✅ New event found:', {
+                name: event.name,
+                last_updated: lastUpdated,
+                updatedMidnight: updatedMidnight.toISOString(),
+                daysAgoMidnight: daysAgoMidnight.toISOString()
+              });
+            }
+            
+            return isNew;
+          }
+          return false;
+        });
+        
+        const actualCount = newEvents.length;
+        console.log('🔍 Events after "new" filter:', actualCount);
         
         const countEl = document.getElementById('new-events-count');
         const wrapperEl = document.getElementById('new-events-count-wrapper');
         console.log('🎯 DOM elements:', { countEl, wrapperEl });
-        if (countEl && typeof data.total_new_events === 'number') {
-          console.log('✅ Setting count to:', data.total_new_events);
-          countEl.textContent = String(data.total_new_events);
-          if (wrapperEl && Number(data.total_new_events) === 0) {
-            wrapperEl.style.display = 'none';
+        if (countEl) {
+          console.log('✅ Setting count to:', actualCount);
+          countEl.textContent = String(actualCount);
+          // Always show the wrapper, even when count is 0
+          if (wrapperEl) {
+            wrapperEl.style.display = 'inline';
           }
         } else {
-          console.log('❌ Failed to update count:', { countEl: !!countEl, total_new_events: data.total_new_events });
+          console.log('❌ Failed to update count: countEl not found');
         }
       })
       .catch(error => {
