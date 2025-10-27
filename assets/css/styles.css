@@ -1394,9 +1394,17 @@ footer a:visited {
   }
   
   main {
-    padding: 0;
+    padding: 0 1rem;
     max-width: none;
     margin: 0;
+  }
+  
+  .intro-text {
+    margin-left: 0;
+  }
+  
+  .homepage .events-page-container {
+    margin-top: 0;
   }
   
   footer {
