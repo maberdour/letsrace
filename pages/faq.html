@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>FAQ - LetsRace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Frequently asked questions about LetsRace" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <link rel="stylesheet" href="../assets/css/styles.css?v=2">
+    
+    <link rel="dns-prefetch" href="//gc.zgo.at">
+    <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
+    <link rel="preconnect" href="https://letsrace.goatcounter.com" crossorigin>
+</head>
+<body>
+
+
+    <main>
+        <div class="general-content">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-container">
+            <div id="faq-list">
+<!-- FAQ_START -->
+<div class="faq-item" data-id="1">
+  <h2 class="faq-question" id="faq-question-1" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-1">How do I enter an event?</h2>
+  <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden>You do not enter events on letsrace.cc, instead you should just click the event link to the event website and enter there.</div>
+</div>
+
+<div class="faq-item" data-id="2">
+  <h2 class="faq-question" id="faq-question-2" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-2">Why are there no events to enter?</h2>
+  <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden>Some disciplines only operate at certain times of year, and all youth events rely on grassroots volunteers, so it may just be that some areas have fewer volunteers and fewer races. Try expanding your search to neighbouring regions as these events may still be within striking distance for you .</div>
+</div>
+
+<div class="faq-item" data-id="3">
+  <h2 class="faq-question" id="faq-question-3" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-3">Why are not all Time Trials listed?</h2>
+  <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden>We only list TTS held on closed courses, which is a small proportion of all TTs. See the CTT website for all the other events.</div>
+</div>
+
+<div class="faq-item" data-id="4">
+  <h2 class="faq-question" id="faq-question-4" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-4">Where can I add an event entry?</h2>
+  <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden>Not here! This site aggregates event information from the CTT and British Cycling websites. Add your event there and if we don&#39;t pick it up within 24hrs of it being live on those websites, then contact us.</div>
+</div>
+<!-- FAQ_END -->
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Load non-critical scripts after page load -->
+    <script src="../assets/js/cache.js?v=1"></script>
+             <script src="../assets/js/render.js?v=18"></script>
+    <script>
+      // Render header and footer
+      renderHeader("FAQ");
+      renderFooter();
+    </script>
+    <script>
+      // Defer service worker registration
+      window.addEventListener('load', () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('../assets/js/sw.js')
+            .then(registration => {
+              console.log('SW registered: ', registration);
+            })
+            .catch(registrationError => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        }
+      });
+    </script>
+
+    <script>
+    (function () {
+        // Delegate click handling to ensure only one open at a time
+        document.addEventListener('click', function (e) {
+            const button = e.target.closest('.faq-question');
+            if (!button) return;
+
+            const list = document.getElementById('faq-list');
+            if (!list) return;
+
+            // Close all
+            const allButtons = list.querySelectorAll('.faq-question[aria-expanded]');
+            const allAnswers = list.querySelectorAll('.faq-answer');
+            allButtons.forEach(b => b.setAttribute('aria-expanded', 'false'));
+            allAnswers.forEach(a => a.setAttribute('hidden', ''));
+
+            // Open the clicked one
+            const answerId = button.getAttribute('aria-controls');
+            const answer = answerId ? document.getElementById(answerId) : null;
+            if (answer) {
+                button.setAttribute('aria-expanded', 'true');
+                answer.removeAttribute('hidden');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
+

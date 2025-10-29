@@ -122,10 +122,27 @@ function dailyBuild() {
       Logger.log(`⚠️ Skipping intro-text injection due to error: ${e.message}`);
     }
 
-    // Step 11: Commit all files to GitHub in a single batch (including manifest and intro HTML updates)
-    const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename, introHtmlUpdates);
+    // Step 11: Build FAQ HTML update from content/FAQ.md
+    let faqUpdate = null;
+    try {
+      faqUpdate = buildFaqHtmlUpdate();
+      if (faqUpdate) {
+        Logger.log('📝 FAQ update prepared');
+      } else {
+        Logger.log('ℹ️ No FAQ update prepared');
+      }
+    } catch (e) {
+      Logger.log(`⚠️ Skipping FAQ injection due to error: ${e.message}`);
+    }
 
-    // Step 12: Log summary
+    // Merge extra files
+    const extraFiles = introHtmlUpdates.slice();
+    if (faqUpdate) extraFiles.push(faqUpdate);
+
+    // Step 12: Commit all files to GitHub in a single batch (including manifest and extra HTML updates)
+    const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename, extraFiles);
+
+    // Step 13: Log summary
     logBuildSummary(sheetData.length, processedData.skipped, partitionedData, committedFiles, dateString);
     
     Logger.log("🎉 Daily build completed successfully!");
@@ -514,6 +531,92 @@ function fetchRepoFileRaw(path) {
     Logger.log(`❌ fetchRepoFileRaw error for ${path}: ${e.message}`);
     return null;
   }
+}
+
+/**
+ * Build updated FAQ HTML by parsing content/FAQ.md and injecting into pages/faq.html
+ */
+function buildFaqHtmlUpdate() {
+  const md = fetchRepoFileRaw('content/FAQ.md');
+  if (!md) {
+    Logger.log('ℹ️ FAQ.md not found, skipping');
+    return null;
+  }
+  const items = parseFaqMarkdown(md);
+  if (!items || items.length === 0) {
+    Logger.log('ℹ️ No FAQ items parsed, skipping');
+    return null;
+  }
+  const pagePath = 'pages/faq.html';
+  const html = fetchRepoFileRaw(pagePath);
+  if (!html) {
+    Logger.log(`ℹ️ ${pagePath} not found, skipping`);
+    return null;
+  }
+  const itemsHtml = generateFaqItemsHtml(items);
+  const updated = replaceFaqListInHtml(html, itemsHtml);
+  if (updated && updated !== html) {
+    return {
+      path: `/${pagePath}`,
+      content: updated,
+      message: 'chore(content): update FAQ content from FAQ.md'
+    };
+  }
+  return null;
+}
+
+/**
+ * Parse FAQ.md with blocks like:
+ * ID: 1\nQ: question\nA: answer\n
+ */
+function parseFaqMarkdown(md) {
+  const lines = md.split(/\r?\n/);
+  const items = [];
+  let cur = { id: null, q: '', a: '' };
+  function pushIfComplete() {
+    if (cur.id !== null && cur.q && cur.a) {
+      items.push({ id: cur.id, q: cur.q.trim(), a: cur.a.trim() });
+    }
+    cur = { id: null, q: '', a: '' };
+  }
+  lines.forEach(line => {
+    const idMatch = line.match(/^\s*ID:\s*(\d+)\s*$/i);
+    if (idMatch) { pushIfComplete(); cur.id = parseInt(idMatch[1], 10); return; }
+    const qMatch = line.match(/^\s*Q:\s*(.+)$/i);
+    if (qMatch) { cur.q = qMatch[1]; return; }
+    const aMatch = line.match(/^\s*A:\s*(.+)$/i);
+    if (aMatch) { cur.a = aMatch[1]; return; }
+    // Allow multi-line answer continuation
+    if (cur.a && line.trim() !== '' && !/^ID:|^Q:|^A:/i.test(line)) { cur.a += '\n' + line; }
+  });
+  pushIfComplete();
+  return items;
+}
+
+function generateFaqItemsHtml(items) {
+  return items.map(it => {
+    const id = String(it.id);
+    const qId = `faq-question-${id}`;
+    const aId = `faq-answer-${id}`;
+    const q = escapeHtml(it.q);
+    const a = escapeHtml(it.a);
+    return (
+      `<div class="faq-item" data-id="${id}">\n` +
+      `  <h2 class="faq-question" id="${qId}" role="button" tabindex="0" aria-expanded="false" aria-controls="${aId}">${q}</h2>\n` +
+      `  <div class="faq-answer" id="${aId}" role="region" aria-labelledby="${qId}" hidden>${a}</div>\n` +
+      `</div>`
+    );
+  }).join('\n\n');
+}
+
+function replaceFaqListInHtml(html, itemsHtml) {
+  const startMarker = /<!--\s*FAQ_START\s*-->/i;
+  const endMarker = /<!--\s*FAQ_END\s*-->/i;
+  if (startMarker.test(html) && endMarker.test(html)) {
+    return html.replace(/(<!--\s*FAQ_START\s*-->)([\s\S]*?)(<!--\s*FAQ_END\s*-->)/i, `$1\n${itemsHtml}\n$3`);
+  }
+  Logger.log('ℹ️ FAQ markers not found in pages/faq.html (<!-- FAQ_START --> ... <!-- FAQ_END -->). Skipping update to avoid duplication.');
+  return html;
 }
 
 /**

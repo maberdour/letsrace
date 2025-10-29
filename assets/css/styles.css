@@ -503,54 +503,79 @@ p {
    ABOUT PAGE STYLES
    ========================================================================== */
 
-.about-content {
+.general-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
 }
 
-.about-content h1 {
+/* FAQ layout within general-content */
+.general-content .faq-container {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.general-content #faq-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* FAQ question styling */
+.faq-question {
+  border: none;
+  padding: 0;
+  margin: 1rem 0 0.5rem 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.faq-answer {
+  margin: 0 0 1rem 0;
+}
+
+.general-content h1 {
   margin-bottom: 1.5rem;
   text-align: left;
+  margin-left: 0; /* Override events-page heading offset */
 }
 
-.about-content h2 {
+.general-content h2 {
   margin: 2rem 0 1rem 0;
-  border-bottom: 2px solid #0077cc;
-  padding-bottom: 0.5rem;
+  border-bottom: none; /* remove underline */
+  padding-bottom: 0;
 }
 
-.about-content p {
+.general-content p {
   margin-bottom: 1rem;
   font-size: 1em;
 }
 
-.about-content ul {
+.general-content ul {
   margin: 1rem 0 1rem 2rem;
 }
 
-.about-content li {
+.general-content li {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 
-.about-content a {
+.general-content a {
   color: #0077cc;
   text-decoration: none;
 }
 
-.about-content a:hover {
+.general-content a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  .about-content {
+  .general-content {
     padding: 1rem;
   }
   
-  .about-content p,
-  .about-content li {
+  .general-content p,
+  .general-content li {
     font-size: 1em;
   }
 }
@@ -1190,28 +1215,29 @@ main h1 {
    ABOUT PAGE STYLES
    ========================================================================== */
 
-.about-content {
+.general-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.about-content h1 {
+.general-content h1 {
   margin-bottom: 1rem;
+  margin-left: 0; /* Ensure left alignment within content column */
 }
 
-.about-content p {
+.general-content p {
   margin-bottom: 1rem;
   line-height: 1.6;
   color: #333;
 }
 
-.about-content ul {
+.general-content ul {
   margin-bottom: 1rem;
   padding-left: 2rem;
 }
 
-.about-content li {
+.general-content li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }

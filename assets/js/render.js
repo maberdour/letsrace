@@ -42,7 +42,8 @@ function renderHeader(title) {
     { href: isInSubdirectory ? '/pages/time-trial/' : 'pages/time-trial/', text: 'Time Trial', current: currentPage === 'time-trial' },
     { href: isInSubdirectory ? '/pages/hill-climb/' : 'pages/hill-climb/', text: 'Hill Climb', current: currentPage === 'hill-climb' },
     { href: isInSubdirectory ? '/pages/speedway/' : 'pages/speedway/', text: 'Speedway', current: currentPage === 'speedway' },
-    { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' }
+    { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' },
+    { href: isInSubdirectory ? '/pages/faq.html' : 'pages/faq.html', text: 'FAQ', current: currentPage === 'faq.html' }
   ];
   
   // Generate navigation HTML
@@ -117,7 +118,8 @@ function createBurgerMenu() {
     'time-trial': 'time-trial',
     'hill-climb': 'hill-climb',
     'speedway': 'speedway',
-    'about.html': 'about'
+    'about.html': 'about',
+    'faq.html': 'faq'
   };
   
   const currentPageKey = pageMap[currentPage] || 'home';
@@ -135,6 +137,7 @@ function createBurgerMenu() {
       <li><a href="/pages/hill-climb/" class="${currentPageKey === 'hill-climb' ? 'current' : ''}">Hill Climb</a></li>
       <li><a href="/pages/speedway/" class="${currentPageKey === 'speedway' ? 'current' : ''}">Speedway</a></li>
       <li><a href="/pages/about.html" class="${currentPageKey === 'about' ? 'current' : ''}">About</a></li>
+      <li><a href="/pages/faq.html" class="${currentPageKey === 'faq' ? 'current' : ''}">FAQ</a></li>
     </ul>
   `;
 
@@ -367,7 +370,8 @@ function renderMobileNavigation() {
     { href: isInSubdirectory ? '/pages/time-trial/' : 'pages/time-trial/', text: 'Time Trial', current: currentPage === 'time-trial' },
     { href: isInSubdirectory ? '/pages/hill-climb/' : 'pages/hill-climb/', text: 'Hill Climb', current: currentPage === 'hill-climb' },
     { href: isInSubdirectory ? '/pages/speedway/' : 'pages/speedway/', text: 'Speedway', current: currentPage === 'speedway' },
-    { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' }
+    { href: isInSubdirectory ? '/pages/about.html' : 'pages/about.html', text: 'About', current: currentPage === 'about.html' },
+    { href: isInSubdirectory ? '/pages/faq.html' : 'pages/faq.html', text: 'FAQ', current: currentPage === 'faq.html' }
   ];
   
   return navLinks.map(link => 
