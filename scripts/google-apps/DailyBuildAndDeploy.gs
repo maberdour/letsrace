@@ -113,10 +113,19 @@ function dailyBuild() {
     // Step 9: Create manifest
     const manifest = createManifest(tempCommittedFiles, dateString, newEventsFilename);
     
-    // Step 10: Commit all files to GitHub in a single batch (including manifest)
-    const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename);
+    // Step 10: Build intro-text HTML updates from page-introductions.md
+    let introHtmlUpdates = [];
+    try {
+      introHtmlUpdates = buildIntroHtmlUpdates();
+      Logger.log(`📝 Intro updates prepared for ${introHtmlUpdates.length} page(s)`);
+    } catch (e) {
+      Logger.log(`⚠️ Skipping intro-text injection due to error: ${e.message}`);
+    }
 
-    // Step 11: Log summary
+    // Step 11: Commit all files to GitHub in a single batch (including manifest and intro HTML updates)
+    const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename, introHtmlUpdates);
+
+    // Step 12: Log summary
     logBuildSummary(sheetData.length, processedData.skipped, partitionedData, committedFiles, dateString);
     
     Logger.log("🎉 Daily build completed successfully!");
@@ -346,7 +355,7 @@ function createHomepageStats(partitionedData) {
 /**
  * Commit all files to GitHub in a single batch commit
  */
-function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename) {
+function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename, extraFiles) {
   const committedFiles = {
     type: {},
     index: {},
@@ -404,6 +413,17 @@ function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, new
   
   committedFiles.homepage.stats = homepageStatsFilename;
   
+  // Add any extra files (e.g., HTML intro-text updates)
+  if (extraFiles && extraFiles.length > 0) {
+    extraFiles.forEach(f => {
+      filesToCommit.push({
+        path: f.path,
+        content: f.content,
+        message: f.message || `chore(content): inject intro text for ${f.path}`
+      });
+    });
+  }
+
   // Add manifest file if provided
   if (manifest) {
     filesToCommit.push({
@@ -435,6 +455,153 @@ function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, new
   batchCommitToGitHub(filesToCommit, `chore(data): daily build ${dateString}`);
   
   return committedFiles;
+}
+
+/**
+ * Build updated HTML content for each events page by injecting intro text
+ * parsed from content/page-introductions.md.
+ * Returns an array of { path, content, message } entries for batch commit.
+ */
+function buildIntroHtmlUpdates() {
+  const introductionsMd = fetchRepoFileRaw('content/page-introductions.md');
+  if (!introductionsMd) {
+    throw new Error('Failed to load content/page-introductions.md');
+  }
+  const introMap = parseIntroductionsMarkdown(introductionsMd);
+  const updates = [];
+
+  Object.keys(introMap).forEach(canonicalType => {
+    const kebab = toKebabCase(canonicalType);
+    const pagePath = `pages/${kebab}/index.html`;
+    try {
+      const html = fetchRepoFileRaw(pagePath);
+      if (!html) {
+        Logger.log(`ℹ️ Skipping intro injection: page not found ${pagePath}`);
+        return;
+      }
+      const updated = replaceIntroInHtml(html, introMap[canonicalType]);
+      if (updated && updated !== html) {
+        updates.push({
+          path: `/${pagePath}`,
+          content: updated,
+          message: `chore(content): inject intro text for ${canonicalType}`
+        });
+      } else {
+        Logger.log(`ℹ️ No change needed for ${pagePath}`);
+      }
+    } catch (e) {
+      Logger.log(`⚠️ Failed to process ${pagePath}: ${e.message}`);
+    }
+  });
+
+  return updates;
+}
+
+/**
+ * Fetch a repository file as raw text from the current target branch.
+ */
+function fetchRepoFileRaw(path) {
+  const url = `https://raw.githubusercontent.com/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/${CONFIG.TARGET_BRANCH}/${path}`;
+  try {
+    const res = UrlFetchApp.fetch(url, { method: 'GET', muteHttpExceptions: true });
+    const code = res.getResponseCode();
+    if (code === 200) {
+      return res.getContentText();
+    }
+    Logger.log(`⚠️ fetchRepoFileRaw ${path} -> HTTP ${code}`);
+    return null;
+  } catch (e) {
+    Logger.log(`❌ fetchRepoFileRaw error for ${path}: ${e.message}`);
+    return null;
+  }
+}
+
+/**
+ * Parse markdown with H1 headings mapping to canonical types.
+ * Returns { 'Road': 'intro...', 'Time Trial': 'intro...' }.
+ */
+function parseIntroductionsMarkdown(md) {
+  const lines = md.split(/\r?\n/);
+  const map = {};
+  let currentHeading = null;
+  let buffer = [];
+
+  function flush() {
+    if (currentHeading) {
+      const text = buffer.join('\n').trim();
+      if (text) {
+        map[currentHeading] = toSingleLine(text);
+      }
+    }
+    buffer = [];
+  }
+
+  lines.forEach(line => {
+    const h1 = line.match(/^#\s+(.+)$/);
+    if (h1) {
+      flush();
+      currentHeading = normalizeCanonicalType(h1[1].trim());
+      return;
+    }
+    if (currentHeading) {
+      buffer.push(line);
+    }
+  });
+  flush();
+
+  return map;
+}
+
+/**
+ * Normalize heading text to one of the canonical types if possible.
+ */
+function normalizeCanonicalType(text) {
+  const t = text.trim();
+  const direct = CANONICAL_TYPES.find(x => x.toLowerCase() === t.toLowerCase());
+  if (direct) return direct;
+  // Common variants
+  const variants = {
+    'cyclo-cross': 'Cyclo Cross',
+    'cyclocross': 'Cyclo Cross',
+    'tt': 'Time Trial',
+    'hill-climb': 'Hill Climb',
+    'hillclimb': 'Hill Climb'
+  };
+  const key = t.toLowerCase();
+  return variants[key] || t;
+}
+
+/**
+ * Replace content within <p class="intro-text">...</p> in given HTML.
+ * Returns updated HTML, or original if not changed.
+ */
+function replaceIntroInHtml(html, introText) {
+  if (!html) return html;
+  const escaped = escapeHtml(introText);
+  const pattern = new RegExp('(\\<p\\s+class=\\"intro-text\\"\\>)([\\s\\S]*?)(\\<\\/p\\>)');
+  if (pattern.test(html)) {
+    return html.replace(pattern, `$1${escaped}$3`);
+  }
+  return html;
+}
+
+/**
+ * Helpers
+ */
+function toSingleLine(text) {
+  return text
+    .replace(/\r?\n+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function escapeHtml(text) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 /**
