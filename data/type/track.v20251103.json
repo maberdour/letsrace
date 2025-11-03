@@ -1,44 +1,5 @@
 [
   {
-    "id": "79ac65a1",
-    "name": "Monday Night Track League 2025 Round 24 (Cancelled)",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-10-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312950/monday-night-track-league-2025-round-24",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
-    "id": "f8ff3b82",
-    "name": "Newport Live Endurance Track League #3",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2025-10-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326854/newport-live-endurance-track-league-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
-  },
-  {
-    "id": "a2e2c382",
-    "name": "Manchester Regional Track League 2025 #11 (MRTL)",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester",
-    "postcode": null,
-    "date": "2025-10-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325294/manchester-regional-track-league-2025-11-mrtl",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-29T02:15:25.000Z"
-  },
-  {
     "id": "e7816fb5",
     "name": "Monday Night Track League 2025 Round 25",
     "type": "Track",
