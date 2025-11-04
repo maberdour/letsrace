@@ -1,18 +1,5 @@
 [
   {
-    "id": "f8cefa92",
-    "name": "Birmingham BMX Club - Winter Series Round 1",
-    "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Birmingham BMX Club, Birmingham",
-    "postcode": null,
-    "date": "2025-11-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327720/birmingham-bmx-club---winter-series-round-1-",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-02T02:15:26.000Z"
-  },
-  {
     "id": "0e955300",
     "name": "Exeter 25/26 Winter Round 1",
     "type": "BMX",
