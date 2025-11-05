@@ -13,19 +13,6 @@
     "last_updated": "2025-08-30T02:15:25.000Z"
   },
   {
-    "id": "973b6a66",
-    "name": "Lee Valley Cross - Eastern League 2025/26 Round 6",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Redbridge Cycling Centre, Ilford",
-    "postcode": null,
-    "date": "2025-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324557/lee-valley-cross---eastern-league-202526-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
-  },
-  {
     "id": "029f4d49",
     "name": "NWCCA 2025/26 Round 4 - Geoff Bewley Memorial cross",
     "type": "Cyclo Cross",
@@ -52,19 +39,6 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
-    "id": "54e00f1a",
-    "name": "Challenge Tires London and South East CX League - Round 07",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Redbridge Cycling Centre, Ilford",
-    "postcode": null,
-    "date": "2025-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327111/challenge-tires-london-and-south-east-cx-league---round-07",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-19T02:15:24.000Z"
-  },
-  {
     "id": "44272486",
     "name": "CXNE 2025/26 Round 6",
     "type": "Cyclo Cross",
@@ -78,15 +52,15 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
-    "id": "4f716d83",
-    "name": "HUPcc Scottish Cyclocross Series Round 4: Gartmore House",
+    "id": "b6aa17fc",
+    "name": "HUPcc Scottish Cyclocross Series Round 4: Gartmore House / TrossCross",
     "type": "Cyclo Cross",
     "region": "Scotland",
     "venue": "Gartmore House, Stirling",
     "postcode": null,
     "date": "2025-11-09",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325350/hupcc-scottish-cyclocross-series-round-4-gartmore-house",
+    "url": "https://www.britishcycling.org.uk/events/details/325350/hupcc-scottish-cyclocross-series-round-4-gartmore-house--trosscross",
     "source": "Google Sheet",
     "last_updated": "2025-09-27T02:15:25.000Z"
   },
@@ -273,15 +247,28 @@
     "last_updated": "2025-09-10T02:15:33.000Z"
   },
   {
-    "id": "df81f77c",
-    "name": "Eastern Region Cyclo-Cross Championships incorporating Eastern League 2025/26 Rd 7",
+    "id": "0ed17f06",
+    "name": "East Midland Cyclo-Cross Championships 2025",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Scunthorpe and District Pony Club Cross, Scunthorpe",
+    "postcode": null,
+    "date": "2025-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328225/east-midland-cyclo-cross-championships-2025",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "8728e76d",
+    "name": "Eastern Region Cyclo-Cross Championships incorporating Eastern League 2025/26 Rd 6",
     "type": "Cyclo Cross",
     "region": "Eastern",
     "venue": "Old Buckenham Country Park, Attleborough",
     "postcode": null,
     "date": "2025-11-23",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324558/eastern-region-cyclo-cross-championships-incorporating-eastern-league-202526-rd-7",
+    "url": "https://www.britishcycling.org.uk/events/details/324558/eastern-region-cyclo-cross-championships-incorporating-eastern-league-202526-rd-6",
     "source": "Google Sheet",
     "last_updated": "2025-08-19T02:15:26.000Z"
   },
@@ -312,15 +299,15 @@
     "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
-    "id": "4cd67465",
-    "name": "South Regional Cyclo-Cross Championships 2025",
+    "id": "46926df7",
+    "name": "South Regional Cyclo-Cross Championships 2025 incorporating Round 8 of the WCCL",
     "type": "Cyclo Cross",
     "region": "South",
     "venue": "Moredon Recreational Ground, Wiltshire",
     "postcode": null,
     "date": "2025-11-23",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328146/south-regional-cyclo-cross-championships-2025",
+    "url": "https://www.britishcycling.org.uk/events/details/328146/south-regional-cyclo-cross-championships-2025-incorporating-round-8-of-the-wccl",
     "source": "Google Sheet",
     "last_updated": "2025-10-16T02:15:24.000Z"
   },
@@ -336,6 +323,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/323752/south-west-regional-championships-incorporating-swcx-202526-round-6",
     "source": "Google Sheet",
     "last_updated": "2025-08-22T02:15:26.000Z"
+  },
+  {
+    "id": "40994bd7",
+    "name": "Welsh Cyclo-cross Championships- Pontypool RCC @ Pontypool Park",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Pontypool Park, Torfaen",
+    "postcode": null,
+    "date": "2025-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328674/welsh-cyclo-cross-championships--pontypool-rcc--pontypool-park",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "ea6e2442",
@@ -362,6 +362,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327071/grity-ndcxl-r5--holme-pierrepont",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "c6d6a255",
+    "name": "Challenge Tires London and South East CX League - Round 07",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Redbridge Cycling Centre, Ilford",
+    "postcode": null,
+    "date": "2025-11-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327111/challenge-tires-london-and-south-east-cx-league---round-07",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-19T02:15:24.000Z"
   },
   {
     "id": "476bf3cc",
@@ -403,6 +416,19 @@
     "last_updated": "2025-10-03T02:15:31.000Z"
   },
   {
+    "id": "3b8b6c0c",
+    "name": "NWCCA 2025/26 Round 5 - 'Another Fine Mess' hosted by Barrow Central Wheelers",
+    "type": "Cyclo Cross",
+    "region": "North West",
+    "venue": "Glaxo Sports Club, Ulverston",
+    "postcode": null,
+    "date": "2025-11-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/324578/nwcca-202526-round-5---another-fine-mess-hosted-by-barrow-central-wheelers-",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
     "id": "8de78217",
     "name": "Shimano Lazer WMCCL Round 10",
     "type": "Cyclo Cross",
@@ -416,15 +442,15 @@
     "last_updated": "2025-08-29T02:15:25.000Z"
   },
   {
-    "id": "783d700e",
-    "name": "Stow Scramble - Eastern League 2025/26 Rd 8",
+    "id": "10f93e34",
+    "name": "Stow Scramble - Eastern League 2025/26 Rd 7",
     "type": "Cyclo Cross",
     "region": "Eastern",
     "venue": "Haughley Park, Bury St Edmunds",
     "postcode": null,
     "date": "2025-11-30",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324559/stow-scramble---eastern-league-202526-rd-8",
+    "url": "https://www.britishcycling.org.uk/events/details/324559/stow-scramble---eastern-league-202526-rd-7",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
@@ -455,11 +481,24 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
-    "id": "d0dd0c2d",
+    "id": "6b5d8e82",
+    "name": "Lee Valley Cross - Eastern League 2025/26 Round 8",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Redbridge Cycling Centre, Ilford",
+    "postcode": null,
+    "date": "2025-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/324557/lee-valley-cross---eastern-league-202526-round-8",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-20T02:15:27.000Z"
+  },
+  {
+    "id": "d3b596c7",
     "name": "Lloyds Cyclo-cross National Trophy Series 2025/26 Round 5",
     "type": "Cyclo Cross",
     "region": "Yorkshire & Humber",
-    "venue": "Tong School, Bradford",
+    "venue": "Hunsworth Show Ground, Bradford",
     "postcode": null,
     "date": "2025-12-06",
     "start_time": "00:00",
@@ -481,6 +520,32 @@
     "last_updated": "2025-09-10T02:15:33.000Z"
   },
   {
+    "id": "063e749f",
+    "name": "East Kent Cyclo Cross League Round 4 #CondorCyclesCross",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Betteshanger Country Park, Kent",
+    "postcode": null,
+    "date": "2025-12-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328600/east-kent-cyclo-cross-league-round-4-condorcyclescross",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "a16d106c",
+    "name": "Shimano Lazer WMCCL Round 11",
+    "type": "Cyclo Cross",
+    "region": "West Midlands",
+    "venue": "Highley, Highley",
+    "postcode": null,
+    "date": "2025-12-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/324649/shimano-lazer-wmccl-round-11",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
     "id": "e910df41",
     "name": "SWCX 2025/26 Round 8",
     "type": "Cyclo Cross",
@@ -492,6 +557,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/323754/swcx-202526-round-8",
     "source": "Google Sheet",
     "last_updated": "2025-08-20T02:15:27.000Z"
+  },
+  {
+    "id": "bfda955d",
+    "name": "NDCXL 20256 Round 6 Allestree",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Allestree Park, Derby",
+    "postcode": null,
+    "date": "2025-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328634/ndcxl-20256-round-6-allestree",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "74980b51",
@@ -518,6 +596,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/324104/cxne-202526-round-8",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "ee7ca8b3",
+    "name": "NWCCA 2025/26 Round 6 - Element CT & Friends CX at Betley Court Farm",
+    "type": "Cyclo Cross",
+    "region": "North West",
+    "venue": "Betley Court Farm , Cheshire",
+    "postcode": null,
+    "date": "2025-12-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328990/nwcca-202526-round-6---element-ct--friends-cx-at-betley-court-farm",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "508a3b1a",
@@ -609,6 +700,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/323535/yorkshire-cyclo-cross-championships-round-8",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "1c9faca5",
+    "name": "Crossmanay",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Irvine Beach Park, Ayrshire",
+    "postcode": null,
+    "date": "2025-12-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328075/crossmanay-",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "55065db6",
@@ -713,5 +817,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/326022/western-cyclo-cross-league-round-11---forest-of-dean---winter-20252026",
     "source": "Google Sheet",
     "last_updated": "2025-10-16T02:15:24.000Z"
+  },
+  {
+    "id": "303282ef",
+    "name": "Leicestershire Cyclo-cross League Rd 6 promoted by CWCC",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "The Manor Farm, Whitwick",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/326138/leicestershire-cyclo-cross-league-rd-6-promoted-by-cwcc",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   }
 ]
