@@ -312,6 +312,19 @@
     "last_updated": "2025-09-11T02:15:25.000Z"
   },
   {
+    "id": "dac43c69",
+    "name": "London Youth Track League 2025-6: Round 4",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2025-12-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328437/london-youth-track-league-2025-6-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-06T19:20:51.000Z"
+  },
+  {
     "id": "34d51dc7",
     "name": "2025 Scottish National Track Championships & Support races (incl. Para)",
     "type": "Track",
@@ -427,6 +440,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326866/newport-live-endurance-track-league-10",
     "source": "Google Sheet",
     "last_updated": "2025-09-11T02:15:25.000Z"
+  },
+  {
+    "id": "a50bb397",
+    "name": "London Youth Track League 2025-6: Round 5",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2025-12-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328987/london-youth-track-league-2025-6-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-06T19:20:51.000Z"
   },
   {
     "id": "36953eb0",
@@ -609,6 +635,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/315925/monsters-of-track---round-5",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "de4a136c",
+    "name": "National Youth Omnium 2026 - Round 1  Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328479/national-youth-omnium-2026---round-1--newport",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-06T19:20:51.000Z"
   },
   {
     "id": "30a39095",
