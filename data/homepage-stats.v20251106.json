@@ -22,7 +22,7 @@
     },
     "speedway": {
       "name": "Speedway",
-      "count": 0
+      "count": 1
     },
     "time-trial": {
       "name": "Time Trial",
@@ -33,6 +33,6 @@
       "count": 5
     }
   },
-  "last_build": "2025-11-06T19:22:01.029Z",
-  "total_events": 163
+  "last_build": "2025-11-06T19:24:53.685Z",
+  "total_events": 164
 }
