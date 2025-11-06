@@ -170,8 +170,23 @@ function renderEventCard(event) {
   `;
 }
 
+// Convert kebab-case page type to discipline name
+function getDisciplineName(pageType) {
+  const disciplineMap = {
+    'road': 'Road',
+    'track': 'Track',
+    'bmx': 'BMX',
+    'mtb': 'MTB',
+    'cyclo-cross': 'Cyclo-Cross',
+    'speedway': 'Speedway',
+    'time-trial': 'Time Trial',
+    'hill-climb': 'Hill Climb'
+  };
+  return disciplineMap[pageType] || 'events';
+}
+
 // Render events list
-function renderEvents(events, container, countElement, emptyElement, filters) {
+function renderEvents(events, container, countElement, emptyElement, filters, disciplineName) {
   // Update count
   const count = events.length;
   
@@ -189,7 +204,11 @@ function renderEvents(events, container, countElement, emptyElement, filters) {
     
     // Check if this is due to filters or no events at all
     const hasFilters = filters.regions.length > 0;
-    emptyElement.textContent = hasFilters ? 'No events match your filters.' : 'No Upcoming Events Found';
+    if (hasFilters) {
+      emptyElement.innerHTML = `There are no upcoming ${disciplineName} events currently listed in the regions you selected.<br><br>Try adjusting the filter by selecting adjacent regions, as there may be other events not too far away.`;
+    } else {
+      emptyElement.textContent = 'No Upcoming Events Found';
+    }
   }
 }
 
@@ -235,6 +254,8 @@ export function initEventsPage() {
     return;
   }
   
+  // Get discipline name from page type
+  const disciplineName = getDisciplineName(pageType);
   
   // Burger menu is now handled by render.js
   
@@ -402,7 +423,7 @@ export function initEventsPage() {
     const filteredEvents = sortEvents(filterEvents(allEvents, filters));
     
     // Render results
-    renderEvents(filteredEvents, eventList, resultCount, emptyState, filters);
+    renderEvents(filteredEvents, eventList, resultCount, emptyState, filters, disciplineName);
     
     // Update URL
     updateUrl(filters);

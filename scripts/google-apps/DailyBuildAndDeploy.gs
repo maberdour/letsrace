@@ -1176,7 +1176,8 @@ function normalizeType(typeValue, eventName = null, eventUrl = null) {
     'track league': 'Track',
     'road': 'Road',
     'town centre crit': 'Road',
-    'speedway': 'Speedway'
+    'speedway': 'Speedway',
+    'cycle speedway': 'Speedway'
   };
   
   // Special handling for Go-Ride events
