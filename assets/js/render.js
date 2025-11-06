@@ -173,7 +173,161 @@ function createBurgerMenu() {
 // Initialize mobile menu on page load
 document.addEventListener('DOMContentLoaded', () => {
   createBurgerMenu();
+  createFeedbackButton();
 });
+
+// Create feedback button and modal
+function createFeedbackButton() {
+  // Check if feedback button already exists
+  if (document.querySelector('#feedback-button')) {
+    return;
+  }
+
+  // Create feedback button
+  const button = document.createElement('button');
+  button.id = 'feedback-button';
+  button.className = 'feedback-button';
+  button.setAttribute('aria-label', 'Share your feedback');
+  button.innerHTML = '💬 Share Your Feedback';
+  
+  // Create modal overlay
+  const modal = document.createElement('div');
+  modal.id = 'feedback-modal';
+  modal.className = 'feedback-modal';
+  modal.innerHTML = `
+    <div class="feedback-modal-content">
+      <button class="feedback-modal-close" aria-label="Close feedback form">&times;</button>
+      <div class="feedback-modal-header">
+        <h2>Share Your Feedback</h2>
+        <p>We want LetsRace.cc to be useful for young riders, parents and clubs. If you spot a bug, have a suggestion, or just want to say hi — we'd love to hear from you!</p>
+      </div>
+      <div class="feedback-modal-body">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe11TMJvnqfgqAH0vT_EBWqMxkNW-Z_xSOvoyBnaGB4jYW44Q/viewform?embedded=true" 
+          width="100%" 
+          height="1622" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0"
+          style="min-height: 600px;"
+          title="Feedback form">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  `;
+
+  // Add modal to body
+  document.body.appendChild(modal);
+
+  // Find where to insert the button
+  const filtersSection = document.querySelector('.filters');
+  const eventList = document.querySelector('#event-list');
+  const resultsSection = document.querySelector('.results');
+
+  // Desktop button: Add to filters section if it exists
+  if (filtersSection) {
+    const filterGroup = filtersSection.querySelector('.filter-group');
+    if (filterGroup) {
+      // Insert after the filter-group
+      filterGroup.insertAdjacentElement('afterend', button);
+    } else {
+      // Fallback: append to filters section
+      filtersSection.appendChild(button);
+    }
+  } else {
+    // For pages without filters, try to add inside .general-content first
+    const generalContent = document.querySelector('.general-content');
+    if (generalContent) {
+      // Add to end of general-content (for about/FAQ pages)
+      generalContent.appendChild(button);
+    } else {
+      // Fallback: add to main
+      const main = document.querySelector('main');
+      if (main) {
+        main.appendChild(button);
+      } else {
+        document.body.appendChild(button);
+      }
+    }
+  }
+
+  // Mobile button: Add after event list, newly added events button, or before footer
+  const mobileButton = button.cloneNode(true);
+  mobileButton.id = 'feedback-button-mobile';
+  mobileButton.className = 'feedback-button feedback-button-mobile';
+  
+  // Check if we're on the homepage
+  const isHomepage = document.body.classList.contains('homepage') || document.body.getAttribute('data-type') === 'homepage';
+  
+  if (isHomepage) {
+    // Homepage: Add after "Newly Added Events" button
+    const newEventsSection = document.querySelector('.new-events');
+    if (newEventsSection) {
+      newEventsSection.insertAdjacentElement('afterend', mobileButton);
+    } else {
+      // Fallback: Add before footer
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.insertAdjacentElement('beforebegin', mobileButton);
+      } else {
+        const main = document.querySelector('main');
+        if (main) {
+          main.appendChild(mobileButton);
+        }
+      }
+    }
+  } else if (eventList) {
+    // Event pages: Add after event list
+    eventList.insertAdjacentElement('afterend', mobileButton);
+  } else {
+    // Other pages: Add before footer
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.insertAdjacentElement('beforebegin', mobileButton);
+    } else {
+      // Fallback: Add to end of main or results
+      if (resultsSection) {
+        resultsSection.appendChild(mobileButton);
+      } else {
+        const main = document.querySelector('main');
+        if (main) {
+          main.appendChild(mobileButton);
+        }
+      }
+    }
+  }
+
+  // Event listeners for both buttons
+  [button, mobileButton].forEach(btn => {
+    btn.addEventListener('click', () => {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+  });
+
+  const closeButton = modal.querySelector('.feedback-modal-close');
+  closeButton.addEventListener('click', () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+  });
+
+  // Close modal when clicking outside
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+  });
+}
 
 // Enhanced event rendering with better error handling
 function renderEvent(event, container) {
