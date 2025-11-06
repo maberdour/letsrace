@@ -1261,7 +1261,7 @@ main h1 {
    ========================================================================== */
 
 footer {
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-left: -2rem;
   margin-right: -2rem;
   padding: 1.5rem;
@@ -1438,6 +1438,7 @@ footer a:visited {
   }
   
   footer {
+    margin-top: 3rem;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     padding: 1rem;

@@ -74,7 +74,7 @@
 
     <script>
     (function () {
-        // Delegate click handling to ensure only one open at a time
+        // Delegate click handling to toggle FAQ items
         document.addEventListener('click', function (e) {
             const button = e.target.closest('.faq-question');
             if (!button) return;
@@ -82,16 +82,25 @@
             const list = document.getElementById('faq-list');
             if (!list) return;
 
-            // Close all
-            const allButtons = list.querySelectorAll('.faq-question[aria-expanded]');
-            const allAnswers = list.querySelectorAll('.faq-answer');
-            allButtons.forEach(b => b.setAttribute('aria-expanded', 'false'));
-            allAnswers.forEach(a => a.setAttribute('hidden', ''));
-
-            // Open the clicked one
             const answerId = button.getAttribute('aria-controls');
             const answer = answerId ? document.getElementById(answerId) : null;
-            if (answer) {
+            if (!answer) return;
+
+            // Check if the clicked question is already expanded
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                // Collapse the clicked question
+                button.setAttribute('aria-expanded', 'false');
+                answer.setAttribute('hidden', '');
+            } else {
+                // Close all others first
+                const allButtons = list.querySelectorAll('.faq-question[aria-expanded]');
+                const allAnswers = list.querySelectorAll('.faq-answer');
+                allButtons.forEach(b => b.setAttribute('aria-expanded', 'false'));
+                allAnswers.forEach(a => a.setAttribute('hidden', ''));
+
+                // Open the clicked one
                 button.setAttribute('aria-expanded', 'true');
                 answer.removeAttribute('hidden');
             }
