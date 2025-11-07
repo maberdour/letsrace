@@ -1,18 +1,5 @@
 [
   {
-    "id": "5570889b",
-    "name": "Maldon & District CC Club 1",
-    "type": "Hill Climb",
-    "region": "Eastern",
-    "venue": "Essex | 845 yards | EH/08 | Loddarts Hill",
-    "postcode": null,
-    "date": "2025-11-02",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/34295-maldon-district-cc-club-1",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T07:41:47.000Z"
-  },
-  {
     "id": "38525d83",
     "name": "Titsey Hill / White Lane Hill Climb",
     "type": "Hill Climb",
@@ -37,6 +24,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/33458-calder-clarion-cycling-club-5-mile-nyd-time-trial",
     "source": "Google Sheet",
     "last_updated": "2025-09-12T15:13:13.000Z"
+  },
+  {
+    "id": "f1bde984",
+    "name": "C C Bexley - STANSTED HILL Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Kent | 1 miles | QHC/5 | STANSTED HILL",
+    "postcode": null,
+    "date": "2026-08-19",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/43685-c-c-bexley-stansted-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:53.000Z"
   },
   {
     "id": "b42dfd80",
