@@ -1,42 +1,16 @@
 [
   {
-    "id": "66cce4a7",
-    "name": "Woodlandriders racing winter series 2025-2026 Round 1",
+    "id": "364e5c38",
+    "name": "Racers Guild Racing - Works Components Super Cup '25. Final Round, A&E.",
     "type": "MTB",
-    "region": "South West",
-    "venue": "Gawton Downhill, Tavistock",
+    "region": "West Midlands",
+    "venue": "Stile Cop, Staffordshire",
     "postcode": null,
-    "date": "2025-11-02",
+    "date": "2025-11-30",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327327/woodlandriders-racing-winter-series-2025-2026-round-1",
+    "url": "https://www.britishcycling.org.uk/events/details/328670/racers-guild-racing---works-components-super-cup-25-final-round-ae",
     "source": "Google Sheet",
-    "last_updated": "2025-10-04T02:15:27.000Z"
-  },
-  {
-    "id": "5c19816b",
-    "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R3",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Beaumanor Hall, Loughborough",
-    "postcode": null,
-    "date": "2025-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319234/b-buddies-off-ride-go-ride-race-league-2526-r3",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "3bd15c5e",
-    "name": "100% Mini Downhill Nov 2025",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Canop Cycle Centre, Forest Of Dean",
-    "postcode": null,
-    "date": "2025-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326291/100-mini-downhill-nov-2025",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-04T02:15:25.000Z"
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "51882697",
@@ -52,11 +26,11 @@
     "last_updated": "2025-09-04T02:15:25.000Z"
   },
   {
-    "id": "5b3d1125",
+    "id": "dd410d78",
     "name": "Woodlandriders racing winter series 2025-2026 Round 2",
     "type": "MTB",
     "region": "South West",
-    "venue": "Gawton Downhill, Tavistock",
+    "venue": "Tavistock Woodland Estate, Devon",
     "postcode": null,
     "date": "2025-12-07",
     "start_time": "00:00",
