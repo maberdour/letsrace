@@ -5,7 +5,7 @@
   <title>Weekly Email Digest - LetsRace.cc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Subscribe to the LetsRace.cc weekly youth cycling email. Get plain-text updates filtered by your favourite regions, disciplines, and weekday." />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com https://script.google.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com https://script.google.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self' https://script.google.com;" />
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <link rel="stylesheet" href="../assets/css/styles.css?v=6">
@@ -21,7 +21,10 @@
       <h1>Weekly Email Digest</h1>
       <p>Want the latest youth cycling events in your inbox? Pick your regions, disciplines, and the weekday that works for you. We’ll send a single plain-text update — no tracking pixels, no spam.</p>
 
-      <form id="weekly-email-form" class="stacked-form" data-endpoint="https://script.google.com/macros/s/AKfycbxxRPictdAQHwgm3cNHClg-wXScuCTmktC-tscLXBOGQS14gIh8X7bZC2yymih0GL8GKg/exec" novalidate>
+      <form action="https://script.google.com/macros/s/AKfycbxxRPictdAQHwgm3cNHClg-wXScuCTmktC-tscLXBOGQS14gIh8X7bZC2yymih0GL8GKg/exec" method="POST" class="stacked-form" novalidate>
+        <input type="hidden" name="redirect_url" value="">
+        <input type="hidden" name="site_referrer" value="">
+        <input type="hidden" name="user_agent" value="">
         <div class="form-field">
           <label for="email">Email address</label>
           <input type="email" id="email" name="email" autocomplete="email" required />
@@ -32,18 +35,18 @@
           <p class="hint">Choose one or more regions you want updates for.</p>
           <div class="form-grid" role="group" aria-labelledby="regions-label">
             <span id="regions-label" class="visually-hidden">Regions</span>
-            <label><input type="checkbox" name="regions" value="Central"> Central</label>
-            <label><input type="checkbox" name="regions" value="Eastern"> Eastern</label>
-            <label><input type="checkbox" name="regions" value="London &amp; South East"> London &amp; South East</label>
-            <label><input type="checkbox" name="regions" value="East Midlands"> East Midlands</label>
-            <label><input type="checkbox" name="regions" value="West Midlands"> West Midlands</label>
-            <label><input type="checkbox" name="regions" value="North East"> North East</label>
-            <label><input type="checkbox" name="regions" value="North West"> North West</label>
-            <label><input type="checkbox" name="regions" value="Scotland"> Scotland</label>
-            <label><input type="checkbox" name="regions" value="South"> South</label>
-            <label><input type="checkbox" name="regions" value="South West"> South West</label>
-            <label><input type="checkbox" name="regions" value="Wales"> Wales</label>
-            <label><input type="checkbox" name="regions" value="Yorkshire &amp; Humber"> Yorkshire &amp; Humber</label>
+            <label><input type="checkbox" name="regions[]" value="Central"> Central</label>
+            <label><input type="checkbox" name="regions[]" value="Eastern"> Eastern</label>
+            <label><input type="checkbox" name="regions[]" value="London &amp; South East"> London &amp; South East</label>
+            <label><input type="checkbox" name="regions[]" value="East Midlands"> East Midlands</label>
+            <label><input type="checkbox" name="regions[]" value="West Midlands"> West Midlands</label>
+            <label><input type="checkbox" name="regions[]" value="North East"> North East</label>
+            <label><input type="checkbox" name="regions[]" value="North West"> North West</label>
+            <label><input type="checkbox" name="regions[]" value="Scotland"> Scotland</label>
+            <label><input type="checkbox" name="regions[]" value="South"> South</label>
+            <label><input type="checkbox" name="regions[]" value="South West"> South West</label>
+            <label><input type="checkbox" name="regions[]" value="Wales"> Wales</label>
+            <label><input type="checkbox" name="regions[]" value="Yorkshire &amp; Humber"> Yorkshire &amp; Humber</label>
           </div>
         </fieldset>
 
@@ -52,14 +55,14 @@
           <p class="hint">Pick the riding you care about. Choose as many as you like.</p>
           <div class="form-grid" role="group" aria-labelledby="disciplines-label">
             <span id="disciplines-label" class="visually-hidden">Disciplines</span>
-            <label><input type="checkbox" name="disciplines" value="Road"> Road</label>
-            <label><input type="checkbox" name="disciplines" value="Track"> Track</label>
-            <label><input type="checkbox" name="disciplines" value="BMX"> BMX</label>
-            <label><input type="checkbox" name="disciplines" value="MTB"> MTB</label>
-            <label><input type="checkbox" name="disciplines" value="Cyclo Cross"> Cyclo-Cross</label>
-            <label><input type="checkbox" name="disciplines" value="Speedway"> Cycle Speedway</label>
-            <label><input type="checkbox" name="disciplines" value="Time Trial"> Time Trial</label>
-            <label><input type="checkbox" name="disciplines" value="Hill Climb"> Hill Climb</label>
+            <label><input type="checkbox" name="disciplines[]" value="Road"> Road</label>
+            <label><input type="checkbox" name="disciplines[]" value="Track"> Track</label>
+            <label><input type="checkbox" name="disciplines[]" value="BMX"> BMX</label>
+            <label><input type="checkbox" name="disciplines[]" value="MTB"> MTB</label>
+            <label><input type="checkbox" name="disciplines[]" value="Cyclo Cross"> Cyclo-Cross</label>
+            <label><input type="checkbox" name="disciplines[]" value="Speedway"> Cycle Speedway</label>
+            <label><input type="checkbox" name="disciplines[]" value="Time Trial"> Time Trial</label>
+            <label><input type="checkbox" name="disciplines[]" value="Hill Climb"> Hill Climb</label>
           </div>
         </fieldset>
 
@@ -104,10 +107,79 @@
 
   <script src="../assets/js/cache.js?v=1"></script>
   <script src="../assets/js/render.js?v=18"></script>
-  <script src="../assets/js/email-signup.js?v=1"></script>
   <script>
     renderHeader("Weekly Email Digest");
     renderFooter();
+    document.addEventListener('DOMContentLoaded', () => {
+      const origin = window.location.origin;
+      const form = document.querySelector('.stacked-form');
+      const redirectField = form.querySelector('input[name="redirect_url"]');
+      const refField = form.querySelector('input[name="site_referrer"]');
+      const uaField = form.querySelector('input[name="user_agent"]');
+      const statusEl = document.getElementById('form-status');
+
+      if (redirectField) {
+        const defaultPath = '/pages/email-check.html';
+        if (/^https?:\/\/localhost/i.test(origin)) {
+          redirectField.value = 'https://www.letsrace.cc' + defaultPath;
+        } else {
+          redirectField.value = origin.replace(/\/$/, '') + defaultPath;
+        }
+      }
+      if (refField) {
+        refField.value = document.referrer || origin + window.location.pathname;
+      }
+      if (uaField) {
+        uaField.value = navigator.userAgent;
+      }
+
+      form.addEventListener('submit', (event) => {
+        statusEl.textContent = '';
+        statusEl.classList.remove('error', 'success');
+
+        const emailField = form.querySelector('#email');
+        const regionChecks = form.querySelectorAll('input[name="regions[]"]:checked');
+        const disciplineChecks = form.querySelectorAll('input[name="disciplines[]"]:checked');
+        const weekdaySelect = form.querySelector('#weekday');
+        const consentCheckbox = form.querySelector('#consent');
+
+        if (!emailField.value.trim()) {
+          statusEl.textContent = 'Please enter your email address.';
+          statusEl.classList.add('error');
+          emailField.focus();
+          event.preventDefault();
+          return;
+        }
+
+        if (regionChecks.length === 0) {
+          statusEl.textContent = 'Please select at least one region.';
+          statusEl.classList.add('error');
+          event.preventDefault();
+          return;
+        }
+
+        if (disciplineChecks.length === 0) {
+          statusEl.textContent = 'Please select at least one discipline.';
+          statusEl.classList.add('error');
+          event.preventDefault();
+          return;
+        }
+
+        if (!weekdaySelect.value) {
+          statusEl.textContent = 'Please choose the weekday you would like to receive your email.';
+          statusEl.classList.add('error');
+          weekdaySelect.focus();
+          event.preventDefault();
+          return;
+        }
+
+        if (!consentCheckbox.checked) {
+          statusEl.textContent = 'Please confirm that you agree to receive the weekly digest.';
+          statusEl.classList.add('error');
+          event.preventDefault();
+        }
+      });
+    });
   </script>
 </body>
 </html>

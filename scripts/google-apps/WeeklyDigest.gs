@@ -8,7 +8,7 @@
  *  - Manual bounce log support
  */
 
-const WEEKLY_DIGEST = {
+var WEEKLY_DIGEST = WEEKLY_DIGEST || {
   SHEET_ID: '13d2cjHHjpHhV4QvY6OA6NkeK_Rm2Zf3x4YH_UpBSO3c',
   SHEET_NAME: 'Subscribers',
   TIMEZONE: 'Europe/London',
@@ -69,8 +69,27 @@ const DISCIPLINE_NORMALISER = {
 function doPost(e) {
   try {
     const payload = parseRequestBody_(e);
+    const redirectUrl = Array.isArray(payload.redirect_url) ? payload.redirect_url[0] : payload.redirect_url;
+    const wantsRedirect = Boolean(redirectUrl);
+    payload.regions = Array.isArray(payload.regions) ? payload.regions : (payload.regions ? [payload.regions] : []);
+    payload.disciplines = Array.isArray(payload.disciplines) ? payload.disciplines : (payload.disciplines ? [payload.disciplines] : []);
+    payload.regions = payload.regions.map(item => String(item || '').trim()).filter(Boolean);
+    payload.disciplines = payload.disciplines.map(item => String(item || '').trim()).filter(Boolean);
+    payload.weekday = String(payload.weekday || '').toLowerCase();
+    payload.email = Array.isArray(payload.email) ? String(payload.email[0] || '').trim() : String(payload.email || '').trim();
+    payload.site_referrer = Array.isArray(payload.site_referrer) ? payload.site_referrer[0] : payload.site_referrer;
+    payload.user_agent = Array.isArray(payload.user_agent) ? payload.user_agent[0] : payload.user_agent;
+    if (Array.isArray(payload.consent)) {
+      payload.consent = payload.consent.some(value => String(value).toLowerCase() === 'on' || String(value).toLowerCase() === 'true');
+    } else {
+      payload.consent = payload.consent === true || String(payload.consent || '').toLowerCase() === 'on' || String(payload.consent || '').toLowerCase() === 'true';
+    }
     const validationError = validateSignupPayload_(payload);
     if (validationError) {
+      if (wantsRedirect) {
+        const retryUrl = payload.site_referrer || WEEKLY_DIGEST.SITE_BASE_URL + '/pages/weekly-email.html';
+        return renderErrorPage_(validationError, retryUrl);
+      }
       return jsonResponse_({
         success: false,
         message: validationError
@@ -82,6 +101,8 @@ function doPost(e) {
     const token = Utilities.getUuid();
     const tokenExpires = futureIsoHours_(WEEKLY_DIGEST.TOKEN_TTL_HOURS);
     const cleanEmail = payload.email.toLowerCase();
+    const siteReferrer = payload.site_referrer || (e && e.headers && (e.headers.referer || e.headers.Referer)) || '';
+    const userAgent = payload.user_agent || (e && e.headers && (e.headers['User-Agent'] || e.headers['user-agent'])) || '';
 
     const record = {
       email: cleanEmail,
@@ -93,8 +114,8 @@ function doPost(e) {
       token_expires_at: tokenExpires,
       subscribed_at: nowIso,
       consent_version: WEEKLY_DIGEST.REQUIRED_CONSENT_VERSION,
-      site_referrer: payload.site_referrer || '',
-      user_agent: payload.user_agent || '',
+      site_referrer: siteReferrer,
+      user_agent: userAgent,
       manage_token: Utilities.getUuid(),
       manage_token_expires_at: futureIsoDays_(WEEKLY_DIGEST.MANAGE_TOKEN_TTL_DAYS),
       bounce_status: 'ok'
@@ -103,12 +124,20 @@ function doPost(e) {
     upsertSubscriber_(sheet, record);
     sendConfirmationEmail_(cleanEmail, record);
 
+    if (wantsRedirect) {
+      return renderRedirectPage_(redirectUrl || (WEEKLY_DIGEST.SITE_BASE_URL + '/pages/email-check.html'));
+    }
+
     return jsonResponse_({
       success: true,
       message: 'Thanks! Please check your inbox to confirm your email.'
     });
   } catch (error) {
     Logger.log(`Signup error: ${error.message}\n${error.stack}`);
+    const fallbackUrl = (e && e.parameter && e.parameter.site_referrer) || WEEKLY_DIGEST.SITE_BASE_URL + '/pages/weekly-email.html';
+    if (e && e.parameter && e.parameter.redirect_url) {
+      return renderErrorPage_('We could not process that request. Please try again in a few minutes.', fallbackUrl);
+    }
     return jsonResponse_({
       success: false,
       message: 'We could not process that request. Please try again in a few minutes.'
@@ -274,22 +303,40 @@ function doOptions(e) {
 
 function parseRequestBody_(e) {
   if (e && e.postData && e.postData.contents) {
-    if (e.postData.type === 'application/json') {
+    const type = (e.postData.type || '').toLowerCase();
+    if (type === 'application/json') {
       return JSON.parse(e.postData.contents);
     }
-    if (e.postData.type === 'text/plain') {
+    if (type === 'text/plain') {
       return JSON.parse(e.postData.contents);
     }
-    const params = JSON.parse(JSON.stringify(e.parameter || {}));
-    if (params.regions && typeof params.regions === 'string') {
-      params.regions = params.regions.split(',');
+    if (type === 'application/x-www-form-urlencoded') {
+      return parseFormParameters_(e);
     }
-    if (params.disciplines && typeof params.disciplines === 'string') {
-      params.disciplines = params.disciplines.split(',');
-    }
-    return params;
+  }
+  if (e && e.parameter) {
+    return parseFormParameters_(e);
   }
   return {};
+}
+
+function parseFormParameters_(e) {
+  const params = {};
+  const rawParams = e.parameters || {};
+  Object.keys(rawParams).forEach(key => {
+    const values = rawParams[key];
+    const baseKey = key.endsWith('[]') ? key.slice(0, -2) : key;
+    if (Array.isArray(values)) {
+      if (key.endsWith('[]') || values.length > 1) {
+        params[baseKey] = values.map(v => String(v || '').trim()).filter(Boolean);
+      } else {
+        params[baseKey] = String(values[0] || '').trim();
+      }
+    } else if (values !== null && values !== undefined) {
+      params[baseKey] = String(values).trim();
+    }
+  });
+  return params;
 }
 
 function validateSignupPayload_(payload) {
@@ -886,6 +933,27 @@ function redirectTo_(path) {
   return html;
 }
 
+function renderRedirectPage_(targetUrl) {
+  const safeUrl = sanitizeUrl_(targetUrl, WEEKLY_DIGEST.SITE_BASE_URL + '/pages/email-confirmed.html');
+  const html = HtmlService.createHtmlOutput(
+    `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Thanks!</title><meta http-equiv="refresh" content="0; url=${safeUrl}"></head>` +
+    `<body><p>Thanks! Please check your inbox to confirm your email. If you are not redirected automatically, <a href="${safeUrl}">click here</a>.</p></body></html>`
+  );
+  html.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+  return html;
+}
+
+function renderErrorPage_(message, retryUrl) {
+  const safeMessage = escapeHtml_(message || 'Something went wrong while submitting your form.');
+  const safeRetry = sanitizeUrl_(retryUrl, WEEKLY_DIGEST.SITE_BASE_URL + '/pages/weekly-email.html');
+  const html = HtmlService.createHtmlOutput(
+    `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Problem submitting</title></head>` +
+    `<body><h1>We couldn’t process that</h1><p>${safeMessage}</p><p><a href="${safeRetry}">Go back and try again</a></p></body></html>`
+  );
+  html.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+  return html;
+}
+
 function nowIso_() {
   return new Date().toISOString();
 }
@@ -1006,6 +1074,28 @@ function withCorsHeaders_(textOutput) {
     .setHeader('Access-Control-Allow-Origin', '*')
     .setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
     .setHeader('Access-Control-Allow-Headers', 'Content-Type');
+}
+
+function sanitizeUrl_(url, fallback) {
+  if (!url) {
+    return fallback;
+  }
+  if (url.startsWith('http://') || url.startsWith('https://')) {
+    return url;
+  }
+  if (url.startsWith('/')) {
+    return WEEKLY_DIGEST.SITE_BASE_URL.replace(/\/$/, '') + url;
+  }
+  return fallback;
+}
+
+function escapeHtml_(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function isSheetPaused_(sheet) {
