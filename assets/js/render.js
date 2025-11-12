@@ -118,6 +118,7 @@ function createBurgerMenu() {
     'time-trial': 'time-trial',
     'hill-climb': 'hill-climb',
     'speedway': 'speedway',
+    'weekly-email.html': 'weekly-email',
     'about.html': 'about',
     'faq.html': 'faq'
   };

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weekly Email Digest - LetsRace.cc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Subscribe to the LetsRace.cc weekly youth cycling email. Get plain-text updates filtered by your favourite regions, disciplines, and weekday." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com https://script.google.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+
+  <link rel="dns-prefetch" href="//gc.zgo.at">
+  <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
+  <link rel="preconnect" href="https://letsrace.goatcounter.com" crossorigin>
+</head>
+<body>
+
+  <main>
+    <div class="general-content">
+      <h1>Weekly Email Digest</h1>
+      <p>Want the latest youth cycling events in your inbox? Pick your regions, disciplines, and the weekday that works for you. We’ll send a single plain-text update — no tracking pixels, no spam.</p>
+
+      <form id="weekly-email-form" class="stacked-form" data-endpoint="https://script.google.com/macros/s/AKfycbxxRPictdAQHwgm3cNHClg-wXScuCTmktC-tscLXBOGQS14gIh8X7bZC2yymih0GL8GKg/exec" novalidate>
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+        </div>
+
+        <fieldset>
+          <legend>Regions</legend>
+          <p class="hint">Choose one or more regions you want updates for.</p>
+          <div class="form-grid" role="group" aria-labelledby="regions-label">
+            <span id="regions-label" class="visually-hidden">Regions</span>
+            <label><input type="checkbox" name="regions" value="Central"> Central</label>
+            <label><input type="checkbox" name="regions" value="Eastern"> Eastern</label>
+            <label><input type="checkbox" name="regions" value="London &amp; South East"> London &amp; South East</label>
+            <label><input type="checkbox" name="regions" value="East Midlands"> East Midlands</label>
+            <label><input type="checkbox" name="regions" value="West Midlands"> West Midlands</label>
+            <label><input type="checkbox" name="regions" value="North East"> North East</label>
+            <label><input type="checkbox" name="regions" value="North West"> North West</label>
+            <label><input type="checkbox" name="regions" value="Scotland"> Scotland</label>
+            <label><input type="checkbox" name="regions" value="South"> South</label>
+            <label><input type="checkbox" name="regions" value="South West"> South West</label>
+            <label><input type="checkbox" name="regions" value="Wales"> Wales</label>
+            <label><input type="checkbox" name="regions" value="Yorkshire &amp; Humber"> Yorkshire &amp; Humber</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Disciplines</legend>
+          <p class="hint">Pick the riding you care about. Choose as many as you like.</p>
+          <div class="form-grid" role="group" aria-labelledby="disciplines-label">
+            <span id="disciplines-label" class="visually-hidden">Disciplines</span>
+            <label><input type="checkbox" name="disciplines" value="Road"> Road</label>
+            <label><input type="checkbox" name="disciplines" value="Track"> Track</label>
+            <label><input type="checkbox" name="disciplines" value="BMX"> BMX</label>
+            <label><input type="checkbox" name="disciplines" value="MTB"> MTB</label>
+            <label><input type="checkbox" name="disciplines" value="Cyclo Cross"> Cyclo-Cross</label>
+            <label><input type="checkbox" name="disciplines" value="Speedway"> Cycle Speedway</label>
+            <label><input type="checkbox" name="disciplines" value="Time Trial"> Time Trial</label>
+            <label><input type="checkbox" name="disciplines" value="Hill Climb"> Hill Climb</label>
+          </div>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="weekday">Send my email on</label>
+          <select id="weekday" name="weekday" required>
+            <option value="" disabled selected>Select a weekday</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+          </select>
+        </div>
+
+        <div class="form-field checkbox">
+          <label>
+            <input type="checkbox" id="consent" name="consent" required>
+            I agree to receive a weekly email from LetsRace.cc. You’ll send one plain-text digest, you won’t track it, and I can unsubscribe at any time.
+          </label>
+        </div>
+
+        <button type="submit" class="primary-button">Send me my weekly digest</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <section class="email-faq">
+        <h2>What to expect</h2>
+        <ul>
+          <li>Events 4–6 weeks ahead, grouped by discipline and date.</li>
+          <li>“Last chance” reminders for races happening within the next month.</li>
+          <li>Fresh finds marked as “New this week”.</li>
+          <li>A short note from a regional supporter or bike shop.</li>
+          <li>A link back to LetsRace.cc so you can explore the full listings.</li>
+        </ul>
+        <p>If you change your mind, every email contains a one-click unsubscribe link and a way to adjust your preferences.</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="../assets/js/cache.js?v=1"></script>
+  <script src="../assets/js/render.js?v=18"></script>
+  <script src="../assets/js/email-signup.js?v=1"></script>
+  <script>
+    renderHeader("Weekly Email Digest");
+    renderFooter();
+  </script>
+</body>
+</html>
+

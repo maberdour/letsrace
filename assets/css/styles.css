@@ -13,6 +13,132 @@ body {
   padding: 2rem;
 }
 
+/* ==========================================================================
+   WEEKLY EMAIL FORM
+   ========================================================================== */
+
+.stacked-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stacked-form .form-field label,
+.stacked-form fieldset legend {
+  font-weight: 600;
+  color: #0b3d68;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.stacked-form input[type="email"],
+.stacked-form select {
+  width: 100%;
+  max-width: 32rem;
+  padding: 0.75rem;
+  border: 1px solid #c5d5e4;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.stacked-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.stacked-form fieldset {
+  border: 1px solid #c5d5e4;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #f8fbff;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.stacked-form .form-field.checkbox label {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: #4a647d;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.primary-button {
+  align-self: flex-start;
+  background: #0b6bd6;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background: #084f9c;
+}
+
+.form-status {
+  min-height: 1.25rem;
+  font-size: 0.95rem;
+  color: #0b6bd6;
+  margin: 0;
+}
+
+.form-status.error {
+  color: #d62828;
+}
+
+.form-status.success {
+  color: #2b9348;
+}
+
+.email-faq {
+  margin-top: 3rem;
+}
+
+.email-faq ul {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .stacked-form fieldset {
+    padding: 1rem 0.75rem;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
 /* Global H1 Styles - applies to all pages */
 h1 {
   color: #0077cc;
