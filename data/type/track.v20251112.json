@@ -1,94 +1,16 @@
 [
   {
-    "id": "c90019dd",
-    "name": "London Youth Track League 2025-6: Round 2",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2025-11-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327230/london-youth-track-league-2025-6-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-23T02:15:24.000Z"
-  },
-  {
-    "id": "0deb3275",
-    "name": "Manchester Regional Track League 2025 #12 (MRTL)",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester",
-    "postcode": null,
-    "date": "2025-11-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325295/manchester-regional-track-league-2025-12-mrtl",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-29T02:15:25.000Z"
-  },
-  {
-    "id": "cc2134f7",
-    "name": "Calshot Caudron Series Rd2",
-    "type": "Track",
-    "region": "South",
-    "venue": "Calshot Velodrome, Hampshire",
-    "postcode": null,
-    "date": "2025-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325672/calshot-caudron-series-rd2",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-07T02:15:26.000Z"
-  },
-  {
-    "id": "f9e999e1",
-    "name": "Geraint Thomas Velodrome Sprint night #2",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2025-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326856/geraint-thomas-velodrome-sprint-night-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
-  },
-  {
-    "id": "6accb1d8",
-    "name": "Monsters of Track - Round 1",
+    "id": "7a38d512",
+    "name": "2025/26 Glasgow Track League Round 6",
     "type": "Track",
     "region": "Scotland",
     "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
     "postcode": null,
-    "date": "2025-11-08",
+    "date": "2025-11-14",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/315921/monsters-of-track---round-1",
+    "url": "https://www.britishcycling.org.uk/events/details/326698/202526-glasgow-track-league-round-6",
     "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "1be04e9e",
-    "name": "Monday Night Track League 2025 Round 26",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-11-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312952/monday-night-track-league-2025-round-26",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
-    "id": "3cef3ce9",
-    "name": "Newport Live Endurance Track League #5",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2025-11-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326858/newport-live-endurance-track-league-5",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "34c6c814",
@@ -143,6 +65,19 @@
     "last_updated": "2025-09-11T02:15:25.000Z"
   },
   {
+    "id": "46c85a1a",
+    "name": "Derby Arena Youth Track League Event 12",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2025-11-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328378/derby-arena-youth-track-league-event-12",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
     "id": "2021856c",
     "name": "London Youth Track League 2025-6: Round 3",
     "type": "Track",
@@ -154,6 +89,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327231/london-youth-track-league-2025-6-round-3",
     "source": "Google Sheet",
     "last_updated": "2025-09-23T02:15:24.000Z"
+  },
+  {
+    "id": "ef3b7fe1",
+    "name": "2025/26 Glasgow Track League Round 7",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2025-11-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/326699/202526-glasgow-track-league-round-7",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "4d120958",
@@ -208,6 +156,19 @@
     "last_updated": "2025-09-11T02:15:25.000Z"
   },
   {
+    "id": "3bf8df5d",
+    "name": "2025/26 Glasgow Track League Round 8",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2025-11-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/326700/202526-glasgow-track-league-round-8",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
     "id": "fa77cd1a",
     "name": "Manchester Regional Track League 2025 #15 (MRTL)",
     "type": "Track",
@@ -219,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/325298/manchester-regional-track-league-2025-15-mrtl",
     "source": "Google Sheet",
     "last_updated": "2025-09-02T02:15:44.000Z"
+  },
+  {
+    "id": "4b92e07d",
+    "name": "Calshot Cauldron Series Rd3",
+    "type": "Track",
+    "region": "South",
+    "venue": "Calshot Velodrome, Hampshire",
+    "postcode": null,
+    "date": "2025-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/325673/calshot-cauldron-series-rd3",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "b340730c",
@@ -247,6 +221,19 @@
     "last_updated": "2025-09-11T02:15:25.000Z"
   },
   {
+    "id": "dac43c69",
+    "name": "London Youth Track League 2025-6: Round 4",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2025-12-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328437/london-youth-track-league-2025-6-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-06T19:20:51.000Z"
+  },
+  {
     "id": "34d51dc7",
     "name": "2025 Scottish National Track Championships & Support races (incl. Para)",
     "type": "Track",
@@ -258,6 +245,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/325626/2025-scottish-national-track-championships--support-races-incl-para",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "8884b3ae",
+    "name": "Battle on the Boards",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2025-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327149/battle-on-the-boards",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "2b91595f",
+    "name": "Calshot Cauldron Series Rd4",
+    "type": "Track",
+    "region": "South",
+    "venue": "Calshot Velodrome, Hampshire",
+    "postcode": null,
+    "date": "2025-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/325674/calshot-cauldron-series-rd4",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
     "id": "83b77f78",
@@ -338,6 +351,32 @@
     "last_updated": "2025-09-11T02:15:25.000Z"
   },
   {
+    "id": "a50bb397",
+    "name": "London Youth Track League 2025-6: Round 5",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2025-12-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328987/london-youth-track-league-2025-6-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-06T19:20:51.000Z"
+  },
+  {
+    "id": "36953eb0",
+    "name": "2025/26 Glasgow Track League Round 9",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2025-12-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/326703/202526-glasgow-track-league-round-9",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
     "id": "5386f897",
     "name": "Lloyds National Track Series Round 3 (National Omnium & Madison Championships) - Manchester",
     "type": "Track",
@@ -390,13 +429,26 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
-    "id": "0e807b10",
+    "id": "ce957d49",
+    "name": "Lloyds National Track Series Round 4 (National Kilo TT Championships) - Glasgow",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2026-01-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/326470/lloyds-national-track-series-round-4-national-kilo-tt-championships---glasgow",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "a43fc41d",
     "name": "Geraint Thomas Velodrome Sprint night #4",
     "type": "Track",
     "region": "Wales",
     "venue": "Geraint Thomas National Velodrome of Wales, Wales",
     "postcode": null,
-    "date": "2026-01-17",
+    "date": "2026-01-24",
     "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/326867/geraint-thomas-velodrome-sprint-night-4",
     "source": "Google Sheet",
@@ -492,6 +544,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/315925/monsters-of-track---round-5",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "de4a136c",
+    "name": "National Youth Omnium 2026 - Round 1  Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328479/national-youth-omnium-2026---round-1--newport",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-06T19:20:51.000Z"
   },
   {
     "id": "30a39095",
