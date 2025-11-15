@@ -6,19 +6,19 @@
     },
     "track": {
       "name": "Track",
-      "count": 51
+      "count": 43
     },
     "bmx": {
       "name": "BMX",
-      "count": 27
+      "count": 24
     },
     "mtb": {
       "name": "MTB",
-      "count": 14
+      "count": 12
     },
     "cyclo-cross": {
       "name": "Cyclo Cross",
-      "count": 64
+      "count": 56
     },
     "speedway": {
       "name": "Speedway",
@@ -33,6 +33,6 @@
       "count": 5
     }
   },
-  "last_build": "2025-11-07T03:25:16.945Z",
-  "total_events": 162
+  "last_build": "2025-11-15T03:25:12.466Z",
+  "total_events": 141
 }

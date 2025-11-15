@@ -1,0 +1,98 @@
+{
+  "events": [
+    {
+      "id": "e80c3175",
+      "name": "Coventry Road Club - Kenilworth Common Boxing Day Cross 2025",
+      "type": "Cyclo Cross",
+      "region": "West Midlands",
+      "venue": "Kenilworth Common, Kenilworth",
+      "postcode": null,
+      "date": "2025-12-26",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329124/coventry-road-club---kenilworth-common-boxing-day-cross-2025",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-08T03:15:24.000Z"
+    },
+    {
+      "id": "cefc6359",
+      "name": "Muddy Monsters - CJCC Milton Country Park",
+      "type": "Cyclo Cross",
+      "region": "Eastern",
+      "venue": "Milton Country Park, Milton",
+      "postcode": null,
+      "date": "2025-11-22",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329125/muddy-monsters---cjcc-milton-country-park",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-08T03:15:24.000Z"
+    },
+    {
+      "id": "fb639db9",
+      "name": "Leicestershire Cyclo-cross League Rd 4 promoted by Team Pedal Power",
+      "type": "Cyclo Cross",
+      "region": "East Midlands",
+      "venue": "Turnpost Farm, Leicestershire",
+      "postcode": null,
+      "date": "2025-12-21",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/326136/leicestershire-cyclo-cross-league-rd-4-promoted-by-team-pedal-power",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-11T03:15:24.000Z"
+    },
+    {
+      "id": "1dd9771a",
+      "name": "NWCCA 2025/26 Round 7 - Christmas Cross",
+      "type": "Cyclo Cross",
+      "region": "Yorkshire & Humber",
+      "venue": "Woodside Cycle Centre, England",
+      "postcode": null,
+      "date": "2025-12-20",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/324580/nwcca-202526-round-7---christmas-cross",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-11T03:15:24.000Z"
+    },
+    {
+      "id": "94dfb29d",
+      "name": "Knightwood BMX Club 2025 Winter Series Round 2",
+      "type": "BMX",
+      "region": "South",
+      "venue": "Knightwood BMX , Hampshire",
+      "postcode": null,
+      "date": "2025-11-22",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329204/knightwood-bmx-club-2025-winter-series-round-2",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-12T03:15:25.000Z"
+    },
+    {
+      "id": "f8999523",
+      "name": "Telford Flyers Christmas Special race",
+      "type": "BMX",
+      "region": "West Midlands",
+      "venue": "Telford Flyers BMX Club., Telford",
+      "postcode": null,
+      "date": "2025-12-20",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329234/telford-flyers-christmas-special-race",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-12T03:15:25.000Z"
+    },
+    {
+      "id": "52cb6c3d",
+      "name": "Wessex Cyclocross League Round 11 - Andover Supercross",
+      "type": "Cyclo Cross",
+      "region": "South",
+      "venue": "Charlton Sports and Leisure Centre, Hampshire",
+      "postcode": null,
+      "date": "2026-01-04",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/328017/wessex-cyclocross-league-round-11---andover-supercross",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-14T03:15:25.000Z"
+    }
+  ],
+  "last_build": "2025-11-15T03:25:12.466Z",
+  "total_new_events": 7,
+  "cutoff_date": "2025-11-08"
+}
