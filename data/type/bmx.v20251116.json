@@ -1,70 +1,5 @@
 [
   {
-    "id": "3d286858",
-    "name": "Centurions Winter Series 2025-26 Round 1",
-    "type": "BMX",
-    "region": "Scotland",
-    "venue": "Broadwood Stadium, North Lanarkshire",
-    "postcode": null,
-    "date": "2025-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328866/centurions-winter-series-2025-26-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "1d3b7c8e",
-    "name": "Deep South 2025-26 Round 2",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Andover BMX Club, Andover",
-    "postcode": null,
-    "date": "2025-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326402/deep-south-2025-26-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-09T02:15:27.000Z"
-  },
-  {
-    "id": "b2b65f69",
-    "name": "Milton Keynes BMX Racing Club Winter Series 2025-2026 Round 3",
-    "type": "BMX",
-    "region": "Central",
-    "venue": "Milton Keynes BMX Track, Milton Keynes",
-    "postcode": null,
-    "date": "2025-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328944/milton-keynes-bmx-racing-club-winter-series-2025-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "b2b65f69",
-    "name": "Milton Keynes BMX Racing Club Winter Series 2025-2026 Round 3",
-    "type": "BMX",
-    "region": "Central",
-    "venue": "Milton Keynes BMX Track, Milton Keynes",
-    "postcode": null,
-    "date": "2025-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328944/milton-keynes-bmx-racing-club-winter-series-2025-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "66e2a35a",
-    "name": "Lloyds National BMX Freestyle Series Round 3 - C1",
-    "type": "BMX",
-    "region": "East Midlands",
-    "venue": "Adrenaline Alley, Corby",
-    "postcode": null,
-    "date": "2025-11-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319115/lloyds-national-bmx-freestyle-series-round-3---c1",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-26T13:11:00.000Z"
-  },
-  {
     "id": "0f0cea3c",
     "name": "Racing Under The Roof 2025/26 Round Two (EXPERT)",
     "type": "BMX",
@@ -89,6 +24,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/328482/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff2",
     "source": "Google Sheet",
     "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "94dfb29d",
+    "name": "Knightwood BMX Club 2025 Winter Series Round 2",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Knightwood BMX , Hampshire",
+    "postcode": null,
+    "date": "2025-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329204/knightwood-bmx-club-2025-winter-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-12T03:15:25.000Z"
   },
   {
     "id": "9ef51cc4",
@@ -193,6 +141,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326403/deep-south-2025-26-round-3",
     "source": "Google Sheet",
     "last_updated": "2025-09-09T02:15:27.000Z"
+  },
+  {
+    "id": "f8999523",
+    "name": "Telford Flyers Christmas Special race",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Telford Flyers BMX Club., Telford",
+    "postcode": null,
+    "date": "2025-12-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329234/telford-flyers-christmas-special-race",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-12T03:15:25.000Z"
   },
   {
     "id": "bedd8e8c",
