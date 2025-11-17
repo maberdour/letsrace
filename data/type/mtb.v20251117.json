@@ -1,18 +1,5 @@
 [
   {
-    "id": "3bd15c5e",
-    "name": "100% Mini Downhill Nov 2025",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Canop Cycle Centre, Forest Of Dean",
-    "postcode": null,
-    "date": "2025-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326291/100-mini-downhill-nov-2025",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-04T02:15:25.000Z"
-  },
-  {
     "id": "364e5c38",
     "name": "Racers Guild Racing - Works Components Super Cup '25. Final Round, A&E.",
     "type": "MTB",
