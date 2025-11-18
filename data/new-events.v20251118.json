@@ -1,0 +1,111 @@
+{
+  "events": [
+    {
+      "id": "fb639db9",
+      "name": "Leicestershire Cyclo-cross League Rd 4 promoted by Team Pedal Power",
+      "type": "Cyclo Cross",
+      "region": "East Midlands",
+      "venue": "Turnpost Farm, Leicestershire",
+      "postcode": null,
+      "date": "2025-12-21",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/326136/leicestershire-cyclo-cross-league-rd-4-promoted-by-team-pedal-power",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-11T03:15:24.000Z"
+    },
+    {
+      "id": "1dd9771a",
+      "name": "NWCCA 2025/26 Round 7 - Christmas Cross",
+      "type": "Cyclo Cross",
+      "region": "Yorkshire & Humber",
+      "venue": "Woodside Cycle Centre, England",
+      "postcode": null,
+      "date": "2025-12-20",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/324580/nwcca-202526-round-7---christmas-cross",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-11T03:15:24.000Z"
+    },
+    {
+      "id": "94dfb29d",
+      "name": "Knightwood BMX Club 2025 Winter Series Round 2",
+      "type": "BMX",
+      "region": "South",
+      "venue": "Knightwood BMX , Hampshire",
+      "postcode": null,
+      "date": "2025-11-22",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329204/knightwood-bmx-club-2025-winter-series-round-2",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-12T03:15:25.000Z"
+    },
+    {
+      "id": "f8999523",
+      "name": "Telford Flyers Christmas Special race",
+      "type": "BMX",
+      "region": "West Midlands",
+      "venue": "Telford Flyers BMX Club., Telford",
+      "postcode": null,
+      "date": "2025-12-20",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329234/telford-flyers-christmas-special-race",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-12T03:15:25.000Z"
+    },
+    {
+      "id": "52cb6c3d",
+      "name": "Wessex Cyclocross League Round 11 - Andover Supercross",
+      "type": "Cyclo Cross",
+      "region": "South",
+      "venue": "Charlton Sports and Leisure Centre, Hampshire",
+      "postcode": null,
+      "date": "2026-01-04",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/328017/wessex-cyclocross-league-round-11---andover-supercross",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-14T03:15:25.000Z"
+    },
+    {
+      "id": "0599a44e",
+      "name": "Wessex Cyclocross League Round 13 - Crow Cross",
+      "type": "Cyclo Cross",
+      "region": "South",
+      "venue": "Gaddens Close Farm, Ringwood",
+      "postcode": null,
+      "date": "2026-01-25",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/328018/wessex-cyclocross-league-round-13---crow-cross",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-18T03:15:31.000Z"
+    },
+    {
+      "id": "74e1b743",
+      "name": "New Year's Day Madison Cyclocross",
+      "type": "Cyclo Cross",
+      "region": "London & South East",
+      "venue": "Herne Hill Velodrome, London",
+      "postcode": null,
+      "date": "2026-01-01",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/328773/new-years-day-madison-cyclocross",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-18T03:15:31.000Z"
+    },
+    {
+      "id": "dbdac1df",
+      "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M2",
+      "type": "BMX",
+      "region": "North West",
+      "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+      "postcode": null,
+      "date": "2025-12-13",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329415/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m2",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-18T03:15:31.000Z"
+    }
+  ],
+  "last_build": "2025-11-18T03:25:17.834Z",
+  "total_new_events": 8,
+  "cutoff_date": "2025-11-11"
+}
