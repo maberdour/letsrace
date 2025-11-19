@@ -1,57 +1,5 @@
 [
   {
-    "id": "57f46809",
-    "name": "Lincolnshire Cyclo-cross 2025/2026 Race #9 (Velo Club Lincoln) - 14th Dec 2025",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Abbey Farm, Lincoln",
-    "postcode": null,
-    "date": "2025-11-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329100/lincolnshire-cyclo-cross-20252026-race-9-velo-club-lincoln---14th-dec-2025",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-08T03:15:24.000Z"
-  },
-  {
-    "id": "f355466b",
-    "name": "Lloyds Cyclo-cross National Trophy Series 2025/26 Round 4",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Sandwell Valley Country Park, West Bromwich",
-    "postcode": null,
-    "date": "2025-11-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324038/lloyds-cyclo-cross-national-trophy-series-202526-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "2cede4c8",
-    "name": "CCXL #8 Claydon CC",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Buckinghamshire Railway Centre, Buckinghamshire",
-    "postcode": null,
-    "date": "2025-11-16",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326336/ccxl-8-claydon-cc",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-10T02:15:33.000Z"
-  },
-  {
-    "id": "edc906c8",
-    "name": "East Kent Cylco Cross League Round 3 #StLawrenceCollegeCross",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "St Lawrence College, Kent",
-    "postcode": null,
-    "date": "2025-11-16",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328116/east-kent-cylco-cross-league-round-3-stlawrencecollegecross",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-16T02:15:24.000Z"
-  },
-  {
     "id": "54c50669",
     "name": "2025 Cyclo-Cross Relays",
     "type": "Cyclo Cross",
@@ -156,11 +104,11 @@
     "last_updated": "2025-10-07T02:15:26.000Z"
   },
   {
-    "id": "46926df7",
+    "id": "5ee28cf2",
     "name": "South Regional Cyclo-Cross Championships 2025 incorporating Round 8 of the WCCL",
     "type": "Cyclo Cross",
     "region": "South",
-    "venue": "Moredon Recreational Ground, Wiltshire",
+    "venue": "Pittville Park, Gloucestershire",
     "postcode": null,
     "date": "2025-11-23",
     "start_time": "00:00",
@@ -598,6 +546,19 @@
     "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
+    "id": "74e1b743",
+    "name": "New Year's Day Madison Cyclocross",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-01-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328773/new-years-day-madison-cyclocross",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-18T03:15:31.000Z"
+  },
+  {
     "id": "55065db6",
     "name": "NovaCross",
     "type": "Cyclo Cross",
@@ -635,6 +596,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/323755/swcx-202526-round-9",
     "source": "Google Sheet",
     "last_updated": "2025-08-20T02:15:27.000Z"
+  },
+  {
+    "id": "52cb6c3d",
+    "name": "Wessex Cyclocross League Round 11 - Andover Supercross",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Charlton Sports and Leisure Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-01-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328017/wessex-cyclocross-league-round-11---andover-supercross",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-14T03:15:25.000Z"
   },
   {
     "id": "440b19f0",
@@ -726,5 +700,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/326138/leicestershire-cyclo-cross-league-rd-6-promoted-by-cwcc",
     "source": "Google Sheet",
     "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "0599a44e",
+    "name": "Wessex Cyclocross League Round 13 - Crow Cross",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Gaddens Close Farm, Ringwood",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328018/wessex-cyclocross-league-round-13---crow-cross",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-18T03:15:31.000Z"
   }
 ]
