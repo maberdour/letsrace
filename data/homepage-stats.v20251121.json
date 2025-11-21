@@ -6,11 +6,11 @@
     },
     "track": {
       "name": "Track",
-      "count": 45
+      "count": 38
     },
     "bmx": {
       "name": "BMX",
-      "count": 24
+      "count": 23
     },
     "mtb": {
       "name": "MTB",
@@ -33,6 +33,6 @@
       "count": 5
     }
   },
-  "last_build": "2025-11-13T03:25:16.408Z",
-  "total_events": 143
+  "last_build": "2025-11-21T03:25:13.104Z",
+  "total_events": 135
 }
