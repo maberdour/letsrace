@@ -1,44 +1,5 @@
 [
   {
-    "id": "66e2a35a",
-    "name": "Lloyds National BMX Freestyle Series Round 3 - C1",
-    "type": "BMX",
-    "region": "East Midlands",
-    "venue": "Adrenaline Alley, Corby",
-    "postcode": null,
-    "date": "2025-11-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319115/lloyds-national-bmx-freestyle-series-round-3---c1",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-26T13:11:00.000Z"
-  },
-  {
-    "id": "0f0cea3c",
-    "name": "Racing Under The Roof 2025/26 Round Two (EXPERT)",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2025-11-16",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327937/racing-under-the-roof-202526-round-two-expert",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-16T02:15:24.000Z"
-  },
-  {
-    "id": "6dbbaf39",
-    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF2",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Gosport BMX Club, Hampshire",
-    "postcode": null,
-    "date": "2025-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328482/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
     "id": "94dfb29d",
     "name": "Knightwood BMX Club 2025 Winter Series Round 2",
     "type": "BMX",
@@ -154,6 +115,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326403/deep-south-2025-26-round-3",
     "source": "Google Sheet",
     "last_updated": "2025-09-09T02:15:27.000Z"
+  },
+  {
+    "id": "dbdac1df",
+    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M2",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2025-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329415/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m2",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-18T03:15:31.000Z"
   },
   {
     "id": "f8999523",
