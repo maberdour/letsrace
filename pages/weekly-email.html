@@ -5,7 +5,7 @@
   <title>Weekly Email Digest - LetsRace.cc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Subscribe to the LetsRace.cc weekly youth cycling email. Get plain-text updates filtered by your favourite regions, disciplines, and weekday." />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com https://script.google.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self' https://script.google.com;" />
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com https://*.amazonaws.com http://localhost:8000; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <link rel="stylesheet" href="../assets/css/styles.css?v=6">
@@ -19,36 +19,33 @@
   <main>
     <div class="general-content">
       <h1>Weekly Email Digest</h1>
-      <p>Want the latest youth cycling events in your inbox? Pick your regions, disciplines, and the weekday that works for you. We’ll send a single plain-text update — no tracking pixels, no spam.</p>
+      <p>Want the latest youth cycling events in your inbox? Pick your region, disciplines, and the weekday that works for you. We'll send a single email update each week — no tracking pixels, no spam.</p>
 
-      <form action="https://script.google.com/macros/s/AKfycbxxRPictdAQHwgm3cNHClg-wXScuCTmktC-tscLXBOGQS14gIh8X7bZC2yymih0GL8GKg/exec" method="POST" class="stacked-form" novalidate>
-        <input type="hidden" name="redirect_url" value="">
-        <input type="hidden" name="site_referrer" value="">
-        <input type="hidden" name="user_agent" value="">
+      <form id="subscribe-form" class="stacked-form" novalidate data-api-endpoint="">
         <div class="form-field">
           <label for="email">Email address</label>
           <input type="email" id="email" name="email" autocomplete="email" required />
         </div>
 
-        <fieldset>
-          <legend>Regions</legend>
-          <p class="hint">Choose one or more regions you want updates for.</p>
-          <div class="form-grid" role="group" aria-labelledby="regions-label">
-            <span id="regions-label" class="visually-hidden">Regions</span>
-            <label><input type="checkbox" name="regions[]" value="Central"> Central</label>
-            <label><input type="checkbox" name="regions[]" value="Eastern"> Eastern</label>
-            <label><input type="checkbox" name="regions[]" value="London &amp; South East"> London &amp; South East</label>
-            <label><input type="checkbox" name="regions[]" value="East Midlands"> East Midlands</label>
-            <label><input type="checkbox" name="regions[]" value="West Midlands"> West Midlands</label>
-            <label><input type="checkbox" name="regions[]" value="North East"> North East</label>
-            <label><input type="checkbox" name="regions[]" value="North West"> North West</label>
-            <label><input type="checkbox" name="regions[]" value="Scotland"> Scotland</label>
-            <label><input type="checkbox" name="regions[]" value="South"> South</label>
-            <label><input type="checkbox" name="regions[]" value="South West"> South West</label>
-            <label><input type="checkbox" name="regions[]" value="Wales"> Wales</label>
-            <label><input type="checkbox" name="regions[]" value="Yorkshire &amp; Humber"> Yorkshire &amp; Humber</label>
-          </div>
-        </fieldset>
+        <div class="form-field">
+          <label for="region">Region</label>
+          <p class="hint">Choose the region you want updates for.</p>
+          <select id="region" name="region" required>
+            <option value="" disabled selected>Select a region</option>
+            <option value="Central">Central</option>
+            <option value="Eastern">Eastern</option>
+            <option value="London &amp; South East">London &amp; South East</option>
+            <option value="East Midlands">East Midlands</option>
+            <option value="West Midlands">West Midlands</option>
+            <option value="North East">North East</option>
+            <option value="North West">North West</option>
+            <option value="Scotland">Scotland</option>
+            <option value="South">South</option>
+            <option value="South West">South West</option>
+            <option value="Wales">Wales</option>
+            <option value="Yorkshire &amp; Humber">Yorkshire &amp; Humber</option>
+          </select>
+        </div>
 
         <fieldset>
           <legend>Disciplines</legend>
@@ -68,22 +65,23 @@
 
         <div class="form-field">
           <label for="weekday">Send my email on</label>
-          <select id="weekday" name="weekday" required>
-            <option value="" disabled selected>Select a weekday</option>
-            <option value="monday">Monday</option>
-            <option value="tuesday">Tuesday</option>
-            <option value="wednesday">Wednesday</option>
-            <option value="thursday">Thursday</option>
-            <option value="friday">Friday</option>
-            <option value="saturday">Saturday</option>
-            <option value="sunday">Sunday</option>
+          <select id="weekday" name="weekday">
+            <option value="" disabled selected>Select a weekday (optional, defaults to Friday)</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
           </select>
+          <p class="hint">If not specified, you'll receive emails on Fridays.</p>
         </div>
 
         <div class="form-field checkbox">
           <label>
             <input type="checkbox" id="consent" name="consent" required>
-            I agree to receive a weekly email from LetsRace.cc. You’ll send one plain-text digest, you won’t track it, and I can unsubscribe at any time.
+            I agree to receive a weekly email from LetsRace.cc. You'll send one email digest, you won't track it, and I can unsubscribe at any time.
           </label>
         </div>
 
@@ -94,89 +92,116 @@
       <section class="email-faq">
         <h2>What to expect</h2>
         <ul>
-          <li>Events 4–6 weeks ahead, grouped by discipline and date.</li>
-          <li>“Last chance” reminders for races happening within the next month.</li>
-          <li>Fresh finds marked as “New this week”.</li>
-          <li>A short note from a regional supporter or bike shop.</li>
+          <li>Events newly added in the last 7 days.</li>
+          <li>Events coming up in the next 6 weeks.</li>
+          <li>Events filtered by your chosen region and disciplines.</li>
           <li>A link back to LetsRace.cc so you can explore the full listings.</li>
         </ul>
-        <p>If you change your mind, every email contains a one-click unsubscribe link and a way to adjust your preferences.</p>
+        <p>If you change your mind, every email contains a one-click unsubscribe link.</p>
       </section>
     </div>
   </main>
 
   <script src="../assets/js/cache.js?v=1"></script>
+  <script src="../assets/js/api-config.js?v=1"></script>
   <script src="../assets/js/render.js?v=18"></script>
   <script>
     renderHeader("Weekly Email Digest");
     renderFooter();
     document.addEventListener('DOMContentLoaded', () => {
-      const origin = window.location.origin;
-      const form = document.querySelector('.stacked-form');
-      const redirectField = form.querySelector('input[name="redirect_url"]');
-      const refField = form.querySelector('input[name="site_referrer"]');
-      const uaField = form.querySelector('input[name="user_agent"]');
+      const form = document.getElementById('subscribe-form');
       const statusEl = document.getElementById('form-status');
-
-      if (redirectField) {
-        const defaultPath = '/pages/email-check.html';
-        if (/^https?:\/\/localhost/i.test(origin)) {
-          redirectField.value = 'https://www.letsrace.cc' + defaultPath;
-        } else {
-          redirectField.value = origin.replace(/\/$/, '') + defaultPath;
-        }
-      }
-      if (refField) {
-        refField.value = document.referrer || origin + window.location.pathname;
-      }
-      if (uaField) {
-        uaField.value = navigator.userAgent;
-      }
-
-      form.addEventListener('submit', (event) => {
-        statusEl.textContent = '';
+      const submitButton = form.querySelector('button[type="submit"]');
+      
+      // Define setStatus function first
+      const setStatus = (message, type = 'info') => {
+        statusEl.textContent = message;
         statusEl.classList.remove('error', 'success');
+        if (type === 'error') {
+          statusEl.classList.add('error');
+        } else if (type === 'success') {
+          statusEl.classList.add('success');
+        }
+      };
+      
+      // Set API endpoint - uses config from api-config.js (required)
+      if (!window.API_CONFIG || !window.API_CONFIG.API_ENDPOINTS) {
+        console.error('API config not loaded. Make sure api-config.js is included.');
+        setStatus('Configuration error. Please refresh the page.', 'error');
+        return;
+      }
+      const apiEndpoint = form.dataset.apiEndpoint || window.API_CONFIG.API_ENDPOINTS.subscribe;
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        setStatus('');
 
         const emailField = form.querySelector('#email');
-        const regionChecks = form.querySelectorAll('input[name="regions[]"]:checked');
+        const regionSelect = form.querySelector('#region');
         const disciplineChecks = form.querySelectorAll('input[name="disciplines[]"]:checked');
         const weekdaySelect = form.querySelector('#weekday');
         const consentCheckbox = form.querySelector('#consent');
 
+        // Validation
         if (!emailField.value.trim()) {
-          statusEl.textContent = 'Please enter your email address.';
-          statusEl.classList.add('error');
+          setStatus('Please enter your email address.', 'error');
           emailField.focus();
-          event.preventDefault();
           return;
         }
 
-        if (regionChecks.length === 0) {
-          statusEl.textContent = 'Please select at least one region.';
-          statusEl.classList.add('error');
-          event.preventDefault();
+        if (!regionSelect.value) {
+          setStatus('Please select a region.', 'error');
+          regionSelect.focus();
           return;
         }
 
         if (disciplineChecks.length === 0) {
-          statusEl.textContent = 'Please select at least one discipline.';
-          statusEl.classList.add('error');
-          event.preventDefault();
-          return;
-        }
-
-        if (!weekdaySelect.value) {
-          statusEl.textContent = 'Please choose the weekday you would like to receive your email.';
-          statusEl.classList.add('error');
-          weekdaySelect.focus();
+          setStatus('Please select at least one discipline.', 'error');
           event.preventDefault();
           return;
         }
 
         if (!consentCheckbox.checked) {
-          statusEl.textContent = 'Please confirm that you agree to receive the weekly digest.';
-          statusEl.classList.add('error');
-          event.preventDefault();
+          setStatus('Please confirm that you agree to receive the weekly digest.', 'error');
+          return;
+        }
+
+        // Build payload
+        const disciplines = Array.from(disciplineChecks).map(cb => cb.value);
+        const payload = {
+          email: emailField.value.trim(),
+          region: regionSelect.value,
+          disciplines: disciplines,
+          send_day: weekdaySelect.value || 'Friday'
+        };
+
+        try {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Subscribing…';
+          setStatus('Subscribing…');
+
+          const response = await fetch(apiEndpoint, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          });
+
+          const result = await response.json();
+
+          if (!response.ok || result.success === false) {
+            throw new Error(result.message || 'Something went wrong. Please try again later.');
+          }
+
+          form.reset();
+          setStatus(result.message || 'Thanks! Your subscription is confirmed. You\'ll receive emails on ' + (payload.send_day || 'Friday') + 's.', 'success');
+        } catch (error) {
+          console.error('Subscribe failed:', error);
+          setStatus(error.message || 'Something went wrong. Please try again later.', 'error');
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Send me my weekly digest';
         }
       });
     });

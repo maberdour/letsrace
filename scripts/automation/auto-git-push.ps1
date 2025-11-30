@@ -14,9 +14,15 @@ try {
     Write-Host "Pulling latest changes..." -ForegroundColor Cyan
     git pull origin main
     
-    # Stage all changes
+    # Stage all changes (suppress line ending conversion warnings)
     Write-Host "Staging all changes..." -ForegroundColor Cyan
-    git add .
+    # Filter out line ending warnings from git add output
+    $output = git add . 2>&1
+    $output | Where-Object { 
+        $_ -notmatch "LF will be replaced by CRLF" -and 
+        $_ -notmatch "CRLF will be replaced by LF" -and
+        $_ -notmatch "warning: in the working copy"
+    } | ForEach-Object { if ($_ -and $_.ToString().Trim() -ne "") { Write-Host $_ } }
     
     # Prompt for commit message
     Write-Host "Enter a commit message (or press Enter for default):" -ForegroundColor Yellow

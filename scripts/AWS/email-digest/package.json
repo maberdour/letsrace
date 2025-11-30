@@ -1,0 +1,25 @@
+{
+  "name": "letsrace-email-digest",
+  "version": "1.0.0",
+  "description": "AWS Lambda functions for LetsRace.cc email digest system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/client-ses": "^3.0.0",
+    "uuid": "^8.3.2"
+  },
+  "keywords": [
+    "lambda",
+    "email",
+    "digest"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+

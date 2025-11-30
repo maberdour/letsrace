@@ -1,7 +1,12 @@
 /**
  * Weekly email automation for LetsRace.cc
  *
- * Handles:
+ * DEPRECATED: This Google Apps Script implementation has been replaced by AWS Lambda functions.
+ * See scripts/AWS/email-digest/ for the current implementation.
+ *
+ * This file is kept for reference only. Do not deploy or use this code.
+ *
+ * Old implementation handled:
  *  - Signup + double opt-in confirmation
  *  - Weekly digest sending with region/discipline filtering
  *  - Unsubscribe workflow and data retention
@@ -923,11 +928,11 @@ function jsonResponse_(payload) {
 }
 
 function redirectTo_(path) {
-  const url = WEEKLY_DIGEST.SITE_BASE_URL + path;
+  const url = sanitizeUrl_(WEEKLY_DIGEST.SITE_BASE_URL + path, WEEKLY_DIGEST.SITE_BASE_URL + '/index.html');
   const html = HtmlService.createHtmlOutput(
-    '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Redirecting…</title>' +
-    '<meta http-equiv="refresh" content="0; url=' + url + '">' +
-    '</head><body>Redirecting… If nothing happens, <a href="' + url + '">click here</a>.</body></html>'
+    `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Redirecting…</title></head>` +
+    `<body><script>window.location.replace(${JSON.stringify(url)});</script>` +
+    `<p>Redirecting… If nothing happens, <a href="${url}">click here</a>.</p></body></html>`
   );
   html.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
   return html;

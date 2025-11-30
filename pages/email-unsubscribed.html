@@ -5,7 +5,7 @@
   <title>Weekly Email Unsubscribed - LetsRace.cc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Confirmation that you have been unsubscribed from the LetsRace.cc weekly youth cycling digest." />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com https://*.amazonaws.com http://localhost:8000; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <link rel="stylesheet" href="../assets/css/styles.css?v=6">
@@ -18,18 +18,71 @@
 
   <main>
     <div class="general-content">
-      <h1>You’re off the list</h1>
-      <p>You’ve been unsubscribed from the LetsRace.cc weekly digest. We’ll hang on to your settings for up to 12 months in case you change your mind — after that we delete everything.</p>
-      <p>Want to come back later? You can rejoin anytime on the <a href="/pages/weekly-email.html">weekly email page</a>.</p>
-      <p>If this happened by mistake, drop us a note at <a href="mailto:hello@letsrace.cc">hello@letsrace.cc</a>.</p>
+      <h1>You're off the list</h1>
+      <div id="status-message">
+        <p>Unsubscribing…</p>
+      </div>
     </div>
   </main>
 
   <script src="../assets/js/cache.js?v=1"></script>
+  <script src="../assets/js/api-config.js?v=1"></script>
   <script src="../assets/js/render.js?v=18"></script>
   <script>
     renderHeader("Weekly Email Digest");
     renderFooter();
+    
+    (async () => {
+      const statusEl = document.getElementById('status-message');
+      // Get API endpoint from config (required)
+      if (!window.API_CONFIG || !window.API_CONFIG.API_ENDPOINTS) {
+        console.error('API config not loaded. Make sure api-config.js is included.');
+        statusEl.innerHTML = '<p>Configuration error. Please refresh the page.</p>';
+        return;
+      }
+      const apiEndpoint = window.API_CONFIG.API_ENDPOINTS.unsubscribe;
+      
+      // Get token from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const token = urlParams.get('token');
+      
+      if (!token) {
+        statusEl.innerHTML = `
+          <p>No unsubscribe token provided. If you received this link in an email, please use the link from that email.</p>
+          <p>You can also rejoin or update your preferences on the <a href="/pages/weekly-email.html">weekly email page</a>.</p>
+        `;
+        return;
+      }
+      
+      try {
+        const response = await fetch(apiEndpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ token: token })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          statusEl.innerHTML = `
+            <p>You've been unsubscribed from the LetsRace.cc weekly digest. We'll hang on to your settings for up to 12 months in case you change your mind — after that we delete everything.</p>
+            <p>Want to come back later? You can rejoin anytime on the <a href="/pages/weekly-email.html">weekly email page</a>.</p>
+            <p>If this happened by mistake, drop us a note at <a href="mailto:hello@letsrace.cc">hello@letsrace.cc</a>.</p>
+          `;
+        } else {
+          throw new Error(result.message || 'Unsubscribe failed');
+        }
+      } catch (error) {
+        console.error('Unsubscribe error:', error);
+        statusEl.innerHTML = `
+          <p>We couldn't process your unsubscribe request. This might be because the link has expired.</p>
+          <p>You can rejoin or update your preferences on the <a href="/pages/weekly-email.html">weekly email page</a>.</p>
+          <p>If you continue to have issues, please contact us at <a href="mailto:hello@letsrace.cc">hello@letsrace.cc</a>.</p>
+        `;
+      }
+    })();
   </script>
 </body>
 </html>

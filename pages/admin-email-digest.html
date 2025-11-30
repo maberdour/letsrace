@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - Email Digest - LetsRace.cc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Admin tools for LetsRace.cc email digest" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com https://*.amazonaws.com http://localhost:8000; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="stylesheet" href="../assets/css/styles.css?v=6">
+
+  <link rel="dns-prefetch" href="//gc.zgo.at">
+  <link rel="preconnect" href="https://gc.zgo.at" crossorigin>
+  <link rel="preconnect" href="https://letsrace.goatcounter.com" crossorigin>
+  
+  <style>
+    .admin-section {
+      margin: 2em 0;
+      padding: 1.5em;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .admin-section h2 {
+      margin-top: 0;
+    }
+    .preview-html {
+      border: 1px solid #ccc;
+      padding: 1em;
+      background: #f9f9f9;
+      max-height: 600px;
+      overflow: auto;
+      font-size: 0.9em;
+    }
+    .preview-html iframe {
+      width: 100%;
+      min-height: 400px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="general-content">
+      <h1>Admin - Email Digest</h1>
+      <p>Preview and test email digests. Admin token required.</p>
+
+      <div class="admin-section">
+        <h2>Preview Digest</h2>
+        <p>Generate HTML for a digest without sending it.</p>
+        <form id="preview-form" class="stacked-form">
+          <div class="form-field">
+            <label for="preview-region">Region</label>
+            <select id="preview-region" name="region" required>
+              <option value="" disabled selected>Select a region</option>
+              <option value="Central">Central</option>
+              <option value="Eastern">Eastern</option>
+              <option value="London & South East">London & South East</option>
+              <option value="East Midlands">East Midlands</option>
+              <option value="West Midlands">West Midlands</option>
+              <option value="North East">North East</option>
+              <option value="North West">North West</option>
+              <option value="Scotland">Scotland</option>
+              <option value="South">South</option>
+              <option value="South West">South West</option>
+              <option value="Wales">Wales</option>
+              <option value="Yorkshire & Humber">Yorkshire & Humber</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Disciplines</legend>
+            <div class="form-grid">
+              <label><input type="checkbox" name="disciplines[]" value="Road"> Road</label>
+              <label><input type="checkbox" name="disciplines[]" value="Track"> Track</label>
+              <label><input type="checkbox" name="disciplines[]" value="BMX"> BMX</label>
+              <label><input type="checkbox" name="disciplines[]" value="MTB"> MTB</label>
+              <label><input type="checkbox" name="disciplines[]" value="Cyclo Cross"> Cyclo-Cross</label>
+              <label><input type="checkbox" name="disciplines[]" value="Speedway"> Cycle Speedway</label>
+              <label><input type="checkbox" name="disciplines[]" value="Time Trial"> Time Trial</label>
+              <label><input type="checkbox" name="disciplines[]" value="Hill Climb"> Hill Climb</label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="preview-date">Date Override (optional)</label>
+            <input type="date" id="preview-date" name="date" />
+            <p class="hint">Use this date as "today" for the preview. Leave empty to use current date.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="admin-token">Admin Token</label>
+            <input type="password" id="admin-token" name="admin_token" required autocomplete="off" />
+          </div>
+
+          <button type="submit" class="primary-button">Preview Digest</button>
+          <p id="preview-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div id="preview-result" style="display: none;">
+          <h3>Preview Result</h3>
+          <p><strong>Subject:</strong> <span id="preview-subject"></span></p>
+          <p><strong>Has Content:</strong> <span id="preview-has-content"></span></p>
+          <div class="preview-html">
+            <iframe id="preview-iframe" sandbox="allow-same-origin"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-section">
+        <h2>Test Send</h2>
+        <p>Send a test digest to your email address.</p>
+        <form id="test-form" class="stacked-form">
+          <div class="form-field">
+            <label for="test-email">Email Address</label>
+            <input type="email" id="test-email" name="email" required autocomplete="email" />
+          </div>
+
+          <div class="form-field">
+            <label for="test-region">Region</label>
+            <select id="test-region" name="region" required>
+              <option value="" disabled selected>Select a region</option>
+              <option value="Central">Central</option>
+              <option value="Eastern">Eastern</option>
+              <option value="London & South East">London & South East</option>
+              <option value="East Midlands">East Midlands</option>
+              <option value="West Midlands">West Midlands</option>
+              <option value="North East">North East</option>
+              <option value="North West">North West</option>
+              <option value="Scotland">Scotland</option>
+              <option value="South">South</option>
+              <option value="South West">South West</option>
+              <option value="Wales">Wales</option>
+              <option value="Yorkshire & Humber">Yorkshire & Humber</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Disciplines</legend>
+            <div class="form-grid">
+              <label><input type="checkbox" name="disciplines[]" value="Road"> Road</label>
+              <label><input type="checkbox" name="disciplines[]" value="Track"> Track</label>
+              <label><input type="checkbox" name="disciplines[]" value="BMX"> BMX</label>
+              <label><input type="checkbox" name="disciplines[]" value="MTB"> MTB</label>
+              <label><input type="checkbox" name="disciplines[]" value="Cyclo Cross"> Cyclo-Cross</label>
+              <label><input type="checkbox" name="disciplines[]" value="Speedway"> Cycle Speedway</label>
+              <label><input type="checkbox" name="disciplines[]" value="Time Trial"> Time Trial</label>
+              <label><input type="checkbox" name="disciplines[]" value="Hill Climb"> Hill Climb</label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="test-date">Date Override (optional)</label>
+            <input type="date" id="test-date" name="date" />
+            <p class="hint">Use this date as "today" for the test. Leave empty to use current date.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="test-admin-token">Admin Token</label>
+            <input type="password" id="test-admin-token" name="admin_token" required autocomplete="off" />
+          </div>
+
+          <button type="submit" class="primary-button">Send Test Email</button>
+          <p id="test-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="admin-section">
+        <h2>Run Digest Now</h2>
+        <p>Manually trigger the daily digest runner (sends to all subscribers whose send_day matches today).</p>
+        <form id="run-form" class="stacked-form">
+          <div class="form-field">
+            <label for="run-admin-token">Admin Token</label>
+            <input type="password" id="run-admin-token" name="admin_token" required autocomplete="off" />
+          </div>
+
+          <button type="submit" class="primary-button">Run Digest Now</button>
+          <p id="run-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <div id="run-result" style="display: none;">
+          <h3>Run Result</h3>
+          <pre id="run-result-data"></pre>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../assets/js/cache.js?v=1"></script>
+  <script src="../assets/js/api-config.js?v=1"></script>
+  <script src="../assets/js/render.js?v=18"></script>
+  <script>
+    renderHeader("Admin - Email Digest");
+    renderFooter();
+    
+    // Use API config from api-config.js (required)
+    if (!window.API_CONFIG || !window.API_CONFIG.API_ENDPOINTS) {
+      console.error('API config not loaded. Make sure api-config.js is included.');
+      document.getElementById('preview-status').textContent = 'Configuration error. Please refresh the page.';
+      return;
+    }
+    const apiEndpoints = window.API_CONFIG.API_ENDPOINTS;
+    
+    // Preview form
+    document.getElementById('preview-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const statusEl = document.getElementById('preview-status');
+      const resultEl = document.getElementById('preview-result');
+      const submitButton = form.querySelector('button[type="submit"]');
+      
+      const disciplines = Array.from(form.querySelectorAll('input[name="disciplines[]"]:checked')).map(cb => cb.value);
+      const payload = {
+        region: form.querySelector('#preview-region').value,
+        disciplines: disciplines,
+        date: form.querySelector('#preview-date').value || undefined
+      };
+      
+      const adminToken = form.querySelector('#admin-token').value;
+      
+      if (!payload.region || disciplines.length === 0) {
+        statusEl.textContent = 'Please select a region and at least one discipline.';
+        statusEl.className = 'form-status error';
+        return;
+      }
+      
+      try {
+        submitButton.disabled = true;
+        statusEl.textContent = 'Generating preview…';
+        statusEl.className = 'form-status';
+        
+        const response = await fetch(apiEndpoints.previewDigest, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Admin-Token': adminToken
+          },
+          body: JSON.stringify(payload)
+        });
+        
+        const result = await response.json();
+        
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || 'Preview failed');
+        }
+        
+        document.getElementById('preview-subject').textContent = result.subject || 'N/A';
+        document.getElementById('preview-has-content').textContent = result.hasContent ? 'Yes' : 'No';
+        
+        const iframe = document.getElementById('preview-iframe');
+        iframe.srcdoc = result.html || '';
+        
+        resultEl.style.display = 'block';
+        statusEl.textContent = 'Preview generated successfully.';
+        statusEl.className = 'form-status success';
+      } catch (error) {
+        console.error('Preview error:', error);
+        statusEl.textContent = error.message || 'Failed to generate preview.';
+        statusEl.className = 'form-status error';
+        resultEl.style.display = 'none';
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+    
+    // Test form
+    document.getElementById('test-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const statusEl = document.getElementById('test-status');
+      const submitButton = form.querySelector('button[type="submit"]');
+      
+      const disciplines = Array.from(form.querySelectorAll('input[name="disciplines[]"]:checked')).map(cb => cb.value);
+      const payload = {
+        email: form.querySelector('#test-email').value.trim(),
+        region: form.querySelector('#test-region').value,
+        disciplines: disciplines,
+        date: form.querySelector('#test-date').value || undefined
+      };
+      
+      const adminToken = form.querySelector('#test-admin-token').value;
+      
+      if (!payload.email || !payload.region || disciplines.length === 0) {
+        statusEl.textContent = 'Please fill in all required fields.';
+        statusEl.className = 'form-status error';
+        return;
+      }
+      
+      try {
+        submitButton.disabled = true;
+        statusEl.textContent = 'Sending test email…';
+        statusEl.className = 'form-status';
+        
+        const response = await fetch(apiEndpoints.testDigest, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Admin-Token': adminToken
+          },
+          body: JSON.stringify(payload)
+        });
+        
+        const result = await response.json();
+        
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || 'Test send failed');
+        }
+        
+        statusEl.textContent = result.message || `Test email sent to ${payload.email}`;
+        statusEl.className = 'form-status success';
+      } catch (error) {
+        console.error('Test send error:', error);
+        statusEl.textContent = error.message || 'Failed to send test email.';
+        statusEl.className = 'form-status error';
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+    
+    // Run form
+    document.getElementById('run-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const statusEl = document.getElementById('run-status');
+      const resultEl = document.getElementById('run-result');
+      const submitButton = form.querySelector('button[type="submit"]');
+      
+      const adminToken = form.querySelector('#run-admin-token').value;
+      
+      try {
+        submitButton.disabled = true;
+        statusEl.textContent = 'Running digest…';
+        statusEl.className = 'form-status';
+        
+        const response = await fetch(apiEndpoints.runDigestNow, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Admin-Token': adminToken
+          },
+          body: JSON.stringify({})
+        });
+        
+        const result = await response.json();
+        
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || 'Digest run failed');
+        }
+        
+        document.getElementById('run-result-data').textContent = JSON.stringify(result.results || result, null, 2);
+        resultEl.style.display = 'block';
+        statusEl.textContent = result.message || 'Digest run completed.';
+        statusEl.className = 'form-status success';
+      } catch (error) {
+        console.error('Run digest error:', error);
+        statusEl.textContent = error.message || 'Failed to run digest.';
+        statusEl.className = 'form-status error';
+        resultEl.style.display = 'none';
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
+

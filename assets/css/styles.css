@@ -1149,6 +1149,16 @@ main h1 {
   padding-top: 1rem;
 }
 
+/* Filter instruction text - visible on desktop */
+.filter-instruction-text {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
 /* Filter buttons */
 .filter-buttons {
   display: flex;
@@ -1703,6 +1713,10 @@ footer a:visited {
     margin-top: -4rem;
     padding-top: 5rem;
   }
+  
+  .filter-instruction-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1755,6 +1769,18 @@ footer a:visited {
     overflow: visible;
   }
   
+  .filter-instruction-text {
+    display: none;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    padding: 0;
+  }
+  
+  .filter-content.expanded .filter-instruction-text {
+    display: block;
+  }
   
   .results {
     order: 2;
@@ -1770,7 +1796,8 @@ footer a:visited {
   }
   
   .apply-filter-btn,
-  .clear-regions-btn {
+  .clear-regions-btn,
+  .select-all-regions-btn {
     flex: 1;
   }
   

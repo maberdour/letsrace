@@ -1,7 +1,9 @@
 # Weekly Email Digest – Functional Specification
 
 ## Overview
-A privacy-friendly weekly digest that emails LetsRace.cc visitors with upcoming youth cycling events filtered by their chosen regions, disciplines, and delivery day. The system lives entirely within existing LetsRace infrastructure (static site + Google Apps Script + Google Sheets).
+A privacy-friendly weekly digest that emails LetsRace.cc visitors with upcoming youth cycling events filtered by their chosen regions, disciplines, and delivery day. 
+
+**Note:** This system has been migrated to AWS (Lambda, API Gateway, SES, S3). The old Google Apps Script implementation (`scripts/google-apps/WeeklyDigest.gs`) is deprecated. See `scripts/AWS/email-digest/README.md` for the current implementation.
 
 ## Components
 1. **Public signup page** (`pages/weekly-email.html`)  
