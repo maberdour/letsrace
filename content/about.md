@@ -11,4 +11,4 @@ Youth cycling is thriving – but event information can be scattered and hard to
 - an easier way for families to plan and support their riders' journeys.
 
 ## What's coming next
-This site is being updated regularly. If you've got an idea for how to improve it, please email:** [hello@letsrace.cc](mailto:hello@letsrace.cc)
+This site is being updated regularly. If you've got an idea for how to improve it, please email  [hello@letsrace.cc](mailto:hello@letsrace.cc)
