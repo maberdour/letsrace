@@ -1,70 +1,5 @@
 [
   {
-    "id": "94dfb29d",
-    "name": "Knightwood BMX Club 2025 Winter Series Round 2",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Knightwood BMX , Hampshire",
-    "postcode": null,
-    "date": "2025-11-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329204/knightwood-bmx-club-2025-winter-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-12T03:15:25.000Z"
-  },
-  {
-    "id": "9ef51cc4",
-    "name": "BMX East Winter Series 2025/2026 Round 3",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Ipswich BMX Track, IPSWICH",
-    "postcode": null,
-    "date": "2025-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327722/bmx-east-winter-series-20252026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-01T02:15:26.000Z"
-  },
-  {
-    "id": "ac0f5bda",
-    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #2",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Gosport BMX Club, Hampshire",
-    "postcode": null,
-    "date": "2025-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327909/british-cycling-pathway-development-centre-bmx---south-zone-1-25-26-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-07T02:15:26.000Z"
-  },
-  {
-    "id": "7322e423",
-    "name": "The London BMX Winter Series 2025-2026 Round 2",
-    "type": "BMX",
-    "region": "London & South East",
-    "venue": "Merton Saints BMX, Mitcham Eastfields",
-    "postcode": null,
-    "date": "2025-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328524/the-london-bmx-winter-series-2025-2026-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "aa6046dc",
-    "name": "Enter The Dragon - Winter Round 2",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2025-11-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328673/enter-the-dragon---winter-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
     "id": "b83ce88f",
     "name": "Birmingham BMX Club - Winter series round 2",
     "type": "BMX",
@@ -102,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327036/exeter-2526-winter-round-2",
     "source": "Google Sheet",
     "last_updated": "2025-09-16T02:15:25.000Z"
+  },
+  {
+    "id": "66860f5a",
+    "name": "Centurions Winter Series 2025-26 Round 2",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Broadwood Stadium, North Lanarkshire",
+    "postcode": null,
+    "date": "2025-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329542/centurions-winter-series-2025-26-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-26T03:15:25.000Z"
   },
   {
     "id": "686721dc",
