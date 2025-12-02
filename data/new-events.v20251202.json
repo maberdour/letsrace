@@ -1,0 +1,72 @@
+{
+  "events": [
+    {
+      "id": "66860f5a",
+      "name": "Centurions Winter Series 2025-26 Round 2",
+      "type": "BMX",
+      "region": "Scotland",
+      "venue": "Broadwood Stadium, North Lanarkshire",
+      "postcode": null,
+      "date": "2025-12-06",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329542/centurions-winter-series-2025-26-round-2",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-26T03:15:25.000Z"
+    },
+    {
+      "id": "b20bd25f",
+      "name": "FHHV Christmas Classic",
+      "type": "Track",
+      "region": "London & South East",
+      "venue": "Herne Hill Velodrome, London",
+      "postcode": null,
+      "date": "2025-12-20",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/328772/fhhv-christmas-classic",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-26T03:15:25.000Z"
+    },
+    {
+      "id": "8ac8b4f1",
+      "name": "Indoor Cycle Speedway Little league",
+      "type": "Speedway",
+      "region": "Eastern",
+      "venue": "Ormiston Endeavour Academy, Suffolk",
+      "postcode": null,
+      "date": "2026-01-18",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329593/indoor-cycle-speedway-little-league",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-26T03:15:25.000Z"
+    },
+    {
+      "id": "b93c0cfd",
+      "name": "Dual Slalom - Malverns Classic",
+      "type": "MTB",
+      "region": "West Midlands",
+      "venue": "Eastnor Castle Deer Park, Herefordshire",
+      "postcode": null,
+      "date": "2026-08-21",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/327317/dual-slalom---malverns-classic",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-27T03:15:28.000Z"
+    },
+    {
+      "id": "64f84b7d",
+      "name": "4X - Malverns Classic",
+      "type": "MTB",
+      "region": "West Midlands",
+      "venue": "Eastnor Castle Deer Park, Herefordshire",
+      "postcode": null,
+      "date": "2026-08-23",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/327548/4x---malverns-classic",
+      "source": "Google Sheet",
+      "last_updated": "2025-11-27T03:15:28.000Z"
+    }
+  ],
+  "last_build": "2025-12-02T03:25:15.813Z",
+  "total_new_events": 5,
+  "cutoff_date": "2025-11-25"
+}
