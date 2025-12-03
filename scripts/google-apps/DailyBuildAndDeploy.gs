@@ -135,9 +135,23 @@ function dailyBuild() {
       Logger.log(`⚠️ Skipping FAQ injection due to error: ${e.message}`);
     }
 
+    // Step 11b: Build About page HTML update from content/about.md
+    let aboutUpdate = null;
+    try {
+      aboutUpdate = buildAboutHtmlUpdate();
+      if (aboutUpdate) {
+        Logger.log('📝 About page update prepared');
+      } else {
+        Logger.log('ℹ️ No About page update prepared');
+      }
+    } catch (e) {
+      Logger.log(`⚠️ Skipping About page injection due to error: ${e.message}`);
+    }
+
     // Merge extra files
     const extraFiles = introHtmlUpdates.slice();
     if (faqUpdate) extraFiles.push(faqUpdate);
+    if (aboutUpdate) extraFiles.push(aboutUpdate);
 
     // Step 12: Commit all files to GitHub in a single batch (including manifest and extra HTML updates)
     const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename, extraFiles);
@@ -616,6 +630,161 @@ function replaceFaqListInHtml(html, itemsHtml) {
     return html.replace(/(<!--\s*FAQ_START\s*-->)([\s\S]*?)(<!--\s*FAQ_END\s*-->)/i, `$1\n${itemsHtml}\n$3`);
   }
   Logger.log('ℹ️ FAQ markers not found in pages/faq.html (<!-- FAQ_START --> ... <!-- FAQ_END -->). Skipping update to avoid duplication.');
+  return html;
+}
+
+/**
+ * Build updated About page HTML by parsing content/about.md and injecting into pages/about.html
+ */
+function buildAboutHtmlUpdate() {
+  const md = fetchRepoFileRaw('content/about.md');
+  if (!md) {
+    Logger.log('ℹ️ about.md not found, skipping');
+    return null;
+  }
+  const htmlContent = convertMarkdownToHtml(md);
+  if (!htmlContent || htmlContent.trim() === '') {
+    Logger.log('ℹ️ No About content parsed, skipping');
+    return null;
+  }
+  const pagePath = 'pages/about.html';
+  const html = fetchRepoFileRaw(pagePath);
+  if (!html) {
+    Logger.log(`ℹ️ ${pagePath} not found, skipping`);
+    return null;
+  }
+  const updated = replaceAboutContentInHtml(html, htmlContent);
+  if (updated && updated !== html) {
+    return {
+      path: `/${pagePath}`,
+      content: updated,
+      message: 'chore(content): update About page content from about.md'
+    };
+  }
+  return null;
+}
+
+/**
+ * Convert markdown to HTML for About page content
+ */
+function convertMarkdownToHtml(md) {
+  if (!md) return '';
+  
+  // Split into lines for processing
+  const lines = md.split(/\r?\n/);
+  const output = [];
+  let inList = false;
+  let currentParagraph = [];
+  
+  function flushParagraph() {
+    if (currentParagraph.length > 0) {
+      const paraText = currentParagraph.join(' ').trim();
+      if (paraText) {
+        output.push(`<p>${paraText}</p>`);
+      }
+      currentParagraph = [];
+    }
+  }
+  
+  function flushList() {
+    if (inList) {
+      output.push('</ul>');
+      inList = false;
+    }
+  }
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    
+    // Empty line - flush current paragraph or list
+    if (!line) {
+      flushParagraph();
+      flushList();
+      continue;
+    }
+    
+    // H1 heading
+    if (line.match(/^#\s+(.+)$/)) {
+      flushParagraph();
+      flushList();
+      const match = line.match(/^#\s+(.+)$/);
+      output.push(`<h1>${match[1]}</h1>`);
+      continue;
+    }
+    
+    // H2 heading
+    if (line.match(/^##\s+(.+)$/)) {
+      flushParagraph();
+      flushList();
+      const match = line.match(/^##\s+(.+)$/);
+      output.push(`<h2>${match[1]}</h2>`);
+      continue;
+    }
+    
+    // List item
+    if (line.match(/^-\s+(.+)$/)) {
+      flushParagraph();
+      if (!inList) {
+        output.push('<ul>');
+        inList = true;
+      }
+      const match = line.match(/^-\s+(.+)$/);
+      output.push(`  <li>${match[1]}</li>`);
+      continue;
+    }
+    
+    // Regular text - add to current paragraph
+    currentParagraph.push(line);
+  }
+  
+  // Flush any remaining paragraph or list
+  flushParagraph();
+  flushList();
+  
+  // Process inline formatting in the output
+  let html = output.join('\n      \n      ');
+  html = processInlineFormatting(html);
+  
+  // Clean up multiple consecutive empty lines
+  html = html.replace(/\n{3,}/g, '\n\n');
+  
+  return html.trim();
+}
+
+/**
+ * Process inline markdown formatting (bold, links) in text
+ */
+function processInlineFormatting(text) {
+  // Convert bold text
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  
+  // Convert links
+  text = text.replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>');
+  
+  return text;
+}
+
+/**
+ * Replace content within <div class="general-content">...</div> in About page HTML
+ */
+function replaceAboutContentInHtml(html, newContent) {
+  if (!html || !newContent) return html;
+  
+  // Remove H1 from markdown content if present (page has fixed H1)
+  let contentToInsert = newContent.replace(/<h1>.*?<\/h1>\s*/gi, '').trim();
+  
+  // Find the general-content div and replace content after the h1
+  // Pattern: <div class="general-content">\n<h1>About</h1>\n...content...</div>
+  const pattern = /(<div\s+class=["']general-content["']>\s*<h1>About<\/h1>)\s*([\s\S]*?)(\s*<\/div>)/i;
+  
+  if (pattern.test(html)) {
+    const newHtml = html.replace(pattern, (match, beforeContent, oldContent, afterContent) => {
+      return `${beforeContent}\n      \n      ${contentToInsert}\n    ${afterContent}`;
+    });
+    return newHtml;
+  }
+  
+  Logger.log('ℹ️ Could not find <div class="general-content"> with <h1>About</h1> in pages/about.html. Skipping update.');
   return html;
 }
 
