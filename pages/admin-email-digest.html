@@ -197,11 +197,10 @@
     if (!window.API_CONFIG || !window.API_CONFIG.API_ENDPOINTS) {
       console.error('API config not loaded. Make sure api-config.js is included.');
       document.getElementById('preview-status').textContent = 'Configuration error. Please refresh the page.';
-      return;
-    }
-    const apiEndpoints = window.API_CONFIG.API_ENDPOINTS;
-    
-    // Preview form
+    } else {
+      const apiEndpoints = window.API_CONFIG.API_ENDPOINTS;
+      
+      // Preview form
     document.getElementById('preview-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const form = e.target;
@@ -360,6 +359,7 @@
         submitButton.disabled = false;
       }
     });
+    }
   </script>
 </body>
 </html>

@@ -415,7 +415,9 @@ That's it! The following pages already reference this config file and will autom
 
 ## Step 7: Test Everything
 
-### 7.1 Test Subscribe Endpoint
+This section is your **end-to-end test plan**. Follow each subsection in order.
+
+### 7.1 Test Subscribe Endpoint (API only)
 
 You can test using the API Gateway console's built-in test feature, or use a browser extension like "REST Client" or "Postman":
 
@@ -435,19 +437,52 @@ You can test using the API Gateway console's built-in test feature, or use a bro
    - Click "Test"
    - Check the response
 
-Expected response:
-```json
-{
-  "success": true,
-  "message": "Thanks! Your subscription is confirmed. You'll receive emails on Fridays."
-}
-```
+2. **Expected response**:
+   ```json
+   {
+     "success": true,
+     "message": "Thanks! Your subscription is confirmed. You'll receive emails on Fridays."
+   }
+   ```
 
-### 7.2 Test Preview Digest (Admin)
+3. **Check S3**:
+   - Go to your S3 bucket (`letsrace-subscribers-prod`)
+   - Open `subscribers.json`
+   - Confirm the new subscriber has been added
+
+### 7.2 Test Unsubscribe Endpoint (API only)
+
+1. **Get a test subscriber**:
+   - Use the email you just subscribed in 7.1 (e.g. `test@example.com`)
+
+2. **Using API Gateway Console**:
+   - Go to your API Gateway → Select the `/unsubscribe` resource → Click on `POST` method
+   - Click "TEST"
+   - Method: `POST`
+   - Request body (example — match what your frontend sends):
+   ```json
+   {
+     "email": "test@example.com"
+   }
+   ```
+   - Click "Test"
+   - Check the response (should indicate success)
+
+3. **Check S3**:
+   - Open `subscribers.json` again
+   - Confirm the subscriber has either been removed or marked as unsubscribed, depending on how your Lambda is implemented
+
+4. **Optional: Test invalid/unrecognised email**:
+   - Repeat with an email that does **not** exist in `subscribers.json`
+   - Confirm you get a sensible error or "already unsubscribed" style response
+
+### 7.3 Test Preview Digest (Admin)
 
 Using API Gateway console test feature or a REST client:
+
 - Endpoint: `POST /preview-digest`
-- Headers: `X-Admin-Token: YOUR_ADMIN_TOKEN`
+- Headers:  
+  - `X-Admin-Token: YOUR_ADMIN_TOKEN`
 - Body:
 ```json
 {
@@ -456,11 +491,19 @@ Using API Gateway console test feature or a REST client:
 }
 ```
 
-### 7.3 Test Test-Send (Admin)
+Check:
+
+- Response is `success: true` (or appropriate data structure)
+- Any HTML/preview payload looks sensible for the chosen region/discipline
+- CloudWatch logs for `letsrace-preview-digest` show no errors
+
+### 7.4 Test Test-Send Digest (Admin)
 
 Using API Gateway console test feature or a REST client:
+
 - Endpoint: `POST /test-digest`
-- Headers: `X-Admin-Token: YOUR_ADMIN_TOKEN`
+- Headers:  
+  - `X-Admin-Token: YOUR_ADMIN_TOKEN`
 - Body:
 ```json
 {
@@ -470,22 +513,70 @@ Using API Gateway console test feature or a REST client:
 }
 ```
 
-Check your email!
+Then:
 
-### 7.4 Test Frontend
+1. Check the API response (should indicate email queued/sent successfully).
+2. Check your email inbox (`your-email@example.com`) for the test digest.
+3. If the email does not arrive:
+   - Check SES "Sending statistics" and "Event publishing" if configured.
+   - Check SES suppression list and bounces for that address.
+   - Check CloudWatch logs for `letsrace-test-digest` and underlying send function.
+
+### 7.5 Test Frontend Forms
 
 1. Open `https://www.letsrace.cc/pages/weekly-email.html`
-2. Fill out the form
+2. Fill out the form with a real email and choices:
+   - Email: your test email
+   - Region: e.g. `London & South East`
+   - Disciplines: e.g. `Road`, `Track`
+   - Day: e.g. `Friday`
 3. Submit
-4. Check browser console for errors
-5. Check S3 bucket - you should see a new entry in `subscribers.json`
+4. In your browser:
+   - Open DevTools (F12) → Network tab
+   - Confirm a `POST` request is sent to `{YOUR-API-URL}/subscribe`
+   - Confirm the response is a 200 with a success message
+5. In S3:
+   - Open `subscribers.json`
+   - Confirm the new subscriber entry is present
 
-### 7.5 Test Manual Digest Run (Admin)
+6. **Test unsubscribe via frontend**:
+   - Open the unsubscribe link as implemented in your emails (or directly: `https://www.letsrace.cc/pages/email-unsubscribed.html` if that’s where the token flow lands)
+   - Complete the unsubscribe flow
+   - Confirm:
+     - Browser shows the unsubscribe confirmation page
+     - The corresponding record in `subscribers.json` is updated/removed
+
+7. **Admin frontend**:
+   - Open `https://www.letsrace.cc/pages/admin-email-digest.html`
+   - Use the UI to:
+     - Preview a digest
+     - Send a test digest
+   - Confirm:
+     - Requests go to the right endpoints (`/preview-digest`, `/test-digest`, `/run-digest-now`)
+     - Responses are successful
+     - Emails arrive where expected
+
+### 7.6 Test Manual Digest Run (Admin)
 
 Using API Gateway console test feature or a REST client:
+
 - Endpoint: `POST /run-digest-now`
-- Headers: `X-Admin-Token: YOUR_ADMIN_TOKEN`
-- Body: `{}`
+- Headers:  
+  - `X-Admin-Token: YOUR_ADMIN_TOKEN`
+- Body:
+```json
+{}
+```
+
+Check:
+
+1. Response indicates the digest was triggered.
+2. CloudWatch logs for `letsrace-run-digest-now` (and any underlying functions) show:
+   - No errors
+   - Reasonable execution time
+3. Test recipients (as configured in your code) receive a digest email that:
+   - Includes the expected events
+   - Respects region/discipline filters
 
 ## Step 8: Monitor and Debug
 
@@ -513,7 +604,7 @@ Using API Gateway console test feature or a REST client:
   "headers": {
     "origin": "http://localhost:8000"
   },
-  "body": "{\"email\":\"test@example.com\",\"region\":\"all\",\"disciplines\":[\"all\"],\"send_day\":\"Friday\"}"
+  "body": "{\"email\":\"test@example.com\",\"region\":\"London & South East\",\"disciplines\":[\"Road\",\"Track\"],\"send_day\":\"Friday\"}"
 }
 ```
 
@@ -523,19 +614,19 @@ Using API Gateway console test feature or a REST client:
 
 ### Common Issues
 
-**Issue**: "AccessDenied" when accessing S3
+**Issue**: "AccessDenied" when accessing S3  
 - **Fix**: Check IAM role has `AmazonS3FullAccess` or create a policy that allows access to your specific bucket
 
-**Issue**: "Email address not verified" from SES
+**Issue**: "Email address not verified" from SES  
 - **Fix**: Verify your sender email in SES, and if in sandbox, verify recipient emails too
 
-**Issue**: CORS errors in browser
+**Issue**: CORS errors in browser  
 - **Fix**: Make sure CORS is enabled on API Gateway resources AND the Lambda functions return CORS headers
 
-**Issue**: "Invalid token" errors
+**Issue**: "Invalid token" errors  
 - **Fix**: Make sure `TOKEN_SECRET` and `ADMIN_TOKEN` environment variables are set correctly in ALL Lambda functions
 
-**Issue**: Lambda timeout
+**Issue**: Lambda timeout  
 - **Fix**: Increase timeout in Lambda configuration (especially for `run-digest`)
 
 ## Step 9: Production Checklist
@@ -549,10 +640,13 @@ Using API Gateway console test feature or a REST client:
 - [ ] CloudWatch Events rule created and enabled
 - [ ] S3 bucket created with initial `subscribers.json`
 - [ ] IAM role has correct permissions
-- [ ] Tested subscribe endpoint
-- [ ] Tested unsubscribe endpoint
-- [ ] Tested admin preview/test endpoints
-- [ ] Tested manual digest run
+- [ ] Tested subscribe endpoint (API)
+- [ ] Tested unsubscribe endpoint (API)
+- [ ] Tested frontend subscribe flow
+- [ ] Tested frontend unsubscribe flow
+- [ ] Tested admin preview endpoint
+- [ ] Tested admin test-send endpoint
+- [ ] Tested manual digest run endpoint
 - [ ] CloudWatch logs working
 - [ ] Monitoring/alerts set up (optional but recommended)
 
@@ -639,10 +733,12 @@ If something doesn't work:
 ## Support
 
 If you get stuck:
+
 1. Check CloudWatch logs first
 2. Test endpoints individually using the API Gateway console test feature
 3. Verify all environment variables match across functions
 4. Make sure IAM role has correct permissions
 
 Good luck! 🚀
+
 
