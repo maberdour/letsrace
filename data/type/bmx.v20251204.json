@@ -1,44 +1,5 @@
 [
   {
-    "id": "aa6046dc",
-    "name": "Enter The Dragon - Winter Round 2",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2025-11-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328673/enter-the-dragon---winter-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "b83ce88f",
-    "name": "Birmingham BMX Club - Winter series round 2",
-    "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Birmingham BMX Club, Birmingham",
-    "postcode": null,
-    "date": "2025-11-30",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328993/birmingham-bmx-club---winter-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "60abb39e",
-    "name": "Peterborough bmx winter series - Round 2",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2025-11-30",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329035/peterborough-bmx-winter-series---round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-06T03:15:24.000Z"
-  },
-  {
     "id": "076a77f7",
     "name": "Exeter 25/26 Winter Round 2",
     "type": "BMX",

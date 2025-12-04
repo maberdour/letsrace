@@ -1,18 +1,5 @@
 [
   {
-    "id": "364e5c38",
-    "name": "Racers Guild Racing - Works Components Super Cup '25. Final Round, A&E.",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Stile Cop, Staffordshire",
-    "postcode": null,
-    "date": "2025-11-30",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328670/racers-guild-racing---works-components-super-cup-25-final-round-ae",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
     "id": "51882697",
     "name": "100% Mini Downhill Dec 2025",
     "type": "MTB",
@@ -104,6 +91,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "55a53a04",
+    "name": "ERC Go Ride Dirt Crit",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Davidson's Mains Park, Edinburgh",
+    "postcode": null,
+    "date": "2026-04-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329591/erc-go-ride-dirt-crit",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-03T03:15:25.000Z"
+  },
+  {
     "id": "d5ad189a",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R9",
     "type": "MTB",
@@ -130,6 +130,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "2761b72d",
+    "name": "Lloyds National Enduro & E-Enduro Championships 2026 - Powered by Cycle 360",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Slieau Whallian Plantation, Isle of Man",
+    "postcode": null,
+    "date": "2026-08-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329329/lloyds-national-enduro--e-enduro-championships-2026---powered-by-cycle-360",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-04T03:15:28.000Z"
+  },
+  {
     "id": "223fd9fe",
     "name": "DMR Pump Track Challenge",
     "type": "MTB",
@@ -143,6 +156,19 @@
     "last_updated": "2025-09-25T02:15:24.000Z"
   },
   {
+    "id": "b93c0cfd",
+    "name": "Dual Slalom - Malverns Classic",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Eastnor Castle Deer Park, Herefordshire",
+    "postcode": null,
+    "date": "2026-08-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327317/dual-slalom---malverns-classic",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-27T03:15:28.000Z"
+  },
+  {
     "id": "0b02dc58",
     "name": "Schwalbe Downhill",
     "type": "MTB",
@@ -154,5 +180,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/326845/schwalbe-downhill",
     "source": "Google Sheet",
     "last_updated": "2025-09-25T02:15:24.000Z"
+  },
+  {
+    "id": "64f84b7d",
+    "name": "4X - Malverns Classic",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Eastnor Castle Deer Park, Herefordshire",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327548/4x---malverns-classic",
+    "source": "Google Sheet",
+    "last_updated": "2025-11-27T03:15:28.000Z"
   }
 ]
