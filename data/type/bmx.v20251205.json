@@ -1,44 +1,5 @@
 [
   {
-    "id": "aa6046dc",
-    "name": "Enter The Dragon - Winter Round 2",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2025-11-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328673/enter-the-dragon---winter-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "b83ce88f",
-    "name": "Birmingham BMX Club - Winter series round 2",
-    "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Birmingham BMX Club, Birmingham",
-    "postcode": null,
-    "date": "2025-11-30",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328993/birmingham-bmx-club---winter-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "60abb39e",
-    "name": "Peterborough bmx winter series - Round 2",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2025-11-30",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329035/peterborough-bmx-winter-series---round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-06T03:15:24.000Z"
-  },
-  {
     "id": "076a77f7",
     "name": "Exeter 25/26 Winter Round 2",
     "type": "BMX",
@@ -78,6 +39,32 @@
     "last_updated": "2025-09-09T02:15:27.000Z"
   },
   {
+    "id": "64a6863d",
+    "name": "Milton Keynes BMX Racing Club Winter Series 2025-2026 Round 4",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2025-12-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329818/milton-keynes-bmx-racing-club-winter-series-2025-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-05T03:15:27.000Z"
+  },
+  {
+    "id": "64a6863d",
+    "name": "Milton Keynes BMX Racing Club Winter Series 2025-2026 Round 4",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2025-12-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329818/milton-keynes-bmx-racing-club-winter-series-2025-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-05T03:15:27.000Z"
+  },
+  {
     "id": "dbdac1df",
     "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M2",
     "type": "BMX",
@@ -91,6 +78,19 @@
     "last_updated": "2025-11-18T03:15:31.000Z"
   },
   {
+    "id": "f1b0a183",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF3",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2025-12-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329904/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-05T03:15:27.000Z"
+  },
+  {
     "id": "f8999523",
     "name": "Telford Flyers Christmas Special race",
     "type": "BMX",
@@ -102,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329234/telford-flyers-christmas-special-race",
     "source": "Google Sheet",
     "last_updated": "2025-11-12T03:15:25.000Z"
+  },
+  {
+    "id": "64c575f0",
+    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #3",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Andover BMX Track, Hampshire",
+    "postcode": null,
+    "date": "2025-12-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329905/british-cycling-pathway-development-centre-bmx---south-zone-1-25-26-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-05T03:15:27.000Z"
   },
   {
     "id": "bedd8e8c",
