@@ -12,4 +12,6 @@ Youth cycling is thriving – but event information can be scattered and hard to
 The site currently curates listings from the British Cycling and Cycling Time Trials websites – covering everything from closed circuit road races and track meetings to BMX, cyclo-cross, MTB, cycle speedway, traffic-free time trials and hill climbs. Coming soon, Duathlon and Triathlon events will also be added, which is an area in which youth cyclists often excel and is great for their all-round development. You’ll find upcoming events, locations, and entry links, all in one place.  
 
 ## Contact
+My name is Mark, I've been a youth cycling coach for 12 years, club chair for 5 of those, and more recently an event organiser. Throughout that time, I've found that finding events for my own kids and club riders is a frustrating experience at best, and at worst it has not been uncommon to find out about great events after they've happened. I'm a software engineer by trade, so built this as a personal project to solve that problem. I hope you find it useful!
+
 If you'd like to send feedback or have an idea for how to improve this site, please use the form on the homepage.
