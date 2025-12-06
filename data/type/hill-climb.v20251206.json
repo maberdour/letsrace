@@ -37,31 +37,5 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/43685-c-c-bexley-stansted-hill-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2025-11-05T10:17:53.000Z"
-  },
-  {
-    "id": "b42dfd80",
-    "name": "CC Bexley Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "Kent | 1 miles | QHC/5 | STANSTED HILL",
-    "postcode": null,
-    "date": "2026-08-20",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/33044-cc-bexley-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-12T15:13:13.000Z"
-  },
-  {
-    "id": "40db9359",
-    "name": "CC Bexley Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "Kent | 1 miles | QHC/5 | STANSTED HILL",
-    "postcode": null,
-    "date": "2026-08-20",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/35626-cc-bexley-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-12T15:13:13.000Z"
   }
 ]
