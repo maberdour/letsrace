@@ -1,11 +1,10 @@
 # About
 
-Youth cycling is thriving – but event information can be scattered and hard to track down, or buried in websites that are really difficult to use, particularly for those new to the sport. This site aims to solve that.
+Youth cycling is thriving – but event information can be scattered and hard to track down, or buried in websites that are really difficult to use, particularly for those new to the sport. 
 
-**LetsRace.cc** was created to meet the need for:
-- a clear view of upcoming events for young riders across all disciplines and multiple governing bodies
-- to enable grassroots clubs to publicise regional events to riders and help avoid clashes when planning new events
-- an easier way for families to plan and support their riders' journeys.
+**LetsRace.cc** provides a clear, easy to use directory of upcoming events for young riders across all cycling disciplines and multiple governing bodies
+
+As well as an easier way for families to plan and support their riders' journeys, the site enables grassroots clubs to keep abreast of regional events that their riders might be interested in,  and can help avoid regional clashes when planning their own events.
 
 ## What can you find here?
 
