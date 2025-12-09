@@ -1,31 +1,5 @@
 [
   {
-    "id": "cd8be43b",
-    "name": "100% Mini Downhill Dec 2025",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2025-12-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326292/100-mini-downhill-dec-2025",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-04T02:15:25.000Z"
-  },
-  {
-    "id": "dd410d78",
-    "name": "Woodlandriders racing winter series 2025-2026 Round 2",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Tavistock Woodland Estate, Devon",
-    "postcode": null,
-    "date": "2025-12-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327332/woodlandriders-racing-winter-series-2025-2026-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-04T02:15:27.000Z"
-  },
-  {
     "id": "b7060421",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R4",
     "type": "MTB",
@@ -52,6 +26,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "f950127c",
+    "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #1 (LUBP)",
+    "type": "MTB",
+    "region": "Yorkshire & Humber",
+    "venue": "Leeds Urban Bike Park, West Yorkshire",
+    "postcode": null,
+    "date": "2026-01-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329944/british-cycling-mtb-xc-regional-school-of-racing-1-lubp",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-06T03:15:27.000Z"
+  },
+  {
     "id": "2035558d",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R6",
     "type": "MTB",
@@ -63,6 +50,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/319237/b-buddies-off-ride-go-ride-race-league-2526-r6",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "99dc4367",
+    "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #2 (FoD)",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329965/british-cycling-mtb-xc-regional-school-of-racing-2-fod",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-06T03:15:27.000Z"
   },
   {
     "id": "c1dc8790",
@@ -78,6 +78,32 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "632ed259",
+    "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #3 (Cannock Chase)",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Birches Valley Forest Centre, Staffordshire",
+    "postcode": null,
+    "date": "2026-03-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329966/british-cycling-mtb-xc-regional-school-of-racing-3-cannock-chase",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-06T03:15:27.000Z"
+  },
+  {
+    "id": "8b0c5a85",
+    "name": "River Dart Enduro 2026",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Riverdart Country Park, Devon",
+    "postcode": null,
+    "date": "2026-03-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329461/river-dart-enduro-2026",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
+  },
+  {
     "id": "4d258d03",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R8",
     "type": "MTB",
@@ -89,6 +115,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/319239/b-buddies-off-ride-go-ride-race-league-2526-r8",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "55a53a04",
+    "name": "ERC Go Ride Dirt Crit",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Davidson's Mains Park, Edinburgh",
+    "postcode": null,
+    "date": "2026-04-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329591/erc-go-ride-dirt-crit",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-03T03:15:25.000Z"
   },
   {
     "id": "d5ad189a",
@@ -115,6 +154,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/319241/b-buddies-off-ride-go-ride-race-league-2526-r10",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "2761b72d",
+    "name": "Lloyds National Enduro & E-Enduro Championships 2026 - Powered by Cycle 360",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Slieau Whallian Plantation, Isle of Man",
+    "postcode": null,
+    "date": "2026-08-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329329/lloyds-national-enduro--e-enduro-championships-2026---powered-by-cycle-360",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-04T03:15:28.000Z"
   },
   {
     "id": "223fd9fe",
