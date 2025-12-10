@@ -1,83 +1,5 @@
 [
   {
-    "id": "6b5d8e82",
-    "name": "Lee Valley Cross - Eastern League 2025/26 Round 8",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Redbridge Cycling Centre, Ilford",
-    "postcode": null,
-    "date": "2025-12-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324557/lee-valley-cross---eastern-league-202526-round-8",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
-  },
-  {
-    "id": "d3b596c7",
-    "name": "Lloyds Cyclo-cross National Trophy Series 2025/26 Round 5",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Hunsworth Show Ground, Bradford",
-    "postcode": null,
-    "date": "2025-12-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324039/lloyds-cyclo-cross-national-trophy-series-202526-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "34d40e72",
-    "name": "CCXL #9 Verulam CC",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Ashlyns School, Herts",
-    "postcode": null,
-    "date": "2025-12-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326337/ccxl-9-verulam-cc",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-10T02:15:33.000Z"
-  },
-  {
-    "id": "063e749f",
-    "name": "East Kent Cyclo Cross League Round 4 #CondorCyclesCross",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Betteshanger Country Park, Kent",
-    "postcode": null,
-    "date": "2025-12-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328600/east-kent-cyclo-cross-league-round-4-condorcyclescross",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "a16d106c",
-    "name": "Shimano Lazer WMCCL Round 11",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Highley, Highley",
-    "postcode": null,
-    "date": "2025-12-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324649/shimano-lazer-wmccl-round-11",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "e910df41",
-    "name": "SWCX 2025/26 Round 8",
-    "type": "Cyclo Cross",
-    "region": "South West",
-    "venue": "Newnham Park, Plymouth",
-    "postcode": null,
-    "date": "2025-12-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323754/swcx-202526-round-8",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
-  },
-  {
     "id": "bfda955d",
     "name": "NDCXL 20256 Round 6 Allestree",
     "type": "Cyclo Cross",
@@ -271,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329124/coventry-road-club---kenilworth-common-boxing-day-cross-2025",
     "source": "Google Sheet",
     "last_updated": "2025-11-08T03:15:24.000Z"
+  },
+  {
+    "id": "92df6f57",
+    "name": "NWCCA 2025/26 Round 8 - Macclesfield Supacross",
+    "type": "Cyclo Cross",
+    "region": "North West",
+    "venue": "South Park, Macclesfield",
+    "postcode": null,
+    "date": "2025-12-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329500/nwcca-202526-round-8---macclesfield-supacross",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-05T03:15:27.000Z"
   },
   {
     "id": "1c9faca5",

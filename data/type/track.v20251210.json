@@ -1,83 +1,5 @@
 [
   {
-    "id": "dac43c69",
-    "name": "London Youth Track League 2025-6: Round 4",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2025-12-04",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328437/london-youth-track-league-2025-6-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-06T19:20:51.000Z"
-  },
-  {
-    "id": "34d51dc7",
-    "name": "2025 Scottish National Track Championships & Support races (incl. Para)",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2025-12-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325626/2025-scottish-national-track-championships--support-races-incl-para",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-17T02:15:25.000Z"
-  },
-  {
-    "id": "8884b3ae",
-    "name": "Battle on the Boards",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2025-12-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327149/battle-on-the-boards",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "327ac270",
-    "name": "Calshot Cauldron Series Rd4 (Cancelled)",
-    "type": "Track",
-    "region": "South",
-    "venue": "Calshot Velodrome, Hampshire",
-    "postcode": null,
-    "date": "2025-12-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325674/calshot-cauldron-series-rd4",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "83b77f78",
-    "name": "Monday Night Track League 2025 Round 30",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-12-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312956/monday-night-track-league-2025-round-30",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
-    "id": "30f4f982",
-    "name": "Newport Live Endurance Track League #9",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2025-12-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326865/newport-live-endurance-track-league-9",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
-  },
-  {
     "id": "7927a284",
     "name": "Geraint Thomas Velodrome Open Keirin Night #1",
     "type": "Track",
@@ -182,6 +104,19 @@
     "last_updated": "2025-09-12T02:15:27.000Z"
   },
   {
+    "id": "ef204b41",
+    "name": "Manchester Regional Track League 2026 #1 (MRTL)",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2026-01-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329771/manchester-regional-track-league-2026-1-mrtl",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
+  },
+  {
     "id": "26f965ab",
     "name": "Icebreaker 2026 Youth Endurance Series Round 1",
     "type": "Track",
@@ -221,6 +156,19 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "e87fbf73",
+    "name": "Manchester Regional Track League 2026 #2 (MRTL)",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2026-01-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329773/manchester-regional-track-league-2026-2-mrtl",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
+  },
+  {
     "id": "ce957d49",
     "name": "Lloyds National Track Series Round 4 (National Kilo TT Championships) - Glasgow",
     "type": "Track",
@@ -232,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326470/lloyds-national-track-series-round-4-national-kilo-tt-championships---glasgow",
     "source": "Google Sheet",
     "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "cbec61ed",
+    "name": "Manchester Regional Track League 2026 #3 (MRTL)",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2026-01-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329774/manchester-regional-track-league-2026-3-mrtl",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
   },
   {
     "id": "a43fc41d",
@@ -247,6 +208,19 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "f13d0b3e",
+    "name": "Manchester Regional Track League 2026 #4 (MRTL)",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2026-01-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329775/manchester-regional-track-league-2026-4-mrtl",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
+  },
+  {
     "id": "54743e1c",
     "name": "Geraint Thomas Velodrome Sprint night #5",
     "type": "Track",
@@ -258,6 +232,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326868/geraint-thomas-velodrome-sprint-night-5",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "029a8cf1",
+    "name": "Manchester Regional Track League 2026 #5 (MRTL)",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2026-02-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329776/manchester-regional-track-league-2026-5-mrtl",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
   },
   {
     "id": "e6ac795f",
@@ -297,6 +284,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326851/icebreaker-2026-youth-sprint-series-round-2",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "ed755cc3",
+    "name": "Manchester Regional Track League 2026 #6 (MRTL)",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2026-02-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329778/manchester-regional-track-league-2026-6-mrtl",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
   },
   {
     "id": "244fb34f",
