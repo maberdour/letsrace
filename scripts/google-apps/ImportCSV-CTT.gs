@@ -58,12 +58,15 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
       const displayDate = normalizeDate(row[0]);
       const name = normalizeEventName(row[1]); // Preserve case for display
       const eventType = row[2] || '';
-      const courseInfo = row[3] || '';
+      let courseInfo = row[3] || '';
       const rawUrl = row[4] ? row[4].toString().trim() : '';
       const eventId = extractCTTEventId(rawUrl);
 
       // Debug logging
       Logger.log(`Original date: "${row[0]}", Display date: "${displayDate}", Date type: ${typeof row[0]}`);
+
+      // Clean course info to remove spaces before commas
+      courseInfo = removeSpacesBeforeCommas(courseInfo.toString().trim());
 
       // Parse course information to extract region (but keep full course info as location)
       const { region } = parseCourseInfo(courseInfo);
@@ -87,9 +90,9 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
       // Create the row for the sheet: Date, Name, Event Type, Location (Full Course Info), URL, Region, Date Created, Date Updated
       const sheetRow = [
         displayDate,           // Column A: Event Date
-        name,                  // Column B: Event Name  
+        removeSpacesBeforeCommas(name),  // Column B: Event Name (cleaned)
         eventType,             // Column C: Event Type
-        courseInfo,            // Column D: Location (Full course info as-is)
+        courseInfo,            // Column D: Location (Full course info, already cleaned)
         row[4],                // Column E: URL
         finalRegion,           // Column F: Region
         now,                   // Column G: Date Created (for new events)
@@ -619,6 +622,16 @@ function normalizeDate(value) {
     Logger.log("Date normalization error: " + error.message);
   }
   return '';
+}
+
+/**
+ * Removes spaces immediately before commas in text
+ * @param {string} value - The text to clean
+ * @return {string} Text with spaces before commas removed
+ */
+function removeSpacesBeforeCommas(value) {
+  if (!value) return '';
+  return value.toString().replace(/\s+,/g, ',');
 }
 
 /**

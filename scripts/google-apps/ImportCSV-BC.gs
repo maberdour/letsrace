@@ -61,6 +61,14 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
       // Normalize the date in Column A to display format
       row[0] = displayDate;
 
+      // Normalize event name and remove spaces before commas
+      row[1] = removeSpacesBeforeCommas(name);
+
+      // Normalize location (Column D) and remove spaces before commas
+      if (row[3]) {
+        row[3] = removeSpacesBeforeCommas(row[3].toString().trim());
+      }
+
       // Normalize URL for British Cycling links
       if (rawUrl.startsWith('/events')) {
         row[4] = 'https://www.britishcycling.org.uk' + rawUrl;
@@ -241,6 +249,16 @@ function normalizeDate(value) {
     Logger.log("Date normalization error: " + error.message);
   }
   return '';
+}
+
+/**
+ * Removes spaces immediately before commas in text
+ * @param {string} value - The text to clean
+ * @return {string} Text with spaces before commas removed
+ */
+function removeSpacesBeforeCommas(value) {
+  if (!value) return '';
+  return value.toString().replace(/\s+,/g, ',');
 }
 
 /**
