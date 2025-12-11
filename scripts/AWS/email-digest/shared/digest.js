@@ -77,9 +77,11 @@ function filterEventsForSubscriber(events, subscriber, today) {
     .map(normalizeEvent)
     .filter(ev => ev && ev.id && ev.name && ev.start_date);
   
-  // Filter by region and disciplines
+  // Filter by regions and disciplines
+  // Support both old single region format and new regions array format
+  const subscriberRegions = subscriber.regions || (subscriber.region ? [subscriber.region] : []);
   const matchingEvents = normalizedEvents.filter(ev => {
-    const regionMatch = ev.region === subscriber.region;
+    const regionMatch = subscriberRegions.includes(ev.region);
     const disciplineMatch = subscriber.disciplines.includes(ev.discipline);
     return regionMatch && disciplineMatch;
   });
@@ -165,7 +167,13 @@ function formatEventDate(dateString) {
 function generateDigestHTML(subscriber, events, today) {
   const { newThisWeek, upcoming } = events;
   const friendlyName = getFriendlyName(subscriber.email);
-  const regionLabel = escapeHtml(subscriber.region);
+  // Support both old single region format and new regions array format
+  const subscriberRegions = subscriber.regions || (subscriber.region ? [subscriber.region] : []);
+  const regionsLabel = subscriberRegions.length === 1 
+    ? escapeHtml(subscriberRegions[0])
+    : subscriberRegions.length === 2
+    ? escapeHtml(subscriberRegions.join(' and '))
+    : escapeHtml(subscriberRegions.slice(0, -1).join(', ') + ', and ' + subscriberRegions[subscriberRegions.length - 1]);
   const disciplinesLabel = subscriber.disciplines.join(', ');
   
   const todayFormatted = formatEventDate(formatDate(today));
@@ -209,9 +217,9 @@ function generateDigestHTML(subscriber, events, today) {
   
   <p>Hi ${escapeHtml(friendlyName)},</p>
   
-  <p>Here's your weekly digest for ${regionLabel} ${disciplinesLabel} races.</p>
+  <p>Here's your weekly digest for ${regionsLabel} ${disciplinesLabel} races.</p>
   
-  <h2 style="color: #0066cc; font-size: 18px; margin-top: 30px; margin-bottom: 15px;">New this week in ${regionLabel}</h2>
+  <h2 style="color: #0066cc; font-size: 18px; margin-top: 30px; margin-bottom: 15px;">New this week</h2>
   ${newThisWeek.length > 0 
     ? `<ul style="list-style: none; padding: 0;">${renderEventList(newThisWeek, '')}</ul>`
     : `<p style="color: #666; margin: 1em 0;">No newly added events this week for your filters.</p>`}
@@ -246,7 +254,14 @@ function generateDigestHTML(subscriber, events, today) {
  */
 function generateSubject(subscriber) {
   const disciplinesLabel = subscriber.disciplines.slice(0, 2).join(' & ');
-  return `LetsRace.cc: ${subscriber.region} ${disciplinesLabel} races – new & upcoming`;
+  // Support both old single region format and new regions array format
+  const subscriberRegions = subscriber.regions || (subscriber.region ? [subscriber.region] : []);
+  const regionsLabel = subscriberRegions.length === 1 
+    ? subscriberRegions[0]
+    : subscriberRegions.length === 2
+    ? subscriberRegions.join(' & ')
+    : subscriberRegions.slice(0, 2).join(', ') + ' & more';
+  return `LetsRace.cc: ${regionsLabel} ${disciplinesLabel} races – new & upcoming`;
 }
 
 /**

@@ -52,11 +52,19 @@ exports.handler = async (event) => {
       }, {}, origin);
     }
     
+    // Support both old single region and new regions array for backwards compatibility
+    let regions = [];
+    if (payload.regions && Array.isArray(payload.regions)) {
+      regions = payload.regions;
+    } else if (payload.region) {
+      regions = [payload.region];
+    }
+    
     // Validate required fields
-    if (!payload.region || !payload.disciplines || !Array.isArray(payload.disciplines) || payload.disciplines.length === 0) {
+    if (regions.length === 0 || !payload.disciplines || !Array.isArray(payload.disciplines) || payload.disciplines.length === 0) {
       return createResponse(400, {
         success: false,
-        message: 'region and disciplines (array) are required.'
+        message: 'regions (array) and disciplines (array) are required.'
       }, {}, origin);
     }
     
@@ -78,7 +86,7 @@ exports.handler = async (event) => {
     const testSubscriber = {
       id: 'preview',
       email: 'preview@letsrace.cc',
-      region: payload.region,
+      regions: regions,
       disciplines: payload.disciplines,
       send_day: 'Friday',
       status: 'active',

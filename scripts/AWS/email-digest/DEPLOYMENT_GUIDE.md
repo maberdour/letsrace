@@ -6,7 +6,7 @@ This is a step-by-step guide to deploy the LetsRace.cc email digest system to AW
 
 1. **AWS Account** - You need an AWS account with appropriate permissions
 
-## Step 1: Create S3 Bucket for Subscribers (PROGRESS: Completed 19/11/25)
+## Step 1: Create S3 Bucket for Subscribers (PROGRESS: Completed)
 
 1. **Open AWS Console** → Go to S3
 2. **Click "Create bucket"**
@@ -27,7 +27,7 @@ This is a step-by-step guide to deploy the LetsRace.cc email digest system to AW
 
 ## Step 2: Configure Amazon SES (Simple Email Service)
 
-### 2.1 Verify Your Domain and Move Out of Sandbox (PROGRESS: Completed 22/11/25)
+### 2.1 Verify Your Domain and Move Out of Sandbox (PROGRESS: Completed)
 
 1. **Open AWS Console** → Go to SES (Simple Email Service)
 
@@ -66,7 +66,7 @@ This is a step-by-step guide to deploy the LetsRace.cc email digest system to AW
 - Remember which region you're using SES in (e.g., `us-east-1`)
 - You'll need this for the Lambda environment variables
 
-## Step 3: Create IAM Role for Lambda Functions (PROGRESS: Completed 22/11/25)
+## Step 3: Create IAM Role for Lambda Functions (PROGRESS: Completed)
 
 1. **Open AWS Console** → Go to IAM
 2. **Click "Roles"** → "Create role"
@@ -82,7 +82,7 @@ This is a step-by-step guide to deploy the LetsRace.cc email digest system to AW
 7. **Role name**: `letsrace-email-digest-role`
 8. **Click "Create role"**
 
-## Step 4: Create Lambda Functions (PROGRESS: Completed 22/11/25)
+## Step 4: Create Lambda Functions (PROGRESS: Completed)
 
 **IMPORTANT - Install Dependencies First**:
 Before creating Lambda functions, you need to install the AWS SDK v3 dependencies:
@@ -100,7 +100,7 @@ Before creating Lambda functions, you need to install the AWS SDK v3 dependencie
 
 You need to create **6 Lambda functions**. I'll show you how to create the first one, then repeat for the others.
 
-### 4.1 Create Subscribe Lambda
+### 4.1 Create Subscribe Lambda (PROGRESS: Completed)
 
 1. **Open AWS Console** → Go to Lambda
 2. **Click "Create function"**
@@ -192,7 +192,7 @@ You need to create **6 Lambda functions**. I'll show you how to create the first
     - Timeout: `30 seconds` (should be enough)
     - Click "Save"
 
-### 4.2 Repeat for Other Lambda Functions (PROGRESS: Completed 22/11/25)
+### 4.2 Repeat for Other Lambda Functions (PROGRESS: Completed)
 
 Repeat steps 4.1 for each of these functions (use the same environment variables):
 
@@ -220,7 +220,7 @@ Repeat steps 4.1 for each of these functions (use the same environment variables
 - `shared/s3.js`
 - `shared/digest.js`
 
-## Step 5: Create API Gateway (PROGRESS: Completed 22/11/25)
+## Step 5: Create API Gateway (PROGRESS: Completed)
 
 **Payment Note**: With Amazon API Gateway, you only pay when your APIs are in use. There are no minimum fees or upfront commitments. For HTTP and REST APIs, you pay based on API calls received and amount of data transferred out. For WebSocket APIs, you pay based on number of messages and connection duration.
 
@@ -232,7 +232,7 @@ Repeat steps 4.1 for each of these functions (use the same environment variables
 6. **Endpoint Type**: `Regional` (or Edge if you want)
 7. **Click "Create API"**
 
-### 5.1 Create Resources and Methods (PROGRESS: Completed 22/11/25)
+### 5.1 Create Resources and Methods (PROGRESS: Completed)
 
 For each endpoint, create a resource and method. The UI may look slightly different depending on which version of the AWS Console you're using.
 
@@ -326,7 +326,7 @@ For each one:
 4. Enable Lambda Proxy integration
 5. Enable CORS
 
-### 5.2 Deploy API (PROGRESS: Completed 22/11/25)
+### 5.2 Deploy API (PROGRESS: Completed)
 
 1. **Deploy the API**:
    - Look for **"Actions"** button/menu at the top of the page → **"Deploy API"**
@@ -351,7 +351,7 @@ For each one:
      - Test: `{YOUR-API-URL}/test-digest`
      - Run: `{YOUR-API-URL}/run-digest-now`
 
-### 5.3 Update Frontend with API URL (PROGRESS: Completed 22/11/25)
+### 5.3 Update Frontend with API URL (PROGRESS: Completed)
 
 The easiest way is to set your API Gateway URL once in a config file, and all pages will use it automatically.
 
@@ -388,7 +388,7 @@ That's it! The following pages already reference this config file and will autom
 - Check the browser console (F12) - you should see the correct API calls going to your API Gateway URL
 - Or test the subscribe form - it should call your API Gateway endpoint
 
-## Step 6: Create CloudWatch Events Rule (Scheduled Digest)
+## Step 6: Create CloudWatch Events Rule (Scheduled Digest) (PROGRESS: Completed)
 
 1. **Open AWS Console** → Go to **EventBridge** (or CloudWatch → Events → Rules)
 2. **Click "Create rule"**
@@ -417,15 +417,24 @@ That's it! The following pages already reference this config file and will autom
 
 This section is your **end-to-end test plan**. Follow each subsection in order.
 
-### 7.1 Test Subscribe Endpoint (API only)
+### 7.1 Test Subscribe Endpoint (API only) (PROGRESS: Completed)
+
+**Endpoint**: `POST {YOUR-API-URL}/subscribe`  
+**Example**: `POST https://syf5vvs75c.execute-api.eu-west-2.amazonaws.com/prod/subscribe`  
+(Replace `{YOUR-API-URL}` with your actual API Gateway Invoke URL from Step 5.2)
+
+**Note**: The subscribe endpoint does **NOT** send an email. It only creates the subscriber record in S3. The subscriber will receive emails when:
+- You send a test digest (Section 7.2), OR
+- The scheduled daily digest runs (when their `send_day` matches)
 
 You can test using the API Gateway console's built-in test feature, or use a browser extension like "REST Client" or "Postman":
 
 1. **Using API Gateway Console**:
    - Go to your API Gateway → Select the `/subscribe` resource → Click on `POST` method
    - Click "TEST"
-   - Method: `POST`
-   - Request body:
+   - **Query Strings**: Leave blank
+   - **Headers**: Leave blank (or add if needed)
+   - **Request Body**:
    ```json
    {
      "email": "test@example.com",
@@ -444,83 +453,162 @@ You can test using the API Gateway console's built-in test feature, or use a bro
      "message": "Thanks! Your subscription is confirmed. You'll receive emails on Fridays."
    }
    ```
+   **Note**: No email will be sent at this point - this just creates the subscriber record.
 
 3. **Check S3**:
    - Go to your S3 bucket (`letsrace-subscribers-prod`)
    - Open `subscribers.json`
-   - Confirm the new subscriber has been added
+   - Confirm the new subscriber has been added (the record will have an `id`, `email`, `region`, `disciplines`, etc.)
 
-### 7.2 Test Unsubscribe Endpoint (API only)
+### 7.2 Test Test-Send Digest (Admin) (PROGRESS: Completed)
 
-1. **Get a test subscriber**:
-   - Use the email you just subscribed in 7.1 (e.g. `test@example.com`)
+**Endpoint**: `POST {YOUR-API-URL}/test-digest`  
+**Example**: `POST https://syf5vvs75c.execute-api.eu-west-2.amazonaws.com/prod/test-digest`
 
-2. **Using API Gateway Console**:
+This endpoint sends a test email with an unsubscribe link that contains a token. You'll need this token for testing the unsubscribe endpoint.
+
+**To get your ADMIN_TOKEN** (required for admin endpoints):
+- Go to AWS Console → Lambda
+- Select any of your email digest Lambda functions (e.g., `letsrace-test-digest`)
+- Go to "Configuration" tab → "Environment variables"
+- Find the `ADMIN_TOKEN` variable and copy its value
+- **Note**: If you don't see `ADMIN_TOKEN`, you need to set it first (see Step 4.1, section 10 in the deployment guide)
+
+**Using API Gateway Console:**
+
+1. Go to your API Gateway → Select the `/test-digest` resource → Click on `POST` method
+2. Click "TEST"
+3. **Query Strings**: Leave blank
+4. **Headers**:  
+   - Click "Add header" or use the headers section
+   - **Header name**: `X-Admin-Token` (no quotes, just the text)
+   - **Header value**: Paste your ADMIN_TOKEN value here (no quotes, no colons - just the token itself)
+   - Example: If your ADMIN_TOKEN is `8HYyNgbha7omNKG5TlUVu5n7MK3UFWEH`, enter exactly that value (without quotes)
+5. **Request Body**:
+```json
+{
+  "email": "test@example.com",
+  "region": "London & South East",
+  "disciplines": ["Road"]
+}
+```
+6. Click "Test"
+
+Then:
+
+1. Check the API response (should indicate email queued/sent successfully).
+2. Check your email inbox (`test@example.com`) for the test digest.
+3. **Important**: The email will contain an unsubscribe link like:
+   - `https://www.letsrace.cc/pages/email-unsubscribed.html?token=XXXXX`
+   - **Copy the token** (the part after `?token=`) - you'll need it for testing unsubscribe (Section 7.3)
+4. If the email does not arrive:
+   - Check SES "Sending statistics" and "Event publishing" if configured.
+   - Check SES suppression list and bounces for that address.
+   - Check CloudWatch logs for `letsrace-test-digest` and underlying send function.
+
+### 7.3 Test Unsubscribe Endpoint
+
+**Important**: The unsubscribe endpoint requires a **token** (not just an email). Tokens are generated when users subscribe and are included in unsubscribe links sent via email.
+
+**⚠️ Common Error**: If you get a `400 Bad Request` with message "Unsubscribe token is required", this means you're sending `{"email": "..."}` instead of `{"token": "..."}`. The endpoint requires a token for security reasons.
+
+**Option A: Test via Frontend (Recommended)**
+
+1. **Subscribe a test email** using the subscribe endpoint (Section 7.1) to create a subscriber record in S3
+   - **Important**: Use the same email address for both subscribe and test-digest
+   - This ensures the subscriber exists in S3 when you unsubscribe
+2. **Send a test email** using the test-digest endpoint (Section 7.2) to the same email address
+   - This will generate a digest email that includes an unsubscribe link
+   - The unsubscribe link will look like: `https://www.letsrace.cc/pages/email-unsubscribed.html?token=XXXXX`
+3. **Copy the token from the email** (the part after `?token=` in the unsubscribe link)
+4. **Test the unsubscribe page**:
+   - Open: `https://www.letsrace.cc/pages/email-unsubscribed.html?token=YOUR_COPIED_TOKEN`
+   - The page should automatically process the unsubscribe and show a confirmation message
+5. **Verify in S3**:
+   - Open `subscribers.json` in your S3 bucket
+   - Confirm the subscriber's `status` field has been set to `"unsubscribed"`
+
+**Option B: Test API Directly (Requires Token Generation)**
+
+The unsubscribe endpoint expects a token, not just an email. To test the API directly:
+
+1. **Subscribe a test email** first (Section 7.1)
+2. **Get a token for testing** (tokens are NOT stored - they're generated on-demand):
+   
+   **Easiest method**: Use the test-digest endpoint (Section 7.2) to send a test email to your test subscriber's email address - the email will contain an unsubscribe link with a valid token in the URL. Copy the token from the URL (the part after `?token=`).
+   
+   **Alternative**: Generate a token manually using the subscriber's `id` and `email` from the S3 `subscribers.json` file. You would need to use the `generateUnsubscribeToken()` function with these values and your `TOKEN_SECRET` environment variable (requires writing code to generate the token).
+
+3. **Using API Gateway Console**:
    - Go to your API Gateway → Select the `/unsubscribe` resource → Click on `POST` method
    - Click "TEST"
-   - Method: `POST`
-   - Request body (example — match what your frontend sends):
+   - **Query Strings**: Leave blank
+   - **Headers**: Leave blank (or add if needed)
+   - **Request Body**:
    ```json
    {
-     "email": "test@example.com"
+     "token": "YOUR_UNSUBSCRIBE_TOKEN_HERE"
    }
    ```
    - Click "Test"
    - Check the response (should indicate success)
 
-3. **Check S3**:
+4. **Check S3**:
    - Open `subscribers.json` again
-   - Confirm the subscriber has either been removed or marked as unsubscribed, depending on how your Lambda is implemented
+   - Confirm the subscriber's `status` field has been set to `"unsubscribed"`
 
-4. **Optional: Test invalid/unrecognised email**:
-   - Repeat with an email that does **not** exist in `subscribers.json`
-   - Confirm you get a sensible error or "already unsubscribed" style response
+**Note**: Since token generation is complex, it's easier to test the unsubscribe flow via the frontend page (`pages/email-unsubscribed.html`) which handles token extraction from URL parameters automatically.
 
-### 7.3 Test Preview Digest (Admin)
+**⚠️ Troubleshooting "Invalid or expired unsubscribe token" error:**
 
-Using API Gateway console test feature or a REST client:
+If you see the error "We couldn't process your unsubscribe request. This might be because the link has expired" when clicking an unsubscribe link:
 
-- Endpoint: `POST /preview-digest`
-- Headers:  
-  - `X-Admin-Token: YOUR_ADMIN_TOKEN`
-- Body:
+1. **Check TOKEN_SECRET consistency**: The `TOKEN_SECRET` environment variable must be **identical** across ALL Lambda functions:
+   - `letsrace-subscribe`
+   - `letsrace-unsubscribe`
+   - `letsrace-test-digest`
+   - `letsrace-run-digest-now`
+   - Any other Lambda that generates or verifies tokens
+   
+   If they don't match, tokens generated by one Lambda won't verify in another Lambda.
+
+2. **For test-digest tokens**: The test-digest endpoint creates a temporary subscriber with `id: 'test'` that is NOT saved to S3. The unsubscribe endpoint will still work (it returns success even if subscriber not found), but the token must verify correctly.
+
+3. **Check CloudWatch logs**:
+   - Go to CloudWatch → Log groups
+   - Check `letsrace-unsubscribe` logs for detailed error messages
+   - Look for token verification errors or signature mismatches
+
+4. **Verify environment variables**:
+   - Go to each Lambda function → Configuration → Environment variables
+   - Ensure `TOKEN_SECRET` has the exact same value in all functions
+   - Copy the value from one function and paste it into all others if needed
+
+### 7.4 Test Preview Digest (Admin)
+
+**Using API Gateway Console:**
+
+1. Go to your API Gateway → Select the `/preview-digest` resource → Click on `POST` method
+2. Click "TEST"
+3. **Query Strings**: Leave blank
+4. **Headers**:  
+   - Click "Add header" or use the headers section
+   - **Header name**: `X-Admin-Token` (no quotes)
+   - **Header value**: Paste your ADMIN_TOKEN value (no quotes, just the token itself)
+5. **Request Body**:
 ```json
 {
   "region": "London & South East",
   "disciplines": ["Road"]
 }
 ```
+6. Click "Test"
 
 Check:
 
 - Response is `success: true` (or appropriate data structure)
 - Any HTML/preview payload looks sensible for the chosen region/discipline
 - CloudWatch logs for `letsrace-preview-digest` show no errors
-
-### 7.4 Test Test-Send Digest (Admin)
-
-Using API Gateway console test feature or a REST client:
-
-- Endpoint: `POST /test-digest`
-- Headers:  
-  - `X-Admin-Token: YOUR_ADMIN_TOKEN`
-- Body:
-```json
-{
-  "email": "your-email@example.com",
-  "region": "London & South East",
-  "disciplines": ["Road"]
-}
-```
-
-Then:
-
-1. Check the API response (should indicate email queued/sent successfully).
-2. Check your email inbox (`your-email@example.com`) for the test digest.
-3. If the email does not arrive:
-   - Check SES "Sending statistics" and "Event publishing" if configured.
-   - Check SES suppression list and bounces for that address.
-   - Check CloudWatch logs for `letsrace-test-digest` and underlying send function.
 
 ### 7.5 Test Frontend Forms
 
@@ -558,17 +646,22 @@ Then:
 
 ### 7.6 Test Manual Digest Run (Admin)
 
-Using API Gateway console test feature or a REST client:
+**Using API Gateway Console:**
 
-- Endpoint: `POST /run-digest-now`
-- Headers:  
-  - `X-Admin-Token: YOUR_ADMIN_TOKEN`
-- Body:
+1. Go to your API Gateway → Select the `/run-digest-now` resource → Click on `POST` method
+2. Click "TEST"
+3. **Query Strings**: Leave blank
+4. **Headers**:  
+   - Click "Add header" or use the headers section
+   - **Header name**: `X-Admin-Token` (no quotes)
+   - **Header value**: Paste your ADMIN_TOKEN value (no quotes, just the token itself)
+5. **Request Body**:
 ```json
 {}
 ```
+6. Click "Test"
 
-Check:
+**Check:**
 
 1. Response indicates the digest was triggered.
 2. CloudWatch logs for `letsrace-run-digest-now` (and any underlying functions) show:
@@ -721,6 +814,35 @@ If something doesn't work:
 5. **Check IAM permissions** - Lambda needs S3 and SES access
 6. **Verify SES is out of sandbox** if sending to unverified emails
 7. **Check API Gateway logs** (enable if needed)
+
+## Updating Code After Changes
+
+When you make code changes (like adding features or fixing bugs), you need to redeploy the Lambda functions:
+
+1. **Update the code files** in your local repository
+2. **Package the functions** using the packaging script (see Step 4.1, section 9b):
+   - **Windows**: Run `.\package-functions.ps1` in PowerShell from `scripts/AWS/email-digest` directory
+   - **Mac/Linux**: Run `./package-functions.sh` from `scripts/AWS/email-digest` directory
+3. **Upload the updated ZIP files** to each Lambda function:
+   - Lambda Console → Function → Code tab → Upload from → ".zip file"
+   - Select the updated ZIP file (e.g., `subscribe.zip`)
+   - Click "Save"
+4. **For shared code changes** (like `shared/utils.js`, `shared/digest.js`, `shared/s3.js`):
+   - You need to redeploy ALL Lambda functions that use them:
+     - `letsrace-subscribe`
+     - `letsrace-unsubscribe`
+     - `letsrace-test-digest`
+     - `letsrace-preview-digest`
+     - `letsrace-run-digest-now`
+     - `letsrace-digest-runner` (scheduled)
+
+**Note**: No changes needed to:
+- API Gateway configuration (just routing, no code)
+- S3 bucket structure
+- IAM roles/permissions
+- Environment variables (unless explicitly changed)
+- CloudWatch Events/triggers
+- SES configuration
 
 ## Next Steps
 

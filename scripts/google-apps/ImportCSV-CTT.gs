@@ -78,6 +78,12 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
         row[4] = 'https://www.cyclingtimetrials.org.uk/' + cleanUrl;
       }
 
+      // Override region to "London & South East" if Event Name contains "London"
+      let finalRegion = region;
+      if (name.toString().toLowerCase().includes('london')) {
+        finalRegion = 'London & South East';
+      }
+
       // Create the row for the sheet: Date, Name, Event Type, Location (Full Course Info), URL, Region, Date Created, Date Updated
       const sheetRow = [
         displayDate,           // Column A: Event Date
@@ -85,7 +91,7 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
         eventType,             // Column C: Event Type
         courseInfo,            // Column D: Location (Full course info as-is)
         row[4],                // Column E: URL
-        region,                // Column F: Region
+        finalRegion,           // Column F: Region
         now,                   // Column G: Date Created (for new events)
         ''                     // Column H: Date Updated (will be set for updates)
       ];
@@ -99,9 +105,14 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
         const existingEventType = existingRowData[2] || ''; // Column C (index 2)
         sheetRow[2] = existingEventType; // Keep the existing event type, don't overwrite
         
-        // Preserve the existing Region field (Column F) from the sheet
-        const existingRegion = existingRowData[5] || ''; // Column F (index 5)
-        sheetRow[5] = existingRegion; // Keep the existing region, don't overwrite
+        // Override region to "London & South East" if Event Name contains "London"
+        // Otherwise preserve the existing Region field (Column F) from the sheet
+        if (name.toString().toLowerCase().includes('london')) {
+          sheetRow[5] = 'London & South East'; // Column F (Region) - override with London region
+        } else {
+          const existingRegion = existingRowData[5] || ''; // Column F (index 5)
+          sheetRow[5] = existingRegion; // Keep the existing region, don't overwrite
+        }
         
         // Preserve the existing Date Created field (Column G) from the sheet
         const existingDateCreated = existingRowData[6] || ''; // Column G (index 6)

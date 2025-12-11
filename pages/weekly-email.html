@@ -19,7 +19,7 @@
   <main>
     <div class="general-content">
       <h1>Weekly Email Digest</h1>
-      <p>Want the latest youth cycling events in your inbox? Pick your region, disciplines, and the weekday that works for you. We'll send a single email update each week — no tracking pixels, no spam.</p>
+      <p>Want the latest youth cycling events in your inbox? Pick your regions, disciplines, and the weekday that works for you. We'll send a single email update each week — no tracking pixels, no spam.</p>
 
       <form id="subscribe-form" class="stacked-form" novalidate data-api-endpoint="">
         <div class="form-field">
@@ -27,25 +27,25 @@
           <input type="email" id="email" name="email" autocomplete="email" required />
         </div>
 
-        <div class="form-field">
-          <label for="region">Region</label>
-          <p class="hint">Choose the region you want updates for.</p>
-          <select id="region" name="region" required>
-            <option value="" disabled selected>Select a region</option>
-            <option value="Central">Central</option>
-            <option value="Eastern">Eastern</option>
-            <option value="London &amp; South East">London &amp; South East</option>
-            <option value="East Midlands">East Midlands</option>
-            <option value="West Midlands">West Midlands</option>
-            <option value="North East">North East</option>
-            <option value="North West">North West</option>
-            <option value="Scotland">Scotland</option>
-            <option value="South">South</option>
-            <option value="South West">South West</option>
-            <option value="Wales">Wales</option>
-            <option value="Yorkshire &amp; Humber">Yorkshire &amp; Humber</option>
-          </select>
-        </div>
+        <fieldset>
+          <legend>Regions</legend>
+          <p class="hint">Pick the regions you want updates for. Choose as many as you like.</p>
+          <div class="form-grid" role="group" aria-labelledby="regions-label">
+            <span id="regions-label" class="visually-hidden">Regions</span>
+            <label><input type="checkbox" name="regions[]" value="Central"> Central</label>
+            <label><input type="checkbox" name="regions[]" value="Eastern"> Eastern</label>
+            <label><input type="checkbox" name="regions[]" value="London &amp; South East"> London &amp; South East</label>
+            <label><input type="checkbox" name="regions[]" value="East Midlands"> East Midlands</label>
+            <label><input type="checkbox" name="regions[]" value="West Midlands"> West Midlands</label>
+            <label><input type="checkbox" name="regions[]" value="North East"> North East</label>
+            <label><input type="checkbox" name="regions[]" value="North West"> North West</label>
+            <label><input type="checkbox" name="regions[]" value="Scotland"> Scotland</label>
+            <label><input type="checkbox" name="regions[]" value="South"> South</label>
+            <label><input type="checkbox" name="regions[]" value="South West"> South West</label>
+            <label><input type="checkbox" name="regions[]" value="Wales"> Wales</label>
+            <label><input type="checkbox" name="regions[]" value="Yorkshire &amp; Humber"> Yorkshire &amp; Humber</label>
+          </div>
+        </fieldset>
 
         <fieldset>
           <legend>Disciplines</legend>
@@ -94,7 +94,7 @@
         <ul>
           <li>Events newly added in the last 7 days.</li>
           <li>Events coming up in the next 6 weeks.</li>
-          <li>Events filtered by your chosen region and disciplines.</li>
+          <li>Events filtered by your chosen regions and disciplines.</li>
           <li>A link back to LetsRace.cc so you can explore the full listings.</li>
         </ul>
         <p>If you change your mind, every email contains a one-click unsubscribe link.</p>
@@ -137,7 +137,7 @@
         setStatus('');
 
         const emailField = form.querySelector('#email');
-        const regionSelect = form.querySelector('#region');
+        const regionChecks = form.querySelectorAll('input[name="regions[]"]:checked');
         const disciplineChecks = form.querySelectorAll('input[name="disciplines[]"]:checked');
         const weekdaySelect = form.querySelector('#weekday');
         const consentCheckbox = form.querySelector('#consent');
@@ -149,9 +149,9 @@
           return;
         }
 
-        if (!regionSelect.value) {
-          setStatus('Please select a region.', 'error');
-          regionSelect.focus();
+        if (regionChecks.length === 0) {
+          setStatus('Please select at least one region.', 'error');
+          event.preventDefault();
           return;
         }
 
@@ -167,10 +167,11 @@
         }
 
         // Build payload
+        const regions = Array.from(regionChecks).map(cb => cb.value);
         const disciplines = Array.from(disciplineChecks).map(cb => cb.value);
         const payload = {
           email: emailField.value.trim(),
-          region: regionSelect.value,
+          regions: regions,
           disciplines: disciplines,
           send_day: weekdaySelect.value || 'Friday'
         };

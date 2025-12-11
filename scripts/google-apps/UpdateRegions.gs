@@ -21,8 +21,19 @@ function updateExistingRegions() {
     for (let i = 1; i < data.length; i++) {
       const row = data[i];
       const regionIndex = 5; // Column F = Region
+      const nameIndex = 1; // Column B = Event Name
       
-      if (row[regionIndex]) {
+      // Check if event name contains "London" - override region regardless of original assignment
+      const eventName = row[nameIndex] || '';
+      if (eventName.toString().toLowerCase().includes('london')) {
+        const oldRegion = row[regionIndex] || '';
+        if (oldRegion !== 'London & South East') {
+          row[regionIndex] = 'London & South East';
+          updatedCount++;
+          Logger.log(`Row ${i + 1}: "${oldRegion}" → "London & South East" (event name contains "London")`);
+        }
+      } else if (row[regionIndex]) {
+        // Only update region mapping if event name doesn't contain "London"
         const oldRegion = row[regionIndex];
         const newRegion = mapBCRegion(oldRegion);
         

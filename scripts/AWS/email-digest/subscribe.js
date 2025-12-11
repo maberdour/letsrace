@@ -55,6 +55,15 @@ exports.handler = async (event) => {
     // Normalize email
     const email = payload.email.trim().toLowerCase();
     
+    // Normalize regions: support both old single region and new regions array
+    let regions = [];
+    if (payload.regions && Array.isArray(payload.regions)) {
+      regions = payload.regions;
+    } else if (payload.region) {
+      // Backwards compatibility: convert single region to array
+      regions = [payload.region];
+    }
+    
     // Load existing subscribers
     const subscribers = await loadSubscribers();
     
@@ -69,7 +78,7 @@ exports.handler = async (event) => {
       if (existingSubscriber.status === 'unsubscribed') {
         // Resubscribe
         existingSubscriber.status = 'active';
-        existingSubscriber.region = payload.region;
+        existingSubscriber.regions = regions;
         existingSubscriber.disciplines = payload.disciplines;
         existingSubscriber.send_day = sendDay;
         existingSubscriber.updated_at = now;
@@ -79,7 +88,7 @@ exports.handler = async (event) => {
         subscribers[index] = existingSubscriber;
       } else if (existingSubscriber.status === 'active') {
         // Update preferences
-        existingSubscriber.region = payload.region;
+        existingSubscriber.regions = regions;
         existingSubscriber.disciplines = payload.disciplines;
         existingSubscriber.send_day = sendDay;
         existingSubscriber.updated_at = now;
@@ -89,7 +98,7 @@ exports.handler = async (event) => {
       } else {
         // Bounced or other status - treat as new subscription
         existingSubscriber.status = 'active';
-        existingSubscriber.region = payload.region;
+        existingSubscriber.regions = regions;
         existingSubscriber.disciplines = payload.disciplines;
         existingSubscriber.send_day = sendDay;
         existingSubscriber.updated_at = now;
@@ -104,7 +113,7 @@ exports.handler = async (event) => {
       const newSubscriber = {
         id: crypto.randomUUID(),
         email: email,
-        region: payload.region,
+        regions: regions,
         disciplines: payload.disciplines,
         send_day: sendDay,
         status: 'active',

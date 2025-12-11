@@ -99,8 +99,22 @@ function validateSubscriptionPayload(payload) {
     errors.push('Please provide a valid email address.');
   }
   
-  if (!payload.region || !VALID_REGIONS.includes(payload.region)) {
-    errors.push('Please select a valid region.');
+  // Support both old single region and new regions array for backwards compatibility
+  let regions = [];
+  if (payload.regions && Array.isArray(payload.regions)) {
+    regions = payload.regions;
+  } else if (payload.region) {
+    // Backwards compatibility: convert single region to array
+    regions = [payload.region];
+  }
+  
+  if (regions.length === 0) {
+    errors.push('Please select at least one region.');
+  } else {
+    const invalidRegions = regions.filter(r => !VALID_REGIONS.includes(r));
+    if (invalidRegions.length > 0) {
+      errors.push(`Invalid regions: ${invalidRegions.join(', ')}`);
+    }
   }
   
   if (!Array.isArray(payload.disciplines) || payload.disciplines.length === 0) {
