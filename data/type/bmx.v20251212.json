@@ -1,44 +1,5 @@
 [
   {
-    "id": "076a77f7",
-    "name": "Exeter 25/26 Winter Round 2",
-    "type": "BMX",
-    "region": "South West",
-    "venue": "Exeter BMX Track, Devon",
-    "postcode": null,
-    "date": "2025-12-05",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327036/exeter-2526-winter-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-16T02:15:25.000Z"
-  },
-  {
-    "id": "66860f5a",
-    "name": "Centurions Winter Series 2025-26 Round 2",
-    "type": "BMX",
-    "region": "Scotland",
-    "venue": "Broadwood Stadium, North Lanarkshire",
-    "postcode": null,
-    "date": "2025-12-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329542/centurions-winter-series-2025-26-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-26T03:15:25.000Z"
-  },
-  {
-    "id": "686721dc",
-    "name": "Deep South 2025-26 Round 3",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Bournemouth BMX Track, Hampshire",
-    "postcode": null,
-    "date": "2025-12-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326403/deep-south-2025-26-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-09T02:15:27.000Z"
-  },
-  {
     "id": "dbdac1df",
     "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M2",
     "type": "BMX",
@@ -52,6 +13,32 @@
     "last_updated": "2025-11-18T03:15:31.000Z"
   },
   {
+    "id": "f1b0a183",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF3",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2025-12-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329904/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-05T03:15:27.000Z"
+  },
+  {
+    "id": "fa1ba771",
+    "name": "Knightwood BMX Club 2025 Winter Series Round 3",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Knightwood BMX, Hampshire",
+    "postcode": null,
+    "date": "2025-12-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329948/knightwood-bmx-club-2025-winter-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
+  },
+  {
     "id": "f8999523",
     "name": "Telford Flyers Christmas Special race",
     "type": "BMX",
@@ -63,6 +50,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/329234/telford-flyers-christmas-special-race",
     "source": "Google Sheet",
     "last_updated": "2025-11-12T03:15:25.000Z"
+  },
+  {
+    "id": "64c575f0",
+    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #3",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Andover BMX Track, Hampshire",
+    "postcode": null,
+    "date": "2025-12-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329905/british-cycling-pathway-development-centre-bmx---south-zone-1-25-26-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-05T03:15:27.000Z"
+  },
+  {
+    "id": "d14ad806",
+    "name": "Peterborough bmx winter series - Round 3",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Peterborough BMX Track, PETERBOROUGH",
+    "postcode": null,
+    "date": "2025-12-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330005/peterborough-bmx-winter-series---round-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-09T03:15:29.000Z"
   },
   {
     "id": "bedd8e8c",
