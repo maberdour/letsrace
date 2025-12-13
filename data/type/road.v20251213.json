@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ccc4e5dd",
+    "name": "Chilly City Crits 2026 - Round 1",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Lee Valley VeloPark, London",
+    "postcode": null,
+    "date": "2026-01-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330039/chilly-city-crits-2026---round-1",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-12T03:15:26.000Z"
+  },
+  {
+    "id": "c6fdfa4f",
+    "name": "Chilly City Crits 2026 - Round 2",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Lee Valley VeloPark, London",
+    "postcode": null,
+    "date": "2026-02-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330040/chilly-city-crits-2026---round-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-12T03:15:26.000Z"
+  },
+  {
+    "id": "b4e88858",
+    "name": "Chilly City Crits 2026 - Round 3",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Lee Valley VeloPark, London",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330042/chilly-city-crits-2026---round-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-12T03:15:26.000Z"
+  }
+]
