@@ -1,18 +1,5 @@
 [
   {
-    "id": "b7060421",
-    "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R4",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Snibston Colliery Park, Coalville",
-    "postcode": null,
-    "date": "2025-12-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319235/b-buddies-off-ride-go-ride-race-league-2526-r4",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
     "id": "93f44700",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R5",
     "type": "MTB",
@@ -37,6 +24,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329944/british-cycling-mtb-xc-regional-school-of-racing-1-lubp",
     "source": "Google Sheet",
     "last_updated": "2025-12-06T03:15:27.000Z"
+  },
+  {
+    "id": "59b734c1",
+    "name": "100% Mini Downhill Jan 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Canop Cycle Centre, Forest Of Dean",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330166/100-mini-downhill-jan-2026",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-14T03:15:28.000Z"
   },
   {
     "id": "2035558d",
@@ -130,6 +130,19 @@
     "last_updated": "2025-12-03T03:15:25.000Z"
   },
   {
+    "id": "dc5a0291",
+    "name": "SDA Series 2026 Round 1 (Innerleithen)",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Innerleithen, Peeblesshire",
+    "postcode": null,
+    "date": "2026-04-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329838/sda-series-2026-round-1-innerleithen",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-14T03:15:28.000Z"
+  },
+  {
     "id": "d5ad189a",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R9",
     "type": "MTB",
@@ -141,6 +154,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/319240/b-buddies-off-ride-go-ride-race-league-2526-r9",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "f565cef7",
+    "name": "SDA Series 2026 Round 2 (Ae Forest)",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Ae Forest, Dumfries & Galloway",
+    "postcode": null,
+    "date": "2026-05-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329839/sda-series-2026-round-2-ae-forest",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-14T03:15:28.000Z"
   },
   {
     "id": "e11fa0a8",
@@ -206,6 +232,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326845/schwalbe-downhill",
     "source": "Google Sheet",
     "last_updated": "2025-09-25T02:15:24.000Z"
+  },
+  {
+    "id": "95268bea",
+    "name": "Scottish Championships & SDA Series 2026 Round 4 (Glencoe Black)",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Glencoe MTB Track, Argyll",
+    "postcode": null,
+    "date": "2026-08-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329840/scottish-championships--sda-series-2026-round-4-glencoe-black",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-14T03:15:28.000Z"
   },
   {
     "id": "64f84b7d",
