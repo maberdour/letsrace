@@ -1,18 +1,5 @@
 [
   {
-    "id": "dbdac1df",
-    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M2",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2025-12-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329415/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m2",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-18T03:15:31.000Z"
-  },
-  {
     "id": "f1b0a183",
     "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF3",
     "type": "BMX",
@@ -26,11 +13,11 @@
     "last_updated": "2025-12-05T03:15:27.000Z"
   },
   {
-    "id": "52e7f538",
+    "id": "fa1ba771",
     "name": "Knightwood BMX Club 2025 Winter Series Round 3",
     "type": "BMX",
     "region": "South",
-    "venue": "Knightwood BMX , Hampshire",
+    "venue": "Knightwood BMX, Hampshire",
     "postcode": null,
     "date": "2025-12-20",
     "start_time": "00:00",
@@ -104,6 +91,19 @@
     "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
+    "id": "7af186c2",
+    "name": "Centurions Winter Series 2025-26 Round 3",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Broadwood Stadium, North Lanarkshire",
+    "postcode": null,
+    "date": "2026-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330374/centurions-winter-series-2025-26-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
     "id": "0e50c6dd",
     "name": "BMX East Winter Series 2025/2026 Round 4",
     "type": "BMX",
@@ -128,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326404/deep-south-2025-26-round-4",
     "source": "Google Sheet",
     "last_updated": "2025-09-09T02:15:27.000Z"
+  },
+  {
+    "id": "43efb881",
+    "name": "The London BMX Winter Series 2025-2026 Round 3",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Peckham BMX Track, London",
+    "postcode": null,
+    "date": "2026-01-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330460/the-london-bmx-winter-series-2025-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
     "id": "b80a74c9",
