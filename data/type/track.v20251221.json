@@ -1,107 +1,29 @@
 [
   {
-    "id": "7927a284",
-    "name": "Geraint Thomas Velodrome Open Keirin Night #1",
+    "id": "a61cbcf3",
+    "name": "Newport Track League 2026 #1",
     "type": "Track",
     "region": "Wales",
     "venue": "Geraint Thomas National Velodrome of Wales, Wales",
     "postcode": null,
-    "date": "2025-12-13",
+    "date": "2026-01-05",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326863/geraint-thomas-velodrome-open-keirin-night-1",
+    "url": "https://www.britishcycling.org.uk/events/details/330071/newport-track-league-2026-1",
     "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
+    "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
-    "id": "d0adaef9",
-    "name": "Monsters of Track - Round 2",
+    "id": "71454161",
+    "name": "Derby Arena Youth Track League Event 1",
     "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
     "postcode": null,
-    "date": "2025-12-13",
+    "date": "2026-01-08",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/315922/monsters-of-track---round-2",
+    "url": "https://www.britishcycling.org.uk/events/details/330142/derby-arena-youth-track-league-event-1",
     "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "8225d8ef",
-    "name": "Monday Night Track League 2025 Round 31",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-12-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/312957/monday-night-track-league-2025-round-31",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-14T02:15:32.000Z"
-  },
-  {
-    "id": "22144f09",
-    "name": "Newport Live Endurance Track League #10",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2025-12-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326866/newport-live-endurance-track-league-10",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-11T02:15:25.000Z"
-  },
-  {
-    "id": "a50bb397",
-    "name": "London Youth Track League 2025-6: Round 5",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2025-12-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328987/london-youth-track-league-2025-6-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-06T19:20:51.000Z"
-  },
-  {
-    "id": "36953eb0",
-    "name": "2025/26 Glasgow Track League Round 9",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2025-12-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326703/202526-glasgow-track-league-round-9",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "b20bd25f",
-    "name": "FHHV Christmas Classic",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2025-12-20",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328772/fhhv-christmas-classic",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-26T03:15:25.000Z"
-  },
-  {
-    "id": "5386f897",
-    "name": "Lloyds National Track Series Round 3 (National Omnium & Madison Championships) - Manchester",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2025-12-20",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326015/lloyds-national-track-series-round-3-national-omnium--madison-championships---manchester",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-12T02:15:27.000Z"
+    "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
     "id": "debd0876",
@@ -169,6 +91,19 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "9224b67e",
+    "name": "Newport Track League 2026 #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-01-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330072/newport-track-league-2026-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
     "id": "e87fbf73",
     "name": "Manchester Regional Track League 2026 #2 (MRTL)",
     "type": "Track",
@@ -180,6 +115,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329773/manchester-regional-track-league-2026-2-mrtl",
     "source": "Google Sheet",
     "last_updated": "2025-12-09T03:15:29.000Z"
+  },
+  {
+    "id": "011f9669",
+    "name": "Newport Track League 2026 #3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-01-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330073/newport-track-league-2026-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
     "id": "e85031d0",
@@ -234,6 +182,19 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "3f4ca689",
+    "name": "Newport Track League 2026 #4",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-01-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330074/newport-track-league-2026-4",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
     "id": "f13d0b3e",
     "name": "Manchester Regional Track League 2026 #4 (MRTL)",
     "type": "Track",
@@ -258,6 +219,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326868/geraint-thomas-velodrome-sprint-night-5",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "ac7f0b9e",
+    "name": "Newport Track League #5",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-02-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330075/newport-track-league-5",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
     "id": "e047b17a",
@@ -325,6 +299,19 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "141feaf8",
+    "name": "Newport Track League #6",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-02-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330076/newport-track-league-6",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
     "id": "ed755cc3",
     "name": "Manchester Regional Track League 2026 #6 (MRTL)",
     "type": "Track",
@@ -351,6 +338,32 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "4daed2ec",
+    "name": "Newport Track League #7",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-02-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330077/newport-track-league-7",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "0406b7fd",
+    "name": "Newport Track League #8",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-02-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330078/newport-track-league-8",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
     "id": "4158771b",
     "name": "London Youth Track League 2025-6: Round 9",
     "type": "Track",
@@ -375,6 +388,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326870/geraint-thomas-velodrome-open-keirin-night-2",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "6bbac479",
+    "name": "Newport Track League #9",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-03-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330080/newport-track-league-9",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
     "id": "a221fc83",
@@ -429,6 +455,32 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "3c92b7aa",
+    "name": "National Youth Omnium 2026 - Round 1 - Glasgow",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2026-03-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328517/national-youth-omnium-2026---round-1---glasgow",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "497b5c95",
+    "name": "Newport Track League #10",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-03-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330081/newport-track-league-10",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
     "id": "ccfcc155",
     "name": "London Youth Track League 2025-6: Round 10 - Finale!",
     "type": "Track",
@@ -442,6 +494,19 @@
     "last_updated": "2025-12-12T03:15:26.000Z"
   },
   {
+    "id": "d5895b42",
+    "name": "HHV Schools Championships 2026",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-03-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330317/hhv-schools-championships-2026",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-20T03:15:25.000Z"
+  },
+  {
     "id": "4b750f4a",
     "name": "London Futures Cup - Youth Racing",
     "type": "Track",
@@ -453,5 +518,96 @@
     "url": "https://www.britishcycling.org.uk/events/details/330043/london-futures-cup---youth-racing",
     "source": "Google Sheet",
     "last_updated": "2025-12-12T03:15:26.000Z"
+  },
+  {
+    "id": "a60795bc",
+    "name": "Convene ESG Track League - Round 1",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-04-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329625/convene-esg-track-league---round-1",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "ffb67dc1",
+    "name": "Convene ESG Track League - Round 2",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-04-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329686/convene-esg-track-league---round-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "6aabca5c",
+    "name": "National Youth Omnium 2026-Round 2",
+    "type": "Track",
+    "region": "South",
+    "venue": "Bournemouth Cycling Centre, Dorset",
+    "postcode": null,
+    "date": "2026-04-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329661/national-youth-omnium-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "5c684f27",
+    "name": "Convene ESG Track League - Round 3",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-04-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329687/convene-esg-track-league---round-3",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "48b1b86f",
+    "name": "Convene ESG Track League - Round 4",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329688/convene-esg-track-league---round-4",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "cb8fb33b",
+    "name": "Convene ESG Track League - Round 5",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329689/convene-esg-track-league---round-5",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
+  },
+  {
+    "id": "a9000886",
+    "name": "Convene ESG Track League - Round 6",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329690/convene-esg-track-league---round-6",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-17T03:15:25.000Z"
   }
 ]
