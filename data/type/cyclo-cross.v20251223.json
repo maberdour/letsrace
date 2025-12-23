@@ -1,44 +1,5 @@
 [
   {
-    "id": "1dd9771a",
-    "name": "NWCCA 2025/26 Round 7 - Christmas Cross",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Woodside Cycle Centre, England",
-    "postcode": null,
-    "date": "2025-12-20",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324580/nwcca-202526-round-7---christmas-cross",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-11T03:15:24.000Z"
-  },
-  {
-    "id": "fb639db9",
-    "name": "Leicestershire Cyclo-cross League Rd 4 promoted by Team Pedal Power",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Turnpost Farm, Leicestershire",
-    "postcode": null,
-    "date": "2025-12-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326136/leicestershire-cyclo-cross-league-rd-4-promoted-by-team-pedal-power",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-11T03:15:24.000Z"
-  },
-  {
-    "id": "9ab3a837",
-    "name": "Yorkshire Cyclo-Cross Championships Round 8",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Peel Park, Bradford",
-    "postcode": null,
-    "date": "2025-12-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323535/yorkshire-cyclo-cross-championships-round-8",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
     "id": "e80c3175",
     "name": "Coventry Road Club - Kenilworth Common Boxing Day Cross 2025",
     "type": "Cyclo Cross",
@@ -113,6 +74,19 @@
     "date": "2026-01-02",
     "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/324040/lloyds-cyclo-cross-national-trophy-series-202526-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "f76dbd18",
+    "name": "Shimano Lazer WMCCL Round 12",
+    "type": "Cyclo Cross",
+    "region": "West Midlands",
+    "venue": "Abbey Stadium, Redditch",
+    "postcode": null,
+    "date": "2026-01-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/324650/shimano-lazer-wmccl-round-12",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
@@ -234,6 +208,19 @@
     "last_updated": "2025-10-16T02:15:24.000Z"
   },
   {
+    "id": "7a464966",
+    "name": "NWCCA 2025/26 Round 10 - Buile Hill cross",
+    "type": "Cyclo Cross",
+    "region": "North West",
+    "venue": "Buile Hill Park, Lancashire",
+    "postcode": null,
+    "date": "2026-01-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/324582/nwcca-202526-round-10---buile-hill-cross",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
     "id": "303282ef",
     "name": "Leicestershire Cyclo-cross League Rd 6 promoted by CWCC",
     "type": "Cyclo Cross",
@@ -271,5 +258,44 @@
     "url": "https://www.britishcycling.org.uk/events/details/328018/wessex-cyclocross-league-round-13---crow-cross",
     "source": "Google Sheet",
     "last_updated": "2025-11-18T03:15:31.000Z"
+  },
+  {
+    "id": "e03ce5c1",
+    "name": "Lannock Cross Eastern League 2025/26 Rd 11",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Lannock Farm, Hitchin",
+    "postcode": null,
+    "date": "2026-02-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330379/lannock-cross--eastern-league-202526-rd-11",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-23T03:15:27.000Z"
+  },
+  {
+    "id": "2224c662",
+    "name": "Eastern Cyclocross League End of Season Relay and Awards (26)",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Northern Gateway Sports Park, Essex",
+    "postcode": null,
+    "date": "2026-02-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330315/eastern-cyclocross-league-end-of-season-relay-and-awards-26",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "1a1c3bde",
+    "name": "SuperQuaich Series Round 2 - Kingdom Velo Cyclocross",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Fife Cycle Park, Lochgelly",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329945/superquaich-series-round-2---kingdom-velo-cyclocross",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-19T03:15:33.000Z"
   }
 ]
