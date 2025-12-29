@@ -1,57 +1,5 @@
 [
   {
-    "id": "fb639db9",
-    "name": "Leicestershire Cyclo-cross League Rd 4 promoted by Team Pedal Power",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Turnpost Farm, Leicestershire",
-    "postcode": null,
-    "date": "2025-12-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326136/leicestershire-cyclo-cross-league-rd-4-promoted-by-team-pedal-power",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-11T03:15:24.000Z"
-  },
-  {
-    "id": "9ab3a837",
-    "name": "Yorkshire Cyclo-Cross Championships Round 8",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Peel Park, Bradford",
-    "postcode": null,
-    "date": "2025-12-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323535/yorkshire-cyclo-cross-championships-round-8",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "e80c3175",
-    "name": "Coventry Road Club - Kenilworth Common Boxing Day Cross 2025",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Kenilworth Common, Kenilworth",
-    "postcode": null,
-    "date": "2025-12-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329124/coventry-road-club---kenilworth-common-boxing-day-cross-2025",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-08T03:15:24.000Z"
-  },
-  {
-    "id": "92df6f57",
-    "name": "NWCCA 2025/26 Round 8 - Macclesfield Supacross",
-    "type": "Cyclo Cross",
-    "region": "North West",
-    "venue": "South Park, Macclesfield",
-    "postcode": null,
-    "date": "2025-12-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329500/nwcca-202526-round-8---macclesfield-supacross",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-05T03:15:27.000Z"
-  },
-  {
     "id": "1c9faca5",
     "name": "Crossmanay",
     "type": "Cyclo Cross",
@@ -273,6 +221,19 @@
     "last_updated": "2025-12-12T03:15:26.000Z"
   },
   {
+    "id": "1daf6561",
+    "name": "SuperQuaich Series Round 1 - Linlithgow Cross",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Xcite Linlithgow Leisure Centre, Linlithgow",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330382/superquaich-series-round-1---linlithgow-cross",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-24T03:15:25.000Z"
+  },
+  {
     "id": "0599a44e",
     "name": "Wessex Cyclocross League Round 13 - Crow Cross",
     "type": "Cyclo Cross",
@@ -284,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/328018/wessex-cyclocross-league-round-13---crow-cross",
     "source": "Google Sheet",
     "last_updated": "2025-11-18T03:15:31.000Z"
+  },
+  {
+    "id": "e03ce5c1",
+    "name": "Lannock Cross Eastern League 2025/26 Rd 11",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Lannock Farm, Hitchin",
+    "postcode": null,
+    "date": "2026-02-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330379/lannock-cross--eastern-league-202526-rd-11",
+    "source": "Google Sheet",
+    "last_updated": "2025-12-23T03:15:27.000Z"
   },
   {
     "id": "2224c662",
