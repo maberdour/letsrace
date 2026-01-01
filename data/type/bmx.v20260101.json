@@ -1,18 +1,5 @@
 [
   {
-    "id": "d14ad806",
-    "name": "Peterborough bmx winter series - Round 3",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2025-12-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330005/peterborough-bmx-winter-series---round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-09T03:15:29.000Z"
-  },
-  {
     "id": "bedd8e8c",
     "name": "Exeter 25/26 Winter Round 3",
     "type": "BMX",
