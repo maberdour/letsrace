@@ -9,23 +9,32 @@ The system consists of:
 1. **Shared JavaScript Module** (`/assets/js/events-page.js`) - Handles all functionality
 2. **CSS Styles** (`/assets/css/events-page.css`) - Consistent styling
 3. **HTML Templates** - One page per event type
-4. **Data Files** - Generated daily by Google Apps Script
+4. **Data Files** - Generated daily by Google Apps Script from the `Events` Google Sheet
 
 ## How It Works
 
 ### Data Flow
 
-1. **Daily Build** - Google Apps Script generates JSON files:
-   - `/data/manifest.json` - Points to today's versioned files
-   - `/data/index/facets.vYYYYMMDD.json` - Search metadata
-   - `/data/type/{type}.vYYYYMMDD.json` - Event data per type
+1. **Nightly data import (CSV → Google Sheet)**  
+   - Time-based triggers in Google Apps Script run the ImportCSV scripts:  
+     - `ImportCSV-BC.gs` (`appendNewEvents_ByDateAndName_WithDateFix`) imports `event_data.csv` from Google Drive (British Cycling events) into the `Events` sheet.  
+     - `ImportCSV-CTT.gs` (`appendNewCTTEvents_ByDateAndName_WithDateFix`) imports `ctt_event_data.csv` from Google Drive (CTT events) into the same sheet.  
+   - These scripts normalize dates, regions, URLs and handle duplicate detection based on BC/CTT event IDs, updating or inserting rows with timestamps.
 
-2. **Page Load** - JavaScript:
+2. **Daily Build (Google Sheet → JSON files)**  
+   - The `dailyBuild()` function in `DailyBuildAndDeploy.gs` runs on a 03:30 Europe/London time-based trigger and generates JSON files from the `Events` sheet:  
+     - `/data/manifest.json` - Points to today's versioned files  
+     - `/data/index/facets.vYYYYMMDD.json` - Search metadata  
+     - `/data/type/{type}.vYYYYMMDD.json` - Event data per type
+
+3. **Page Load (JSON → rendered list)**  
+   - JavaScript:
+3. **Page Load** - JavaScript:
    - Fetches manifest to get current file URLs
    - Loads facets and type-specific data
    - Populates filters and renders events
 
-3. **User Interaction** - Client-side filtering:
+4. **User Interaction** - Client-side filtering:
    - Region selection
    - Date range filtering
    - URL state management

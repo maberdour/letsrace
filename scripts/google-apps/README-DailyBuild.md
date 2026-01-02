@@ -1,6 +1,6 @@
 # Daily Build and Deploy Script
 
-This Google Apps Script automatically converts Google Sheet data into static JSON files and commits them to a GitHub repository for website deployment.
+This Google Apps Script stack keeps the LetsRace.cc site updated every night. Time-based triggers first run the ImportCSV scripts to pull fresh events from British Cycling and Cycling Time Trials CSVs into the `Events` Google Sheet, then the Daily Build script converts that sheet data into static JSON files and commits them to a GitHub repository for website deployment.
 
 ## Features
 
@@ -10,6 +10,31 @@ This Google Apps Script automatically converts Google Sheet data into static JSO
 - **Facets Index**: Builds searchable index with counts and regions
 - **GitHub Integration**: Commits files via GitHub Contents API
 - **Automated Triggers**: Runs daily at 03:30 Europe/London time
+
+## Nightly Flow
+
+The full nightly pipeline runs as follows (all times Europe/London):
+
+1. **~03:00 – Import CSV to Sheet**  
+   - Time-based triggers run the ImportCSV Apps Scripts:  
+     - `ImportCSV-BC.gs` → `appendNewEvents_ByDateAndName_WithDateFix()` (British Cycling CSV → Google Sheet)  
+     - `ImportCSV-CTT.gs` → `appendNewCTTEvents_ByDateAndName_WithDateFix()` (Cycling Time Trials CSV → Google Sheet)  
+   - These scripts:  
+     - Read `event_data.csv` and `ctt_event_data.csv` from Google Drive  
+     - Normalize and de-duplicate events using BC/CTT event IDs  
+     - Update or insert rows in the `Events` sheet, with created/updated timestamps and canonical regions
+
+2. **03:30 – Daily build and deploy**  
+   - The `dailyBuild()` trigger runs (configured by `createDailyTrigger()`):  
+     - Reads all events from the `Events` sheet  
+     - Normalizes and filters to future events  
+     - Generates versioned JSON files per type and the facets index  
+     - Updates `manifest.json` to point to the latest versions  
+     - Commits everything to GitHub (`main` branch), which GitHub Pages then serves
+
+3. **Frontend consumption**  
+   - Event pages (e.g. Road, Track, BMX) load `/data/manifest.json` and the appropriate type/facets JSON on each page view  
+   - The event lists are rendered client‑side from these static JSON files.
 
 ## File Structure
 

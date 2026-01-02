@@ -41,7 +41,11 @@ The About page content can be updated without a full repository push:
    Or simply double-click `pull-about.bat`
 
 ### Adding New Events
-Events are automatically fetched from British Cycling and other sources. The site updates daily.
+Events are automatically fetched from British Cycling and Cycling Time Trials via nightly automation:
+
+- UI.Vision scripts scrape latest events and write `event_data.csv` (British Cycling) and `ctt_event_data.csv` (CTT) into Google Drive.
+- Google Apps Script ImportCSV jobs pull those CSVs into the `Events` Google Sheet, normalizing and de‑duplicating rows.
+- At 03:30 UK time, the Daily Build script reads the sheet, generates versioned JSON files under `/data/`, and commits them to GitHub, which GitHub Pages then serves.
 
 ## 🛠️ Development
 
