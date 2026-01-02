@@ -11,6 +11,8 @@ As well as an easier way for families to plan and support their riders' journeys
 The site currently curates listings from the British Cycling and Cycling Time Trials websites – covering everything from closed circuit road races and track meetings to BMX, cyclo-cross, MTB, cycle speedway, traffic-free time trials and hill climbs. Coming soon, Duathlon and Triathlon events will also be added, which is an area in which youth cyclists often excel and is great for their all-round development. You’ll find upcoming events, locations, and entry links, all in one place.  
 
 ## Contact
-My name is Mark, I've been a youth cycling coach since 2017, a club chair for 5 of those, and in the last few years became an event organiser (National Youth Omnium, regional youth Duathlon and a local youth Hill Climb). Throughout that time, I've found that finding events for my own kids and club riders is a frustrating experience at best, and at worst it has not been uncommon to find out about great events after they've happened. I'm a software engineer by trade, so built this as a personal project to solve that problem. I hope you find it useful!
+My name is Mark, I've been a youth cycling coach since 2017 and started organising youth cycling events from 2022 (National Youth Omnium, regional youth Duathlon and a local youth Hill Climb). Throughout that time, finding events for my own kids and club's riders has been a frustrating experience at best, and at worst it has not been uncommon to find out about great events after they've happened. I'm a software engineer by trade, so built this site as a personal project to solve that problem. I hope you find it useful!
 
-If you'd like to send feedback or have an idea for how to improve this site, please use the feedback form which is at the foot of each page.
+If you spot any errors, have an idea for how to improve the site, or any other feedback then please use the feedback form which is at the foot of each page.
+
+See you on the start line! (or somewhere nearby, holding jackets and a hot drink...)
