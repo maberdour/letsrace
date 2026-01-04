@@ -1,31 +1,5 @@
 [
   {
-    "id": "d14ad806",
-    "name": "Peterborough bmx winter series - Round 3",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2025-12-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330005/peterborough-bmx-winter-series---round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-09T03:15:29.000Z"
-  },
-  {
-    "id": "961771b2",
-    "name": "Exeter 25/26 Winter Round 2",
-    "type": "BMX",
-    "region": "South West",
-    "venue": "Exeter BMX Track, Devon",
-    "postcode": null,
-    "date": "2026-01-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327037/exeter-2526-winter-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-16T02:15:25.000Z"
-  },
-  {
     "id": "fc03ed6f",
     "name": "Racing Under The Roof 2025/26 Round Three (EXPERT)",
     "type": "BMX",
