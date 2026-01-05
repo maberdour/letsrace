@@ -103,6 +103,9 @@ chmod +x package-functions.sh
 
 ## Step 9: Test
 
+**See `API_TESTING_GUIDE.md` for comprehensive API testing instructions. For functional testing, see `FUNCTIONAL_TEST_PLAN.md`.**
+
+Quick checklist:
 - [ ] Test subscribe endpoint (curl or frontend)
 - [ ] Test unsubscribe endpoint
 - [ ] Test preview-digest (admin)
