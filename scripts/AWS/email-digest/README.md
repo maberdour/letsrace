@@ -31,7 +31,7 @@ Set the following environment variables in your Lambda function configurations:
 - `S3_BUCKET_SUBSCRIBERS` - S3 bucket name for subscribers.json (default: `letsrace-subscribers-prod`)
 - `SUBSCRIBERS_OBJECT_KEY` - Object key for subscribers.json (default: `subscribers.json`)
 - `EVENTS_BASE_URL` - Base URL for event JSON files (default: `https://www.letsrace.cc`)
-- `SES_FROM_ADDRESS` - Email address to send from (default: `no-reply@letsrace.cc`)
+- `SES_FROM_ADDRESS` - Email address to send from (default: `noreply@letsrace.cc`)
 - `SES_REGION` - AWS SES region (default: `us-east-1`)
 - `ADMIN_TOKEN` - Secret token for admin endpoints (REQUIRED)
 - `BASE_WEBSITE_URL` - Base URL of the website (default: `https://www.letsrace.cc`)
@@ -115,7 +115,7 @@ Lambda functions need the following IAM permissions:
 
 ### 8. Verify SES Configuration
 
-- Verify sender email address (`SES_FROM_ADDRESS`) in SES
+- Verify sender email address or domain (`SES_FROM_ADDRESS`) in SES (domain verification recommended for `noreply@` addresses)
 - If SES is in sandbox mode, verify recipient addresses for testing
 - Request production access for sending to any email address
 

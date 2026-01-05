@@ -834,7 +834,7 @@ When you make code changes (like adding features or fixing bugs), you need to re
      - `letsrace-test-digest`
      - `letsrace-preview-digest`
      - `letsrace-run-digest-now`
-     - `letsrace-digest-runner` (scheduled)
+     - `letsrace-run-digest` (scheduled)
 
 **Note**: No changes needed to:
 - API Gateway configuration (just routing, no code)

@@ -6,7 +6,7 @@ A condensed checklist version of the deployment guide. See `DEPLOYMENT_GUIDE.md`
 
 - [ ] AWS Account
 - [ ] AWS CLI installed and configured
-- [ ] Node.js installed (14+)
+- [ ] Node.js installed (16+ required for crypto.randomUUID, but Lambda uses 18.x)
 
 ## Step 1: Install Dependencies
 
@@ -22,7 +22,7 @@ npm install
 
 ## Step 3: Configure SES
 
-- [ ] Verify sender email: `no-reply@letsrace.cc`
+- [ ] Verify sender email or domain: `noreply@letsrace.cc` (domain verification recommended)
 - [ ] Request production access (if in sandbox)
 - [ ] Note your SES region
 
@@ -46,13 +46,13 @@ Create 6 functions with these names:
 
 - [ ] Runtime: Node.js 18.x
 - [ ] Execution role: `letsrace-email-digest-role`
-- [ ] Upload code (zip file with handler.js + shared/ + node_modules/)
+- [ ] Upload code (zip file with index.js + shared/ + node_modules/ - packaging script renames function files to index.js)
 - [ ] Set environment variables:
   ```
   S3_BUCKET_SUBSCRIBERS=letsrace-subscribers-prod
   SUBSCRIBERS_OBJECT_KEY=subscribers.json
   EVENTS_BASE_URL=https://www.letsrace.cc
-  SES_FROM_ADDRESS=no-reply@letsrace.cc
+  SES_FROM_ADDRESS=noreply@letsrace.cc
   SES_REGION=us-east-1
   BASE_WEBSITE_URL=https://www.letsrace.cc
   UNSUBSCRIBE_PAGE_URL=https://www.letsrace.cc/pages/email-unsubscribed.html
