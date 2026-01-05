@@ -1,3 +1,59 @@
+# ============================================================================
+# SECURITY: Sensitive Data - NEVER COMMIT THESE FILES
+# ============================================================================
+# The following patterns protect sensitive information from being committed.
+# If you accidentally commit sensitive data, immediately:
+# 1. Rotate/regenerate all exposed secrets
+# 2. Remove the data from git history (git filter-branch or BFG Repo-Cleaner)
+# 3. Force push (if already pushed to remote)
+# ============================================================================
+
+# AWS credentials and secrets
+**/secrets/
+**/secrets.json
+**/credentials.json
+**/aws-credentials*
+**/*-secrets.*
+**/*-credentials.*
+**/config.local.*
+**/config.local.txt
+**/config.production.*
+
+# API keys and tokens
+**/*-token*
+**/*-key*
+**/api-keys.*
+**/tokens.*
+**/ADMIN_TOKEN*
+**/TOKEN_SECRET*
+
+# AWS-specific sensitive files
+**/api-gateway-url.*
+**/lambda-config.*
+**/aws-config.*
+**/api-url.*
+**/gateway-url.*
+
+# Subscriber data (may contain real email addresses and personal data)
+**/subscribers.json
+**/subscribers.*.json
+**/subscribers-backup.*
+
+# Production configuration files
+**/config.prod.*
+**/production.*
+**/*.prod.*
+
+# Environment variables (may contain secrets)
+.env
+.env.local
+.env.*.local
+*.env
+
+# ============================================================================
+# Standard project ignores
+# ============================================================================
+
 # Dependencies
 node_modules/
 **/node_modules/
@@ -26,12 +82,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment variables
-.env
-.env.local
-
 # Temporary files
 *.tmp
 *.temp
 test.txt
-

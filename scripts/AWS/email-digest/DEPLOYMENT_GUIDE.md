@@ -342,7 +342,8 @@ For each one:
 
 4. **Copy the Invoke URL**:
    - After deployment, you'll see your **Invoke URL** at the top of the stage page
-   - It will look something like: `https://syf5vvs75c.execute-api.eu-west-2.amazonaws.com/prod`
+   - It will look something like: `https://YOUR-API-ID.execute-api.REGION.amazonaws.com/prod`
+   - **Note**: Replace `YOUR-API-ID` and `REGION` with your actual values (e.g., `abc123xyz.execute-api.us-east-1.amazonaws.com`)
    - **IMPORTANT**: Copy this entire URL - you'll need it to update your frontend
    - The full endpoint URLs will be:
      - Subscribe: `{YOUR-API-URL}/subscribe`

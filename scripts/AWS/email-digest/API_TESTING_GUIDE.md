@@ -42,12 +42,12 @@ For this email digest system, we only use **POST** requests.
 #### 2. **Endpoint/URL**
 An **endpoint** is the specific address where an API service is located. It looks like a website URL:
 ```
-https://syf5vvs75c.execute-api.eu-west-2.amazonaws.com/prod/subscribe
+https://YOUR-API-ID.execute-api.REGION.amazonaws.com/prod/subscribe
 ```
 
 Breaking this down:
 - `https://` - The protocol (secure connection)
-- `syf5vvs75c.execute-api.eu-west-2.amazonaws.com` - The server address
+- `YOUR-API-ID.execute-api.REGION.amazonaws.com` - The server address (replace with your actual API Gateway ID and region)
 - `/prod` - The stage/environment
 - `/subscribe` - The specific endpoint/function
 
@@ -189,7 +189,7 @@ If you prefer a dedicated tool, browser extensions are a good middle ground:
 4. **Configure the Request**
    - **Method**: Select "POST" from a dropdown
    - **URL**: Enter your API endpoint URL
-     - Example: `https://syf5vvs75c.execute-api.eu-west-2.amazonaws.com/prod/subscribe`
+     - Example: `https://YOUR-API-ID.execute-api.REGION.amazonaws.com/prod/subscribe` (replace with your actual API Gateway URL)
    - **Headers**: Click "Add Header" and add:
      - `Content-Type`: `application/json`
      - `X-Admin-Token`: `your-admin-token-here` (only for admin endpoints)
@@ -297,8 +297,8 @@ Now that you understand the basics of API testing, proceed to the specific test 
 ## Test Subscribe Endpoint (API only)
 
 **Endpoint**: `POST {YOUR-API-URL}/subscribe`  
-**Example**: `POST https://syf5vvs75c.execute-api.eu-west-2.amazonaws.com/prod/subscribe`  
-(Replace `{YOUR-API-URL}` with your actual API Gateway Invoke URL)
+**Example**: `POST https://YOUR-API-ID.execute-api.REGION.amazonaws.com/prod/subscribe`  
+(Replace `{YOUR-API-URL}` with your actual API Gateway Invoke URL from the deployment guide)
 
 **Note**: The subscribe endpoint does **NOT** send an email. It only creates the subscriber record in S3. The subscriber will receive emails when:
 - You send a test digest (see Section 2), OR
@@ -394,7 +394,8 @@ You can test using the API Gateway console's built-in test feature, or use a bro
 ## Test Test-Send Digest (Admin)
 
 **Endpoint**: `POST {YOUR-API-URL}/test-digest`  
-**Example**: `POST https://syf5vvs75c.execute-api.eu-west-2.amazonaws.com/prod/test-digest`
+**Example**: `POST https://YOUR-API-ID.execute-api.REGION.amazonaws.com/prod/test-digest`  
+(Replace with your actual API Gateway Invoke URL)
 
 This endpoint sends a test email with an unsubscribe link that contains a token. You'll need this token for testing the unsubscribe endpoint.
 
@@ -436,7 +437,7 @@ This endpoint sends a test email with an unsubscribe link that contains a token.
          - Don't add quotes around the token
          - Don't add "Bearer" or any prefix
          - Just paste the token value exactly as it appears
-       - Example: If your token is `8HYyNgbha7omNKG5TlUVu5n7MK3UFWEH`, paste exactly that
+       - Example: If your token is `example-token-abc123xyz456`, paste exactly that (this is just an example - use your actual ADMIN_TOKEN)
    
    - **Request Body**:
      - Click in the "Request Body" text area
