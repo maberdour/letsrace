@@ -1,96 +1,5 @@
 [
   {
-    "id": "1c9faca5",
-    "name": "Crossmanay",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Irvine Beach Park, Ayrshire",
-    "postcode": null,
-    "date": "2025-12-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328075/crossmanay-",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "74e1b743",
-    "name": "New Year's Day Madison Cyclocross",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-01-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328773/new-years-day-madison-cyclocross",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-18T03:15:31.000Z"
-  },
-  {
-    "id": "55065db6",
-    "name": "NovaCross",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Nidderdale Showground, Pateley Bridge",
-    "postcode": null,
-    "date": "2026-01-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/320783/novacross",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "2c7c23e8",
-    "name": "Lloyds Cyclo-cross National Trophy Series 2025/26 Round 6",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Irvine Beach Park, Irvine",
-    "postcode": null,
-    "date": "2026-01-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324040/lloyds-cyclo-cross-national-trophy-series-202526-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "f76dbd18",
-    "name": "Shimano Lazer WMCCL Round 12",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Abbey Stadium, Redditch",
-    "postcode": null,
-    "date": "2026-01-04",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324650/shimano-lazer-wmccl-round-12",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "c12aaf5c",
-    "name": "SWCX 2025/26 Round 9",
-    "type": "Cyclo Cross",
-    "region": "South West",
-    "venue": "Perranporth Airfield, Cornwall",
-    "postcode": null,
-    "date": "2026-01-04",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323755/swcx-202526-round-9",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
-  },
-  {
-    "id": "52cb6c3d",
-    "name": "Wessex Cyclocross League Round 11 - Andover Supercross",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Charlton Sports and Leisure Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-01-04",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328017/wessex-cyclocross-league-round-11---andover-supercross",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-14T03:15:25.000Z"
-  },
-  {
     "id": "440b19f0",
     "name": "Lloyds Cyclo-cross National Championships 2026",
     "type": "Cyclo Cross",
@@ -284,5 +193,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/329945/superquaich-series-round-2---kingdom-velo-cyclocross",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "04e1f204",
+    "name": "SuperQuaich Round 3 - Strathallan Castle CX 2026 - The Daffodil edition",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Strathallan Estate, Perthshire",
+    "postcode": null,
+    "date": "2026-03-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/316886/superquaich-round-3---strathallan-castle-cx-2026---the-daffodil-edition",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-06T03:15:38.000Z"
   }
 ]
