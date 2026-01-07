@@ -1,18 +1,5 @@
 [
   {
-    "id": "bedd8e8c",
-    "name": "Exeter 25/26 Winter Round 3",
-    "type": "BMX",
-    "region": "South West",
-    "venue": "Exeter BMX Track, Devon",
-    "postcode": null,
-    "date": "2026-01-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327037/exeter-2526-winter-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-16T02:15:25.000Z"
-  },
-  {
     "id": "fc03ed6f",
     "name": "Racing Under The Roof 2025/26 Round Three (EXPERT)",
     "type": "BMX",
@@ -24,6 +11,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/328672/racing-under-the-roof-202526-round-three-expert",
     "source": "Google Sheet",
     "last_updated": "2025-11-05T10:17:43.000Z"
+  },
+  {
+    "id": "3939a8b2",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF4",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-01-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330795/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-06T03:15:38.000Z"
   },
   {
     "id": "7af186c2",
@@ -76,6 +76,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330460/the-london-bmx-winter-series-2025-2026-round-3",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "4dcc4771",
+    "name": "Knightwood BMX Club 2025 Winter Series Round 4",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Knightwood BMX, Hampshire",
+    "postcode": null,
+    "date": "2026-01-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330890/knightwood-bmx-club-2025-winter-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-06T03:15:38.000Z"
+  },
+  {
+    "id": "29618066",
+    "name": "Birmingham BMX Club - Winter Series Round 3",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Birmingham BMX Club, Birmingham",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330800/birmingham-bmx-club---winter-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-06T03:15:38.000Z"
   },
   {
     "id": "3853b497",
