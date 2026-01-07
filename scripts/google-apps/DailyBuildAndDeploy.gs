@@ -1272,7 +1272,7 @@ function detectDisciplineFromName(eventName) {
   }
   
   // Check for MTB
-  if (nameLower.includes('mtb') || nameLower.includes('mountain bike')) {
+  if (nameLower.includes('mtb') || nameLower.includes('mountain bike') || nameLower.includes('gravity')) {
     return 'MTB';
   }
   
@@ -1287,7 +1287,7 @@ function detectDisciplineFromName(eventName) {
   }
   
   // Check for Road last (most common, so default if no other match)
-  if (nameLower.includes('road')) {
+  if (nameLower.includes('road') || nameLower.includes('circuit') || nameLower.includes('ciircuit')) {
     return 'Road';
   }
   

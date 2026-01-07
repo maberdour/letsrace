@@ -1,0 +1,228 @@
+{
+  "Name": "BC-Events-CSV",
+  "CreationDate": "2026-1-7",
+  "Commands": [
+    {
+      "Command": "XRun",
+      "Target": "cmd.exe",
+      "Value": "/c del \"H:\\My Drive\\Projects\\05 SEYC\\UIVision\\datasources\\event_data.csv\"",
+      "Description": "Delete existing output file"
+    },
+    {
+      "Command": "store",
+      "Target": "fast",
+      "Value": "!replayspeed",
+      "Description": ""
+    },
+    {
+      "Command": "csvReadArray",
+      "Target": "URLS-BC.csv",
+      "Value": "urlData",
+      "Description": "Read all URLs from CSV"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return ${urlData}.length;",
+      "Value": "urlCount",
+      "Description": "Get number of URLs"
+    },
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "urlIndex",
+      "Description": "Start at row 0 (first data row after header)"
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${urlIndex} < ${urlCount}",
+      "Value": "",
+      "Description": "Loop through all URLs"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return ${urlData}[${urlIndex}][0];",
+      "Value": "regionName",
+      "Description": "Get region name from column A"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return ${urlData}[${urlIndex}][1];",
+      "Value": "currentUrl",
+      "Description": "Get URL from column B"
+    },
+    {
+      "Command": "echo",
+      "Target": "Processing region: ${regionName}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "open",
+      "Target": "${currentUrl}",
+      "Value": "",
+      "Description": "Open the URL from CSV"
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "continuePagination",
+      "Description": ""
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${continuePagination} == 1",
+      "Value": "",
+      "Description": "Pagination loop"
+    },
+    {
+      "Command": "storeXpathCount",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//a[contains(@class, 'event--race__title')])",
+      "Value": "filesCount",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "Number of rows to extract = ${filesCount}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "loopCount",
+      "Description": ""
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${loopCount} <= ${filesCount}",
+      "Value": "",
+      "Description": "Loop through each event row"
+    },
+    {
+      "Command": "echo",
+      "Target": "Loop number: ${loopCount}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//td[contains(@class, 'event--date__column')])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": "Extract date"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//a[contains(@class, 'event--race__title')])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": "Extract event title"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//td[contains(@class, 'event--type__row')])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": "Extract event type"
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//td[6])[${loopCount}]",
+      "Value": "!csvLine",
+      "Description": "Extract column 6"
+    },
+    {
+      "Command": "storeAttribute",
+      "Target": "xpath=(//a[@class='button-expand show-races event--race__title'])[${loopCount}]@href",
+      "Value": "!csvLine",
+      "Description": "Extract event link"
+    },
+    {
+      "Command": "store",
+      "Target": "${regionName}",
+      "Value": "!csvLine",
+      "Description": "Add region name"
+    },
+    {
+      "Command": "csvSave",
+      "Target": "event_data",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(${loopCount}) + 1;",
+      "Value": "loopCount",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End event row loop"
+    },
+    {
+      "Command": "verifyElementPresent",
+      "Target": "xpath=//div[@class='pagination']//a[contains(@class, 'next') and @href]",
+      "Value": "true",
+      "Description": "Check for next page"
+    },
+    {
+      "Command": "if",
+      "Target": "${!statusOK}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//div[@class='pagination']//a[contains(@class, 'next') and @href]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "No more next page. Stopping.",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "continuePagination",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End pagination loop"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(${urlIndex}) + 1;",
+      "Value": "urlIndex",
+      "Description": "Move to next URL"
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End URL loop"
+    }
+  ]
+}
