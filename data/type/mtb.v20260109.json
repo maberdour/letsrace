@@ -13,6 +13,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "0c165a78",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-01-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329952/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "f950127c",
     "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #1 (LUBP)",
     "type": "MTB",
@@ -39,6 +52,71 @@
     "last_updated": "2025-12-14T03:15:28.000Z"
   },
   {
+    "id": "aeb09007",
+    "name": "Delamere Forest MTB Club Youth Session - Jan 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330381/delamere-forest-mtb-club-youth-session---jan-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "bb63f999",
+    "name": "Woodlandriders racing winter series 2025-2026 Round 3",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327333/woodlandriders-racing-winter-series-2025-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-06T03:15:38.000Z"
+  },
+  {
+    "id": "2402b98f",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329632/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "1e7022d1",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330502/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "c2a956e6",
+    "name": "British Cycling Swinley Forest MTB Cluster #1",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "The Summit",
+    "postcode": null,
+    "date": "2026-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330936/british-cycling-swinley-forest-mtb-cluster-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "2035558d",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R6",
     "type": "MTB",
@@ -50,6 +128,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/319237/b-buddies-off-ride-go-ride-race-league-2526-r6",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "daa34ded",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329633/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "1bbef87e",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329953/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "217ef1a0",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330503/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "99dc4367",
@@ -104,6 +221,71 @@
     "last_updated": "2025-12-09T03:15:29.000Z"
   },
   {
+    "id": "8963d17d",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-03-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329634/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "4d7dac00",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-03-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330504/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "a0a6294f",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329954/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "7c4dac83",
+    "name": "Crickley Flyers Go-Ride Race Series Round 1",
+    "type": "MTB",
+    "region": "South",
+    "venue": "417 Bike Park, Gloucester",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329536/crickley-flyers-go-ride-race-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "e787c83a",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330153/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "4d258d03",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R8",
     "type": "MTB",
@@ -130,6 +312,19 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "027f0a4b",
+    "name": "Falkirk Schools MTB Championships 2026",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-04-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/321133/falkirk-schools-mtb-championships-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "55a53a04",
     "name": "ERC Go Ride Dirt Crit",
     "type": "MTB",
@@ -154,6 +349,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329838/sda-series-2026-round-1-innerleithen",
     "source": "Google Sheet",
     "last_updated": "2025-12-14T03:15:28.000Z"
+  },
+  {
+    "id": "13fd46e9",
+    "name": "South West Club Cluster of Coaching - Circuit + MTB 4",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Wheal Jane Circuit, Cornwall",
+    "postcode": null,
+    "date": "2026-04-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330349/south-west-club-cluster-of-coaching---circuit--mtb-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "d5ad189a",
@@ -219,6 +427,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330466/lloyds-national-downhill-series-2026-round-3---glencoe",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "c55bc4ee",
+    "name": "Crickley Flyers Go-Ride Race Series Round 2",
+    "type": "MTB",
+    "region": "South",
+    "venue": "417 Bike Park, Gloucester",
+    "postcode": null,
+    "date": "2026-06-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329537/crickley-flyers-go-ride-race-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "2cc5bc10",
@@ -336,5 +557,31 @@
     "url": "https://www.britishcycling.org.uk/events/details/330468/lloyds-national-downhill-series-2026-round-5---fort-william",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "d1332a8a",
+    "name": "Crickley Flyers Go-Ride Race Series Round 3",
+    "type": "MTB",
+    "region": "South",
+    "venue": "417 Bike Park, Gloucester",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329538/crickley-flyers-go-ride-race-series-round-3-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "9ebe2694",
+    "name": "Crickley Flyers Go-Ride Race Series Round 4",
+    "type": "MTB",
+    "region": "South",
+    "venue": "417 Bike Park, Gloucester",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329539/crickley-flyers-go-ride-race-series-round-4-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   }
 ]
