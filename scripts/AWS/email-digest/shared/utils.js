@@ -242,10 +242,54 @@ function generateUnsubscribeToken(subscriberId, email) {
  */
 function verifyUnsubscribeToken(token) {
   try {
-    const decoded = Buffer.from(token, 'base64url').toString('utf-8');
-    const [payloadString, signature] = decoded.split(':');
+    if (!token || typeof token !== 'string') {
+      console.error('Token verification failed: token is missing or invalid type');
+      return null;
+    }
+    
+    // Try to decode the token - it might be URL-encoded
+    let cleanToken = token;
+    
+    // Remove any URL encoding if present (base64url is URL-safe, but some systems encode it anyway)
+    try {
+      // Try URL decoding first in case it was encoded
+      const urlDecoded = decodeURIComponent(token);
+      // Only use if it's different (was actually encoded)
+      if (urlDecoded !== token && urlDecoded.length > 0) {
+        cleanToken = urlDecoded;
+      }
+    } catch (e) {
+      // If URL decoding fails, use original token
+      // This is fine - base64url tokens shouldn't need URL decoding
+    }
+    
+    // Decode from base64url
+    let decoded;
+    try {
+      decoded = Buffer.from(cleanToken, 'base64url').toString('utf-8');
+    } catch (e) {
+      console.error('Token verification failed: invalid base64url encoding:', e.message);
+      console.error(`Token length: ${token.length}, Clean token length: ${cleanToken.length}`);
+      return null;
+    }
+    
+    const parts = decoded.split(':');
+    if (parts.length !== 2) {
+      console.error(`Token verification failed: invalid token format (expected 2 parts separated by ':', got ${parts.length})`);
+      console.error(`Decoded token preview: ${decoded.substring(0, 100)}...`);
+      return null;
+    }
+    
+    const [payloadString, signature] = parts;
     
     if (!payloadString || !signature) {
+      console.error('Token verification failed: invalid token format (missing payload or signature)');
+      console.error(`Payload string length: ${payloadString ? payloadString.length : 0}, Signature length: ${signature ? signature.length : 0}`);
+      return null;
+    }
+    
+    if (!CONFIG.TOKEN_SECRET || CONFIG.TOKEN_SECRET === 'change-me-in-production') {
+      console.error('Token verification failed: TOKEN_SECRET is not configured');
       return null;
     }
     
@@ -253,20 +297,41 @@ function verifyUnsubscribeToken(token) {
     hmac.update(payloadString);
     const expectedSignature = hmac.digest('hex');
     
+    // Validate signature format (should be hex string, 64 chars for SHA256)
+    if (!/^[0-9a-f]+$/i.test(signature)) {
+      console.error('Token verification failed: signature is not a valid hex string');
+      console.error(`Signature value: "${signature}" (length: ${signature.length})`);
+      console.error(`Signature contains non-hex chars: ${signature.replace(/[0-9a-f]/gi, '')}`);
+      return null;
+    }
+    
+    // Check if signatures have the same length before comparison
+    if (signature.length !== expectedSignature.length) {
+      console.error(`Token verification failed: signature length mismatch (got ${signature.length}, expected ${expectedSignature.length})`);
+      return null;
+    }
+    
+    // Convert hex strings to buffers for constant-time comparison
+    const signatureBuffer = Buffer.from(signature, 'hex');
+    const expectedSignatureBuffer = Buffer.from(expectedSignature, 'hex');
+    
     // Constant-time comparison
-    if (crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expectedSignature))) {
+    if (crypto.timingSafeEqual(signatureBuffer, expectedSignatureBuffer)) {
       const payload = JSON.parse(payloadString);
       
       // Check expiration
       if (payload.exp && payload.exp < Math.floor(Date.now() / 1000)) {
+        console.error(`Token verification failed: token expired (exp: ${payload.exp}, now: ${Math.floor(Date.now() / 1000)})`);
         return null; // Token expired
       }
       
       return payload;
     }
     
+    console.error('Token verification failed: signature mismatch');
     return null;
   } catch (e) {
+    console.error('Token verification failed: exception during verification:', e.message);
     return null;
   }
 }

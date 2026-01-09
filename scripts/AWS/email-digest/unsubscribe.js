@@ -4,6 +4,7 @@
  */
 
 const { 
+  CONFIG,
   createResponse, 
   verifyUnsubscribeToken
 } = require('./shared/utils');
@@ -42,6 +43,7 @@ exports.handler = async (event) => {
     
     // Validate token
     if (!payload.token) {
+      console.error('Unsubscribe request missing token');
       return createResponse(400, {
         success: false,
         message: 'Unsubscribe token is required.'
@@ -49,13 +51,18 @@ exports.handler = async (event) => {
     }
     
     // Verify and decode token
+    console.log('Verifying unsubscribe token (length:', payload.token.length, ', first 20 chars:', payload.token.substring(0, 20), '...)');
+    console.log('TOKEN_SECRET configured:', !!CONFIG.TOKEN_SECRET && CONFIG.TOKEN_SECRET !== 'change-me-in-production');
     const tokenData = verifyUnsubscribeToken(payload.token);
     if (!tokenData) {
+      console.error('Token verification failed for unsubscribe request');
       return createResponse(401, {
         success: false,
-        message: 'Invalid or expired unsubscribe token.'
+        message: 'We couldn\'t process your unsubscribe request. This might be because the link has expired.'
       }, {}, origin);
     }
+    
+    console.log('Token verified successfully for subscriber ID:', tokenData.id);
     
     // Find subscriber
     const subscriber = await findSubscriberById(tokenData.id);

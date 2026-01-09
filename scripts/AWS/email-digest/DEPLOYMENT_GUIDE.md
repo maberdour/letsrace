@@ -10,7 +10,7 @@ This is a step-by-step guide to deploy the LetsRace.cc email digest system to AW
 
 1. **Open AWS Console** → Go to S3
 2. **Click "Create bucket"**
-3. **Bucket name**: `letsrace-subscribers-prod` (or your preferred name)
+3. **Bucket name**: (your preferred name)
 4. **Region**: Choose your preferred region (e.g., `us-east-1`, `eu-west-2` for London)
 5. **Keep "Block all public access" checked** (recommended for security - Lambda functions access via IAM, not public URLs)
 6. **Versioning**: Optional, but recommended for backups

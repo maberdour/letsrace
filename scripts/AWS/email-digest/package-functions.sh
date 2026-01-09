@@ -27,8 +27,20 @@ for func in "${FUNCTIONS[@]}"; do
   fi
   
   # Create zip file
-  zip -r "${func}.zip" "${func}.js" shared/ node_modules/ \
-    -x "*.DS_Store" "*.git*" "*__MACOSX*" "*.zip" "*.md" "*.sh"
+  # Special case: run-digest-now requires run-digest.js
+  if [ "$func" = "run-digest-now" ]; then
+    if [ -f "run-digest.js" ]; then
+      zip -r "${func}.zip" "${func}.js" run-digest.js shared/ node_modules/ \
+        -x "*.DS_Store" "*.git*" "*__MACOSX*" "*.zip" "*.md" "*.sh"
+    else
+      echo "⚠️  Warning: run-digest.js not found, but required by run-digest-now"
+      zip -r "${func}.zip" "${func}.js" shared/ node_modules/ \
+        -x "*.DS_Store" "*.git*" "*__MACOSX*" "*.zip" "*.md" "*.sh"
+    fi
+  else
+    zip -r "${func}.zip" "${func}.js" shared/ node_modules/ \
+      -x "*.DS_Store" "*.git*" "*__MACOSX*" "*.zip" "*.md" "*.sh"
+  fi
   
   # Check if zip was created successfully
   if [ -f "${func}.zip" ]; then

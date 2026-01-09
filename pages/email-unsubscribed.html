@@ -44,7 +44,22 @@
       
       // Get token from URL parameters
       const urlParams = new URLSearchParams(window.location.search);
-      const token = urlParams.get('token');
+      let token = urlParams.get('token');
+      
+      // URLSearchParams.get() should decode automatically, but try explicit decoding as fallback
+      if (token) {
+        try {
+          // Try decoding in case it was double-encoded
+          const decoded = decodeURIComponent(token);
+          // Only use decoded if it's different (was actually encoded)
+          if (decoded !== token) {
+            token = decoded;
+          }
+        } catch (e) {
+          // If decoding fails, use original token
+          console.warn('Token URL decoding failed, using original:', e);
+        }
+      }
       
       if (!token) {
         statusEl.innerHTML = `
