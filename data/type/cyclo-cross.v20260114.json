@@ -1,29 +1,16 @@
 [
   {
-    "id": "440b19f0",
-    "name": "Lloyds Cyclo-cross National Championships 2026",
+    "id": "9f269203",
+    "name": "Fenland Clarion Go-Ride Cross Races",
     "type": "Cyclo Cross",
-    "region": "North East",
-    "venue": "Gypsies Green, Tyne and Wear",
+    "region": "Eastern",
+    "venue": "Embankment Athletics Track, Cambs",
     "postcode": null,
-    "date": "2026-01-10",
+    "date": "2026-01-16",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324041/lloyds-cyclo-cross-national-championships-2026",
+    "url": "https://www.britishcycling.org.uk/events/details/330596/fenland-clarion-go-ride-cross-races",
     "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "e401cf52",
-    "name": "SWCX 2025/26 Round 10 Arlington Court North Devon",
-    "type": "Cyclo Cross",
-    "region": "South West",
-    "venue": "Arlington Court National Trust, Devon",
-    "postcode": null,
-    "date": "2026-01-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323757/swcx-202526-round-10-arlington-court-north-devon-",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "b14f73dd",
@@ -65,15 +52,15 @@
     "last_updated": "2025-09-20T02:15:26.000Z"
   },
   {
-    "id": "2eaa71b9",
-    "name": "NWCCA 2025/26 Round 8 - Weaver Valley Cross",
+    "id": "3b327f80",
+    "name": "NWCCA 2025/26 Round 9 - Weaver Valley Cross",
     "type": "Cyclo Cross",
     "region": "North West",
     "venue": "Cheshire Showground, Tabley",
     "postcode": null,
     "date": "2026-01-18",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324581/nwcca-202526-round-8---weaver-valley-cross",
+    "url": "https://www.britishcycling.org.uk/events/details/324581/nwcca-202526-round-9---weaver-valley-cross",
     "source": "Google Sheet",
     "last_updated": "2025-10-20T02:15:25.000Z"
   },
@@ -104,6 +91,19 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "e6cd8ab3",
+    "name": "Challenge Tires London and South East CX League - Round 09",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327907/challenge-tires-london-and-south-east-cx-league---round-09",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "303282ef",
     "name": "Leicestershire Cyclo-cross League Rd 6 promoted by CWCC",
     "type": "Cyclo Cross",
@@ -128,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/324561/milton-cross---eastern-league-202526-rd-10",
     "source": "Google Sheet",
     "last_updated": "2025-12-12T03:15:26.000Z"
+  },
+  {
+    "id": "e74b2000",
+    "name": "South West Winter Series CX Kirroughtree 2026",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Kirroughtree Forest, Scotland",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329869/south-west-winter-series-cx-kirroughtree-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "1daf6561",
@@ -156,6 +169,19 @@
     "last_updated": "2025-11-18T03:15:31.000Z"
   },
   {
+    "id": "6f6c7129",
+    "name": "Challenge Tires London and South East CX League - Round 10",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Preston Park Velodrome, The Ride, Brighton",
+    "postcode": null,
+    "date": "2026-02-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330988/challenge-tires-london-and-south-east-cx-league---round-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
     "id": "e03ce5c1",
     "name": "Lannock Cross Eastern League 2025/26 Rd 11",
     "type": "Cyclo Cross",
@@ -182,6 +208,19 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "96739bdd",
+    "name": "Haringey Schools Cycling League 2025_2026 Round 5",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Finsbury Park, London",
+    "postcode": null,
+    "date": "2026-02-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330031/haringey-schools-cycling-league-2025_2026-round-5-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "1a1c3bde",
     "name": "SuperQuaich Series Round 2 - Kingdom Velo Cyclocross",
     "type": "Cyclo Cross",
@@ -206,5 +245,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/316886/superquaich-round-3---strathallan-castle-cx-2026---the-daffodil-edition",
     "source": "Google Sheet",
     "last_updated": "2026-01-06T03:15:38.000Z"
+  },
+  {
+    "id": "c6cbff05",
+    "name": "South West Club Cluster of Coaching - Circuit 6 and CX 1",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Torbay Velopark, Devon",
+    "postcode": null,
+    "date": "2026-09-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330352/south-west-club-cluster-of-coaching---circuit-6-and-cx-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   }
 ]
