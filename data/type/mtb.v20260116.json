@@ -1,31 +1,5 @@
 [
   {
-    "id": "93f44700",
-    "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R5",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Beaumanor Hall, Loughborough",
-    "postcode": null,
-    "date": "2026-01-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319236/b-buddies-off-ride-go-ride-race-league-2526-r5",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "0c165a78",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-01-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329952/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "f950127c",
     "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #1 (LUBP)",
     "type": "MTB",
@@ -182,6 +156,19 @@
     "last_updated": "2025-12-06T03:15:27.000Z"
   },
   {
+    "id": "b3b2546b",
+    "name": "British Cycling Swinley Forest MTB Cluster #2",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "The Summit",
+    "postcode": null,
+    "date": "2026-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330942/british-cycling-swinley-forest-mtb-cluster-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
     "id": "c1dc8790",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R7",
     "type": "MTB",
@@ -247,6 +234,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "28745383",
+    "name": "British Cycling Swinley Forest MTB Cluster #3",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "The Summit",
+    "postcode": null,
+    "date": "2026-03-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330990/british-cycling-swinley-forest-mtb-cluster-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
     "id": "a0a6294f",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
     "type": "MTB",
@@ -273,6 +273,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "a12134f8",
+    "name": "Cotton Wood Easter Downhill",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Cotton Wood, Cornwall",
+    "postcode": null,
+    "date": "2026-04-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330935/cotton-wood-easter-downhill",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
     "id": "e787c83a",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
     "type": "MTB",
@@ -284,6 +297,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330153/beicio-cymru-pathway-development-centres---xco-mtb---fod",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "95e8d056",
+    "name": "British Cycling Clanfield Introduction to Racing | MTB Cluster #4",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Clanfield Cross Course, Clanfield",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330994/british-cycling-clanfield-introduction-to-racing--mtb-cluster-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
     "id": "4d258d03",
@@ -390,6 +416,19 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "ed61a766",
+    "name": "British Cycling Swinley Forest MTB Cluster #5",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "The Summit",
+    "postcode": null,
+    "date": "2026-05-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330995/british-cycling-swinley-forest-mtb-cluster-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
     "id": "f565cef7",
     "name": "SDA Series 2026 Round 2 (Ae Forest)",
     "type": "MTB",
@@ -414,6 +453,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/319241/b-buddies-off-ride-go-ride-race-league-2526-r10",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "bd2b930c",
+    "name": "British Cycling Swinley Forest MTB Cluster #6",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "The Summit",
+    "postcode": null,
+    "date": "2026-06-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330996/british-cycling-swinley-forest-mtb-cluster-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
     "id": "5c9eba12",

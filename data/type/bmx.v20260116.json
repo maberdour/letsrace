@@ -1,31 +1,5 @@
 [
   {
-    "id": "b2d0372c",
-    "name": "British Cycling Pathway Development Centre BMX XC - Braintree #141",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Braintree BMX Track, Essex",
-    "postcode": null,
-    "date": "2026-01-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330669/british-cycling-pathway-development-centre-bmx-xc---braintree-141",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "fc03ed6f",
-    "name": "Racing Under The Roof 2025/26 Round Three (EXPERT)",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-01-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328672/racing-under-the-roof-202526-round-three-expert",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
     "id": "3939a8b2",
     "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF4",
     "type": "BMX",
@@ -221,15 +195,41 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
-    "id": "7a66136e",
-    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #4",
+    "id": "18f02d42",
+    "name": "Peterborough bmx winter series - Round 4",
     "type": "BMX",
-    "region": "South",
-    "venue": "Gosport BMX Club, Hampshire",
+    "region": "Eastern",
+    "venue": "Peterborough BMX Track, PETERBOROUGH",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331178/peterborough-bmx-winter-series---round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
+    "id": "18f02d42",
+    "name": "Peterborough bmx winter series - Round 4",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Peterborough BMX Track, PETERBOROUGH",
+    "postcode": null,
+    "date": "2026-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331178/peterborough-bmx-winter-series---round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
+    "id": "a854d768",
+    "name": "Braintree BMX RD5 Winter Series",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Braintree BMX Track, Essex",
     "postcode": null,
     "date": "2026-02-01",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330796/british-cycling-pathway-development-centre-bmx---south-zone-1-25-26-4",
+    "url": "https://www.britishcycling.org.uk/events/details/327266/braintree-bmx-rd5-winter-series",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
@@ -284,19 +284,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/327724/bmx-east-winter-series-20252026-round-5",
     "source": "Google Sheet",
     "last_updated": "2025-10-01T02:15:26.000Z"
-  },
-  {
-    "id": "4d22103f",
-    "name": "Braintree BMX RD5 Winter Series",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Braintree BMX Track, Essex",
-    "postcode": null,
-    "date": "2026-02-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327266/braintree-bmx-rd5-winter-series",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "c7280a19",
@@ -377,6 +364,19 @@
     "last_updated": "2025-10-01T02:15:26.000Z"
   },
   {
+    "id": "34836765",
+    "name": "Braintree BMX RD 6 Winter Series",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Braintree BMX Track, Essex",
+    "postcode": null,
+    "date": "2026-03-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327267/braintree-bmx-rd-6-winter-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "4f2fe2eb",
     "name": "Deep South 2025-26 Round 6",
     "type": "BMX",
@@ -390,17 +390,17 @@
     "last_updated": "2025-09-09T02:15:27.000Z"
   },
   {
-    "id": "57533acb",
-    "name": "Braintree BMX RD 6 Winter Series",
+    "id": "6199d5ca",
+    "name": "North Region BMX 2026 Round 1 North East",
     "type": "BMX",
-    "region": "Eastern",
-    "venue": "Braintree BMX Track, Essex",
+    "region": "North East",
+    "venue": "Hartlepool BMX Track, Cleveland",
     "postcode": null,
     "date": "2026-03-08",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327267/braintree-bmx-rd-6-winter-series",
+    "url": "https://www.britishcycling.org.uk/events/details/331051/north-region-bmx-2026-round-1-north-east",
     "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
+    "last_updated": "2026-01-15T03:15:24.000Z"
   },
   {
     "id": "7c926c9c",

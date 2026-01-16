@@ -1,57 +1,5 @@
 [
   {
-    "id": "440b19f0",
-    "name": "Lloyds Cyclo-cross National Championships 2026",
-    "type": "Cyclo Cross",
-    "region": "North East",
-    "venue": "Gypsies Green, Tyne and Wear",
-    "postcode": null,
-    "date": "2026-01-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/324041/lloyds-cyclo-cross-national-championships-2026",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "9b9f8642",
-    "name": "Muddy Monsters - Welwyn Wheelers 2",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-01-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326706/muddy-monsters---welwyn-wheelers-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "cd254ed6",
-    "name": "Limited Edition Cycling Go-Ride Winter Series, Round 2",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-01-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328376/limited-edition-cycling-go-ride-winter-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "e401cf52",
-    "name": "SWCX 2025/26 Round 10 Arlington Court North Devon",
-    "type": "Cyclo Cross",
-    "region": "South West",
-    "venue": "Arlington Court National Trust, Devon",
-    "postcode": null,
-    "date": "2026-01-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/323757/swcx-202526-round-10-arlington-court-north-devon-",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-20T02:15:27.000Z"
-  },
-  {
     "id": "9f269203",
     "name": "Fenland Clarion Go-Ride Cross Races",
     "type": "Cyclo Cross",
@@ -219,6 +167,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/328018/wessex-cyclocross-league-round-13---crow-cross",
     "source": "Google Sheet",
     "last_updated": "2025-11-18T03:15:31.000Z"
+  },
+  {
+    "id": "6f6c7129",
+    "name": "Challenge Tires London and South East CX League - Round 10",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Preston Park Velodrome, The Ride, Brighton",
+    "postcode": null,
+    "date": "2026-02-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330988/challenge-tires-london-and-south-east-cx-league---round-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
   },
   {
     "id": "e03ce5c1",
