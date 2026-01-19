@@ -1,18 +1,5 @@
 [
   {
-    "id": "0c165a78",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-01-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329952/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "f950127c",
     "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #1 (LUBP)",
     "type": "MTB",
@@ -156,6 +143,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "a0a5065a",
+    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 1, Red.",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Stile Cop, Staffordshire",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331209/racers-guild-racing---works-components-super-cup-26-round-1-red",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "99dc4367",
     "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #2 (FoD)",
     "type": "MTB",
@@ -273,6 +273,32 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "e0d42bb7",
+    "name": "Crank-It Lee Quarry Classic XCO 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Lee Quarry, Lancashire",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330556/crank-it-lee-quarry--classic-xco-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-19T03:15:26.000Z"
+  },
+  {
+    "id": "e0d42bb7",
+    "name": "Crank-It Lee Quarry Classic XCO 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Lee Quarry, Lancashire",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330556/crank-it-lee-quarry--classic-xco-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-19T03:15:26.000Z"
+  },
+  {
     "id": "7c4dac83",
     "name": "Crickley Flyers Go-Ride Race Series Round 1",
     "type": "MTB",
@@ -284,6 +310,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/329536/crickley-flyers-go-ride-race-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "671b4ef7",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 1",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2026-03-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331414/lloyds-2026-national-mtb-cross-country-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "671b4ef7",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 1",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2026-03-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331414/lloyds-2026-national-mtb-cross-country-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "a12134f8",
+    "name": "Cotton Wood Easter Downhill",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Cotton Wood, Cornwall",
+    "postcode": null,
+    "date": "2026-04-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330935/cotton-wood-easter-downhill",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
   },
   {
     "id": "e787c83a",
@@ -310,6 +375,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330994/british-cycling-clanfield-introduction-to-racing--mtb-cluster-4",
     "source": "Google Sheet",
     "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
+    "id": "f4448d54",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 2",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Cannock Chase - Rugeley, Rugeley",
+    "postcode": null,
+    "date": "2026-04-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331417/lloyds-2026-national-mtb-cross-country-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "f4448d54",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 2",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Cannock Chase - Rugeley, Rugeley",
+    "postcode": null,
+    "date": "2026-04-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331417/lloyds-2026-national-mtb-cross-country-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "4d258d03",
@@ -403,6 +494,32 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "37ceeff2",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 3",
+    "type": "MTB",
+    "region": "Yorkshire & Humber",
+    "venue": "Parkwood Outdoor Centre, Tong Village",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331418/lloyds-2026-national-mtb-cross-country-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "37ceeff2",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 3",
+    "type": "MTB",
+    "region": "Yorkshire & Humber",
+    "venue": "Parkwood Outdoor Centre, Tong Village",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331418/lloyds-2026-national-mtb-cross-country-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "9a61d364",
     "name": "Lloyds National Downhill Series 2026 Round 2 - Antur Stiniog",
     "type": "MTB",
@@ -455,6 +572,32 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "8cad1afe",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 4",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Pippingford Park, Uckfield",
+    "postcode": null,
+    "date": "2026-06-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331419/lloyds-2026-national-mtb-cross-country-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "8cad1afe",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 4",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Pippingford Park, Uckfield",
+    "postcode": null,
+    "date": "2026-06-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331419/lloyds-2026-national-mtb-cross-country-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "bd2b930c",
     "name": "British Cycling Swinley Forest MTB Cluster #6",
     "type": "MTB",
@@ -481,6 +624,32 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "74bddf54",
+    "name": "Scarborough Cycling Festival - North of England Championships - Crank It Classic XCO 2026",
+    "type": "MTB",
+    "region": "Yorkshire & Humber",
+    "venue": "Olivers Mount, Scarborough",
+    "postcode": null,
+    "date": "2026-06-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330557/scarborough-cycling-festival---north-of-england-championships---crank-it-classic-xco-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-19T03:15:26.000Z"
+  },
+  {
+    "id": "74bddf54",
+    "name": "Scarborough Cycling Festival - North of England Championships - Crank It Classic XCO 2026",
+    "type": "MTB",
+    "region": "Yorkshire & Humber",
+    "venue": "Olivers Mount, Scarborough",
+    "postcode": null,
+    "date": "2026-06-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330557/scarborough-cycling-festival---north-of-england-championships---crank-it-classic-xco-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-19T03:15:26.000Z"
+  },
+  {
     "id": "c55bc4ee",
     "name": "Crickley Flyers Go-Ride Race Series Round 2",
     "type": "MTB",
@@ -492,6 +661,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/329537/crickley-flyers-go-ride-race-series-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "617bfe60",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 5",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "Margam Country Park, South Wales",
+    "postcode": null,
+    "date": "2026-07-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331427/lloyds-2026-national-mtb-cross-country-series-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "617bfe60",
+    "name": "Lloyds 2026 National MTB Cross Country Series Round 5",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Margam Country Park, South Wales",
+    "postcode": null,
+    "date": "2026-07-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331427/lloyds-2026-national-mtb-cross-country-series-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "2cc5bc10",

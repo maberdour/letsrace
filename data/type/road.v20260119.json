@@ -1,109 +1,5 @@
 [
   {
-    "id": "8dde4139",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #2",
-    "type": "Road",
-    "region": "South",
-    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
-    "postcode": null,
-    "date": "2026-01-12",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330887/british-cycling-pathway-development-centre-circuit---palmer-park-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "4aee6a6f",
-    "name": "British Cycling Pathway Development Centre - Leicester Cycle Circuit #9",
-    "type": "Road",
-    "region": "East Midlands",
-    "venue": "Leicester Cycle Circuit, Leicestershire",
-    "postcode": null,
-    "date": "2026-01-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325178/british-cycling-pathway-development-centre---leicester-cycle-circuit-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "a64ded08",
-    "name": "British Cycling Pathway Development Centre Ciircuit - Shrewsbury #12",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Sundorne Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-01-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330562/british-cycling-pathway-development-centre-ciircuit---shrewsbury-12",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "6d37b2de",
-    "name": "British Cycling Pathway Development Centre Circuit - Moredon Sporting Hub #2",
-    "type": "Road",
-    "region": "South",
-    "venue": "Moredon Sporting Hub, Swindon",
-    "postcode": null,
-    "date": "2026-01-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330888/british-cycling-pathway-development-centre-circuit---moredon-sporting-hub-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "0ef64c0d",
-    "name": "British Cycling Pathway Development Centre Circuit - York #83",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "York Sport Cycle Circuit, North Yorkshire",
-    "postcode": null,
-    "date": "2026-01-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330882/british-cycling-pathway-development-centre-circuit---york-83",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "8fb814a5",
-    "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #143",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Northampton Bike Park, Northampton",
-    "postcode": null,
-    "date": "2026-01-17",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331007/british-cycling-pathway-development-centre-gravity---northampton-devo-143",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-09T03:15:25.000Z"
-  },
-  {
-    "id": "fcdb2210",
-    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #43",
-    "type": "Road",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-01-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330152/british-cycling-pathway-development-centre-gravity---forest-of-dean-43",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "ccc4e5dd",
-    "name": "Chilly City Crits 2026 - Round 1",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Lee Valley VeloPark, London",
-    "postcode": null,
-    "date": "2026-01-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330039/chilly-city-crits-2026---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-12T03:15:26.000Z"
-  },
-  {
     "id": "5f9c01f7",
     "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #3",
     "type": "Road",
@@ -364,6 +260,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "bb61473c",
+    "name": "Sulis Scorpions 2026 Odd Down Event #1",
+    "type": "Road",
+    "region": "South",
+    "venue": "Odd Down Cycling Circuit, Bath",
+    "postcode": null,
+    "date": "2026-02-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331299/sulis-scorpions-2026-odd-down-event-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-18T03:15:27.000Z"
+  },
+  {
     "id": "c6fdfa4f",
     "name": "Chilly City Crits 2026 - Round 2",
     "type": "Road",
@@ -507,6 +416,19 @@
     "last_updated": "2026-01-09T03:15:25.000Z"
   },
   {
+    "id": "2331e881",
+    "name": "VCL Deux Jours",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Cyclopark, Kent",
+    "postcode": null,
+    "date": "2026-03-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331195/vcl-deux-jours",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "ad987b25",
     "name": "Bath and Swindon Winter Series round 8",
     "type": "Road",
@@ -546,6 +468,19 @@
     "last_updated": "2025-12-12T03:15:26.000Z"
   },
   {
+    "id": "1a3b57cc",
+    "name": "South London Go-Ride Racing League - Race 4 of 9",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Cyclopark, Kent",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330739/south-london-go-ride-racing-league---race-4-of-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
     "id": "307973bd",
     "name": "British Cycling Pathway Development Centre - Leicester Cycle Circuit #14",
     "type": "Road",
@@ -572,6 +507,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "8695cf06",
+    "name": "SCC Youth Races sponsored by Dolan Bikes - Round 1 of NW Youth League",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Victoria Park, Merseyside",
+    "postcode": null,
+    "date": "2026-03-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331026/scc-youth-races-sponsored-by-dolan-bikes---round-1-of-nw-youth-league",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "7015835c",
     "name": "Wyke Circuit Races 1",
     "type": "Road",
@@ -583,6 +531,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330580/wyke-circuit-races-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
+    "id": "534f3d2d",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-04-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/293173/portsmouth-evening-circuits-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "00433e83",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-04-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/293174/portsmouth-evening-circuits-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "6f659560",
@@ -611,6 +585,32 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "3b5a4cba",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 1 (youth only)",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Crystal Palace Park, London",
+    "postcode": null,
+    "date": "2026-04-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331004/dulwich-paragon-cc-crystal-palace-crits-race-1-youth-only",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "1f0f446c",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-04-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329822/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "c4677777",
     "name": "Tony Asplin One Day Youth Stage Race",
     "type": "Road",
@@ -622,6 +622,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330380/tony-asplin-one-day-youth-stage-race",
     "source": "Google Sheet",
     "last_updated": "2025-12-20T03:15:25.000Z"
+  },
+  {
+    "id": "7ac90cbe",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 3 (all ages)",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Crystal Palace Park, London",
+    "postcode": null,
+    "date": "2026-04-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331006/dulwich-paragon-cc-crystal-palace-crits-race-3-all-ages",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-18T03:15:27.000Z"
+  },
+  {
+    "id": "3952f63c",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-04-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329823/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "71ce85ba",
@@ -637,6 +663,19 @@
     "last_updated": "2026-01-09T03:15:25.000Z"
   },
   {
+    "id": "e0fb9b4e",
+    "name": "Ixworth Crits 2026",
+    "type": "Road",
+    "region": "Eastern",
+    "venue": "Ixworth Village Hall, Bury St Edmunds",
+    "postcode": null,
+    "date": "2026-05-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330268/ixworth-crits-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "754fc0ec",
     "name": "Wyke Circuit Race 3",
     "type": "Road",
@@ -648,6 +687,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330584/wyke-circuit-race-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
+    "id": "7366097e",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-05-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329824/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "d4bb4a7f",
@@ -663,6 +715,58 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
+    "id": "43460d11",
+    "name": "Wyke Evening Circuit Race 1",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Wyke Community Sports Village Road Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330586/wyke-evening-circuit-race-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "7227cf9e",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-05-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329825/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "d4b704cc",
+    "name": "HHV Crit League - Round 4",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329750/hhv-crit-league---round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "e391aeff",
+    "name": "Wyke Evening Circuit Race 2",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Wyke Community Sports Village Road Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-06-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330588/wyke-evening-circuit-race-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "5884f6c9",
     "name": "South West Club Cluster of Coaching - Circuit 5",
     "type": "Road",
@@ -674,6 +778,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330351/south-west-club-cluster-of-coaching---circuit-5",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "f95bce85",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-06-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329826/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "d64746d1",
+    "name": "Wyke Evening Circuit Race 3",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Wyke Community Sports Village Road Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-06-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330589/wyke-evening-circuit-race-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "b2504d81",
@@ -702,6 +832,32 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "a1605a9b",
+    "name": "South London Go-Ride Racing League - Race 8 of 9",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-06-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330847/south-london-go-ride-racing-league---race-8-of-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
+    "id": "b474069c",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-06-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329827/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
     "id": "898af29d",
     "name": "Lawford Youth Series at Curborough 26 #5",
     "type": "Road",
@@ -726,6 +882,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330378/do-you-even-sprnt-bro-lesta-crit",
     "source": "Google Sheet",
     "last_updated": "2026-01-06T03:15:38.000Z"
+  },
+  {
+    "id": "4b5162ea",
+    "name": "Redbourn Crits (Fete du Velo)",
+    "type": "Road",
+    "region": "Eastern",
+    "venue": "Redbourn Common, Hertfordshire",
+    "postcode": null,
+    "date": "2026-07-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331350/redbourn-crits-fete-du-velo",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "1b1f9956",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-07-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329828/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-19T03:15:26.000Z"
   },
   {
     "id": "f81450c4",
