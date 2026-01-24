@@ -729,32 +729,6 @@
       "last_updated": "2026-01-20T03:15:25.000Z"
     },
     {
-      "id": "f86e1c21",
-      "name": "RCR x Alta Via Goodwood Spring Series #1",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-05",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/330495/rcr-x-alta-via-goodwood-spring-series-1",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-20T03:15:25.000Z"
-    },
-    {
-      "id": "1157c3f7",
-      "name": "RCR x Alta Via Goodwood Spring Series #2",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-12",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/331255/rcr-x-alta-via-goodwood-spring-series-2",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-20T03:15:25.000Z"
-    },
-    {
       "id": "f9908e8b",
       "name": "Spring in the Park 2026 #4",
       "type": "Road",
@@ -764,32 +738,6 @@
       "date": "2026-05-15",
       "start_time": "00:00",
       "url": "https://www.britishcycling.org.uk/events/details/331365/spring-in-the-park-2026-4",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-20T03:15:25.000Z"
-    },
-    {
-      "id": "1450ad05",
-      "name": "RCR x Alta Via Goodwood Spring Series #3",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-19",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/331256/rcr-x-alta-via-goodwood-spring-series-3",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-20T03:15:25.000Z"
-    },
-    {
-      "id": "107edbcd",
-      "name": "RCR x Alta Via Goodwood Spring Series #4",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-26",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/331257/rcr-x-alta-via-goodwood-spring-series-4",
       "source": "Google Sheet",
       "last_updated": "2026-01-20T03:15:25.000Z"
     },
@@ -1405,7 +1353,7 @@
       "last_updated": "2026-01-24T03:15:24.000Z"
     }
   ],
-  "last_build": "2026-01-24T03:25:17.643Z",
-  "total_new_events": 108,
+  "last_build": "2026-01-24T15:27:12.230Z",
+  "total_new_events": 104,
   "cutoff_date": "2026-01-17"
 }

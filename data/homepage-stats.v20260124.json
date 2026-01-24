@@ -2,7 +2,7 @@
   "disciplines": {
     "road": {
       "name": "Road",
-      "count": 104
+      "count": 100
     },
     "track": {
       "name": "Track",
@@ -33,6 +33,6 @@
       "count": 0
     }
   },
-  "last_build": "2026-01-24T03:25:17.652Z",
-  "total_events": 374
+  "last_build": "2026-01-24T15:27:12.231Z",
+  "total_events": 370
 }
