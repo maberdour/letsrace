@@ -10,11 +10,11 @@
     },
     "bmx": {
       "name": "BMX",
-      "count": 35
+      "count": 34
     },
     "mtb": {
       "name": "MTB",
-      "count": 72
+      "count": 65
     },
     "cyclo-cross": {
       "name": "Cyclo Cross",
@@ -33,6 +33,6 @@
       "count": 0
     }
   },
-  "last_build": "2026-01-24T15:27:12.231Z",
-  "total_events": 370
+  "last_build": "2026-01-24T15:30:48.804Z",
+  "total_events": 362
 }

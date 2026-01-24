@@ -65,19 +65,6 @@
     "last_updated": "2026-01-13T03:15:25.000Z"
   },
   {
-    "id": "18f02d42",
-    "name": "Peterborough bmx winter series - Round 4",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2026-01-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331178/peterborough-bmx-winter-series---round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-13T03:15:25.000Z"
-  },
-  {
     "id": "a854d768",
     "name": "Braintree BMX RD5 Winter Series",
     "type": "BMX",
