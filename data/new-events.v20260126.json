@@ -92,19 +92,6 @@
       "last_updated": "2026-01-20T03:15:25.000Z"
     },
     {
-      "id": "77865da4",
-      "name": "Derby Arena Youth Track League Event 4",
-      "type": "Track",
-      "region": "East Midlands",
-      "venue": "Derby Velodrome, Derby",
-      "postcode": null,
-      "date": "2026-02-19",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/331156/derby-arena-youth-track-league-event-4",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-21T03:15:24.000Z"
-    },
-    {
       "id": "35340d81",
       "name": "British Cycling Pathway Development Centre Circuit - York #88",
       "type": "Road",
@@ -116,6 +103,19 @@
       "url": "https://www.britishcycling.org.uk/events/details/331656/british-cycling-pathway-development-centre-circuit---york-88",
       "source": "Google Sheet",
       "last_updated": "2026-01-23T03:15:24.000Z"
+    },
+    {
+      "id": "77865da4",
+      "name": "Derby Arena Youth Track League Event 4",
+      "type": "Track",
+      "region": "East Midlands",
+      "venue": "Derby Velodrome, Derby",
+      "postcode": null,
+      "date": "2026-02-19",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/331156/derby-arena-youth-track-league-event-4",
+      "source": "Google Sheet",
+      "last_updated": "2026-01-21T03:15:24.000Z"
     },
     {
       "id": "62aedee5",
@@ -157,19 +157,6 @@
       "last_updated": "2026-01-23T03:15:24.000Z"
     },
     {
-      "id": "b9efead2",
-      "name": "L'Enfer du Linlithgow 2026",
-      "type": "Road",
-      "region": "Scotland",
-      "venue": "West Lothian Cycle Circuit, West Lothian Leisure Centre, Scotland",
-      "postcode": null,
-      "date": "2026-02-28",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/330463/lenfer-du-linlithgow-2026",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-23T03:15:24.000Z"
-    },
-    {
       "id": "10064f80",
       "name": "Exeter Uni Early Season Crits (South West Series)",
       "type": "Road",
@@ -179,6 +166,19 @@
       "date": "2026-02-28",
       "start_time": "00:00",
       "url": "https://www.britishcycling.org.uk/events/details/330833/exeter-uni-early-season-crits-south-west-series",
+      "source": "Google Sheet",
+      "last_updated": "2026-01-23T03:15:24.000Z"
+    },
+    {
+      "id": "b9efead2",
+      "name": "L'Enfer du Linlithgow 2026",
+      "type": "Road",
+      "region": "Scotland",
+      "venue": "West Lothian Cycle Circuit, West Lothian Leisure Centre, Scotland",
+      "postcode": null,
+      "date": "2026-02-28",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/330463/lenfer-du-linlithgow-2026",
       "source": "Google Sheet",
       "last_updated": "2026-01-23T03:15:24.000Z"
     },
@@ -235,19 +235,6 @@
       "last_updated": "2026-01-20T03:15:25.000Z"
     },
     {
-      "id": "b8e9971b",
-      "name": "Spring in the Park 2026 #1",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Cyclopark, Kent",
-      "postcode": null,
-      "date": "2026-03-28",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/331357/spring-in-the-park-2026-1",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-20T03:15:25.000Z"
-    },
-    {
       "id": "3a008525",
       "name": "British Cycling Pathway Development Centre BMX - South West #13 Burnham BMX Club",
       "type": "BMX",
@@ -257,6 +244,19 @@
       "date": "2026-03-28",
       "start_time": "00:00",
       "url": "https://www.britishcycling.org.uk/events/details/331473/british-cycling-pathway-development-centre-bmx---south-west-13-burnham-bmx-club-",
+      "source": "Google Sheet",
+      "last_updated": "2026-01-20T03:15:25.000Z"
+    },
+    {
+      "id": "b8e9971b",
+      "name": "Spring in the Park 2026 #1",
+      "type": "Road",
+      "region": "London & South East",
+      "venue": "Cyclopark, Kent",
+      "postcode": null,
+      "date": "2026-03-28",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/331357/spring-in-the-park-2026-1",
       "source": "Google Sheet",
       "last_updated": "2026-01-20T03:15:25.000Z"
     },
@@ -729,6 +729,19 @@
       "last_updated": "2026-01-20T03:15:25.000Z"
     },
     {
+      "id": "f5806f23",
+      "name": "PORTSMOUTH EVENING CIRCUITS",
+      "type": "Road",
+      "region": "South",
+      "venue": "Mountbatten Centre, Hampshire",
+      "postcode": null,
+      "date": "2026-07-22",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/329829/portsmouth-evening-circuits",
+      "source": "Google Sheet",
+      "last_updated": "2026-01-26T03:15:25.000Z"
+    },
+    {
       "id": "29028d01",
       "name": "Pearce Cycles DH Series 2026 Round 3",
       "type": "MTB",
@@ -779,48 +792,9 @@
       "url": "https://www.britishcycling.org.uk/events/details/331426/pearce-cycles-dh-series-2026-round-4",
       "source": "Google Sheet",
       "last_updated": "2026-01-20T03:15:25.000Z"
-    },
-    {
-      "id": "f86e1c21",
-      "name": "RCR x Alta Via Goodwood Spring Series #1",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-05",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/330495/rcr-x-alta-via-goodwood-spring-series-1",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-25T03:15:24.000Z"
-    },
-    {
-      "id": "1157c3f7",
-      "name": "RCR x Alta Via Goodwood Spring Series #2",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-12",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/331255/rcr-x-alta-via-goodwood-spring-series-2",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-25T03:15:24.000Z"
-    },
-    {
-      "id": "f5806f23",
-      "name": "PORTSMOUTH EVENING CIRCUITS",
-      "type": "Road",
-      "region": "South",
-      "venue": "Mountbatten Centre, Hampshire",
-      "postcode": null,
-      "date": "2026-07-22",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/329829/portsmouth-evening-circuits",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-26T03:15:25.000Z"
     }
   ],
-  "last_build": "2026-01-26T03:25:18.490Z",
-  "total_new_events": 63,
+  "last_build": "2026-01-26T08:51:10.355Z",
+  "total_new_events": 61,
   "cutoff_date": "2026-01-19"
 }
