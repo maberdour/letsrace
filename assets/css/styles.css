@@ -984,6 +984,14 @@ main h1 {
   font-style: normal;
 }
 
+/* Newly added toggle */
+.new-events-toggle {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.5rem 0;
+}
+
 /* Position intro-text in main content column on desktop */
 @media (min-width: 769px) {
   .intro-text {

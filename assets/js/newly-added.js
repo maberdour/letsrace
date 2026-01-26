@@ -36,8 +36,8 @@ function logPerformanceSummary() {
   }
 }
 
-// Number of days after which an event is no longer considered "NEW"
-const NEW_EVENT_DAYS = 7;
+// Default number of days after which an event is no longer considered "NEW"
+const DEFAULT_NEW_EVENT_DAYS = 7;
 
 // Debounce utility
 function debounce(func, wait) {
@@ -125,9 +125,10 @@ function renderNewlyAddedEventCard(event) {
 }
 
 // Render events for newly added page
-function renderNewlyAddedEvents(events, container, titleElement) {
+function renderNewlyAddedEvents(events, container, titleElement, days) {
   if (events.length === 0) {
-    container.innerHTML = '<div class="no-events"><p>No recently added events found for the selected regions.</p></div>';
+    const rangeText = days === 1 ? 'the last 24 hours' : `the last ${days} days`;
+    container.innerHTML = `<div class="no-events"><p>No recently added events found in ${rangeText} for the selected regions.</p></div>`;
     if (titleElement) {
       titleElement.textContent = 'Newly Added Events';
     }
@@ -191,6 +192,8 @@ function initNewlyAddedPage() {
   const newEventsTitle = document.getElementById('new-events-title');
   const filterToggle = document.getElementById('filter-toggle');
   const filterContent = document.getElementById('filter-content');
+  const newEventsToggle = document.getElementById('new-events-toggle');
+  const introText = document.querySelector('.intro-text');
   
   // Validate required elements
   console.log('🔍 Validating DOM elements:', {
@@ -199,7 +202,8 @@ function initNewlyAddedPage() {
     newEventsContainer: !!newEventsContainer,
     newEventsTitle: !!newEventsTitle,
     filterToggle: !!filterToggle,
-    filterContent: !!filterContent
+    filterContent: !!filterContent,
+    newEventsToggle: !!newEventsToggle
   });
   
   if (!regionCheckboxes || !clearRegionsButton || !newEventsContainer || !newEventsTitle) {
@@ -209,6 +213,17 @@ function initNewlyAddedPage() {
   
   let allEvents = [];
   let facets = null;
+  let selectedDays = DEFAULT_NEW_EVENT_DAYS;
+
+  /**
+   * Update intro copy based on the selected day range.
+   * @param {number} days
+   */
+  function updateIntroText(days) {
+    if (!introText) return;
+    const rangeText = days === 1 ? 'last day' : `last ${days} days`;
+    introText.textContent = `These events were added to LetsRace.cc in the ${rangeText}.`;
+  }
   
   // Ensure filter state is properly restored
   function restoreFilterState() {
@@ -373,12 +388,12 @@ function initNewlyAddedPage() {
     console.log('🔍 applyFilters called with regions:', filters.regions);
     console.log('🔍 Total events loaded:', allEvents.length);
     
-    // Filter for new events only (events updated within last 7 days)
+    // Filter for new events only (events updated within selected days)
     const now = new Date();
-    const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
+    const daysAgo = new Date(now.getTime() - (selectedDays * 24 * 60 * 60 * 1000));
     console.log('📅 Current date:', now.toISOString());
-    console.log('📅 Cutoff date (7 days ago):', daysAgo.toISOString());
-    console.log('📅 NEW_EVENT_DAYS:', NEW_EVENT_DAYS);
+    console.log(`📅 Cutoff date (${selectedDays} days ago):`, daysAgo.toISOString());
+    console.log('📅 Selected days:', selectedDays);
     
     const newEvents = allEvents.filter(event => {
       const lastUpdated = event.last_updated || '';
@@ -416,7 +431,7 @@ function initNewlyAddedPage() {
     const sortedEvents = sortEvents(filteredEvents);
     console.log('🔍 Final sorted events:', sortedEvents.length);
     
-    renderNewlyAddedEvents(sortedEvents, newEventsContainer, newEventsTitle);
+    renderNewlyAddedEvents(sortedEvents, newEventsContainer, newEventsTitle, selectedDays);
     
     // Hide result count
     const resultCount = document.getElementById('result-count');
@@ -471,6 +486,28 @@ function initNewlyAddedPage() {
       filterContent.classList.toggle('expanded');
     });
   }
+
+  // Recently added toggle
+  if (newEventsToggle) {
+    const toggleButtons = newEventsToggle.querySelectorAll('button[data-days]');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const days = Number(button.getAttribute('data-days'));
+        if (Number.isNaN(days) || days === selectedDays) return;
+
+        selectedDays = days;
+        toggleButtons.forEach(btn => {
+          const isActive = btn === button;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+
+        updateIntroText(selectedDays);
+        applyFilters();
+        trackAnalytics('days_toggle', { days: selectedDays });
+      });
+    });
+  }
   
   // Event link tracking
   newEventsContainer.addEventListener('click', (e) => {
@@ -483,6 +520,7 @@ function initNewlyAddedPage() {
   
   // Initialize the page
   console.log('✅ Newly Added page module setup complete, initializing page...');
+  updateIntroText(selectedDays);
   initializePage();
 }
 

@@ -31,7 +31,6 @@
     <main>
         <h1 id="new-events-title">Newly Added Events</h1>
         <div class="update-time">Updated on Tue, 19 Aug 2025</div>
-        <p class="intro-text">These events were added to LetsRace.cc in the past 7 days.</p>
         
         <div class="events-page-container">
             <!-- Filter Controls -->
@@ -56,6 +55,10 @@
             
             <!-- Results -->
             <div class="results">
+                <div class="new-events-toggle" id="new-events-toggle" role="group" aria-label="Recently added time range">
+                    <button class="tile-tab active" type="button" data-days="7" aria-pressed="true">Added in Last 7 Days</button>
+                    <button class="tile-tab" type="button" data-days="1" aria-pressed="false">Added in Last 24 Hours</button>
+                </div>
                 <div id="result-count" aria-live="polite">Loading events...</div>
                 
                 <div id="empty-state" hidden>
