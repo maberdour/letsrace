@@ -1,57 +1,5 @@
 [
   {
-    "id": "f950127c",
-    "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #1 (LUBP)",
-    "type": "MTB",
-    "region": "Yorkshire & Humber",
-    "venue": "Leeds Urban Bike Park, West Yorkshire",
-    "postcode": null,
-    "date": "2026-01-24",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329944/british-cycling-mtb-xc-regional-school-of-racing-1-lubp",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-06T03:15:27.000Z"
-  },
-  {
-    "id": "59b734c1",
-    "name": "100% Mini Downhill Jan 2026",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Canop Cycle Centre, Forest Of Dean",
-    "postcode": null,
-    "date": "2026-01-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330166/100-mini-downhill-jan-2026",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-14T03:15:28.000Z"
-  },
-  {
-    "id": "aeb09007",
-    "name": "Delamere Forest MTB Club Youth Session - Jan 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Delamere Forest, Cheshire",
-    "postcode": null,
-    "date": "2026-01-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330381/delamere-forest-mtb-club-youth-session---jan-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "bb63f999",
-    "name": "Woodlandriders racing winter series 2025-2026 Round 3",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Gawton Downhill, Tavistock",
-    "postcode": null,
-    "date": "2026-01-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327333/woodlandriders-racing-winter-series-2025-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-06T03:15:38.000Z"
-  },
-  {
     "id": "2402b98f",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
     "type": "MTB",
@@ -154,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331209/racers-guild-racing---works-components-super-cup-26-round-1-red",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "39d63a73",
+    "name": "Woodlandriders racing winter series 2025-2026 Round 4",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327334/woodlandriders-racing-winter-series-2025-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
   },
   {
     "id": "99dc4367",
@@ -286,19 +247,6 @@
     "last_updated": "2026-01-19T03:15:26.000Z"
   },
   {
-    "id": "e0d42bb7",
-    "name": "Crank-It Lee Quarry Classic XCO 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Lee Quarry, Lancashire",
-    "postcode": null,
-    "date": "2026-03-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330556/crank-it-lee-quarry--classic-xco-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-19T03:15:26.000Z"
-  },
-  {
     "id": "7c4dac83",
     "name": "Crickley Flyers Go-Ride Race Series Round 1",
     "type": "MTB",
@@ -310,19 +258,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/329536/crickley-flyers-go-ride-race-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "671b4ef7",
-    "name": "Lloyds 2026 National MTB Cross Country Series Round 1",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Newnham Park, Plymouth",
-    "postcode": null,
-    "date": "2026-03-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331414/lloyds-2026-national-mtb-cross-country-series-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "671b4ef7",
@@ -377,17 +312,17 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
-    "id": "f4448d54",
-    "name": "Lloyds 2026 National MTB Cross Country Series Round 2",
+    "id": "f697c42f",
+    "name": "Stockport World Series Round 1",
     "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Cannock Chase - Rugeley, Rugeley",
+    "region": "North West",
+    "venue": "Farmer John's, Stockport",
     "postcode": null,
-    "date": "2026-04-10",
+    "date": "2026-04-05",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331417/lloyds-2026-national-mtb-cross-country-series-round-2",
+    "url": "https://www.britishcycling.org.uk/events/details/331507/stockport-world-series-round-1-",
     "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
+    "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
     "id": "f4448d54",
@@ -414,6 +349,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/319239/b-buddies-off-ride-go-ride-race-league-2526-r8",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "ce04dd78",
+    "name": "MIJ Downhill 2026 Round 1",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-04-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331590/mij-downhill-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
   },
   {
     "id": "b809ff02",
@@ -507,19 +455,6 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
-    "id": "37ceeff2",
-    "name": "Lloyds 2026 National MTB Cross Country Series Round 3",
-    "type": "MTB",
-    "region": "Yorkshire & Humber",
-    "venue": "Parkwood Outdoor Centre, Tong Village",
-    "postcode": null,
-    "date": "2026-05-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331418/lloyds-2026-national-mtb-cross-country-series-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
     "id": "9a61d364",
     "name": "Lloyds National Downhill Series 2026 Round 2 - Antur Stiniog",
     "type": "MTB",
@@ -531,6 +466,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330465/lloyds-national-downhill-series-2026-round-2---antur-stiniog",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "0378f4cd",
+    "name": "Pearce Cycles DH Series 2026 Round 1",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Redwood Park, Shropshire",
+    "postcode": null,
+    "date": "2026-05-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331422/pearce-cycles-dh-series-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
     "id": "ed61a766",
@@ -559,6 +507,32 @@
     "last_updated": "2025-12-14T03:15:28.000Z"
   },
   {
+    "id": "8a931aa6",
+    "name": "MIJ Downhill 2026 Round 2",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331594/mij-downhill-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
+  },
+  {
+    "id": "38a3b48c",
+    "name": "Stockport World Series Round 2",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "Berwyn DH Track, Glyn Ceriog / Llangollen",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331510/stockport-world-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
     "id": "e11fa0a8",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R10",
     "type": "MTB",
@@ -585,17 +559,43 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
-    "id": "8cad1afe",
-    "name": "Lloyds 2026 National MTB Cross Country Series Round 4",
+    "id": "dd2f1337",
+    "name": "Pearce Cycles DH Series 2026 Round 2",
     "type": "MTB",
-    "region": "London & South East",
-    "venue": "Pippingford Park, Uckfield",
+    "region": "West Midlands",
+    "venue": "Redwood Park, Shropshire",
     "postcode": null,
     "date": "2026-06-13",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331419/lloyds-2026-national-mtb-cross-country-series-round-4",
+    "url": "https://www.britishcycling.org.uk/events/details/331423/pearce-cycles-dh-series-2026-round-2",
     "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
+    "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "1cde3a70",
+    "name": "MIJ Downhill 2026 Round 3",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331595/mij-downhill-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
+  },
+  {
+    "id": "df152b83",
+    "name": "Stockport World Series Round 3",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "Revolution Bike Park, Oswestry",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331511/stockport-world-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
     "id": "bd2b930c",
@@ -637,19 +637,6 @@
     "last_updated": "2026-01-19T03:15:26.000Z"
   },
   {
-    "id": "74bddf54",
-    "name": "Scarborough Cycling Festival - North of England Championships - Crank It Classic XCO 2026",
-    "type": "MTB",
-    "region": "Yorkshire & Humber",
-    "venue": "Olivers Mount, Scarborough",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330557/scarborough-cycling-festival---north-of-england-championships---crank-it-classic-xco-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-19T03:15:26.000Z"
-  },
-  {
     "id": "c55bc4ee",
     "name": "Crickley Flyers Go-Ride Race Series Round 2",
     "type": "MTB",
@@ -667,19 +654,6 @@
     "name": "Lloyds 2026 National MTB Cross Country Series Round 5",
     "type": "MTB",
     "region": "﻿Wales",
-    "venue": "Margam Country Park, South Wales",
-    "postcode": null,
-    "date": "2026-07-04",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331427/lloyds-2026-national-mtb-cross-country-series-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "617bfe60",
-    "name": "Lloyds 2026 National MTB Cross Country Series Round 5",
-    "type": "MTB",
-    "region": "Wales",
     "venue": "Margam Country Park, South Wales",
     "postcode": null,
     "date": "2026-07-04",
@@ -793,6 +767,32 @@
     "last_updated": "2025-11-27T03:15:28.000Z"
   },
   {
+    "id": "29028d01",
+    "name": "Pearce Cycles DH Series 2026 Round 3",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Bringewood, Shropshire",
+    "postcode": null,
+    "date": "2026-08-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331425/pearce-cycles-dh-series-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "aa39a731",
+    "name": "Stockport World Series Round 4",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Farmer John's, Stockport",
+    "postcode": null,
+    "date": "2026-08-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331508/stockport-world-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
     "id": "74800923",
     "name": "Lloyds National Downhill Series 2026 Round 5 - Fort William",
     "type": "MTB",
@@ -804,6 +804,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330468/lloyds-national-downhill-series-2026-round-5---fort-william",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "04bc8ec8",
+    "name": "Pearce Cycles DH Series 2026 Round 4",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Hopton Woods, Shropshire",
+    "postcode": null,
+    "date": "2026-09-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331426/pearce-cycles-dh-series-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
     "id": "d1332a8a",
