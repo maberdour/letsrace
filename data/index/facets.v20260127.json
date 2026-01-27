@@ -24,7 +24,7 @@
     "Yorkshire & Humber"
   ],
   "counts": {
-    "Road": 103,
+    "Road": 101,
     "Track": 129,
     "BMX": 30,
     "MTB": 65,
@@ -42,7 +42,7 @@
     "South West": 17,
     "Eastern": 15,
     "South": 51,
-    "London & South East": 69,
+    "London & South East": 67,
     "North East": 2,
     "﻿Wales": 5,
     "Track|Wales": 28,
@@ -69,7 +69,7 @@
     "BMX|West Midlands": 1,
     "Track|South": 8,
     "MTB|East Midlands": 5,
-    "Road|London & South East": 24,
+    "Road|London & South East": 22,
     "BMX|North West": 11,
     "MTB|South": 12,
     "MTB|West Midlands": 11,
@@ -92,5 +92,5 @@
     "Cyclo Cross|South West": 1,
     "BMX|Central": 1
   },
-  "last_build": "2026-01-27T03:25:16.770Z"
+  "last_build": "2026-01-27T08:37:30.987Z"
 }

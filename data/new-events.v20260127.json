@@ -794,32 +794,6 @@
       "last_updated": "2026-01-27T03:15:28.000Z"
     },
     {
-      "id": "f86e1c21",
-      "name": "RCR x Alta Via Goodwood Spring Series #1",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-05",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/330495/rcr-x-alta-via-goodwood-spring-series-1",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-27T03:15:28.000Z"
-    },
-    {
-      "id": "1157c3f7",
-      "name": "RCR x Alta Via Goodwood Spring Series #2",
-      "type": "Road",
-      "region": "London & South East",
-      "venue": "Goodwood Motor Racing Circuit, Chichester",
-      "postcode": null,
-      "date": "2026-05-12",
-      "start_time": "00:00",
-      "url": "https://www.britishcycling.org.uk/events/details/331255/rcr-x-alta-via-goodwood-spring-series-2",
-      "source": "Google Sheet",
-      "last_updated": "2026-01-27T03:15:28.000Z"
-    },
-    {
       "id": "39d63a73",
       "name": "Woodlandriders racing winter series 2025-2026 Round 4",
       "type": "MTB",
@@ -846,7 +820,7 @@
       "last_updated": "2026-01-27T03:15:28.000Z"
     }
   ],
-  "last_build": "2026-01-27T03:25:16.786Z",
-  "total_new_events": 65,
+  "last_build": "2026-01-27T08:37:30.992Z",
+  "total_new_events": 63,
   "cutoff_date": "2026-01-20"
 }
