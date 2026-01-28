@@ -1,70 +1,5 @@
 [
   {
-    "id": "9d51a8ac",
-    "name": "British Cycling Pathway Development Centre Circuit - Moredon Sporting Hub #2.1",
-    "type": "Road",
-    "region": "South",
-    "venue": "Moredon Sporting Hub, Swindon",
-    "postcode": null,
-    "date": "2026-01-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330946/british-cycling-pathway-development-centre-circuit---moredon-sporting-hub-21",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "51c64ee0",
-    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #13",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Sundorne Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-01-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330591/british-cycling-pathway-development-centre-circuit---shrewsbury-13",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "6f3363bd",
-    "name": "British Cycling Pathway Development Centre Circuit - York #84",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "York Sport Cycle Circuit, North Yorkshire",
-    "postcode": null,
-    "date": "2026-01-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330883/british-cycling-pathway-development-centre-circuit---york-84",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "83649ddb",
-    "name": "DAYTL 2026 Intermediate Coach Led Racing #2",
-    "type": "Road",
-    "region": "East Midlands",
-    "venue": "Derby Arena, Derby",
-    "postcode": null,
-    "date": "2026-01-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330168/daytl-2026-intermediate-coach-led-racing-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "a62aad95",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #4",
-    "type": "Road",
-    "region": "South",
-    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
-    "postcode": null,
-    "date": "2026-01-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331353/british-cycling-pathway-development-centre-circuit---palmer-park-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
     "id": "59f0eedc",
     "name": "British Cycling Pathway Development Centre - Leicester Cycle Circuit #10",
     "type": "Road",
@@ -104,6 +39,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "1ce5959e",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #14",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-01-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331196/carlisle-cycling-association-winter-club-cluster-circuit--14",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "dc387830",
     "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #144",
     "type": "Road",
@@ -141,6 +89,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331513/british-cycling-pathway-development-centre-circuit---palmer-park-5",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "1d0e65c2",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #15",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-02-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331197/carlisle-cycling-association-winter-club-cluster-circuit--15",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "35279378",
@@ -260,6 +221,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "ba50542c",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #16",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-02-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331198/carlisle-cycling-association-winter-club-cluster-circuit--16",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "04c31acc",
     "name": "British Cycling Pathway Development Centre Gravity - The Summit DeVo #145",
     "type": "Road",
@@ -312,6 +286,19 @@
     "last_updated": "2025-12-12T03:15:26.000Z"
   },
   {
+    "id": "38dba94f",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #17",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-02-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331199/carlisle-cycling-association-winter-club-cluster-circuit--17",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "def728e4",
     "name": "British Cycling Pathway Development Centre Circuit - Moredon Sporting Hub #4",
     "type": "Road",
@@ -323,6 +310,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331514/british-cycling-pathway-development-centre-circuit---moredon-sporting-hub-4",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "35340d81",
+    "name": "British Cycling Pathway Development Centre Circuit - York #88",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-02-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331656/british-cycling-pathway-development-centre-circuit---york-88",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
   },
   {
     "id": "80cc2f97",
@@ -377,6 +377,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "552c98b0",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #18",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-02-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331200/carlisle-cycling-association-winter-club-cluster-circuit--18",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "988e92fd",
     "name": "British Cycling Pathway Development Centre - Leicester Cycle Circuit #12",
     "type": "Road",
@@ -388,6 +401,71 @@
     "url": "https://www.britishcycling.org.uk/events/details/325181/british-cycling-pathway-development-centre---leicester-cycle-circuit-12",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "edcf68f9",
+    "name": "British Cycling Pathway Development Centre Circuit - York #89",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-02-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331657/british-cycling-pathway-development-centre-circuit---york-89",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
+  },
+  {
+    "id": "10064f80",
+    "name": "Exeter Uni Early Season Crits (South West Series)",
+    "type": "Road",
+    "region": "South West",
+    "venue": "Westpoint Arena, Exeter",
+    "postcode": null,
+    "date": "2026-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330833/exeter-uni-early-season-crits-south-west-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
+  },
+  {
+    "id": "b9efead2",
+    "name": "L'Enfer du Linlithgow 2026",
+    "type": "Road",
+    "region": "Scotland",
+    "venue": "West Lothian Cycle Circuit, West Lothian Leisure Centre, Scotland",
+    "postcode": null,
+    "date": "2026-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330463/lenfer-du-linlithgow-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
+  },
+  {
+    "id": "46221686",
+    "name": "British Cycling Pathway Development Centre Circuit - York #90",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-03-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331658/british-cycling-pathway-development-centre-circuit---york-90",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
+  },
+  {
+    "id": "3272f002",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #19",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-03-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331201/carlisle-cycling-association-winter-club-cluster-circuit--19",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "ef2a1c37",
@@ -403,6 +481,19 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
+    "id": "396d87b6",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331478/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "388c6d52",
     "name": "South West Club Cluster of Coaching - Circuit 3",
     "type": "Road",
@@ -414,6 +505,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330348/south-west-club-cluster-of-coaching---circuit-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "4272a759",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #20",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-03-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331202/carlisle-cycling-association-winter-club-cluster-circuit--20",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "4b89681f",
@@ -466,6 +570,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331195/vcl-deux-jours",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "a4752704",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #21",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-03-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331203/carlisle-cycling-association-winter-club-cluster-circuit--21",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "ad987b25",
@@ -531,6 +648,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330739/south-london-go-ride-racing-league---race-4-of-9",
     "source": "Google Sheet",
     "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
+    "id": "f3e4d561",
+    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #22",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-03-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331204/carlisle-cycling-association-winter-club-cluster-circuit--22",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "307973bd",
@@ -611,6 +741,45 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "5d4d5e0f",
+    "name": "Castle Combe Good Friday Easter Classic 2026",
+    "type": "Road",
+    "region": "South",
+    "venue": "Castle Combe Race Circuit, Wiltshire",
+    "postcode": null,
+    "date": "2026-04-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329903/castle-combe-good-friday-easter-classic-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-24T03:15:24.000Z"
+  },
+  {
+    "id": "3cb4ef02",
+    "name": "Colin Lewis Grand Prix",
+    "type": "Road",
+    "region": "South West",
+    "venue": "Torbay Velopark, Devon",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330578/colin-lewis-grand-prix-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-22T03:15:25.000Z"
+  },
+  {
+    "id": "9d1450d8",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331477/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "055a7eae",
     "name": "North Wales Circuit Series 26 Round 1",
     "type": "Road",
@@ -635,6 +804,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/293174/portsmouth-evening-circuits-",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "929aac82",
+    "name": "2026 Youth Tour of Scotland",
+    "type": "Road",
+    "region": "Scotland",
+    "venue": "Forteviot Village Hall, Perth",
+    "postcode": null,
+    "date": "2026-04-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331649/2026-youth-tour-of-scotland",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
   },
   {
     "id": "6f659560",
@@ -715,6 +897,19 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
+    "id": "ab2de0b1",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 2 (youth only)",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Crystal Palace Park, London",
+    "postcode": null,
+    "date": "2026-04-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331600/dulwich-paragon-cc-crystal-palace-crits-race-2-youth-only",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-22T03:15:25.000Z"
+  },
+  {
     "id": "3a27efab",
     "name": "Sussex Cycle Racing League Circuits 2026 #6/14",
     "type": "Road",
@@ -752,6 +947,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329823/portsmouth-evening-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "f6839270",
+    "name": "HHV Crit League - Round 1",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329628/hhv-crit-league---round-1-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
   },
   {
     "id": "71ce85ba",
@@ -793,17 +1001,30 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
-    "id": "f86e1c21",
-    "name": "RCR x Alta Via Goodwood Spring Series #1",
+    "id": "1aa5daac",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 4 (all ages)",
     "type": "Road",
     "region": "London & South East",
-    "venue": "Goodwood Motor Racing Circuit, Chichester",
+    "venue": "Crystal Palace Park, London",
     "postcode": null,
     "date": "2026-05-05",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330495/rcr-x-alta-via-goodwood-spring-series-1",
+    "url": "https://www.britishcycling.org.uk/events/details/331601/dulwich-paragon-cc-crystal-palace-crits-race-4-all-ages",
     "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
+    "last_updated": "2026-01-22T03:15:25.000Z"
+  },
+  {
+    "id": "b1993331",
+    "name": "HHV Crit League - Round 2",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329748/hhv-crit-league---round-2-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
   },
   {
     "id": "754fc0ec",
@@ -819,17 +1040,17 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
-    "id": "1157c3f7",
-    "name": "RCR x Alta Via Goodwood Spring Series #2",
+    "id": "b5f4ec87",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 5 (all ages)",
     "type": "Road",
     "region": "London & South East",
-    "venue": "Goodwood Motor Racing Circuit, Chichester",
+    "venue": "Crystal Palace Park, London",
     "postcode": null,
     "date": "2026-05-12",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331255/rcr-x-alta-via-goodwood-spring-series-2",
+    "url": "https://www.britishcycling.org.uk/events/details/331602/dulwich-paragon-cc-crystal-palace-crits-race-5-all-ages",
     "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
+    "last_updated": "2026-01-22T03:15:25.000Z"
   },
   {
     "id": "7366097e",
@@ -843,6 +1064,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/329824/portsmouth-evening-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "6810f7d0",
+    "name": "Velo Club Lincoln Showground Crits",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Lincolnshire Events Centre, Lincolnshire",
+    "postcode": null,
+    "date": "2026-05-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330925/velo-club-lincoln-showground-crits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-22T03:15:25.000Z"
+  },
+  {
+    "id": "fff2fbb4",
+    "name": "HHV Crit League - Round 3",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330377/hhv-crit-league---round-3-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-23T03:15:24.000Z"
   },
   {
     "id": "f9908e8b",
@@ -871,17 +1118,17 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
-    "id": "1450ad05",
-    "name": "RCR x Alta Via Goodwood Spring Series #3",
+    "id": "03d93a7e",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 6 (all ages)",
     "type": "Road",
     "region": "London & South East",
-    "venue": "Goodwood Motor Racing Circuit, Chichester",
+    "venue": "Crystal Palace Park, London",
     "postcode": null,
     "date": "2026-05-19",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331256/rcr-x-alta-via-goodwood-spring-series-3",
+    "url": "https://www.britishcycling.org.uk/events/details/331605/dulwich-paragon-cc-crystal-palace-crits-race-6-all-ages",
     "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
+    "last_updated": "2026-01-22T03:15:25.000Z"
   },
   {
     "id": "43460d11",
@@ -895,19 +1142,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/330586/wyke-evening-circuit-race-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "107edbcd",
-    "name": "RCR x Alta Via Goodwood Spring Series #4",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Goodwood Motor Racing Circuit, Chichester",
-    "postcode": null,
-    "date": "2026-05-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331257/rcr-x-alta-via-goodwood-spring-series-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
     "id": "7227cf9e",
@@ -1001,6 +1235,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "6d9b2fb9",
+    "name": "Velo Club Lincoln Blyton Motor Circuit Crits",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Blyton Park Driving Centre, Lincolnshire",
+    "postcode": null,
+    "date": "2026-06-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330931/velo-club-lincoln-blyton-motor-circuit-crits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-22T03:15:25.000Z"
+  },
+  {
     "id": "b2504d81",
     "name": "Lawford Youth Series at Curborough 26 #4",
     "type": "Road",
@@ -1051,6 +1298,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329827/portsmouth-evening-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "8fc80501",
+    "name": "Velo Club Lincoln Blyton Motor Circuit Crits",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Blyton Park Driving Centre, Lincolnshire",
+    "postcode": null,
+    "date": "2026-07-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330933/velo-club-lincoln-blyton-motor-circuit-crits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-22T03:15:25.000Z"
   },
   {
     "id": "898af29d",
@@ -1116,6 +1376,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/329932/omega-portsmouth-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-09T03:15:25.000Z"
+  },
+  {
+    "id": "29a9dbd4",
+    "name": "Velo Club Lincoln Yarborough Leisure Centre - including East Midlands Youth Circuit",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Yarborough Leisure Centre - Lincolnshire, Lincolnshire",
+    "postcode": null,
+    "date": "2026-07-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330934/velo-club-lincoln-yarborough-leisure-centre---including-east-midlands-youth-circuit",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-22T03:15:25.000Z"
+  },
+  {
+    "id": "523845f0",
+    "name": "Velo Club Lincoln Showground Crits",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Lincolnshire Events Centre, Lincolnshire",
+    "postcode": null,
+    "date": "2026-07-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330928/velo-club-lincoln-showground-crits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-22T03:15:25.000Z"
+  },
+  {
+    "id": "f5806f23",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-07-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329829/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-26T03:15:25.000Z"
   },
   {
     "id": "eddde9eb",
