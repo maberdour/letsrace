@@ -1,0 +1,67 @@
+[
+  {
+    "id": "4746464c",
+    "name": "Scottish Open",
+    "type": "Speedway",
+    "region": "Scotland",
+    "venue": "Fife Fastbowl, Dunfermline",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331692/scottish-open",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "ea57eea5",
+    "name": "Scottish League Series - Round 4",
+    "type": "Speedway",
+    "region": "Scotland",
+    "venue": "Fife Fastbowl, Dunfermline",
+    "postcode": null,
+    "date": "2026-06-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331693/scottish-league-series---round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "c453da16",
+    "name": "Scottish Development League",
+    "type": "Speedway",
+    "region": "Scotland",
+    "venue": "Fife Fastbowl, Dunfermline",
+    "postcode": null,
+    "date": "2026-07-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331696/scottish-development-league",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "f477a4c1",
+    "name": "North and Scotland League",
+    "type": "Speedway",
+    "region": "Scotland",
+    "venue": "Fife Fastbowl, Dunfermline",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331695/north-and-scotland-league",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "f603446c",
+    "name": "Scottish National Championship",
+    "type": "Speedway",
+    "region": "Scotland",
+    "venue": "Fife Fastbowl, Dunfermline",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331694/scottish-national-championship",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  }
+]

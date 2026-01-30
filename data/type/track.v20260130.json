@@ -1,200 +1,5 @@
 [
   {
-    "id": "be9dac1d",
-    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-01-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329861/beicio-cymru---pathway-development-centre---track-endurance----newport",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "5cbb40f8",
-    "name": "Derby Arena Youth Track League Event 2",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Velodrome, Derby",
-    "postcode": null,
-    "date": "2026-01-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330941/derby-arena-youth-track-league-event-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-13T03:15:25.000Z"
-  },
-  {
-    "id": "e85031d0",
-    "name": "London Youth Track League 2025-6: Round 7",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-01-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330035/london-youth-track-league-2025-6-round-7",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-12T03:15:26.000Z"
-  },
-  {
-    "id": "0cad78d4",
-    "name": "Lloyds National Track Series Round 4 (National Kilo TT & Para IP Championships) - Glasgow",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2026-01-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326470/lloyds-national-track-series-round-4-national-kilo-tt--para-ip-championships---glasgow",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "cbec61ed",
-    "name": "Manchester Regional Track League 2026 #3 (MRTL)",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester",
-    "postcode": null,
-    "date": "2026-01-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329774/manchester-regional-track-league-2026-3-mrtl",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-09T03:15:29.000Z"
-  },
-  {
-    "id": "a43fc41d",
-    "name": "Geraint Thomas Velodrome Sprint night #4",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-01-24",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326867/geraint-thomas-velodrome-sprint-night-4",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-17T02:15:25.000Z"
-  },
-  {
-    "id": "18018863",
-    "name": "British Cycling North of England Go-Ride Track Cluster",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-01-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329504/british-cycling-north-of-england-go-ride-track-cluster",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "45645f06",
-    "name": "British Cycling Pathway South East/Eastern Track RSR #4 (Boys and Girls)",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-01-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331253/british-cycling-pathway-south-easteastern-track-rsr-4-boys-and-girls-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-14T03:15:24.000Z"
-  },
-  {
-    "id": "cdc940cb",
-    "name": "British Cycling Pathway Track Sprint RSR #3 SOUTH - Newport",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-01-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329842/british-cycling-pathway-track-sprint-rsr-3-south---newport",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "547daba4",
-    "name": "British Cycling Pathway Development Centre - Track Derby Arena #8",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Arena, Derby",
-    "postcode": null,
-    "date": "2026-01-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327517/british-cycling-pathway-development-centre---track-derby-arena-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "cc24983c",
-    "name": "British Cycling South Programme 25-26 Track Club Cluster - Calshot 6",
-    "type": "Track",
-    "region": "South",
-    "venue": "Calshot Velodrome, Hampshire",
-    "postcode": null,
-    "date": "2026-01-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328533/british-cycling-south-programme-25-26-track-club-cluster---calshot-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "0cf0f9d7",
-    "name": "Monday Night Track league 2026 Round 3",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-01-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330849/monday-night-track-league-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-06T03:15:38.000Z"
-  },
-  {
-    "id": "3f4ca689",
-    "name": "Newport Track League 2026 #4",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-01-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330074/newport-track-league-2026-4",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-17T03:15:25.000Z"
-  },
-  {
-    "id": "d6eb78a3",
-    "name": "Beicio Cymru Pathway Development Centre - Road - Marsh Tracks #16",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
-    "postcode": null,
-    "date": "2026-01-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328626/beicio-cymru-pathway-development-centre---road---marsh-tracks-16",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "83b2dd5d",
-    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-01-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329862/beicio-cymru---pathway-development-centre---track-endurance----newport",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "bc78b688",
     "name": "2025/26 Glasgow Track League Round 11",
     "type": "Track",
@@ -388,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326851/icebreaker-2026-youth-sprint-series-round-2",
     "source": "Google Sheet",
     "last_updated": "2025-09-17T02:15:25.000Z"
+  },
+  {
+    "id": "47eee75b",
+    "name": "South Region Youth Track Session 3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Newport Velodrome, Wales",
+    "postcode": null,
+    "date": "2026-02-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331194/south-region-youth-track-session-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "b59d9ed4",
@@ -611,15 +429,15 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
-    "id": "ba7d1635",
-    "name": "British Cycling Pathway RSR Track Sprint SOUTH #4 - Newport",
+    "id": "7ef14f6e",
+    "name": "British Cycling Pathway RSR Track Sprint SOUTH #4 - Newport - CANCELLED",
     "type": "Track",
     "region": "Wales",
     "venue": "Geraint Thomas National Velodrome of Wales, Wales",
     "postcode": null,
     "date": "2026-02-22",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330906/british-cycling-pathway-rsr-track-sprint-south-4---newport",
+    "url": "https://www.britishcycling.org.uk/events/details/330906/british-cycling-pathway-rsr-track-sprint-south-4---newport---cancelled",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
@@ -778,6 +596,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/328631/beicio-cymru-pathway-development-centre---road---marsh-tracks-21",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "941255af",
+    "name": "Go-Ride Track Cluster (Saturday PM) - West & East Midlands",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331772/go-ride-track-cluster-saturday-pm---west--east-midlands",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "a221fc83",
@@ -949,6 +780,19 @@
     "last_updated": "2025-09-17T02:15:25.000Z"
   },
   {
+    "id": "0d9d1c0c",
+    "name": "British Cycling Pathway RSR Track Sprint SOUTH #4 - Newport (New Date)",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-03-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331861/british-cycling-pathway-rsr-track-sprint-south-4---newport-new-date",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-29T03:15:26.000Z"
+  },
+  {
     "id": "6498d220",
     "name": "Monday Night Track League 2026 Round 10",
     "type": "Track",
@@ -1040,6 +884,19 @@
     "last_updated": "2025-12-12T03:15:26.000Z"
   },
   {
+    "id": "c7b50e55",
+    "name": "Stow Community Pump Track Race",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Stow Pump Track, Scottish Borders",
+    "postcode": null,
+    "date": "2026-03-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331310/stow-community-pump-track-race",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "93ee2fbb",
     "name": "Monday Night Track League 2026 Round 12",
     "type": "Track",
@@ -1077,6 +934,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329506/british-cycling-north-of-england-go-ride-track-cluster",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "ecc7a29d",
+    "name": "Condor Women's League - Round 1",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-04-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329627/condor-womens-league---round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-24T03:15:24.000Z"
   },
   {
     "id": "a60795bc",
@@ -1181,6 +1051,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331023/british-national-youth-omnium---round-3---dundee-djcc",
     "source": "Google Sheet",
     "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
+    "id": "fbc95697",
+    "name": "Condor Women's League - Round 2",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329738/condor-womens-league---round-2-",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-24T03:15:24.000Z"
   },
   {
     "id": "aad349f4",
@@ -1298,6 +1181,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329692/convene-esg-track-league---round-8",
     "source": "Google Sheet",
     "last_updated": "2025-12-25T03:15:26.000Z"
+  },
+  {
+    "id": "de95dbe2",
+    "name": "National Youth Omnium 2026 - Round 4 - Reading",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-06-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331173/national-youth-omnium-2026---round-4---reading",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-24T03:15:24.000Z"
   },
   {
     "id": "92d1d180",
