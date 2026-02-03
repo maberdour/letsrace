@@ -1,44 +1,5 @@
 [
   {
-    "id": "2402b98f",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-01-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329632/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "1e7022d1",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-01-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330502/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "c2a956e6",
-    "name": "British Cycling Swinley Forest MTB Cluster #1",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "The Summit",
-    "postcode": null,
-    "date": "2026-01-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330936/british-cycling-swinley-forest-mtb-cluster-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "2035558d",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R6",
     "type": "MTB",
@@ -102,6 +63,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331209/racers-guild-racing---works-components-super-cup-26-round-1-red",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "39d63a73",
+    "name": "Woodlandriders racing winter series 2025-2026 Round 4",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327334/woodlandriders-racing-winter-series-2025-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
   },
   {
     "id": "99dc4367",
@@ -206,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330990/british-cycling-swinley-forest-mtb-cluster-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
+    "id": "f8bad0f4",
+    "name": "100 Percent Mini Downhill March 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331817/100-percent-mini-downhill-march-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "a0a6294f",
@@ -336,6 +323,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/319239/b-buddies-off-ride-go-ride-race-league-2526-r8",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "ce04dd78",
+    "name": "MIJ Downhill 2026 Round 1",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-04-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331590/mij-downhill-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
+  },
+  {
+    "id": "68b39e95",
+    "name": "Gisburn Forest 12 and under MTB race",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Gisburn Forest, Lancashire",
+    "postcode": null,
+    "date": "2026-04-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331726/gisburn-forest-12-and-under-mtb-race",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "b809ff02",
@@ -481,6 +494,19 @@
     "last_updated": "2025-12-14T03:15:28.000Z"
   },
   {
+    "id": "8a931aa6",
+    "name": "MIJ Downhill 2026 Round 2",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331594/mij-downhill-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
+  },
+  {
     "id": "38a3b48c",
     "name": "Stockport World Series Round 2",
     "type": "MTB",
@@ -492,6 +518,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331510/stockport-world-series-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "6ffac236",
+    "name": "2026 Edinburgh Schools Mountainbike Championship",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Harmeny School, Midlothian",
+    "postcode": null,
+    "date": "2026-06-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331351/2026-edinburgh-schools-mountainbike-championship",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "6ffac236",
+    "name": "2026 Edinburgh Schools Mountainbike Championship",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Harmeny School, Midlothian",
+    "postcode": null,
+    "date": "2026-06-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331351/2026-edinburgh-schools-mountainbike-championship",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "e11fa0a8",
@@ -533,6 +585,19 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "1cde3a70",
+    "name": "MIJ Downhill 2026 Round 3",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331595/mij-downhill-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-27T03:15:28.000Z"
+  },
+  {
     "id": "df152b83",
     "name": "Stockport World Series Round 3",
     "type": "MTB",
@@ -544,6 +609,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331511/stockport-world-series-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "661e8848",
+    "name": "SWXC Round 3 (XCC - Regional Championships) Sponsored by Magicshine",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Wheal Jane Circuit, Cornwall",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330577/swxc-round-3-xcc---regional-championships-sponsored-by-magicshine",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
     "id": "bd2b930c",
@@ -791,5 +869,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/329539/crickley-flyers-go-ride-race-series-round-4-",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "3e310ce0",
+    "name": "321 Racing- Christmas Special",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Bike Park Kernow, Cornwall",
+    "postcode": null,
+    "date": "2026-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331421/321-racing--christmas-special",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-29T03:15:26.000Z"
   }
 ]
