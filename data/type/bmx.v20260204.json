@@ -1,68 +1,42 @@
 [
   {
-    "id": "a854d768",
-    "name": "Braintree BMX RD5 Winter Series",
+    "id": "0d1619b7",
+    "name": "Enter The Dragon - Winter Round 4",
     "type": "BMX",
-    "region": "Eastern",
-    "venue": "Braintree BMX Track, Essex",
+    "region": "﻿Wales",
+    "venue": "Cardiff BMX Club, Wales",
     "postcode": null,
-    "date": "2026-02-01",
+    "date": "2026-02-05",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327266/braintree-bmx-rd5-winter-series",
+    "url": "https://www.britishcycling.org.uk/events/details/328676/enter-the-dragon---winter-round-4",
     "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
+    "last_updated": "2026-02-02T03:15:26.000Z"
   },
   {
-    "id": "7a66136e",
-    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 25-26 #4",
+    "id": "0799f615",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF5",
     "type": "BMX",
     "region": "South",
     "venue": "Gosport BMX Club, Hampshire",
     "postcode": null,
-    "date": "2026-02-01",
+    "date": "2026-02-06",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330796/british-cycling-pathway-development-centre-bmx---south-zone-1-25-26-4",
+    "url": "https://www.britishcycling.org.uk/events/details/331857/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff5",
     "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
+    "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
-    "id": "bd96823e",
-    "name": "Milton Keynes BMX Racing Club Winter Series 2025-2026 Round 5",
+    "id": "0799f615",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF5",
     "type": "BMX",
-    "region": "Central",
-    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
     "postcode": null,
-    "date": "2026-02-01",
+    "date": "2026-02-06",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331747/milton-keynes-bmx-racing-club-winter-series-2025-2026-round-5",
+    "url": "https://www.britishcycling.org.uk/events/details/331857/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff5",
     "source": "Google Sheet",
-    "last_updated": "2026-01-27T03:15:28.000Z"
-  },
-  {
-    "id": "5ab48c17",
-    "name": "Nottingham BMX Winter Series 2025/26 - Round 6",
-    "type": "BMX",
-    "region": "East Midlands",
-    "venue": "Nottingham Outlaws BMX Track, Nottingham",
-    "postcode": null,
-    "date": "2026-02-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328413/nottingham-bmx-winter-series-202526---round-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "2121c869",
-    "name": "The London BMX Winter Series 2025-2026 Round 4",
-    "type": "BMX",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-02-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331515/the-london-bmx-winter-series-2025-2026-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
+    "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
     "id": "b80a74c9",
@@ -156,6 +130,32 @@
     "last_updated": "2025-09-16T02:15:25.000Z"
   },
   {
+    "id": "ddd1d9c2",
+    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M3",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2026-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331855/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-29T03:15:26.000Z"
+  },
+  {
+    "id": "ddd1d9c2",
+    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M3",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2026-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331855/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m3",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-29T03:15:26.000Z"
+  },
+  {
     "id": "62aedee5",
     "name": "British Cycling Pathway Development Centre BMX/SX - Midlands/North - Indoor",
     "type": "BMX",
@@ -167,6 +167,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331559/british-cycling-pathway-development-centre-bmxsx---midlandsnorth---indoor",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "f0a64a31",
+    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M4",
+    "type": "BMX",
+    "region": "﻿Wales",
+    "venue": "Cardiff BMX Club, Wales",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331856/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-29T03:15:26.000Z"
+  },
+  {
+    "id": "f0a64a31",
+    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M4",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Cardiff BMX Club, Wales",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331856/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
     "id": "60bbe126",
@@ -182,6 +208,19 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "17e4e16e",
+    "name": "British Cycling Pathway Development Centre BMX- London zone 2 #6",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Peckham bmx Track in Burgess Park, england",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332044/british-cycling-pathway-development-centre-bmx--london-zone-2-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-03T03:15:28.000Z"
+  },
+  {
     "id": "8024561f",
     "name": "British Cycling Pathway Development Centre BMX/SX - North #22 Cheshire Ghost Riders",
     "type": "BMX",
@@ -193,6 +232,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/328523/british-cycling-pathway-development-centre-bmxsx---north-22-cheshire-ghost-riders",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "2d1bf39a",
+    "name": "Birmingham BMX - Winter Series Round 4",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Birmingham BMX Club, Birmingham",
+    "postcode": null,
+    "date": "2026-03-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331821/birmingham-bmx---winter-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "2fd9526a",
@@ -247,8 +299,21 @@
     "last_updated": "2026-01-15T03:15:24.000Z"
   },
   {
-    "id": "7c926c9c",
-    "name": "Nottingham BMX Winter Series 2025/26 - Round 7",
+    "id": "13350660",
+    "name": "Nottingham BMX Winter Series 2025/26 - Round 6",
+    "type": "BMX",
+    "region": "East Midlands",
+    "venue": "Nottingham Outlaws BMX Track, Nottingham",
+    "postcode": null,
+    "date": "2026-03-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328413/nottingham-bmx-winter-series-202526---round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "ab7453dd",
+    "name": "Nottingham BMX Winter Series 2025/26 - Round 7 (Cancelled)",
     "type": "BMX",
     "region": "East Midlands",
     "venue": "Nottingham Outlaws BMX Track, Nottingham",
@@ -258,6 +323,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/328414/nottingham-bmx-winter-series-202526---round-7",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "4d518ba4",
+    "name": "Enter The Dragon - Winter Round 5",
+    "type": "BMX",
+    "region": "﻿Wales",
+    "venue": "Cardiff BMX Club, Wales",
+    "postcode": null,
+    "date": "2026-03-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/328679/enter-the-dragon---winter-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-02T03:15:26.000Z"
   },
   {
     "id": "a4743244",
@@ -310,6 +388,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331499/north-region-bmx-2026-round-3-cheshire-ghostriders",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "bbd02e19",
+    "name": "British Cycling Pathway Development Centre BMX - South West #14 Llynfi BMX Club",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Llynfi Valley BMX Track, Mid Glamorgan",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331887/british-cycling-pathway-development-centre-bmx---south-west-14-llynfi-bmx-club",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-30T03:15:24.000Z"
+  },
+  {
+    "id": "32e1d855",
+    "name": "British Cycling Pathway Development Centre BMX - South West #15 Cardiff BMX Club",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Cardiff BMX Club, Wales",
+    "postcode": null,
+    "date": "2026-05-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331888/british-cycling-pathway-development-centre-bmx---south-west-15-cardiff-bmx-club",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-30T03:15:24.000Z"
   },
   {
     "id": "ccae97db",
@@ -375,6 +479,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331504/north-region-bmx-2026-round-8-blackpool",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "e7dbacd2",
+    "name": "British Cycling Pathway Development Centre BMX - South West #15 Tiverton BMX Club",
+    "type": "BMX",
+    "region": "South West",
+    "venue": "Tiverton BMX Club, Devon",
+    "postcode": null,
+    "date": "2026-08-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332043/british-cycling-pathway-development-centre-bmx---south-west-15-tiverton-bmx-club",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-03T03:15:28.000Z"
   },
   {
     "id": "498c0998",

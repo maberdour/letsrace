@@ -1,29 +1,16 @@
 [
   {
-    "id": "6f6c7129",
-    "name": "Challenge Tires London and South East CX League - Round 10",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Preston Park Velodrome, The Ride, Brighton",
-    "postcode": null,
-    "date": "2026-02-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330988/challenge-tires-london-and-south-east-cx-league---round-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-13T03:15:25.000Z"
-  },
-  {
-    "id": "e03ce5c1",
-    "name": "Lannock Cross Eastern League 2025/26 Rd 11",
+    "id": "031628c7",
+    "name": "Muddy Monsters - Welwyn Wheelers 2",
     "type": "Cyclo Cross",
     "region": "Eastern",
-    "venue": "Lannock Farm, Hitchin",
+    "venue": "Gosling Sports Stadium, Hertfordshire",
     "postcode": null,
-    "date": "2026-02-01",
+    "date": "2026-02-07",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330379/lannock-cross--eastern-league-202526-rd-11",
+    "url": "https://www.britishcycling.org.uk/events/details/326706/muddy-monsters---welwyn-wheelers-2",
     "source": "Google Sheet",
-    "last_updated": "2025-12-23T03:15:27.000Z"
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "ec3e54ae",
@@ -65,6 +52,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "c323883a",
+    "name": "South West Winter Series 2026 - CDCX",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Carlingwark Park, Castle Douglas",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331925/south-west-winter-series-2026---cdcx",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-04T03:15:25.000Z"
+  },
+  {
     "id": "1a1c3bde",
     "name": "SuperQuaich Series Round 2 - Kingdom Velo Cyclocross",
     "type": "Cyclo Cross",
@@ -102,6 +102,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/316886/superquaich-round-3---strathallan-castle-cx-2026---the-daffodil-edition",
     "source": "Google Sheet",
     "last_updated": "2026-01-06T03:15:38.000Z"
+  },
+  {
+    "id": "683800d2",
+    "name": "Muddy Monsters Go-Ride CX",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "PRSA, Boston",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331854/muddy-monsters-go-ride-cx",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "683800d2",
+    "name": "Muddy Monsters Go-Ride CX",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "PRSA, Boston",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331854/muddy-monsters-go-ride-cx",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "fc999af9",
