@@ -26,19 +26,6 @@
     "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
-    "id": "0799f615",
-    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF5",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Gosport BMX Club, Hampshire",
-    "postcode": null,
-    "date": "2026-02-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331857/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff5",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-29T03:15:26.000Z"
-  },
-  {
     "id": "b80a74c9",
     "name": "Exeter 25/26 Winter Round 3",
     "type": "BMX",
@@ -143,19 +130,6 @@
     "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
-    "id": "ddd1d9c2",
-    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M3",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331855/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-29T03:15:26.000Z"
-  },
-  {
     "id": "62aedee5",
     "name": "British Cycling Pathway Development Centre BMX/SX - Midlands/North - Indoor",
     "type": "BMX",
@@ -173,19 +147,6 @@
     "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M4",
     "type": "BMX",
     "region": "﻿Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331856/british-cycling-pathway-development-centre-big-hill-bmx---south-zone-1-25-26-8m4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-29T03:15:26.000Z"
-  },
-  {
-    "id": "f0a64a31",
-    "name": "British Cycling Pathway Development Centre BIG HILL BMX - South Zone 1 25-26 #8M4",
-    "type": "BMX",
-    "region": "Wales",
     "venue": "Cardiff BMX Club, Wales",
     "postcode": null,
     "date": "2026-02-22",
