@@ -315,11 +315,13 @@ function initNewlyAddedPage() {
       
       // Populate region checkboxes
       const savedRegions = loadSavedRegions();
+      // Default to all regions when nothing saved (same as homepage and discipline pages)
+      const initialRegions = savedRegions.length > 0 ? savedRegions : facets.regions;
       console.log('🔍 Loading saved regions:', savedRegions);
 
       const regionHtml = facets.regions.map(region => `
         <label class="region-checkbox">
-          <input type="checkbox" value="${region}"${savedRegions.includes(region) ? ' checked' : ''}>
+          <input type="checkbox" value="${region}"${initialRegions.includes(region) ? ' checked' : ''}>
           <span class="checkmark"></span>
           ${region}
         </label>

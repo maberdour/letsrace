@@ -12,8 +12,93 @@
  * - Timestamp tracking for imported events
  */
 
+const BC_EXCLUDED_URLS_FILENAME = 'URL-Exclusion-List.txt';
+
+let bcExcludedEventUrlSet = null;
+
+/**
+ * Returns a cached set of normalized excluded URLs for fast lookups.
+ * Reads URLs from URL-Exclusion-List.txt in the CSV Drive folder.
+ * @param {string} folderId - Google Drive folder ID
+ * @return {Set<string>}
+ */
+function getBCExcludedEventUrlSet(folderId) {
+  if (!bcExcludedEventUrlSet) {
+    const excludedUrls = loadBCExcludedEventUrlsFromDrive(folderId, BC_EXCLUDED_URLS_FILENAME);
+    bcExcludedEventUrlSet = new Set(
+      excludedUrls
+        .map(url => normalizeBCEventUrlForCompare(url))
+        .filter(Boolean)
+    );
+    Logger.log(`📋 Loaded ${bcExcludedEventUrlSet.size} excluded event URL(s) from ${BC_EXCLUDED_URLS_FILENAME}`);
+  }
+  return bcExcludedEventUrlSet;
+}
+
+/**
+ * Loads excluded URLs from a text file in Google Drive.
+ * @param {string} folderId - Google Drive folder ID
+ * @param {string} filename - Exclusion list filename
+ * @return {string[]} List of raw URLs from file
+ */
+function loadBCExcludedEventUrlsFromDrive(folderId, filename) {
+  if (!folderId || !filename) return [];
+
+  const folder = DriveApp.getFolderById(folderId);
+  const files = folder.getFilesByName(filename);
+  if (!files.hasNext()) {
+    Logger.log(`ℹ️ Exclusion list file not found: ${filename}`);
+    return [];
+  }
+
+  const file = files.next();
+  const content = file.getBlob().getDataAsString();
+  if (!content) return [];
+
+  return content
+    .split(/\r?\n/)
+    .map(line => line.trim())
+    .filter(line => line && !line.startsWith('#'));
+}
+
+/**
+ * Normalizes an event URL for comparison.
+ * @param {string} url - The event URL to normalize
+ * @param {string} [baseUrl] - Optional base URL for relative paths
+ * @return {string} Normalized URL or empty string
+ */
+function normalizeBCEventUrlForCompare(url, baseUrl) {
+  if (!url) return '';
+  let normalized = url.toString().trim();
+  if (!normalized) return '';
+
+  if (!/^https?:\/\//i.test(normalized)) {
+    if (normalized.startsWith('/')) {
+      normalized = (baseUrl || '') + normalized;
+    } else if (baseUrl) {
+      normalized = `${baseUrl.replace(/\/$/, '')}/${normalized}`;
+    }
+  }
+
+  return normalized.replace(/\/$/, '').toLowerCase();
+}
+
+/**
+ * Checks whether an event URL is in the excluded list.
+ * @param {string} url - The event URL to check
+ * @param {string} baseUrl - Base URL to normalize relative paths
+ * @param {string} folderId - Google Drive folder ID for exclusion list
+ * @return {boolean} True if the URL is excluded
+ */
+function isBCExcludedEventUrl(url, baseUrl, folderId) {
+  const normalized = normalizeBCEventUrlForCompare(url, baseUrl);
+  if (!normalized) return false;
+  return getBCExcludedEventUrlSet(folderId).has(normalized);
+}
+
 function appendNewEvents_ByDateAndName_WithDateFix() {
   try {
+    Logger.log('📥 ImportCSV-BC started');
     const folderId = '1KQaUXfUNbIQSABXI-SdfNhrk6AmoP30_';
     const filename = 'event_data.csv';
 
@@ -28,6 +113,7 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
     const file = files.next();
     const csv = file.getBlob().getDataAsString();
     const csvData = Utilities.parseCsv(csv);
+    Logger.log(`📄 CSV rows found: ${csvData.length}`);
     if (csvData.length === 0) {
       Logger.log("❌ CSV is empty.");
       return;
@@ -50,6 +136,7 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
     const now = formatDateTime(new Date());
     const newRows = [];
     const rowsToUpdate = []; // Array of {rowNumber, data} for existing events
+    let excludedEventsCount = 0;
 
     // Process each CSV row
     csvData.forEach(row => {
@@ -57,6 +144,12 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
       const name = normalizeEventName(row[1]); // Preserve case for display
       const rawUrl = row[4] ? row[4].toString().trim() : '';
       const eventId = extractBCEventId(rawUrl);
+
+      if (isBCExcludedEventUrl(rawUrl, 'https://www.britishcycling.org.uk', folderId)) {
+        Logger.log(`⛔ Skipping excluded event URL: ${rawUrl}`);
+        excludedEventsCount += 1;
+        return;
+      }
 
       // Normalize the date in Column A to display format
       row[0] = displayDate;
@@ -158,6 +251,8 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
     } else {
       Logger.log(`📊 Import summary: ${newRows.length} new, ${rowsToUpdate.length} updated`);
     }
+    Logger.log(`🚫 Events found and excluded: ${excludedEventsCount}`);
+    Logger.log('✅ ImportCSV-BC finished');
   } catch (error) {
     Logger.log("❌ Error importing events: " + error.message);
     throw error;

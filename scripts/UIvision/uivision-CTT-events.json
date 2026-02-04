@@ -1,11 +1,11 @@
 {
   "Name": "CTT-Events",
-  "CreationDate": "2025-9-15",
+  "CreationDate": "2026-2-3",
   "Commands": [
     {
       "Command": "XRun",
       "Target": "cmd.exe",
-      "Value": "/c del \"H:\\My Drive\\Projects\\05 SEYC\\UIVision\\datasources\\ctt_event_data.csv\"",
+      "Value": "/c del \"H:\\My Drive\\Clients\\LetsRace\\UIVision\\datasources\\ctt_event_data.csv\"",
       "Description": ""
     },
     {
@@ -15,8 +15,56 @@
       "Description": ""
     },
     {
+      "Command": "csvReadArray",
+      "Target": "URLS-CTT.csv",
+      "Value": "urlData",
+      "Description": "Read all URLs from CSV"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return ${urlData}.length;",
+      "Value": "urlCount",
+      "Description": "Get number of URLs"
+    },
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "urlIndex",
+      "Description": "Start at row 0 (first data row after header)"
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${urlIndex} < ${urlCount}",
+      "Value": "",
+      "Description": "Loop through all URLs"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return ${urlData}[${urlIndex}][0];",
+      "Value": "raceType",
+      "Description": "Get race type from column A"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return String(${raceType}).replace(/^\\uFEFF/, '');",
+      "Value": "raceType",
+      "Description": "Strip BOM from race type"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return ${urlData}[${urlIndex}][1];",
+      "Value": "currentUrl",
+      "Description": "Get URL from column B"
+    },
+    {
+      "Command": "echo",
+      "Target": "Processing race type: ${raceType}",
+      "Value": "",
+      "Description": ""
+    },
+    {
       "Command": "open",
-      "Target": "https://www.cyclingtimetrials.org.uk/event-finder?viewAs=list&ag=youth&tt=hillClimb",
+      "Target": "${currentUrl}",
       "Value": "",
       "Description": ""
     },
@@ -33,44 +81,8 @@
       "Description": ""
     },
     {
-      "Command": "XClick",
-      "Target": "xpath=//span[@class=\"block archivo_e255c303-module__RfbGYW__className text-[12pt] md:text-[11pt] xl:text-[11pt] font-[900] leading-tight text-neutral-950 dark:text-neutral-300 md:pl-14\"]",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "XType",
-      "Target": "${KEY_END}",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "1000",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "XType",
-      "Target": "${KEY_END}",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "1000",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "XType",
-      "Target": "${KEY_END}",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "1000",
+      "Command": "comment",
+      "Target": "XClick // xpath=//span[@class=\"block archivo_e255c303-module__RfbGYW__className text-[12pt] md:text-[11pt] xl:text-[11pt] font-[900] leading-tight text-neutral-950 dark:text-neutral-300 md:pl-14\"]",
       "Value": "",
       "Description": ""
     },
@@ -238,13 +250,13 @@
     },
     {
       "Command": "store",
-      "Target": "Hill Climb",
+      "Target": "${raceType}",
       "Value": "!csvLine",
       "Description": "Event Type"
     },
     {
       "Command": "storeText",
-      "Target": "xpath=(//p[contains(@class,'block archivo_e255c303-module__RfbGYW__className text-[12pt] md:text-[11pt] xl:text-[11pt] font-[600] text-neutral-950 dark:text-neutral-300')])[${loopCount}]",
+      "Target": "xpath=(//p[contains(@class,'block archivo_e255c303-module__RfbGYW__className text-[11pt] md:text-[11pt] xl:text-[11pt] font-[600] text-neutral-950 dark:text-neutral-300')])[${loopCount}]",
       "Value": "!csvLine",
       "Description": "Event Location"
     },
@@ -271,6 +283,18 @@
       "Target": "",
       "Value": "",
       "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(${urlIndex}) + 1;",
+      "Value": "urlIndex",
+      "Description": "Move to next URL"
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End URL loop"
     }
   ]
 }

@@ -14,8 +14,100 @@
  * - Timestamp tracking for imported events
  */
 
+const CTT_EXCLUDED_URLS_FILENAME = 'URL-Exclusion-List.txt';
+
+let cttExcludedEventUrlSet = null;
+
+/**
+ * Returns a cached set of normalized excluded URLs for fast lookups.
+ * Reads URLs from URL-Exclusion-List.txt in the CSV Drive folder.
+ * @param {string} folderId - Google Drive folder ID
+ * @return {Set<string>}
+ */
+function getCTTExcludedEventUrlSet(folderId) {
+  if (!cttExcludedEventUrlSet) {
+    const excludedUrls = loadCTTExcludedEventUrlsFromDrive(folderId, CTT_EXCLUDED_URLS_FILENAME);
+    cttExcludedEventUrlSet = new Set(
+      excludedUrls
+        .map(url => normalizeCTTEventUrlForCompare(url))
+        .filter(Boolean)
+    );
+    Logger.log(`📋 Loaded ${cttExcludedEventUrlSet.size} excluded event URL(s) from ${CTT_EXCLUDED_URLS_FILENAME}`);
+  }
+  return cttExcludedEventUrlSet;
+}
+
+/**
+ * Loads excluded URLs from a text file in Google Drive.
+ * @param {string} folderId - Google Drive folder ID
+ * @param {string} filename - Exclusion list filename
+ * @return {string[]} List of raw URLs from file
+ */
+function loadCTTExcludedEventUrlsFromDrive(folderId, filename) {
+  if (!folderId || !filename) return [];
+
+  const folder = DriveApp.getFolderById(folderId);
+  const files = folder.getFilesByName(filename);
+  if (!files.hasNext()) {
+    Logger.log(`ℹ️ Exclusion list file not found: ${filename}`);
+    return [];
+  }
+
+  const file = files.next();
+  const content = file.getBlob().getDataAsString();
+  if (!content) return [];
+
+  return content
+    .split(/\r?\n/)
+    .map(line => line.trim())
+    .filter(line => line && !line.startsWith('#'));
+}
+
+/**
+ * Normalizes an event URL for comparison.
+ * @param {string} url - The event URL to normalize
+ * @param {string} [baseUrl] - Optional base URL for relative paths
+ * @return {string} Normalized URL or empty string
+ */
+function normalizeCTTEventUrlForCompare(url, baseUrl) {
+  if (!url) return '';
+  let normalized = url.toString().trim();
+  if (!normalized) return '';
+
+  if (!/^https?:\/\//i.test(normalized)) {
+    if (normalized.startsWith('/')) {
+      normalized = (baseUrl || '') + normalized;
+    } else if (baseUrl) {
+      normalized = `${baseUrl.replace(/\/$/, '')}/${normalized}`;
+    }
+  }
+
+  return normalized.replace(/\/$/, '').toLowerCase();
+}
+
+/**
+ * Checks whether an event URL is in the excluded list.
+ * @param {string} url - The event URL to check
+ * @param {string} baseUrl - Base URL to normalize relative paths
+ * @param {string} folderId - Google Drive folder ID for exclusion list
+ * @return {boolean} True if the URL is excluded
+ */
+function isCTTExcludedEventUrl(url, baseUrl, folderId) {
+  const normalized = normalizeCTTEventUrlForCompare(url, baseUrl);
+  if (!normalized) return false;
+  return getCTTExcludedEventUrlSet(folderId).has(normalized);
+}
+
+/**
+ * Entry point for manual runs.
+ */
+function runCTTImport() {
+  appendNewCTTEvents_ByDateAndName_WithDateFix();
+}
+
 function appendNewCTTEvents_ByDateAndName_WithDateFix() {
   try {
+    Logger.log('▶️ Starting CTT CSV import.');
     const folderId = '1KQaUXfUNbIQSABXI-SdfNhrk6AmoP30_';
     const filename = 'ctt_event_data.csv';
 
@@ -52,6 +144,7 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
     const now = formatDateTime(new Date());
     const newRows = [];
     const rowsToUpdate = []; // Array of {rowNumber, data} for existing events
+    let excludedEventsCount = 0;
 
     // Process each CSV row
     csvData.forEach(row => {
@@ -61,6 +154,12 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
       let courseInfo = row[3] || '';
       const rawUrl = row[4] ? row[4].toString().trim() : '';
       const eventId = extractCTTEventId(rawUrl);
+
+      if (isCTTExcludedEventUrl(rawUrl, 'https://www.cyclingtimetrials.org.uk', folderId)) {
+        Logger.log(`⛔ Skipping excluded event URL: ${rawUrl}`);
+        excludedEventsCount += 1;
+        return;
+      }
 
       // Debug logging
       Logger.log(`Original date: "${row[0]}", Display date: "${displayDate}", Date type: ${typeof row[0]}`);
@@ -160,6 +259,7 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
     } else {
       Logger.log(`📊 Import summary: ${newRows.length} new, ${rowsToUpdate.length} updated`);
     }
+    Logger.log(`🚫 Events found and excluded: ${excludedEventsCount}`);
   } catch (error) {
     Logger.log("❌ Error importing CTT events: " + error.message);
     throw error;
@@ -286,6 +386,7 @@ function getRegionFromCounty(county) {
 
     // South 
     'Bristol': 'South', // Avon
+    'Bristol City, Bristol': 'South', // Avon
     'Bournemouth': 'South',
     'Brighton and Hove': 'South',
     'Portsmouth': 'South',
@@ -315,6 +416,7 @@ function getRegionFromCounty(county) {
     'Fife': 'Scotland',
     'Glasgow': 'Scotland',
     'Highland': 'Scotland',
+    'Highland Council': 'Scotland',
     'Inverclyde': 'Scotland',
     'Midlothian': 'Scotland',
     'Moray': 'Scotland',

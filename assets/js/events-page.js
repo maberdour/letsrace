@@ -350,8 +350,8 @@ export function initEventsPage() {
       // Populate region checkboxes
       const savedRegions = loadSavedRegions();
       const urlParams = parseUrlParams();
-      // Use URL parameters if present, otherwise fall back to saved regions
-      const initialRegions = urlParams.regions.length > 0 ? urlParams.regions : savedRegions;
+      // Use URL params if present, else saved regions, else all regions (same default as homepage)
+      const initialRegions = urlParams.regions.length > 0 ? urlParams.regions : (savedRegions.length > 0 ? savedRegions : facets.regions);
       
       regionCheckboxes.innerHTML = facets.regions.map(region => `
         <label class="region-checkbox">
