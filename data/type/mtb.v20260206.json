@@ -1,44 +1,5 @@
 [
   {
-    "id": "2402b98f",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-01-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329632/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "1e7022d1",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-01-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330502/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "c2a956e6",
-    "name": "British Cycling Swinley Forest MTB Cluster #1",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "The Summit",
-    "postcode": null,
-    "date": "2026-01-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330936/british-cycling-swinley-forest-mtb-cluster-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "2035558d",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R6",
     "type": "MTB",
@@ -377,6 +338,19 @@
     "last_updated": "2026-01-27T03:15:28.000Z"
   },
   {
+    "id": "68b39e95",
+    "name": "Gisburn Forest 12 and under MTB race",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Gisburn Forest, Lancashire",
+    "postcode": null,
+    "date": "2026-04-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331726/gisburn-forest-12-and-under-mtb-race",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
     "id": "b809ff02",
     "name": "Lloyds National Downhill Series 2026 Round 1 - Rhyd-y-felin",
     "type": "MTB",
@@ -388,19 +362,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/330359/lloyds-national-downhill-series-2026-round-1---rhyd-y-felin",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
-  },
-  {
-    "id": "a9d74c96",
-    "name": "Pendle Panthers Under 12s Enduro race",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Gisburn Forest, Lancashire",
-    "postcode": null,
-    "date": "2026-04-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331726/pendle-panthers-under-12s-enduro-race",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "027f0a4b",
@@ -557,19 +518,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/331510/stockport-world-series-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
-    "id": "6ffac236",
-    "name": "2026 Edinburgh Schools Mountainbike Championship",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Harmeny School, Midlothian",
-    "postcode": null,
-    "date": "2026-06-10",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331351/2026-edinburgh-schools-mountainbike-championship",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
     "id": "6ffac236",
