@@ -1,18 +1,5 @@
 [
   {
-    "id": "645ed8b4",
-    "name": "NMD Winter Race Series Round 4",
-    "type": "BMX",
-    "region": "South West",
-    "venue": "Tiverton BMX Club, Devon",
-    "postcode": null,
-    "date": "2026-02-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330354/nmd-winter-race-series-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "727201a1",
     "name": "Racing Under The Roof 2025/26 Round Four (EXPERT)",
     "type": "BMX",
@@ -76,6 +63,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332041/centurions-winter-series-2025-26-round-4",
     "source": "Google Sheet",
     "last_updated": "2026-02-06T03:15:24.000Z"
+  },
+  {
+    "id": "a4004500",
+    "name": "NMD Winter Race Series Round 4",
+    "type": "BMX",
+    "region": "South West",
+    "venue": "Tiverton BMX Club, Devon",
+    "postcode": null,
+    "date": "2026-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330354/nmd-winter-race-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "f0a64a31",
@@ -154,6 +154,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332155/peterborough-bmx-winter-series---round-5",
     "source": "Google Sheet",
     "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
+    "id": "eafe5151",
+    "name": "NMD Winter Race Series",
+    "type": "BMX",
+    "region": "South West",
+    "venue": "Bideford BMX Track, Devon",
+    "postcode": null,
+    "date": "2026-02-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330353/nmd-winter-race-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "2d1bf39a",

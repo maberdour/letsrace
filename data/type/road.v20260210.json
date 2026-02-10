@@ -455,6 +455,19 @@
     "last_updated": "2026-01-09T03:15:25.000Z"
   },
   {
+    "id": "4a1f9f81",
+    "name": "Sulis Scorpions 2026 Odd Down Event #2",
+    "type": "Road",
+    "region": "South",
+    "venue": "Odd Down Cycling Circuit, Bath",
+    "postcode": null,
+    "date": "2026-03-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331307/sulis-scorpions-2026-odd-down-event-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
     "id": "2331e881",
     "name": "VCL Deux Jours",
     "type": "Road",
@@ -962,6 +975,19 @@
     "last_updated": "2026-01-31T03:15:25.000Z"
   },
   {
+    "id": "d368ad43",
+    "name": "2026 Steam Packet Holidays Isle of Man Youth Tour",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Bikestyle, Douglas",
+    "postcode": null,
+    "date": "2026-05-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332078/2026-steam-packet-holidays-isle-of-man-youth-tour",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
     "id": "f6839270",
     "name": "HHV Crit League - Round 1",
     "type": "Road",
@@ -1064,6 +1090,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331742/east-london-velo-and-lvycc-hog-hill-crits-2",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T03:15:25.000Z"
+  },
+  {
+    "id": "b598c2a5",
+    "name": "Sulis Scorpions 2026 Odd Down Event #3",
+    "type": "Road",
+    "region": "South",
+    "venue": "Odd Down Cycling Circuit, Bath",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331308/sulis-scorpions-2026-odd-down-event-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
     "id": "754fc0ec",
