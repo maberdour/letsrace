@@ -1,109 +1,5 @@
 [
   {
-    "id": "567975ef",
-    "name": "Bath and Swindon Winter Series round 2",
-    "type": "Road",
-    "region": "South",
-    "venue": "Moredon Sports Village - Swindon, Swindon",
-    "postcode": null,
-    "date": "2026-02-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330246/bath-and-swindon-winter-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-20T03:15:25.000Z"
-  },
-  {
-    "id": "dcd81ba3",
-    "name": "Mossley CRT Limitless",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Tameside Cycle Circuit, Lancashire",
-    "postcode": null,
-    "date": "2026-02-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330683/mossley-crt-limitless-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "26ae1810",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #6",
-    "type": "Road",
-    "region": "South",
-    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
-    "postcode": null,
-    "date": "2026-02-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331814/british-cycling-pathway-development-centre-circuit---palmer-park-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-29T03:15:26.000Z"
-  },
-  {
-    "id": "f74dd533",
-    "name": "British Cycling Pathway Development Centre - Leicester Cycle Circuit #11",
-    "type": "Road",
-    "region": "East Midlands",
-    "venue": "Leicester Cycle Circuit, Leicestershire",
-    "postcode": null,
-    "date": "2026-02-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325180/british-cycling-pathway-development-centre---leicester-cycle-circuit-11",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "0a9d2ca0",
-    "name": "British Cycling Pathway Development Centre Circuit - Moredon Sporting Hub #4",
-    "type": "Road",
-    "region": "South",
-    "venue": "Moredon Sporting Hub, Swindon",
-    "postcode": null,
-    "date": "2026-02-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331514/british-cycling-pathway-development-centre-circuit---moredon-sporting-hub-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
-    "id": "7fc3870e",
-    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #16",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Sundorne Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-02-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330594/british-cycling-pathway-development-centre-circuit---shrewsbury-16",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "d1b32fa1",
-    "name": "British Cycling Pathway Development Centre Circuit - York #87",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "York Sport Cycle Circuit, North Yorkshire",
-    "postcode": null,
-    "date": "2026-02-12",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330886/british-cycling-pathway-development-centre-circuit---york-87",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "ba50542c",
-    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #16",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Carlisle Cycle Circuit, Carlisle",
-    "postcode": null,
-    "date": "2026-02-12",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331198/carlisle-cycling-association-winter-club-cluster-circuit--16",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
-  },
-  {
     "id": "04c31acc",
     "name": "British Cycling Pathway Development Centre Gravity - The Summit DeVo #145",
     "type": "Road",
@@ -156,6 +52,32 @@
     "last_updated": "2025-12-12T03:15:26.000Z"
   },
   {
+    "id": "8d29c909",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #7",
+    "type": "Road",
+    "region": "South",
+    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
+    "postcode": null,
+    "date": "2026-02-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332086/british-cycling-pathway-development-centre-circuit---palmer-park-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
+    "id": "840c6ded",
+    "name": "Half Term Off Road Challenge",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Ackers Adventure, Golden Hillock Rd, Small Heath, Birmingham",
+    "postcode": null,
+    "date": "2026-02-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331932/half-term-off-road-challenge",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
     "id": "38dba94f",
     "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #17",
     "type": "Road",
@@ -167,6 +89,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331199/carlisle-cycling-association-winter-club-cluster-circuit--17",
     "source": "Google Sheet",
     "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "1b7e0d28",
+    "name": "Sparkhill Park Come and Try It",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sparkhill Park.Stratford Road, Birmingham B11 4LX., Birmingham",
+    "postcode": "B11 4LX",
+    "date": "2026-02-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331934/sparkhill-park-come-and-try-it",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "35340d81",
@@ -234,6 +169,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "770ddb39",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #8",
+    "type": "Road",
+    "region": "South",
+    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
+    "postcode": null,
+    "date": "2026-02-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332386/british-cycling-pathway-development-centre-circuit---palmer-park-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
     "id": "552c98b0",
     "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #18",
     "type": "Road",
@@ -271,6 +219,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331815/british-cycling-pathway-development-centre-circuit---moredon-sporting-hub-5",
     "source": "Google Sheet",
     "last_updated": "2026-01-29T03:15:26.000Z"
+  },
+  {
+    "id": "849fdc80",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #17",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-02-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332312/british-cycling-pathway-development-centre-circuit---shrewsbury-17",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "edcf68f9",
@@ -323,6 +284,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330463/lenfer-du-linlithgow-2026",
     "source": "Google Sheet",
     "last_updated": "2026-01-23T03:15:24.000Z"
+  },
+  {
+    "id": "8eb3748e",
+    "name": "PPV Endurance Omnium Practice Session",
+    "type": "Road",
+    "region": "South",
+    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
+    "postcode": null,
+    "date": "2026-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332278/ppv-endurance-omnium-practice-session",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
+    "id": "c0f59aed",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #18",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-03-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332313/british-cycling-pathway-development-centre-circuit---shrewsbury-18",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "46221686",
@@ -390,6 +377,19 @@
     "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
+    "id": "204a193d",
+    "name": "South League: Womens Academy",
+    "type": "Road",
+    "region": "South",
+    "venue": "Moredon Sports Village - Swindon, Swindon",
+    "postcode": null,
+    "date": "2026-03-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332384/south-league-womens-academy",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
     "id": "388c6d52",
     "name": "South West Club Cluster of Coaching - Circuit 3",
     "type": "Road",
@@ -427,6 +427,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/325182/british-cycling-pathway-development-centre---leicester-cycle-circuit-13",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "22f0c0dd",
+    "name": "British Cycling Pathway Development Centre Circuit - Moredon Sporting Hub #6",
+    "type": "Road",
+    "region": "South",
+    "venue": "Moredon Sporting Hub, Swindon",
+    "postcode": null,
+    "date": "2026-03-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332087/british-cycling-pathway-development-centre-circuit---moredon-sporting-hub-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
+    "id": "aec3f092",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #19",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-03-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332314/british-cycling-pathway-development-centre-circuit---shrewsbury-19",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "cdac4072",
@@ -468,6 +494,19 @@
     "last_updated": "2026-01-09T03:15:25.000Z"
   },
   {
+    "id": "4a1f9f81",
+    "name": "Sulis Scorpions 2026 Odd Down Event #2",
+    "type": "Road",
+    "region": "South",
+    "venue": "Odd Down Cycling Circuit, Bath",
+    "postcode": null,
+    "date": "2026-03-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331307/sulis-scorpions-2026-odd-down-event-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
     "id": "2331e881",
     "name": "VCL Deux Jours",
     "type": "Road",
@@ -479,6 +518,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331195/vcl-deux-jours",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "536f22b9",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #20",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-03-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332315/british-cycling-pathway-development-centre-circuit---shrewsbury-20",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "a4752704",
@@ -611,6 +663,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "f69afd33",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #21",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-03-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332316/british-cycling-pathway-development-centre-circuit---shrewsbury-21",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
     "id": "349d7e25",
     "name": "DAYTL 2026 Intermediate Coach Led Racing #6",
     "type": "Road",
@@ -674,6 +739,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330580/wyke-circuit-races-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
+    "id": "e7c79cf3",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #45",
+    "type": "Road",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-03-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332187/british-cycling-pathway-development-centre-gravity---forest-of-dean-45",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
   },
   {
     "id": "7a9cc019",
@@ -752,6 +830,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331057/north-wales-circuit-series-26-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "1194ff86",
+    "name": "Ride Flux 2-Day",
+    "type": "Road",
+    "region": "﻿Wales",
+    "venue": "Royal Welsh Showground, Builth Wells",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332379/ride-flux-2-day",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
     "id": "00433e83",
@@ -845,13 +936,13 @@
     "last_updated": "2026-01-31T03:15:25.000Z"
   },
   {
-    "id": "2a76ce6a",
+    "id": "9e5f20fe",
     "name": "Spring in the Park 2026 #2",
     "type": "Road",
     "region": "London & South East",
     "venue": "Cyclopark, Kent",
     "postcode": null,
-    "date": "2026-04-18",
+    "date": "2026-04-17",
     "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/331363/spring-in-the-park-2026-2",
     "source": "Google Sheet",
@@ -962,6 +1053,19 @@
     "last_updated": "2026-01-31T03:15:25.000Z"
   },
   {
+    "id": "d368ad43",
+    "name": "2026 Steam Packet Holidays Isle of Man Youth Tour",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Bikestyle, Douglas",
+    "postcode": null,
+    "date": "2026-05-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332078/2026-steam-packet-holidays-isle-of-man-youth-tour",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
     "id": "f6839270",
     "name": "HHV Crit League - Round 1",
     "type": "Road",
@@ -973,6 +1077,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329628/hhv-crit-league---round-1-",
     "source": "Google Sheet",
     "last_updated": "2026-01-23T03:15:24.000Z"
+  },
+  {
+    "id": "25dd4d40",
+    "name": "North Wales Circuit Series 26 Round 2",
+    "type": "Road",
+    "region": "﻿Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-05-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332311/north-wales-circuit-series-26-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
     "id": "71ce85ba",
@@ -1064,6 +1181,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331742/east-london-velo-and-lvycc-hog-hill-crits-2",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T03:15:25.000Z"
+  },
+  {
+    "id": "b598c2a5",
+    "name": "Sulis Scorpions 2026 Odd Down Event #3",
+    "type": "Road",
+    "region": "South",
+    "venue": "Odd Down Cycling Circuit, Bath",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331308/sulis-scorpions-2026-odd-down-event-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
     "id": "754fc0ec",
@@ -1404,6 +1534,19 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "5ecdf7be",
+    "name": "PNE Mountbatten Circuit Series #5",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-06-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331071/pne-mountbatten-circuit-series-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
     "id": "14848f0d",
     "name": "Carlisle Summer nights #9",
     "type": "Road",
@@ -1573,6 +1716,19 @@
     "last_updated": "2026-01-22T03:15:25.000Z"
   },
   {
+    "id": "775c9c56",
+    "name": "The Last Carlisle Summer Night 2026",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Carlisle Cycle Circuit, Carlisle",
+    "postcode": null,
+    "date": "2026-07-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331311/the-last-carlisle-summer-night-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
     "id": "f5806f23",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1610,6 +1766,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/329933/omega-portsmouth-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-09T03:15:25.000Z"
+  },
+  {
+    "id": "cb394abf",
+    "name": "Wyke National Youth Circuit Series 2026 and supporting races sponsored by All Terrain Cycles",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Wyke Community Sports Village Road Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-08-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331025/wyke-national-youth-circuit-series-2026-and-supporting-races-sponsored-by-all-terrain-cycles",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "b0a79f40",
+    "name": "The Colchester Centurion / Trevor Baker Memorial Races",
+    "type": "Road",
+    "region": "Eastern",
+    "venue": "Colchester Northern Gateway, Essex",
+    "postcode": null,
+    "date": "2026-08-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331930/the-colchester-centurion--trevor-baker-memorial-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
     "id": "d72efcc2",
