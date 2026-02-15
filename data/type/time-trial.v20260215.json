@@ -26,6 +26,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "47a11d9b",
+    "name": "Give It Another Go - Female Only TT",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Croy Village Hall, Inverness",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331865/give-it-another-go---female-only-tt",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-09T03:15:24.000Z"
+  },
+  {
     "id": "f51d2184",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -167,6 +180,32 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42717-goodwood-time-trial-league",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "1e4a6162",
+    "name": "Knockarthur Hill Climb",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Rogart Village HAll, Highland",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332085/knockarthur-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-09T03:15:24.000Z"
+  },
+  {
+    "id": "11a74081",
+    "name": "Rogart 10 mile Time Trial",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Rogart Village HAll, Highland",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332082/rogart-10-mile-time-trial",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-09T03:15:24.000Z"
   },
   {
     "id": "544a1401",
@@ -323,5 +362,18 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42564-goodwood-time-trial-league",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "bdb7256c",
+    "name": "MFCC Croachy 10-Mile TT (Regional Championship Event)",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Farr Community Hall, Farr",
+    "postcode": null,
+    "date": "2026-07-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332132/mfcc-croachy-10-mile-tt-regional-championship-event",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-09T03:15:24.000Z"
   }
 ]

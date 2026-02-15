@@ -1,55 +1,16 @@
 [
   {
-    "id": "031628c7",
-    "name": "Muddy Monsters - Welwyn Wheelers 2",
+    "id": "0fb37245",
+    "name": "Spring 2026 Nocturnal Cross Series Event 1",
     "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
+    "region": "Yorkshire & Humber",
+    "venue": "Costello Stadium, Yorkshire",
     "postcode": null,
-    "date": "2026-02-07",
+    "date": "2026-02-18",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326706/muddy-monsters---welwyn-wheelers-2",
+    "url": "https://www.britishcycling.org.uk/events/details/331973/spring-2026-nocturnal-cross-series-event-1",
     "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "ec3e54ae",
-    "name": "Challenge Tires London and South East CX League - Team Champs 2025/26",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-02-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331264/challenge-tires-london-and-south-east-cx-league---team-champs-202526",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "2224c662",
-    "name": "Eastern Cyclocross League End of Season Relay and Awards (26)",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Northern Gateway Sports Park, Essex",
-    "postcode": null,
-    "date": "2026-02-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330315/eastern-cyclocross-league-end-of-season-relay-and-awards-26",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-19T03:15:33.000Z"
-  },
-  {
-    "id": "96739bdd",
-    "name": "Haringey Schools Cycling League 2025_2026 Round 5",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Finsbury Park, London",
-    "postcode": null,
-    "date": "2026-02-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330031/haringey-schools-cycling-league-2025_2026-round-5-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
+    "last_updated": "2026-02-07T03:15:28.000Z"
   },
   {
     "id": "c323883a",
@@ -104,6 +65,19 @@
     "last_updated": "2026-01-06T03:15:38.000Z"
   },
   {
+    "id": "4299d86a",
+    "name": "Spring 2026 Nocturnal Cross Series Event 2",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Costello Stadium, Yorkshire",
+    "postcode": null,
+    "date": "2026-03-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331974/spring-2026-nocturnal-cross-series-event-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
     "id": "683800d2",
     "name": "Muddy Monsters Go-Ride CX",
     "type": "Cyclo Cross",
@@ -128,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330912/south-west-winter-series-202526---everholm-dirt-crit",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "af37faa1",
+    "name": "Spring 2026 Nocturnal Cross Series Event 3",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Costello Stadium, Yorkshire",
+    "postcode": null,
+    "date": "2026-03-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331975/spring-2026-nocturnal-cross-series-event-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
   },
   {
     "id": "92e4d194",
