@@ -1,18 +1,5 @@
 [
   {
-    "id": "2035558d",
-    "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R6",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Snibston Colliery Park, Coalville",
-    "postcode": null,
-    "date": "2026-02-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319237/b-buddies-off-ride-go-ride-race-league-2526-r6",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
     "id": "daa34ded",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
     "type": "MTB",
@@ -50,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330503/beicio-cymru-under-12s-development-centres---xco-mtb",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "4ac9be00",
+    "name": "Delamere Forest MTB Club Youth Session - Feb 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331771/delamere-forest-mtb-club-youth-session---feb-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "a0a5065a",
@@ -143,6 +143,32 @@
     "last_updated": "2025-12-09T03:15:29.000Z"
   },
   {
+    "id": "ececaa0e",
+    "name": "Scottish MTB Cross Country (SXC) Young Gunz",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Cathkin Braes Country Park, Glasgow",
+    "postcode": null,
+    "date": "2026-03-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332387/scottish-mtb-cross-country-sxc-young-gunz-",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
+    "id": "ececaa0e",
+    "name": "Scottish MTB Cross Country (SXC) Young Gunz",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Cathkin Braes Country Park, Glasgow",
+    "postcode": null,
+    "date": "2026-03-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332387/scottish-mtb-cross-country-sxc-young-gunz-",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
     "id": "8963d17d",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
     "type": "MTB",
@@ -232,6 +258,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329536/crickley-flyers-go-ride-race-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "983bb44a",
+    "name": "SouthernXC Round 1 - Matterley",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Matterley Basin, Winchester",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332189/southernxc-round-1---matterley",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "671b4ef7",
@@ -338,6 +377,19 @@
     "last_updated": "2026-01-28T03:15:26.000Z"
   },
   {
+    "id": "b8a02e7e",
+    "name": "Lloyds National 4X Series Round 1",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "Chicksands Bike Park, Bedfordshire",
+    "postcode": null,
+    "date": "2026-04-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332136/lloyds-national-4x-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
     "id": "b809ff02",
     "name": "Lloyds National Downhill Series 2026 Round 1 - Rhyd-y-felin",
     "type": "MTB",
@@ -351,17 +403,30 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
-    "id": "027f0a4b",
-    "name": "Falkirk Schools MTB Championships 2026",
+    "id": "7524f162",
+    "name": "Lloyds National 4X Series Round 2",
     "type": "MTB",
-    "region": "Scotland",
-    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "region": "Central",
+    "venue": "Chicksands Bike Park, Bedfordshire",
     "postcode": null,
-    "date": "2026-04-24",
+    "date": "2026-04-19",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/321133/falkirk-schools-mtb-championships-2026",
+    "url": "https://www.britishcycling.org.uk/events/details/332235/lloyds-national-4x-series-round-2",
     "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
+    "id": "ebe90f2a",
+    "name": "SouthernXC Round 2 - Crow Hill",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Gaddens Close Farm, Ringwood",
+    "postcode": null,
+    "date": "2026-04-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332335/southernxc-round-2---crow-hill",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "55a53a04",
@@ -416,6 +481,45 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "4f32c597",
+    "name": "Falkirk Schools MTB Championships 2026",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-05-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/321133/falkirk-schools-mtb-championships-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "aee6aa3e",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 1",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-05-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332273/fjbc-summer-dirt-crit-series-2026-round-1-",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "aee6aa3e",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 1",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-05-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332273/fjbc-summer-dirt-crit-series-2026-round-1-",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
     "id": "d5ad189a",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R9",
     "type": "MTB",
@@ -466,6 +570,84 @@
     "url": "https://www.britishcycling.org.uk/events/details/331422/pearce-cycles-dh-series-2026-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "a25fe123",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 2",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-05-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332274/fjbc-summer-dirt-crit-series-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "a25fe123",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 2",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-05-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332274/fjbc-summer-dirt-crit-series-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "af5587ae",
+    "name": "Lloyds National 4X Series Round 3",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Falmouth 4X Track, Cornwall",
+    "postcode": null,
+    "date": "2026-05-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332236/lloyds-national-4x-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
+    "id": "36ae321d",
+    "name": "Lloyds National 4X Series Round 4",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Falmouth 4X Track, Cornwall",
+    "postcode": null,
+    "date": "2026-05-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332237/lloyds-national-4x-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
+    "id": "c40aadec",
+    "name": "SouthernXC Round 3 - Basingstoke",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Folly Farm, Kingsclere",
+    "postcode": null,
+    "date": "2026-05-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332337/southernxc-round-3---basingstoke",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
+    "id": "e5fd443c",
+    "name": "South West Club Cluster of Coaching - MTB 1",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Mount Kelly School - Tavistock, Devon",
+    "postcode": null,
+    "date": "2026-05-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332306/south-west-club-cluster-of-coaching---mtb-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
     "id": "ed61a766",
@@ -520,6 +702,32 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "7d853918",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 3",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-06-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332275/fjbc-summer-dirt-crit-series-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "7d853918",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 3",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-06-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332275/fjbc-summer-dirt-crit-series-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
     "id": "6ffac236",
     "name": "2026 Edinburgh Schools Mountainbike Championship",
     "type": "MTB",
@@ -570,6 +778,58 @@
     "url": "https://www.britishcycling.org.uk/events/details/331423/pearce-cycles-dh-series-2026-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "45764aa9",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 4",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-06-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332276/fjbc-summer-dirt-crit-series-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "45764aa9",
+    "name": "FJBC Summer Dirt Crit Series 2026 Round 4",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Callendar Estate MTB Trails, Falkirk",
+    "postcode": null,
+    "date": "2026-06-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332276/fjbc-summer-dirt-crit-series-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "205c612b",
+    "name": "Lloyds National 4X Series Round 5",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "Afan 4X Track, Port Talbot",
+    "postcode": null,
+    "date": "2026-06-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332239/lloyds-national-4x-series-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
+    "id": "51006cf2",
+    "name": "Lloyds National 4X Series Round 6",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "Afan 4X Track, Port Talbot",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332240/lloyds-national-4x-series-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
     "id": "1cde3a70",
@@ -674,6 +934,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331427/lloyds-2026-national-mtb-cross-country-series-round-5",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "a7722396",
+    "name": "Lloyds 2026 National MTB Cross Country Championships",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Ae Forest, Dumfries & Galloway",
+    "postcode": null,
+    "date": "2026-07-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332205/lloyds-2026-national-mtb-cross-country-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-11T03:15:24.000Z"
+  },
+  {
+    "id": "a7722396",
+    "name": "Lloyds 2026 National MTB Cross Country Championships",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Ae Forest, Dumfries & Galloway",
+    "postcode": null,
+    "date": "2026-07-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332205/lloyds-2026-national-mtb-cross-country-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-11T03:15:24.000Z"
   },
   {
     "id": "2cc5bc10",
@@ -819,6 +1105,19 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "10b1c440",
+    "name": "Lloyds National 4X Series Round 9",
+    "type": "MTB",
+    "region": "Eastern",
+    "venue": "Twisted Oaks, Suffolk",
+    "postcode": null,
+    "date": "2026-09-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332243/lloyds-national-4x-series-round-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
     "id": "04bc8ec8",
     "name": "Pearce Cycles DH Series 2026 Round 4",
     "type": "MTB",
@@ -830,6 +1129,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331426/pearce-cycles-dh-series-2026-round-4",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "36af9720",
+    "name": "Lloyds National 4X Series Round 10",
+    "type": "MTB",
+    "region": "Eastern",
+    "venue": "Twisted Oaks, Suffolk",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332245/lloyds-national-4x-series-round-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
     "id": "d1332a8a",
