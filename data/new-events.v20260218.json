@@ -469,6 +469,19 @@
       "last_updated": "2026-02-16T08:29:52.000Z"
     },
     {
+      "id": "32df569a",
+      "name": "East Grinstead CC Club Hill Climb - Round 21",
+      "type": "Hill Climb",
+      "region": "London & South East",
+      "venue": "2 miles | GH/83",
+      "postcode": null,
+      "date": "2026-08-25",
+      "start_time": "00:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/47867-east-grinstead-cc-club-hill-climb-round-21",
+      "source": "Google Sheet",
+      "last_updated": "2026-02-16T08:29:52.000Z"
+    },
+    {
       "id": "48fcbc49",
       "name": "Five Chimneys Hill Climb Course Hill Climb",
       "type": "Hill Climb",
@@ -1095,7 +1108,7 @@
     {
       "id": "4b4089d4",
       "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #146",
-      "type": "Road",
+      "type": "MTB",
       "region": "Central",
       "venue": "Northampton Bike Park, Northampton",
       "postcode": null,
@@ -1108,7 +1121,7 @@
     {
       "id": "66e60ae5",
       "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #147",
-      "type": "Road",
+      "type": "MTB",
       "region": "Central",
       "venue": "Whippy Trails, Rickmansworth.",
       "postcode": null,
@@ -1121,7 +1134,7 @@
     {
       "id": "89ebb0ba",
       "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #148",
-      "type": "Road",
+      "type": "MTB",
       "region": "Central",
       "venue": "Northampton Bike Park, Northampton",
       "postcode": null,
@@ -1134,7 +1147,7 @@
     {
       "id": "50068512",
       "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #149",
-      "type": "Road",
+      "type": "MTB",
       "region": "Central",
       "venue": "Whippy Trails, Rickmansworth.",
       "postcode": null,
@@ -1171,7 +1184,7 @@
       "last_updated": "2026-02-18T03:15:25.000Z"
     }
   ],
-  "last_build": "2026-02-18T04:09:30.802Z",
-  "total_new_events": 90,
+  "last_build": "2026-02-18T18:46:11.722Z",
+  "total_new_events": 91,
   "cutoff_date": "2026-02-11"
 }

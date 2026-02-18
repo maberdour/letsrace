@@ -39,19 +39,6 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
-    "id": "097120f7",
-    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #44",
-    "type": "Road",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330648/british-cycling-pathway-development-centre-gravity---forest-of-dean-44",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "b44c89e8",
     "name": "Limited Edition Cycling Go-Ride Winter Series, Round 3",
     "type": "Road",
@@ -141,19 +128,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/331657/british-cycling-pathway-development-centre-circuit---york-89",
     "source": "Google Sheet",
     "last_updated": "2026-01-23T03:15:24.000Z"
-  },
-  {
-    "id": "4b4089d4",
-    "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #146",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Northampton Bike Park, Northampton",
-    "postcode": null,
-    "date": "2026-02-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332453/british-cycling-pathway-development-centre-gravity---northampton-devo-146",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
     "id": "10064f80",
@@ -377,19 +351,6 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
-    "id": "66e60ae5",
-    "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #147",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Whippy Trails, Rickmansworth.",
-    "postcode": null,
-    "date": "2026-03-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332454/british-cycling-pathway-development-centre-gravity---whippendell-devo-147-",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
-  },
-  {
     "id": "d70681c1",
     "name": "Hillingdon Slipstreamers Youth Spring Series Event 3",
     "type": "Road",
@@ -611,19 +572,6 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
-    "id": "89ebb0ba",
-    "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #148",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Northampton Bike Park, Northampton",
-    "postcode": null,
-    "date": "2026-03-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332455/british-cycling-pathway-development-centre-gravity---northampton-devo-148-",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
-  },
-  {
     "id": "4ad1fd7b",
     "name": "Hillingdon Slipstreamers Youth Spring Series Event 5",
     "type": "Road",
@@ -674,19 +622,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/330580/wyke-circuit-races-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-10T03:15:26.000Z"
-  },
-  {
-    "id": "e7c79cf3",
-    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #45",
-    "type": "Road",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-03-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332187/british-cycling-pathway-development-centre-gravity---forest-of-dean-45",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-07T03:15:28.000Z"
   },
   {
     "id": "7a9cc019",
@@ -804,19 +739,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/331649/2026-youth-tour-of-scotland",
     "source": "Google Sheet",
     "last_updated": "2026-01-27T03:15:28.000Z"
-  },
-  {
-    "id": "50068512",
-    "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #149",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Whippy Trails, Rickmansworth.",
-    "postcode": null,
-    "date": "2026-04-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332456/british-cycling-pathway-development-centre-gravity---whippendell-devo-149-",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
     "id": "6f659560",
