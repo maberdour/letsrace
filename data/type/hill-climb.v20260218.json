@@ -65,17 +65,30 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fe5e3572",
+    "id": "87ece8a4",
     "name": "Longstone Edge Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 2.6 miles | OHC22 | Longstone Edge",
+    "venue": "Derbyshire | 1.1 miles | OHC22 | Longstone Edge",
     "postcode": null,
     "date": "2026-06-17",
     "start_time": "00:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/41706-longstone-edge-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "bff21b1e",
+    "name": "Longstone Edge Hill Climb (Youths)",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "Derbyshire | 1.1 miles | OHC22 | Longstone Edge",
+    "postcode": null,
+    "date": "2026-06-17",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/47754-longstone-edge-hill-climb-youths",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
     "id": "647bfc72",
@@ -141,6 +154,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42307-vector-racing-prospect-hill-summer-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "a0ce346a",
+    "name": "Pendle Forest CC Club 1.8",
+    "type": "Hill Climb",
+    "region": "North West",
+    "venue": "Lancashire | 1.8 miles | LL811 | Pendle Forest Hc - Skipton Old Road",
+    "postcode": null,
+    "date": "2026-07-16",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46115-pendle-forest-cc-club-1-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
     "id": "a9690105",
@@ -221,6 +247,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "8f4b2ec8",
+    "name": "Eastbourne Rovers CC Firle Beacon Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "East Sussex | 1 miles | GH/84 | Firle Beacon",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/47136-eastbourne-rovers-cc-firle-beacon-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
     "id": "f1bde984",
     "name": "C C Bexley - STANSTED HILL Hill Climb",
     "type": "Hill Climb",
@@ -234,11 +273,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "bd73aa9c",
+    "id": "9dd0a227",
     "name": "Wrekinsport CC Club Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "1 miles | D0/14",
+    "venue": "Telford and Wrekin | 1707 yards | D0/14 | Willomoor Bank Hill Climb",
     "postcode": null,
     "date": "2026-08-19",
     "start_time": "00:00",
@@ -284,6 +323,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45692-dursley-road-club-club-stouts-hill-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "48fcbc49",
+    "name": "Five Chimneys Hill Climb Course Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Shropshire | 1496 yards | D0/20 | Five Chimneys Hill Climb Course",
+    "postcode": null,
+    "date": "2026-08-27",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48254-five-chimneys-hill-climb-course-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
     "id": "a848c44e",
@@ -364,6 +416,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "f8c728bd",
+    "name": "Pontypool Road Cycling Club Club Round 20",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "Torfaen Principal Area | 2 miles | RH51 - PLASCOED PONTYPOOL",
+    "postcode": null,
+    "date": "2026-09-01",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48104-pontypool-road-cycling-club-club-round-20",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
     "id": "afa5cc28",
     "name": "Chippenham & District Wheelers Club Roberts Tankard - Bowden Hill Climb",
     "type": "Hill Climb",
@@ -377,11 +442,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "c41b031f",
+    "id": "c637c6fa",
     "name": "Shropshire CCA Club Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "1 miles | D3HC/5",
+    "venue": "Shropshire | 845 yards | D3HC/5 | Homer Bank Hill Climb",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "00:00",
@@ -390,11 +455,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "bdb97fb2",
+    "id": "89b064de",
     "name": "Ystwyth CC Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "1 miles | D0/19",
+    "venue": "1 miles | D0/19 | Clarach club Hill Climb",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "00:00",
@@ -427,6 +492,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46090-wickham-league-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "7087f1da",
+    "name": "Farnborough & Camberley CC Club Hill Climb TT",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Hampshire | 1672 yards | HHC018a | Brockham Hill Climb (Holybourne)",
+    "postcode": null,
+    "date": "2026-09-05",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/47026-farnborough-camberley-cc-club-hill-climb-tt",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
     "id": "caed3b8a",
@@ -557,6 +635,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42928-brickworks-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "e2b26936",
+    "name": "Cowley Road Condors CC Hill Climb",
+    "type": "Hill Climb",
+    "region": "Central",
+    "venue": "Oxfordshire | 1056 yards | HHC021",
+    "postcode": null,
+    "date": "2026-09-12",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46069-cowley-road-condors-cc-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
     "id": "a1c05dcd",
@@ -949,11 +1040,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1b1655ce",
+    "id": "079766ee",
     "name": "The Burway Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Shropshire | 1 miles | D0/5",
+    "venue": "Shropshire | 1 miles | D0/5 | The Burway Open Hill Climb",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "00:00",
@@ -1168,6 +1259,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42925-monsal-head-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "53a367db",
+    "name": "North Hampshire RC Club Sydmonton Hil climb 0.5 Miles",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Hampshire | 845 yards | HHC009 | Watership Down",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/45577-north-hampshire-rc-club-sydmonton-hil-climb-0-5-miles",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
     "id": "ea434ebe",
@@ -1493,6 +1597,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/43509-westclose-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "fc3c8225",
+    "name": "Whiteleaf Hill Climb",
+    "type": "Hill Climb",
+    "region": "Central",
+    "venue": "Buckinghamshire | 1408 yards | HHC036 | Whiteleaf",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/45177-whiteleaf-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
     "id": "e89b474b",
