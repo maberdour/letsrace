@@ -169,14 +169,25 @@
                             <span class="filter-toggle-icon">▼</span>
                         </button>
                         <div class="filter-content" id="filter-content">
-                            <p class="filter-instruction-text">Select all regions you would like to view.<span class="filter-instruction-mobile"> You can use the buttons underneath to select or clear all options.</span></p>
-                            <div class="region-checkboxes" id="region-checkboxes">
-                                <div class="loading-message">Loading regions...</div>
+                            <p class="filter-section-title">Filter by Region</p>
+                            <div class="national-event-toggle">
+                                <label class="toggle-switch toggle-switch-right">
+                                    <span class="toggle-label">Show National Events Only</span>
+                                    <input type="checkbox" id="national-only" value="national-only">
+                                    <span class="toggle-slider" aria-hidden="true"></span>
+                                </label>
+                                <p class="filter-note">National events are shown across all regions.</p>
                             </div>
-                        <div class="filter-buttons">
-                            <button class="select-all-regions-btn" id="select-all-regions">Select All</button>
-                            <button class="clear-regions-btn" id="clear-regions">Clear All</button>
-                        </div>
+                            <div class="region-filter">
+                                <p class="filter-instruction-text">Select all regions you would like to view.<span class="filter-instruction-mobile"> You can use the buttons underneath to select or clear all options.</span></p>
+                                <div class="region-checkboxes" id="region-checkboxes">
+                                    <div class="loading-message">Loading regions...</div>
+                                </div>
+                                <div class="filter-buttons">
+                                    <button class="select-all-regions-btn" id="select-all-regions">Select All</button>
+                                    <button class="clear-regions-btn" id="clear-regions">Clear All</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

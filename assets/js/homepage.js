@@ -92,14 +92,19 @@ function initDisciplineTiles() {
   disciplinePanel.classList.remove('hidden');
 }
 
+// Storage key for national/regional scope (same as events-page.js)
+const EVENT_SCOPE_STORAGE_KEY = 'eventScope';
+
 // Initialize region filters for homepage
 async function initHomepageRegionFilters() {
   const regionCheckboxes = document.getElementById('region-checkboxes');
   const selectAllRegionsButton = document.getElementById('select-all-regions');
   const clearRegionsButton = document.getElementById('clear-regions');
-  
-  if (!regionCheckboxes || !clearRegionsButton) {
-    console.error('Missing region filter elements');
+  const nationalOnlyToggle = document.getElementById('national-only');
+  const regionFilter = document.querySelector('.filters .region-filter');
+
+  if (!regionCheckboxes) {
+    console.error('Missing region-checkboxes element');
     return;
   }
 
@@ -112,19 +117,19 @@ async function initHomepageRegionFilters() {
     const manifestResponse = await fetch('/data/manifest.json');
     const manifest = await manifestResponse.json();
     const facetsUrl = manifest.index.facets;
-    
+
     // Fetch facets data
     const facetsResponse = await fetch(facetsUrl);
     if (!facetsResponse.ok) {
       throw new Error(`Failed to fetch facets: ${facetsResponse.status}`);
     }
-    
+
     facets = await facetsResponse.json();
-    
+
     if (!facets || !Array.isArray(facets.regions)) {
       throw new Error('Invalid facets data structure');
     }
-    
+
     console.log('✅ Regions loaded:', facets.regions.length);
     
     // Load saved regions from localStorage, or select all regions by default
@@ -136,7 +141,6 @@ async function initHomepageRegionFilters() {
       console.error('Error loading saved regions:', error);
       savedRegions = facets.regions; // Select all regions by default on error
     }
-    
     // Populate region checkboxes
     regionCheckboxes.innerHTML = facets.regions.map(region => `
       <label class="region-checkbox">
@@ -146,17 +150,74 @@ async function initHomepageRegionFilters() {
       </label>
     `).join('');
     
-    // Function to update discipline counts based on selected regions
-    function updateDisciplineCounts(selectedRegions) {
+    // Restore national/regional scope and set checkbox
+    let savedScope = 'regional';
+    try {
+      savedScope = localStorage.getItem(EVENT_SCOPE_STORAGE_KEY) || 'regional';
+    } catch (error) {
+      console.error('Error loading saved event scope:', error);
+    }
+    if (nationalOnlyToggle) {
+      nationalOnlyToggle.checked = savedScope === 'national';
+    }
+
+    let savedRegionSelection = [];
+
+    function setRegionControlsEnabled(enabled) {
+      if (regionFilter) {
+        regionFilter.classList.toggle('is-disabled', !enabled);
+      }
+      const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => {
+        cb.disabled = !enabled;
+      });
+      if (selectAllRegionsButton) selectAllRegionsButton.disabled = !enabled;
+      if (clearRegionsButton) clearRegionsButton.disabled = !enabled;
+    }
+
+    function applyEventScope(scope) {
+      const nationalOnly = scope === 'national';
+      const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+
+      if (nationalOnly) {
+        savedRegionSelection = getSelectedRegions();
+        checkboxes.forEach(cb => { cb.checked = true; });
+        setRegionControlsEnabled(false);
+      } else {
+        const regionsToRestore = savedRegionSelection.length > 0 ? savedRegionSelection : savedRegions;
+        checkboxes.forEach(cb => {
+          cb.checked = regionsToRestore.includes(cb.value);
+        });
+        setRegionControlsEnabled(true);
+      }
+
+      if (nationalOnlyToggle) {
+        nationalOnlyToggle.checked = nationalOnly;
+      }
+      try {
+        localStorage.setItem(EVENT_SCOPE_STORAGE_KEY, nationalOnly ? 'national' : 'regional');
+      } catch (err) {
+        console.error('Error saving event scope:', err);
+      }
+      updateDisciplineCounts(getSelectedRegions(), nationalOnly);
+      if (!nationalOnly && getSelectedRegions().length > 0) {
+        localStorage.setItem('selectedRegions', JSON.stringify(getSelectedRegions()));
+      }
+    }
+
+    // Function to update discipline counts based on selected regions and national-only
+    function updateDisciplineCounts(selectedRegions, nationalOnly) {
+      var grid = document.querySelector('.discipline-tiles-grid');
+      var tileNumbers = grid ? grid.querySelectorAll('a .tile-number') : [];
       const disciplineElements = {
-        'road': document.querySelector('[href="/pages/road/"] .tile-number'),
-        'track': document.querySelector('[href="/pages/track/"] .tile-number'),
-        'bmx': document.querySelector('[href="/pages/bmx/"] .tile-number'),
-        'mtb': document.querySelector('[href="/pages/mtb/"] .tile-number'),
-        'cyclo-cross': document.querySelector('[href="/pages/cyclo-cross/"] .tile-number'),
-        'speedway': document.querySelector('[href="/pages/speedway/"] .tile-number'),
-        'time-trial': document.querySelector('[href="/pages/time-trial/"] .tile-number'),
-        'hill-climb': document.querySelector('[href="/pages/hill-climb/"] .tile-number')
+        'road': tileNumbers[0] || document.querySelector('a[href*="/pages/road"] .tile-number'),
+        'track': tileNumbers[1] || document.querySelector('a[href*="/pages/track"] .tile-number'),
+        'bmx': tileNumbers[2] || document.querySelector('a[href*="/pages/bmx"] .tile-number'),
+        'mtb': tileNumbers[3] || document.querySelector('a[href*="/pages/mtb"] .tile-number'),
+        'cyclo-cross': tileNumbers[4] || document.querySelector('a[href*="/pages/cyclo-cross"] .tile-number'),
+        'speedway': tileNumbers[5] || document.querySelector('a[href*="/pages/speedway"] .tile-number'),
+        'time-trial': tileNumbers[6] || document.querySelector('a[href*="/pages/time-trial"] .tile-number'),
+        'hill-climb': tileNumbers[7] || document.querySelector('a[href*="/pages/hill-climb"] .tile-number')
       };
       
       // Discipline name mapping for the data
@@ -171,18 +232,20 @@ async function initHomepageRegionFilters() {
         'hill-climb': 'Hill Climb'
       };
       
+      const countsNational = facets.counts_national || {};
+      
       Object.keys(disciplineElements).forEach(discipline => {
         const element = disciplineElements[discipline];
         if (!element) return;
         
         let count = 0;
+        const disciplineName = disciplineMapping[discipline];
         
-        if (selectedRegions.length === 0) {
-          // No regions selected - show 0 counts
+        if (nationalOnly) {
+          count = countsNational[disciplineName] || 0;
+        } else if (selectedRegions.length === 0) {
           count = 0;
         } else {
-          // Calculate count for selected regions
-          const disciplineName = disciplineMapping[discipline];
           selectedRegions.forEach(region => {
             const key = `${disciplineName}|${region}`;
             count += facets.counts[key] || 0;
@@ -193,22 +256,25 @@ async function initHomepageRegionFilters() {
       });
     }
     
+    function getSelectedRegions() {
+      return Array.from(regionCheckboxes.querySelectorAll('input[type="checkbox"]:checked'))
+        .map(cb => cb.value);
+    }
+    
+    function isNationalOnly() {
+      return nationalOnlyToggle ? nationalOnlyToggle.checked : false;
+    }
+    
     // Add event listeners
     regionCheckboxes.addEventListener('change', (e) => {
       if (e.target.type === 'checkbox') {
-        const selectedRegions = Array.from(regionCheckboxes.querySelectorAll('input[type="checkbox"]:checked'))
-          .map(cb => cb.value);
-        
-        // Update discipline counts
-        updateDisciplineCounts(selectedRegions);
-        
-        // Store in localStorage
+        const selectedRegions = getSelectedRegions();
+        updateDisciplineCounts(selectedRegions, isNationalOnly());
         if (selectedRegions.length > 0) {
           localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
-    } else {
+        } else {
           localStorage.removeItem('selectedRegions');
         }
-        
         console.log('🔍 Selected regions:', selectedRegions);
       }
     });
@@ -218,45 +284,42 @@ async function initHomepageRegionFilters() {
       selectAllRegionsButton.addEventListener('click', () => {
         const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(cb => cb.checked = true);
-        
-        const selectedRegions = Array.from(checkboxes).map(cb => cb.value);
-        updateDisciplineCounts(selectedRegions);
-        
-        // Store in localStorage
+        const selectedRegions = getSelectedRegions();
+        updateDisciplineCounts(selectedRegions, isNationalOnly());
         localStorage.setItem('selectedRegions', JSON.stringify(selectedRegions));
-        
         console.log('✅ Selected all regions');
       });
     }
     
-    clearRegionsButton.addEventListener('click', () => {
-      const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
-      checkboxes.forEach(cb => cb.checked = false);
-      localStorage.removeItem('selectedRegions');
-      
-      // Update counts to show 0 (no regions selected)
-      updateDisciplineCounts([]);
-      
-      console.log('🧹 Cleared all regions');
-    });
-    
-    // Filter toggle functionality
-    const filterToggle = document.getElementById('filter-toggle');
-    const filterContent = document.getElementById('filter-content');
-    
-    if (filterToggle && filterContent) {
-      filterToggle.addEventListener('click', () => {
-        filterToggle.classList.toggle('expanded');
-        filterContent.classList.toggle('expanded');
+    if (clearRegionsButton) {
+      clearRegionsButton.addEventListener('click', () => {
+        const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => cb.checked = false);
+        localStorage.removeItem('selectedRegions');
+        updateDisciplineCounts([], isNationalOnly());
+        console.log('🧹 Cleared all regions');
       });
     }
     
-    // Initialize with saved regions or all regions by default
-    updateDisciplineCounts(savedRegions);
+    // National-only toggle (same behaviour as discipline pages: select all + grey out when national)
+    if (nationalOnlyToggle) {
+      nationalOnlyToggle.addEventListener('change', () => {
+        applyEventScope(nationalOnlyToggle.checked ? 'national' : 'regional');
+        console.log('📋 Event scope:', nationalOnlyToggle.checked ? 'national' : 'regional');
+      });
+    }
+    
+    // Initialize with saved regions and scope (apply scope so national = all regions selected + greyed out)
+    applyEventScope(savedScope);
     
   } catch (error) {
     console.error('❌ Failed to load regions:', error);
-    regionCheckboxes.innerHTML = '<div class="error-message">Failed to load regions</div>';
+    if (regionCheckboxes) {
+      regionCheckboxes.innerHTML = '<div class="error-message">Failed to load regions</div>';
+    }
+    // Show 0 on discipline tiles so layout isn’t broken when facets fail
+    var tiles = document.querySelectorAll('.discipline-tiles-grid .tile-number');
+    tiles.forEach(function (el) { el.textContent = '0'; });
   }
 }
 /**
@@ -361,15 +424,30 @@ function initHomepage() {
   });
 }
 
-// Auto-initialize if module is loaded directly
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => { 
-    initHomepage(); 
-    initDisciplineTiles(); 
-    initHomepageRegionFilters();
+// Filter expand/collapse on homepage (delegation so it works regardless of fetch)
+function attachHomepageFilterToggle() {
+  if (!document.body.classList.contains('homepage')) return;
+  document.body.addEventListener('click', function homepageFilterToggle(e) {
+    if (!document.body.classList.contains('homepage')) return;
+    var btn = e.target && e.target.closest ? e.target.closest('#filter-toggle') : null;
+    if (!btn) return;
+    var content = document.getElementById('filter-content');
+    if (content) {
+      btn.classList.toggle('expanded');
+      content.classList.toggle('expanded');
+    }
   });
-} else {
+}
+
+// Auto-initialize when DOM is ready (ensures region-checkboxes and buttons exist)
+function runHomepageInit() {
+  attachHomepageFilterToggle();
   initHomepage();
   initDisciplineTiles();
   initHomepageRegionFilters();
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', runHomepageInit);
+} else {
+  runHomepageInit();
 }

@@ -38,6 +38,8 @@ function logPerformanceSummary() {
 
 // Default number of days after which an event is no longer considered "NEW"
 const DEFAULT_NEW_EVENT_DAYS = 7;
+const NATIONAL_TITLE_REGEX = /\bnational\b/i;
+const EVENT_SCOPE_STORAGE_KEY = 'eventScope';
 
 // Debounce utility
 function debounce(func, wait) {
@@ -73,6 +75,15 @@ function loadSavedRegions() {
   } catch (error) {
     console.error('Error loading saved regions:', error);
     return [];
+  }
+}
+
+function loadSavedEventScope() {
+  try {
+    return localStorage.getItem(EVENT_SCOPE_STORAGE_KEY) || 'regional';
+  } catch (error) {
+    console.error('Error loading event scope:', error);
+    return 'regional';
   }
 }
 
@@ -125,10 +136,14 @@ function renderNewlyAddedEventCard(event) {
 }
 
 // Render events for newly added page
-function renderNewlyAddedEvents(events, container, titleElement, days) {
+function renderNewlyAddedEvents(events, container, titleElement, days, nationalOnly) {
   if (events.length === 0) {
     const rangeText = days === 1 ? 'the last 24 hours' : `the last ${days} days`;
-    container.innerHTML = `<div class="no-events"><p>No recently added events found in ${rangeText} for the selected regions.</p></div>`;
+    if (nationalOnly) {
+      container.innerHTML = `<div class="no-events"><p>No recently added national events found in ${rangeText}.</p></div>`;
+    } else {
+      container.innerHTML = `<div class="no-events"><p>No recently added events found in ${rangeText} for the selected regions.</p></div>`;
+    }
     if (titleElement) {
       titleElement.textContent = 'Newly Added Events';
     }
@@ -192,6 +207,9 @@ function initNewlyAddedPage() {
   const newEventsTitle = document.getElementById('new-events-title');
   const filterToggle = document.getElementById('filter-toggle');
   const filterContent = document.getElementById('filter-content');
+  const eventScopeRadios = document.querySelectorAll('input[name="event-scope"]');
+  const nationalOnlyToggle = document.getElementById('national-only');
+  const regionFilter = document.querySelector('.region-filter');
   const newEventsToggle = document.getElementById('new-events-toggle');
   const introText = document.querySelector('.intro-text');
   
@@ -214,6 +232,8 @@ function initNewlyAddedPage() {
   let allEvents = [];
   let facets = null;
   let selectedDays = DEFAULT_NEW_EVENT_DAYS;
+  let savedRegionSelection = [];
+  let currentScope = 'regional';
 
   /**
    * Update intro copy based on the selected day range.
@@ -328,6 +348,10 @@ function initNewlyAddedPage() {
       `).join('');
       
       regionCheckboxes.innerHTML = regionHtml;
+      setRegionControlsEnabled(true);
+      
+      const savedScope = loadSavedEventScope();
+      applyEventScope(savedScope, { applyFilters: false });
       
       // Update build stamp
       updateBuildStamp(document.getElementById('build-stamp'), facets);
@@ -384,7 +408,8 @@ function initNewlyAddedPage() {
   // Apply current filters and render
   function applyFilters() {
     const filters = {
-      regions: getSelectedRegions()
+      regions: getSelectedRegions(),
+      scope: currentScope
     };
     
     console.log('🔍 applyFilters called with regions:', filters.regions);
@@ -422,10 +447,18 @@ function initNewlyAddedPage() {
     
     console.log('🔍 Events after "new" filter:', newEvents.length);
     
+    const nationalFilteredEvents = filters.scope === 'national'
+      ? newEvents.filter(event => NATIONAL_TITLE_REGEX.test(event.name || ''))
+      : newEvents.filter(event => !NATIONAL_TITLE_REGEX.test(event.name || ''));
+    
+    console.log('🔍 Events after national filter:', nationalFilteredEvents.length);
+    
     // Apply region filtering - if no regions selected, show no events
-    const filteredEvents = filters.regions.length > 0 
-      ? newEvents.filter(event => filters.regions.includes(event.region))
-      : [];
+    const filteredEvents = filters.scope === 'national'
+      ? nationalFilteredEvents
+      : (filters.regions.length > 0 
+        ? nationalFilteredEvents.filter(event => filters.regions.includes(event.region))
+        : []);
     
     console.log('🔍 Events after region filter:', filteredEvents.length);
     
@@ -433,7 +466,7 @@ function initNewlyAddedPage() {
     const sortedEvents = sortEvents(filteredEvents);
     console.log('🔍 Final sorted events:', sortedEvents.length);
     
-    renderNewlyAddedEvents(sortedEvents, newEventsContainer, newEventsTitle, selectedDays);
+    renderNewlyAddedEvents(sortedEvents, newEventsContainer, newEventsTitle, selectedDays, filters.scope === 'national');
     
     // Hide result count
     const resultCount = document.getElementById('result-count');
@@ -442,15 +475,19 @@ function initNewlyAddedPage() {
     }
     
     // Store selected regions in localStorage for persistence
-    if (filters.regions.length > 0) {
-      localStorage.setItem('selectedRegions', JSON.stringify(filters.regions));
-    } else {
-      localStorage.removeItem('selectedRegions');
+    if (filters.scope === 'regional') {
+      if (filters.regions.length > 0) {
+        localStorage.setItem('selectedRegions', JSON.stringify(filters.regions));
+      } else {
+        localStorage.removeItem('selectedRegions');
+      }
     }
+    localStorage.setItem(EVENT_SCOPE_STORAGE_KEY, filters.scope);
     
     // Track analytics
     trackAnalytics('filter_change', {
-      regions: filters.regions.join(',')
+      regions: filters.regions.join(','),
+      event_scope: filters.scope
     });
   }
   
@@ -480,6 +517,62 @@ function initNewlyAddedPage() {
     
     applyFilters();
   });
+
+  function setRegionControlsEnabled(enabled) {
+    if (regionFilter) {
+      regionFilter.classList.toggle('is-disabled', !enabled);
+    }
+    const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+      cb.disabled = !enabled;
+    });
+    if (selectAllRegionsButton) selectAllRegionsButton.disabled = !enabled;
+    if (clearRegionsButton) clearRegionsButton.disabled = !enabled;
+  }
+
+  function applyEventScope(scope, options = { applyFilters: true }) {
+    currentScope = scope === 'national' ? 'national' : 'regional';
+    const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+
+    if (currentScope === 'national') {
+      savedRegionSelection = getSelectedRegions();
+      checkboxes.forEach(cb => cb.checked = true);
+      setRegionControlsEnabled(false);
+    } else {
+      const regionsToRestore = savedRegionSelection.length > 0 ? savedRegionSelection : loadSavedRegions();
+      checkboxes.forEach(cb => {
+        cb.checked = regionsToRestore.includes(cb.value);
+      });
+      setRegionControlsEnabled(true);
+    }
+
+    if (eventScopeRadios.length > 0) {
+      eventScopeRadios.forEach(radio => {
+        radio.checked = radio.value === currentScope;
+      });
+    }
+    if (nationalOnlyToggle) {
+      nationalOnlyToggle.checked = currentScope === 'national';
+    }
+
+    if (options.applyFilters) {
+      applyFilters();
+    }
+  }
+
+  if (eventScopeRadios.length > 0) {
+    eventScopeRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        applyEventScope(radio.value);
+      });
+    });
+  }
+  
+  if (nationalOnlyToggle) {
+    nationalOnlyToggle.addEventListener('change', () => {
+      applyEventScope(nationalOnlyToggle.checked ? 'national' : 'regional');
+    });
+  }
   
   // Filter toggle functionality
   if (filterToggle && filterContent) {

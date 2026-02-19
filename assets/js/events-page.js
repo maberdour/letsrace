@@ -39,6 +39,8 @@ function logPerformanceSummary() {
 
 // Number of days after which an event is no longer considered "NEW"
 const NEW_EVENT_DAYS = 7;
+const NATIONAL_TITLE_REGEX = /\bnational\b/i;
+const EVENT_SCOPE_STORAGE_KEY = 'eventScope';
 
 // Debounce utility
 function debounce(func, wait) {
@@ -106,6 +108,15 @@ function loadSavedRegions() {
   }
 }
 
+function loadSavedEventScope() {
+  try {
+    return localStorage.getItem(EVENT_SCOPE_STORAGE_KEY) || 'regional';
+  } catch (error) {
+    console.error('Error loading event scope:', error);
+    return 'regional';
+  }
+}
+
 // Filter events based on criteria
 function filterEvents(events, filters) {
   const today = getTodayDate();
@@ -114,9 +125,20 @@ function filterEvents(events, filters) {
     // Only show events from today onwards
     if (event.date < today) return false;
     
+    const title = event.name || '';
+    const isNationalEvent = NATIONAL_TITLE_REGEX.test(title);
+    
+    if (filters.scope === 'national') {
+      if (!isNationalEvent) return false;
+    } else if (isNationalEvent) {
+      return false;
+    }
+    
     // Region filtering - if no regions selected, show no events
-    if (filters.regions.length === 0) return false;
-    if (!filters.regions.includes(event.region)) return false;
+    if (filters.scope === 'regional') {
+      if (filters.regions.length === 0) return false;
+      if (!filters.regions.includes(event.region)) return false;
+    }
     
     return true;
   });
@@ -203,8 +225,10 @@ function renderEvents(events, container, countElement, emptyElement, filters, di
     container.innerHTML = '';
     
     // Check if this is due to filters or no events at all
-    const hasFilters = filters.regions.length > 0;
-    if (hasFilters) {
+    const hasFilters = filters.regions.length > 0 || filters.scope === 'national';
+    if (filters.scope === 'national') {
+      emptyElement.innerHTML = `There are no upcoming national ${disciplineName} events currently listed.<br><br>Try clearing the national filter to see regional events.`;
+    } else if (hasFilters) {
       emptyElement.innerHTML = `There are no upcoming ${disciplineName} events currently listed in the regions you selected.<br><br>Try adjusting the filter by selecting adjacent regions, as there may be other events not too far away.`;
     } else {
       emptyElement.textContent = 'No Upcoming Events Found';
@@ -269,6 +293,9 @@ export function initEventsPage() {
   const buildStamp = document.getElementById('build-stamp');
   const filterToggle = document.getElementById('filter-toggle');
   const filterContent = document.getElementById('filter-content');
+  const eventScopeRadios = document.querySelectorAll('input[name="event-scope"]');
+  const nationalOnlyToggle = document.getElementById('national-only');
+  const regionFilter = document.querySelector('.region-filter');
   
   // Validate required elements
   if (!regionCheckboxes || !clearRegionsButton || 
@@ -279,6 +306,8 @@ export function initEventsPage() {
   
   let allEvents = [];
   let facets = null;
+  let savedRegionSelection = [];
+  let currentScope = 'regional';
   
   // Parse initial URL params
   const initialParams = parseUrlParams();
@@ -361,6 +390,11 @@ export function initEventsPage() {
         </label>
       `).join('');
       
+      setRegionControlsEnabled(true);
+      
+      const savedScope = loadSavedEventScope();
+      applyEventScope(savedScope, { applyFilters: false });
+      
       // Update build stamp
       updateBuildStamp(buildStamp, facets);
       
@@ -416,7 +450,8 @@ export function initEventsPage() {
   // Apply current filters and render
   function applyFilters() {
     const filters = {
-      regions: getSelectedRegions()
+      regions: getSelectedRegions(),
+      scope: currentScope
     };
     
     // Filter and sort events
@@ -429,16 +464,20 @@ export function initEventsPage() {
     updateUrl(filters);
     
     // Store selected regions in localStorage for persistence
-    if (filters.regions.length > 0) {
-      localStorage.setItem('selectedRegions', JSON.stringify(filters.regions));
-    } else {
-      localStorage.removeItem('selectedRegions');
+    if (filters.scope === 'regional') {
+      if (filters.regions.length > 0) {
+        localStorage.setItem('selectedRegions', JSON.stringify(filters.regions));
+      } else {
+        localStorage.removeItem('selectedRegions');
+      }
     }
+    localStorage.setItem(EVENT_SCOPE_STORAGE_KEY, filters.scope);
     
     // Track analytics
     trackAnalytics('filter_change', {
       type: pageType,
-      regions: filters.regions.join(',')
+      regions: filters.regions.join(','),
+      event_scope: filters.scope
     });
   }
   
@@ -469,6 +508,62 @@ export function initEventsPage() {
     checkboxes.forEach(cb => cb.checked = false);
     applyFilters();
   });
+
+  function setRegionControlsEnabled(enabled) {
+    if (regionFilter) {
+      regionFilter.classList.toggle('is-disabled', !enabled);
+    }
+    const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+      cb.disabled = !enabled;
+    });
+    if (selectAllRegionsButton) selectAllRegionsButton.disabled = !enabled;
+    if (clearRegionsButton) clearRegionsButton.disabled = !enabled;
+  }
+
+  function applyEventScope(scope, options = { applyFilters: true }) {
+    currentScope = scope === 'national' ? 'national' : 'regional';
+    const checkboxes = regionCheckboxes.querySelectorAll('input[type="checkbox"]');
+
+    if (currentScope === 'national') {
+      savedRegionSelection = getSelectedRegions();
+      checkboxes.forEach(cb => cb.checked = true);
+      setRegionControlsEnabled(false);
+    } else {
+      const regionsToRestore = savedRegionSelection.length > 0 ? savedRegionSelection : loadSavedRegions();
+      checkboxes.forEach(cb => {
+        cb.checked = regionsToRestore.includes(cb.value);
+      });
+      setRegionControlsEnabled(true);
+    }
+
+    if (eventScopeRadios.length > 0) {
+      eventScopeRadios.forEach(radio => {
+        radio.checked = radio.value === currentScope;
+      });
+    }
+    if (nationalOnlyToggle) {
+      nationalOnlyToggle.checked = currentScope === 'national';
+    }
+
+    if (options.applyFilters) {
+      applyFilters();
+    }
+  }
+
+  if (eventScopeRadios.length > 0) {
+    eventScopeRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        applyEventScope(radio.value);
+      });
+    });
+  }
+  
+  if (nationalOnlyToggle) {
+    nationalOnlyToggle.addEventListener('change', () => {
+      applyEventScope(nationalOnlyToggle.checked ? 'national' : 'regional');
+    });
+  }
   
   // Filter toggle functionality
   if (filterToggle && filterContent) {

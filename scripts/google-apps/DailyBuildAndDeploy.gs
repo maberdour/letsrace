@@ -322,11 +322,21 @@ function partitionByType(events) {
 }
 
 /**
+ * Whether an event is considered "national" (name contains "national").
+ * Must match frontend: assets/js/events-page.js NATIONAL_TITLE_REGEX.
+ */
+function isNationalEvent(event) {
+  const name = event.name || '';
+  return /\bnational\b/i.test(name);
+}
+
+/**
  * Build facets index
  */
 function buildFacetsIndex(events) {
   const regions = new Set();
   const counts = {};
+  const counts_national = {};
   
   // Collect unique regions
   events.forEach(event => {
@@ -349,10 +359,20 @@ function buildFacetsIndex(events) {
     counts[key] = (counts[key] || 0) + 1;
   });
   
+  // Count by type for national events only (for homepage "National only" filter)
+  CANONICAL_TYPES.forEach(type => {
+    counts_national[type] = events.filter(e => e.type === type && isNationalEvent(e)).length;
+  });
+  
+  // Debug: verify counts_national is built before return
+  Logger.log('buildFacetsIndex: counts_national present? ' + (counts_national && Object.keys(counts_national).length));
+  Logger.log('buildFacetsIndex: counts_national = ' + JSON.stringify(counts_national));
+  
   return {
     types: CANONICAL_TYPES,
     regions: VALID_REGIONS,
     counts: counts,
+    counts_national: counts_national,
     last_build: nowISO()
   };
 }
@@ -417,6 +437,9 @@ function commitFilesToGitHub(partitionedData, facets, dateString, newEvents, new
   });
   
   // Add facets index
+  // Debug: verify facets still has counts_national when committing
+  Logger.log('commitFilesToGitHub: facets has counts_national? ' + ('counts_national' in facets));
+  Logger.log('commitFilesToGitHub: facets keys = ' + Object.keys(facets).join(', '));
   const facetsFilename = `/data/index/facets.v${dateString}.json`;
   const facetsContent = JSON.stringify(facets, null, 2);
   

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTB Events - LetsRace</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=22">
     <meta name="description" content="Find mountain bike events across the UK">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -32,13 +32,24 @@
                         <span class="filter-toggle-icon">▼</span>
                     </button>
                     <div class="filter-content" id="filter-content">
-                        <p class="filter-instruction-text">Select all regions you would like to view.<span class="filter-instruction-mobile"> You can use the buttons underneath to select or clear all options.</span></p>
-                        <div class="region-checkboxes" id="region-checkboxes">
-                            <div class="loading-message">Loading regions...</div>
+                        <p class="filter-section-title">Filter by Region</p>
+                        <div class="national-event-toggle">
+                            <label class="toggle-switch toggle-switch-right">
+                                <span class="toggle-label">Show National Events Only</span>
+                                <input type="checkbox" id="national-only" value="national-only">
+                                <span class="toggle-slider" aria-hidden="true"></span>
+                            </label>
+                            <p class="filter-note">National events are shown across all regions.</p>
                         </div>
-                        <div class="filter-buttons">
-                            <button class="select-all-regions-btn" id="select-all-regions">Select All</button>
-                            <button class="clear-regions-btn" id="clear-regions">Clear All</button>
+                        <div class="region-filter">
+                            <p class="filter-instruction-text">Select all regions you would like to view.<span class="filter-instruction-mobile"> You can use the buttons underneath to select or clear all options.</span></p>
+                            <div class="region-checkboxes" id="region-checkboxes">
+                                <div class="loading-message">Loading regions...</div>
+                            </div>
+                            <div class="filter-buttons">
+                                <button class="select-all-regions-btn" id="select-all-regions">Select All</button>
+                                <button class="clear-regions-btn" id="clear-regions">Clear All</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -62,7 +73,7 @@
     
     <!-- Load all scripts in parallel for faster execution -->
     <script src="/assets/js/render.js?v=18"></script>
-    <script type="module" src="/assets/js/events-page.js"></script>
+    <script type="module" src="/assets/js/events-page.js?v=2"></script>
     <script>
         // Render header and footer immediately
         renderHeader("MTB");

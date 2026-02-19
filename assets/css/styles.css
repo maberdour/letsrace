@@ -1015,12 +1015,43 @@ main h1 {
 .filters {
   background: #ffffff;
   border-radius: 8px;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
   height: fit-content;
   position: sticky;
   top: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
+  margin-top: 0;
+}
+
+body[data-type]:not([data-type="homepage"]) .filters {
+  padding-top: 0;
+}
+
+body[data-type]:not([data-type="homepage"]) .filter-group {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+body[data-type]:not([data-type="homepage"]) .filter-content {
+  padding-top: 0;
+}
+
+body[data-type]:not([data-type="homepage"]) .filter-section-title {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  body[data-type]:not([data-type="homepage"]) .filters:has(.filter-content.expanded) .filter-group {
+    padding-top: 0;
+  }
+
+  body[data-type]:not([data-type="homepage"]) .filter-content.expanded .filter-section-title {
+    padding-top: 0.75rem;
+  }
+
+  body[data-type]:not([data-type="homepage"]) .filter-toggle-btn {
+    margin-top: 0;
+  }
 }
 
 /* Homepage filters - no sticky positioning to prevent overlap */
@@ -1033,17 +1064,13 @@ main h1 {
 
 
 .filters::before {
-  content: "Filter by Region";
-  display: block;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-  margin-top: -0.5rem;
-  position: relative;
+  content: "";
+  display: none;
 }
 
 .filter-group {
+  margin-top: 0;
+  padding-top: 0;
   margin-bottom: 1.5rem;
 }
 
@@ -1059,12 +1086,161 @@ main h1 {
   display: block;
 }
 
+.filter-section-title {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0 0 0.75rem 0;
+  padding-top: 0;
+}
+
+.filters > .filter-group > .filter-section-title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.filter-note {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.national-event-toggle {
+  background: #0077cc;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.national-event-toggle .toggle-switch {
+  color: #ffffff;
+}
+
+.national-event-toggle .filter-note {
+  color: #e6f1ff;
+  margin: 0.5rem 0 0 0;
+}
+
+.national-event-toggle .toggle-slider {
+  background-color: #ffffff;
+  border: 2px solid #e6f1ff;
+}
+
+.national-event-toggle .toggle-slider::before {
+  background-color: #005fa3;
+}
+
+.national-event-toggle .toggle-switch input[type="checkbox"]:checked + .toggle-slider {
+  background-color: #00c2ff;
+  border-color: #00c2ff;
+}
+
+.national-event-toggle .toggle-switch input[type="checkbox"]:checked + .toggle-slider::before {
+  background-color: #003a66;
+}
+
+.event-scope-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-scope-radio {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #495057;
+  cursor: pointer;
+}
+
+.event-scope-radio input[type="radio"] {
+  accent-color: #0077cc;
+  margin: 0;
+  transform: scale(1.35);
+  transform-origin: left center;
+}
+
 /* Region Checkboxes - Consolidated */
 .region-checkboxes {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   margin-bottom: 1rem;
+}
+
+.region-filter.is-disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.region-filter.is-disabled .region-checkbox {
+  cursor: not-allowed;
+}
+
+.region-filter.is-disabled .filter-buttons button {
+  cursor: not-allowed;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #495057;
+  position: relative;
+}
+
+.toggle-switch-right {
+  justify-content: space-between;
+}
+
+.toggle-switch-right .toggle-label {
+  flex: 1;
+}
+
+.toggle-switch input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+
+.toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  background-color: #cbd5e1;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-slider {
+  background-color: #0077cc;
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-slider::before {
+  transform: translateX(18px);
 }
 
 .region-checkbox {
@@ -1154,7 +1330,7 @@ main h1 {
 
 .filter-content {
   display: block;
-  padding-top: 1rem;
+  padding-top: 0;
 }
 
 /* Filter instruction text - visible on desktop */
@@ -1721,6 +1897,11 @@ footer a:visited {
     margin-top: -4rem;
     padding-top: 5rem;
   }
+
+  /* Homepage: 1em top padding so heading isn't flush with top of white block */
+  .homepage .filters {
+    padding-top: 1em;
+  }
   
   .filter-instruction-mobile {
     display: none;
@@ -1760,6 +1941,14 @@ footer a:visited {
     margin: 0 auto;
     max-width: none;
   }
+
+  .filters > .filter-group > .filter-section-title {
+    display: none;
+  }
+
+  .filter-content.expanded .filter-section-title {
+    display: none; /* Button is "Filter by Region"; no duplicate heading inside expanded block */
+  }
   
   .filter-content {
     display: none;
@@ -1771,10 +1960,19 @@ footer a:visited {
   
   .filter-content.expanded {
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin: 0;
     height: auto;
     overflow: visible;
+  }
+
+  /* Space above Show National Events block on mobile (homepage and discipline pages) */
+  .filter-content.expanded .national-event-toggle {
+    margin-top: 0.75rem;
+  }
+
+  .filter-content.expanded .filter-section-title {
+    margin-top: 0;
   }
   
   .filter-instruction-text {
