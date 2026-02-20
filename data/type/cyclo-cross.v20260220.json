@@ -1,31 +1,5 @@
 [
   {
-    "id": "96739bdd",
-    "name": "Haringey Schools Cycling League 2025_2026 Round 5",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Finsbury Park, London",
-    "postcode": null,
-    "date": "2026-02-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330031/haringey-schools-cycling-league-2025_2026-round-5-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "0fb37245",
-    "name": "Spring 2026 Nocturnal Cross Series Event 1",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Costello Stadium, Yorkshire",
-    "postcode": null,
-    "date": "2026-02-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331973/spring-2026-nocturnal-cross-series-event-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-07T03:15:28.000Z"
-  },
-  {
     "id": "c323883a",
     "name": "South West Winter Series 2026 - CDCX",
     "type": "Cyclo Cross",

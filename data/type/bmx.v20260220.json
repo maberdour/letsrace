@@ -1,18 +1,5 @@
 [
   {
-    "id": "727201a1",
-    "name": "Racing Under The Roof 2025/26 Round Four (EXPERT)",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-02-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328677/racing-under-the-roof-202526-round-four-expert",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
     "id": "e60b33fd",
     "name": "Exeter 25/26 Winter Round 4",
     "type": "BMX",
@@ -206,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/326406/deep-south-2025-26-round-6",
     "source": "Google Sheet",
     "last_updated": "2025-09-09T02:15:27.000Z"
+  },
+  {
+    "id": "d24a1cd0",
+    "name": "Yorkshire and North East BMX club cluster and Talent Development Centre (Coaching)",
+    "type": "BMX",
+    "region": "North East",
+    "venue": "Hartlepool BMX Track, Cleveland",
+    "postcode": null,
+    "date": "2026-03-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332385/yorkshire-and-north-east-bmx-club-cluster-and-talent-development-centre-coaching",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
     "id": "57533acb",
