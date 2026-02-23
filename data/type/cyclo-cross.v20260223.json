@@ -1,44 +1,5 @@
 [
   {
-    "id": "0fb37245",
-    "name": "Spring 2026 Nocturnal Cross Series Event 1",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Costello Stadium, Yorkshire",
-    "postcode": null,
-    "date": "2026-02-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331973/spring-2026-nocturnal-cross-series-event-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-07T03:15:28.000Z"
-  },
-  {
-    "id": "c323883a",
-    "name": "South West Winter Series 2026 - CDCX",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Carlingwark Park, Castle Douglas",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331925/south-west-winter-series-2026---cdcx",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T03:15:25.000Z"
-  },
-  {
-    "id": "1a1c3bde",
-    "name": "SuperQuaich Series Round 2 - Kingdom Velo Cyclocross",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Fife Cycle Park, Lochgelly",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329945/superquaich-series-round-2---kingdom-velo-cyclocross",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-19T03:15:33.000Z"
-  },
-  {
     "id": "8e6937dd",
     "name": "Fenland Clarion Go-Ride Cross Races",
     "type": "Cyclo Cross",

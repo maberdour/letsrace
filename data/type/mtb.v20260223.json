@@ -1,83 +1,5 @@
 [
   {
-    "id": "daa34ded",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329633/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "1bbef87e",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329953/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "217ef1a0",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330503/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "4ac9be00",
-    "name": "Delamere Forest MTB Club Youth Session - Feb 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Delamere Forest, Cheshire",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331771/delamere-forest-mtb-club-youth-session---feb-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-14T03:15:25.000Z"
-  },
-  {
-    "id": "a0a5065a",
-    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 1, Red.",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Stile Cop, Staffordshire",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331209/racers-guild-racing---works-components-super-cup-26-round-1-red",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "39d63a73",
-    "name": "Woodlandriders racing winter series 2025-2026 Round 4",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Gawton Downhill, Tavistock",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327334/woodlandriders-racing-winter-series-2025-2026-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-27T03:15:28.000Z"
-  },
-  {
     "id": "99dc4367",
     "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #2 (FoD)",
     "type": "MTB",
@@ -89,6 +11,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329965/british-cycling-mtb-xc-regional-school-of-racing-2-fod",
     "source": "Google Sheet",
     "last_updated": "2025-12-06T03:15:27.000Z"
+  },
+  {
+    "id": "4b4089d4",
+    "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #146",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "Northampton Bike Park, Northampton",
+    "postcode": null,
+    "date": "2026-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332453/british-cycling-pathway-development-centre-gravity---northampton-devo-146",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
     "id": "b3b2546b",
@@ -128,6 +63,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329966/british-cycling-mtb-xc-regional-school-of-racing-3-cannock-chase",
     "source": "Google Sheet",
     "last_updated": "2025-12-06T03:15:27.000Z"
+  },
+  {
+    "id": "66e60ae5",
+    "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #147",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "Whippy Trails, Rickmansworth.",
+    "postcode": null,
+    "date": "2026-03-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332454/british-cycling-pathway-development-centre-gravity---whippendell-devo-147-",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
     "id": "8b0c5a85",
@@ -273,6 +221,19 @@
     "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
+    "id": "89ebb0ba",
+    "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #148",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "Northampton Bike Park, Northampton",
+    "postcode": null,
+    "date": "2026-03-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332455/british-cycling-pathway-development-centre-gravity---northampton-devo-148-",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-17T03:15:24.000Z"
+  },
+  {
     "id": "671b4ef7",
     "name": "Lloyds 2026 National MTB Cross Country Series Round 1",
     "type": "MTB",
@@ -284,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331414/lloyds-2026-national-mtb-cross-country-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "e7c79cf3",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #45",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-03-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332187/british-cycling-pathway-development-centre-gravity---forest-of-dean-45",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-07T03:15:28.000Z"
   },
   {
     "id": "a12134f8",
@@ -362,6 +336,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/319239/b-buddies-off-ride-go-ride-race-league-2526-r8",
     "source": "Google Sheet",
     "last_updated": "2025-08-04T14:23:18.000Z"
+  },
+  {
+    "id": "50068512",
+    "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #149",
+    "type": "MTB",
+    "region": "Central",
+    "venue": "Whippy Trails, Rickmansworth.",
+    "postcode": null,
+    "date": "2026-04-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332456/british-cycling-pathway-development-centre-gravity---whippendell-devo-149-",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
     "id": "68b39e95",
