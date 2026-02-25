@@ -312,6 +312,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "32df569a",
+    "name": "East Grinstead CC Club Hill Climb - Round 21",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "2 miles | GH/83",
+    "postcode": null,
+    "date": "2026-08-25",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/47867-east-grinstead-cc-club-hill-climb-round-21",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
     "id": "bd447018",
     "name": "Dursley Road Club Club Stouts Hill - Round 1",
     "type": "Hill Climb",
