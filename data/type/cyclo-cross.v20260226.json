@@ -1,44 +1,5 @@
 [
   {
-    "id": "0fb37245",
-    "name": "Spring 2026 Nocturnal Cross Series Event 1",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Costello Stadium, Yorkshire",
-    "postcode": null,
-    "date": "2026-02-18",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331973/spring-2026-nocturnal-cross-series-event-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-07T03:15:28.000Z"
-  },
-  {
-    "id": "c323883a",
-    "name": "South West Winter Series 2026 - CDCX",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Carlingwark Park, Castle Douglas",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331925/south-west-winter-series-2026---cdcx",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T03:15:25.000Z"
-  },
-  {
-    "id": "1a1c3bde",
-    "name": "SuperQuaich Series Round 2 - Kingdom Velo Cyclocross",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Fife Cycle Park, Lochgelly",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329945/superquaich-series-round-2---kingdom-velo-cyclocross",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-19T03:15:33.000Z"
-  },
-  {
     "id": "8e6937dd",
     "name": "Fenland Clarion Go-Ride Cross Races",
     "type": "Cyclo Cross",
@@ -156,6 +117,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "fd571f37",
+    "name": "Sprockets Summer CX 2026 Race #1",
+    "type": "Cyclo Cross",
+    "region": "Central",
+    "venue": "Dinton Pastures Country Park, Wokingham",
+    "postcode": null,
+    "date": "2026-05-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332711/sprockets-summer-cx-2026-race-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
     "id": "be3bfc86",
     "name": "The Summer Series Round 1 2026",
     "type": "Cyclo Cross",
@@ -180,6 +154,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331408/the-summer-series-round-2-2026",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "a0a17fd1",
+    "name": "Sprockets Summer CX 2026 Race #2",
+    "type": "Cyclo Cross",
+    "region": "Central",
+    "venue": "Dinton Pastures Country Park, Wokingham",
+    "postcode": null,
+    "date": "2026-06-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332713/sprockets-summer-cx-2026-race-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
   },
   {
     "id": "4afaa03d",
@@ -208,6 +195,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "8b7212b8",
+    "name": "Sprockets Summer CX 2026 Race #3",
+    "type": "Cyclo Cross",
+    "region": "Central",
+    "venue": "Dinton Pastures Country Park, Wokingham",
+    "postcode": null,
+    "date": "2026-06-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332714/sprockets-summer-cx-2026-race-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
     "id": "e8ae7af2",
     "name": "Fenland Clarion Go-Ride Cross Races",
     "type": "Cyclo Cross",
@@ -232,6 +232,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331362/fenland-clarion-go-ride-cross-races",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "ca403ec7",
+    "name": "South London Go-Ride Racing League - Race 9 of 9",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Hayes Primary School, Bromley",
+    "postcode": null,
+    "date": "2026-07-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332712/south-london-go-ride-racing-league---race-9-of-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
   },
   {
     "id": "c6cbff05",
