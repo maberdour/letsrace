@@ -312,6 +312,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "f6e6326c",
+    "name": "Fife Midweek 18 - Hill Climb",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "1 miles | WE1/04",
+    "postcode": null,
+    "date": "2026-08-19",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48746-fife-midweek-18-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
     "id": "c27cb3f2",
     "name": "Royal Dean Forest Cycle Club Club 1.59",
     "type": "Hill Climb",
@@ -375,6 +388,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/47867-east-grinstead-cc-club-hill-climb-round-21",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "2c0820e2",
+    "name": "Fife Midweek 19 - Hill Climb",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "2 miles | WE2/01",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48749-fife-midweek-19-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
     "id": "bd447018",

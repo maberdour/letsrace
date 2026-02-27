@@ -31,8 +31,8 @@
     "Cyclo Cross": 20,
     "Speedway": 5,
     "Time Trial": 63,
-    "Hill Climb": 146,
-    "Scotland": 46,
+    "Hill Climb": 148,
+    "Scotland": 48,
     "East Midlands": 64,
     "South": 87,
     "Wales": 33,
@@ -105,7 +105,7 @@
     "Hill Climb|London & South East": 27,
     "Hill Climb|Eastern": 7,
     "Time Trial|East Midlands": 2,
-    "Hill Climb|Scotland": 2,
+    "Hill Climb|Scotland": 4,
     "Hill Climb|Central": 4,
     "Hill Climb|West Midlands": 6,
     "Time Trial|Central": 26,
@@ -129,5 +129,5 @@
     "Time Trial": 1,
     "Hill Climb": 1
   },
-  "last_build": "2026-02-27T09:06:06.535Z"
+  "last_build": "2026-02-27T09:08:42.938Z"
 }
