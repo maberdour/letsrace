@@ -30,9 +30,9 @@
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 138
+      "count": 146
     }
   },
-  "last_build": "2026-02-27T04:09:22.113Z",
-  "total_events": 622
+  "last_build": "2026-02-27T09:06:06.541Z",
+  "total_events": 630
 }
