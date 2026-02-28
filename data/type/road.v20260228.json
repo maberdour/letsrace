@@ -1,109 +1,5 @@
 [
   {
-    "id": "87f2dd85",
-    "name": "Bath and Swindon Winter Series round 4",
-    "type": "Road",
-    "region": "South",
-    "venue": "Moredon Sports Village - Swindon, Swindon",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330249/bath-and-swindon-winter-series-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-20T03:15:25.000Z"
-  },
-  {
-    "id": "b44c89e8",
-    "name": "Limited Edition Cycling Go-Ride Winter Series, Round 3",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328377/limited-edition-cycling-go-ride-winter-series-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "770ddb39",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #8",
-    "type": "Road",
-    "region": "South",
-    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
-    "postcode": null,
-    "date": "2026-02-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332386/british-cycling-pathway-development-centre-circuit---palmer-park-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-14T03:15:25.000Z"
-  },
-  {
-    "id": "552c98b0",
-    "name": "Carlisle Cycling Association Winter Club Cluster (Circuit ) #18",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Carlisle Cycle Circuit, Carlisle",
-    "postcode": null,
-    "date": "2026-02-24",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331200/carlisle-cycling-association-winter-club-cluster-circuit--18",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
-  },
-  {
-    "id": "988e92fd",
-    "name": "British Cycling Pathway Development Centre - Leicester Cycle Circuit #12",
-    "type": "Road",
-    "region": "East Midlands",
-    "venue": "Leicester Cycle Circuit, Leicestershire",
-    "postcode": null,
-    "date": "2026-02-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/325181/british-cycling-pathway-development-centre---leicester-cycle-circuit-12",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "2159dafe",
-    "name": "British Cycling Pathway Development Centre Circuit - Moredon Sporting Hub #5",
-    "type": "Road",
-    "region": "South",
-    "venue": "Moredon Sporting Hub, Swindon",
-    "postcode": null,
-    "date": "2026-02-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331815/british-cycling-pathway-development-centre-circuit---moredon-sporting-hub-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-29T03:15:26.000Z"
-  },
-  {
-    "id": "849fdc80",
-    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #17",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Sundorne Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-02-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332312/british-cycling-pathway-development-centre-circuit---shrewsbury-17",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-14T03:15:25.000Z"
-  },
-  {
-    "id": "edcf68f9",
-    "name": "British Cycling Pathway Development Centre Circuit - York #89",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "York Sport Cycle Circuit, North Yorkshire",
-    "postcode": null,
-    "date": "2026-02-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331657/british-cycling-pathway-development-centre-circuit---york-89",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-23T03:15:24.000Z"
-  },
-  {
     "id": "10064f80",
     "name": "Exeter Uni Early Season Crits (South West Series)",
     "type": "Road",
@@ -154,6 +50,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332278/ppv-endurance-omnium-practice-session",
     "source": "Google Sheet",
     "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
+    "id": "3db266ba",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #9",
+    "type": "Road",
+    "region": "South",
+    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
+    "postcode": null,
+    "date": "2026-03-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332611/british-cycling-pathway-development-centre-circuit---palmer-park-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-22T03:15:25.000Z"
   },
   {
     "id": "c0f59aed",
@@ -258,6 +167,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330348/south-west-club-cluster-of-coaching---circuit-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "73b53b0c",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #10",
+    "type": "Road",
+    "region": "South",
+    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
+    "postcode": null,
+    "date": "2026-03-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332612/british-cycling-pathway-development-centre-circuit---palmer-park-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-22T03:15:25.000Z"
   },
   {
     "id": "4272a759",
@@ -624,6 +546,19 @@
     "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
+    "id": "2d1f75c2",
+    "name": "Severn Valley Youth Series and Support Races",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Shrewsbury Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-03-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330587/severn-valley-youth-series-and-support-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "534f3d2d",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -741,6 +676,19 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
+    "id": "02f4871b",
+    "name": "South League: Womens Academy",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-04-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332751/south-league-womens-academy",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
     "id": "f528bc42",
     "name": "Wyke Circuit Race 2",
     "type": "Road",
@@ -752,6 +700,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330582/wyke-circuit-race-2",
     "source": "Google Sheet",
     "last_updated": "2026-01-10T03:15:26.000Z"
+  },
+  {
+    "id": "d729d69c",
+    "name": "South Region Team Pursuit Coaching Session 1",
+    "type": "Road",
+    "region": "Wales",
+    "venue": "Newport Velodrome, Wales",
+    "postcode": null,
+    "date": "2026-04-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332452/south-region-team-pursuit-coaching-session-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "3b5a4cba",
@@ -832,6 +793,19 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
+    "id": "a9fdb61d",
+    "name": "Matlock CC Darley Moor Circuit Race #1",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Darley Moor Sports Centre, Derbyshire",
+    "postcode": null,
+    "date": "2026-04-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332645/matlock-cc-darley-moor-circuit-race-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-28T03:15:26.000Z"
+  },
+  {
     "id": "ab2de0b1",
     "name": "Dulwich Paragon CC Crystal Palace Crits: Race 2 (youth only)",
     "type": "Road",
@@ -895,6 +869,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331660/east-london-velo-and-lvycc-hog-hill-crits-1",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T03:15:25.000Z"
+  },
+  {
+    "id": "c63ab383",
+    "name": "Severn Valley Youth Series and Support Races",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Shrewsbury Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-04-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332305/severn-valley-youth-series-and-support-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "7ac90cbe",
@@ -1339,6 +1326,19 @@
     "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
+    "id": "562f1405",
+    "name": "Severn Valley Youth Series and Support Races",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Shrewsbury Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332502/severn-valley-youth-series-and-support-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "406ab405",
     "name": "PNE Mountbatten Circuit Series #4",
     "type": "Road",
@@ -1532,6 +1532,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329827/portsmouth-evening-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "be4ca8cd",
+    "name": "Severn Valley Youth Series and Support Races",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Shrewsbury Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-06-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332503/severn-valley-youth-series-and-support-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "7a23a302",
