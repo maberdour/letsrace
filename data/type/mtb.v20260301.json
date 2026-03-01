@@ -1,135 +1,5 @@
 [
   {
-    "id": "daa34ded",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329633/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "1bbef87e",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329953/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "217ef1a0",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-02-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330503/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "097120f7",
-    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #44",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330648/british-cycling-pathway-development-centre-gravity---forest-of-dean-44",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "4ac9be00",
-    "name": "Delamere Forest MTB Club Youth Session - Feb 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Delamere Forest, Cheshire",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331771/delamere-forest-mtb-club-youth-session---feb-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-14T03:15:25.000Z"
-  },
-  {
-    "id": "a0a5065a",
-    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 1, Red.",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Stile Cop, Staffordshire",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331209/racers-guild-racing---works-components-super-cup-26-round-1-red",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "39d63a73",
-    "name": "Woodlandriders racing winter series 2025-2026 Round 4",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Gawton Downhill, Tavistock",
-    "postcode": null,
-    "date": "2026-02-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327334/woodlandriders-racing-winter-series-2025-2026-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-27T03:15:28.000Z"
-  },
-  {
-    "id": "99dc4367",
-    "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #2 (FoD)",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-02-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329965/british-cycling-mtb-xc-regional-school-of-racing-2-fod",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-06T03:15:27.000Z"
-  },
-  {
-    "id": "4b4089d4",
-    "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #146",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "Northampton Bike Park, Northampton",
-    "postcode": null,
-    "date": "2026-02-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332453/british-cycling-pathway-development-centre-gravity---northampton-devo-146",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
-  },
-  {
-    "id": "b3b2546b",
-    "name": "British Cycling Swinley Forest MTB Cluster #2",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "The Summit",
-    "postcode": null,
-    "date": "2026-02-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330942/british-cycling-swinley-forest-mtb-cluster-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-10T03:15:26.000Z"
-  },
-  {
     "id": "c1dc8790",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R7",
     "type": "MTB",
@@ -167,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332454/british-cycling-pathway-development-centre-gravity---whippendell-devo-147-",
     "source": "Google Sheet",
     "last_updated": "2026-02-17T03:15:24.000Z"
+  },
+  {
+    "id": "a5736f69",
+    "name": "Delamere Forest MTB Club Youth Session - March 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-03-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332480/delamere-forest-mtb-club-youth-session---march-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "8b0c5a85",
@@ -297,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329536/crickley-flyers-go-ride-race-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "e7bd9597",
+    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 2. Wonderland.",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Stile Cop, Staffordshire",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332608/racers-guild-racing---works-components-super-cup-26-round-2-wonderland",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
   },
   {
     "id": "983bb44a",
@@ -442,6 +338,32 @@
     "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
+    "id": "c37ed64a",
+    "name": "Woodlandriders racing winter series 2025-2026 Round 5",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-04-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327335/woodlandriders-racing-winter-series-2025-2026-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "d27d52fc",
+    "name": "MV Bike Park Kids MTB Series 2026 - Round 1 XC",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Mountain View Bike Park, Rhondda Cynon Taf",
+    "postcode": null,
+    "date": "2026-04-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332647/mv-bike-park-kids-mtb-series-2026---round-1-xc",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
     "id": "68b39e95",
     "name": "Gisburn Forest 12 and under MTB race",
     "type": "MTB",
@@ -559,6 +481,32 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "70fa9279",
+    "name": "B-BUDDIES Off-Road TT 2",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-04-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332811/b-buddies-off-road-tt-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "70fa9279",
+    "name": "B-BUDDIES Off-Road TT 2",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-04-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332811/b-buddies-off-road-tt-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "4f32c597",
     "name": "Falkirk Schools MTB Championships 2026",
     "type": "MTB",
@@ -637,6 +585,32 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "cf8d5ad2",
+    "name": "B-BUDDIES Off-Road TT 3",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-05-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332870/b-buddies-off-road-tt-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "cf8d5ad2",
+    "name": "B-BUDDIES Off-Road TT 3",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-05-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332870/b-buddies-off-road-tt-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "0378f4cd",
     "name": "Pearce Cycles DH Series 2026 Round 1",
     "type": "MTB",
@@ -648,6 +622,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331422/pearce-cycles-dh-series-2026-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "925bfa00",
+    "name": "Welsh XC Series 2026 powered by DualFuel - Round 2 Dare Valley",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "Dare Valley Country Park, Aberdare",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331563/welsh-xc-series-2026-powered-by-dualfuel---round-2-dare-valley",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "925bfa00",
+    "name": "Welsh XC Series 2026 powered by DualFuel - Round 2 Dare Valley",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Dare Valley Country Park, Aberdare",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331563/welsh-xc-series-2026-powered-by-dualfuel---round-2-dare-valley",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
   },
   {
     "id": "a25fe123",
@@ -689,6 +689,19 @@
     "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
+    "id": "8e4c3fc2",
+    "name": "SXC Series 2026: Round 2 Crombie",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Crombie Country Park, Angus",
+    "postcode": null,
+    "date": "2026-05-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332529/sxc-series-2026-round-2-crombie",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-28T03:15:26.000Z"
+  },
+  {
     "id": "36ae321d",
     "name": "Lloyds National 4X Series Round 4",
     "type": "MTB",
@@ -726,6 +739,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/332306/south-west-club-cluster-of-coaching---mtb-1",
     "source": "Google Sheet",
     "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
+    "id": "13d72f33",
+    "name": "B-BUDDIES Off-Road TT 4",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-05-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332872/b-buddies-off-road-tt-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "13d72f33",
+    "name": "B-BUDDIES Off-Road TT 4",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-05-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332872/b-buddies-off-road-tt-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "ed61a766",
@@ -780,6 +819,32 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "542ef59a",
+    "name": "Welsh XC Series 2026 powered by DualFuel - Round 3 Builth Wells",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "Royal Welsh Showground, Powys",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332680/welsh-xc-series-2026-powered-by-dualfuel---round-3-builth-wells",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "542ef59a",
+    "name": "Welsh XC Series 2026 powered by DualFuel - Round 3 Builth Wells",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Royal Welsh Showground, Powys",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332680/welsh-xc-series-2026-powered-by-dualfuel---round-3-builth-wells",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
     "id": "7d853918",
     "name": "FJBC Summer Dirt Crit Series 2026 Round 3",
     "type": "MTB",
@@ -817,6 +882,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331351/2026-edinburgh-schools-mountainbike-championship",
     "source": "Google Sheet",
     "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "bdb1ed99",
+    "name": "B-BUDDIES Off-Road TT 5",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-06-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332873/b-buddies-off-road-tt-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "bdb1ed99",
+    "name": "B-BUDDIES Off-Road TT 5",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-06-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332873/b-buddies-off-road-tt-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "e11fa0a8",
@@ -949,6 +1040,32 @@
     "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
+    "id": "55d8e98f",
+    "name": "B-BUDDIES Off-Road TT 6",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-06-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332875/b-buddies-off-road-tt-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "55d8e98f",
+    "name": "B-BUDDIES Off-Road TT 6",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-06-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332875/b-buddies-off-road-tt-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "bd2b930c",
     "name": "British Cycling Swinley Forest MTB Cluster #6",
     "type": "MTB",
@@ -1001,6 +1118,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "00826c75",
+    "name": "Welsh XC Series 2026 powered by DualFuel - Round 4 Forest of Dean",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-06-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332681/welsh-xc-series-2026-powered-by-dualfuel---round-4-forest-of-dean",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
     "id": "617bfe60",
     "name": "Lloyds 2026 National MTB Cross Country Series Round 5",
     "type": "MTB",
@@ -1012,6 +1142,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/331427/lloyds-2026-national-mtb-cross-country-series-round-5",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "7688d4d8",
+    "name": "B-BUDDIES Off-Road TT 7",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-07-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332876/b-buddies-off-road-tt-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "7688d4d8",
+    "name": "B-BUDDIES Off-Road TT 7",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-07-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332876/b-buddies-off-road-tt-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "42a4215e",
+    "name": "Welsh Mountain Bike Championships (inc Welsh XC Series powered by DualFuel round 5) Llangollen",
+    "type": "MTB",
+    "region": "﻿Wales",
+    "venue": "One Giant Leap, Wales",
+    "postcode": null,
+    "date": "2026-07-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331599/welsh-mountain-bike-championships-inc-welsh-xc-series-powered-by-dualfuel-round-5-llangollen",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "a7722396",
@@ -1053,6 +1222,32 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "fa5a88c6",
+    "name": "B-BUDDIES Off-Road TT 8",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-07-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332877/b-buddies-off-road-tt-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "fa5a88c6",
+    "name": "B-BUDDIES Off-Road TT 8",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-07-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332877/b-buddies-off-road-tt-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "2761b72d",
     "name": "Lloyds National Enduro & E-Enduro Championships 2026 - Powered by Cycle 360",
     "type": "MTB",
@@ -1066,6 +1261,32 @@
     "last_updated": "2025-12-04T03:15:28.000Z"
   },
   {
+    "id": "dca8eb9f",
+    "name": "B-BUDDIES Off-Road TT 9",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-08-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332879/b-buddies-off-road-tt-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "dca8eb9f",
+    "name": "B-BUDDIES Off-Road TT 9",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-08-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332879/b-buddies-off-road-tt-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "9bb31f10",
     "name": "Lloyds National Downhill Series 2026 Round 4 - Llangollen",
     "type": "MTB",
@@ -1077,6 +1298,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330467/lloyds-national-downhill-series-2026-round-4---llangollen",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "33f92129",
+    "name": "B-BUDDIES Off-Road TT 10",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-08-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332880/b-buddies-off-road-tt-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "33f92129",
+    "name": "B-BUDDIES Off-Road TT 10",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-08-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332880/b-buddies-off-road-tt-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "223fd9fe",
@@ -1170,6 +1417,32 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "d98efdd4",
+    "name": "B-BUDDIES Off-Road TT 11",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-09-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332882/b-buddies-off-road-tt-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "d98efdd4",
+    "name": "B-BUDDIES Off-Road TT 11",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-09-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332882/b-buddies-off-road-tt-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
     "id": "74800923",
     "name": "Lloyds National Downhill Series 2026 Round 5 - Fort William",
     "type": "MTB",
@@ -1181,6 +1454,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330468/lloyds-national-downhill-series-2026-round-5---fort-william",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "15498e6c",
+    "name": "B-BUDDIES Off-Road TT 12",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-09-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332883/b-buddies-off-road-tt-12",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "10b1c440",
@@ -1233,6 +1519,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/329538/crickley-flyers-go-ride-race-series-round-3-",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "5a202e63",
+    "name": "B-BUDDIES Off-Road TT 13",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-10-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332884/b-buddies-off-road-tt-13",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "ee0460a7",
+    "name": "B-BUDDIES Off-Road TT 14",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
+    "postcode": null,
+    "date": "2026-10-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332885/b-buddies-off-road-tt-14",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
     "id": "9ebe2694",
