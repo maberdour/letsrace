@@ -1,18 +1,5 @@
 [
   {
-    "id": "4a7a420c",
-    "name": "WLC 2026 R1",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "Greater London | 10 miles | hillingdon",
-    "postcode": null,
-    "date": "2026-03-01",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46004-wlc-2026-r-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "c67237f7",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -700,6 +687,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45752-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "cc128890",
+    "name": "MFCC Glendoe Hill Climb (Regional Championship Event)",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Fort Augustus Village Hall, Highland",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332210/mfcc-glendoe-hill-climb-regional-championship-event",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-02T03:15:25.000Z"
   },
   {
     "id": "6c1ebb0d",
