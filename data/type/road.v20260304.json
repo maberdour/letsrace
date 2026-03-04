@@ -1300,6 +1300,32 @@
     "last_updated": "2026-01-30T03:15:24.000Z"
   },
   {
+    "id": "2e7c10a5",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 7 (all ages)",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Crystal Palace Park, London",
+    "postcode": null,
+    "date": "2026-05-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331606/dulwich-paragon-cc-crystal-palace-crits-race-7-all-ages",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "107edbcd",
+    "name": "RCR x Alta Via Goodwood Spring Series #4",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Goodwood Motor Racing Circuit, Chichester",
+    "postcode": null,
+    "date": "2026-05-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331257/rcr-x-alta-via-goodwood-spring-series-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "7227cf9e",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1365,6 +1391,19 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
+    "id": "77e016c7",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 8 (all ages)",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Crystal Palace Park, London",
+    "postcode": null,
+    "date": "2026-06-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331607/dulwich-paragon-cc-crystal-palace-crits-race-8-all-ages",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "406ab405",
     "name": "PNE Mountbatten Circuit Series #4",
     "type": "Road",
@@ -1417,6 +1456,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "16e7ccfb",
+    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 9 (all ages)",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Crystal Palace Park, London",
+    "postcode": null,
+    "date": "2026-06-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331608/dulwich-paragon-cc-crystal-palace-crits-race-9-all-ages",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "f95bce85",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1441,6 +1493,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330589/wyke-evening-circuit-race-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "e3728119",
+    "name": "Spring in the Park 2026 #6",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Cyclopark, Kent",
+    "postcode": null,
+    "date": "2026-06-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331367/spring-in-the-park-2026-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
     "id": "6d9b2fb9",
@@ -1534,6 +1599,19 @@
     "last_updated": "2026-01-31T03:15:25.000Z"
   },
   {
+    "id": "550d6508",
+    "name": "Sussex Cycle Racing League Circuits 2026 #10/14",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Preston Park Cycle Track, Sussex",
+    "postcode": null,
+    "date": "2026-06-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331553/sussex-cycle-racing-league-circuits-2026-1014",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "a1605a9b",
     "name": "South London Go-Ride Racing League - Race 8 of 9",
     "type": "Road",
@@ -1573,6 +1651,19 @@
     "last_updated": "2026-03-04T03:15:37.000Z"
   },
   {
+    "id": "e45727d2",
+    "name": "Spring in the Park 2026 #7",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Cyclopark, Kent",
+    "postcode": null,
+    "date": "2026-06-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331368/spring-in-the-park-2026-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "be4ca8cd",
     "name": "Severn Valley Youth Series and Support Races",
     "type": "Road",
@@ -1584,6 +1675,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332503/severn-valley-youth-series-and-support-races",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "13b9809e",
+    "name": "PNE Mountbatten Circuit Series #6",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-07-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331072/pne-mountbatten-circuit-series-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
     "id": "7a23a302",
@@ -1690,6 +1794,19 @@
     "last_updated": "2026-01-09T03:15:25.000Z"
   },
   {
+    "id": "257f3793",
+    "name": "Spring in the Park Finale 2026 #8",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Cyclopark, Kent",
+    "postcode": null,
+    "date": "2026-07-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331369/spring-in-the-park-finale-2026-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "91e3026d",
     "name": "Velo Club Lincoln Yarborough Leisure Centre (including R4 EM Youth Circuit Series)",
     "type": "Road",
@@ -1729,6 +1846,19 @@
     "last_updated": "2026-01-22T03:15:25.000Z"
   },
   {
+    "id": "9fbb3b6f",
+    "name": "PNE Mountbatten Circuit Series #7",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-07-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331073/pne-mountbatten-circuit-series-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "775c9c56",
     "name": "The Last Carlisle Summer Night 2026",
     "type": "Road",
@@ -1753,6 +1883,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329829/portsmouth-evening-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-26T03:15:25.000Z"
+  },
+  {
+    "id": "f720c5c6",
+    "name": "PNE Mountbatten Circuit Series #8",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-07-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331074/pne-mountbatten-circuit-series-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
     "id": "ffc5c48d",
@@ -1794,6 +1937,19 @@
     "last_updated": "2026-01-06T03:15:38.000Z"
   },
   {
+    "id": "5da50c44",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-08-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329831/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "56f47512",
     "name": "OMEGA PORTSMOUTH CIRCUITS",
     "type": "Road",
@@ -1805,6 +1961,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/329933/omega-portsmouth-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-09T03:15:25.000Z"
+  },
+  {
+    "id": "0a8810d2",
+    "name": "PNE Mountbatten Circuit Series #9",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-08-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331075/pne-mountbatten-circuit-series-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "9e6e7c0b",
+    "name": "Sussex Cycle Racing League Circuits 2026 #13/14",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Preston Park Cycle Track, Sussex",
+    "postcode": null,
+    "date": "2026-08-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331556/sussex-cycle-racing-league-circuits-2026-1314",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "07bda3cd",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-08-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329833/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
     "id": "cb394abf",
@@ -1820,6 +2015,19 @@
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
+    "id": "5f00598e",
+    "name": "PNE Mountbatten Circuit Series #10",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331076/pne-mountbatten-circuit-series-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "b0a79f40",
     "name": "The Colchester Centurion / Trevor Baker Memorial Races",
     "type": "Road",
@@ -1833,6 +2041,19 @@
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
+    "id": "37091dca",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-09-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329834/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "d72efcc2",
     "name": "SUSIES CIRCUITS",
     "type": "Road",
@@ -1844,5 +2065,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/329936/susies-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-09T03:15:25.000Z"
+  },
+  {
+    "id": "1ca7b1e7",
+    "name": "PORTSMOUTH EVENING CIRCUITS",
+    "type": "Road",
+    "region": "South",
+    "venue": "Mountbatten Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-09-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/329835/portsmouth-evening-circuits",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
   }
 ]
