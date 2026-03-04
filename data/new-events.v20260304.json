@@ -740,9 +740,35 @@
       "url": "https://www.britishcycling.org.uk/events/details/333109/british-cycling-pathway-south-easteastern-circuit-rsr-2-boys-",
       "source": "Google Sheet",
       "last_updated": "2026-03-04T03:15:37.000Z"
+    },
+    {
+      "id": "1f4ac662",
+      "name": "Birmingham Midland Cycling Club Hill Climb",
+      "type": "Hill Climb",
+      "region": "West Midlands",
+      "venue": "Warwickshire | 1 miles | KH32/1.4",
+      "postcode": null,
+      "date": "2026-08-16",
+      "start_time": "00:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/49565-birmingham-midland-cycling-club-hill-climb",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-04T08:31:13.000Z"
+    },
+    {
+      "id": "2f240415",
+      "name": "Redditch Road & Path CC Club 1",
+      "type": "Hill Climb",
+      "region": "West Midlands",
+      "venue": "Warwickshire | 1 miles | KH11",
+      "postcode": null,
+      "date": "2026-08-18",
+      "start_time": "00:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/46683-redditch-road-path-cc-club-1",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-04T08:31:13.000Z"
     }
   ],
-  "last_build": "2026-03-04T04:09:38.970Z",
-  "total_new_events": 57,
+  "last_build": "2026-03-04T08:32:42.873Z",
+  "total_new_events": 59,
   "cutoff_date": "2026-02-25"
 }
