@@ -1,83 +1,5 @@
 [
   {
-    "id": "eafe5151",
-    "name": "NMD Winter Race Series",
-    "type": "BMX",
-    "region": "South West",
-    "venue": "Bideford BMX Track, Devon",
-    "postcode": null,
-    "date": "2026-02-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330353/nmd-winter-race-series",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "613e3e22",
-    "name": "Knightwood BMX Club 2025 Winter Series Round 5",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Knightwood BMX, Hampshire",
-    "postcode": null,
-    "date": "2026-02-28",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332682/knightwood-bmx-club-2025-winter-series-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-24T03:15:24.000Z"
-  },
-  {
-    "id": "2d1bf39a",
-    "name": "Birmingham BMX - Winter Series Round 4",
-    "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Birmingham BMX Club, Birmingham",
-    "postcode": null,
-    "date": "2026-03-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331821/birmingham-bmx---winter-series-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
-  },
-  {
-    "id": "2fd9526a",
-    "name": "BMX East Winter Series 2025/2026 Round 6",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2026-03-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327725/bmx-east-winter-series-20252026-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2025-10-01T02:15:26.000Z"
-  },
-  {
-    "id": "4f2fe2eb",
-    "name": "Deep South 2025-26 Round 6",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Gosport BMX Club, Hampshire",
-    "postcode": null,
-    "date": "2026-03-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326406/deep-south-2025-26-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-09T02:15:27.000Z"
-  },
-  {
-    "id": "d24a1cd0",
-    "name": "Yorkshire and North East BMX club cluster and Talent Development Centre (Coaching)",
-    "type": "BMX",
-    "region": "North East",
-    "venue": "Hartlepool BMX Track, Cleveland",
-    "postcode": null,
-    "date": "2026-03-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332385/yorkshire-and-north-east-bmx-club-cluster-and-talent-development-centre-coaching",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-14T03:15:25.000Z"
-  },
-  {
     "id": "996d0005",
     "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF6",
     "type": "BMX",
@@ -102,6 +24,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327267/braintree-bmx-rd-6-winter-series",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "1952bf22",
+    "name": "Milton Keynes BMX Racing Club Winter Series 2025-2026 Round 6",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2026-03-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333009/milton-keynes-bmx-racing-club-winter-series-2025-2026-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-03T03:15:27.000Z"
   },
   {
     "id": "6199d5ca",

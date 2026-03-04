@@ -65,6 +65,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "5a59f8b6",
+    "name": "Chepstow Cycling Club Club 0.54",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Gloucestershire | 950 yards | RH55 | Castleford",
+    "postcode": null,
+    "date": "2026-05-19",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49007-chepstow-cycling-club-club-0-54",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
     "id": "87ece8a4",
     "name": "Longstone Edge Hill Climb",
     "type": "Hill Climb",
@@ -156,6 +169,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "9a9d8014",
+    "name": "Royal Dean Forest Cycle Club Club 2.3",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Gloucestershire | 2.3 miles | UHC514 | Cats Hill",
+    "postcode": null,
+    "date": "2026-07-15",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48564-royal-dean-forest-cycle-club-club-2-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
     "id": "a0ce346a",
     "name": "Pendle Forest CC Club 1.8",
     "type": "Hill Climb",
@@ -193,6 +219,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/47441-firle-beacon-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "ead04803",
+    "name": "Royal Dean Forest Cycle Club Club 2.3",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Gloucestershire | 2.3 miles | UHC515 | Fetter Hill",
+    "postcode": null,
+    "date": "2026-08-05",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48562-royal-dean-forest-cycle-club-club-2-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
     "id": "1f7c2bc6",
@@ -273,6 +312,32 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "f6e6326c",
+    "name": "Fife Midweek 18 - Hill Climb",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "1 miles | WE1/04",
+    "postcode": null,
+    "date": "2026-08-19",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48746-fife-midweek-18-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
+    "id": "c27cb3f2",
+    "name": "Royal Dean Forest Cycle Club Club 1.59",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Gloucestershire | 1.6 miles | UHC513 | Bigsweir",
+    "postcode": null,
+    "date": "2026-08-19",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48556-royal-dean-forest-cycle-club-club-1-59",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
     "id": "9dd0a227",
     "name": "Wrekinsport CC Club Hill Climb",
     "type": "Hill Climb",
@@ -323,6 +388,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/47867-east-grinstead-cc-club-hill-climb-round-21",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "2c0820e2",
+    "name": "Fife Midweek 19 - Hill Climb",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "2 miles | WE2/01",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48749-fife-midweek-19-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
     "id": "bd447018",
@@ -429,6 +507,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "d7d9c7a0",
+    "name": "Green Moor Hill Climb",
+    "type": "Hill Climb",
+    "region": "Yorkshire & Humber",
+    "venue": "South Yorkshire | 1 miles | OHC17 | Green Moor",
+    "postcode": null,
+    "date": "2026-09-01",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49005-green-moor-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
     "id": "f8c728bd",
     "name": "Pontypool Road Cycling Club Club Round 20",
     "type": "Hill Climb",
@@ -468,11 +559,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "89b064de",
+    "id": "9413d7c9",
     "name": "Ystwyth CC Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "1 miles | D0/19 | Clarach club Hill Climb",
+    "venue": "1 miles | D0/19 | Clarach Bay Hill Climb B4572",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "00:00",
@@ -609,6 +700,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42923-wolf-cycles-great-dunn-fell-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "f56440a0",
+    "name": "Chepstow Cycling Club Club 0.54",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Gloucestershire | 950 yards | RH55 | Castleford",
+    "postcode": null,
+    "date": "2026-09-08",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49009-chepstow-cycling-club-club-0-54",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
     "id": "c73cda64",
@@ -754,11 +858,24 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "69d3912f",
+    "id": "3d761033",
+    "name": "Len Pascoe Memorial Mt. Wellington Hill Climb",
+    "type": "Hill Climb",
+    "region": "South West",
+    "venue": "Cornwall | 1373 yards | Mt. Wellington",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48566-len-pascoe-memorial-mt-wellington-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
+    "id": "284bc52b",
     "name": "Nebo Road Hillclimb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Conwy Principal Area | 3 miles | D600/3",
+    "venue": "Conwy Principal Area | 3 miles | D600/3 | Nebo Hill Climb",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "00:00",
@@ -843,6 +960,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/41929-pea-royd-lane-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "3a897ec9",
+    "name": "Exeter Wheelers - Stoke Hill - Hill Climb",
+    "type": "Hill Climb",
+    "region": "South West",
+    "venue": "Devon | 1.2 miles | Stoke Hill",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/41453-exeter-wheelers-stoke-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
     "id": "2e661100",
@@ -1248,11 +1378,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "77eb5a60",
+    "id": "a5a4270f",
     "name": "Horseshoe Pass Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Denbighshire | 1 miles | DHC/1 | Horseshoe Pass",
+    "venue": "Denbighshire | 2.3 miles | DHC/1 | Horseshoe Pass Hill Climb A542",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "00:00",

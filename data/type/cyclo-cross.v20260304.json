@@ -1,31 +1,5 @@
 [
   {
-    "id": "8e6937dd",
-    "name": "Fenland Clarion Go-Ride Cross Races",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Embankment Athletics Track, Cambs",
-    "postcode": null,
-    "date": "2026-02-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331356/fenland-clarion-go-ride-cross-races",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "04e1f204",
-    "name": "SuperQuaich Round 3 - Strathallan Castle CX 2026 - The Daffodil edition",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Strathallan Estate, Perthshire",
-    "postcode": null,
-    "date": "2026-03-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/316886/superquaich-round-3---strathallan-castle-cx-2026---the-daffodil-edition",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-06T03:15:38.000Z"
-  },
-  {
     "id": "4299d86a",
     "name": "Spring 2026 Nocturnal Cross Series Event 2",
     "type": "Cyclo Cross",
