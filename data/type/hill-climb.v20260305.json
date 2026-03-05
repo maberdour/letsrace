@@ -390,6 +390,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "30521096",
+    "name": "Sleaford Wheelers Hill Climb",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "Lincolnshire | 1338 yards | CHC/1 | Leadenham",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49331-sleaford-wheelers-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
+  },
+  {
     "id": "55b118e6",
     "name": "BMCC Ditchling Beacon Hill Climb",
     "type": "Hill Climb",
@@ -559,6 +572,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "98990846",
+    "name": "Worcester St. Johns CC Club 1",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Worcestershire | 1 miles | KH43",
+    "postcode": null,
+    "date": "2026-09-01",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48232-worcester-st-johns-cc-club-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
+  },
+  {
     "id": "afa5cc28",
     "name": "Chippenham & District Wheelers Club Roberts Tankard - Bowden Hill Climb",
     "type": "Hill Climb",
@@ -611,6 +637,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "6f4be7fe",
+    "name": "Stratford Cycling Club Club 1.3",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Gloucestershire | 1.3 miles | KH28 | Saintbury Hill",
+    "postcode": null,
+    "date": "2026-09-03",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49472-stratford-cycling-club-club-1-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
+  },
+  {
     "id": "417a4417",
     "name": "Wickham League - Hill Climb",
     "type": "Hill Climb",
@@ -622,6 +661,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46090-wickham-league-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "170a4d3c",
+    "name": "Burton Dassett Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Warwickshire | 1 miles | KH5",
+    "postcode": null,
+    "date": "2026-09-05",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/44932-burton-dassett-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
     "id": "7087f1da",
@@ -988,6 +1040,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "dcaeb044",
+    "name": "Brereton Whs Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Staffordshire | 1 miles | KH21",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46477-brereton-whs-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
+  },
+  {
     "id": "3a897ec9",
     "name": "Exeter Wheelers - Stoke Hill - Hill Climb",
     "type": "Hill Climb",
@@ -1025,6 +1090,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42676-lakes-road-club-the-struggle-hill-climb-nltta-championship",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "fc811563",
+    "name": "Leamington C & AC Club Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Warwickshire | 1 miles | KH6",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/47359-leamington-c-ac-club-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
     "id": "f084930b",
@@ -1090,6 +1168,32 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42476-walbury-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "f9e59f45",
+    "name": "Winwood Heath Road Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Worcestershire | 1 miles | KH12 | Winwood Heath Road",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48262-winwood-heath-road-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
+  },
+  {
+    "id": "ccc8fe56",
+    "name": "Addiscombe CC Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Surrey | 1 miles | GH/38",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49180-addiscombe-cc-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
     "id": "9a1c8963",
@@ -1714,6 +1818,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42496-palterton-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "c82e9bd0",
+    "name": "Rugby Racing Cycling Club Hill Climb",
+    "type": "Hill Climb",
+    "region": "Central",
+    "venue": "Northamptonshire | 1 miles | KH35",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48813-rugby-racing-cycling-club-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
     "id": "b5be4876",
