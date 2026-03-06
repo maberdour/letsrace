@@ -624,6 +624,19 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "8027f9be",
+    "name": "Focus Rides XC",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Walesby Forest, Nottinghamshire",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332382/focus-rides-xc",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
     "id": "925bfa00",
     "name": "Welsh XC Series 2026 powered by DualFuel - Round 2 Dare Valley",
     "type": "MTB",
@@ -869,6 +882,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332275/fjbc-summer-dirt-crit-series-2026-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "0cfc0b5d",
+    "name": "Focus Rides XC round 2 Walesby Forest",
+    "type": "MTB",
+    "region": "East Midlands",
+    "venue": "Walesby Forest, Nottinghamshire",
+    "postcode": null,
+    "date": "2026-06-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332993/focus-rides-xc-round-2-walesby-forest",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
   },
   {
     "id": "6ffac236",

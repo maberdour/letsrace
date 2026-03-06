@@ -130,6 +130,19 @@
     "last_updated": "2025-11-05T10:17:43.000Z"
   },
   {
+    "id": "d16d6586",
+    "name": "BMX East Summer Series 2026 Round 1",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Braintree BMX Track, Essex",
+    "postcode": null,
+    "date": "2026-03-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333205/bmx-east-summer-series-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
     "id": "b3b41208",
     "name": "North Region BMX 2026 Round 2 Merseyside",
     "type": "BMX",

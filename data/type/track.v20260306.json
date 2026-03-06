@@ -130,6 +130,19 @@
     "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
+    "id": "0a289ae5",
+    "name": "Beicio Cymru Pathway Development Centre - Road - Marsh Tracks #22",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-03-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333147/beicio-cymru-pathway-development-centre---road---marsh-tracks-22-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
     "id": "1fa444ff",
     "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
     "type": "Track",
@@ -234,6 +247,19 @@
     "last_updated": "2026-01-06T03:15:38.000Z"
   },
   {
+    "id": "0dfb6429",
+    "name": "Beicio Cymru Pathway Development Centre - Road - Marsh Tracks #23",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-03-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333148/beicio-cymru-pathway-development-centre---road---marsh-tracks-23",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
     "id": "d5895b42",
     "name": "HHV Schools Championships 2026",
     "type": "Track",
@@ -310,6 +336,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330862/monday-night-track-league-2026-round-11",
     "source": "Google Sheet",
     "last_updated": "2026-01-07T03:15:54.000Z"
+  },
+  {
+    "id": "bd5885e2",
+    "name": "Beicio Cymru Pathway Development Centre - Road - Marsh Tracks #24",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-03-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333149/beicio-cymru-pathway-development-centre---road---marsh-tracks-24-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
   },
   {
     "id": "f164130a",

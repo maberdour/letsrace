@@ -195,6 +195,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "c7f09952",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #11",
+    "type": "Road",
+    "region": "South",
+    "venue": "Palmer park stadium, Wokingham Rd,, Reading",
+    "postcode": null,
+    "date": "2026-03-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333110/british-cycling-pathway-development-centre-circuit---palmer-park-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
     "id": "536f22b9",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #20",
     "type": "Road",
@@ -585,6 +598,32 @@
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
+    "id": "2d488357",
+    "name": "British Cycling Pathway Circuit RSR North and Midland Boys #2",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Doncaster Dome Cycle Circuit, Doncaster",
+    "postcode": null,
+    "date": "2026-04-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333198/british-cycling-pathway-circuit-rsr-north-and-midland-boys-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
+    "id": "60d1a4f7",
+    "name": "City Crits Cardiff - Round 1",
+    "type": "Road",
+    "region": "Wales",
+    "venue": "Maindy Cycle Track - Cardiff, Wales",
+    "postcode": null,
+    "date": "2026-04-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332184/city-crits-cardiff---round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
     "id": "00433e83",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -687,6 +726,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332299/maindy-flyers-freewheel-league-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-02-17T03:15:24.000Z"
+  },
+  {
+    "id": "7c1ee015",
+    "name": "City Crits Cardiff - Round 2",
+    "type": "Road",
+    "region": "Wales",
+    "venue": "Maindy Cycle Track - Cardiff, Wales",
+    "postcode": null,
+    "date": "2026-04-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332186/city-crits-cardiff---round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
   },
   {
     "id": "1f0f446c",
@@ -1261,6 +1313,19 @@
     "last_updated": "2026-01-30T03:15:24.000Z"
   },
   {
+    "id": "b5c2a599",
+    "name": "British Cycling Pathway Circuit RSR North and Midland Boys #3",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Doncaster Dome Cycle Circuit, Doncaster",
+    "postcode": null,
+    "date": "2026-05-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333199/british-cycling-pathway-circuit-rsr-north-and-midland-boys-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
     "id": "2e7c10a5",
     "name": "Dulwich Paragon CC Crystal Palace Crits: Race 7 (all ages)",
     "type": "Road",
@@ -1469,7 +1534,7 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
-    "id": "6d9b2fb9",
+    "id": "1e7005e3",
     "name": "Velo Club Lincoln Blyton Motor Circuit Crits",
     "type": "Road",
     "region": "East Midlands",
@@ -1664,7 +1729,7 @@
     "last_updated": "2026-01-31T03:15:25.000Z"
   },
   {
-    "id": "8fc80501",
+    "id": "8ba03322",
     "name": "Velo Club Lincoln Blyton Motor Circuit Crits",
     "type": "Road",
     "region": "East Midlands",
@@ -1844,6 +1909,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329829/portsmouth-evening-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-26T03:15:25.000Z"
+  },
+  {
+    "id": "4011aa1b",
+    "name": "White Rose Youth League 2026 Finale",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Wyke Community Sports Village Road Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-07-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332943/white-rose-youth-league-2026-finale",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-06T10:43:30.000Z"
   },
   {
     "id": "f720c5c6",
