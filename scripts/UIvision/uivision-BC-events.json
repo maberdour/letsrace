@@ -1,7 +1,13 @@
 {
   "Name": "BC-Events",
-  "CreationDate": "2026-2-3",
+  "CreationDate": "2026-3-7",
   "Commands": [
+    {
+      "Command": "selectWindow",
+      "Target": "TAB=CLOSEALLOTHER",
+      "Value": "",
+      "Description": ""
+    },
     {
       "Command": "XRun",
       "Target": "cmd.exe",
@@ -157,6 +163,12 @@
       "Target": "",
       "Value": "",
       "Description": "End event row loop"
+    },
+    {
+      "Command": "store",
+      "Target": "true",
+      "Value": "!statusOK",
+      "Description": "Reset !statusOK so verifyElementPresent can set it correctly (it is not reset by successful commands)"
     },
     {
       "Command": "verifyElementPresent",

@@ -1,7 +1,13 @@
 {
   "Name": "CTT-Events",
-  "CreationDate": "2026-2-3",
+  "CreationDate": "2026-3-7",
   "Commands": [
+    {
+      "Command": "selectWindow",
+      "Target": "TAB=CLOSEALLOTHER",
+      "Value": "",
+      "Description": ""
+    },
     {
       "Command": "XRun",
       "Target": "cmd.exe",
@@ -10,7 +16,7 @@
     },
     {
       "Command": "store",
-      "Target": "fast",
+      "Target": "medium",
       "Value": "!replayspeed",
       "Description": ""
     },
