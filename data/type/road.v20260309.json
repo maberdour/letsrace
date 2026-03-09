@@ -533,6 +533,32 @@
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
+    "id": "adb01306",
+    "name": "White Rose Youth League 2026 Round 1",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-04-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332348/white-rose-youth-league-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
+    "id": "178829c1",
+    "name": "Girls Circuit Regional School of Racing Session - Stourport",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Stourport Sports Club, Worcestershire",
+    "postcode": null,
+    "date": "2026-04-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333343/girls-circuit-regional-school-of-racing-session---stourport",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
     "id": "2d488357",
     "name": "British Cycling Pathway Circuit RSR North and Midland Boys #2",
     "type": "Road",
@@ -845,6 +871,19 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
+    "id": "108e0492",
+    "name": "White Rose Youth League 2026 Round 2",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Wyke Community Sports Village Road Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-04-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332827/white-rose-youth-league-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
     "id": "7ac90cbe",
     "name": "Dulwich Paragon CC Crystal Palace Crits: Race 3 (all ages)",
     "type": "Road",
@@ -1092,6 +1131,19 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "9a62d84c",
+    "name": "White Rose Youth League 2026 Round 3",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "BKCAT Cycle Circuit, Yorkshire",
+    "postcode": null,
+    "date": "2026-05-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332919/white-rose-youth-league-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
     "id": "b5f4ec87",
     "name": "Dulwich Paragon CC Crystal Palace Crits: Race 5 (all ages)",
     "type": "Road",
@@ -1300,6 +1352,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "5d40292e",
+    "name": "White Rose Youth League 2026 Round 4",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-05-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332929/white-rose-youth-league-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
     "id": "60715380",
     "name": "Hog Hill GP",
     "type": "Road",
@@ -1415,6 +1480,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332502/severn-valley-youth-series-and-support-races",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "a706175c",
+    "name": "White Rose Youth League 2026 Round 5",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Doncaster Dome Cycle Circuit, Doncaster",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332939/white-rose-youth-league-2026-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
   },
   {
     "id": "77e016c7",
@@ -1534,7 +1612,7 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
-    "id": "6d9b2fb9",
+    "id": "1e7005e3",
     "name": "Velo Club Lincoln Blyton Motor Circuit Crits",
     "type": "Road",
     "region": "East Midlands",
@@ -1651,6 +1729,19 @@
     "last_updated": "2026-01-13T03:15:25.000Z"
   },
   {
+    "id": "57aa420d",
+    "name": "White Rose Youth League 2026 Round 6 /Team Sterrato RT Open 3/4",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "BKCAT Cycle Circuit, Yorkshire",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332941/white-rose-youth-league-2026-round-6-team-sterrato-rt-open-34",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
     "id": "b474069c",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1742,7 +1833,7 @@
     "last_updated": "2026-01-31T03:15:25.000Z"
   },
   {
-    "id": "8fc80501",
+    "id": "8ba03322",
     "name": "Velo Club Lincoln Blyton Motor Circuit Crits",
     "type": "Road",
     "region": "East Midlands",

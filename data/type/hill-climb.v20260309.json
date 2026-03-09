@@ -429,11 +429,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "2c0820e2",
+    "id": "127701d3",
     "name": "Fife Midweek 19 - Hill Climb",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "2 miles | WE2/01",
+    "venue": "2 miles | WE2/01 | Falkland Hill Climb",
     "postcode": null,
     "date": "2026-08-26",
     "start_time": "00:00",
@@ -1742,6 +1742,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "e49619a3",
+    "name": "Zurbaran Racing Wear Bank Hill Climb",
+    "type": "Hill Climb",
+    "region": "North East",
+    "venue": "County Durham | 1.1 miles | THC43",
+    "postcode": null,
+    "date": "2026-10-10",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/43149-zurbaran-racing-wear-bank-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
     "id": "13544cc5",
     "name": "BEC CC Hill Climb",
     "type": "Hill Climb",
@@ -1907,19 +1920,6 @@
     "date": "2026-10-11",
     "start_time": "00:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/46564-yeovil-cycling-club-club-hill-climb-reserve-date",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "8cb90607",
-    "name": "Zurbaran Racing Wear Bank Hill Climb",
-    "type": "Hill Climb",
-    "region": "North East",
-    "venue": "County Durham | 1.1 miles | THC43",
-    "postcode": null,
-    "date": "2026-10-11",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/43149-zurbaran-racing-wear-bank-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
