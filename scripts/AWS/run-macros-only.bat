@@ -1,7 +1,8 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
 
-rem === CONFIG ===
+rem === CONFIG (same as run-macro-and-shutdown v2.bat but NO shutdown) ===
+rem Used when Node orchestrator (example-nightly-run.js) runs the macros; orchestrator writes summary then calls shutdown.
 rem All content/log files live on the mapped Drive (H:) so the layout is identical on each machine.
 set "LOG=H:\My Drive\Clients\LetsRace\NightlyLogs\macro-log.txt"
 set "CHROME=C:\Program Files\Google\Chrome\Application\chrome.exe"
@@ -27,12 +28,7 @@ rem Build the query string inline; & inside the quoted argument is safe and does
 call :RunMacro "BC-Events" "%RUNNER%?direct=1&macro=BC-Events&closeBrowser=1" %MACRO_TIMEOUT%
 call :RunMacro "CTT-Events" "%RUNNER%?direct=1&macro=CTT-Events&closeBrowser=1" %MACRO_TIMEOUT%
 
-if "%LETSRACE_ORCHESTRATED%"=="1" (
-  >>"%LOG%" echo Orchestrated run: skipping shutdown at %time%
-  goto :EOF
-)
->>"%LOG%" echo Triggering shutdown at %time%
-shutdown /s /f /t 0
+>>"%LOG%" echo Macros finished at %time% (orchestrator will write summary and shutdown if configured)
 goto :EOF
 
 
@@ -48,8 +44,7 @@ taskkill /IM chrome.exe /F >nul 2>&1
 >>"%LOG%" echo Launching %LABEL% at %time%
 
 rem Launch Chrome with default profile (must have UI.Vision installed and "Allow access to file URLs" enabled)
-rem --hide-crash-restore-bubble suppresses "Chrome didn't shut down correctly" after we taskkill
-start "" "%CHROME%" --disable-gpu --no-first-run --hide-crash-restore-bubble --new-window "%URL%"
+start "" "%CHROME%" --disable-gpu --no-first-run --new-window "%URL%"
 
 rem Give Chrome time to start, then wait for it to exit (macro done) or timeout
 timeout /t 15 >nul

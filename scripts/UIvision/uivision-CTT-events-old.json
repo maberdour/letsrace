@@ -16,7 +16,7 @@
     },
     {
       "Command": "store",
-      "Target": "fast",
+      "Target": "medium",
       "Value": "!replayspeed",
       "Description": ""
     },
@@ -73,24 +73,6 @@
       "Target": "${currentUrl}",
       "Value": "",
       "Description": ""
-    },
-    {
-      "Command": "store",
-      "Target": "60",
-      "Value": "!TIMEOUT_WAIT",
-      "Description": "Allow up to 60s for initial page load"
-    },
-    {
-      "Command": "waitForElementPresent",
-      "Target": "xpath=//span[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] uppercase leading-tight text-neutral-950 dark:text-neutral-300')]",
-      "Value": "",
-      "Description": "Wait until at least one CTT event row is visible"
-    },
-    {
-      "Command": "store",
-      "Target": "10",
-      "Value": "!TIMEOUT_WAIT",
-      "Description": "Tighten implicit wait for per-row extraction to 10s"
     },
     {
       "Command": "comment",
@@ -261,24 +243,6 @@
       "Description": ""
     },
     {
-      "Command": "store",
-      "Target": "true",
-      "Value": "!statusOK",
-      "Description": "Reset !statusOK before checking if the current row exists"
-    },
-    {
-      "Command": "verifyElementPresent",
-      "Target": "xpath=(//span[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] uppercase leading-tight text-neutral-950 dark:text-neutral-300')])[${loopCount}]",
-      "Value": "true",
-      "Description": "Check whether the row for this loopCount actually exists"
-    },
-    {
-      "Command": "if",
-      "Target": "${!statusOK}",
-      "Value": "",
-      "Description": "Only extract and save row data if the row exists"
-    },
-    {
       "Command": "storeText",
       "Target": "xpath=(//span[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] uppercase leading-tight text-neutral-950 dark:text-neutral-300')])[${loopCount}]",
       "Value": "!csvLine",
@@ -319,24 +283,6 @@
       "Target": "return Number(${loopCount}) + 1;",
       "Value": "loopCount",
       "Description": ""
-    },
-    {
-      "Command": "else",
-      "Target": "",
-      "Value": "",
-      "Description": "Row does not exist (beyond actual rows): bump loopCount to end the row loop without writing a line"
-    },
-    {
-      "Command": "executeScript_Sandbox",
-      "Target": "return Number(${filesCount}) + 1;",
-      "Value": "loopCount",
-      "Description": ""
-    },
-    {
-      "Command": "end",
-      "Target": "",
-      "Value": "",
-      "Description": "End per-row existence check"
     },
     {
       "Command": "end",

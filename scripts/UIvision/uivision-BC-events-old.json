@@ -1,5 +1,5 @@
 {
-  "Name": "BC-Events",
+  "Name": "BC-Events-Old",
   "CreationDate": "2026-3-9",
   "Commands": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "Command": "store",
-      "Target": "fast",
+      "Target": "medium",
       "Value": "!replayspeed",
       "Description": ""
     },
@@ -70,24 +70,6 @@
     },
     {
       "Command": "store",
-      "Target": "60",
-      "Value": "!TIMEOUT_WAIT",
-      "Description": "Allow up to 60s for initial page load"
-    },
-    {
-      "Command": "waitForElementPresent",
-      "Target": "xpath=//tr[contains(@class,'events--desktop__row')]",
-      "Value": "",
-      "Description": "Wait until at least one event row is visible"
-    },
-    {
-      "Command": "store",
-      "Target": "10",
-      "Value": "!TIMEOUT_WAIT",
-      "Description": "Tighten implicit wait for per-row extraction to 10s"
-    },
-    {
-      "Command": "store",
       "Target": "1",
       "Value": "continuePagination",
       "Description": ""
@@ -127,24 +109,6 @@
       "Target": "Loop number: ${loopCount}",
       "Value": "",
       "Description": ""
-    },
-    {
-      "Command": "store",
-      "Target": "true",
-      "Value": "!statusOK",
-      "Description": "Reset !statusOK before checking if the current row exists"
-    },
-    {
-      "Command": "verifyElementPresent",
-      "Target": "xpath=(//tr[contains(@class, 'events--desktop__row')]//td[contains(@class, 'event--date__column')])[${loopCount}]",
-      "Value": "true",
-      "Description": "Check whether the row for this loopCount actually exists"
-    },
-    {
-      "Command": "if",
-      "Target": "${!statusOK}",
-      "Value": "",
-      "Description": "Only extract and save row data if the row exists"
     },
     {
       "Command": "storeText",
@@ -195,24 +159,6 @@
       "Description": ""
     },
     {
-      "Command": "else",
-      "Target": "",
-      "Value": "",
-      "Description": "Row does not exist (beyond actual rows): bump loopCount to end the row loop without writing a line"
-    },
-    {
-      "Command": "executeScript_Sandbox",
-      "Target": "return Number(${filesCount}) + 1;",
-      "Value": "loopCount",
-      "Description": ""
-    },
-    {
-      "Command": "end",
-      "Target": "",
-      "Value": "",
-      "Description": "End per-row existence check"
-    },
-    {
       "Command": "end",
       "Target": "",
       "Value": "",
@@ -221,26 +167,20 @@
     {
       "Command": "store",
       "Target": "true",
-      "Value": "!errorignore",
-      "Description": "Allow macro to continue after verifyElementPresent error on last page"
-    },
-    {
-      "Command": "store",
-      "Target": "true",
       "Value": "!statusOK",
-      "Description": "Reset !statusOK before verifying Next link"
+      "Description": "Reset !statusOK so verifyElementPresent can set it correctly (it is not reset by successful commands)"
     },
     {
       "Command": "verifyElementPresent",
       "Target": "xpath=//div[@class='pagination']//a[contains(@class, 'next') and @href]",
       "Value": "true",
-      "Description": "Check for next page (does not stop macro because !errorignore=true)"
+      "Description": "Check for next page"
     },
     {
       "Command": "if",
       "Target": "${!statusOK}",
       "Value": "",
-      "Description": "If Next link exists, click it and continue pagination"
+      "Description": ""
     },
     {
       "Command": "click",

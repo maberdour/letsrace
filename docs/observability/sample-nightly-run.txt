@@ -1,0 +1,34 @@
+========== RUN START ========== 2026-03-08 12:33:30 ==========
+[2026-03-08 12:33:30] INFO SYSTEM  Nightly run started (Node orchestrator)
+--- TASK START ---
+Task: Nightly macros (BC + CTT)
+Component: Macro Automation
+Start Time: 2026-03-08 12:33:31
+
+--- TASK COMPLETE ---
+Task: Nightly macros (BC + CTT)
+Status: SUCCESS
+Duration: 00:49
+
+[2026-03-08 12:34:20] INFO DATA  Output file created
+  File: event_data.csv
+  Records: 29
+  Size: 5 KB
+
+=== NIGHTLY RUN SUMMARY ===
+
+Run started: 2026-03-08 12:33:30
+Run ended:   2026-03-08 12:34:20
+
+Tasks Run: 1
+Tasks Successful: 1
+Tasks Failed: 0
+Warnings: 0
+
+Data Files Generated:
+event_data.csv (29 records)
+
+Total Duration: 00:49
+RUN STATUS: COMPLETED
+
+========== RUN END ==========
