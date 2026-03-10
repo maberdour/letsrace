@@ -39,8 +39,8 @@ The only difference is **where** you run/schedule the orchestrator.
 - **Run a test manually (no scheduler, no shutdown):**
   1. Open **Command Prompt** on your PC.
   2. Run:
-     - `cd /d "H:\My Drive\Clients\LetsRace\Repository\letsrace"`
-     - `node "scripts\observability\example-nightly-run.js" --no-shutdown`
+     - cd /d "H:\My Drive\Clients\LetsRace\Repository\letsrace"
+     - node "scripts\observability\example-nightly-run.js" --no-shutdown
   3. This:
      - Uses the same config and paths as EC2 (Drive-based).
      - Runs the BC + CTT macros via the batch file.

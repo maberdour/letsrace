@@ -27,10 +27,11 @@ rem Build the query string inline; & inside the quoted argument is safe and does
 call :RunMacro "BC-Events" "%RUNNER%?direct=1&macro=BC-Events&closeBrowser=1" %MACRO_TIMEOUT%
 call :RunMacro "CTT-Events" "%RUNNER%?direct=1&macro=CTT-Events&closeBrowser=1" %MACRO_TIMEOUT%
 
-if "%LETSRACE_ORCHESTRATED%"=="1" (
-  >>"%LOG%" echo Orchestrated run: skipping shutdown at %time%
-  goto :EOF
-)
+rem Call Node summarizer before shutdown (best-effort; if Node is missing, macros still complete).
+pushd "H:\My Drive\Clients\LetsRace\Repository\letsrace"
+node "scripts\observability\example-nightly-run.js" --no-shutdown --summarize-only
+popd
+
 >>"%LOG%" echo Triggering shutdown at %time%
 shutdown /s /f /t 0
 goto :EOF
