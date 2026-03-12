@@ -1,5 +1,18 @@
 [
   {
+    "id": "6685aaf1",
+    "name": "British Cycling Pathway Development Centre Circuit - York #91",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-03-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333246/british-cycling-pathway-development-centre-circuit---york-91",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:28.000Z"
+  },
+  {
     "id": "cdac4072",
     "name": "DAYTL 2026 Intermediate Coach Led Racing #5",
     "type": "Road",
@@ -89,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332315/british-cycling-pathway-development-centre-circuit---shrewsbury-20",
     "source": "Google Sheet",
     "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
+    "id": "d0b2c24a",
+    "name": "British Cycling Pathway Development Centre Circuit - York #92",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-03-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333247/british-cycling-pathway-development-centre-circuit---york-92",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:28.000Z"
   },
   {
     "id": "a4752704",
@@ -273,6 +299,19 @@
     "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
+    "id": "02cda974",
+    "name": "British Cycling Pathway Development Centre Circuit - York #93",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-03-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333248/british-cycling-pathway-development-centre-circuit---york-93",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:28.000Z"
+  },
+  {
     "id": "349d7e25",
     "name": "DAYTL 2026 Intermediate Coach Led Racing #6",
     "type": "Road",
@@ -401,6 +440,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/293173/portsmouth-evening-circuits-",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "25a6ca1e",
+    "name": "British Cycling Pathway Development Centre Circuit - York #94",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "York Sport Cycle Circuit, North Yorkshire",
+    "postcode": null,
+    "date": "2026-04-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333249/british-cycling-pathway-development-centre-circuit---york-94",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:28.000Z"
   },
   {
     "id": "5d4d5e0f",
@@ -1170,6 +1222,19 @@
     "last_updated": "2025-12-20T03:15:25.000Z"
   },
   {
+    "id": "7eb2b2a5",
+    "name": "Lee Valley Senior and Youth Races incorporating The ECCA circuit championships",
+    "type": "Road",
+    "region": "Eastern",
+    "venue": "Redbridge Cycling Centre, Ilford",
+    "postcode": null,
+    "date": "2026-05-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333417/lee-valley-senior-and-youth-races-incorporating-the-ecca-circuit-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:28.000Z"
+  },
+  {
     "id": "7bd33122",
     "name": "Hadleigh CC Spring Crit Series 2026 - Round 1",
     "type": "Road",
@@ -1664,6 +1729,19 @@
     "last_updated": "2026-01-13T03:15:25.000Z"
   },
   {
+    "id": "3ce23dd7",
+    "name": "Youth Tour Of Kent",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Lydden Hill, Canterbury",
+    "postcode": null,
+    "date": "2026-06-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332826/youth-tour-of-kent",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:28.000Z"
+  },
+  {
     "id": "57aa420d",
     "name": "White Rose Youth League 2026 Round 6 /Team Sterrato RT Open 3/4",
     "type": "Road",
@@ -1766,6 +1844,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331304/carlisle-summer-nights-11",
     "source": "Google Sheet",
     "last_updated": "2026-01-31T03:15:25.000Z"
+  },
+  {
+    "id": "4915451b",
+    "name": "The 2026 Ilkley Cycle Races",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "The Clarke Foley Centre, West Yorkshire",
+    "postcode": null,
+    "date": "2026-07-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333242/the-2026-ilkley-cycle-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:28.000Z"
   },
   {
     "id": "8fc80501",
