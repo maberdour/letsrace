@@ -208,6 +208,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "ab8cc36e",
+    "name": "Orton 10 mile Time Trial 2026 - Scotland North TT Series",
+    "type": "Time Trial",
+    "region": "﻿Scotland",
+    "venue": "Inchberry Village Hall, Morayshire",
+    "postcode": null,
+    "date": "2026-05-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333388/orton-10-mile-time-trial-2026---scotland-north-tt-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T03:15:27.000Z"
+  },
+  {
     "id": "0f751adc",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 3",
     "type": "Time Trial",
@@ -806,11 +819,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "012e852a",
+    "id": "c89252b8",
     "name": "RTTC National Closed Circuit Championship",
     "type": "Time Trial",
     "region": "South",
-    "venue": "Hampshire | 10.1 miles | Pthruxton 10.5",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "00:00",

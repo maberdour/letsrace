@@ -429,11 +429,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "2c0820e2",
+    "id": "127701d3",
     "name": "Fife Midweek 19 - Hill Climb",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "2 miles | WE2/01",
+    "venue": "2 miles | WE2/01 | Falkland Hill Climb",
     "postcode": null,
     "date": "2026-08-26",
     "start_time": "00:00",
@@ -611,11 +611,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "9413d7c9",
+    "id": "e934ce21",
     "name": "Ystwyth CC Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "1 miles | D0/19 | Clarach Bay Hill Climb B4572",
+    "venue": "Ceredigion | 1637 yards | D0/19 | Clarach Bay Hill Climb B4572",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "00:00",
@@ -1690,6 +1690,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "14c3edce",
+    "name": "HHC050 Brightstone Lane Hill Climb",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Hampshire | 1531 yards | HHC050 | HHC050 Brightstone Lane",
+    "postcode": null,
+    "date": "2026-10-10",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49019-hhc-050-brightstone-lane-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:08.000Z"
+  },
+  {
     "id": "031ae5ea",
     "name": "Hinton Hill Climb - Double Header with UH93",
     "type": "Hill Climb",
@@ -1738,6 +1751,19 @@
     "date": "2026-10-10",
     "start_time": "00:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/41885-sand-hill-hill-climb-double-header-with-uh-90",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "e49619a3",
+    "name": "Zurbaran Racing Wear Bank Hill Climb",
+    "type": "Hill Climb",
+    "region": "North East",
+    "venue": "County Durham | 1.1 miles | THC43",
+    "postcode": null,
+    "date": "2026-10-10",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/43149-zurbaran-racing-wear-bank-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
@@ -1907,19 +1933,6 @@
     "date": "2026-10-11",
     "start_time": "00:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/46564-yeovil-cycling-club-club-hill-climb-reserve-date",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "8cb90607",
-    "name": "Zurbaran Racing Wear Bank Hill Climb",
-    "type": "Hill Climb",
-    "region": "North East",
-    "venue": "County Durham | 1.1 miles | THC43",
-    "postcode": null,
-    "date": "2026-10-11",
-    "start_time": "00:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/43149-zurbaran-racing-wear-bank-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
