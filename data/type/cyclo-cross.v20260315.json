@@ -1,44 +1,5 @@
 [
   {
-    "id": "683800d2",
-    "name": "Muddy Monsters Go-Ride CX",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "PRSA, Boston",
-    "postcode": null,
-    "date": "2026-03-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331854/muddy-monsters-go-ride-cx",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
-  },
-  {
-    "id": "fc999af9",
-    "name": "South West Winter Series 2025/26 - Everholm Dirt Crit",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Everholm Complex, Dumfries and Galloway",
-    "postcode": null,
-    "date": "2026-03-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330912/south-west-winter-series-202526---everholm-dirt-crit",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "d0f26442",
-    "name": "The Summer Series Round 3 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Stratford Park Leisure Centre, Stroud",
-    "postcode": null,
-    "date": "2026-03-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331409/the-summer-series-round-3-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
     "id": "af37faa1",
     "name": "Spring 2026 Nocturnal Cross Series Event 3",
     "type": "Cyclo Cross",
@@ -141,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332713/sprockets-summer-cx-2026-race-2",
     "source": "Google Sheet",
     "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "4afaa03d",
+    "name": "The Summer Series Round 3 2026",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Stratford Park Leisure Centre, Stroud",
+    "postcode": null,
+    "date": "2026-06-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331409/the-summer-series-round-3-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
     "id": "ad92a450",

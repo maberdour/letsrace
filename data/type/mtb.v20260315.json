@@ -1,44 +1,5 @@
 [
   {
-    "id": "c1dc8790",
-    "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R7",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Beaumanor Hall, Loughborough",
-    "postcode": null,
-    "date": "2026-03-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319238/b-buddies-off-ride-go-ride-race-league-2526-r7",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "632ed259",
-    "name": "BRITISH CYCLING MTB-XC REGIONAL SCHOOL OF RACING #3 (Cannock Chase)",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Birches Valley Forest Centre, Staffordshire",
-    "postcode": null,
-    "date": "2026-03-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329966/british-cycling-mtb-xc-regional-school-of-racing-3-cannock-chase",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-06T03:15:27.000Z"
-  },
-  {
-    "id": "66e60ae5",
-    "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #147",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "Whippy Trails, Rickmansworth.",
-    "postcode": null,
-    "date": "2026-03-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332454/british-cycling-pathway-development-centre-gravity---whippendell-devo-147-",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
-  },
-  {
     "id": "a5736f69",
     "name": "Delamere Forest MTB Club Youth Session - March 2026",
     "type": "MTB",
@@ -156,8 +117,8 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
-    "id": "e0d42bb7",
-    "name": "Crank-It Lee Quarry Classic XCO 2026",
+    "id": "1b878e60",
+    "name": "Crank-It Lee Quarry Classic XCO 2026 (Cancelled)",
     "type": "MTB",
     "region": "North West",
     "venue": "Lee Quarry, Lancashire",
@@ -455,6 +416,19 @@
     "last_updated": "2025-12-14T03:15:28.000Z"
   },
   {
+    "id": "13950e5a",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #46",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-04-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333484/british-cycling-pathway-development-centre-gravity---forest-of-dean-46",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-13T08:56:02.000Z"
+  },
+  {
     "id": "129d5638",
     "name": "MIJ Downhill 2026 Round 1",
     "type": "MTB",
@@ -546,11 +520,11 @@
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
-    "id": "d5ad189a",
+    "id": "4149a44f",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R9",
     "type": "MTB",
     "region": "East Midlands",
-    "venue": "Beaumanor Hall, Loughborough",
+    "venue": "Snibston Colliery Park, Coalville",
     "postcode": null,
     "date": "2026-05-09",
     "start_time": "00:00",
@@ -936,11 +910,11 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
-    "id": "e11fa0a8",
+    "id": "ff34786a",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R10",
     "type": "MTB",
     "region": "East Midlands",
-    "venue": "Snibston Colliery Park, Coalville",
+    "venue": "Beaumanor Hall,, Woodhouse,",
     "postcode": null,
     "date": "2026-06-13",
     "start_time": "00:00",
