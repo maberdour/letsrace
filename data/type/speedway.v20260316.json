@@ -1,5 +1,18 @@
 [
   {
+    "id": "bc20267a",
+    "name": "Scottish 4s league",
+    "type": "Speedway",
+    "region": "﻿Scotland",
+    "venue": "Redbraes Park, Edinburgh",
+    "postcode": null,
+    "date": "2026-03-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332650/scottish-4s-league",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
     "id": "4746464c",
     "name": "Scottish Open",
     "type": "Speedway",
@@ -11,6 +24,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/331692/scottish-open",
     "source": "Google Sheet",
     "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "686aa3a9",
+    "name": "Scottish combination and development league",
+    "type": "Speedway",
+    "region": "﻿Scotland",
+    "venue": "Redbraes Park, Edinburgh",
+    "postcode": null,
+    "date": "2026-05-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332649/scottish-combination-and-development-league",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
+    "id": "6a004ed2",
+    "name": "North and Scotland league - Edinburgh",
+    "type": "Speedway",
+    "region": "﻿Scotland",
+    "venue": "Redbraes Park, Edinburgh",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332651/north-and-scotland-league---edinburgh",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
+  },
+  {
+    "id": "1b5497c1",
+    "name": "Home internationals and Battle of Britain",
+    "type": "Speedway",
+    "region": "﻿Scotland",
+    "venue": "Redbraes Park, Edinburgh",
+    "postcode": null,
+    "date": "2026-05-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332653/home-internationals-and-battle-of-britain-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-09T19:50:15.000Z"
   },
   {
     "id": "ea57eea5",
