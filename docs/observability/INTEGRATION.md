@@ -52,23 +52,36 @@ Env vars and CLI options override the config file:
 | Repo root         | `LETSRACE_REPO_ROOT`      | `--repo-root`             | `H:\My Drive\Clients\LetsRace\Repository\letsrace` |
 | Datasources (CSV) | `LETSRACE_DATASOURCES_PATH` | `--datasources-path`    | `H:\My Drive\Clients\LetsRace\UIVision\datasources` |
 
-## Node orchestrator (recommended)
+## Node summarizer and orchestrator
 
-The **Node orchestrator** (`example-nightly-run.js`) is the main entry point when using observability:
+The **Node script** (`example-nightly-run.js`) has two modes:
 
-1. Create today’s log file and run the incomplete-run check.
-2. Start the resource monitor (optional; logs CPU/memory/disk/Chrome every 2 minutes).
-3. Start a single task “Nightly macros (BC + CTT)” and spawn `run-macros-only.bat`.
-4. When the BAT exits, complete or fail the task, then read CSVs from the datasources path and log data output.
-5. Stop the resource monitor, write the run summary, and optionally run `shutdown /s /f /t 0`.
+1. **Summarizer mode (final orchestration path, recommended):**
+   - Entry point is the BAT: `scripts/AWS/run-macro-and-shutdown v2.bat`.
+   - The BAT runs the BC + CTT macros via Chrome + UI.Vision, then calls:
+     - `node scripts\observability\example-nightly-run.js --summarize-only --no-shutdown`
+   - In this mode the Node script:
+     - Creates today’s log file and runs the incomplete-run check.
+     - Optionally collects resource metrics during the run.
+     - Analyses UI.Vision logs and CSV outputs from the macros.
+     - Writes the nightly run summary **without** calling `shutdown` (the BAT already shut the machine down or will do so).
 
-**Usage:** With config.js set for Google Drive, you can run with no arguments (defaults come from config). Or override:
+2. **Full orchestrator mode (optional / legacy):**
+   - You can point a scheduler at `example-nightly-run.js` instead of the BAT.
+   - In this mode the Node script:
+     - Creates today’s log file and runs the incomplete-run check.
+     - Starts the resource monitor (logs CPU/memory/disk/Chrome every 2 minutes).
+     - Starts a single task “Nightly macros (BC + CTT)” and spawns a macro BAT (e.g. `run-macros-only.bat` or an equivalent that does **not** call `shutdown`).
+     - When the BAT exits, completes or fails the task, then reads CSVs from the datasources path and logs data output.
+     - Stops the resource monitor, writes the run summary, and optionally runs `shutdown /s /f /t 0`.
+
+**Direct usage (orchestrator mode):** With config.js set for Google Drive, you can still run the Node script directly with defaults from config, or override:
 
 ```bash
 node scripts/observability/example-nightly-run.js [--log-dir "H:\My Drive\Clients\LetsRace\NightlyLogs"] [--repo-root "H:\My Drive\Clients\LetsRace\Repository\letsrace"] [--datasources-path "H:\My Drive\Clients\LetsRace\UIVision\datasources"] [--no-shutdown]
 ```
 
-Use `--no-shutdown` to skip the shutdown command (e.g. for local testing).
+Use `--no-shutdown` to skip the shutdown command (e.g. for local testing) when running in full orchestrator mode.
 
 ## CLI reference
 

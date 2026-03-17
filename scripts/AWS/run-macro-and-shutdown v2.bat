@@ -11,6 +11,8 @@ set "MACRO_TIMEOUT=2000"  rem max seconds per macro; next macro starts when Chro
 rem UI.Vision runner HTML lives on the mapped Drive so the same path works on every machine.
 rem Expectation: file:///H:/My Drive/Clients/LetsRace/UIVision/launcher/Run-UI.Vision-Macro.html
 set "RUNNER=file:///H:/My Drive/Clients/LetsRace/UIVision/launcher/Run-UI.Vision-Macro.html"
+rem UI.Vision log directory (used to detect macro completion even if Chrome stays open)
+set "UIVISION_LOG_DIR=H:\My Drive\Clients\LetsRace\UIVision\logs"
 
 >>"%LOG%" echo === Script started at %date% %time% ===
 
@@ -42,6 +44,8 @@ rem %1 = label, %2 = URL, %3 = timeout seconds
 set "LABEL=%~1"
 set "URL=%~2"
 set "WAITSECS=%~3"
+set "MACRO_START_EPOCH="
+for /f %%a in ('powershell -NoProfile -Command "[int][double]::Parse((Get-Date -UFormat %%s))"') do set "MACRO_START_EPOCH=%%a"
 
 rem Clean up any previous Chrome so our launch uses the default profile
 taskkill /IM chrome.exe /F >nul 2>&1
@@ -52,13 +56,29 @@ rem Launch Chrome with default profile (must have UI.Vision installed and "Allow
 rem --hide-crash-restore-bubble suppresses "Chrome didn't shut down correctly" after we taskkill
 start "" "%CHROME%" --disable-gpu --no-first-run --hide-crash-restore-bubble --new-window "%URL%"
 
-rem Give Chrome time to start, then wait for it to exit (macro done) or timeout
+rem Give Chrome time to start, then wait for macro completion or timeout.
+rem Do NOT rely on Chrome process exit: other Chrome instances can keep chrome.exe running.
 timeout /t 15 >nul
 set /a elapsed=15
 
 :waitloop
 tasklist /FI "IMAGENAME eq chrome.exe" 2>NUL | find /I "chrome.exe" >NUL
 if errorlevel 1 goto :macrodone
+
+rem If UI.Vision produced a log that shows this macro completed (or failed), proceed.
+if exist "%UIVISION_LOG_DIR%" (
+  powershell -NoProfile -Command ^
+    "$d = '%UIVISION_LOG_DIR%'; $label = '%LABEL%';" ^
+    "try {" ^
+    "  $f = Get-ChildItem -Path $d -Filter 'log-*.txt' -File -ErrorAction Stop | Sort-Object LastWriteTime -Descending | Select-Object -First 1;" ^
+    "  if (-not $f) { exit 2 }" ^
+    "  $content = Get-Content -Path $f.FullName -ErrorAction Stop -Raw;" ^
+    "  if ($content -match \"Playing macro\\s+$label\" -and ($content -match 'Macro completed' -or $content -match 'Macro failed' -or $content -match 'Error #\\d+')) { exit 0 }" ^
+    "  exit 3" ^
+    "} catch { exit 4 }"
+  if not errorlevel 1 goto :macrodone
+)
+
 if %elapsed% geq %WAITSECS% goto :macrodone
 timeout /t 10 >nul
 set /a elapsed+=10

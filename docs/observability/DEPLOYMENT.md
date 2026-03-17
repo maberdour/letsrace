@@ -36,16 +36,16 @@ The only difference is **where** you run/schedule the orchestrator.
   - Node.js (≥ 14) installed and on the PATH.
   - Chrome + UI.Vision installed and configured as on EC2 (same macros and datasources under `H:\My Drive\Clients\LetsRace\UIVision`).
 
-- **Run a test manually (no scheduler, no shutdown):**
+- **Run a test manually (BAT as orchestrator):**
   1. Open **Command Prompt** on your PC.
   2. Run:
      - cd /d "H:\My Drive\Clients\LetsRace\Repository\letsrace"
-     - node "scripts\observability\example-nightly-run.js" --no-shutdown
+     - scripts\AWS\run-macro-and-shutdown v2.bat
   3. This:
      - Uses the same config and paths as EC2 (Drive-based).
-     - Runs the BC + CTT macros via the batch file.
-     - Writes a nightly log to `H:\My Drive\Clients\LetsRace\NightlyLogs`.
-     - **Does not** shut down your machine because of `--no-shutdown`.
+     - Runs the BC + CTT macros via Chrome + UI.Vision.
+     - Calls the Node summarizer (`scripts\observability\example-nightly-run.js --summarize-only --no-shutdown`) to write a nightly log to `H:\My Drive\Clients\LetsRace\NightlyLogs` (if Node is installed).
+     - Shuts down your machine at the end of the run.
 
 - **Optional: local scheduler for repeatable tests**
   - You can create a Windows Task Scheduler job on your PC pointing at the same `node example-nightly-run.js --no-shutdown` command if you want timed test runs.
@@ -75,9 +75,9 @@ Copy the repo (or the observability + AWS script folders) to the **mapped Google
 
 | Repo path | Copy to (on Drive) | Purpose |
 | --------- | ------------------ | ------- |
-| **scripts/observability/** (all files, including **config.js**) | `driveRoot\Repository\letsrace\scripts\observability\` | Node module, orchestrator, and **config.js** (edit drive paths here). |
-| **scripts/AWS/run-macro-and-shutdown v2.bat** | `driveRoot\Repository\letsrace\scripts\AWS\run-macro-and-shutdown v2.bat` | BAT that runs BC + CTT macros; **orchestrator runs this one** (same as when you double-click it). Skips shutdown when env `LETSRACE_ORCHESTRATED=1`. |
-| **scripts/AWS/run-macros-only.bat** (optional) | Same path | Alternative BAT (no shutdown); orchestrator does not use it. Keep for reference. |
+| **scripts/observability/** (all files, including **config.js**) | `driveRoot\Repository\letsrace\scripts\observability\` | Node module and **config.js** (edit drive paths here). Also contains the summarizer/orchestrator (`example-nightly-run.js`). |
+| **scripts/AWS/run-macro-and-shutdown v2.bat** | `driveRoot\Repository\letsrace\scripts\AWS\run-macro-and-shutdown v2.bat` | **Primary nightly entry point.** Runs the BC + CTT macros via Chrome + UI.Vision, then calls the Node summarizer in summarize-only mode to write the nightly observability log, and finally shuts the machine down. |
+| **scripts/AWS/run-macros-only.bat** (optional) | Same path | Legacy BAT that only runs the macros (no shutdown, no built-in summarizer). You can still use it if you prefer to schedule `example-nightly-run.js` as the full orchestrator. |
 
 **On Google Drive, ensure these folders exist** (or they will be created when the script runs):
 
@@ -124,25 +124,42 @@ Copy the repo (or the observability + AWS script folders) to the **mapped Google
 1. **Edit `scripts/observability/config.js`**  
    Set `DRIVE_ROOT` to your mapped Drive path (e.g. `H:\My Drive\Clients\LetsRace` or `G:\My Drive\Clients\LetsRace`). The derived paths (NightlyLogs, UIVision, repo root) will then point at the correct folders on Drive.
 
-2. **Point the scheduler at the Node orchestrator (not the BAT).**  
-   Run the script **from the repo on Google Drive**, for example:
-   - **Program/script:** `node`
-   - **Arguments:** `"H:\My Drive\Clients\LetsRace\Repository\letsrace\scripts\observability\example-nightly-run.js"`  
-     (use the path that matches your `config.repoRoot` and Drive letter.)
-   - **Start in:** `H:\My Drive\Clients\LetsRace\Repository\letsrace` (same as repo root).
+2. **Point the scheduler at the BAT (final orchestration).**  
+   The BAT runs BC + CTT macros via Chrome/UI.Vision, calls the Node summarizer, then shuts the machine down. Chrome and UI.Vision **must run in an interactive user session** (they do not work when the task runs in the background with “Run whether user is logged on or not”). Use **auto-logon** plus a task that runs **only when the user is logged on**, and **launch the BAT via `cmd.exe`** so the console and Chrome window are visible.
+
+   **Windows Task Scheduler – EC2 with auto-logon (recommended):**  
+   Enable Windows auto-logon for the Administrator (or the user that has H: and Chrome). Then create a task in **Task Scheduler → Create Task** (not “Create Basic Task”):
+
+   | Tab | Setting | Value |
+   |-----|--------|--------|
+   | **General** | Name | `LetsRace nightly macros` (or any name) |
+   | | Description | Runs BC + CTT macros via Chrome/UI.Vision, then shutdown. |
+   | | Security | **Run only when user is logged on** |
+   | | | **Run with highest privileges** (needed for `shutdown`) |
+   | | Configure for | Windows 10/Windows Server 2016+ |
+   | **Triggers** | New… | **Begin the task:** At log on |
+   | | | **Specific user:** Administrator (or your EC2 user) |
+   | | | **Delay task for:** 1 minute |
+   | | | **Enabled** ✓ |
+   | **Actions** | New… | **Action:** Start a program |
+   | | | **Program/script:** `cmd.exe` |
+   | | | **Add arguments:** `/c start "" "H:\My Drive\Clients\LetsRace\Repository\letsrace\scripts\AWS\run-macro-and-shutdown v2.bat"` |
+   | | | **Start in:** `H:\My Drive\Clients\LetsRace\Repository\letsrace` |
+   | **Conditions** | Power | Uncheck **Start the task only if the computer is on AC power** (EC2 is virtual) |
+   | **Settings** | | **Allow task to be run on demand** ✓ |
+
+   **Why `cmd.exe` and “start”:**  
+   If the task runs the BAT file directly, Chrome can start but its window may not appear in the session (e.g. not visible in RDP). Running `cmd.exe /c start "" "path\to\bat"` opens a **visible console window** and runs the BAT in that window; Chrome then opens in the same session and the browser window is visible.
+
+   **Account:** The task must run as the same user that is auto-logged on (e.g. Administrator). That user must have Google Drive (H:) and Chrome + UI.Vision configured.
 
 3. **Paths for logs and datasources.**  
    They come from **config.js** by default. You only need env vars or CLI args if you want to override:
    - `LETSRACE_LOG_DIR`, `LETSRACE_REPO_ROOT`, `LETSRACE_DATASOURCES_PATH` (env), or
    - `--log-dir`, `--repo-root`, `--datasources-path` (CLI).
 
-4. **Optional: no shutdown for testing.**  
-   Add `--no-shutdown` to the scheduler arguments to skip the shutdown command.
-   In the scheduler, in the same place you put the script path, you can add a space and then: --no-shutdown.
-   Later, when you’re happy, remove --no-shutdown so the machine shuts down again after the run.
-
-5. **Orchestrator runs the same BAT as manual (v2).**  
-   The orchestrator runs `scripts/AWS/run-macro-and-shutdown v2.bat` via `start /wait` so it gets its own console window (same as when you double-click it). It sets `LETSRACE_ORCHESTRATED=1` so v2 skips its own shutdown; the Node script writes the run summary and then runs `shutdown /s /f /t 0` (unless `--no-shutdown` is set).
+4. **Optional: no shutdown for testing (advanced / Node orchestrator mode).**  
+   If you instead schedule `example-nightly-run.js` directly (full orchestrator mode), you can pass `--no-shutdown` in the scheduler arguments to skip the shutdown command while still writing the observability log.
 
 ### Google Apps Script
 
