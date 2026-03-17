@@ -91,6 +91,45 @@ function getCsvStatsIfUpdated(filePath, minMtimeMs) {
 }
 
 /**
+ * Find the most recently updated CSV in a directory that matches a prefix (case-insensitive),
+ * optionally requiring it to be updated on/after a given timestamp.
+ * Supports Windows " (1)" suffixed files (e.g. ctt_event_data (1).csv) via prefix matching.
+ * @param {string} dir
+ * @param {string} prefix
+ * @param {number} [minMtimeMs]
+ * @returns {{ fileName: string, fullPath: string, records: number, sizeBytes: number, mtimeMs: number }|null}
+ */
+function findLatestCsvByPrefix(dir, prefix, minMtimeMs) {
+  try {
+    if (!dir || !fs.existsSync(dir)) return null;
+    const lowerPrefix = prefix.toLowerCase();
+    const candidates = fs.readdirSync(dir)
+      .filter((name) => name.toLowerCase().endsWith('.csv') && name.toLowerCase().startsWith(lowerPrefix))
+      .map((name) => {
+        const fullPath = path.join(dir, name);
+        const stat = fs.statSync(fullPath);
+        return { name, fullPath, mtimeMs: stat.mtimeMs };
+      })
+      .filter((e) => (minMtimeMs == null ? true : e.mtimeMs >= minMtimeMs));
+
+    if (!candidates.length) return null;
+    candidates.sort((a, b) => b.mtimeMs - a.mtimeMs);
+    const chosen = candidates[0];
+    const stats = getCsvStats(chosen.fullPath);
+    if (!stats) return null;
+    return {
+      fileName: chosen.name,
+      fullPath: chosen.fullPath,
+      records: stats.records,
+      sizeBytes: stats.sizeBytes,
+      mtimeMs: stats.mtimeMs
+    };
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Find the most recent UI.Vision log file in the given directory.
  * @param {string} logsDir
  * @returns {string|null}
@@ -227,16 +266,29 @@ function main() {
       const cttCsv = path.join(options.datasourcesPath, 'ctt_event_data.csv');
 
       // Only count CSVs that were actually written during this run.
+      // Prefer exact canonical filenames, but fall back to most recent prefix-match to handle "(1)" suffixes.
       bcStats = getCsvStatsIfUpdated(bcCsv, runStartTime);
+      if (!bcStats) {
+        const bcLatest = findLatestCsvByPrefix(options.datasourcesPath, 'event_data', runStartTime);
+        if (bcLatest) bcStats = { records: bcLatest.records, sizeBytes: bcLatest.sizeBytes, fileName: bcLatest.fileName };
+      } else {
+        bcStats = { ...bcStats, fileName: 'event_data.csv' };
+      }
       if (bcStats) {
-        logger.logDataOutput('event_data.csv', bcStats.records, bcStats.sizeBytes);
-        dataFiles.push({ file: 'event_data.csv', records: bcStats.records });
+        logger.logDataOutput(bcStats.fileName, bcStats.records, bcStats.sizeBytes);
+        dataFiles.push({ file: bcStats.fileName, records: bcStats.records });
       }
 
       cttStats = getCsvStatsIfUpdated(cttCsv, runStartTime);
+      if (!cttStats) {
+        const cttLatest = findLatestCsvByPrefix(options.datasourcesPath, 'ctt_event_data', runStartTime);
+        if (cttLatest) cttStats = { records: cttLatest.records, sizeBytes: cttLatest.sizeBytes, fileName: cttLatest.fileName };
+      } else {
+        cttStats = { ...cttStats, fileName: 'ctt_event_data.csv' };
+      }
       if (cttStats) {
-        logger.logDataOutput('ctt_event_data.csv', cttStats.records, cttStats.sizeBytes);
-        dataFiles.push({ file: 'ctt_event_data.csv', records: cttStats.records });
+        logger.logDataOutput(cttStats.fileName, cttStats.records, cttStats.sizeBytes);
+        dataFiles.push({ file: cttStats.fileName, records: cttStats.records });
       }
 
       const macrosOk = !!(bcStats && cttStats);

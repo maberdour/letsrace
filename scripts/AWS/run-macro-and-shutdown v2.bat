@@ -13,6 +13,8 @@ rem Expectation: file:///H:/My Drive/Clients/LetsRace/UIVision/launcher/Run-UI.V
 set "RUNNER=file:///H:/My Drive/Clients/LetsRace/UIVision/launcher/Run-UI.Vision-Macro.html"
 rem UI.Vision log directory (used to detect macro completion even if Chrome stays open)
 set "UIVISION_LOG_DIR=H:\My Drive\Clients\LetsRace\UIVision\logs"
+rem UI.Vision datasources directory (used to detect completion via CSV output when logs are missing)
+set "UIVISION_DATASOURCES_DIR=H:\My Drive\Clients\LetsRace\UIVision\datasources"
 
 >>"%LOG%" echo === Script started at %date% %time% ===
 
@@ -27,7 +29,9 @@ if not exist "%CHROME%" (
 
 rem Build the query string inline; & inside the quoted argument is safe and does not need ^.
 call :RunMacro "BC-Events" "%RUNNER%?direct=1&macro=BC-Events&closeBrowser=1" %MACRO_TIMEOUT%
+call :CanonizeCsv "BC-Events"
 call :RunMacro "CTT-Events" "%RUNNER%?direct=1&macro=CTT-Events&closeBrowser=1" %MACRO_TIMEOUT%
+call :CanonizeCsv "CTT-Events"
 
 rem Call Node summarizer before shutdown (best-effort; if Node is missing, macros still complete).
 pushd "H:\My Drive\Clients\LetsRace\Repository\letsrace"
@@ -65,6 +69,25 @@ set /a elapsed=15
 tasklist /FI "IMAGENAME eq chrome.exe" 2>NUL | find /I "chrome.exe" >NUL
 if errorlevel 1 goto :macrodone
 
+rem If the expected output CSV was written during this macro run, treat it as completed.
+rem This covers cases where UI.Vision log files are missing and/or Windows created "(1)" suffixed CSVs.
+if exist "%UIVISION_DATASOURCES_DIR%" (
+  powershell -NoProfile -Command ^
+    "$d = '%UIVISION_DATASOURCES_DIR%'; $label = '%LABEL%'; $min = [int]'%MACRO_START_EPOCH%';" ^
+    "$pattern = if ($label -eq 'BC-Events') { 'event_data*.csv' } elseif ($label -eq 'CTT-Events') { 'ctt_event_data*.csv' } else { $null };" ^
+    "if (-not $pattern) { exit 2 }" ^
+    "try {" ^
+    "  $f = Get-ChildItem -Path $d -Filter $pattern -File -ErrorAction Stop | Sort-Object LastWriteTime -Descending | Select-Object -First 1;" ^
+    "  if (-not $f) { exit 3 }" ^
+    "  $mtime = [int][double]::Parse((Get-Date $f.LastWriteTime -UFormat %%s));" ^
+    "  if ($mtime -lt $min) { exit 4 }" ^
+    "  $lines = (Get-Content -Path $f.FullName -ErrorAction Stop | Measure-Object -Line).Lines;" ^
+    "  if ($lines -ge 2) { exit 0 }" ^
+    "  exit 5" ^
+    "} catch { exit 6 }"
+  if not errorlevel 1 goto :macrodone
+)
+
 rem If UI.Vision produced a log that shows this macro completed (or failed), proceed.
 if exist "%UIVISION_LOG_DIR%" (
   powershell -NoProfile -Command ^
@@ -89,6 +112,38 @@ rem Ensure Chrome is closed before next macro
 taskkill /IM chrome.exe /F >nul 2>&1
 
 >>"%LOG%" echo %LABEL% finished (waited %elapsed%s) at %time%
+exit /b
+
+
+:CanonizeCsv
+rem Ensure the canonical CSV filename exists for downstream GAS.
+rem %1 = label (BC-Events or CTT-Events)
+set "LABEL=%~1"
+if not exist "%UIVISION_DATASOURCES_DIR%" exit /b
+
+if /I "%LABEL%"=="BC-Events" (
+  set "PATTERN=event_data*.csv"
+  set "CANON=event_data.csv"
+) else if /I "%LABEL%"=="CTT-Events" (
+  set "PATTERN=ctt_event_data*.csv"
+  set "CANON=ctt_event_data.csv"
+) else (
+  exit /b
+)
+
+>>"%LOG%" echo Canonizing %LABEL% output to %CANON% at %time%
+powershell -NoProfile -Command ^
+  "$d='%UIVISION_DATASOURCES_DIR%'; $pattern='%PATTERN%'; $canon=Join-Path $d '%CANON%';" ^
+  "try {" ^
+  "  $f = Get-ChildItem -Path $d -Filter $pattern -File -ErrorAction Stop | Sort-Object LastWriteTime -Descending | Select-Object -First 1;" ^
+  "  if (-not $f) { exit 2 }" ^
+  "  Copy-Item -Path $f.FullName -Destination $canon -Force -ErrorAction Stop;" ^
+  "  if ($f.FullName -ne $canon) { try { Remove-Item -Path $f.FullName -Force -ErrorAction Stop } catch {} }" ^
+  "  exit 0" ^
+  "} catch { exit 3 }"
+if errorlevel 1 (
+  >>"%LOG%" echo WARNING: Failed to canonize %LABEL% CSV at %time%
+)
 exit /b
 :END
 endlocal
