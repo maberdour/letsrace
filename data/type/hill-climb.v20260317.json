@@ -611,11 +611,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "9413d7c9",
+    "id": "e934ce21",
     "name": "Ystwyth CC Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "1 miles | D0/19 | Clarach Bay Hill Climb B4572",
+    "venue": "Ceredigion | 1637 yards | D0/19 | Clarach Bay Hill Climb B4572",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "00:00",
@@ -1688,6 +1688,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42342-firle-beacon-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "14c3edce",
+    "name": "HHC050 Brightstone Lane Hill Climb",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Hampshire | 1531 yards | HHC050 | HHC050 Brightstone Lane",
+    "postcode": null,
+    "date": "2026-10-10",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49019-hhc-050-brightstone-lane-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T08:07:08.000Z"
   },
   {
     "id": "031ae5ea",
