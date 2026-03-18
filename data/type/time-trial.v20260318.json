@@ -39,6 +39,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "77617d70",
+    "name": "Lloyds National Disability and Para-cycling Road Series - Round 1 - Time Trial - The Brownlee Centre",
+    "type": "Time Trial",
+    "region": "Yorkshire & Humber",
+    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-04-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332336/lloyds-national-disability-and-para-cycling-road-series---round-1---time-trial---the-brownlee-centre",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-14T03:15:24.000Z"
+  },
+  {
     "id": "9770c39c",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -206,6 +219,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45716-bicester-millennium-cc-club-25",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "ab8cc36e",
+    "name": "Orton 10 mile Time Trial 2026 - Scotland North TT Series",
+    "type": "Time Trial",
+    "region": "﻿Scotland",
+    "venue": "Inchberry Village Hall, Morayshire",
+    "postcode": null,
+    "date": "2026-05-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333388/orton-10-mile-time-trial-2026---scotland-north-tt-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-12T03:15:27.000Z"
   },
   {
     "id": "0f751adc",
