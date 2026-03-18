@@ -1274,6 +1274,19 @@
     "last_updated": "2026-03-07T03:15:25.000Z"
   },
   {
+    "id": "29d05052",
+    "name": "North East Youth League Round 2 - Presented By Cleveland Wheelers CC",
+    "type": "Road",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332421/north-east-youth-league-round-2---presented-by-cleveland-wheelers-cc",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:34.000Z"
+  },
+  {
     "id": "9a3138a3",
     "name": "Trofeo Clarion (Scottish National Youth Circuit Series)",
     "type": "Road",
