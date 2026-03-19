@@ -1196,6 +1196,19 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "de1e155a",
+    "name": "Dolan Bikes NW Youth League - Round 3",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Litherland Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-05-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332182/dolan-bikes-nw-youth-league---round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-19T06:32:27.000Z"
+  },
+  {
     "id": "d4bb4a7f",
     "name": "Lawford Youth Series at Curborough 26 #3",
     "type": "Road",

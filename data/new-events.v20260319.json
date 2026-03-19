@@ -532,9 +532,22 @@
       "url": "https://www.cyclingtimetrials.org.uk/events/50108-droitwich-cycling-club-club-hillclimb",
       "source": "Google Sheet",
       "last_updated": "2026-03-18T17:39:48.000Z"
+    },
+    {
+      "id": "de1e155a",
+      "name": "Dolan Bikes NW Youth League - Round 3",
+      "type": "Road",
+      "region": "North West",
+      "venue": "Litherland Circuit, Lancashire",
+      "postcode": null,
+      "date": "2026-05-16",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/332182/dolan-bikes-nw-youth-league---round-3",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-19T06:32:27.000Z"
     }
   ],
-  "last_build": "2026-03-19T04:10:01.161Z",
-  "total_new_events": 41,
+  "last_build": "2026-03-19T06:32:50.452Z",
+  "total_new_events": 42,
   "cutoff_date": "2026-03-12"
 }
