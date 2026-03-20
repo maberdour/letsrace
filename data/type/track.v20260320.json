@@ -234,19 +234,6 @@
     "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
-    "id": "a691f536",
-    "name": "Carlisle Summer Nights #1",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-04-16",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330874/monday-night-track-league-2026-round-22",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
     "id": "ffb67dc1",
     "name": "Convene ESG Track League - Round 2",
     "type": "Track",
@@ -741,6 +728,19 @@
     "last_updated": "2025-12-25T03:15:26.000Z"
   },
   {
+    "id": "b18a8f2b",
+    "name": "2026 National Youth Omnium Finals",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-07-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332209/2026-national-youth-omnium-finals",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "8ed18155",
     "name": "Condor Women's League - Round 4",
     "type": "Track",
@@ -1233,6 +1233,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330873/monday-night-track-league-2026-round-21",
     "source": "Google Sheet",
     "last_updated": "2026-01-13T03:15:25.000Z"
+  },
+  {
+    "id": "b337a395",
+    "name": "Monday Night Track League 2026 Round 22",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester, Manchester",
+    "postcode": null,
+    "date": "2026-11-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330874/monday-night-track-league-2026-round-22",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
     "id": "ab805769",

@@ -1677,6 +1677,19 @@
     "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
+    "id": "f5c91136",
+    "name": "Fort Vale Colne Grand Prix",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Colne Town Hall, Lancashire",
+    "postcode": null,
+    "date": "2026-06-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333296/fort-vale-colne-grand-prix",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "5ecdf7be",
     "name": "PNE Mountbatten Circuit Series #5",
     "type": "Road",

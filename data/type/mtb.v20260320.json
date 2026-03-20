@@ -338,6 +338,19 @@
     "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
+    "id": "f300d21b",
+    "name": "SWXC 2026 Round 1",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2026-04-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333711/swxc-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "55a53a04",
     "name": "ERC Go Ride Dirt Crit",
     "type": "MTB",
@@ -416,11 +429,11 @@
     "last_updated": "2026-03-17T03:15:26.000Z"
   },
   {
-    "id": "afe839d9",
+    "id": "401757a2",
     "name": "SXC Series 2026: Round 1 - Tarland Trails",
     "type": "MTB",
     "region": "Scotland",
-    "venue": "Tarland Trails, Aberdeenshire",
+    "venue": "Tarland Trails, Tarland",
     "postcode": null,
     "date": "2026-04-26",
     "start_time": "00:00",
@@ -546,6 +559,45 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "ea871f4f",
+    "name": "Beast go ride",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Hamsterley Forest, County Durham",
+    "postcode": null,
+    "date": "2026-05-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333485/beast-go-ride-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
+    "id": "ea871f4f",
+    "name": "Beast go ride",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Hamsterley Forest, County Durham",
+    "postcode": null,
+    "date": "2026-05-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333485/beast-go-ride-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
+    "id": "c28887b3",
+    "name": "MTB Short Track Showdown Rd1",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333347/mtb-short-track-showdown-rd1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "cf8d5ad2",
     "name": "B-BUDDIES Off-Road TT 3",
     "type": "MTB",
@@ -598,6 +650,19 @@
     "last_updated": "2026-03-06T10:43:30.000Z"
   },
   {
+    "id": "a8f2f3ee",
+    "name": "SWXC 2026 Round 2 - incorporating SW Regional Champs",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Grammarcombe Woods, Devon",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333712/swxc-2026-round-2---incorporating-sw-regional-champs-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "925bfa00",
     "name": "Welsh XC Series 2026 powered by DualFuel - Round 2 Dare Valley",
     "type": "MTB",
@@ -635,6 +700,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333345/midweek-mtb-madness-2026---lee-quarry-rossendale",
     "source": "Google Sheet",
     "last_updated": "2026-03-18T17:39:34.000Z"
+  },
+  {
+    "id": "70c07de7",
+    "name": "MTB Short Track Showdown Rd2",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333348/mtb-short-track-showdown-rd2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
   },
   {
     "id": "a25fe123",
@@ -830,6 +908,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332680/welsh-xc-series-2026-powered-by-dualfuel---round-3-builth-wells",
     "source": "Google Sheet",
     "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "71b5895b",
+    "name": "MTB Short Track Showdown Rd3",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-06-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333349/mtb-short-track-showdown-rd3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
   },
   {
     "id": "7d853918",
