@@ -6,33 +6,33 @@
     },
     "track": {
       "name": "Track",
-      "count": 113
+      "count": 103
     },
     "bmx": {
       "name": "BMX",
-      "count": 26
+      "count": 24
     },
     "mtb": {
       "name": "MTB",
-      "count": 129
+      "count": 127
     },
     "cyclo-cross": {
       "name": "Cyclo Cross",
-      "count": 15
+      "count": 14
     },
     "speedway": {
       "name": "Speedway",
-      "count": 9
+      "count": 13
     },
     "time-trial": {
       "name": "Time Trial",
-      "count": 64
+      "count": 70
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 160
+      "count": 163
     }
   },
-  "last_build": "2026-03-12T08:08:01.810Z",
-  "total_events": 690
+  "last_build": "2026-03-20T04:09:14.303Z",
+  "total_events": 688
 }

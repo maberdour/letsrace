@@ -1,31 +1,5 @@
 [
   {
-    "id": "a4743244",
-    "name": "Racing Under The Roof 2025/26 Round Five (EXPERT)",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-03-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328678/racing-under-the-roof-202526-round-five-expert",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-05T10:17:43.000Z"
-  },
-  {
-    "id": "681af79c",
-    "name": "Enter The Dragon - Winter Round 5",
-    "type": "BMX",
-    "region": "﻿Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2026-03-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/328679/enter-the-dragon---winter-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-02T03:15:26.000Z"
-  },
-  {
     "id": "f1818874",
     "name": "British Cycling Pathway BMX SX RSR #1 Midlands 2026.",
     "type": "BMX",
