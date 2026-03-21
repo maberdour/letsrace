@@ -13,6 +13,32 @@
     "last_updated": "2026-03-09T19:50:15.000Z"
   },
   {
+    "id": "9ba9388f",
+    "name": "Scottish League Series - Round 1",
+    "type": "Speedway",
+    "region": "﻿Scotland",
+    "venue": "Edinburgh Cycle Speedway, EDINBURGH",
+    "postcode": null,
+    "date": "2026-03-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332641/scottish-league-series---round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T03:15:25.000Z"
+  },
+  {
+    "id": "3fa327a3",
+    "name": "Scottish League Series - Round 2",
+    "type": "Speedway",
+    "region": "﻿Scotland",
+    "venue": "Cathkin Park, GLASGOW",
+    "postcode": null,
+    "date": "2026-04-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332642/scottish-league-series---round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:34.000Z"
+  },
+  {
     "id": "4746464c",
     "name": "Scottish Open",
     "type": "Speedway",
@@ -52,6 +78,19 @@
     "last_updated": "2026-03-09T19:50:15.000Z"
   },
   {
+    "id": "0d78091e",
+    "name": "Scottish League Series - Round 3",
+    "type": "Speedway",
+    "region": "﻿Scotland",
+    "venue": "Tweedbank Park, Galashiels",
+    "postcode": null,
+    "date": "2026-05-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332643/scottish-league-series---round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:34.000Z"
+  },
+  {
     "id": "1b5497c1",
     "name": "Home internationals and Battle of Britain",
     "type": "Speedway",
@@ -89,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331696/scottish-development-league",
     "source": "Google Sheet",
     "last_updated": "2026-01-28T03:15:26.000Z"
+  },
+  {
+    "id": "c30902f7",
+    "name": "Scottish League Series - Round 5",
+    "type": "Speedway",
+    "region": "North East",
+    "venue": "cramlington learning village, Cramlington",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332644/scottish-league-series---round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:34.000Z"
   },
   {
     "id": "f477a4c1",
