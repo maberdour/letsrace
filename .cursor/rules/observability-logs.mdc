@@ -1,0 +1,32 @@
+---
+title: "Observability & Automation Logs"
+description: "Where to find nightly/UI.Vision automation logs on H: (always check these before asking user)"
+alwaysApply: true
+---
+
+# Observability & Automation Logs (H: Drive)
+
+When debugging anything related to nightly automation, macros, UI.Vision, CSV outputs, or “it crashed”, **do not ask the user to paste logs first**. Instead, inspect the latest files directly from the mapped Drive paths below.
+
+## Primary log locations (source of truth)
+
+- **Macro runner log (BAT orchestration):**
+  - `H:\My Drive\Clients\LetsRace\NightlyLogs\macro-log.txt`
+- **Nightly observability run logs (Node summarizer/orchestrator):**
+  - `H:\My Drive\Clients\LetsRace\NightlyLogs\letsrace-run-YYYY-MM-DD-HHmmss.log`
+- **UI.Vision per-run logs:**
+  - `H:\My Drive\Clients\LetsRace\UIVision\logs\log-YYYYMMDD-HHMMSS.txt`
+- **Macro outputs / datasources:**
+  - `H:\My Drive\Clients\LetsRace\UIVision\datasources\event_data*.csv`
+  - `H:\My Drive\Clients\LetsRace\UIVision\datasources\ctt_event_data*.csv`
+
+## What to check (minimum)
+
+- Identify the **most recent** run start in `macro-log.txt` and verify it has:
+  - `Launching BC-Events` → **then** `BC-Events finished/timed out`
+  - `Launching CTT-Events` → **then** `CTT-Events finished/timed out`
+  - `Running Node summarizer` (if using `run-macro-and-shutdown v2.bat`)
+- In the newest `UIVision\logs\log-*.txt`, confirm whether the macro reached:
+  - `Macro completed` / `Macro failed` / `Error #...`
+- Verify the expected CSV outputs exist and look plausible (non-empty; newest mtime aligns with the run).
+

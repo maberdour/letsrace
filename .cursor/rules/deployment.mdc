@@ -16,6 +16,7 @@ description: "Rules for deployment and automation"
 - Use PowerShell scripts for Windows automation
 - Google Apps Scripts handle data processing and GitHub integration
 - Automated git push via auto-git-push.ps1
+- **When debugging nightly/macros/UI.Vision, check the H: Drive logs first** (see `observability-logs.mdc` for exact paths).
 
 ## Content Updates
 - About page updates via pull-about.ps1 script

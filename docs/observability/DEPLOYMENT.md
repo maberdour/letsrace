@@ -33,7 +33,6 @@ The only difference is **where** you run/schedule the orchestrator.
 
 - **Prerequisites (local PC):**
   - Google Drive desktop app mapped so `H:\My Drive\Clients\LetsRace` exists.
-  - Node.js (≥ 14) installed and on the PATH.
   - Chrome + UI.Vision installed and configured as on EC2 (same macros and datasources under `H:\My Drive\Clients\LetsRace\UIVision`).
 
 - **Run a test manually (BAT as orchestrator):**
@@ -44,24 +43,21 @@ The only difference is **where** you run/schedule the orchestrator.
   3. This:
      - Uses the same config and paths as EC2 (Drive-based).
      - Runs the BC + CTT macros via Chrome + UI.Vision.
-     - Calls the Node summarizer (`scripts\observability\example-nightly-run.js --summarize-only --no-shutdown`) to write a nightly log to `H:\My Drive\Clients\LetsRace\NightlyLogs` (if Node is installed).
      - Shuts down your machine at the end of the run.
 
 - **Optional: local scheduler for repeatable tests**
-  - You can create a Windows Task Scheduler job on your PC pointing at the same `node example-nightly-run.js --no-shutdown` command if you want timed test runs.
+  - Create a Windows Task Scheduler job that runs `scripts\AWS\run-macros-only.bat` (no shutdown) for timed test runs.
 
 ### EC2 live environment
 
 - **Prerequisites (EC2):**
   - EC2 has Google Drive mapped as `H:\` with the same `My Drive\Clients\LetsRace` content.
-  - Node.js (≥ 14) installed and on the PATH on EC2.
   - Chrome + UI.Vision configured on EC2 using the same `H:\My Drive\Clients\LetsRace\UIVision` folder for macros, datasources, and logs.
 
 - **Live nightly run:**
   - Follow **“EC2: scheduler and config”** below:
-    - Scheduler runs `node "H:\My Drive\Clients\LetsRace\Repository\letsrace\scripts\observability\example-nightly-run.js"` on EC2.
+    - Scheduler runs `scripts\AWS\run-macro-and-shutdown v2.bat` on EC2.
     - `DRIVE_ROOT` stays `H:\My Drive\Clients\LetsRace` (same as local).
-    - For a real nightly run that shuts EC2 down afterwards, omit `--no-shutdown`. For a diagnostic run, add `--no-shutdown`.
 
 Because both environments share the same mapped Drive and repo, **no changes to config.js or paths are required when moving from local test to EC2 live**; only the scheduler location and shutdown behaviour differ.
 
@@ -75,9 +71,9 @@ Copy the repo (or the observability + AWS script folders) to the **mapped Google
 
 | Repo path | Copy to (on Drive) | Purpose |
 | --------- | ------------------ | ------- |
-| **scripts/observability/** (all files, including **config.js**) | `driveRoot\Repository\letsrace\scripts\observability\` | Node module and **config.js** (edit drive paths here). Also contains the summarizer/orchestrator (`example-nightly-run.js`). |
-| **scripts/AWS/run-macro-and-shutdown v2.bat** | `driveRoot\Repository\letsrace\scripts\AWS\run-macro-and-shutdown v2.bat` | **Primary nightly entry point.** Runs the BC + CTT macros via Chrome + UI.Vision, then calls the Node summarizer in summarize-only mode to write the nightly observability log, and finally shuts the machine down. |
-| **scripts/AWS/run-macros-only.bat** (optional) | Same path | Legacy BAT that only runs the macros (no shutdown, no built-in summarizer). You can still use it if you prefer to schedule `example-nightly-run.js` as the full orchestrator. |
+| **scripts/observability/** (all files, including **config.js**) | `driveRoot\Repository\letsrace\scripts\observability\` | Node-based observability tooling (currently **disabled** in the nightly runner; retained for future incremental reintroduction). |
+| **scripts/AWS/run-macro-and-shutdown v2.bat** | `driveRoot\Repository\letsrace\scripts\AWS\run-macro-and-shutdown v2.bat` | **Primary nightly entry point.** Runs the BC + CTT macros via Chrome + UI.Vision and then shuts the machine down. |
+| **scripts/AWS/run-macros-only.bat** (optional) | Same path | Testing BAT that runs the macros only (no shutdown). Uses the same robust completion detection as the nightly BAT. |
 
 **On Google Drive, ensure these folders exist** (or they will be created when the script runs):
 
@@ -95,7 +91,6 @@ Copy the repo (or the observability + AWS script folders) to the **mapped Google
 
 **Requirements on EC2:**
 
-- **Node.js** (e.g. version 14 or higher) installed and on the PATH.
 - **Google Drive** mapped (e.g. as `H:` or `G:`) and available when the scheduled task runs. If the task runs at boot, add a short delay so the Drive is mounted before the script starts.
 
 ### Google Apps Script (GAS)
@@ -124,8 +119,8 @@ Copy the repo (or the observability + AWS script folders) to the **mapped Google
 1. **Edit `scripts/observability/config.js`**  
    Set `DRIVE_ROOT` to your mapped Drive path (e.g. `H:\My Drive\Clients\LetsRace` or `G:\My Drive\Clients\LetsRace`). The derived paths (NightlyLogs, UIVision, repo root) will then point at the correct folders on Drive.
 
-2. **Point the scheduler at the BAT (final orchestration).**  
-   The BAT runs BC + CTT macros via Chrome/UI.Vision, calls the Node summarizer, then shuts the machine down. Chrome and UI.Vision **must run in an interactive user session** (they do not work when the task runs in the background with “Run whether user is logged on or not”). Use **auto-logon** plus a task that runs **only when the user is logged on**, and **launch the BAT via `cmd.exe`** so the console and Chrome window are visible.
+2. **Point the scheduler at the BAT (BAT-only runner).**  
+   The BAT runs BC + CTT macros via Chrome/UI.Vision and then shuts the machine down. Chrome and UI.Vision **must run in an interactive user session** (they do not work when the task runs in the background with “Run whether user is logged on or not”). Use **auto-logon** plus a task that runs **only when the user is logged on**, and **launch the BAT via `cmd.exe`** so the console and Chrome window are visible.
 
    **Windows Task Scheduler – EC2 with auto-logon (recommended):**  
    Enable Windows auto-logon for the Administrator (or the user that has H: and Chrome). Then create a task in **Task Scheduler → Create Task** (not “Create Basic Task”):
@@ -153,13 +148,11 @@ Copy the repo (or the observability + AWS script folders) to the **mapped Google
 
    **Account:** The task must run as the same user that is auto-logged on (e.g. Administrator). That user must have Google Drive (H:) and Chrome + UI.Vision configured.
 
-3. **Paths for logs and datasources.**  
-   They come from **config.js** by default. You only need env vars or CLI args if you want to override:
-   - `LETSRACE_LOG_DIR`, `LETSRACE_REPO_ROOT`, `LETSRACE_DATASOURCES_PATH` (env), or
-   - `--log-dir`, `--repo-root`, `--datasources-path` (CLI).
-
-4. **Optional: no shutdown for testing (advanced / Node orchestrator mode).**  
-   If you instead schedule `example-nightly-run.js` directly (full orchestrator mode), you can pass `--no-shutdown` in the scheduler arguments to skip the shutdown command while still writing the observability log.
+3. **Logs and datasources.**  
+   Use these Drive locations when troubleshooting:
+   - `H:\My Drive\Clients\LetsRace\NightlyLogs\macro-log.txt`
+   - `H:\My Drive\Clients\LetsRace\UIVision\logs\log-*.txt`
+   - `H:\My Drive\Clients\LetsRace\UIVision\datasources\event_data*.csv` and `ctt_event_data*.csv`
 
 ### Google Apps Script
 
@@ -173,11 +166,10 @@ No updates are required for observability v1. Keep copying the macro JSON files 
 
 ## 3. Quick checklist
 
-- [ ] Node.js (≥ 14) installed on EC2.
 - [ ] Repo on **Google Drive** at the path used in config (e.g. `H:\My Drive\Clients\LetsRace\Repository\letsrace`).
 - [ ] **config.js** edited so `DRIVE_ROOT` matches your Drive mount (e.g. `H:\My Drive\Clients\LetsRace`).
 - [ ] Google Drive mapped and available when the task runs (add startup delay if the task runs at boot).
-- [ ] Scheduler runs `node "...\scripts\observability\example-nightly-run.js"` with the **Drive path** to the script.
+- [ ] Scheduler runs `...\scripts\AWS\run-macro-and-shutdown v2.bat` with the **Drive path** to the script.
 - [ ] Scheduler “Start in” = repo root on Drive (same as `config.repoRoot`).
 - [ ] GAS and UIVision: no changes; continue copying from repo as usual.
 
