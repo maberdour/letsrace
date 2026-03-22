@@ -78,6 +78,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "682ac8ae",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-04-22",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49706-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
     "id": "d335e7ed",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 1",
     "type": "Time Trial",
@@ -232,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333388/orton-10-mile-time-trial-2026---scotland-north-tt-series",
     "source": "Google Sheet",
     "last_updated": "2026-03-12T03:15:27.000Z"
+  },
+  {
+    "id": "713ac841",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49712-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
     "id": "0f751adc",
@@ -442,6 +468,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "3beeff9e",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-06-30",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49714-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
     "id": "bdec9f25",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -583,6 +622,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45741-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "5a916ec7",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-07-28",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49716-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
     "id": "fa7bc8bb",
@@ -739,6 +791,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45755-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "4903b981",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49718-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
     "id": "42fc3cb8",
