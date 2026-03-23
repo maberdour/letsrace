@@ -2,7 +2,7 @@
   "disciplines": {
     "road": {
       "name": "Road",
-      "count": 169
+      "count": 170
     },
     "track": {
       "name": "Track",
@@ -26,13 +26,13 @@
     },
     "time-trial": {
       "name": "Time Trial",
-      "count": 70
+      "count": 75
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 163
+      "count": 165
     }
   },
-  "last_build": "2026-03-23T04:09:19.071Z",
-  "total_events": 675
+  "last_build": "2026-03-23T09:23:18.668Z",
+  "total_events": 683
 }

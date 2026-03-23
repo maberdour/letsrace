@@ -1469,6 +1469,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "a4ca6da9",
+    "name": "West Midlands Youth Series 2026 Round 5 - Hosted by WFCC and WSJCC",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Stourport Sports Club, Worcestershire",
+    "postcode": null,
+    "date": "2026-06-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332767/west-midlands-youth-series-2026-round-5---hosted-by-wfcc-and-wsjcc",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:22:51.000Z"
+  },
+  {
     "id": "16e7ccfb",
     "name": "Dulwich Paragon CC Crystal Palace Crits: Race 9 (all ages)",
     "type": "Road",
