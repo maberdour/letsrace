@@ -2,11 +2,11 @@
   "disciplines": {
     "road": {
       "name": "Road",
-      "count": 169
+      "count": 171
     },
     "track": {
       "name": "Track",
-      "count": 100
+      "count": 147
     },
     "bmx": {
       "name": "BMX",
@@ -30,9 +30,9 @@
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 165
+      "count": 167
     }
   },
-  "last_build": "2026-03-24T04:09:25.360Z",
-  "total_events": 680
+  "last_build": "2026-03-24T10:47:20.547Z",
+  "total_events": 731
 }
