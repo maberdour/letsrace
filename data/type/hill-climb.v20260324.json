@@ -117,6 +117,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "96610d59",
+    "name": "Rundlestone Hill Climb",
+    "type": "Hill Climb",
+    "region": "South West",
+    "venue": "Devon | 1.8 miles | Rundlestone",
+    "postcode": null,
+    "date": "2026-06-25",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50352-rundlestone-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:23:07.000Z"
+  },
+  {
     "id": "9d12ba55",
     "name": "Scrabster Hill Climb",
     "type": "Hill Climb",
@@ -429,6 +442,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "f07d4dcc",
+    "name": "HRC Hill Climb - Round 21",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "West Sussex | 1 miles | PHC91 | Knights Hill",
+    "postcode": null,
+    "date": "2026-08-25",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49654-hrc-hill-climb-round-21",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
     "id": "127701d3",
     "name": "Fife Midweek 19 - Hill Climb",
     "type": "Hill Climb",
@@ -494,11 +520,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fb33df4b",
+    "id": "d8d7bda7",
     "name": "Farnham RC Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1 miles | HHC018 | Brockham Hill",
+    "venue": "Hampshire | 1 miles | HHC018 | Not Active",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "00:00",
@@ -598,6 +624,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "78b043ba",
+    "name": "Merthyr CC Club 0.7",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "Merthyr Tydfil County Borough | 2.5 miles | RCHC/23P | Vaynor Rd - Pontsticill",
+    "postcode": null,
+    "date": "2026-09-02",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50350-merthyr-cc-club-0-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:23:07.000Z"
+  },
+  {
     "id": "c637c6fa",
     "name": "Shropshire CCA Club Hill Climb",
     "type": "Hill Climb",
@@ -676,11 +715,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "7087f1da",
+    "id": "9a7ce7fd",
     "name": "Farnborough & Camberley CC Club Hill Climb TT",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1672 yards | HHC018a | Brockham Hill Climb (Holybourne)",
+    "venue": "Hampshire | 1672 yards | HHC018a",
     "postcode": null,
     "date": "2026-09-05",
     "start_time": "00:00",
@@ -741,6 +780,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "49527bac",
+    "name": "Sychnant Pass Hill Climb Hill Climb",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "Conwy Principal Area | 1003 yards | D600/5 | Sychnant Pass Hill Climb",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50075-sychnant-pass-hill-climb-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
     "id": "63764096",
     "name": "UH23 The Ridge Hill Climb",
     "type": "Hill Climb",
@@ -754,11 +806,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "7e73510c",
+    "id": "1f97fe56",
     "name": "Watership Down Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 845 yards | HHC009 | Watership Down",
+    "venue": "Hampshire | 845 yards | HHC009",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "00:00",
@@ -962,11 +1014,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "635ea4e2",
+    "id": "dc0a152b",
     "name": "Streatley Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Berkshire | 880 yards | HHC005 | Streatley Hill",
+    "venue": "Berkshire | 880 yards | HHC005",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "00:00",
@@ -1157,11 +1209,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "239708a2",
+    "id": "24619d36",
     "name": "Walbury Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Berkshire | 1.2 miles | HHC020A | Walbury Hill",
+    "venue": "Berkshire | 1.2 miles | HHC020A",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "00:00",
@@ -1181,6 +1233,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/48262-winwood-heath-road-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-03-05T08:44:32.000Z"
+  },
+  {
+    "id": "e6a8642a",
+    "name": "Droitwich Cycling Club Club Hillclimb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Worcestershire | 1 miles | KH43",
+    "postcode": null,
+    "date": "2026-09-22",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50108-droitwich-cycling-club-club-hillclimb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
     "id": "ccc8fe56",
@@ -1534,11 +1599,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "53a367db",
+    "id": "7c1e15ba",
     "name": "North Hampshire RC Club Sydmonton Hil climb 0.5 Miles",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 845 yards | HHC009 | Watership Down",
+    "venue": "Hampshire | 845 yards | HHC009",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "00:00",
@@ -1690,11 +1755,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "14c3edce",
+    "id": "4186bf34",
     "name": "HHC050 Brightstone Lane Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1531 yards | HHC050 | HHC050 Brightstone Lane",
+    "venue": "Hampshire | 1531 yards | HHC050",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "00:00",
@@ -1911,11 +1976,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fc3c8225",
+    "id": "b7411bf3",
     "name": "Whiteleaf Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Buckinghamshire | 1408 yards | HHC036 | Whiteleaf",
+    "venue": "Buckinghamshire | 1408 yards | HHC036",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "00:00",
