@@ -1,122 +1,5 @@
 [
   {
-    "id": "8963d17d",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-03-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329634/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "4d7dac00",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-03-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330504/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "28745383",
-    "name": "British Cycling Swinley Forest MTB Cluster #3",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "The Summit",
-    "postcode": null,
-    "date": "2026-03-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330990/british-cycling-swinley-forest-mtb-cluster-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-10T03:15:26.000Z"
-  },
-  {
-    "id": "f8bad0f4",
-    "name": "100 Percent Mini Downhill March 2026",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2026-03-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331817/100-percent-mini-downhill-march-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
-  },
-  {
-    "id": "a0a6294f",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-03-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329954/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "1b878e60",
-    "name": "Crank-It Lee Quarry Classic XCO 2026 (Cancelled)",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Lee Quarry, Lancashire",
-    "postcode": null,
-    "date": "2026-03-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330556/crank-it-lee-quarry--classic-xco-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-19T03:15:26.000Z"
-  },
-  {
-    "id": "7c4dac83",
-    "name": "Crickley Flyers Go-Ride Race Series Round 1",
-    "type": "MTB",
-    "region": "South",
-    "venue": "417 Bike Park, Gloucester",
-    "postcode": null,
-    "date": "2026-03-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329536/crickley-flyers-go-ride-race-series-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "e7bd9597",
-    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 2. Wonderland.",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Stile Cop, Staffordshire",
-    "postcode": null,
-    "date": "2026-03-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332608/racers-guild-racing---works-components-super-cup-26-round-2-wonderland",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-24T03:15:24.000Z"
-  },
-  {
-    "id": "983bb44a",
-    "name": "SouthernXC Round 1 - Matterley",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Matterley Basin, Winchester",
-    "postcode": null,
-    "date": "2026-03-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332189/southernxc-round-1---matterley",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-14T03:15:25.000Z"
-  },
-  {
     "id": "89ebb0ba",
     "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #148",
     "type": "MTB",
@@ -338,6 +221,19 @@
     "last_updated": "2026-02-14T03:15:25.000Z"
   },
   {
+    "id": "f300d21b",
+    "name": "SWXC 2026 Round 1",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2026-04-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333711/swxc-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "55a53a04",
     "name": "ERC Go Ride Dirt Crit",
     "type": "MTB",
@@ -416,11 +312,11 @@
     "last_updated": "2026-03-17T03:15:26.000Z"
   },
   {
-    "id": "afe839d9",
+    "id": "401757a2",
     "name": "SXC Series 2026: Round 1 - Tarland Trails",
     "type": "MTB",
     "region": "Scotland",
-    "venue": "Tarland Trails, Aberdeenshire",
+    "venue": "Tarland Trails, Tarland",
     "postcode": null,
     "date": "2026-04-26",
     "start_time": "00:00",
@@ -546,6 +442,45 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "ea871f4f",
+    "name": "Beast go ride",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Hamsterley Forest, County Durham",
+    "postcode": null,
+    "date": "2026-05-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333485/beast-go-ride-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
+    "id": "ea871f4f",
+    "name": "Beast go ride",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Hamsterley Forest, County Durham",
+    "postcode": null,
+    "date": "2026-05-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333485/beast-go-ride-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
+    "id": "c28887b3",
+    "name": "MTB Short Track Showdown Rd1",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333347/mtb-short-track-showdown-rd1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "cf8d5ad2",
     "name": "B-BUDDIES Off-Road TT 3",
     "type": "MTB",
@@ -598,6 +533,19 @@
     "last_updated": "2026-03-06T10:43:30.000Z"
   },
   {
+    "id": "a8f2f3ee",
+    "name": "SWXC 2026 Round 2 - incorporating SW Regional Champs",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Grammarcombe Woods, Devon",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333712/swxc-2026-round-2---incorporating-sw-regional-champs-",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
+  },
+  {
     "id": "925bfa00",
     "name": "Welsh XC Series 2026 powered by DualFuel - Round 2 Dare Valley",
     "type": "MTB",
@@ -622,6 +570,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331563/welsh-xc-series-2026-powered-by-dualfuel---round-2-dare-valley",
     "source": "Google Sheet",
     "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "d6cdf862",
+    "name": "Midweek MTB Madness 2026 - Lee Quarry, Rossendale",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Lee Quarry, Lancashire",
+    "postcode": null,
+    "date": "2026-05-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333345/midweek-mtb-madness-2026---lee-quarry-rossendale",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:34.000Z"
+  },
+  {
+    "id": "70c07de7",
+    "name": "MTB Short Track Showdown Rd2",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333348/mtb-short-track-showdown-rd2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
   },
   {
     "id": "a25fe123",
@@ -741,8 +715,8 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
-    "id": "ed61a766",
-    "name": "British Cycling Swinley Forest MTB Cluster #5",
+    "id": "5b57057d",
+    "name": "British Cycling Swinley Forest MTB Cluster #5 (Cancelled)",
     "type": "MTB",
     "region": "Central",
     "venue": "The Summit",
@@ -817,6 +791,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332680/welsh-xc-series-2026-powered-by-dualfuel---round-3-builth-wells",
     "source": "Google Sheet",
     "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "71b5895b",
+    "name": "MTB Short Track Showdown Rd3",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-06-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333349/mtb-short-track-showdown-rd3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-20T09:16:04.000Z"
   },
   {
     "id": "7d853918",
@@ -1001,15 +988,15 @@
     "last_updated": "2026-01-27T03:15:28.000Z"
   },
   {
-    "id": "df152b83",
-    "name": "Stockport World Series Round 3",
+    "id": "a2a83ef5",
+    "name": "Stockport World Series Round 3 Incorporating Welsh DH Champs 2026",
     "type": "MTB",
     "region": "﻿Wales",
     "venue": "Revolution Bike Park, Oswestry",
     "postcode": null,
     "date": "2026-06-21",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331511/stockport-world-series-round-3",
+    "url": "https://www.britishcycling.org.uk/events/details/331511/stockport-world-series-round-3-incorporating-welsh-dh-champs-2026",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
@@ -1053,8 +1040,8 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
-    "id": "bd2b930c",
-    "name": "British Cycling Swinley Forest MTB Cluster #6",
+    "id": "e5832d8b",
+    "name": "British Cycling Swinley Forest MTB Cluster #6 (Cancelled)",
     "type": "MTB",
     "region": "Central",
     "venue": "The Summit",

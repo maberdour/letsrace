@@ -78,6 +78,32 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "682ac8ae",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-04-22",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49706-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
+    "id": "c2962f6c",
+    "name": "Pembrokeshire Velo Club 10 Round 1",
+    "type": "Time Trial",
+    "region": "Wales",
+    "venue": "Pembrokeshire | 10 miles | RC10/21B",
+    "postcode": null,
+    "date": "2026-04-22",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50490-pembrokeshire-velo-club-10-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:23:07.000Z"
+  },
+  {
     "id": "d335e7ed",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 1",
     "type": "Time Trial",
@@ -234,6 +260,19 @@
     "last_updated": "2026-03-12T03:15:27.000Z"
   },
   {
+    "id": "713ac841",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49712-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
     "id": "0f751adc",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 3",
     "type": "Time Trial",
@@ -310,6 +349,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/43266-goodwood-time-trial-league",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "3ea6b26e",
+    "name": "Pembrokeshire Velo Club 10 Round 2",
+    "type": "Time Trial",
+    "region": "Wales",
+    "venue": "Pembrokeshire | 10 miles | RC10/21B",
+    "postcode": null,
+    "date": "2026-05-27",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50492-pembrokeshire-velo-club-10-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:23:07.000Z"
   },
   {
     "id": "771c314e",
@@ -390,6 +442,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "c06e25a6",
+    "name": "Pembrokeshire Velo Club 10 Round 3",
+    "type": "Time Trial",
+    "region": "Wales",
+    "venue": "Pembrokeshire | 10 miles | RC10/21B",
+    "postcode": null,
+    "date": "2026-06-17",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50494-pembrokeshire-velo-club-10-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:23:07.000Z"
+  },
+  {
     "id": "4994af91",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 5",
     "type": "Time Trial",
@@ -440,6 +505,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46316-goodwood-tt-league-incorporating-the-vtta-southern-closed-circuit-championship",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "3beeff9e",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-06-30",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49714-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
     "id": "bdec9f25",
@@ -546,6 +624,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "4fdbd6e1",
+    "name": "Pembrokeshire Velo Club 10 Round 4",
+    "type": "Time Trial",
+    "region": "Wales",
+    "venue": "Pembrokeshire | 10 miles | RC10/21B",
+    "postcode": null,
+    "date": "2026-07-15",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50496-pembrokeshire-velo-club-10-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:23:07.000Z"
+  },
+  {
     "id": "96456671",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 7",
     "type": "Time Trial",
@@ -583,6 +674,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45741-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "5a916ec7",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-07-28",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49716-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
     "id": "fa7bc8bb",
@@ -739,6 +843,32 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45755-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "4903b981",
+    "name": "Andover Wheelers Club 10",
+    "type": "Time Trial",
+    "region": "South",
+    "venue": "Hampshire | 10 miles | Pthruxton 10",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49718-andover-wheelers-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
+    "id": "31473cd8",
+    "name": "Pembrokeshire Velo Club 10 Round 5",
+    "type": "Time Trial",
+    "region": "Wales",
+    "venue": "Pembrokeshire | 10 miles | RC10/21B",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50498-pembrokeshire-velo-club-10-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-23T09:23:07.000Z"
   },
   {
     "id": "42fc3cb8",
