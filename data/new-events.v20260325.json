@@ -144,6 +144,19 @@
       "last_updated": "2026-03-18T17:39:48.000Z"
     },
     {
+      "id": "859fb45b",
+      "name": "Bynea Cycling Club Hill Climb Championship",
+      "type": "Hill Climb",
+      "region": "Wales",
+      "venue": "2 miles | RCHC/21T",
+      "postcode": null,
+      "date": "2026-08-14",
+      "start_time": "00:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/49825-bynea-cycling-club-hill-climb-championship",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-18T17:39:48.000Z"
+    },
+    {
       "id": "f07d4dcc",
       "name": "HRC Hill Climb - Round 21",
       "type": "Hill Climb",
@@ -1119,6 +1132,19 @@
       "last_updated": "2026-03-24T10:47:10.000Z"
     },
     {
+      "id": "cc2b2681",
+      "name": "Epsom CC Club Hill Climb",
+      "type": "Hill Climb",
+      "region": "London & South East",
+      "venue": "1 miles | GH/41",
+      "postcode": null,
+      "date": "2026-08-18",
+      "start_time": "00:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/50073-epsom-cc-club-hill-climb",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-24T10:47:10.000Z"
+    },
+    {
       "id": "1411ef41",
       "name": "Crawley Wheelers Hill Climb",
       "type": "Hill Climb",
@@ -1130,9 +1156,100 @@
       "url": "https://www.cyclingtimetrials.org.uk/events/49761-crawley-wheelers-hill-climb",
       "source": "Google Sheet",
       "last_updated": "2026-03-24T10:47:10.000Z"
+    },
+    {
+      "id": "e6fc23bf",
+      "name": "Friday Night Track League 2026",
+      "type": "Track",
+      "region": "West Midlands",
+      "venue": "Halesowen A&CC, West Midlands",
+      "postcode": null,
+      "date": "2026-06-05",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/334021/friday-night-track-league-2026",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-25T10:12:31.000Z"
+    },
+    {
+      "id": "4199cbb9",
+      "name": "NE XCMTB 2026 Round 1",
+      "type": "MTB",
+      "region": "North East",
+      "venue": "Hetton Lyons Country Park, Tyne and Wear",
+      "postcode": null,
+      "date": "2026-04-18",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/333714/ne-xcmtb-2026-round-1",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-25T10:12:31.000Z"
+    },
+    {
+      "id": "d88c0df1",
+      "name": "NE XCMTB 2026 Round 2",
+      "type": "MTB",
+      "region": "North East",
+      "venue": "Hamsterley Forest, Hamsterley",
+      "postcode": null,
+      "date": "2026-05-30",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/333715/ne-xcmtb-2026-round-2",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-25T10:12:31.000Z"
+    },
+    {
+      "id": "60729819",
+      "name": "NE XCMTB 2026 Round 3",
+      "type": "MTB",
+      "region": "North East",
+      "venue": "Gallagher Park, Northumberland",
+      "postcode": null,
+      "date": "2026-06-06",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/333716/ne-xcmtb-2026-round-3",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-25T10:12:31.000Z"
+    },
+    {
+      "id": "c2330fec",
+      "name": "NE XCMTB 2026 Round 4",
+      "type": "MTB",
+      "region": "North East",
+      "venue": "Gypsies Green, Tyne and Wear",
+      "postcode": null,
+      "date": "2026-06-12",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/333717/ne-xcmtb-2026-round-4",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-25T10:12:31.000Z"
+    },
+    {
+      "id": "64c347cc",
+      "name": "NE XCMTB 2026 Round 5",
+      "type": "MTB",
+      "region": "North East",
+      "venue": "Hamsterley Forest, Hamsterley",
+      "postcode": null,
+      "date": "2026-06-27",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/333718/ne-xcmtb-2026-round-5",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-25T10:12:31.000Z"
+    },
+    {
+      "id": "4bac7c79",
+      "name": "Lincoln Wheelers CC Club Hillclimb",
+      "type": "Hill Climb",
+      "region": "East Midlands",
+      "venue": "Lincolnshire | 669 yards | CLWHC/1 | Coleby Hill Climb",
+      "postcode": null,
+      "date": "2026-07-16",
+      "start_time": "00:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/48076-lincoln-wheelers-cc-club-hillclimb",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-25T10:12:43.000Z"
     }
   ],
-  "last_build": "2026-03-25T04:09:25.697Z",
-  "total_new_events": 87,
+  "last_build": "2026-03-25T10:16:24.067Z",
+  "total_new_events": 96,
   "cutoff_date": "2026-03-18"
 }

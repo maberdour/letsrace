@@ -6,7 +6,7 @@
     },
     "track": {
       "name": "Track",
-      "count": 146
+      "count": 147
     },
     "bmx": {
       "name": "BMX",
@@ -14,7 +14,7 @@
     },
     "mtb": {
       "name": "MTB",
-      "count": 125
+      "count": 130
     },
     "cyclo-cross": {
       "name": "Cyclo Cross",
@@ -30,9 +30,9 @@
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 167
+      "count": 170
     }
   },
-  "last_build": "2026-03-25T04:09:25.745Z",
-  "total_events": 729
+  "last_build": "2026-03-25T10:16:24.068Z",
+  "total_events": 738
 }

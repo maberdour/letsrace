@@ -195,6 +195,19 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
+    "id": "4bac7c79",
+    "name": "Lincoln Wheelers CC Club Hillclimb",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "Lincolnshire | 669 yards | CLWHC/1 | Coleby Hill Climb",
+    "postcode": null,
+    "date": "2026-07-16",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/48076-lincoln-wheelers-cc-club-hillclimb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-25T10:12:43.000Z"
+  },
+  {
     "id": "a0ce346a",
     "name": "Pendle Forest CC Club 1.8",
     "type": "Hill Climb",
@@ -325,6 +338,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "859fb45b",
+    "name": "Bynea Cycling Club Hill Climb Championship",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "2 miles | RCHC/21T",
+    "postcode": null,
+    "date": "2026-08-14",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49825-bynea-cycling-club-hill-climb-championship",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
     "id": "1f4ac662",
     "name": "Birmingham Midland Cycling Club Hill Climb",
     "type": "Hill Climb",
@@ -336,6 +362,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/49565-birmingham-midland-cycling-club-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T08:31:13.000Z"
+  },
+  {
+    "id": "cc2b2681",
+    "name": "Epsom CC Club Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "1 miles | GH/41",
+    "postcode": null,
+    "date": "2026-08-18",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50073-epsom-cc-club-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-24T10:47:10.000Z"
   },
   {
     "id": "2f240415",

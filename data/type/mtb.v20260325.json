@@ -195,6 +195,19 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "4199cbb9",
+    "name": "NE XCMTB 2026 Round 1",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Hetton Lyons Country Park, Tyne and Wear",
+    "postcode": null,
+    "date": "2026-04-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333714/ne-xcmtb-2026-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-25T10:12:31.000Z"
+  },
+  {
     "id": "7524f162",
     "name": "Lloyds National 4X Series Round 2",
     "type": "MTB",
@@ -728,6 +741,19 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "d88c0df1",
+    "name": "NE XCMTB 2026 Round 2",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Hamsterley Forest, Hamsterley",
+    "postcode": null,
+    "date": "2026-05-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333715/ne-xcmtb-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-25T10:12:31.000Z"
+  },
+  {
     "id": "f565cef7",
     "name": "SDA Series 2026 Round 2 (Ae Forest)",
     "type": "MTB",
@@ -832,6 +858,19 @@
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
+    "id": "60729819",
+    "name": "NE XCMTB 2026 Round 3",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Gallagher Park, Northumberland",
+    "postcode": null,
+    "date": "2026-06-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333716/ne-xcmtb-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-25T10:12:31.000Z"
+  },
+  {
     "id": "0cfc0b5d",
     "name": "Focus Rides XC round 2 Walesby Forest",
     "type": "MTB",
@@ -882,6 +921,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332873/b-buddies-off-road-tt-5",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "c2330fec",
+    "name": "NE XCMTB 2026 Round 4",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Gypsies Green, Tyne and Wear",
+    "postcode": null,
+    "date": "2026-06-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333717/ne-xcmtb-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-25T10:12:31.000Z"
   },
   {
     "id": "ff34786a",
@@ -1064,6 +1116,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330466/lloyds-national-downhill-series-2026-round-3---glencoe",
     "source": "Google Sheet",
     "last_updated": "2025-12-19T03:15:33.000Z"
+  },
+  {
+    "id": "64c347cc",
+    "name": "NE XCMTB 2026 Round 5",
+    "type": "MTB",
+    "region": "North East",
+    "venue": "Hamsterley Forest, Hamsterley",
+    "postcode": null,
+    "date": "2026-06-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333718/ne-xcmtb-2026-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-25T10:12:31.000Z"
   },
   {
     "id": "74bddf54",
