@@ -78,6 +78,32 @@
     "last_updated": "2026-03-06T03:15:24.000Z"
   },
   {
+    "id": "d14f15ae",
+    "name": "British Cycling Pathway BMX SX RSR #1 North 2026",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334022/british-cycling-pathway-bmx-sx-rsr-1-north-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-26T15:53:47.000Z"
+  },
+  {
+    "id": "d14f15ae",
+    "name": "British Cycling Pathway BMX SX RSR #1 North 2026",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2026-04-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334022/british-cycling-pathway-bmx-sx-rsr-1-north-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-26T15:53:47.000Z"
+  },
+  {
     "id": "090d768f",
     "name": "BMX East Summer Series 2026 Round 2",
     "type": "BMX",
@@ -102,6 +128,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/332824/lloyds-bmx-national-series-2026-round-1--2---manchester-indoor",
     "source": "Google Sheet",
     "last_updated": "2026-03-07T03:15:25.000Z"
+  },
+  {
+    "id": "3ee18f6c",
+    "name": "British Cycling Pathway BMX SX RSR #1 South West 2026..",
+    "type": "BMX",
+    "region": "South West",
+    "venue": "Exeter BMX Track, Devon",
+    "postcode": null,
+    "date": "2026-04-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334025/british-cycling-pathway-bmx-sx-rsr-1-south-west-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-26T15:53:47.000Z"
+  },
+  {
+    "id": "3ee18f6c",
+    "name": "British Cycling Pathway BMX SX RSR #1 South West 2026..",
+    "type": "BMX",
+    "region": "South West",
+    "venue": "Exeter BMX Track, Devon",
+    "postcode": null,
+    "date": "2026-04-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334025/british-cycling-pathway-bmx-sx-rsr-1-south-west-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-26T15:53:47.000Z"
   },
   {
     "id": "508b7014",
