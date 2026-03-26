@@ -11,6 +11,7 @@ set "START_EPOCH=%~3"
 if "%MACRO_FILE%"=="" endlocal & exit /b 2
 if "%MAX_WAIT%"=="" set "MAX_WAIT=120"
 if "%START_EPOCH%"=="" endlocal & exit /b 2
+set "DONE_REASON="
 
 if /I "%LETSRACE_SKIP_UIVISION_LOG_CHECK%"=="1" (
   timeout /t %MAX_WAIT% >nul
@@ -48,11 +49,17 @@ if exist "%UIVISION_LOG_DIR%" (
     "  }" ^
     "  exit 3" ^
     "} catch { exit 4 }"
-  if not errorlevel 1 goto :waitdone
+  if not errorlevel 1 (
+    set "DONE_REASON=LOG_DONE"
+    goto :waitdone
+  )
 )
 
 tasklist /FI "IMAGENAME eq chrome.exe" 2>NUL | find /I "chrome.exe" >NUL
-if errorlevel 1 goto :waitdone
+if errorlevel 1 (
+  set "DONE_REASON=CHROME_EXIT"
+  goto :waitdone
+)
 
 timeout /t !POLL! >nul
 set /a elapsed+=!POLL!

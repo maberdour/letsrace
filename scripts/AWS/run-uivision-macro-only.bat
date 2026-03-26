@@ -17,7 +17,7 @@ if "%MACRO_NAME%"=="" (
 )
 
 rem Chrome + profile
-set "CHROME_PROFILE_DIR=Profile 4"
+set "CHROME_PROFILE_DIR=Profile 1"
 if not "%LETSRACE_CHROME_PROFILE_DIR%"=="" set "CHROME_PROFILE_DIR=%LETSRACE_CHROME_PROFILE_DIR%"
 
 set "CHROME=C:\Program Files\Google\Chrome\Application\chrome.exe"
@@ -28,10 +28,10 @@ if not exist "%CHROME%" (
 )
 
 rem Paths
-set "CHROME_LOG_DIR=H:\My Drive\Clients\LetsRace\NightlyLogs\chrome"
+call "%~dp0macro-runner-paths.bat"
+set "_LRPATH_ERR=%ERRORLEVEL%"
+if not "%_LRPATH_ERR%"=="0" exit /b %_LRPATH_ERR%
 if not exist "%CHROME_LOG_DIR%" mkdir "%CHROME_LOG_DIR%" >nul 2>&1
-
-set "RUNNER=file:///H:/My Drive/Clients/LetsRace/UIVision/launcher/Run-UI.Vision-Macro.html"
 
 rem Wait time after launching macro (override for slower runs).
 set "TEST_WAIT_SECS=12"

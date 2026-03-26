@@ -14,5 +14,11 @@
       "Value": "",
       "Description": ""
     }
+    ,{
+      "Command": "store",
+      "Target": "5",
+      "Value": "!TIMEOUT_WAIT",
+      "Description": "Wait before exiting"
+    }
   ]
 }

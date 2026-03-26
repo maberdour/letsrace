@@ -6,7 +6,19 @@ alwaysApply: true
 
 # Observability & Automation Logs (H: Drive)
 
-When debugging anything related to nightly automation, macros, UI.Vision, CSV outputs, or “it crashed”, **do not ask the user to paste logs first**. Instead, inspect the latest files directly from the mapped Drive paths below.
+When debugging anything related to nightly automation, macros, UI.Vision, CSV outputs, or “it crashed”:
+
+## Non-negotiable for the agent
+
+- **Do not ask the user to check, open, paste, or attach logs** (or “the newest log file”) as a substitute for your own investigation. You have access to the H: paths below: read them with your tools (`Read`, `Grep`, `Glob`) first, every time.
+- **Do not tell the user to “verify in macro-log / UI.Vision logs”** unless you have already read those files yourself in this conversation and you need a *live* action only they can take (e.g. start a run while you re-read logs after). Even then, prefer re-reading the paths yourself on follow-up.
+- It is fine to **quote or summarize** what you found in logs; it is not fine to offload log discovery to the user.
+
+If a path is temporarily unreadable (environment), say so once and try alternatives (e.g. repo-side copies), still without asking the user to paste full logs.
+
+---
+
+Inspect the latest files directly from the mapped Drive paths below.
 
 ## Primary log locations (source of truth)
 
