@@ -1312,9 +1312,74 @@
       "url": "https://www.britishcycling.org.uk/events/details/333113/reading-tack-league---training-to-race",
       "source": "Google Sheet",
       "last_updated": "2026-03-28T03:15:25.000Z"
+    },
+    {
+      "id": "53e09893",
+      "name": "Malvern Cycle Sport Go-Ride Race April",
+      "type": "MTB",
+      "region": "West Midlands",
+      "venue": "Storridge Farm, Storridge",
+      "postcode": null,
+      "date": "2026-04-22",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/334081/malvern-cycle-sport-go-ride-race-april",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-31T07:30:06.000Z"
+    },
+    {
+      "id": "c8577c15",
+      "name": "Malvern Cycle Sport Go-Ride Race May",
+      "type": "MTB",
+      "region": "West Midlands",
+      "venue": "Storridge Farm, Storridge",
+      "postcode": null,
+      "date": "2026-05-20",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/334082/malvern-cycle-sport-go-ride-race-may",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-31T07:30:06.000Z"
+    },
+    {
+      "id": "dbfbca74",
+      "name": "Malvern Cycle Sport Go-Ride Race June",
+      "type": "MTB",
+      "region": "West Midlands",
+      "venue": "Storridge Farm, Storridge",
+      "postcode": null,
+      "date": "2026-06-24",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/334083/malvern-cycle-sport-go-ride-race-june",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-31T07:30:06.000Z"
+    },
+    {
+      "id": "2f58341e",
+      "name": "Malvern Cycle Sport Go-Ride Race July",
+      "type": "MTB",
+      "region": "West Midlands",
+      "venue": "Storridge Farm, Storridge",
+      "postcode": null,
+      "date": "2026-07-15",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/334084/malvern-cycle-sport-go-ride-race-july",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-31T07:30:06.000Z"
+    },
+    {
+      "id": "c7f9a6f1",
+      "name": "Ashurst Beacon Hill Climb Hill Climb",
+      "type": "Hill Climb",
+      "region": "North West",
+      "venue": "Lancashire | 1.7 miles | D11/0 | Ashurst Beacon Hill Climb",
+      "postcode": null,
+      "date": "2026-09-20",
+      "start_time": "00:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/50734-ashurst-beacon-hill-climb-hill-climb",
+      "source": "Google Sheet",
+      "last_updated": "2026-03-31T07:30:47.000Z"
     }
   ],
-  "last_build": "2026-03-31T03:09:14.521Z",
-  "total_new_events": 101,
+  "last_build": "2026-03-31T07:31:03.048Z",
+  "total_new_events": 106,
   "cutoff_date": "2026-03-24"
 }

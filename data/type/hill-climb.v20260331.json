@@ -585,11 +585,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "d8d7bda7",
+    "id": "5c328738",
     "name": "Farnham RC Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1 miles | HHC018 | Not Active",
+    "venue": "Hampshire | 1 miles | HHC018",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "00:00",
@@ -1155,6 +1155,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/41929-pea-royd-lane-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "c7f9a6f1",
+    "name": "Ashurst Beacon Hill Climb Hill Climb",
+    "type": "Hill Climb",
+    "region": "North West",
+    "venue": "Lancashire | 1.7 miles | D11/0 | Ashurst Beacon Hill Climb",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "00:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50734-ashurst-beacon-hill-climb-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-31T07:30:47.000Z"
   },
   {
     "id": "dcaeb044",

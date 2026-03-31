@@ -14,7 +14,7 @@
     },
     "mtb": {
       "name": "MTB",
-      "count": 129
+      "count": 133
     },
     "cyclo-cross": {
       "name": "Cyclo Cross",
@@ -30,9 +30,9 @@
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 170
+      "count": 171
     }
   },
-  "last_build": "2026-03-31T03:09:14.522Z",
-  "total_events": 747
+  "last_build": "2026-03-31T07:31:03.049Z",
+  "total_events": 752
 }
