@@ -2,27 +2,27 @@
   "disciplines": {
     "road": {
       "name": "Road",
-      "count": 170
+      "count": 162
     },
     "track": {
       "name": "Track",
-      "count": 147
+      "count": 154
     },
     "bmx": {
       "name": "BMX",
-      "count": 19
+      "count": 31
     },
     "mtb": {
       "name": "MTB",
-      "count": 130
+      "count": 136
     },
     "cyclo-cross": {
       "name": "Cyclo Cross",
-      "count": 14
+      "count": 13
     },
     "speedway": {
       "name": "Speedway",
-      "count": 13
+      "count": 11
     },
     "time-trial": {
       "name": "Time Trial",
@@ -30,9 +30,9 @@
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 170
+      "count": 171
     }
   },
-  "last_build": "2026-03-25T10:16:24.068Z",
-  "total_events": 738
+  "last_build": "2026-04-02T03:09:14.976Z",
+  "total_events": 753
 }
