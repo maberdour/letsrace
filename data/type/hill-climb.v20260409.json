@@ -910,6 +910,32 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
+    "id": "7cdf94a9",
+    "name": "Dambusters Club 17 - Round 13",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "Powys | 3.2 miles | RH54 - CWMDAUDDWR",
+    "postcode": null,
+    "date": "2026-09-10",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51435-dambusters-club-17-round-13",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-08T01:04:11.000Z"
+  },
+  {
+    "id": "118151ec",
+    "name": "Peachfield Road Hill Climb - Great Malvern Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Worcestershire | 1338 yards | KH48 | Peachfield Road Hill Climb - Great Malvern",
+    "postcode": null,
+    "date": "2026-09-10",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51501-peachfield-road-hill-climb-great-malvern-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-08T01:04:11.000Z"
+  },
+  {
     "id": "44055a77",
     "name": "Port Talbot Whs CC 2026 Club Hill Climb",
     "type": "Hill Climb",

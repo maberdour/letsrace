@@ -1,57 +1,5 @@
 [
   {
-    "id": "2e4cd48b",
-    "name": "PORTSMOUTH EASTER OPEN TRACK MEETING",
-    "type": "Track",
-    "region": "South",
-    "venue": "Mountbatten Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329928/portsmouth-easter-open-track-meeting",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-09T03:15:25.000Z"
-  },
-  {
-    "id": "17748fdb",
-    "name": "British Cycling North of England Go-Ride Track Cluster",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-04-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329506/british-cycling-north-of-england-go-ride-track-cluster",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "8997a534",
-    "name": "National Sprint Futures Series - Round 1 - Derby",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Velodrome, Derby",
-    "postcode": null,
-    "date": "2026-04-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332867/national-sprint-futures-series---round-1---derby",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-03T03:15:27.000Z"
-  },
-  {
-    "id": "23412663",
-    "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #1",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-04-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332940/british-cycling-pathway-development-centre---track-sprint-manchester-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-28T03:15:26.000Z"
-  },
-  {
     "id": "dbe05cfa",
     "name": "Condor Women's League - Round 1",
     "type": "Track",
@@ -468,6 +416,19 @@
     "last_updated": "2026-02-18T03:15:25.000Z"
   },
   {
+    "id": "3b844092",
+    "name": "Reading Track League #2",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-05-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334312/reading-track-league-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "81d4925e",
     "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #4",
     "type": "Track",
@@ -596,6 +557,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329930/omega-track-",
     "source": "Google Sheet",
     "last_updated": "2026-01-09T03:15:25.000Z"
+  },
+  {
+    "id": "8626f456",
+    "name": "Reading Track League #3",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-06-01",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334313/reading-track-league-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "65f33194",
@@ -741,6 +715,19 @@
     "last_updated": "2026-02-07T03:15:28.000Z"
   },
   {
+    "id": "990d56d2",
+    "name": "Reading Track League #4",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-06-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334314/reading-track-league-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "e37c5bcb",
     "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Endurance #5",
     "type": "Track",
@@ -791,6 +778,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329739/condor-womens-league---round-3",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "bcb7d64a",
+    "name": "Reading Track League #5",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-06-15",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334315/reading-track-league-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "b66f7751",
@@ -884,6 +884,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "ee539ce0",
+    "name": "Reading Track League #6",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-06-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334318/reading-track-league-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "4176a313",
     "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Endurance #6",
     "type": "Track",
@@ -949,6 +962,19 @@
     "last_updated": "2026-03-28T03:15:25.000Z"
   },
   {
+    "id": "b70dff83",
+    "name": "Reading Track League #7",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-06-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334319/reading-track-league-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "1b40d1e8",
     "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #7",
     "type": "Track",
@@ -999,6 +1025,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333760/welwyn-track-league-2026-10",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "ebe40413",
+    "name": "Reading Track League #8",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-07-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334320/reading-track-league-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "5f760761",
@@ -1118,6 +1157,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "cd3156e3",
+    "name": "Reading Track League #9",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-07-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334321/reading-track-league-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "50b72bac",
     "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #8",
     "type": "Track",
@@ -1196,6 +1248,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "086d32b9",
+    "name": "Reading Track League #10",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-07-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334322/reading-track-league-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "f5ceac83",
     "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Sprint and Endurance - Pre Tr",
     "type": "Track",
@@ -1246,6 +1311,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329937/omega-track-",
     "source": "Google Sheet",
     "last_updated": "2026-01-09T03:15:25.000Z"
+  },
+  {
+    "id": "6394b59f",
+    "name": "Reading Track League #11",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-07-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334323/reading-track-league-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "6a5e3ef5",
@@ -1313,6 +1391,19 @@
     "last_updated": "2026-03-09T19:50:15.000Z"
   },
   {
+    "id": "a53b2766",
+    "name": "Reading Track League #12",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-08-03",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334324/reading-track-league-12",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "7767bf28",
     "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Sprint and Endurance - Pre Tr",
     "type": "Track",
@@ -1378,6 +1469,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "4df0cef0",
+    "name": "Reading Track League #13",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-08-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334325/reading-track-league-13",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "e0a96642",
     "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #9",
     "type": "Track",
@@ -1441,6 +1545,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333765/welwyn-track-league-2026-15",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "d1e8da19",
+    "name": "Reading Track League #14",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-08-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334326/reading-track-league-14",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "126bdbf3",
@@ -1532,6 +1649,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329510/british-cycling-north-of-england-go-ride-track-cluster",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "c6a3eb6a",
+    "name": "Reading Track League #15",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-08-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334327/reading-track-league-15",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "a30ed3f6",
@@ -1664,6 +1794,19 @@
     "last_updated": "2026-01-07T03:15:54.000Z"
   },
   {
+    "id": "272a4f77",
+    "name": "Reading Track League #16",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-09-07",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334328/reading-track-league-16",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "d765c8ef",
     "name": "Convene Track League - Round 22",
     "type": "Track",
@@ -1714,6 +1857,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330866/monday-night-track-league-2026-round-14",
     "source": "Google Sheet",
     "last_updated": "2026-01-07T03:15:54.000Z"
+  },
+  {
+    "id": "149db54d",
+    "name": "Reading Track League #17",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-09-14",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334329/reading-track-league-17",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "44fe1974",
@@ -1779,6 +1935,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330867/monday-night-track-league-2026-round-15",
     "source": "Google Sheet",
     "last_updated": "2026-01-07T03:15:54.000Z"
+  },
+  {
+    "id": "f7e020c8",
+    "name": "Reading Track League #18",
+    "type": "Track",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-09-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334330/reading-track-league-18",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "ceafe2c8",

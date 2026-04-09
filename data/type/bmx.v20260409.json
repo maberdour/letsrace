@@ -1,44 +1,5 @@
 [
   {
-    "id": "75bb735e",
-    "name": "British Cycling Pathway BMX SX RSR #1 North 2026",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334022/british-cycling-pathway-bmx-sx-rsr-1-north-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-26T15:53:47.000Z"
-  },
-  {
-    "id": "75bb735e",
-    "name": "British Cycling Pathway BMX SX RSR #1 North 2026",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334022/british-cycling-pathway-bmx-sx-rsr-1-north-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-26T15:53:47.000Z"
-  },
-  {
-    "id": "40efdbc0",
-    "name": "BMX East Summer Series 2026 Round 2",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Ipswich BMX Track, IPSWICH",
-    "postcode": null,
-    "date": "2026-04-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334024/bmx-east-summer-series-2026-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-26T03:15:25.000Z"
-  },
-  {
     "id": "67a60f04",
     "name": "Lloyds BMX National Series 2026 Round 1 & 2 - Manchester Indoor",
     "type": "BMX",

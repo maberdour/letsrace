@@ -1,44 +1,5 @@
 [
   {
-    "id": "e1b9f33c",
-    "name": "Cotton Wood Easter Downhill",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Cotton Wood, Cornwall",
-    "postcode": null,
-    "date": "2026-04-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330935/cotton-wood-easter-downhill",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-13T03:15:25.000Z"
-  },
-  {
-    "id": "1c8788f2",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330153/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "d0c2f071",
-    "name": "Stockport World Series Round 1",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Farmer John's, Stockport",
-    "postcode": null,
-    "date": "2026-04-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331507/stockport-world-series-round-1-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
     "id": "bc28cf5d",
     "name": "Lloyds 2026 National MTB Cross Country Series Round 2",
     "type": "MTB",
@@ -182,6 +143,19 @@
     "last_updated": "2026-03-28T03:15:25.000Z"
   },
   {
+    "id": "c0edb04b",
+    "name": "Go Ride Racing - MTB North Wales Series - Round 1 - Nant BH (Dyffryn Conwy MTB Club)",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-04-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333660/go-ride-racing---mtb-north-wales-series---round-1---nant-bh-dyffryn-conwy-mtb-club",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-02T01:15:25.000Z"
+  },
+  {
     "id": "d329f834",
     "name": "Lloyds National 4X Series Round 2",
     "type": "MTB",
@@ -297,19 +271,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/334023/racers-guild-racing---works-components-super-cup-26-round-3-ridge-run",
     "source": "Google Sheet",
     "last_updated": "2026-03-26T03:15:25.000Z"
-  },
-  {
-    "id": "303ed2fe",
-    "name": "South West Club Cluster of Coaching - Circuit + MTB 4",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Wheal Jane Circuit, Cornwall",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330349/south-west-club-cluster-of-coaching---circuit--mtb-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "2bf96c1d",
@@ -676,6 +637,19 @@
     "last_updated": "2026-02-28T03:15:26.000Z"
   },
   {
+    "id": "f9e81aee",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #47",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-05-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334626/british-cycling-pathway-development-centre-gravity---forest-of-dean-47",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "61801bde",
     "name": "Lloyds National 4X Series Round 4",
     "type": "MTB",
@@ -700,6 +674,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332337/southernxc-round-3---basingstoke",
     "source": "Google Sheet",
     "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
+    "id": "ece64c77",
+    "name": "MV Bike Park Kids MTB Series 2026 - Round 2 Enduro",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Mountain View Bike Park, Rhondda Cynon Taf",
+    "postcode": null,
+    "date": "2026-05-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332659/mv-bike-park-kids-mtb-series-2026---round-2-enduro",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-02T01:15:25.000Z"
   },
   {
     "id": "dc0d614f",
@@ -884,6 +871,19 @@
     "last_updated": "2026-03-25T10:12:31.000Z"
   },
   {
+    "id": "2edeacd6",
+    "name": "Beicio Cymru Go-Ride Racing - MTB North Wales Series - Round 3 - Coed -y-Brenin (Dreigiau Coed y Bre",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Coed y Brenin Visitor Centre - Dolgellau, North Wales",
+    "postcode": null,
+    "date": "2026-06-07",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334678/beicio-cymru-go-ride-racing---mtb-north-wales-series---round-3---coed--y-brenin-dreigiau-coed-y-brenin",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-08T01:15:28.000Z"
+  },
+  {
     "id": "b1f4cc1a",
     "name": "Focus Rides XC round 2 Walesby Forest",
     "type": "MTB",
@@ -962,6 +962,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "c1971612",
+    "name": "Gravity Mini Rnd2 Llangollen",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Llangollen, Clwyd",
+    "postcode": null,
+    "date": "2026-06-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334736/gravity-mini-rnd2-llangollen",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "ebd7cb48",
     "name": "Lloyds 2026 National MTB Cross Country Series Round 4",
     "type": "MTB",
@@ -1027,6 +1040,19 @@
     "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
+    "id": "8d1f75af",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #48",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334627/british-cycling-pathway-development-centre-gravity---forest-of-dean-48",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "3ca65690",
     "name": "Lloyds National 4X Series Round 6",
     "type": "MTB",
@@ -1090,6 +1116,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334083/malvern-cycle-sport-go-ride-race-june",
     "source": "Google Sheet",
     "last_updated": "2026-03-31T07:30:06.000Z"
+  },
+  {
+    "id": "0eacf694",
+    "name": "MV Bike Park Kids MTB Series 2026 - Round 3 Downhill",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Mountain View Bike Park, Rhondda Cynon Taf",
+    "postcode": null,
+    "date": "2026-06-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332660/mv-bike-park-kids-mtb-series-2026---round-3-downhill",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-02T01:15:25.000Z"
   },
   {
     "id": "ce3feead",
