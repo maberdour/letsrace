@@ -1,174 +1,5 @@
 [
   {
-    "id": "5e700f42",
-    "name": "Castle Combe Good Friday Easter Classic 2026",
-    "type": "Road",
-    "region": "South",
-    "venue": "Castle Combe Race Circuit, Wiltshire",
-    "postcode": null,
-    "date": "2026-04-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329903/castle-combe-good-friday-easter-classic-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-24T03:15:24.000Z"
-  },
-  {
-    "id": "1dedc4f3",
-    "name": "Colin Lewis Grand Prix",
-    "type": "Road",
-    "region": "South West",
-    "venue": "Torbay Velopark, Devon",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330578/colin-lewis-grand-prix-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-22T03:15:25.000Z"
-  },
-  {
-    "id": "50231e0e",
-    "name": "Mossley CRT Limitless",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Tameside Cycle Circuit, Lancashire",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331477/mossley-crt-limitless-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
-  },
-  {
-    "id": "cd80b4c5",
-    "name": "North Wales Circuit Series 26 Round 1",
-    "type": "Road",
-    "region": "﻿Wales",
-    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331057/north-wales-circuit-series-26-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
-    "id": "fdb5a95d",
-    "name": "Ride Flux 2-Day",
-    "type": "Road",
-    "region": "﻿Wales",
-    "venue": "Royal Welsh Showground, Builth Wells",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332379/ride-flux-2-day",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-12T03:15:26.000Z"
-  },
-  {
-    "id": "6ff63ba1",
-    "name": "White Rose Youth League 2026 Round 1",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
-    "postcode": null,
-    "date": "2026-04-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332348/white-rose-youth-league-2026-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-09T19:50:15.000Z"
-  },
-  {
-    "id": "64137da4",
-    "name": "Girls Circuit Regional School of Racing Session - Stourport",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Stourport Sports Club, Worcestershire",
-    "postcode": null,
-    "date": "2026-04-06",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333343/girls-circuit-regional-school-of-racing-session---stourport",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-09T19:50:15.000Z"
-  },
-  {
-    "id": "31ccc854",
-    "name": "British Cycling Pathway Circuit RSR North and Midland Boys #2",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "Doncaster Dome Cycle Circuit, Doncaster",
-    "postcode": null,
-    "date": "2026-04-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333198/british-cycling-pathway-circuit-rsr-north-and-midland-boys-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-06T10:43:30.000Z"
-  },
-  {
-    "id": "f0a83c44",
-    "name": "Tameside Circuit Races 2026 R1",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Tameside Cycle Circuit, Lancashire",
-    "postcode": null,
-    "date": "2026-04-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333044/tameside-circuit-races-2026-r1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-13T08:56:02.000Z"
-  },
-  {
-    "id": "99124506",
-    "name": "City Crits Cardiff - Round 1",
-    "type": "Road",
-    "region": "Wales",
-    "venue": "Maindy Cycle Track - Cardiff, Wales",
-    "postcode": null,
-    "date": "2026-04-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332184/city-crits-cardiff---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-06T10:43:30.000Z"
-  },
-  {
-    "id": "7c98d9ee",
-    "name": "PORTSMOUTH EVENING CIRCUITS",
-    "type": "Road",
-    "region": "South",
-    "venue": "Mountbatten Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-04-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/293174/portsmouth-evening-circuits-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "10fc52df",
-    "name": "2026 Youth Tour of Scotland",
-    "type": "Road",
-    "region": "Scotland",
-    "venue": "Forteviot Village Hall, Perth",
-    "postcode": null,
-    "date": "2026-04-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331649/2026-youth-tour-of-scotland",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-27T03:15:28.000Z"
-  },
-  {
-    "id": "9b7f10ee",
-    "name": "Friday Handicap At the West Lothian Cycle Circuit",
-    "type": "Road",
-    "region": "﻿Scotland",
-    "venue": "West Lothian Cycle Circuit, West Lothian Leisure Centre, Scotland",
-    "postcode": null,
-    "date": "2026-04-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332828/friday-handicap-at-the-west-lothian-cycle-circuit-",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-07T03:15:25.000Z"
-  },
-  {
     "id": "e60423c8",
     "name": "Lawford Youth Series at Curborough 26 #2",
     "type": "Road",
@@ -273,6 +104,19 @@
     "last_updated": "2026-03-28T03:15:25.000Z"
   },
   {
+    "id": "fdb2f0c7",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 1",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-04-14",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334435/team-rl360-isle-of-man-youth-cycling-league-2026--1",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "f28fb36e",
     "name": "City Crits Cardiff - Round 2",
     "type": "Road",
@@ -364,6 +208,19 @@
     "last_updated": "2026-03-13T08:56:02.000Z"
   },
   {
+    "id": "0f6320d6",
+    "name": "SouthernXC Round 2 - Crow Hill",
+    "type": "Road",
+    "region": "South",
+    "venue": "Gaddens Close Farm, Ringwood",
+    "postcode": null,
+    "date": "2026-04-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331073/pne-mountbatten-circuit-series-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
     "id": "bbe1df43",
     "name": "West Midlands Youth Series 2026 Round 2 - Cycle Stars",
     "type": "Road",
@@ -414,6 +271,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332388/maindy-flyers-freewheel-league-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-02-17T03:15:24.000Z"
+  },
+  {
+    "id": "4ae53078",
+    "name": "Tameside Circuit Races 2026 R3",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-04-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333050/tameside-circuit-races-2026-r3",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
   },
   {
     "id": "77b0f4f7",
@@ -468,6 +338,19 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
+    "id": "4d39f405",
+    "name": "South West Club Cluster of Coaching - Circuit 4",
+    "type": "Road",
+    "region": "South West",
+    "venue": "Wheal Jane Circuit, Cornwall",
+    "postcode": null,
+    "date": "2026-04-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/330349/south-west-club-cluster-of-coaching---circuit-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
     "id": "3af31616",
     "name": "White Rose Youth League 2026 Round 2",
     "type": "Road",
@@ -518,6 +401,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/332389/maindy-flyers-freewheel-league-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-02-17T03:15:24.000Z"
+  },
+  {
+    "id": "a5eefa2a",
+    "name": "Tameside Circuit Races 2027 R4",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-04-28",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333051/tameside-circuit-races-2027-r4",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
+    "id": "76d8f96b",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 3",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-04-28",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334437/team-rl360-isle-of-man-youth-cycling-league-2026--3",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "6ae232ca",
@@ -702,6 +611,19 @@
     "last_updated": "2026-03-04T03:15:37.000Z"
   },
   {
+    "id": "d963f796",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 4",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-05-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334438/team-rl360-isle-of-man-youth-cycling-league-2026--4",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "66a220fa",
     "name": "PNE Mountbatten Circuit Series #2",
     "type": "Road",
@@ -830,6 +752,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331255/rcr-x-alta-via-goodwood-spring-series-2---garth-kruger-memorial-race",
     "source": "Google Sheet",
     "last_updated": "2026-04-02T01:15:25.000Z"
+  },
+  {
+    "id": "55b32392",
+    "name": "Tameside Circuit Races 2027 R6",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-05-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333053/tameside-circuit-races-2027-r6",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
+    "id": "29605d79",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 5",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-05-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334439/team-rl360-isle-of-man-youth-cycling-league-2026--5",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "0c40ccfc",
@@ -1040,6 +988,32 @@
     "last_updated": "2026-02-02T03:15:26.000Z"
   },
   {
+    "id": "565badc5",
+    "name": "Tameside Circuit Races 2027 R7",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-05-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333054/tameside-circuit-races-2027-r7",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
+    "id": "88bd4d90",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 6",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-05-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334440/team-rl360-isle-of-man-youth-cycling-league-2026--6",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "dc7a9d48",
     "name": "PNE Mountbatten Circuit Series #3",
     "type": "Road",
@@ -1144,6 +1118,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "d190abb7",
+    "name": "Tameside Circuit Races 2027 R8",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-05-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333055/tameside-circuit-races-2027-r8",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
     "id": "0db23114",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1235,6 +1222,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "af4c5cae",
+    "name": "Tameside Circuit Races 2027 R9",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-06-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333056/tameside-circuit-races-2027-r9",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
     "id": "df4e56ea",
     "name": "PNE Mountbatten Circuit Series #4",
     "type": "Road",
@@ -1311,6 +1311,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/331608/dulwich-paragon-cc-crystal-palace-crits-race-9-all-ages",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "45e887dc",
+    "name": "Tameside Circuit Races 2027 R10",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-06-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333058/tameside-circuit-races-2027-r10",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
+    "id": "deda1d75",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 7",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-06-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334441/team-rl360-isle-of-man-youth-cycling-league-2026--7",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "cf1d0d19",
@@ -1430,6 +1456,32 @@
     "last_updated": "2026-03-20T09:16:04.000Z"
   },
   {
+    "id": "9aef010d",
+    "name": "Tameside Circuit Races 2027 R11",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-06-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333059/tameside-circuit-races-2027-r11",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
+    "id": "fc3687f0",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 8",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-06-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334442/team-rl360-isle-of-man-youth-cycling-league-2026--8",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "ba3597c1",
     "name": "The Richard Moore Youth Race Series 2026 - Round 4",
     "type": "Road",
@@ -1547,6 +1599,32 @@
     "last_updated": "2026-03-09T19:50:15.000Z"
   },
   {
+    "id": "71a557a5",
+    "name": "Tameside Circuit Races 2027 R12",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-06-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333060/tameside-circuit-races-2027-r12",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:15:25.000Z"
+  },
+  {
+    "id": "0cf27cf0",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 9",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-06-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334443/team-rl360-isle-of-man-youth-cycling-league-2026--9",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "192b7939",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1610,6 +1688,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332503/severn-valley-youth-series-and-support-races",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "c1d6f094",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 10",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-06-30",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334444/team-rl360-isle-of-man-youth-cycling-league-2026--10",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "d70dcae1",
@@ -1716,6 +1807,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "eef893f9",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 11",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-07-07",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334445/team-rl360-isle-of-man-youth-cycling-league-2026--11-",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "51d1309f",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1794,6 +1898,19 @@
     "last_updated": "2026-02-17T03:15:24.000Z"
   },
   {
+    "id": "14c99a6d",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 12",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-07-14",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334446/team-rl360-isle-of-man-youth-cycling-league-2026--12",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "1b8e9a49",
     "name": "Velo Club Lincoln Showground Crits",
     "type": "Road",
@@ -1807,19 +1924,6 @@
     "last_updated": "2026-01-22T03:15:25.000Z"
   },
   {
-    "id": "d70f858a",
-    "name": "PNE Mountbatten Circuit Series #7",
-    "type": "Road",
-    "region": "South",
-    "venue": "Mountbatten Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331073/pne-mountbatten-circuit-series-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
     "id": "990cc595",
     "name": "The Last Carlisle Summer Night 2026",
     "type": "Road",
@@ -1831,6 +1935,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331311/the-last-carlisle-summer-night-2026",
     "source": "Google Sheet",
     "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
+    "id": "cba177e9",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 13",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-07-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334447/team-rl360-isle-of-man-youth-cycling-league-2026--13",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "4ac0822c",
@@ -1857,6 +1974,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332943/white-rose-youth-league-2026-finale",
     "source": "Google Sheet",
     "last_updated": "2026-03-06T10:43:30.000Z"
+  },
+  {
+    "id": "e73bc39d",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 14",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-07-28",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334448/team-rl360-isle-of-man-youth-cycling-league-2026--14",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "339bcf5a",
@@ -1911,6 +2041,19 @@
     "last_updated": "2026-01-06T03:15:38.000Z"
   },
   {
+    "id": "4a5dbcb3",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 15",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-08-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334449/team-rl360-isle-of-man-youth-cycling-league-2026--15",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "f591b759",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -1937,6 +2080,19 @@
     "last_updated": "2026-01-09T03:15:25.000Z"
   },
   {
+    "id": "006c22c2",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 16",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-08-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334450/team-rl360-isle-of-man-youth-cycling-league-2026--16",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "79090942",
     "name": "PNE Mountbatten Circuit Series #9",
     "type": "Road",
@@ -1961,6 +2117,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331556/sussex-cycle-racing-league-circuits-2026-1314",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "76d1ed3b",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 17",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-08-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334451/team-rl360-isle-of-man-youth-cycling-league-2026--17",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "a35e72a3",
@@ -2013,6 +2182,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331025/wyke-national-youth-circuit-series-2026-and-supporting-races-sponsored-by-all-terrain-cycles",
     "source": "Google Sheet",
     "last_updated": "2026-02-12T03:15:26.000Z"
+  },
+  {
+    "id": "88ac0b41",
+    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 18",
+    "type": "Road",
+    "region": "North West",
+    "venue": "National Sports Centre, Isle of Man",
+    "postcode": null,
+    "date": "2026-08-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334452/team-rl360-isle-of-man-youth-cycling-league-2026--18",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "61d276d7",
