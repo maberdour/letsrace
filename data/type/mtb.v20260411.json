@@ -1,70 +1,5 @@
 [
   {
-    "id": "1c8788f2",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-04-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330153/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "d0c2f071",
-    "name": "Stockport World Series Round 1",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Farmer John's, Stockport",
-    "postcode": null,
-    "date": "2026-04-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331507/stockport-world-series-round-1-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
-    "id": "bc28cf5d",
-    "name": "Lloyds 2026 National MTB Cross Country Series Round 2",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Cannock Chase - Rugeley, Rugeley",
-    "postcode": null,
-    "date": "2026-04-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331417/lloyds-2026-national-mtb-cross-country-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "874d97a6",
-    "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R8",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Snibston Colliery Park, Coalville",
-    "postcode": null,
-    "date": "2026-04-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/319239/b-buddies-off-ride-go-ride-race-league-2526-r8",
-    "source": "Google Sheet",
-    "last_updated": "2025-08-04T14:23:18.000Z"
-  },
-  {
-    "id": "5fb3be91",
-    "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #149",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "Whippy Trails, Rickmansworth.",
-    "postcode": null,
-    "date": "2026-04-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332456/british-cycling-pathway-development-centre-gravity---whippendell-devo-149-",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
-  },
-  {
     "id": "c1f1dcc1",
     "name": "Woodlandriders racing winter series 2025-2026 Round 5",
     "type": "MTB",
@@ -76,6 +11,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327335/woodlandriders-racing-winter-series-2025-2026-round-5",
     "source": "Google Sheet",
     "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "116be84c",
+    "name": "MIJ Downhill 2026 Round 3",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Worcester Lodge, Coleford",
+    "postcode": null,
+    "date": "2026-04-15",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331596/mij-downhill-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
     "id": "7d59ee66",
@@ -154,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333714/ne-xcmtb-2026-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-03-25T10:12:31.000Z"
+  },
+  {
+    "id": "3d92a77c",
+    "name": "Scottish Enduro Series 2026 - Round 1 (Tweed Valley)",
+    "type": "MTB",
+    "region": "﻿Scotland",
+    "venue": "Tweed Valley, Peebles",
+    "postcode": null,
+    "date": "2026-04-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334393/scottish-enduro-series-2026---round-1-tweed-valley",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
   },
   {
     "id": "2a463c28",
@@ -297,19 +258,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/334023/racers-guild-racing---works-components-super-cup-26-round-3-ridge-run",
     "source": "Google Sheet",
     "last_updated": "2026-03-26T03:15:25.000Z"
-  },
-  {
-    "id": "303ed2fe",
-    "name": "South West Club Cluster of Coaching - Circuit + MTB 4",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Wheal Jane Circuit, Cornwall",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330349/south-west-club-cluster-of-coaching---circuit--mtb-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
     "id": "2bf96c1d",
@@ -676,6 +624,19 @@
     "last_updated": "2026-02-28T03:15:26.000Z"
   },
   {
+    "id": "f9e81aee",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #47",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-05-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334626/british-cycling-pathway-development-centre-gravity---forest-of-dean-47",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "61801bde",
     "name": "Lloyds National 4X Series Round 4",
     "type": "MTB",
@@ -897,6 +858,19 @@
     "last_updated": "2026-03-25T10:12:31.000Z"
   },
   {
+    "id": "2edeacd6",
+    "name": "Beicio Cymru Go-Ride Racing - MTB North Wales Series - Round 3 - Coed -y-Brenin (Dreigiau Coed y Bre",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Coed y Brenin Visitor Centre - Dolgellau, North Wales",
+    "postcode": null,
+    "date": "2026-06-07",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334678/beicio-cymru-go-ride-racing---mtb-north-wales-series---round-3---coed--y-brenin-dreigiau-coed-y-brenin",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-08T01:15:28.000Z"
+  },
+  {
     "id": "b1f4cc1a",
     "name": "Focus Rides XC round 2 Walesby Forest",
     "type": "MTB",
@@ -975,6 +949,19 @@
     "last_updated": "2025-08-04T14:23:18.000Z"
   },
   {
+    "id": "c1971612",
+    "name": "Gravity Mini Rnd2 Llangollen",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Llangollen, Clwyd",
+    "postcode": null,
+    "date": "2026-06-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334736/gravity-mini-rnd2-llangollen",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
     "id": "ebd7cb48",
     "name": "Lloyds 2026 National MTB Cross Country Series Round 4",
     "type": "MTB",
@@ -1038,6 +1025,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332239/lloyds-national-4x-series-round-5",
     "source": "Google Sheet",
     "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
+    "id": "8d1f75af",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #48",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334627/british-cycling-pathway-development-centre-gravity---forest-of-dean-48",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "3ca65690",
@@ -1272,19 +1272,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/331599/welsh-mountain-bike-championships-inc-welsh-xc-series-powered-by-dualfuel-round-5-llangollen",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "e2cfad29",
-    "name": "MIJ Downhill 2026 Round 3",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2026-07-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331596/mij-downhill-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
     "id": "43514973",
