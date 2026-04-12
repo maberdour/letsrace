@@ -910,6 +910,32 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
+    "id": "7cdf94a9",
+    "name": "Dambusters Club 17 - Round 13",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "Powys | 3.2 miles | RH54 - CWMDAUDDWR",
+    "postcode": null,
+    "date": "2026-09-10",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51435-dambusters-club-17-round-13",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-08T01:04:11.000Z"
+  },
+  {
+    "id": "118151ec",
+    "name": "Peachfield Road Hill Climb - Great Malvern Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Worcestershire | 1338 yards | KH48 | Peachfield Road Hill Climb - Great Malvern",
+    "postcode": null,
+    "date": "2026-09-10",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51501-peachfield-road-hill-climb-great-malvern-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-08T01:04:11.000Z"
+  },
+  {
     "id": "44055a77",
     "name": "Port Talbot Whs CC 2026 Club Hill Climb",
     "type": "Hill Climb",
@@ -1376,6 +1402,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42380-arthurs-seat-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "c90cb32d",
+    "name": "Green Moor Hill Climb",
+    "type": "Hill Climb",
+    "region": "Yorkshire & Humber",
+    "venue": "South Yorkshire | 1 miles | OHC17 | Green Moor",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/50740-green-moor-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:04:09.000Z"
   },
   {
     "id": "ade1ed83",
@@ -2195,6 +2234,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42174-riber-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "7687efc8",
+    "name": "Stoke Hill Hill Climb",
+    "type": "Hill Climb",
+    "region": "South West",
+    "venue": "Devon | 1.2 miles | Stoke Hill",
+    "postcode": null,
+    "date": "2026-10-18",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46661-stoke-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:04:09.000Z"
   },
   {
     "id": "37b31df9",
