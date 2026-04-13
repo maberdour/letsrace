@@ -1,31 +1,5 @@
 [
   {
-    "id": "2bb071ac",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-04-07",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45699-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "22e45a88",
-    "name": "Lloyds National Disability and Para-cycling Road Series - Round 1 - Time Trial - The Brownlee Centre",
-    "type": "Time Trial",
-    "region": "Yorkshire & Humber",
-    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
-    "postcode": null,
-    "date": "2026-04-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332336/lloyds-national-disability-and-para-cycling-road-series---round-1---time-trial---the-brownlee-centre",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-14T03:15:24.000Z"
-  },
-  {
     "id": "c4f891a4",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -375,6 +349,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45724-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "73f877e0",
+    "name": "Cairngorm hill climb (part of north of Scotland district race series)",
+    "type": "Time Trial",
+    "region": "﻿Scotland",
+    "venue": "Rothiemurchus and Aviemore Tennis Club, Inverness-Shire",
+    "postcode": null,
+    "date": "2026-06-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334333/cairngorm-hill-climb-part-of-north-of-scotland-district-race-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "94715966",
