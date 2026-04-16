@@ -130,6 +130,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "e85d001b",
+    "name": "HHV London Summer Cross Rd 1",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-07-03",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333665/hhv-london-summer-cross-rd-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-16T01:15:25.000Z"
+  },
+  {
     "id": "7eacaf45",
     "name": "Fenland Clarion Go-Ride Cross Races",
     "type": "Cyclo Cross",
@@ -143,6 +156,32 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "0ea8a879",
+    "name": "HHV London Summer Cross Rd 2",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-07-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333774/hhv-london-summer-cross-rd-2-",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-16T01:15:25.000Z"
+  },
+  {
+    "id": "523ec6ce",
+    "name": "HHV London Summer Cross Rd 3 presented by MAAP",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-07-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333775/hhv-london-summer-cross-rd-3-presented-by-maap",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-16T01:15:25.000Z"
+  },
+  {
     "id": "9dfb35a7",
     "name": "South London Go-Ride Racing League - Race 9 of 9",
     "type": "Cyclo Cross",
@@ -154,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332712/south-london-go-ride-racing-league---race-9-of-9",
     "source": "Google Sheet",
     "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "e93461e8",
+    "name": "HHV London Summer Cross Rd 4 presented by MAAP",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-07-31",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333776/hhv-london-summer-cross-rd-4-presented-by-maap",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
     "id": "2220e2bd",
