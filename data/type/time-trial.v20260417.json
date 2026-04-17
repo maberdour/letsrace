@@ -1,31 +1,5 @@
 [
   {
-    "id": "22e45a88",
-    "name": "Lloyds National Disability and Para-cycling Road Series - Round 1 - Time Trial - The Brownlee Centre",
-    "type": "Time Trial",
-    "region": "Yorkshire & Humber",
-    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
-    "postcode": null,
-    "date": "2026-04-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332336/lloyds-national-disability-and-para-cycling-road-series---round-1---time-trial---the-brownlee-centre",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-14T03:15:24.000Z"
-  },
-  {
-    "id": "c4f891a4",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-04-14",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45702-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "ce38a7fa",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -50,6 +24,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/49706-andover-wheelers-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
+    "id": "5cea6170",
+    "name": "Cleveland Coureurs Club 10",
+    "type": "Time Trial",
+    "region": "North East",
+    "venue": "North Yorkshire | 10 miles | T10C",
+    "postcode": null,
+    "date": "2026-04-22",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51263-cleveland-coureurs-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-16T01:04:08.000Z"
   },
   {
     "id": "b134cc9b",
