@@ -1,44 +1,5 @@
 [
   {
-    "id": "dbe05cfa",
-    "name": "Condor Women's League - Round 1",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-04-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329627/condor-womens-league---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-24T03:15:24.000Z"
-  },
-  {
-    "id": "96e15f4f",
-    "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Endurance #1",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-04-14",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332918/british-cycling-talent-pathway-track-development-centre---manchester---endurance-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "f41a5139",
-    "name": "Convene Track League - Round 1",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-04-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329625/convene-track-league---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-17T03:15:25.000Z"
-  },
-  {
     "id": "a9215474",
     "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #2",
     "type": "Track",
@@ -156,6 +117,19 @@
     "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
+    "id": "9bb01f3c",
+    "name": "Middlesbrough Track League Race 2",
+    "type": "Track",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-04-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333419/middlesbrough-track-league-race-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
+  },
+  {
     "id": "224f16e6",
     "name": "Welwyn Track League 2026 #2",
     "type": "Track",
@@ -167,6 +141,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333482/welwyn-track-league-2026-2",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "e809b58e",
+    "name": "Dulwich Paragon HHV Track Open 2026",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333777/dulwich-paragon-hhv-track-open-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
     "id": "43f0a38d",
@@ -351,6 +338,19 @@
     "last_updated": "2025-12-17T03:15:25.000Z"
   },
   {
+    "id": "3413131d",
+    "name": "Middlesbrough Track League Race 3",
+    "type": "Track",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-05-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333420/middlesbrough-track-league-race-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
+  },
+  {
     "id": "c56cd4a3",
     "name": "Brooks Cycles Track League 2026 #2",
     "type": "Track",
@@ -518,6 +518,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329691/convene-track-league---round-7",
     "source": "Google Sheet",
     "last_updated": "2025-12-25T03:15:26.000Z"
+  },
+  {
+    "id": "a43dcab1",
+    "name": "Middlesbrough Track League Race 4",
+    "type": "Track",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-05-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333421/middlesbrough-track-league-race-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
   },
   {
     "id": "5364ae08",
@@ -754,6 +767,19 @@
     "last_updated": "2025-12-25T03:15:26.000Z"
   },
   {
+    "id": "53001c5b",
+    "name": "Middlesbrough Track League Race 5",
+    "type": "Track",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-06-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333422/middlesbrough-track-league-race-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
+  },
+  {
     "id": "3429d60a",
     "name": "Brooks Cycles Track League 2026 #6",
     "type": "Track",
@@ -923,6 +949,19 @@
     "last_updated": "2025-12-25T03:15:26.000Z"
   },
   {
+    "id": "6d0b65d4",
+    "name": "Middlesbrough Track League Race 6",
+    "type": "Track",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-06-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333423/middlesbrough-track-league-race-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
+  },
+  {
     "id": "f7e9af66",
     "name": "Brooks Cycles Track League 2026 #8",
     "type": "Track",
@@ -1064,6 +1103,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329697/convene-track-league---round-13",
     "source": "Google Sheet",
     "last_updated": "2025-12-25T03:15:26.000Z"
+  },
+  {
+    "id": "20c54323",
+    "name": "Middlesbrough Track League Race 7",
+    "type": "Track",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-07-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333424/middlesbrough-track-league-race-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
   },
   {
     "id": "d69c45dc",
@@ -1285,6 +1337,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329699/convene-track-league---round-15",
     "source": "Google Sheet",
     "last_updated": "2025-12-25T03:15:26.000Z"
+  },
+  {
+    "id": "8f7ff6f6",
+    "name": "Middlesbrough Track League Race 8",
+    "type": "Track",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-07-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333425/middlesbrough-track-league-race-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-11T01:15:25.000Z"
   },
   {
     "id": "9dd2af7d",
