@@ -1,68 +1,29 @@
 [
   {
-    "id": "2986308f",
-    "name": "British Cycling Pathway BMX SX RSR #1 South West 2026..",
+    "id": "5e4ee01c",
+    "name": "Enter The Dragon - Winter Round 5",
     "type": "BMX",
-    "region": "South West",
-    "venue": "Exeter BMX Track, Devon",
+    "region": "﻿Wales",
+    "venue": "Cardiff BMX Club, Wales",
     "postcode": null,
-    "date": "2026-04-18",
+    "date": "2026-04-23",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334025/british-cycling-pathway-bmx-sx-rsr-1-south-west-2026",
+    "url": "https://www.britishcycling.org.uk/events/details/328679/enter-the-dragon---winter-round-5",
     "source": "Google Sheet",
-    "last_updated": "2026-03-26T15:53:47.000Z"
+    "last_updated": "2026-02-02T03:15:26.000Z"
   },
   {
-    "id": "2986308f",
-    "name": "British Cycling Pathway BMX SX RSR #1 South West 2026..",
+    "id": "95e3f22b",
+    "name": "Milton Keynes BMX Racing Club Summer Series 2026 Round 1",
     "type": "BMX",
-    "region": "South West",
-    "venue": "Exeter BMX Track, Devon",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
     "postcode": null,
-    "date": "2026-04-18",
+    "date": "2026-04-24",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334025/british-cycling-pathway-bmx-sx-rsr-1-south-west-2026",
+    "url": "https://www.britishcycling.org.uk/events/details/334934/milton-keynes-bmx-racing-club-summer-series-2026-round-1",
     "source": "Google Sheet",
-    "last_updated": "2026-03-26T15:53:47.000Z"
-  },
-  {
-    "id": "5660cc6d",
-    "name": "British Cycling Pathway Development Centre BMX XC - East Anglia Group 1 #20",
-    "type": "BMX",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-04-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333416/british-cycling-pathway-development-centre-bmx-xc---east-anglia-group-1-20",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-12T08:07:28.000Z"
-  },
-  {
-    "id": "62fe7e62",
-    "name": "British Cycling Pathway Development Centre BMX XC - East Anglia Group 2 #21",
-    "type": "BMX",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-04-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333415/british-cycling-pathway-development-centre-bmx-xc---east-anglia-group-2-21",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-12T08:07:28.000Z"
-  },
-  {
-    "id": "0810a197",
-    "name": "South West BMX Regional Series 2026 - Round 3, Decoy",
-    "type": "BMX",
-    "region": "South West",
-    "venue": "Decoy BMX Track, Devon",
-    "postcode": null,
-    "date": "2026-04-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334434/south-west-bmx-regional-series-2026---round-3-decoy",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-11T01:15:25.000Z"
+    "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
     "id": "9ccce9f6",
@@ -76,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331499/north-region-bmx-2026-round-3-cheshire-ghostriders",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "2836756b",
+    "name": "Peterborough bmx summer series - RD1",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Peterborough BMX Track, PETERBOROUGH",
+    "postcode": null,
+    "date": "2026-04-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335042/peterborough-bmx-summer-series---rd1",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
     "id": "c49e3596",
@@ -130,6 +104,19 @@
     "last_updated": "2026-03-26T03:15:25.000Z"
   },
   {
+    "id": "6cbf1595",
+    "name": "British Cycling Pathway BMX SX RSR #1 South 2026",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Andover BMX Club, Andover",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335041/british-cycling-pathway-bmx-sx-rsr--1-south-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
+  },
+  {
     "id": "f6667d09",
     "name": "British Cycling Pathway Development Centre BMX - South West #14 Llynfi BMX Club",
     "type": "BMX",
@@ -156,6 +143,19 @@
     "last_updated": "2026-03-26T03:15:25.000Z"
   },
   {
+    "id": "719698f6",
+    "name": "Midlands BMX Super Series 2026 - Round 2 - Doncaster",
+    "type": "BMX",
+    "region": "Yorkshire & Humber",
+    "venue": "Doncaster BMX Track, South Yorkshire",
+    "postcode": null,
+    "date": "2026-05-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334458/midlands-bmx-super-series-2026---round-2---doncaster",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-12T01:15:24.000Z"
+  },
+  {
     "id": "aedff618",
     "name": "British Cycling Pathway Development Centre BMX - South West #15 Cardiff BMX Club",
     "type": "BMX",
@@ -167,6 +167,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331888/british-cycling-pathway-development-centre-bmx---south-west-15-cardiff-bmx-club",
     "source": "Google Sheet",
     "last_updated": "2026-01-30T03:15:24.000Z"
+  },
+  {
+    "id": "cb38d9f5",
+    "name": "Midlands BMX Super Series 2026 - Round 3 - Rotherham",
+    "type": "BMX",
+    "region": "Yorkshire & Humber",
+    "venue": "Rotherham BMX Track, South Yorkshire",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334521/midlands-bmx-super-series-2026---round-3---rotherham",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-12T01:15:24.000Z"
   },
   {
     "id": "7e8662df",
@@ -195,6 +208,19 @@
     "last_updated": "2026-03-27T03:15:25.000Z"
   },
   {
+    "id": "a8939e82",
+    "name": "British Cycling Pathway BMX SX RSR - South #2 2026",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-05-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335046/british-cycling-pathway-bmx-sx-rsr---south-2-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
+  },
+  {
     "id": "4692f115",
     "name": "BMX East Summer Series 2026 Round 4",
     "type": "BMX",
@@ -206,6 +232,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334028/bmx-east-summer-series-2026-round-4",
     "source": "Google Sheet",
     "last_updated": "2026-03-26T03:15:25.000Z"
+  },
+  {
+    "id": "111c2338",
+    "name": "Midlands BMX Super Series 2026 - Round 4 - Redditch",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Redditch BMX Track, Redditch",
+    "postcode": null,
+    "date": "2026-05-31",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334522/midlands-bmx-super-series-2026---round-4---redditch",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-13T01:15:26.000Z"
   },
   {
     "id": "c15f2f74",
@@ -247,6 +286,19 @@
     "last_updated": "2026-03-26T03:15:25.000Z"
   },
   {
+    "id": "285c3b67",
+    "name": "Midlands BMX Super Series 2026 - Round 5 - Telford",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Telford Flyers BMX Club., Telford",
+    "postcode": null,
+    "date": "2026-06-07",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334523/midlands-bmx-super-series-2026---round-5---telford",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-13T01:15:26.000Z"
+  },
+  {
     "id": "4936bca4",
     "name": "BMX East Summer Series 2026 Round 6",
     "type": "BMX",
@@ -258,6 +310,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334030/bmx-east-summer-series-2026-round-6",
     "source": "Google Sheet",
     "last_updated": "2026-03-26T03:15:25.000Z"
+  },
+  {
+    "id": "84dab1a2",
+    "name": "Midlands BMX Super Series 2026 - Round 6 - Warsop",
+    "type": "BMX",
+    "region": "East Midlands",
+    "venue": "Mansfield BMX Track, Nottinghamshire",
+    "postcode": null,
+    "date": "2026-06-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334558/midlands-bmx-super-series-2026---round-6---warsop",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-12T01:15:24.000Z"
   },
   {
     "id": "de2ca66f",
@@ -299,6 +364,19 @@
     "last_updated": "2026-03-26T03:15:25.000Z"
   },
   {
+    "id": "ce12cd43",
+    "name": "Midlands BMX Super Series 2026 - Round 7 - Derby",
+    "type": "BMX",
+    "region": "East Midlands",
+    "venue": "Derby BMX Track, Derbyshire",
+    "postcode": null,
+    "date": "2026-07-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334559/midlands-bmx-super-series-2026---round-7---derby",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-12T01:15:24.000Z"
+  },
+  {
     "id": "c8ec623f",
     "name": "North Region BMX 2026 Round 7 Bradford",
     "type": "BMX",
@@ -310,6 +388,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331503/north-region-bmx-2026-round-7-bradford",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "91859572",
+    "name": "Midlands BMX Super Series 2026 - Round 8 - Birmingham",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Birmingham BMX Track, Staffordshire",
+    "postcode": null,
+    "date": "2026-07-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334560/midlands-bmx-super-series-2026---round-8---birmingham",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-12T01:15:24.000Z"
   },
   {
     "id": "df1e262c",
