@@ -1,44 +1,5 @@
 [
   {
-    "id": "96e15f4f",
-    "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Endurance #1",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-04-14",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332918/british-cycling-talent-pathway-track-development-centre---manchester---endurance-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "f41a5139",
-    "name": "Convene Track League - Round 1",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-04-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329625/convene-track-league---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-17T03:15:25.000Z"
-  },
-  {
-    "id": "e19758ec",
-    "name": "Middlesbrough Track League Race 1",
-    "type": "Track",
-    "region": "North East",
-    "venue": "Middlesbrough Sports Village, Middlesbrough",
-    "postcode": null,
-    "date": "2026-04-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333418/middlesbrough-track-league-race-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-11T01:15:25.000Z"
-  },
-  {
     "id": "a9215474",
     "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #2",
     "type": "Track",
@@ -180,6 +141,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333482/welwyn-track-league-2026-2",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "e809b58e",
+    "name": "Dulwich Paragon HHV Track Open 2026",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333777/dulwich-paragon-hhv-track-open-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
     "id": "43f0a38d",
