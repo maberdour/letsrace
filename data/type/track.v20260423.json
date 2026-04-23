@@ -1,31 +1,5 @@
 [
   {
-    "id": "a9215474",
-    "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #2",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-04-21",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334085/british-cycling-pathway-development-centre---track-sprint-manchester-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-26T15:53:47.000Z"
-  },
-  {
-    "id": "54b1269f",
-    "name": "Convene Track League - Round 2",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-04-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329686/convene-track-league---round-2",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-17T03:15:25.000Z"
-  },
-  {
     "id": "95f05cb4",
     "name": "Welwyn Track League 2026 #1",
     "type": "Track",
@@ -141,6 +115,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333482/welwyn-track-league-2026-2",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "e809b58e",
+    "name": "Dulwich Paragon HHV Track Open 2026",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-05-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/333777/dulwich-paragon-hhv-track-open-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
     "id": "43f0a38d",
@@ -1415,6 +1402,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333569/brooks-cycles-track-league-2026-13",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "41c9b9ab",
+    "name": "Grasstrack @Ambleside Sports 2026",
+    "type": "Track",
+    "region": "North West",
+    "venue": "AMBLESIDE SPORTS, Cumbria",
+    "postcode": null,
+    "date": "2026-07-30",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331371/grasstrack-ambleside-sports-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-22T01:15:26.000Z"
   },
   {
     "id": "bb4f40dd",
