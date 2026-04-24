@@ -1,16 +1,16 @@
 [
   {
-    "id": "32c75d13",
-    "name": "Fenland Clarion Go-Ride Cross Races",
+    "id": "e6f8a2af",
+    "name": "Yorkshire Cyclo-cross Summer Series Round 1",
     "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Embankment Athletics Track, Cambs",
+    "region": "Yorkshire & Humber",
+    "venue": "Thornes Park Stadium, West Yorkshire",
     "postcode": null,
-    "date": "2026-04-24",
+    "date": "2026-05-20",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331359/fenland-clarion-go-ride-cross-races",
+    "url": "https://www.britishcycling.org.uk/events/details/317542/yorkshire-cyclo-cross-summer-series-round-1",
     "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
+    "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
     "id": "268d51c9",
@@ -24,6 +24,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331360/fenland-clarion-go-ride-cross-races",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "5edfcae4",
+    "name": "Yorkshire Cyclo-cross Summer Series Round 2",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Temple Newsam Park, Leeds",
+    "postcode": null,
+    "date": "2026-05-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334790/yorkshire-cyclo-cross-summer-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
     "id": "1e6be50e",
@@ -65,6 +78,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "7ac90411",
+    "name": "Yorkshire Cyclo-cross Summer Series Round 3",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Bramley Fall Park, Leeds",
+    "postcode": null,
+    "date": "2026-06-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334791/yorkshire-cyclo-cross-summer-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
+  },
+  {
     "id": "fb6e8529",
     "name": "Sprockets Summer CX 2026 Race #2",
     "type": "Cyclo Cross",
@@ -102,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331410/the-summer-series-round-4-2026",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "54b8607f",
+    "name": "Yorkshire Cyclo-cross Summer Series Round 4",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Killingworth Moor Country Park, HARROGATE",
+    "postcode": null,
+    "date": "2026-06-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334792/yorkshire-cyclo-cross-summer-series-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
     "id": "4eb4c833",
@@ -143,6 +182,19 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
+    "id": "09385927",
+    "name": "Yorkshire Cyclo-cross Summer Series Round 5",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Woodside Cycle Centre, England",
+    "postcode": null,
+    "date": "2026-07-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334793/yorkshire-cyclo-cross-summer-series-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
+  },
+  {
     "id": "7eacaf45",
     "name": "Fenland Clarion Go-Ride Cross Races",
     "type": "Cyclo Cross",
@@ -169,15 +221,15 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
-    "id": "523ec6ce",
-    "name": "HHV London Summer Cross Rd 3 presented by MAAP",
+    "id": "ce628679",
+    "name": "MAAP London Summer Cross Rd 3",
     "type": "Cyclo Cross",
     "region": "London & South East",
     "venue": "Herne Hill Velodrome, London",
     "postcode": null,
     "date": "2026-07-17",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333775/hhv-london-summer-cross-rd-3-presented-by-maap",
+    "url": "https://www.britishcycling.org.uk/events/details/333775/maap-london-summer-cross-rd-3-",
     "source": "Google Sheet",
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
@@ -195,15 +247,28 @@
     "last_updated": "2026-02-24T03:15:24.000Z"
   },
   {
-    "id": "e93461e8",
-    "name": "HHV London Summer Cross Rd 4 presented by MAAP",
+    "id": "122d8b3f",
+    "name": "Yorkshire Cyclo-cross Summer Series Round 6",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Wyke Community Sports Village - Bradford, Bradford",
+    "postcode": null,
+    "date": "2026-07-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334794/yorkshire-cyclo-cross-summer-series-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-18T01:15:27.000Z"
+  },
+  {
+    "id": "5fd3ea94",
+    "name": "MAAP London Summer Cross Rd 4",
     "type": "Cyclo Cross",
     "region": "London & South East",
     "venue": "Herne Hill Velodrome, London",
     "postcode": null,
     "date": "2026-07-31",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333776/hhv-london-summer-cross-rd-4-presented-by-maap",
+    "url": "https://www.britishcycling.org.uk/events/details/333776/maap-london-summer-cross-rd-4-",
     "source": "Google Sheet",
     "last_updated": "2026-04-16T01:15:25.000Z"
   },

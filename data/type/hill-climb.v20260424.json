@@ -1,31 +1,5 @@
 [
   {
-    "id": "353ae61d",
-    "name": "Kildale Hill Climb",
-    "type": "Hill Climb",
-    "region": "North East",
-    "venue": "North Yorkshire | 1056 yards | THC35 | Kildale",
-    "postcode": null,
-    "date": "2026-04-18",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42041-kildale-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "b9014475",
-    "name": "BMCC Mill Hill Hill Climb #1",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "West Sussex | 3 miles | GH/94 | Mill Hill",
-    "postcode": null,
-    "date": "2026-04-21",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/43934-bmcc-mill-hill-hill-climb-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "e498a248",
     "name": "BMCC Ditchling Beacon Hill Climb",
     "type": "Hill Climb",
@@ -1287,15 +1261,15 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "eddb45c7",
-    "name": "Exeter Wheelers - Stoke Hill - Hill Climb",
+    "id": "34452bc0",
+    "name": "Cancelled - moved to 18th October",
     "type": "Hill Climb",
     "region": "South West",
     "venue": "Devon | 1.2 miles | Stoke Hill",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41453-exeter-wheelers-stoke-hill-hill-climb",
+    "url": "https://www.cyclingtimetrials.org.uk/events/41453-cancelled-moved-to-18th-october",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
@@ -1482,6 +1456,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "9f532e62",
+    "name": "Birmingham Midland Maxstoke Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "Warwickshire | 1 miles | KH32/1.4",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/42483-birmingham-midland-maxstoke-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
     "id": "c90cb32d",
     "name": "Green Moor Hill Climb",
     "type": "Hill Climb",
@@ -1560,19 +1547,6 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "b5a4fece",
-    "name": "Shire Hill Climb",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "Warwickshire | 1 miles | KH32/1.4",
-    "postcode": null,
-    "date": "2026-09-27",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42483-shire-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "42c075b4",
     "name": "The Burway Hill Climb",
     "type": "Hill Climb",
@@ -1599,11 +1573,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "d2c00383",
+    "id": "17b096a0",
     "name": "Wightlink CRT Charity Hill Climbs Championship",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Isle of Wight | 1 miles | BLACKGANG A",
+    "venue": "Isle of Wight | 1654 yards | BLACKGANG A",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -2288,6 +2262,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "33e495dd",
+    "name": "Exeter Wheelers - Stoke Hill - Hill Climb",
+    "type": "Hill Climb",
+    "region": "South West",
+    "venue": "Devon | 1.2 miles | Stoke Hill",
+    "postcode": null,
+    "date": "2026-10-18",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46661-exeter-wheelers-stoke-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-10T01:04:09.000Z"
+  },
+  {
     "id": "e0eae39b",
     "name": "Muckle Cycle Club - Prospect Hill",
     "type": "Hill Climb",
@@ -2325,19 +2312,6 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42174-riber-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "7687efc8",
-    "name": "Stoke Hill Hill Climb",
-    "type": "Hill Climb",
-    "region": "South West",
-    "venue": "Devon | 1.2 miles | Stoke Hill",
-    "postcode": null,
-    "date": "2026-10-18",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46661-stoke-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-10T01:04:09.000Z"
   },
   {
     "id": "37b31df9",
