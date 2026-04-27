@@ -449,7 +449,7 @@ function initNewlyAddedPage() {
     
     const nationalFilteredEvents = filters.scope === 'national'
       ? newEvents.filter(event => NATIONAL_TITLE_REGEX.test(event.name || ''))
-      : newEvents.filter(event => !NATIONAL_TITLE_REGEX.test(event.name || ''));
+      : newEvents;
     
     console.log('🔍 Events after national filter:', nationalFilteredEvents.length);
     

@@ -125,14 +125,11 @@ function filterEvents(events, filters) {
     // Only show events from today onwards
     if (event.date < today) return false;
     
-    const title = event.name || '';
-    const isNationalEvent = NATIONAL_TITLE_REGEX.test(title);
-    
     if (filters.scope === 'national') {
-      if (!isNationalEvent) return false;
-    } else if (isNationalEvent) {
-      return false;
+      const title = event.name || '';
+      if (!NATIONAL_TITLE_REGEX.test(title)) return false;
     }
+    // Regional: show every event in the selected regions, including national-level events hosted there
     
     // Region filtering - if no regions selected, show no events
     if (filters.scope === 'regional') {

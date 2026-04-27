@@ -7,7 +7,7 @@ This document describes the events page system for LetsRace.cc, which provides d
 The system consists of:
 
 1. **Shared JavaScript Module** (`/assets/js/events-page.js`) - Handles all functionality
-2. **CSS Styles** (`/assets/css/events-page.css`) - Consistent styling
+2. **CSS** — discipline pages typically load `/assets/css/styles.css` (shared layout and event UI); `/assets/css/events-page.css` exists for legacy or standalone styling if linked.
 3. **HTML Templates** - One page per event type
 4. **Data Files** - Generated daily by Google Apps Script from the `Events` Google Sheet
 
@@ -28,17 +28,13 @@ The system consists of:
      - `/data/type/{type}.vYYYYMMDD.json` - Event data per type
 
 3. **Page Load (JSON → rendered list)**  
-   - JavaScript:
-3. **Page Load** - JavaScript:
-   - Fetches manifest to get current file URLs
-   - Loads facets and type-specific data
-   - Populates filters and renders events
+   - JavaScript fetches the manifest for current file URLs, loads facets and the discipline shard, populates region checkboxes from facet metadata, and renders the list.
 
-4. **User Interaction** - Client-side filtering:
-   - Region selection
-   - Date range filtering
-   - URL state management
-   - Analytics tracking
+4. **User Interaction** — client-side filtering (see [Regional vs national scope](#regional-vs-national-scope)):
+   - Multi-region selection (checkboxes)
+   - Optional “national events only” mode (title-based; see below)
+   - URL query `regions` (comma-separated) and `localStorage` for persistence
+   - Analytics when available (e.g. Plausible)
 
 ### Event Types Supported
 
@@ -51,123 +47,58 @@ The system consists of:
 - `hill-climb` - Hill climb events
 - `speedway` - Speedway events
 
+## Regional vs national scope
+
+Discipline pages (`assets/js/events-page.js`) and the Newly Added page (`assets/js/newly-added.js`, for its regional/national split) use the same definition of a **national-titled** event: the event **name** matches the regex `/\bnational\b/i` (word “national”, case-insensitive). This mirrors `isNationalEvent()` in `scripts/google-apps/DailyBuildAndDeploy.gs`, used when building facet counts.
+
+| Mode | What the user sees |
+|------|---------------------|
+| **Regional** (default; “Show National Events Only” off) | Every upcoming event whose sheet **`region`** is one of the selected regions. That includes national-level races **held in** that region (e.g. a National Youth Omnium in London & South East still appears when that region is selected). |
+| **National only** (toggle on) | Only national-titled events, **all regions** (region checkboxes are disabled in the UI). |
+
+So “national only” is a **title** filter for UK-wide national listings; “regional” is a **geography** filter (sheet region) and is not mutually exclusive with national-titled events.
+
+Homepage discipline tile counts when **not** in national-only mode sum `facets.counts["{Discipline}|{region}"]` for selected regions (all events in those buckets). National-only tiles use `facets.counts_national`.
+
 ## Creating New Event Type Pages
 
-To create a new event type page (e.g., for "cyclo-cross"):
+To add a page for another discipline (e.g. cyclo-cross):
 
-1. **Create the directory and file:**
-   ```bash
-   mkdir -p pages/cyclo-cross
-   touch pages/cyclo-cross/index.html
-   ```
+1. **Create the directory and file**, e.g. `pages/cyclo-cross/index.html`.
 
-2. **Copy the template HTML:**
-   ```html
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Cyclo-Cross Events - LetsRace</title>
-       <link rel="stylesheet" href="/assets/css/events-page.css">
-       <meta name="description" content="Find cyclo-cross events across the UK">
-   </head>
-   <body data-type="cyclo-cross">
-       <main>
-           <h1>Cyclo-Cross Events</h1>
-           
-           <!-- Filter Controls -->
-           <div class="filters">
-               <div class="filter-group">
-                   <label for="filter-region">Region</label>
-                   <select id="filter-region">
-                       <option value="">Loading regions...</option>
-                   </select>
-               </div>
-               
-               <div class="filter-group">
-                   <label for="filter-from">From</label>
-                   <input id="filter-from" type="date">
-               </div>
-               
-               <div class="filter-group">
-                   <label for="filter-to">To</label>
-                   <input id="filter-to" type="date">
-               </div>
-               
-               <div class="filter-group">
-                   <button id="filter-reset">Reset</button>
-               </div>
-           </div>
-           
-           <!-- Results -->
-           <div class="results">
-               <div id="result-count" aria-live="polite">Loading events...</div>
-               
-               <div id="empty-state" hidden>
-                   No events match your filters.
-               </div>
-               
-               <ul id="event-list" role="list">
-                   <!-- Events will be populated by JavaScript -->
-               </ul>
-           </div>
-           
-           <!-- Footer -->
-           <footer>
-               <small id="build-stamp">Loading...</small>
-           </footer>
-       </main>
-       
-       <!-- Load the events page module -->
-       <script type="module" src="/assets/js/events-page.js"></script>
-   </body>
-   </html>
-   ```
+2. **Copy a live page as the structural template** — e.g. `pages/track/index.html`: same filter block (`#filter-toggle`, `#filter-content`, `#national-only`, `#region-checkboxes`, `#select-all-regions`, `#clear-regions`), results block (`#result-count`, `#empty-state`, `#event-list`), shared CSS/JS includes, and `<body data-type="…">` in kebab-case matching the manifest shard key (`cyclo-cross`, `road`, etc.).
 
-3. **Customize the content:**
-   - Change `<title>` to match the event type
-   - Update `<meta name="description">`
-   - Change `<h1>` content
-   - Set `<body data-type="cyclo-cross">` (use kebab-case)
+3. **Customize** `<title>`, `<meta name="description">`, `<h1>`, intro copy, and `renderHeader("…")` / `data-type`.
 
-That's it! The JavaScript module will automatically:
-- Detect the event type from `data-type`
-- Load the correct data files
-- Populate filters with available regions
-- Handle all filtering and rendering
+The module detects `data-type`, loads the matching shard from the manifest, fills regions from facets, and applies filtering as described above.
 
 ## Required HTML Structure
 
-Every event type page must include these elements with exact IDs:
+The script validates a core set of IDs. Match an existing discipline page (e.g. track); required elements include:
 
-```html
-<!-- Filter Controls -->
-<select id="filter-region">
-<input id="filter-from" type="date">
-<input id="filter-to" type="date">
-<button id="filter-reset">
-
-<!-- Results -->
-<div id="result-count" aria-live="polite">
-<div id="empty-state" hidden>
-<ul id="event-list" role="list">
-
-<!-- Footer -->
-<small id="build-stamp">
+```text
+#region-checkboxes      — container; checkboxes injected from facets
+#select-all-regions      — optional but expected if present in template
+#clear-regions           — required
+#result-count            — required
+#empty-state             — required
+#event-list              — required
+#build-stamp             — required by init (often in footer via render.js)
+#filter-toggle, #filter-content — collapsible filter panel
+#national-only           — optional; national vs regional scope
+.region-filter           — used to enable/disable region UI when national-only is on
 ```
 
 ## Features
 
 ### Filtering
-- **Region**: Dropdown populated from facets data
-- **Date Range**: From/To date inputs with today as default "From"
-- **Reset**: Button to restore default filters
+- **Regions**: Multi-select checkboxes; options come from `facets.regions` (canonical list).
+- **National only**: Toggle restricts the list to national-titled events UK-wide; turning it off returns to regional mode (see [Regional vs national scope](#regional-vs-national-scope)).
+- **Upcoming only**: Events before today (Europe/London date) are excluded in code, not via date pickers on the page.
 
 ### URL State Management
-- Filters are reflected in URL parameters
-- Page reload preserves filter state
-- Default values are omitted from URL
+- Selected regions are stored in the URL as `?regions=Region1,Region2` (and restored on load).
+- Scope (regional vs national) is persisted in `localStorage` (`eventScope`) alongside saved region selection where applicable.
 
 ### Accessibility
 - Proper ARIA labels and live regions
@@ -228,9 +159,15 @@ Every event type page must include these elements with exact IDs:
     "London & South East": 210,
     "Track|London & South East": 33
   },
+  "counts_national": {
+    "Road": 12,
+    "Track": 5
+  },
   "last_build": "YYYY-MM-DDTHH:mm:ssZ"
 }
 ```
+
+`counts` includes every event in each type/region bucket (including national-titled events assigned to that region). `counts_national` is per **discipline name** (sheet `type`): count of events that are both that type and national-titled, used for the homepage when “national only” is enabled.
 
 ## Error Handling
 
@@ -266,8 +203,7 @@ Error states are clearly communicated to users with helpful messages.
 3. Test with sample data
 
 ### Updating Styles
-- Modify `/assets/css/events-page.css`
-- Changes apply to all event type pages automatically
+- Prefer `/assets/css/styles.css` for rules shared with the homepage; use `/assets/css/events-page.css` only if those pages link it explicitly.
 
 ### Modifying Functionality
 - Update `/assets/js/events-page.js`
