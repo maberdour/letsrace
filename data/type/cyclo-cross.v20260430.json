@@ -1,18 +1,5 @@
 [
   {
-    "id": "32c75d13",
-    "name": "Fenland Clarion Go-Ride Cross Races",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Embankment Athletics Track, Cambs",
-    "postcode": null,
-    "date": "2026-04-24",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331359/fenland-clarion-go-ride-cross-races",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
     "id": "e6f8a2af",
     "name": "Yorkshire Cyclo-cross Summer Series Round 1",
     "type": "Cyclo Cross",
