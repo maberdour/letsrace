@@ -1,14 +1,14 @@
 [
   {
-    "id": "32c75d13",
-    "name": "Fenland Clarion Go-Ride Cross Races",
+    "id": "8dfecd2a",
+    "name": "The Summer Series Round 4 2026",
     "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Embankment Athletics Track, Cambs",
+    "region": "South",
+    "venue": "Stratford Park Leisure Centre, Stroud",
     "postcode": null,
-    "date": "2026-04-24",
+    "date": "2026-05-02",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331359/fenland-clarion-go-ride-cross-races",
+    "url": "https://www.britishcycling.org.uk/events/details/331410/the-summer-series-round-4-2026",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
@@ -126,19 +126,6 @@
     "date": "2026-06-17",
     "start_time": "23:00",
     "url": "https://www.britishcycling.org.uk/events/details/331409/the-summer-series-round-3-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "2acfca36",
-    "name": "The Summer Series Round 4 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Stratford Park Leisure Centre, Stroud",
-    "postcode": null,
-    "date": "2026-06-24",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331410/the-summer-series-round-4-2026",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
   },

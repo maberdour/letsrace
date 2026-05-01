@@ -1,83 +1,5 @@
 [
   {
-    "id": "95e3f22b",
-    "name": "Milton Keynes BMX Racing Club Summer Series 2026 Round 1",
-    "type": "BMX",
-    "region": "Central",
-    "venue": "Milton Keynes BMX Track, Milton Keynes",
-    "postcode": null,
-    "date": "2026-04-24",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334934/milton-keynes-bmx-racing-club-summer-series-2026-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-18T01:15:27.000Z"
-  },
-  {
-    "id": "9ccce9f6",
-    "name": "North Region BMX 2026 Round 3 Cheshire Ghostriders",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "Cheshire Ghostriders BMX Club, Cheshire",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331499/north-region-bmx-2026-round-3-cheshire-ghostriders",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
-    "id": "2836756b",
-    "name": "Peterborough bmx summer series - RD1",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335042/peterborough-bmx-summer-series---rd1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:15:25.000Z"
-  },
-  {
-    "id": "c49e3596",
-    "name": "Scottish Regional BMX Racing Series 2026 Round 2",
-    "type": "BMX",
-    "region": "﻿Scotland",
-    "venue": "Glasgow BMX Centre, Glasgow",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334153/scottish-regional-bmx-racing-series-2026-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-10T01:15:25.000Z"
-  },
-  {
-    "id": "e46c4eba",
-    "name": "South BMX Regional Series 2026 - Round 2 - Merton Saints BMX",
-    "type": "BMX",
-    "region": "London & South East",
-    "venue": "Merton Saints BMX, Mitcham Eastfields",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334097/south-bmx-regional-series-2026---round-2---merton-saints-bmx-",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-27T03:15:25.000Z"
-  },
-  {
-    "id": "e12bd19b",
-    "name": "Telford Flyers Special",
-    "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Telford Flyers BMX Club., Telford",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333602/telford-flyers-special",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-21T03:15:24.000Z"
-  },
-  {
     "id": "f05349b5",
     "name": "Lloyds BMX National Series 2026 Round 3 & 4 - Glasgow",
     "type": "BMX",
@@ -89,6 +11,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333769/lloyds-bmx-national-series-2026-round-3--4---glasgow",
     "source": "Google Sheet",
     "last_updated": "2026-03-26T03:15:25.000Z"
+  },
+  {
+    "id": "cddf310f",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF8",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-05-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335725/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff8",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "6cbf1595",
@@ -234,6 +169,19 @@
     "last_updated": "2026-04-18T01:15:27.000Z"
   },
   {
+    "id": "1a082354",
+    "name": "Scottish Regional BMX Racing Series 2026 Round 4",
+    "type": "BMX",
+    "region": "ï»¿Scotland",
+    "venue": "Cumbernauld Centurions BMX Club, North Lanarkshire",
+    "postcode": null,
+    "date": "2026-05-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335462/scottish-regional-bmx-racing-series-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-25T01:15:28.000Z"
+  },
+  {
     "id": "4692f115",
     "name": "BMX East Summer Series 2026 Round 4",
     "type": "BMX",
@@ -245,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334028/bmx-east-summer-series-2026-round-4",
     "source": "Google Sheet",
     "last_updated": "2026-03-26T03:15:25.000Z"
+  },
+  {
+    "id": "1ff2592d",
+    "name": "Scottish Regional BMX Racing Series 2026 Round 5",
+    "type": "BMX",
+    "region": "ï»¿Scotland",
+    "venue": "Cumbernauld Centurions BMX Club, North Lanarkshire",
+    "postcode": null,
+    "date": "2026-05-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335463/scottish-regional-bmx-racing-series-2026-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-25T01:15:28.000Z"
   },
   {
     "id": "808978e1",
@@ -284,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/335268/british-cycling-pathway-bmx-sx-rsr-2-midlands-2026",
     "source": "Google Sheet",
     "last_updated": "2026-04-22T01:15:26.000Z"
+  },
+  {
+    "id": "491f219b",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF9",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-05-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335726/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff9",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "111c2338",
@@ -362,6 +336,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334523/midlands-bmx-super-series-2026---round-5---telford",
     "source": "Google Sheet",
     "last_updated": "2026-04-13T01:15:26.000Z"
+  },
+  {
+    "id": "01f8d3e9",
+    "name": "Lloyds BMX National Series 2026 Round 5 & 6 - Gosport",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-06-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335448/lloyds-bmx-national-series-2026-round-5--6---gosport",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-24T01:15:24.000Z"
   },
   {
     "id": "4936bca4",

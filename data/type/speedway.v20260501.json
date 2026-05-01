@@ -1,18 +1,5 @@
 [
   {
-    "id": "617ee0b2",
-    "name": "Scottish League Series - Round 2",
-    "type": "Speedway",
-    "region": "﻿Scotland",
-    "venue": "Cathkin Park, GLASGOW",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332642/scottish-league-series---round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-18T17:39:34.000Z"
-  },
-  {
     "id": "f19ae955",
     "name": "Scottish Open",
     "type": "Speedway",
