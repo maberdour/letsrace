@@ -1,96 +1,5 @@
 [
   {
-    "id": "d2d5acd4",
-    "name": "National Youth Omnium Round 2 - Herne Hill",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-04-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330362/national-youth-omnium-round-2---herne-hill",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-25T03:15:26.000Z"
-  },
-  {
-    "id": "95ad842b",
-    "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Endurance #2",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332920/british-cycling-talent-pathway-track-development-centre---manchester---endurance-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "ef9dc5e6",
-    "name": "Convene Track League - Round 3",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-04-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329687/convene-track-league---round-3",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-17T03:15:25.000Z"
-  },
-  {
-    "id": "9bb01f3c",
-    "name": "Middlesbrough Track League Race 2",
-    "type": "Track",
-    "region": "North East",
-    "venue": "Middlesbrough Sports Village, Middlesbrough",
-    "postcode": null,
-    "date": "2026-04-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333419/middlesbrough-track-league-race-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-11T01:15:25.000Z"
-  },
-  {
-    "id": "224f16e6",
-    "name": "Welwyn Track League 2026 #2",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-05-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333482/welwyn-track-league-2026-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "e809b58e",
-    "name": "Dulwich Paragon HHV Track Open 2026",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-05-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333777/dulwich-paragon-hhv-track-open-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-18T01:15:27.000Z"
-  },
-  {
-    "id": "43f0a38d",
-    "name": "British Cycling North of England Go-Ride Track Cluster",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-05-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329507/british-cycling-north-of-england-go-ride-track-cluster",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
     "id": "d18eada3",
     "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #3",
     "type": "Track",
@@ -312,6 +221,19 @@
     "last_updated": "2026-03-24T10:46:54.000Z"
   },
   {
+    "id": "1bf52eb9",
+    "name": "Maindy Flyers Mini league Round 2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Maindy Cycle Track - Cardiff, Wales",
+    "postcode": null,
+    "date": "2026-05-14",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335673/maindy-flyers-mini-league-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
+  },
+  {
     "id": "568a9b84",
     "name": "Welwyn Track League 2026 #4",
     "type": "Track",
@@ -427,6 +349,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332678/brooks-cycles-track-league-2026-3",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "33f64933",
+    "name": "Maindy Flyers Mini league Round 3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Maindy Cycle Track - Cardiff, Wales",
+    "postcode": null,
+    "date": "2026-05-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335676/maindy-flyers-mini-league-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "abd532f3",
@@ -1066,6 +1001,19 @@
     "last_updated": "2026-03-28T03:15:25.000Z"
   },
   {
+    "id": "96f48507",
+    "name": "VC Londres Open Meeting 2025 incl. Roadman's 25 Mile Scratch",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-06-28",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332212/vc-londres-open-meeting-2025-incl-roadmans-25-mile-scratch",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
+  },
+  {
     "id": "b70dff83",
     "name": "Reading Track League #7",
     "type": "Track",
@@ -1207,19 +1155,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/333566/brooks-cycles-track-league-2026-10",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "e97ba52a",
-    "name": "Friday Night Track League 2026 Night 6",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Halesowen A&CC, West Midlands",
-    "postcode": null,
-    "date": "2026-07-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335457/friday-night-track-league-2026-night-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-24T01:15:24.000Z"
   },
   {
     "id": "ddc047aa",

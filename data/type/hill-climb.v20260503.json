@@ -1,31 +1,5 @@
 [
   {
-    "id": "e498a248",
-    "name": "BMCC Ditchling Beacon Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "East Sussex | 1 miles | GH/90 | Ditchling Beacon",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/43922-bmcc-ditchling-beacon-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "10986fb5",
-    "name": "hill climb project round 1",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Cheshire East | 1 miles | J9/21 | Tesgs Nose",
-    "postcode": null,
-    "date": "2026-05-01",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51696-hill-climb-project-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:04:08.000Z"
-  },
-  {
     "id": "ad8751f4",
     "name": "Kent Valley RC Shap Hill Climb NLTTA Spoco",
     "type": "Hill Climb",
@@ -2169,6 +2143,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/44312-the-shaftesbury-mott-street-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "89875049",
+    "name": "University of Exeter Cycling Club Hill Climb",
+    "type": "Hill Climb",
+    "region": "South West",
+    "venue": "Devon | 2.3 miles | S/MAMHEAD",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51973-university-of-exeter-cycling-club-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-26T01:04:09.000Z"
   },
   {
     "id": "d22000be",
