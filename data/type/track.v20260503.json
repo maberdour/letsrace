@@ -1157,6 +1157,19 @@
     "last_updated": "2026-03-24T10:46:54.000Z"
   },
   {
+    "id": "e97ba52a",
+    "name": "Friday Night Track League 2026 Night 6",
+    "type": "Track",
+    "region": "West Midlands",
+    "venue": "Halesowen A&CC, West Midlands",
+    "postcode": null,
+    "date": "2026-07-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335457/friday-night-track-league-2026-night-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-24T01:15:24.000Z"
+  },
+  {
     "id": "ddc047aa",
     "name": "Welwyn Track League 2026 #11",
     "type": "Track",
