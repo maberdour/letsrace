@@ -1,44 +1,5 @@
 [
   {
-    "id": "e498a248",
-    "name": "BMCC Ditchling Beacon Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "East Sussex | 1 miles | GH/90 | Ditchling Beacon",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/43922-bmcc-ditchling-beacon-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "10986fb5",
-    "name": "hill climb project round 1",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Cheshire East | 1 miles | J9/21 | Tesgs Nose",
-    "postcode": null,
-    "date": "2026-05-01",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51696-hill-climb-project-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:04:08.000Z"
-  },
-  {
-    "id": "ad8751f4",
-    "name": "Kent Valley RC Shap Hill Climb NLTTA Spoco",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Cumbria | 9.1 miles | L817 | Shap",
-    "postcode": null,
-    "date": "2026-05-04",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42413-kent-valley-rc-shap-hill-climb-nltta-spoco",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "d075a85a",
     "name": "hill climb project round 2",
     "type": "Hill Climb",
@@ -89,6 +50,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/49007-chepstow-cycling-club-club-0-54",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
+    "id": "f0c6e467",
+    "name": "hill climb project round 5",
+    "type": "Hill Climb",
+    "region": "North West",
+    "venue": "1 miles | J9/2",
+    "postcode": null,
+    "date": "2026-05-29",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51714-hill-climb-project-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-16T01:04:08.000Z"
   },
   {
     "id": "b6beb5b0",
@@ -999,6 +973,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/51435-dambusters-club-17-round-13",
     "source": "Google Sheet",
     "last_updated": "2026-04-08T01:04:11.000Z"
+  },
+  {
+    "id": "368b298a",
+    "name": "Hereford & Dist Whs CC Haugh Woods HC",
+    "type": "Hill Climb",
+    "region": "West Midlands ",
+    "venue": "1 miles | RCHC/22H",
+    "postcode": null,
+    "date": "2026-09-10",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/49363-hereford-dist-whs-cc-haugh-woods-hc",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-05T01:04:08.000Z"
   },
   {
     "id": "118151ec",

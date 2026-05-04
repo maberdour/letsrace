@@ -104,6 +104,19 @@
     "last_updated": "2026-02-24T03:15:24.000Z"
   },
   {
+    "id": "ea27c7ee",
+    "name": "WCC Summer Cyclocross Series Round 1",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Caedelyn Park, Cardiff",
+    "postcode": null,
+    "date": "2026-06-14",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335452/wcc-summer-cyclocross-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-04T01:15:24.000Z"
+  },
+  {
     "id": "e11aaa96",
     "name": "The Summer Series Round 3 2026",
     "type": "Cyclo Cross",
@@ -245,6 +258,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332712/south-london-go-ride-racing-league---race-9-of-9",
     "source": "Google Sheet",
     "last_updated": "2026-02-24T03:15:24.000Z"
+  },
+  {
+    "id": "02826c93",
+    "name": "WCC Summer Cyclocross Series Round 2",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Riverside Park, Cardiff",
+    "postcode": null,
+    "date": "2026-07-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335680/wcc-summer-cyclocross-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-04T01:15:24.000Z"
   },
   {
     "id": "122d8b3f",

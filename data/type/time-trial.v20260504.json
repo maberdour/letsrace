@@ -1,18 +1,5 @@
 [
   {
-    "id": "7fafae00",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45708-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "694850c2",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -156,6 +143,19 @@
     "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
+    "id": "4080f311",
+    "name": "Cleveland Coureurs Club 10",
+    "type": "Time Trial",
+    "region": "North East",
+    "venue": "North Yorkshire | 10 miles | T10C",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51267-cleveland-coureurs-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:04:09.000Z"
+  },
+  {
     "id": "8a361408",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 3",
     "type": "Time Trial",
@@ -284,6 +284,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45724-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "73f877e0",
+    "name": "Cairngorm hill climb (part of north of Scotland district race series)",
+    "type": "Time Trial",
+    "region": "﻿Scotland",
+    "venue": "Rothiemurchus and Aviemore Tennis Club, Inverness-Shire",
+    "postcode": null,
+    "date": "2026-06-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334333/cairngorm-hill-climb-part-of-north-of-scotland-district-race-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
     "id": "94715966",
