@@ -1,304 +1,5 @@
 [
   {
-    "id": "c745793e",
-    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 3 (all ages)",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Crystal Palace Park, London",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331006/dulwich-paragon-cc-crystal-palace-crits-race-3-all-ages",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-18T03:15:27.000Z"
-  },
-  {
-    "id": "9042dc33",
-    "name": "Glentress Dirt Crit: Round 2",
-    "type": "Road",
-    "region": "Scotland",
-    "venue": "Glentress Forest - Peebles, Scotland",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332375/glentress-dirt-crit-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T03:15:37.000Z"
-  },
-  {
-    "id": "8b37bbdb",
-    "name": "Maindy Flyers Freewheel league Round 3",
-    "type": "Road",
-    "region": "﻿Wales",
-    "venue": "Maindy Cycle Track - Cardiff, Wales",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332389/maindy-flyers-freewheel-league-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
-  },
-  {
-    "id": "a5eefa2a",
-    "name": "Tameside Circuit Races 2027 R4",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Tameside Cycle Circuit, Lancashire",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333051/tameside-circuit-races-2027-r4",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-10T01:15:25.000Z"
-  },
-  {
-    "id": "76d8f96b",
-    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 3",
-    "type": "Road",
-    "region": "North West",
-    "venue": "National Sports Centre, Isle of Man",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334437/team-rl360-isle-of-man-youth-cycling-league-2026--3",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "6ae232ca",
-    "name": "The Richard Moore Youth Race Series 2026 - Round 1",
-    "type": "Road",
-    "region": "﻿Scotland",
-    "venue": "West Lothian Cycle Circuit, West Lothian Leisure Centre, Scotland",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331820/the-richard-moore-youth-race-series-2026---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-13T08:56:02.000Z"
-  },
-  {
-    "id": "6ae232ca",
-    "name": "The Richard Moore Youth Race Series 2026 - Round 1",
-    "type": "Road",
-    "region": "Scotland",
-    "venue": "West Lothian Cycle Circuit, West Lothian Leisure Centre, Scotland",
-    "postcode": null,
-    "date": "2026-04-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331820/the-richard-moore-youth-race-series-2026---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-13T08:56:02.000Z"
-  },
-  {
-    "id": "e2c0cfcd",
-    "name": "Maindy Flyers present The Return To Llandow",
-    "type": "Road",
-    "region": "Wales",
-    "venue": "Llandow Motor Racing Circuit, Vale of Glamorgan",
-    "postcode": null,
-    "date": "2026-04-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333146/maindy-flyers-present-the-return-to-llandow",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-11T01:15:25.000Z"
-  },
-  {
-    "id": "e2c0cfcd",
-    "name": "Maindy Flyers present The Return To Llandow",
-    "type": "Road",
-    "region": "Wales",
-    "venue": "Llandow Motor Racing Circuit, Vale of Glamorgan",
-    "postcode": null,
-    "date": "2026-04-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333146/maindy-flyers-present-the-return-to-llandow",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-11T01:15:25.000Z"
-  },
-  {
-    "id": "bef9e7f8",
-    "name": "PORTSMOUTH EVENING CIRCUITS",
-    "type": "Road",
-    "region": "South",
-    "venue": "Mountbatten Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-04-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329823/portsmouth-evening-circuits",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "c39c9b24",
-    "name": "Salt Ayre Cog set mid week racing 2",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Salt Ayre Sports Centre, Lancashire",
-    "postcode": null,
-    "date": "2026-04-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334776/salt-ayre-cog-set-mid-week-racing-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:15:25.000Z"
-  },
-  {
-    "id": "ff9e73df",
-    "name": "Youth Racing Evening - Presented by Clancy Briggs Cycling Academy",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "Doncaster Dome Cycle Circuit, Doncaster",
-    "postcode": null,
-    "date": "2026-04-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334096/youth-racing-evening---presented-by-clancy-briggs-cycling-academy",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-28T03:15:25.000Z"
-  },
-  {
-    "id": "d3fd6626",
-    "name": "Carlisle Summer Nights #3",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Carlisle Cycle Circuit, Carlisle",
-    "postcode": null,
-    "date": "2026-04-30",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331213/carlisle-summer-nights-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-31T03:15:25.000Z"
-  },
-  {
-    "id": "cbfe5b12",
-    "name": "2026 Steam Packet Holidays Isle of Man Youth Tour",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Bikestyle, Douglas",
-    "postcode": null,
-    "date": "2026-05-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332078/2026-steam-packet-holidays-isle-of-man-youth-tour",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-10T03:15:24.000Z"
-  },
-  {
-    "id": "da9167d5",
-    "name": "HHV Crit League - Round 1",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-05-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329628/hhv-crit-league---round-1-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-23T03:15:24.000Z"
-  },
-  {
-    "id": "59d79d86",
-    "name": "North Wales Circuit Series 26 Round 2",
-    "type": "Road",
-    "region": "﻿Wales",
-    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
-    "postcode": null,
-    "date": "2026-05-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332311/north-wales-circuit-series-26-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-12T03:15:26.000Z"
-  },
-  {
-    "id": "2ba6b476",
-    "name": "OMEGA PORTSMOUTH CIRCUITS",
-    "type": "Road",
-    "region": "South",
-    "venue": "Mountbatten Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-05-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329929/omega-portsmouth-circuits",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-09T03:15:25.000Z"
-  },
-  {
-    "id": "b456f182",
-    "name": "Spring in the Park 2026 #3",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-05-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331364/spring-in-the-park-2026-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
-    "id": "30d51e7b",
-    "name": "Leadout Performance Prissick Spring Classic #3",
-    "type": "Road",
-    "region": "North East",
-    "venue": "Cycle Circuit, Middlesbrough",
-    "postcode": null,
-    "date": "2026-05-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332418/leadout-performance-prissick-spring-classic-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-17T03:15:24.000Z"
-  },
-  {
-    "id": "81f836b7",
-    "name": "Ixworth Crits 2026",
-    "type": "Road",
-    "region": "Eastern",
-    "venue": "Ixworth Village Hall, Bury St Edmunds",
-    "postcode": null,
-    "date": "2026-05-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330268/ixworth-crits-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "89e62d26",
-    "name": "Dulwich Paragon CC Crystal Palace Crits: Race 4 (all ages)",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Crystal Palace Park, London",
-    "postcode": null,
-    "date": "2026-05-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331601/dulwich-paragon-cc-crystal-palace-crits-race-4-all-ages",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-22T03:15:25.000Z"
-  },
-  {
-    "id": "13111b09",
-    "name": "Glentress Dirt Crit: Round 3",
-    "type": "Road",
-    "region": "Scotland",
-    "venue": "Glentress Forest - Peebles, Scotland",
-    "postcode": null,
-    "date": "2026-05-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332376/glentress-dirt-crit-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T03:15:37.000Z"
-  },
-  {
-    "id": "d963f796",
-    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 4",
-    "type": "Road",
-    "region": "North West",
-    "venue": "National Sports Centre, Isle of Man",
-    "postcode": null,
-    "date": "2026-05-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334438/team-rl360-isle-of-man-youth-cycling-league-2026--4",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
     "id": "d6428410",
     "name": "CIty Crits Cardiff - Round 4",
     "type": "Road",
@@ -507,15 +208,15 @@
     "last_updated": "2026-04-02T01:15:25.000Z"
   },
   {
-    "id": "55b32392",
-    "name": "Tameside Circuit Races 2027 R6",
+    "id": "eeb15ce8",
+    "name": "Tameside Circuit Races 2026 R6",
     "type": "Road",
     "region": "North West",
     "venue": "Tameside Cycle Circuit, Lancashire",
     "postcode": null,
     "date": "2026-05-12",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333053/tameside-circuit-races-2027-r6",
+    "url": "https://www.britishcycling.org.uk/events/details/333053/tameside-circuit-races-2026-r6",
     "source": "Google Sheet",
     "last_updated": "2026-04-10T01:15:25.000Z"
   },
@@ -622,6 +323,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331365/spring-in-the-park-2026-4",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "d9174e66",
+    "name": "Central Region Circuit Series Round 2",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Milton Keynes Bowl, Buckinghamshire",
+    "postcode": null,
+    "date": "2026-05-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334311/central-region-circuit-series-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "405c4306",
@@ -793,15 +507,15 @@
     "last_updated": "2026-02-02T03:15:26.000Z"
   },
   {
-    "id": "565badc5",
-    "name": "Tameside Circuit Races 2027 R7",
+    "id": "e841b14a",
+    "name": "Tameside Circuit Races 2026 R7",
     "type": "Road",
     "region": "North West",
     "venue": "Tameside Cycle Circuit, Lancashire",
     "postcode": null,
     "date": "2026-05-19",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333054/tameside-circuit-races-2027-r7",
+    "url": "https://www.britishcycling.org.uk/events/details/333054/tameside-circuit-races-2026-r7",
     "source": "Google Sheet",
     "last_updated": "2026-04-10T01:15:25.000Z"
   },
@@ -845,6 +559,19 @@
     "last_updated": "2026-04-11T01:15:25.000Z"
   },
   {
+    "id": "173e5747",
+    "name": "Llandow 2026 Round 2",
+    "type": "Road",
+    "region": "Wales",
+    "venue": "Llandow Motor Racing Circuit, Vale of Glamorgan",
+    "postcode": null,
+    "date": "2026-05-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335727/llandow-2026-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-02T01:15:24.000Z"
+  },
+  {
     "id": "dc7a9d48",
     "name": "PNE Mountbatten Circuit Series #3",
     "type": "Road",
@@ -884,8 +611,8 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
-    "id": "6d8c26c4",
-    "name": "Youth Racing Evening Event 2- Presented by Clancy Briggs Cycling Academy",
+    "id": "567de16b",
+    "name": "Youth Racing Evening Event 2- Presented by Clancy Briggs Cycling Academy (Cancelled)",
     "type": "Road",
     "region": "Yorkshire & Humber",
     "venue": "Doncaster Dome Cycle Circuit, Doncaster",
@@ -897,17 +624,30 @@
     "last_updated": "2026-04-15T01:15:24.000Z"
   },
   {
-    "id": "8a9a7226",
-    "name": "Castle Combe Summer Series 2026 - Round 2",
+    "id": "fdfeaab9",
+    "name": "Castle Combe Summer Series 2026 - Round 2; Women's South League - Round 5",
     "type": "Road",
     "region": "South",
     "venue": "Castle Combe Race Circuit, Wiltshire",
     "postcode": null,
     "date": "2026-05-21",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333196/castle-combe-summer-series-2026---round-2",
+    "url": "https://www.britishcycling.org.uk/events/details/333196/castle-combe-summer-series-2026---round-2-womens-south-league---round-5",
     "source": "Google Sheet",
     "last_updated": "2026-04-16T01:15:25.000Z"
+  },
+  {
+    "id": "42acdcf5",
+    "name": "Boston Wheelers CC Go-Ride Racing Summer 26 - Race 1",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Tattershall Go Kart Track, Lincolnshire",
+    "postcode": null,
+    "date": "2026-05-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331847/boston-wheelers-cc-go-ride-racing-summer-26---race-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "0a162d9f",
@@ -1001,15 +741,15 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
-    "id": "d190abb7",
-    "name": "Tameside Circuit Races 2027 R8",
+    "id": "e95899a9",
+    "name": "Tameside Circuit Races 2026 R8",
     "type": "Road",
     "region": "North West",
     "venue": "Tameside Cycle Circuit, Lancashire",
     "postcode": null,
     "date": "2026-05-26",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333055/tameside-circuit-races-2027-r8",
+    "url": "https://www.britishcycling.org.uk/events/details/333055/tameside-circuit-races-2026-r8",
     "source": "Google Sheet",
     "last_updated": "2026-04-10T01:15:25.000Z"
   },
@@ -1077,6 +817,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333606/on-yer-bike-barrowford-crit-series-2026-3",
     "source": "Google Sheet",
     "last_updated": "2026-04-11T01:15:25.000Z"
+  },
+  {
+    "id": "5c373017",
+    "name": "Boston Wheelers CC Go-Ride Racing Summer 26 - Race 2",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Tattershall Go Kart Track, Lincolnshire",
+    "postcode": null,
+    "date": "2026-05-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331849/boston-wheelers-cc-go-ride-racing-summer-26---race-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "90deee11",
@@ -1170,15 +923,15 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
-    "id": "af4c5cae",
-    "name": "Tameside Circuit Races 2027 R9",
+    "id": "1ef69a46",
+    "name": "Tameside Circuit Races 2026 R9",
     "type": "Road",
     "region": "North West",
     "venue": "Tameside Cycle Circuit, Lancashire",
     "postcode": null,
     "date": "2026-06-02",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333056/tameside-circuit-races-2027-r9",
+    "url": "https://www.britishcycling.org.uk/events/details/333056/tameside-circuit-races-2026-r9",
     "source": "Google Sheet",
     "last_updated": "2026-04-10T01:15:25.000Z"
   },
@@ -1248,6 +1001,19 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
+    "id": "79bf8225",
+    "name": "Boston Wheelers CC Go-Ride Racing Summer 26 - Race 3",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Tattershall Go Kart Track, Lincolnshire",
+    "postcode": null,
+    "date": "2026-06-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331850/boston-wheelers-cc-go-ride-racing-summer-26---race-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
+  },
+  {
     "id": "b64e95b9",
     "name": "Panaracer GP",
     "type": "Road",
@@ -1313,15 +1079,15 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
-    "id": "45e887dc",
-    "name": "Tameside Circuit Races 2027 R10",
+    "id": "e50a1b0b",
+    "name": "Tameside Circuit Races 2026 R10",
     "type": "Road",
     "region": "North West",
     "venue": "Tameside Cycle Circuit, Lancashire",
     "postcode": null,
     "date": "2026-06-09",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333058/tameside-circuit-races-2027-r10",
+    "url": "https://www.britishcycling.org.uk/events/details/333058/tameside-circuit-races-2026-r10",
     "source": "Google Sheet",
     "last_updated": "2026-04-10T01:15:25.000Z"
   },
@@ -1534,15 +1300,15 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
-    "id": "9aef010d",
-    "name": "Tameside Circuit Races 2027 R11",
+    "id": "9a065acf",
+    "name": "Tameside Circuit Races 2026 R11",
     "type": "Road",
     "region": "North West",
     "venue": "Tameside Cycle Circuit, Lancashire",
     "postcode": null,
     "date": "2026-06-16",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333059/tameside-circuit-races-2027-r11",
+    "url": "https://www.britishcycling.org.uk/events/details/333059/tameside-circuit-races-2026-r11",
     "source": "Google Sheet",
     "last_updated": "2026-04-10T01:15:25.000Z"
   },
@@ -1612,6 +1378,19 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
+    "id": "ccff8a91",
+    "name": "Youth & Adult Racing Evening - Presented by Clancy Briggs Cycling Academy",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Doncaster Dome Cycle Circuit, Doncaster",
+    "postcode": null,
+    "date": "2026-06-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335858/youth--adult-racing-evening---presented-by-clancy-briggs-cycling-academy",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-02T01:15:24.000Z"
+  },
+  {
     "id": "61022879",
     "name": "Carlisle Summer nights #9",
     "type": "Road",
@@ -1636,6 +1415,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330179/castle-combe-summer-series-2026---round-6",
     "source": "Google Sheet",
     "last_updated": "2026-04-16T01:15:25.000Z"
+  },
+  {
+    "id": "05f2426f",
+    "name": "Boston Wheelers CC Go-Ride Racing Summer 26 - Race 4",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Tattershall Go Kart Track, Lincolnshire",
+    "postcode": null,
+    "date": "2026-06-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331851/boston-wheelers-cc-go-ride-racing-summer-26---race-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "d5887d51",
@@ -1716,15 +1508,15 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
-    "id": "71a557a5",
-    "name": "Tameside Circuit Races 2027 R12",
+    "id": "d314d8ce",
+    "name": "Tameside Circuit Races 2026 R12",
     "type": "Road",
     "region": "North West",
     "venue": "Tameside Cycle Circuit, Lancashire",
     "postcode": null,
     "date": "2026-06-23",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333060/tameside-circuit-races-2027-r12",
+    "url": "https://www.britishcycling.org.uk/events/details/333060/tameside-circuit-races-2026-r12",
     "source": "Google Sheet",
     "last_updated": "2026-04-10T01:15:25.000Z"
   },
@@ -1807,6 +1599,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "1adbaf7d",
+    "name": "West Midlands Youth Series 2026 Round 7 -Solihull CC",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Tudor Grange Park, West Midlands",
+    "postcode": null,
+    "date": "2026-06-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334625/west-midlands-youth-series-2026-round-7--solihull-cc",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
+  },
+  {
     "id": "3692abea",
     "name": "Scarborough Cycling Festival inc National Youth Circuit Championships 2026 with Big Bear Bikes and C",
     "type": "Road",
@@ -1872,6 +1677,19 @@
     "last_updated": "2026-04-16T01:15:25.000Z"
   },
   {
+    "id": "25466608",
+    "name": "The 2026 LOGCO Otley Cycle Races",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Otley CC Clubhouse, West Yorkshire",
+    "postcode": null,
+    "date": "2026-07-01",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334433/the-2026-logco-otley-cycle-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
+  },
+  {
     "id": "de004a16",
     "name": "Carlisle Summer nights #11",
     "type": "Road",
@@ -1896,6 +1714,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330181/castle-combe-summer-series-2026---round-7",
     "source": "Google Sheet",
     "last_updated": "2026-04-16T01:15:25.000Z"
+  },
+  {
+    "id": "3d5de887",
+    "name": "Boston Wheelers CC Go-Ride Racing Summer 26 - Race 5",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Tattershall Go Kart Track, Lincolnshire",
+    "postcode": null,
+    "date": "2026-07-03",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331852/boston-wheelers-cc-go-ride-racing-summer-26---race-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "6262bf33",
@@ -2169,6 +2000,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331311/the-last-carlisle-summer-night-2026",
     "source": "Google Sheet",
     "last_updated": "2026-02-07T03:15:28.000Z"
+  },
+  {
+    "id": "53b4895e",
+    "name": "Boston Wheelers CC Go-Ride Racing Summer 26 - Race 6",
+    "type": "Road",
+    "region": "East Midlands",
+    "venue": "Tattershall Go Kart Track, Lincolnshire",
+    "postcode": null,
+    "date": "2026-07-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331853/boston-wheelers-cc-go-ride-racing-summer-26---race-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "388889df",

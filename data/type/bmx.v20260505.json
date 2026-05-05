@@ -1,29 +1,16 @@
 [
   {
-    "id": "e12bd19b",
-    "name": "Telford Flyers Special",
+    "id": "cddf310f",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF8",
     "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Telford Flyers BMX Club., Telford",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
     "postcode": null,
-    "date": "2026-04-28",
+    "date": "2026-05-08",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333602/telford-flyers-special",
+    "url": "https://www.britishcycling.org.uk/events/details/335725/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff8",
     "source": "Google Sheet",
-    "last_updated": "2026-03-21T03:15:24.000Z"
-  },
-  {
-    "id": "f05349b5",
-    "name": "Lloyds BMX National Series 2026 Round 3 & 4 - Glasgow",
-    "type": "BMX",
-    "region": "﻿Scotland",
-    "venue": "Glasgow BMX Centre, Glasgow",
-    "postcode": null,
-    "date": "2026-05-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333769/lloyds-bmx-national-series-2026-round-3--4---glasgow",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-26T03:15:25.000Z"
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "6cbf1595",
@@ -245,6 +232,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/335268/british-cycling-pathway-bmx-sx-rsr-2-midlands-2026",
     "source": "Google Sheet",
     "last_updated": "2026-04-22T01:15:26.000Z"
+  },
+  {
+    "id": "491f219b",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF9",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-05-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335726/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff9",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "111c2338",
