@@ -1,16 +1,16 @@
 [
   {
-    "id": "f05349b5",
-    "name": "Lloyds BMX National Series 2026 Round 3 & 4 - Glasgow",
+    "id": "cddf310f",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF8",
     "type": "BMX",
-    "region": "﻿Scotland",
-    "venue": "Glasgow BMX Centre, Glasgow",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
     "postcode": null,
-    "date": "2026-05-02",
+    "date": "2026-05-08",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333769/lloyds-bmx-national-series-2026-round-3--4---glasgow",
+    "url": "https://www.britishcycling.org.uk/events/details/335725/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff8",
     "source": "Google Sheet",
-    "last_updated": "2026-03-26T03:15:25.000Z"
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "6cbf1595",
@@ -37,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331887/british-cycling-pathway-development-centre-bmx---south-west-14-llynfi-bmx-club",
     "source": "Google Sheet",
     "last_updated": "2026-01-30T03:15:24.000Z"
+  },
+  {
+    "id": "9c84cbf9",
+    "name": "Knightwood BMX Club 2026 Summer Series (Round 1)",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Knightwood BMX, Hampshire",
+    "postcode": null,
+    "date": "2026-05-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335963/knightwood-bmx-club-2026-summer-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-06T01:15:25.000Z"
   },
   {
     "id": "571636c4",
@@ -128,6 +141,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331500/north-region-bmx-2026-round-4-bruntwood-park",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "b7976ee2",
+    "name": "Peterborough bmx summer series - RD2",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Peterborough BMX Track, PETERBOROUGH",
+    "postcode": null,
+    "date": "2026-05-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335997/peterborough-bmx-summer-series---rd2",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-06T01:15:25.000Z"
   },
   {
     "id": "dea83ca2",
@@ -232,6 +258,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/335268/british-cycling-pathway-bmx-sx-rsr-2-midlands-2026",
     "source": "Google Sheet",
     "last_updated": "2026-04-22T01:15:26.000Z"
+  },
+  {
+    "id": "491f219b",
+    "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF9",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-05-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335726/british-cycling-pathway-development-centre-plus-bmx---south-zone-1-25-26-ff9",
+    "source": "Google Sheet",
+    "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
     "id": "111c2338",
