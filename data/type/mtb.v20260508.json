@@ -1,44 +1,5 @@
 [
   {
-    "id": "264cb1a5",
-    "name": "Falkirk Schools MTB Championships 2026",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Callendar Estate MTB Trails, Falkirk",
-    "postcode": null,
-    "date": "2026-05-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/321133/falkirk-schools-mtb-championships-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "3e3edd7f",
-    "name": "FJBC Summer Dirt Crit Series 2026 Round 1",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Callendar Estate MTB Trails, Falkirk",
-    "postcode": null,
-    "date": "2026-05-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332273/fjbc-summer-dirt-crit-series-2026-round-1-",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-12T03:15:26.000Z"
-  },
-  {
-    "id": "3e3edd7f",
-    "name": "FJBC Summer Dirt Crit Series 2026 Round 1",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Callendar Estate MTB Trails, Falkirk",
-    "postcode": null,
-    "date": "2026-05-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332273/fjbc-summer-dirt-crit-series-2026-round-1-",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-12T03:15:26.000Z"
-  },
-  {
     "id": "f21adc6f",
     "name": "B-BUDDIES Off-Ride Go-Ride Race League 25/26 R9",
     "type": "MTB",
@@ -375,6 +336,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/332337/southernxc-round-3---basingstoke",
     "source": "Google Sheet",
     "last_updated": "2026-02-14T03:15:25.000Z"
+  },
+  {
+    "id": "b0d3f4c9",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-05-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335682/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-04T01:15:24.000Z"
+  },
+  {
+    "id": "23b39873",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-05-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335683/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-04T01:15:24.000Z"
   },
   {
     "id": "ece64c77",
@@ -1287,6 +1274,19 @@
     "last_updated": "2025-11-27T03:15:28.000Z"
   },
   {
+    "id": "a479d3f8",
+    "name": "Gravity Mini Rnd3 Llangollen",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Llangollen, Clwyd",
+    "postcode": null,
+    "date": "2026-08-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334737/gravity-mini-rnd3-llangollen",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-04T01:15:24.000Z"
+  },
+  {
     "id": "8cef625a",
     "name": "Pearce Cycles DH Series 2026 Round 3",
     "type": "MTB",
@@ -1415,6 +1415,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332245/lloyds-national-4x-series-round-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-10T03:15:24.000Z"
+  },
+  {
+    "id": "22e2c67f",
+    "name": "Gravity Mini Rnd4 Revolution Bikepark",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Revolution Bike Park, Powys",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334738/gravity-mini-rnd4-revolution-bikepark",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-04T01:15:24.000Z"
   },
   {
     "id": "4292e5ad",
