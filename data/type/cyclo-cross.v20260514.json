@@ -26,8 +26,21 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
-    "id": "5edfcae4",
-    "name": "Yorkshire Cyclo-cross Summer Series Round 2",
+    "id": "72c51ed7",
+    "name": "Haringey Schools Cycling League 2025_2026 Round 8",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Lee Valley VeloPark, London",
+    "postcode": null,
+    "date": "2026-05-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336291/haringey-schools-cycling-league-2025_2026-round-8-",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-14T01:15:24.000Z"
+  },
+  {
+    "id": "dc6a6676",
+    "name": "Yorkshire Cyclo-cross Summer Series Round 2 (Cancelled)",
     "type": "Cyclo Cross",
     "region": "Yorkshire & Humber",
     "venue": "Temple Newsam Park, Leeds",
@@ -63,6 +76,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331407/the-summer-series-round-1-2026",
     "source": "Google Sheet",
     "last_updated": "2026-01-17T03:15:25.000Z"
+  },
+  {
+    "id": "8b8762bb",
+    "name": "C&CCC Friday Night Hot Laps 2026",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Pittville Park, Gloucestershire",
+    "postcode": null,
+    "date": "2026-06-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335446/cccc-friday-night-hot-laps-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-11T01:15:23.000Z"
   },
   {
     "id": "2fb875e0",
@@ -143,11 +169,11 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
-    "id": "54b8607f",
+    "id": "a7840d3c",
     "name": "Yorkshire Cyclo-cross Summer Series Round 4",
     "type": "Cyclo Cross",
     "region": "Yorkshire & Humber",
-    "venue": "Killingworth Moor Country Park, HARROGATE",
+    "venue": "Killinghall Moor Country Park, Harrogate",
     "postcode": null,
     "date": "2026-06-24",
     "start_time": "23:00",
@@ -297,6 +323,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/333776/maap-london-summer-cross-rd-4-",
     "source": "Google Sheet",
     "last_updated": "2026-04-16T01:15:25.000Z"
+  },
+  {
+    "id": "058d948e",
+    "name": "Cyclocross Reigate 2026",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Cyclo Cross Reigate, Surrey",
+    "postcode": null,
+    "date": "2026-08-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335679/cyclocross-reigate-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-07T01:15:24.000Z"
+  },
+  {
+    "id": "55675cd9",
+    "name": "Cheltenham & County Cycling Clubs Summer CX Race 2026",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Pittville Park, Gloucestershire",
+    "postcode": null,
+    "date": "2026-08-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334931/cheltenham--county-cycling-clubs-summer-cx-race-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-14T01:15:24.000Z"
+  },
+  {
+    "id": "9ef10f9c",
+    "name": "WCC Summer Cyclocross Series Round 3",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Llandaff Fields Park, Cardiff",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335729/wcc-summer-cyclocross-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-09T01:15:23.000Z"
   },
   {
     "id": "2220e2bd",
