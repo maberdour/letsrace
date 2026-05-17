@@ -1,122 +1,5 @@
 [
   {
-    "id": "571636c4",
-    "name": "BMX East Summer Series 2026 Round 3",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Royston Rockets BMX Club, Hertfordshire",
-    "postcode": null,
-    "date": "2026-05-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334027/bmx-east-summer-series-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-26T03:15:25.000Z"
-  },
-  {
-    "id": "719698f6",
-    "name": "Midlands BMX Super Series 2026 - Round 2 - Doncaster",
-    "type": "BMX",
-    "region": "Yorkshire & Humber",
-    "venue": "Doncaster BMX Track, South Yorkshire",
-    "postcode": null,
-    "date": "2026-05-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334458/midlands-bmx-super-series-2026---round-2---doncaster",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-12T01:15:24.000Z"
-  },
-  {
-    "id": "542c69d6",
-    "name": "Scottish Regional BMX Racing Series 2026 Round 3",
-    "type": "BMX",
-    "region": "ï»¿Scotland",
-    "venue": "Clydebank BMX Track, Dunbartonshire",
-    "postcode": null,
-    "date": "2026-05-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335007/scottish-regional-bmx-racing-series-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-22T01:15:26.000Z"
-  },
-  {
-    "id": "7bce7686",
-    "name": "South West BMX Regional Series 2026 - Round 4, Llynfi",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Llynfi BMX Racing Club, bRIDGEND",
-    "postcode": null,
-    "date": "2026-05-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335141/south-west-bmx-regional-series-2026---round-4-llynfi",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-22T01:15:26.000Z"
-  },
-  {
-    "id": "aedff618",
-    "name": "British Cycling Pathway Development Centre BMX - South West #15 Cardiff BMX Club",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2026-05-16",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331888/british-cycling-pathway-development-centre-bmx---south-west-15-cardiff-bmx-club",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-30T03:15:24.000Z"
-  },
-  {
-    "id": "cb38d9f5",
-    "name": "Midlands BMX Super Series 2026 - Round 3 - Rotherham",
-    "type": "BMX",
-    "region": "Yorkshire & Humber",
-    "venue": "Rotherham BMX Track, South Yorkshire",
-    "postcode": null,
-    "date": "2026-05-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334521/midlands-bmx-super-series-2026---round-3---rotherham",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-12T01:15:24.000Z"
-  },
-  {
-    "id": "7e8662df",
-    "name": "North Region BMX 2026 Round 4 Bruntwood Park",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "Bruntwood Park BMX track, Cheadle",
-    "postcode": null,
-    "date": "2026-05-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331500/north-region-bmx-2026-round-4-bruntwood-park",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-20T03:15:25.000Z"
-  },
-  {
-    "id": "b7976ee2",
-    "name": "Peterborough bmx summer series - RD2",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2026-05-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335997/peterborough-bmx-summer-series---rd2",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-06T01:15:25.000Z"
-  },
-  {
-    "id": "dea83ca2",
-    "name": "South BMX Regional Series 2026 - Round 3 - Hayes Hawks BMX Club",
-    "type": "BMX",
-    "region": "London & South East",
-    "venue": "Hayes Hawkes BMX Club, Slough",
-    "postcode": null,
-    "date": "2026-05-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334098/south-bmx-regional-series-2026---round-3---hayes-hawks-bmx-club",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-27T03:15:25.000Z"
-  },
-  {
     "id": "a8939e82",
     "name": "British Cycling Pathway BMX SX RSR - South #2 2026",
     "type": "BMX",
@@ -299,6 +182,19 @@
     "last_updated": "2026-04-13T01:15:26.000Z"
   },
   {
+    "id": "2b93564d",
+    "name": "Scottish Regional BMX Racing Series Round 6",
+    "type": "BMX",
+    "region": "ï»¿Scotland",
+    "venue": "Glasgow BMX Centre, Glasgow",
+    "postcode": null,
+    "date": "2026-06-07",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336298/scottish-regional-bmx-racing-series-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-14T01:15:24.000Z"
+  },
+  {
     "id": "01f8d3e9",
     "name": "Lloyds BMX National Series 2026 Round 5 & 6 - Gosport",
     "type": "BMX",
@@ -364,6 +260,19 @@
     "last_updated": "2026-03-27T03:15:25.000Z"
   },
   {
+    "id": "ae04c825",
+    "name": "Scottish Regional BMX Racing Series 2026 Round 7",
+    "type": "BMX",
+    "region": "ï»¿Scotland",
+    "venue": "Clydebank BMX Track, Dunbartonshire",
+    "postcode": null,
+    "date": "2026-07-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336299/scottish-regional-bmx-racing-series-2026-round-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-14T01:15:24.000Z"
+  },
+  {
     "id": "4c7f1913",
     "name": "BMX East Summer Series 2026 Round 7",
     "type": "BMX",
@@ -401,6 +310,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331503/north-region-bmx-2026-round-7-bradford",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "ec74b39a",
+    "name": "Scottish Regional BMX Racing Series 2026 Round 8",
+    "type": "BMX",
+    "region": "ï»¿Scotland",
+    "venue": "Glasgow BMX Centre, Glasgow",
+    "postcode": null,
+    "date": "2026-07-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336302/scottish-regional-bmx-racing-series-2026-round-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-14T01:15:24.000Z"
   },
   {
     "id": "91859572",
