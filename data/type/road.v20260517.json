@@ -338,6 +338,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "28e0bffb",
+    "name": "British Cycling Talent Pathway Circuit RSR #3 South (Girls)",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Hillingdon Cycle Circuit, Middlesex",
+    "postcode": null,
+    "date": "2026-05-28",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335145/british-cycling-talent-pathway-circuit-rsr-3-south-girls",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-17T17:35:04.000Z"
+  },
+  {
     "id": "ec60e815",
     "name": "Castle Combe Summer Series 2026 - Round 3",
     "type": "Road",
@@ -375,6 +388,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331849/boston-wheelers-cc-go-ride-racing-summer-26---race-2",
     "source": "Google Sheet",
     "last_updated": "2026-04-30T01:15:25.000Z"
+  },
+  {
+    "id": "28af5c04",
+    "name": "British Cycling Talent Pathway Circuit RSR #3 South (Boys)",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Hillingdon Cycle Circuit, Middlesex",
+    "postcode": null,
+    "date": "2026-05-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335147/british-cycling-talent-pathway-circuit-rsr-3-south-boys",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-17T17:35:04.000Z"
   },
   {
     "id": "90deee11",
@@ -661,6 +687,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334441/team-rl360-isle-of-man-youth-cycling-league-2026--7",
     "source": "Google Sheet",
     "last_updated": "2026-04-09T01:15:25.000Z"
+  },
+  {
+    "id": "8a1bd913",
+    "name": "British Cycling Pathway Development Centre Circuit Girls Only - North West #2",
+    "type": "Road",
+    "region": "North West",
+    "venue": "UCLAN Sports Arena - Preston, Lancashire",
+    "postcode": null,
+    "date": "2026-06-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/334795/british-cycling-pathway-development-centre-circuit-girls-only---north-west-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-17T17:35:04.000Z"
   },
   {
     "id": "cf1d0d19",
