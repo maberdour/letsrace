@@ -1,18 +1,5 @@
 [
   {
-    "id": "62a26a92",
-    "name": "North and Scotland league - Edinburgh",
-    "type": "Speedway",
-    "region": "﻿Scotland",
-    "venue": "Redbraes Park, Edinburgh",
-    "postcode": null,
-    "date": "2026-05-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332651/north-and-scotland-league---edinburgh",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-09T19:50:15.000Z"
-  },
-  {
     "id": "28126145",
     "name": "Scottish League Series - Round 3",
     "type": "Speedway",
