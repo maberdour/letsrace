@@ -1,18 +1,5 @@
 [
   {
-    "id": "24a88fdd",
-    "name": "Chepstow Cycling Club Club 0.54",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Gloucestershire | 950 yards | RH55 | Castleford",
-    "postcode": null,
-    "date": "2026-05-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/49007-chepstow-cycling-club-club-0-54",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T09:04:22.000Z"
-  },
-  {
     "id": "f0c6e467",
     "name": "hill climb project round 5",
     "type": "Hill Climb",
