@@ -1,57 +1,5 @@
 [
   {
-    "id": "268d51c9",
-    "name": "Fenland Clarion Go-Ride Cross Races",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Embankment Athletics Track, Cambs",
-    "postcode": null,
-    "date": "2026-05-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331360/fenland-clarion-go-ride-cross-races",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "72c51ed7",
-    "name": "Haringey Schools Cycling League 2025_2026 Round 8",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Lee Valley VeloPark, London",
-    "postcode": null,
-    "date": "2026-05-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336291/haringey-schools-cycling-league-2025_2026-round-8-",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-14T01:15:24.000Z"
-  },
-  {
-    "id": "dc6a6676",
-    "name": "Yorkshire Cyclo-cross Summer Series Round 2 (Cancelled)",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Temple Newsam Park, Leeds",
-    "postcode": null,
-    "date": "2026-05-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334790/yorkshire-cyclo-cross-summer-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-18T01:15:27.000Z"
-  },
-  {
-    "id": "1e6be50e",
-    "name": "Sprockets Summer CX 2026 Race #1",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Dinton Pastures Country Park, Wokingham",
-    "postcode": null,
-    "date": "2026-05-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332711/sprockets-summer-cx-2026-race-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-24T03:15:24.000Z"
-  },
-  {
     "id": "b20cc271",
     "name": "The Summer Series Round 1 2026",
     "type": "Cyclo Cross",
@@ -195,6 +143,32 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "b083c277",
+    "name": "BRECHIN EQUESTRIAN SUMMER CROSS - TRILOGY SERIES ROUND 1",
+    "type": "Cyclo Cross",
+    "region": "ï»¿Scotland",
+    "venue": "Brechin Equestrian Centre, Angus",
+    "postcode": null,
+    "date": "2026-07-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336760/brechin-equestrian-summer-cross---trilogy-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-28T01:15:25.000Z"
+  },
+  {
+    "id": "b083c277",
+    "name": "BRECHIN EQUESTRIAN SUMMER CROSS - TRILOGY SERIES ROUND 1",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Brechin Equestrian Centre, Angus",
+    "postcode": null,
+    "date": "2026-07-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336760/brechin-equestrian-summer-cross---trilogy-series-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-28T01:15:25.000Z"
+  },
+  {
     "id": "e85d001b",
     "name": "HHV London Summer Cross Rd 1",
     "type": "Cyclo Cross",
@@ -323,6 +297,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/335679/cyclocross-reigate-2026",
     "source": "Google Sheet",
     "last_updated": "2026-05-07T01:15:24.000Z"
+  },
+  {
+    "id": "5db8899f",
+    "name": "Cyclopark Summer CX 2026",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Cyclopark, Kent",
+    "postcode": null,
+    "date": "2026-08-15",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336303/cyclopark-summer-cx-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-24T01:15:24.000Z"
   },
   {
     "id": "55675cd9",
