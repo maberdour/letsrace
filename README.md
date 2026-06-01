@@ -47,6 +47,8 @@ Events are automatically fetched from British Cycling and Cycling Time Trials vi
 - Google Apps Script ImportCSV jobs pull those CSVs into the `Events` Google Sheet, normalizing and de‑duplicating rows.
 - At 03:30 UK time, the Daily Build script reads the sheet, generates versioned JSON files under `/data/`, and commits them to GitHub, which GitHub Pages then serves.
 
+**GitHub PAT for the daily build:** stored in **Google Apps Script** Script properties as `GITHUB_TOKEN` — not in GitHub Actions repo secrets. See [docs/GITHUB-PAT.md](docs/GITHUB-PAT.md).
+
 ## 🛠️ Development
 
 ### Local Development
@@ -71,6 +73,7 @@ Events are automatically fetched from British Cycling and Cycling Time Trials vi
 
 ## 📚 Documentation
 
+- [GitHub PAT (daily build credentials)](docs/GITHUB-PAT.md)
 - [About Page Update System](docs/ABOUT-UPDATE-README.md)
 - [Performance Optimizations](docs/PERFORMANCE_OPTIMIZATIONS.md)
 - [Site Copy Guide](docs/SiteCopy.md)

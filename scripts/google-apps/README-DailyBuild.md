@@ -1,5 +1,23 @@
 # Daily Build and Deploy Script
 
+## Credentials (read this first)
+
+The GitHub PAT for the nightly build is stored in **Google Apps Script Script Properties**, not in GitHub.
+
+| | |
+|--|--|
+| **Where** | Apps Script → Project settings (gear) → **Script properties** |
+| **Property key** | `GITHUB_TOKEN` (exact; defined in `DailyBuildAndDeploy.gs`) |
+| **GitHub PAT label** | e.g. `letsrace-daily-build` — label only; does not need to match the property key |
+
+**Do not** add this token under GitHub → repository → Secrets and variables → Actions. This project has no Actions workflow that uses a PAT; empty repo/environment secrets are normal.
+
+After regenerating a token: edit **`GITHUB_TOKEN`** in Script properties, then run `dailyBuild()` and check commits on `maberdour/letsrace` `main`.
+
+Full reference: [docs/GITHUB-PAT.md](../../docs/GITHUB-PAT.md).
+
+---
+
 This Google Apps Script stack keeps the LetsRace.cc site updated every night. Time-based triggers first run the ImportCSV scripts to pull fresh events from British Cycling and Cycling Time Trials CSVs into the `Events` Google Sheet, then the Daily Build script converts that sheet data into static JSON files and commits them to a GitHub repository for website deployment.
 
 ## Features
@@ -58,37 +76,30 @@ The script generates the following file structure in the GitHub repository:
 
 ## Setup Instructions
 
-### 1. Set GitHub Token
+### 1. Set GitHub Token (Google Apps Script only)
 
-**IMPORTANT**: You must manually set your GitHub personal access token in Script Properties:
+**IMPORTANT**: Store the PAT in **Script Properties** — not in GitHub Actions secrets, not in this repo.
 
-1. Go to your Google Apps Script project
-2. Click on "Project Settings" (gear icon)
-3. Click on "Script Properties" tab
-4. Add a new property:
+1. Go to your Google Apps Script project (the one that runs `DailyBuildAndDeploy.gs`)
+2. **Project settings** (gear) → **Script properties**
+3. Add or edit:
    - **Key**: `GITHUB_TOKEN`
-   - **Value**: Your GitHub personal access token
-5. Click "Add script property" and save
+   - **Value**: your GitHub personal access token
+4. Save
 
-**Security Note**: Never hardcode tokens in your script. Always use Script Properties for sensitive data.
+**Security**: Never hardcode tokens in `.gs` files or commit them to git.
 
-#### Creating a GitHub Personal Access Token
+#### Creating or regenerating a fine-grained PAT
 
-If you don't have a GitHub token yet:
+1. GitHub → **Settings** → **Developer settings** → **Fine-grained personal access tokens**
+2. Generate (or regenerate) a token — e.g. name `letsrace-daily-build`
+3. **Repository access**: only `maberdour/letsrace`
+4. **Permissions**: **Contents** → Read and write; **Metadata** → Read
+5. Copy the token once and paste it into Script properties as **`GITHUB_TOKEN`**
 
-1. Go to GitHub.com and sign in
-2. Click your profile picture → "Settings"
-3. Scroll down to "Developer settings" (bottom left)
-4. Click "Personal access tokens" → "Tokens (classic)"
-5. Click "Generate new token" → "Generate new token (classic)"
-6. Give it a descriptive name (e.g., "LetsRace Daily Build")
-7. Set expiration (recommend 90 days or custom)
-8. Select scopes:
-   - ✅ `repo` (Full control of private repositories)
-   - ✅ `workflow` (Update GitHub Action workflows)
-9. Click "Generate token"
-10. **Copy the token immediately** (you won't see it again)
-11. Use this token in the Script Properties setup above
+Classic tokens with `repo` scope also work if you already use one; fine-grained is preferred for least privilege.
+
+See [docs/GITHUB-PAT.md](../../docs/GITHUB-PAT.md) for replace-after-regenerate steps.
 
 ### 2. Create Daily Trigger
 
@@ -239,15 +250,18 @@ The script provides detailed logging throughout the process:
 
 ### Common Issues
 
-1. **GitHub Push Protection Blocked**: If you see "Push cannot contain secrets" error:
+1. **Regenerated a GitHub PAT / "where do I put the token?"**  
+   Update **Google Apps Script** Script properties (`GITHUB_TOKEN`), not GitHub Actions secrets. See [docs/GITHUB-PAT.md](../../docs/GITHUB-PAT.md).
+
+2. **GitHub Push Protection Blocked**: If you see "Push cannot contain secrets" error:
    - The script no longer contains hardcoded tokens
    - Set your token manually in Script Properties as described above
    - If you previously committed a token, you may need to rotate it
 
-2. **GitHub API Errors**: Check token permissions and repository access
-3. **Invalid Dates**: Review date formats in the Google Sheet
-4. **Unknown Types**: Add new type mappings to the `normalizeType()` function
-5. **Large Shards**: Consider implementing monthly splits for types with >5000 events
+3. **GitHub API Errors**: Check token permissions and repository access; confirm `GITHUB_TOKEN` is set in Script properties
+4. **Invalid Dates**: Review date formats in the Google Sheet
+5. **Unknown Types**: Add new type mappings to the `normalizeType()` function
+6. **Large Shards**: Consider implementing monthly splits for types with >5000 events
 
 ### Debugging
 

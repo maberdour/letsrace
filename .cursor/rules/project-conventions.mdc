@@ -49,7 +49,8 @@ description: "File organization and naming conventions for LetsRace"
 - Include `aria-live="polite"` for dynamic content updates
 
 ## Google Apps Script Conventions
-- Store sensitive data (tokens) in Script Properties, never hardcode
+- **GitHub PAT for nightly deploy:** Script Properties key `GITHUB_TOKEN` only — not GitHub Actions secrets (see `docs/GITHUB-PAT.md`)
+- Store other sensitive data in Script Properties, never hardcode
 - Use Europe/London timezone for all date operations
 - Implement comprehensive error handling and logging
 - Use deterministic SHA-1 hashing for event IDs

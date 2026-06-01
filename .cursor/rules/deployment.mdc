@@ -5,6 +5,16 @@ description: "Rules for deployment and automation"
 
 # Deployment Rules
 
+## GitHub PAT (daily build) — agents read this first
+
+When the user asks about a regenerated GitHub PAT (e.g. `letsrace-daily-build`), token rotation, or "where to put the secret":
+
+- **Answer immediately:** Google Apps Script → Project settings → **Script properties** → **`GITHUB_TOKEN`**
+- **Do not** direct them to GitHub repo → Secrets and variables → Actions (this project does not use Actions for the daily build; no local `.github/workflows` consume a PAT)
+- Property key is **`GITHUB_TOKEN`**, not the PAT's display name on GitHub
+- Code: `scripts/google-apps/DailyBuildAndDeploy.gs` (`TOKEN_PROPERTY_KEY`)
+- Docs: `docs/GITHUB-PAT.md`, `scripts/google-apps/README-DailyBuild.md`
+
 ## GitHub Pages
 - index.html must stay in root directory
 - Use CNAME file for custom domain (letsrace.cc)
@@ -41,7 +51,7 @@ description: "Rules for deployment and automation"
 
 ## Security Requirements
 - Never hardcode GitHub tokens in scripts
-- Store tokens in Script Properties only
+- Store the daily-build PAT in **Google Apps Script Script Properties** (`GITHUB_TOKEN`) only — never in GitHub Actions secrets for this repo unless a workflow explicitly references `secrets.*`
 - Use HTTPS for all API requests
 - Don't expose sensitive information in error responses
 - Rotate tokens if previously committed to repository
