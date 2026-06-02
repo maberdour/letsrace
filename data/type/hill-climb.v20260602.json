@@ -1,18 +1,5 @@
 [
   {
-    "id": "f0c6e467",
-    "name": "hill climb project round 5",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "1 miles | J9/2",
-    "postcode": null,
-    "date": "2026-05-29",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51714-hill-climb-project-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:04:08.000Z"
-  },
-  {
     "id": "ef69d7c7",
     "name": "Poole Wheelers Cycling Club - Creech Hill Climb - Round 1",
     "type": "Hill Climb",
@@ -208,7 +195,7 @@
     "last_updated": "2026-03-25T10:12:43.000Z"
   },
   {
-    "id": "a45bbc3d",
+    "id": "074d1edc",
     "name": "Pendle Forest CC Club 1.8",
     "type": "Hill Climb",
     "region": "North West",
@@ -1389,6 +1376,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46129-redbridge-cc-banks-lane-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "09d10e8f",
+    "name": "South Shields Velo Cycling Club Hill Climb (Club Members Only)",
+    "type": "Hill Climb",
+    "region": "North East",
+    "venue": "Tyne and Wear | 1214 yards | MH3 | Shanky Bank",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52589-south-shields-velo-cycling-club-hill-climb-club-members-only",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-01T01:04:12.000Z"
   },
   {
     "id": "c4a62fa4",
