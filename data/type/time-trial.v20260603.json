@@ -78,19 +78,6 @@
     "last_updated": "2026-05-24T01:04:11.000Z"
   },
   {
-    "id": "0a6d83ce",
-    "name": "Cleveland Coureurs Club 10",
-    "type": "Time Trial",
-    "region": "North East",
-    "venue": "North Yorkshire | 10 miles | T10C",
-    "postcode": null,
-    "date": "2026-06-17",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51271-cleveland-coureurs-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-24T01:04:11.000Z"
-  },
-  {
     "id": "f1204044",
     "name": "Pembrokeshire Velo Club 10 Round 3",
     "type": "Time Trial",
@@ -258,19 +245,6 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45738-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "9fd3c0cf",
-    "name": "Cleveland Coureurs Club 10",
-    "type": "Time Trial",
-    "region": "North East",
-    "venue": "North Yorkshire | 10 miles | T10C",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51275-cleveland-coureurs-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-03T01:04:08.000Z"
   },
   {
     "id": "9fd3c0cf",
