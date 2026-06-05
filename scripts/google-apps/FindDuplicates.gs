@@ -18,140 +18,202 @@
  * 2. Run the findDuplicateURLs() function
  * 3. Check the execution log for results
  * 4. Duplicate rows will be automatically highlighted
+ *
+ * The Events sheet has no header row (see DailyBuildAndDeploy.gs). Use skipHeaderRow: true
+ * only when analyzing sheets that include a header row.
  */
+
+/**
+ * Empty duplicate-analysis result (no duplicates).
+ * @return {Object}
+ */
+function emptyDuplicateResults() {
+  return {
+    hasDuplicates: false,
+    urlDuplicateGroups: 0,
+    eventIdDuplicateGroups: 0,
+    rowsWithDuplicates: 0,
+    uniqueUrlCount: 0,
+    uniqueEventIdCount: 0,
+    urlDuplicates: [],
+    eventIdDuplicates: []
+  };
+}
+
+/**
+ * Analyzes sheet rows for duplicate URLs and BC/CTT event IDs.
+ * @param {Array<Array>} sheetData - All rows from getDataRange().getValues()
+ * @param {number} urlColumn - 0-based URL column index
+ * @param {Object} [options]
+ * @param {boolean} [options.skipHeaderRow=false] - If true, skip the first row
+ * @return {Object} Summary and duplicate group lists for reporting
+ */
+function analyzeDuplicates(sheetData, urlColumn = 4, options) {
+  const opts = options || {};
+  const skipHeaderRow = opts.skipHeaderRow === true;
+
+  if (!sheetData || sheetData.length === 0) {
+    return emptyDuplicateResults();
+  }
+
+  const dataRows = skipHeaderRow ? sheetData.slice(1) : sheetData;
+  const firstRowNumber = skipHeaderRow ? 2 : 1;
+
+  if (dataRows.length === 0) {
+    return emptyDuplicateResults();
+  }
+
+  const urlMap = new Map();
+  const eventIdMap = new Map();
+  const urlDuplicates = new Map();
+  const eventIdDuplicates = new Map();
+
+  dataRows.forEach((row, index) => {
+    const rowNumber = firstRowNumber + index;
+    const url = row[urlColumn];
+
+    if (!url || typeof url !== 'string' || url.trim() === '') {
+      return;
+    }
+
+    const normalizedUrl = normalizeUrl(url);
+    if (!normalizedUrl) {
+      return;
+    }
+
+    if (!urlMap.has(normalizedUrl)) {
+      urlMap.set(normalizedUrl, []);
+    }
+    urlMap.get(normalizedUrl).push(rowNumber);
+
+    const eventId = extractEventId(url);
+    if (eventId) {
+      if (!eventIdMap.has(eventId)) {
+        eventIdMap.set(eventId, []);
+      }
+      eventIdMap.get(eventId).push(rowNumber);
+    }
+  });
+
+  urlMap.forEach((rowNumbers, url) => {
+    if (rowNumbers.length > 1) {
+      urlDuplicates.set(url, rowNumbers);
+    }
+  });
+
+  eventIdMap.forEach((rowNumbers, eventId) => {
+    if (rowNumbers.length > 1) {
+      eventIdDuplicates.set(eventId, rowNumbers);
+    }
+  });
+
+  const duplicateRows = new Set();
+  urlDuplicates.forEach(rowNumbers => rowNumbers.forEach(r => duplicateRows.add(r)));
+  eventIdDuplicates.forEach(rowNumbers => rowNumbers.forEach(r => duplicateRows.add(r)));
+
+  const urlDuplicateList = [];
+  urlDuplicates.forEach((rows, key) => urlDuplicateList.push({ key: key, rows: rows }));
+
+  const eventIdDuplicateList = [];
+  eventIdDuplicates.forEach((rows, key) => eventIdDuplicateList.push({ key: key, rows: rows }));
+
+  return {
+    hasDuplicates: urlDuplicates.size > 0 || eventIdDuplicates.size > 0,
+    urlDuplicateGroups: urlDuplicates.size,
+    eventIdDuplicateGroups: eventIdDuplicates.size,
+    rowsWithDuplicates: duplicateRows.size,
+    uniqueUrlCount: urlMap.size,
+    uniqueEventIdCount: eventIdMap.size,
+    urlDuplicates: urlDuplicateList,
+    eventIdDuplicates: eventIdDuplicateList,
+    _urlDuplicatesMap: urlDuplicates,
+    _eventIdDuplicatesMap: eventIdDuplicates
+  };
+}
+
+/**
+ * Logs duplicate analysis results to the execution log.
+ * @param {Array<Array>} sheetData
+ * @param {number} urlColumn
+ * @param {Object} results - From analyzeDuplicates()
+ */
+function logDuplicateResults(sheetData, urlColumn, results) {
+  Logger.log(`\n📈 ANALYSIS RESULTS:`);
+  Logger.log(`   Total unique URLs: ${results.uniqueUrlCount}`);
+  Logger.log(`   Duplicate URL groups: ${results.urlDuplicateGroups}`);
+  Logger.log(`   Total unique Event IDs: ${results.uniqueEventIdCount}`);
+  Logger.log(`   Duplicate Event ID groups: ${results.eventIdDuplicateGroups}`);
+  Logger.log(`   Rows with duplicates: ${results.rowsWithDuplicates}`);
+
+  if (!results.hasDuplicates) {
+    Logger.log('✅ No duplicate URLs or Event IDs found!');
+    return;
+  }
+
+  if (results.urlDuplicates.length > 0) {
+    Logger.log(`\n🔍 DUPLICATE URL DETAILS:`);
+    results.urlDuplicates.forEach(group => {
+      Logger.log(`\n📋 URL: ${group.key}`);
+      Logger.log(`   Found in rows: ${group.rows.join(', ')}`);
+      group.rows.forEach(rowNum => {
+        const rowData = sheetData[rowNum - 1];
+        const eventName = rowData[1] || 'Unknown';
+        const eventDate = rowData[0] || 'Unknown';
+        Logger.log(`     Row ${rowNum}: "${eventName}" on ${eventDate}`);
+      });
+    });
+  }
+
+  if (results.eventIdDuplicates.length > 0) {
+    Logger.log(`\n🔍 DUPLICATE EVENT ID DETAILS:`);
+    results.eventIdDuplicates.forEach(group => {
+      Logger.log(`\n📋 Event ID: ${group.key}`);
+      Logger.log(`   Found in rows: ${group.rows.join(', ')}`);
+      group.rows.forEach(rowNum => {
+        const rowData = sheetData[rowNum - 1];
+        const eventName = rowData[1] || 'Unknown';
+        const eventDate = rowData[0] || 'Unknown';
+        const url = rowData[urlColumn] || 'Unknown';
+        Logger.log(`     Row ${rowNum}: "${eventName}" on ${eventDate}`);
+        Logger.log(`       URL: ${url}`);
+      });
+    });
+  }
+}
 
 /**
  * Main function to find and report duplicate URLs and Event IDs
  * @param {number} urlColumn - Column index for URLs (0-based, default: 4 for column E)
  * @param {boolean} highlightDuplicates - Whether to highlight duplicate rows (default: true)
+ * @param {GoogleAppsScript.Spreadsheet.Sheet} [sheet] - Sheet to analyze (default: active sheet)
+ * @param {boolean} [skipHeaderRow=false] - If true, skip the first row
+ * @return {Object} Duplicate analysis summary
  */
-function findDuplicateURLs(urlColumn = 4, highlightDuplicates = true) {
+function findDuplicateURLs(urlColumn = 4, highlightDuplicates = true, sheet = null, skipHeaderRow = false) {
   try {
-    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    const sheetName = sheet.getName();
+    const targetSheet = sheet || SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    const sheetName = targetSheet.getName();
     Logger.log(`🔍 Starting duplicate URL analysis for sheet: "${sheetName}"`);
     Logger.log(`📍 URL column: ${String.fromCharCode(65 + urlColumn)} (index ${urlColumn})`);
-    
-    // Get all data from the sheet
-    const dataRange = sheet.getDataRange();
-    const data = dataRange.getValues();
-    
-    if (data.length <= 1) {
-      Logger.log("ℹ️ No data found or only header row present.");
-      return;
-    }
-    
-    // Skip header row and process data
-    const dataRows = data.slice(1);
-    const urlMap = new Map(); // URL -> array of row numbers
-    const eventIdMap = new Map(); // Event ID -> array of row numbers
-    const urlDuplicates = new Map(); // URL -> array of row numbers (only for duplicates)
-    const eventIdDuplicates = new Map(); // Event ID -> array of row numbers (only for duplicates)
-    
-    Logger.log(`📊 Processing ${dataRows.length} data rows...`);
-    
-    // Process each row
-    dataRows.forEach((row, index) => {
-      const rowNumber = index + 2; // +2 because we skipped header and arrays are 0-based
-      const url = row[urlColumn];
-      
-      if (!url || typeof url !== 'string' || url.trim() === '') {
-        return; // Skip empty URLs
-      }
-      
-      const normalizedUrl = normalizeUrl(url);
-      if (!normalizedUrl) {
-        return; // Skip invalid URLs
-      }
-      
-      // Track this URL
-      if (!urlMap.has(normalizedUrl)) {
-        urlMap.set(normalizedUrl, []);
-      }
-      urlMap.get(normalizedUrl).push(rowNumber);
-      
-      // Extract and track event ID
-      const eventId = extractEventId(url);
-      if (eventId) {
-        if (!eventIdMap.has(eventId)) {
-          eventIdMap.set(eventId, []);
-        }
-        eventIdMap.get(eventId).push(rowNumber);
-      }
-    });
-    
-    // Find URL duplicates
-    urlMap.forEach((rowNumbers, url) => {
-      if (rowNumbers.length > 1) {
-        urlDuplicates.set(url, rowNumbers);
-      }
-    });
-    
-    // Find Event ID duplicates
-    eventIdMap.forEach((rowNumbers, eventId) => {
-      if (rowNumbers.length > 1) {
-        eventIdDuplicates.set(eventId, rowNumbers);
-      }
-    });
-    
-    // Report results
-    Logger.log(`\n📈 ANALYSIS RESULTS:`);
-    Logger.log(`   Total unique URLs: ${urlMap.size}`);
-    Logger.log(`   Duplicate URLs found: ${urlDuplicates.size}`);
-    Logger.log(`   Total unique Event IDs: ${eventIdMap.size}`);
-    Logger.log(`   Duplicate Event IDs found: ${eventIdDuplicates.size}`);
-    
-    if (urlDuplicates.size === 0 && eventIdDuplicates.size === 0) {
-      Logger.log("✅ No duplicate URLs or Event IDs found!");
-      return;
-    }
-    
-    // Log detailed URL duplicate information
-    if (urlDuplicates.size > 0) {
-      Logger.log(`\n🔍 DUPLICATE URL DETAILS:`);
-      urlDuplicates.forEach((rowNumbers, url) => {
-        Logger.log(`\n📋 URL: ${url}`);
-        Logger.log(`   Found in rows: ${rowNumbers.join(', ')}`);
-        Logger.log(`   Count: ${rowNumbers.length} occurrences`);
-        
-        // Show some context for each duplicate row
-        rowNumbers.forEach(rowNum => {
-          const rowData = data[rowNum - 1]; // Convert to 0-based index
-          const eventName = rowData[1] || 'Unknown'; // Assuming column B has event name
-          const eventDate = rowData[0] || 'Unknown'; // Assuming column A has date
-          Logger.log(`     Row ${rowNum}: "${eventName}" on ${eventDate}`);
-        });
-      });
-    }
-    
-    // Log detailed Event ID duplicate information
-    if (eventIdDuplicates.size > 0) {
-      Logger.log(`\n🔍 DUPLICATE EVENT ID DETAILS:`);
-      eventIdDuplicates.forEach((rowNumbers, eventId) => {
-        Logger.log(`\n📋 Event ID: ${eventId}`);
-        Logger.log(`   Found in rows: ${rowNumbers.join(', ')}`);
-        Logger.log(`   Count: ${rowNumbers.length} occurrences`);
-        
-        // Show some context for each duplicate row
-        rowNumbers.forEach(rowNum => {
-          const rowData = data[rowNum - 1]; // Convert to 0-based index
-          const eventName = rowData[1] || 'Unknown'; // Assuming column B has event name
-          const eventDate = rowData[0] || 'Unknown'; // Assuming column A has date
-          const url = rowData[urlColumn] || 'Unknown';
-          Logger.log(`     Row ${rowNum}: "${eventName}" on ${eventDate}`);
-          Logger.log(`       URL: ${url}`);
-        });
-      });
-    }
-    
-    // Highlight duplicates if requested
-    if (highlightDuplicates) {
+
+    const data = targetSheet.getDataRange().getValues();
+    Logger.log(`📊 Processing ${skipHeaderRow ? Math.max(0, data.length - 1) : data.length} data row(s)...`);
+
+    const results = analyzeDuplicates(data, urlColumn, { skipHeaderRow: skipHeaderRow });
+    logDuplicateResults(data, urlColumn, results);
+
+    if (highlightDuplicates && results.hasDuplicates) {
       Logger.log(`\n🎨 Highlighting duplicate rows...`);
-      highlightDuplicateRows(urlColumn, urlDuplicates, eventIdDuplicates);
+      highlightDuplicateRows(
+        targetSheet,
+        urlColumn,
+        results._urlDuplicatesMap,
+        results._eventIdDuplicatesMap
+      );
     }
-    
+
     Logger.log(`\n✅ Duplicate URL analysis complete!`);
-    
+    return results;
   } catch (error) {
     Logger.log(`❌ Error finding duplicate URLs: ${error.message}`);
     throw error;
@@ -190,94 +252,65 @@ function extractEventId(url) {
 
 /**
  * Highlights rows containing duplicate URLs and Event IDs
+ * @param {GoogleAppsScript.Spreadsheet.Sheet} [sheet] - Sheet to highlight (default: active sheet)
  * @param {number} urlColumn - Column index for URLs (0-based, default: 4 for column E)
- * @param {Map} urlDuplicates - Map of duplicate URLs to row numbers
- * @param {Map} eventIdDuplicates - Map of duplicate Event IDs to row numbers
+ * @param {Map} [urlDuplicates] - Map of duplicate URLs to row numbers
+ * @param {Map} [eventIdDuplicates] - Map of duplicate Event IDs to row numbers
+ * @param {boolean} [skipHeaderRow=false] - If true, skip the first row when finding duplicates
  */
-function highlightDuplicateRows(urlColumn = 4, urlDuplicates = null, eventIdDuplicates = null) {
+function highlightDuplicateRows(sheet, urlColumn, urlDuplicates, eventIdDuplicates, skipHeaderRow) {
   try {
-    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    let targetSheet = null;
+    let col = 4;
+    let urlDup = null;
+    let eventIdDup = null;
+    let skipHeader = false;
+
+    if (sheet && typeof sheet.getDataRange === 'function') {
+      targetSheet = sheet;
+      col = typeof urlColumn === 'number' ? urlColumn : 4;
+      urlDup = urlDuplicates;
+      eventIdDup = eventIdDuplicates;
+      skipHeader = skipHeaderRow === true;
+    } else {
+      col = typeof sheet === 'number' ? sheet : 4;
+      urlDup = typeof urlColumn === 'number' ? null : urlColumn;
+      eventIdDup = urlDuplicates;
+      skipHeader = eventIdDuplicates === true;
+    }
+
+    targetSheet = targetSheet || SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     Logger.log(`🎨 Highlighting duplicate rows...`);
-    
-    // Get all data from the sheet
-    const dataRange = sheet.getDataRange();
+
+    const dataRange = targetSheet.getDataRange();
     const data = dataRange.getValues();
-    
-    if (data.length <= 1) {
-      Logger.log("ℹ️ No data found or only header row present.");
+    const numRows = data.length;
+    const numCols = data[0] ? data[0].length : targetSheet.getLastColumn();
+
+    if (numRows === 0) {
+      Logger.log('ℹ️ No data found.');
       return;
     }
-    
-    // First, clear any existing highlighting
-    const range = sheet.getRange(1, 1, data.length, data[0].length);
-    range.setBackground(null);
-    
+
+    targetSheet.getRange(1, 1, numRows, numCols).setBackground(null);
+
     const duplicateRows = new Set();
-    
-    // If no duplicates provided, find them ourselves
-    if (!urlDuplicates && !eventIdDuplicates) {
-      Logger.log("🔍 Finding duplicates for highlighting...");
-      
-      // Skip header row and process data
-      const dataRows = data.slice(1);
-      const urlMap = new Map();
-      const eventIdMap = new Map();
-      
-      // Process each row to find duplicates
-      dataRows.forEach((row, index) => {
-        const rowNumber = index + 2; // +2 because we skipped header and arrays are 0-based
-        const url = row[urlColumn];
-        
-        if (!url || typeof url !== 'string' || url.trim() === '') {
-          return; // Skip empty URLs
-        }
-        
-        const normalizedUrl = normalizeUrl(url);
-        if (!normalizedUrl) {
-          return; // Skip invalid URLs
-        }
-        
-        // Track this URL
-        if (!urlMap.has(normalizedUrl)) {
-          urlMap.set(normalizedUrl, []);
-        }
-        urlMap.get(normalizedUrl).push(rowNumber);
-        
-        // Extract and track event ID
-        const eventId = extractEventId(url);
-        if (eventId) {
-          if (!eventIdMap.has(eventId)) {
-            eventIdMap.set(eventId, []);
-          }
-          eventIdMap.get(eventId).push(rowNumber);
-        }
+
+    if (!urlDup && !eventIdDup) {
+      Logger.log('🔍 Finding duplicates for highlighting...');
+      const results = analyzeDuplicates(data, col, { skipHeaderRow: skipHeader });
+      results._urlDuplicatesMap.forEach(rowNumbers => {
+        rowNumbers.forEach(rowNum => duplicateRows.add(rowNum));
       });
-      
-      // Find URL duplicates
-      urlMap.forEach((rowNumbers) => {
-        if (rowNumbers.length > 1) {
-          rowNumbers.forEach(rowNum => duplicateRows.add(rowNum));
-        }
-      });
-      
-      // Find Event ID duplicates
-      eventIdMap.forEach((rowNumbers) => {
-        if (rowNumbers.length > 1) {
-          rowNumbers.forEach(rowNum => duplicateRows.add(rowNum));
-        }
+      results._eventIdDuplicatesMap.forEach(rowNumbers => {
+        rowNumbers.forEach(rowNum => duplicateRows.add(rowNum));
       });
     } else {
-      // Use provided duplicates
-      if (urlDuplicates) {
-        urlDuplicates.forEach((rowNumbers) => {
-          rowNumbers.forEach(rowNum => duplicateRows.add(rowNum));
-        });
+      if (urlDup) {
+        urlDup.forEach(rowNumbers => rowNumbers.forEach(rowNum => duplicateRows.add(rowNum)));
       }
-      
-      if (eventIdDuplicates) {
-        eventIdDuplicates.forEach((rowNumbers) => {
-          rowNumbers.forEach(rowNum => duplicateRows.add(rowNum));
-        });
+      if (eventIdDup) {
+        eventIdDup.forEach(rowNumbers => rowNumbers.forEach(rowNum => duplicateRows.add(rowNum)));
       }
     }
     
@@ -292,11 +325,11 @@ function highlightDuplicateRows(urlColumn = 4, urlDuplicates = null, eventIdDupl
       rowsToHighlight.forEach(rowNum => {
         try {
           // Get the actual number of columns in the sheet
-          const lastColumn = sheet.getLastColumn();
+          const lastColumn = targetSheet.getLastColumn();
           Logger.log(`🎨 Highlighting row ${rowNum} (columns 1-${lastColumn})`);
           
           // Create range for the entire row
-          const rowRange = sheet.getRange(rowNum, 1, 1, lastColumn);
+          const rowRange = targetSheet.getRange(rowNum, 1, 1, lastColumn);
           
           // Set background color
           rowRange.setBackground('#ffcccc');
@@ -382,7 +415,7 @@ function normalizeUrl(url) {
  * Gets a summary of URL statistics for the current sheet
  * @param {number} urlColumn - Column index for URLs (0-based, default: 4 for column E)
  */
-function getUrlStatistics(urlColumn = 4) {
+function getUrlStatistics(urlColumn = 4, skipHeaderRow = false) {
   try {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     const sheetName = sheet.getName();
@@ -392,13 +425,12 @@ function getUrlStatistics(urlColumn = 4) {
     const dataRange = sheet.getDataRange();
     const data = dataRange.getValues();
     
-    if (data.length <= 1) {
-      Logger.log("ℹ️ No data found or only header row present.");
+    if (data.length === 0) {
+      Logger.log('ℹ️ No data found.');
       return;
     }
     
-    // Skip header row and process data
-    const dataRows = data.slice(1);
+    const dataRows = skipHeaderRow ? data.slice(1) : data;
     const urlMap = new Map();
     const domainMap = new Map();
     let emptyUrls = 0;
@@ -493,7 +525,7 @@ function extractDomain(url) {
  */
 function highlightDuplicateURLs(urlColumn = 4) {
   Logger.log("🔄 Using legacy highlightDuplicateURLs function - now highlighting both URLs and Event IDs");
-  highlightDuplicateRows(urlColumn);
+  highlightDuplicateRows(null, urlColumn);
 }
 
 /**
@@ -540,6 +572,44 @@ function testHighlightRows(rowNumbers = [16, 18]) {
  */
 function runFullDuplicateAnalysis() {
   Logger.log("🚀 Running full duplicate URL analysis...");
-  findDuplicateURLs(4, true); // URL in column E, with highlighting
-  getUrlStatistics(4); // Get statistics for column E
+  findDuplicateURLs(4, true, null, false); // Events sheet: no header row
+  getUrlStatistics(4, false);
+}
+
+/**
+ * Formats duplicate results for email / alerts.
+ * @param {Object} duplicateResults - From analyzeDuplicates() or findDuplicateURLs()
+ * @return {string}
+ */
+function formatDuplicatesForEmail(duplicateResults) {
+  if (!duplicateResults) {
+    return 'Duplicates found: No (check did not run)\n';
+  }
+
+  if (!duplicateResults.hasDuplicates) {
+    return 'Duplicates found: No\n';
+  }
+
+  let text = 'Duplicates found: Yes\n';
+  text += `  Duplicate URL groups: ${duplicateResults.urlDuplicateGroups}\n`;
+  text += `  Duplicate event ID groups: ${duplicateResults.eventIdDuplicateGroups}\n`;
+  text += `  Rows involved: ${duplicateResults.rowsWithDuplicates}\n\n`;
+
+  if (duplicateResults.urlDuplicates.length > 0) {
+    text += 'Duplicate URLs:\n';
+    duplicateResults.urlDuplicates.forEach(group => {
+      text += `  ${group.key}\n    Rows: ${group.rows.join(', ')}\n`;
+    });
+    text += '\n';
+  }
+
+  if (duplicateResults.eventIdDuplicates.length > 0) {
+    text += 'Duplicate event IDs:\n';
+    duplicateResults.eventIdDuplicates.forEach(group => {
+      text += `  ${group.key}\n    Rows: ${group.rows.join(', ')}\n`;
+    });
+    text += '\n';
+  }
+
+  return text;
 }

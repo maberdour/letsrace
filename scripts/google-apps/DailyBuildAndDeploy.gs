@@ -66,16 +66,30 @@ function dailyBuild() {
     Logger.log("🚀 Starting daily build process...");
     
     // Step 1: Read rows from Sheet
-    const sheetData = readSheetData();
+    const eventsSheet = getEventsSheet();
+    const sheetData = eventsSheet.getDataRange().getValues();
     Logger.log(`📊 Read ${sheetData.length} rows from sheet`);
+
+    // Step 1b: Check for duplicate URLs and event IDs (highlights duplicate rows)
+    let duplicateResults = emptyDuplicateResults();
+    try {
+      duplicateResults = findDuplicateURLs(COLUMNS.URL, true, eventsSheet, false);
+      Logger.log(
+        `🔍 Duplicate check: ${duplicateResults.hasDuplicates ? 'found' : 'none'} ` +
+        `(${duplicateResults.urlDuplicateGroups} URL groups, ${duplicateResults.eventIdDuplicateGroups} event ID groups)`
+      );
+    } catch (duplicateError) {
+      Logger.log(`⚠️ Duplicate check failed: ${duplicateError.message}`);
+    }
     
     // Step 2: Normalize, validate, and filter data
     const processedData = processSheetData(sheetData);
     Logger.log(`✅ Processed ${processedData.events.length} valid events (skipped ${processedData.skipped} rows)`);
     
-    // Send email alert if any rows were skipped
-    if (processedData.skippedRows && processedData.skippedRows.length > 0) {
-      sendSkippedRowsAlert(processedData.skippedRows);
+    // Send email alert if any rows were skipped or duplicates were found
+    const hasSkippedRows = processedData.skippedRows && processedData.skippedRows.length > 0;
+    if (hasSkippedRows || duplicateResults.hasDuplicates) {
+      sendDailyBuildAlert(processedData.skippedRows || [], duplicateResults);
     }
     
     // Step 3: Partition by type and sort
@@ -168,17 +182,25 @@ function dailyBuild() {
 }
 
 /**
- * Read data from the Google Sheet
+ * Returns the Events sheet used by the daily build.
+ * @return {GoogleAppsScript.Spreadsheet.Sheet}
  */
-function readSheetData() {
+function getEventsSheet() {
   const spreadsheet = SpreadsheetApp.openById(CONFIG.SPREADSHEET_ID);
   const sheet = spreadsheet.getSheetByName(CONFIG.SHEET_NAME);
-  
+
   if (!sheet) {
     throw new Error(`Sheet '${CONFIG.SHEET_NAME}' not found`);
   }
-  
-  return sheet.getDataRange().getValues();
+
+  return sheet;
+}
+
+/**
+ * Read data from the Google Sheet
+ */
+function readSheetData() {
+  return getEventsSheet().getDataRange().getValues();
 }
 
 /**
@@ -1584,53 +1606,77 @@ function batchDeleteFromGitHub(paths, commitMessage) {
 }
 
 /**
- * Sends email alert for skipped rows during build process
+ * Sends email alert for skipped rows and/or duplicate events during the daily build.
  * @param {Array} skippedRows - Array of skipped row information
+ * @param {Object} duplicateResults - From findDuplicateURLs() / analyzeDuplicates()
  */
-function sendSkippedRowsAlert(skippedRows) {
+function sendDailyBuildAlert(skippedRows, duplicateResults) {
   try {
-    const subject = `⚠️ Skipped Rows Alert - Daily Build Process`;
+    const hasSkipped = skippedRows && skippedRows.length > 0;
+    const hasDuplicates = duplicateResults && duplicateResults.hasDuplicates;
+    const subjectParts = [];
+    if (hasSkipped) subjectParts.push('Skipped Rows');
+    if (hasDuplicates) subjectParts.push('Duplicates');
+    const subject = `⚠️ Daily Build Alert - ${subjectParts.join(' / ')}`;
     const timestamp = new Date().toISOString();
-    
-    let body = `Rows were skipped during the daily build process at ${timestamp}:\n\n`;
-    
-    // Group skipped rows by reason
-    const groupedByReason = {};
-    skippedRows.forEach(row => {
-      if (!groupedByReason[row.reason]) {
-        groupedByReason[row.reason] = [];
-      }
-      groupedByReason[row.reason].push(row);
-    });
-    
-    // Add details for each reason
-    Object.keys(groupedByReason).forEach(reason => {
-      const rows = groupedByReason[reason];
-      body += `${reason} (${rows.length} row${rows.length > 1 ? 's' : ''}):\n`;
-      
-      rows.forEach(row => {
-        body += `  Row ${row.row}: "${row.eventName}"`;
-        if (row.missingFields && row.missingFields.length > 0) {
-          body += ` - Missing: ${row.missingFields.join(', ')}`;
+
+    let body = `Daily build alert at ${timestamp}\n\n`;
+    body += formatDuplicatesForEmail(duplicateResults);
+
+    if (hasSkipped) {
+      body += `Skipped rows (${skippedRows.length}):\n\n`;
+
+      const groupedByReason = {};
+      skippedRows.forEach(row => {
+        if (!groupedByReason[row.reason]) {
+          groupedByReason[row.reason] = [];
         }
+        groupedByReason[row.reason].push(row);
+      });
+
+      Object.keys(groupedByReason).forEach(reason => {
+        const rows = groupedByReason[reason];
+        body += `${reason} (${rows.length} row${rows.length > 1 ? 's' : ''}):\n`;
+
+        rows.forEach(row => {
+          body += `  Row ${row.row}: "${row.eventName}"`;
+          if (row.missingFields && row.missingFields.length > 0) {
+            body += ` - Missing: ${row.missingFields.join(', ')}`;
+          }
+          body += `\n`;
+        });
         body += `\n`;
       });
-      body += `\n`;
-    });
-    
-    body += `Please review the Google Sheet and ensure all required fields are populated.\n\n`;
+
+      body += `Please review the Google Sheet and ensure all required fields are populated.\n\n`;
+    } else if (hasDuplicates) {
+      body += `Duplicate rows are highlighted in the Events sheet. Remove or merge duplicates before the next import.\n\n`;
+    }
+
     body += `This alert was generated automatically by the LetsRace build system.`;
-    
+
     MailApp.sendEmail({
       to: 'hello@letsrace.cc',
       subject: subject,
       body: body
     });
-    
-    Logger.log(`📧 Email alert sent for ${skippedRows.length} skipped row(s)`);
+
+    Logger.log(
+      `📧 Email alert sent` +
+      (hasSkipped ? ` (${skippedRows.length} skipped row(s))` : '') +
+      (hasDuplicates ? ' (duplicates found)' : '')
+    );
   } catch (error) {
     Logger.log(`❌ Failed to send email alert: ${error.message}`);
   }
+}
+
+/**
+ * @deprecated Use sendDailyBuildAlert()
+ * @param {Array} skippedRows
+ */
+function sendSkippedRowsAlert(skippedRows) {
+  sendDailyBuildAlert(skippedRows, emptyDuplicateResults());
 }
 
 

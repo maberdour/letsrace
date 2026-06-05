@@ -195,6 +195,7 @@ function createFeedbackButton() {
   const modal = document.createElement('div');
   modal.id = 'feedback-modal';
   modal.className = 'feedback-modal';
+  const feedbackFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe11TMJvnqfgqAH0vT_EBWqMxkNW-Z_xSOvoyBnaGB4jYW44Q/viewform?embedded=true';
   modal.innerHTML = `
     <div class="feedback-modal-content">
       <button class="feedback-modal-close" aria-label="Close feedback form">&times;</button>
@@ -204,7 +205,7 @@ function createFeedbackButton() {
       </div>
       <div class="feedback-modal-body">
         <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLSe11TMJvnqfgqAH0vT_EBWqMxkNW-Z_xSOvoyBnaGB4jYW44Q/viewform?embedded=true" 
+          data-src="${feedbackFormUrl}" 
           width="100%" 
           height="1622" 
           frameborder="0" 
@@ -212,7 +213,6 @@ function createFeedbackButton() {
           marginwidth="0"
           style="min-height: 600px;"
           title="Feedback form">
-          Loading…
         </iframe>
       </div>
     </div>
@@ -220,6 +220,12 @@ function createFeedbackButton() {
 
   // Add modal to body
   document.body.appendChild(modal);
+
+  function loadFeedbackIframe() {
+    const iframe = modal.querySelector('iframe[data-src]');
+    if (!iframe || iframe.src) return;
+    iframe.src = iframe.dataset.src;
+  }
 
   // Find where to insert the button
   const filtersSection = document.querySelector('.filters');
@@ -302,6 +308,7 @@ function createFeedbackButton() {
   // Event listeners for both buttons
   [button, mobileButton].forEach(btn => {
     btn.addEventListener('click', () => {
+      loadFeedbackIframe();
       modal.classList.add('active');
       document.body.style.overflow = 'hidden'; // Prevent background scrolling
     });

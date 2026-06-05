@@ -1,86 +1,51 @@
-// Update Newly Added Events count in homepage CTA
-let newEventsCountUpdated = false;
-function updateNewEventsCount() {
-  if (newEventsCountUpdated) {
-    console.log('⚠️ New events count already updated, skipping...');
-    return;
+// Shared manifest fetch (single request per page load)
+let homepageManifestPromise = null;
+
+function fetchHomepageManifest() {
+  if (!homepageManifestPromise) {
+    homepageManifestPromise = fetch('/data/manifest.json').then(function (response) {
+      if (!response.ok) {
+        throw new Error('Failed to fetch manifest: ' + response.status);
+      }
+      return response.json();
+    });
   }
-  
-  console.log('🔄 Updating new events count...');
-  newEventsCountUpdated = true;
-  
-  try {
-    fetch('/data/manifest.json')
-      .then(r => r.json())
-      .then(manifest => {
-        console.log('📋 Manifest loaded:', manifest);
-        return fetch(manifest.new_events);
-      })
-      .then(r => r.json())
-      .then(data => {
-        console.log('📊 New events data:', data);
-        console.log('📅 Cutoff date:', data.cutoff_date);
-        console.log('📅 Last build:', data.last_build);
-        console.log('📅 Current date:', new Date().toISOString());
-        
-        // Use same 7-day logic as newly added page
-        const NEW_EVENT_DAYS = 7;
-        const now = new Date();
-        const daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
-        
-        console.log('📅 Current date:', now.toISOString());
-        console.log('📅 Cutoff date (7 days ago):', daysAgo.toISOString());
-        console.log('📅 NEW_EVENT_DAYS:', NEW_EVENT_DAYS);
-        
-        // Filter events using same logic as newly added page
-        const newEvents = data.events.filter(event => {
-          const lastUpdated = event.last_updated || '';
-          const updated = new Date(lastUpdated);
-          
-          if (!isNaN(updated.getTime())) {
-            const updatedMidnight = new Date(updated.getFullYear(), updated.getMonth(), updated.getDate());
-            const daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
-            const isNew = updatedMidnight > daysAgoMidnight;
-            
-            if (isNew) {
-              console.log('✅ New event found:', {
-                name: event.name,
-                last_updated: lastUpdated,
-                updatedMidnight: updatedMidnight.toISOString(),
-                daysAgoMidnight: daysAgoMidnight.toISOString()
-              });
-            }
-            
-            return isNew;
-          }
-          return false;
-        });
-        
-        const actualCount = newEvents.length;
-        console.log('🔍 Events after "new" filter:', actualCount);
-        
-        const countEl = document.getElementById('new-events-count');
-        const wrapperEl = document.getElementById('new-events-count-wrapper');
-        console.log('🎯 DOM elements:', { countEl, wrapperEl });
-        if (countEl) {
-          console.log('✅ Setting count to:', actualCount);
-          countEl.textContent = String(actualCount);
-          // Always show the wrapper, even when count is 0
-          if (wrapperEl) {
-            wrapperEl.style.display = 'inline';
-          }
-        } else {
-          console.log('❌ Failed to update count: countEl not found');
+  return homepageManifestPromise;
+}
+
+// Update Newly Added Events count in homepage CTA (only when badge element exists)
+function updateNewEventsCount(manifest) {
+  var countEl = document.getElementById('new-events-count');
+  if (!countEl) return;
+
+  fetch(manifest.new_events)
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var NEW_EVENT_DAYS = 7;
+      var now = new Date();
+      var daysAgo = new Date(now.getTime() - (NEW_EVENT_DAYS * 24 * 60 * 60 * 1000));
+
+      var newEvents = data.events.filter(function (event) {
+        var lastUpdated = event.last_updated || '';
+        var updated = new Date(lastUpdated);
+
+        if (!isNaN(updated.getTime())) {
+          var updatedMidnight = new Date(updated.getFullYear(), updated.getMonth(), updated.getDate());
+          var daysAgoMidnight = new Date(daysAgo.getFullYear(), daysAgo.getMonth(), daysAgo.getDate());
+          return updatedMidnight > daysAgoMidnight;
         }
-      })
-      .catch(error => {
-        console.error('❌ Error updating new events count:', error);
-        newEventsCountUpdated = false; // Reset flag on error
+        return false;
       });
-  } catch (error) {
-    console.error('❌ Error in updateNewEventsCount:', error);
-    newEventsCountUpdated = false; // Reset flag on error
-  }
+
+      countEl.textContent = String(newEvents.length);
+      var wrapperEl = document.getElementById('new-events-count-wrapper');
+      if (wrapperEl) {
+        wrapperEl.style.display = 'inline';
+      }
+    })
+    .catch(function (error) {
+      console.error('Error updating new events count:', error);
+    });
 }
 
 // Initialize discipline tiles - no tabs needed
@@ -112,10 +77,8 @@ async function initHomepageRegionFilters() {
 
   try {
     console.log('🔄 Loading regions for homepage...');
-    
-    // Load manifest to get facets URL
-    const manifestResponse = await fetch('/data/manifest.json');
-    const manifest = await manifestResponse.json();
+
+    const manifest = await fetchHomepageManifest();
     const facetsUrl = manifest.index.facets;
 
     // Fetch facets data
@@ -381,11 +344,7 @@ async function loadDisciplineCounts() {
 function initHomepage() {
   console.log('🚀 Homepage module initializing...');
   recordMilestone('initialization_start');
-  
-  // Update new events count
-  updateNewEventsCount();
-  
-  // Load discipline counts
+
   loadDisciplineCounts().then(() => {
     recordMilestone('page_fully_loaded');
     logPerformanceSummary();
@@ -440,11 +399,20 @@ function attachHomepageFilterToggle() {
 }
 
 // Auto-initialize when DOM is ready (ensures region-checkboxes and buttons exist)
-function runHomepageInit() {
+async function runHomepageInit() {
   attachHomepageFilterToggle();
   initHomepage();
   initDisciplineTiles();
-  initHomepageRegionFilters();
+
+  try {
+    const manifest = await fetchHomepageManifest();
+    if (document.getElementById('new-events-count')) {
+      updateNewEventsCount(manifest);
+    }
+    await initHomepageRegionFilters();
+  } catch (error) {
+    console.error('Homepage data init failed:', error);
+  }
 }
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', runHomepageInit);
