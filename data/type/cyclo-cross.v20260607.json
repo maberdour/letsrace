@@ -1,31 +1,5 @@
 [
   {
-    "id": "b20cc271",
-    "name": "The Summer Series Round 1 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Stratford Park Leisure Centre, Stroud",
-    "postcode": null,
-    "date": "2026-06-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331407/the-summer-series-round-1-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "8b8762bb",
-    "name": "C&CCC Friday Night Hot Laps 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-06-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335446/cccc-friday-night-hot-laps-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-11T01:15:23.000Z"
-  },
-  {
     "id": "2fb875e0",
     "name": "The Summer Series Round 2 2026",
     "type": "Cyclo Cross",
@@ -91,6 +65,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "b71ae83e",
+    "name": "Sotonia Summer CX Race #1",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Southampton Sports Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-06-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336343/sotonia-summer-cx-race-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-03T01:15:24.000Z"
+  },
+  {
     "id": "2acfca36",
     "name": "The Summer Series Round 4 2026",
     "type": "Cyclo Cross",
@@ -152,19 +139,6 @@
     "date": "2026-07-02",
     "start_time": "23:00",
     "url": "https://www.britishcycling.org.uk/events/details/336760/brechin-equestrian-summer-cross---north-east-cyclocross-summer-series-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-28T01:15:25.000Z"
-  },
-  {
-    "id": "b083c277",
-    "name": "BRECHIN EQUESTRIAN SUMMER CROSS - TRILOGY SERIES ROUND 1",
-    "type": "Cyclo Cross",
-    "region": "ï»¿Scotland",
-    "venue": "Brechin Equestrian Centre, Angus",
-    "postcode": null,
-    "date": "2026-07-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336760/brechin-equestrian-summer-cross---trilogy-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-05-28T01:15:25.000Z"
   },
@@ -309,7 +283,7 @@
     "start_time": "23:00",
     "url": "https://www.britishcycling.org.uk/events/details/335671/north-east-summer-cross---round-2-camperdown",
     "source": "Google Sheet",
-    "last_updated": "2026-05-29T01:15:25.000Z"
+    "last_updated": "2026-06-04T01:15:25.000Z"
   },
   {
     "id": "e92554a6",
@@ -322,7 +296,7 @@
     "start_time": "23:00",
     "url": "https://www.britishcycling.org.uk/events/details/335671/north-east-summer-cross---round-2-camperdown",
     "source": "Google Sheet",
-    "last_updated": "2026-05-29T01:15:25.000Z"
+    "last_updated": "2026-06-04T01:15:25.000Z"
   },
   {
     "id": "5db8899f",
@@ -349,19 +323,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/334931/cheltenham--county-cycling-clubs-summer-cx-race-2026",
     "source": "Google Sheet",
     "last_updated": "2026-05-14T01:15:24.000Z"
-  },
-  {
-    "id": "e00802cf",
-    "name": "North East Summer Cross - Round 3 (Camperdown)",
-    "type": "Cyclo Cross",
-    "region": "ï»¿Scotland",
-    "venue": "Camperdown Country Park Cycle Centre, Angus",
-    "postcode": null,
-    "date": "2026-08-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335672/north-east-summer-cross---round-3-camperdown-",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-29T01:15:25.000Z"
   },
   {
     "id": "e00802cf",

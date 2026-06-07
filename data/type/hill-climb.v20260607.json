@@ -1,18 +1,5 @@
 [
   {
-    "id": "ef69d7c7",
-    "name": "Poole Wheelers Cycling Club - Creech Hill Climb - Round 1",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Dorset | 915 yards | P Creech | Creech Hill",
-    "postcode": null,
-    "date": "2026-06-03",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/52353-poole-wheelers-cycling-club-creech-hill-climb-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-09T01:04:08.000Z"
-  },
-  {
     "id": "b6beb5b0",
     "name": "Horwich Cycling Club Club Matchmoor HC",
     "type": "Hill Climb",
@@ -1376,6 +1363,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46129-redbridge-cc-banks-lane-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "09d10e8f",
+    "name": "South Shields Velo Cycling Club Hill Climb (Club Members Only)",
+    "type": "Hill Climb",
+    "region": "North East",
+    "venue": "Tyne and Wear | 1214 yards | MH3 | Shanky Bank",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52589-south-shields-velo-cycling-club-hill-climb-club-members-only",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-01T01:04:12.000Z"
   },
   {
     "id": "c4a62fa4",
