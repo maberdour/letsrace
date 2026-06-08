@@ -8,7 +8,17 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://letsrace.goatcounter.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
   <meta name="referrer" content="strict-origin-when-cross-origin">
   
-  <link rel="stylesheet" href="../assets/css/styles.css?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Favicon-180.png">
+
+  <style>
+    body{font-family:Arial,sans-serif;background:#f5f5f5;margin:0;padding:2rem}
+    main{max-width:1200px;margin:0 auto;padding:0 1rem}
+    .general-content{line-height:1.6}
+    footer{margin-top:4rem;padding:2rem 0;border-top:1px solid #ddd;text-align:center;color:#666}
+    @media (max-width:768px){body{padding:0}main{padding:0 1rem;max-width:none;margin:0}}
+  </style>
+  <link rel="stylesheet" href="../assets/css/styles.css?v=24">
   
   <!-- DNS prefetch and preconnect for analytics only -->
   <link rel="dns-prefetch" href="//gc.zgo.at">
@@ -262,27 +272,13 @@
   </main>
 
   <!-- Load non-critical scripts after page load -->
-  <script src="../assets/js/cache.js?v=1"></script>
-             <script src="../assets/js/render.js?v=19"></script>
+             <script src="../assets/js/render.js?v=22"></script>
   <script>
     // Render header and footer
     renderHeader("About");
     renderFooter();
   </script>
   <script>
-    // Defer service worker registration
-    window.addEventListener('load', () => {
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('../assets/js/sw.js')
-          .then(registration => {
-            console.log('SW registered: ', registration);
-          })
-          .catch(registrationError => {
-            console.log('SW registration failed: ', registrationError);
-          });
-      }
-    });
-    
     // Update build stamp for About page
     document.addEventListener('DOMContentLoaded', () => {
       const buildStamp = document.getElementById('build-stamp');

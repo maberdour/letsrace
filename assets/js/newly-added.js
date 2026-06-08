@@ -292,20 +292,8 @@ function initNewlyAddedPage() {
       }, 5000);
       
       const [facetsResponse, newEventsResponse] = await Promise.all([
-        fetch(facetsUrl, {
-          signal: facetsController.signal,
-          headers: {
-            'Cache-Control': 'no-cache',
-            'Pragma': 'no-cache'
-          }
-        }),
-        fetch(newEventsUrl, {
-          signal: newEventsController.signal,
-          headers: {
-            'Cache-Control': 'no-cache',
-            'Pragma': 'no-cache'
-          }
-        })
+        fetch(facetsUrl, { signal: facetsController.signal }),
+        fetch(newEventsUrl, { signal: newEventsController.signal })
       ]);
       
       clearTimeout(facetsTimeout);

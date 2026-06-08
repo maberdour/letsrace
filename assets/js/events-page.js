@@ -333,17 +333,11 @@ export function initEventsPage() {
       const [facetsResponse, eventsResponse] = await Promise.all([
         fetch(facetsUrl, {
           signal: facetsController.signal,
-          headers: {
-            'Accept': 'application/json',
-            'Cache-Control': 'no-cache'
-          }
+          headers: { 'Accept': 'application/json' }
         }),
         fetch(typeShardUrl, {
           signal: eventsController.signal,
-          headers: {
-            'Accept': 'application/json',
-            'Cache-Control': 'no-cache'
-          }
+          headers: { 'Accept': 'application/json' }
         })
       ]);
       

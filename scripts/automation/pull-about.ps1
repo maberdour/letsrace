@@ -58,7 +58,7 @@ try {
   <title>About LetsRace.cc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Find youth cycling events across the UK – including road races, BMX, cyclo-cross, MTB, and more. LetsRace.cc makes it easy to discover, share, and support grassroots bike racing." />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=24" />
   <script data-goatcounter="https://letsrace.goatcounter.com/count" 
 async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -67,7 +67,7 @@ async src="//gc.zgo.at/count.js"></script>
 $htmlContent
   </div>
 
-  <script src="../assets/js/render.js?v=1"></script>
+  <script src="../assets/js/render.js?v=22"></script>
   <script>
     // Get current page filename
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
