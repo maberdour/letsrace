@@ -1,18 +1,5 @@
 [
   {
-    "id": "b6beb5b0",
-    "name": "Horwich Cycling Club Club Matchmoor HC",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Greater Manchester | 1.5 miles | LL808 | Matchmoor Lane Hc",
-    "postcode": null,
-    "date": "2026-06-09",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51726-horwich-cycling-club-club-matchmoor-hc",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-25T01:04:08.000Z"
-  },
-  {
     "id": "5ada804c",
     "name": "hill climb project round 7",
     "type": "Hill Climb",
@@ -182,7 +169,7 @@
     "last_updated": "2026-03-25T10:12:43.000Z"
   },
   {
-    "id": "074d1edc",
+    "id": "a45bbc3d",
     "name": "Pendle Forest CC Club 1.8",
     "type": "Hill Climb",
     "region": "North West",

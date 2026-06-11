@@ -1,57 +1,5 @@
 [
   {
-    "id": "8b8762bb",
-    "name": "C&CCC Friday Night Hot Laps 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-06-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335446/cccc-friday-night-hot-laps-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-11T01:15:23.000Z"
-  },
-  {
-    "id": "2fb875e0",
-    "name": "The Summer Series Round 2 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Stratford Park Leisure Centre, Stroud",
-    "postcode": null,
-    "date": "2026-06-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331408/the-summer-series-round-2-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "7ac90411",
-    "name": "Yorkshire Cyclo-cross Summer Series Round 3",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Bramley Fall Park, Leeds",
-    "postcode": null,
-    "date": "2026-06-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334791/yorkshire-cyclo-cross-summer-series-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-18T01:15:27.000Z"
-  },
-  {
-    "id": "fb6e8529",
-    "name": "Sprockets Summer CX 2026 Race #2",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Dinton Pastures Country Park, Wokingham",
-    "postcode": null,
-    "date": "2026-06-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332713/sprockets-summer-cx-2026-race-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-24T03:15:24.000Z"
-  },
-  {
     "id": "ea27c7ee",
     "name": "WCC Summer Cyclocross Series Round 1",
     "type": "Cyclo Cross",
@@ -284,6 +232,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/335679/cyclocross-reigate-2026",
     "source": "Google Sheet",
     "last_updated": "2026-05-07T01:15:24.000Z"
+  },
+  {
+    "id": "e92554a6",
+    "name": "North East Summer Cross - Round 2 (Camperdown)",
+    "type": "Cyclo Cross",
+    "region": "ï»¿Scotland",
+    "venue": "Camperdown Country Park Cycle Centre, Angus",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335671/north-east-summer-cross---round-2-camperdown",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-04T01:15:25.000Z"
+  },
+  {
+    "id": "e92554a6",
+    "name": "North East Summer Cross - Round 2 (Camperdown)",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Camperdown Country Park Cycle Centre, Angus",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/335671/north-east-summer-cross---round-2-camperdown",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-04T01:15:25.000Z"
   },
   {
     "id": "5db8899f",
