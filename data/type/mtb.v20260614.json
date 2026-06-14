@@ -208,6 +208,19 @@
     "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
+    "id": "39ae7a4b",
+    "name": "Delamere Forest MTB Cluster - Advanced riders",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Forestry Commission Delamere Forest Park, Cheshire",
+    "postcode": null,
+    "date": "2026-06-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336541/delamere-forest-mtb-cluster---advanced-riders",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
     "id": "ebfb5f86",
     "name": "Malvern Cycle Sport Go-Ride Race June",
     "type": "MTB",
@@ -416,6 +429,45 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "7193ba6a",
+    "name": "Delamere Forest MTB Club Youth Session - Girls Focus Session July 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-07-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337375/delamere-forest-mtb-club-youth-session---girls-focus-session-july-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
+    "id": "662df955",
+    "name": "Delamere Forest MTB Club Youth Session - July 26",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-07-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336877/delamere-forest-mtb-club-youth-session---july--26",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
+    "id": "204a1b0e",
+    "name": "Delamere Forest MTB Cluster - Intermediate riders July 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Forestry Commission Delamere Forest Park, Cheshire",
+    "postcode": null,
+    "date": "2026-07-07",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337376/delamere-forest-mtb-cluster---intermediate-riders-july-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
     "id": "6db99f12",
     "name": "B-BUDDIES Off-Road TT 7",
     "type": "MTB",
@@ -531,6 +583,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337155/british-cycling-pathway-development-centre-gravity---forest-of-dean-49",
     "source": "Google Sheet",
     "last_updated": "2026-06-02T01:15:25.000Z"
+  },
+  {
+    "id": "da0d0d2e",
+    "name": "Delamere Forest MTB Cluster - Advanced riders July 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Forestry Commission Delamere Forest Park, Cheshire",
+    "postcode": null,
+    "date": "2026-07-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337377/delamere-forest-mtb-cluster---advanced-riders-july-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
   },
   {
     "id": "53a94e4e",

@@ -117,6 +117,19 @@
     "last_updated": "2026-06-12T01:15:24.000Z"
   },
   {
+    "id": "abbf12df",
+    "name": "British Cycling Pathway Development Centre BMX/SX - North School Games Selection #1",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "Manchester BMX Track, Lancashire",
+    "postcode": null,
+    "date": "2026-06-28",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336933/british-cycling-pathway-development-centre-bmxsx---north-school-games-selection-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
     "id": "325674c5",
     "name": "South West BMX Regional Series 2026 - Round 7, Bath",
     "type": "BMX",

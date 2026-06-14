@@ -364,6 +364,19 @@
     "last_updated": "2026-06-12T01:15:24.000Z"
   },
   {
+    "id": "a32baabd",
+    "name": "Haringey Schools Cycling League 2025_2026 Round 9",
+    "type": "Road",
+    "region": "Eastern",
+    "venue": "Downhills Park, Haringey",
+    "postcode": null,
+    "date": "2026-06-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336293/haringey-schools-cycling-league-2025_2026-round-9-",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
     "id": "ceeba984",
     "name": "Hove Park Crits #1",
     "type": "Road",
@@ -559,7 +572,7 @@
     "last_updated": "2026-03-12T08:07:28.000Z"
   },
   {
-    "id": "20147349",
+    "id": "5e28432c",
     "name": "Velo Club Lincoln Blyton Motor Circuit Crits",
     "type": "Road",
     "region": "East Midlands",
@@ -596,6 +609,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327905/lawford-youth-series-at-curborough-26-4",
     "source": "Google Sheet",
     "last_updated": "2025-12-20T03:15:25.000Z"
+  },
+  {
+    "id": "8bac2c78",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-07-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331480/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
   },
   {
     "id": "123049e1",
@@ -910,6 +936,19 @@
     "last_updated": "2026-06-02T01:15:25.000Z"
   },
   {
+    "id": "a9165ec5",
+    "name": "Castletown CRIT",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Castletown Square, Isle of Man",
+    "postcode": null,
+    "date": "2026-07-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336067/castletown-crit",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
     "id": "388889df",
     "name": "Welsh Circuit Race Championships 2026",
     "type": "Road",
@@ -1025,6 +1064,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332614/banbury-star-festival-of-racing-inc-cycl-and-orrl",
     "source": "Google Sheet",
     "last_updated": "2026-03-02T03:15:25.000Z"
+  },
+  {
+    "id": "60ccad98",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-08-01",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331481/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
   },
   {
     "id": "686a707e",
@@ -1196,6 +1248,19 @@
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
   {
+    "id": "59c6e628",
+    "name": "Central Region Circuit Series Round 5",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Hillingdon Cycle Circuit, Middlesex",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336860/central-region-circuit-series-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
     "id": "88ac0b41",
     "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 18",
     "type": "Road",
@@ -1261,6 +1326,19 @@
     "last_updated": "2026-03-28T03:15:25.000Z"
   },
   {
+    "id": "aeb631af",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-09-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337268/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
     "id": "f17182fe",
     "name": "SUSIES CIRCUITS",
     "type": "Road",
@@ -1298,6 +1376,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/333831/matlock-cc-darley-moor-circuit-race-6",
     "source": "Google Sheet",
     "last_updated": "2026-04-11T01:15:25.000Z"
+  },
+  {
+    "id": "57dcf4aa",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-10-03",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337269/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
   },
   {
     "id": "65afb675",
@@ -1350,5 +1441,31 @@
     "url": "https://www.britishcycling.org.uk/events/details/336691/hillingdon-slipstreamers-autumn-series-2026-4",
     "source": "Google Sheet",
     "last_updated": "2026-05-21T01:15:29.000Z"
+  },
+  {
+    "id": "3fcde76d",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-11-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337270/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
+    "id": "eaf9aa8d",
+    "name": "Mossley CRT Limitless",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Tameside Cycle Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-12-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337271/mossley-crt-limitless-",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-14T11:00:10.000Z"
   }
 ]
