@@ -1,0 +1,98 @@
+{
+  "events": [
+    {
+      "id": "ed243647",
+      "name": "BFCC Racing XCC Series 2026 - Race 2",
+      "type": "MTB",
+      "region": "London & South East",
+      "venue": "Bedgebury Forest, Kent",
+      "postcode": null,
+      "date": "2026-06-27",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337226/bfcc-racing-xcc-series-2026---race-2",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-09T01:15:24.000Z"
+    },
+    {
+      "id": "089092aa",
+      "name": "XCR Round 2 (Supported by Wheal Jane)",
+      "type": "MTB",
+      "region": "South West",
+      "venue": "Wheal Jane Circuit, Cornwall",
+      "postcode": null,
+      "date": "2026-07-18",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337388/xcr-round-2-supported-by-wheal-jane",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-10T01:15:26.000Z"
+    },
+    {
+      "id": "c875194f",
+      "name": "XCR Round 3 (Supported by Wheal Jane)",
+      "type": "MTB",
+      "region": "South West",
+      "venue": "Wheal Jane Circuit, Cornwall",
+      "postcode": null,
+      "date": "2026-08-01",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337389/xcr-round-3-supported-by-wheal-jane",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-10T01:15:26.000Z"
+    },
+    {
+      "id": "5cae65ef",
+      "name": "Cleveland Coureurs Club 10",
+      "type": "Time Trial",
+      "region": "North East",
+      "venue": "North Yorkshire | 10 miles | T10C",
+      "postcode": null,
+      "date": "2026-08-12",
+      "start_time": "23:00",
+      "url": "https://www.cyclingtimetrials.org.uk/events/51279-cleveland-coureurs-club-10",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-12T01:04:08.000Z"
+    },
+    {
+      "id": "ec838c5f",
+      "name": "Aberystwyth CycleFest Races 2026- (Ystwyth Schools Summer Series Round 2)",
+      "type": "Road",
+      "region": "Wales",
+      "venue": "Aberystwyth Town Centre, Ceredigion",
+      "postcode": null,
+      "date": "2026-06-26",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/335724/aberystwyth-cyclefest-races-2026--ystwyth-schools-summer-series-round-2-",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-12T01:15:24.000Z"
+    },
+    {
+      "id": "38530ba6",
+      "name": "Andover BMX Club Coach Led Racing Summer Medal Mania #1 2026",
+      "type": "BMX",
+      "region": "South",
+      "venue": "Andover BMX Club, Andover",
+      "postcode": null,
+      "date": "2026-06-27",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337474/andover-bmx-club-coach-led-racing-summer-medal-mania-1-2026",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-12T01:15:24.000Z"
+    },
+    {
+      "id": "e9caa84c",
+      "name": "Pedal Heaven Kids Summer Crit",
+      "type": "Road",
+      "region": "London & South East",
+      "venue": "Blackbushe Kart Circuit, Surrey",
+      "postcode": null,
+      "date": "2026-07-12",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337394/pedal-heaven-kids-summer-crit-",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-12T01:15:24.000Z"
+    }
+  ],
+  "last_build": "2026-06-14T03:09:21.903Z",
+  "total_new_events": 7,
+  "cutoff_date": "2026-06-07"
+}
