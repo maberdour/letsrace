@@ -1,70 +1,5 @@
 [
   {
-    "id": "c2471ffb",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-06-09",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45724-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "73f877e0",
-    "name": "Cairngorm hill climb (part of north of Scotland district race series)",
-    "type": "Time Trial",
-    "region": "﻿Scotland",
-    "venue": "Rothiemurchus and Aviemore Tennis Club, Inverness-Shire",
-    "postcode": null,
-    "date": "2026-06-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334333/cairngorm-hill-climb-part-of-north-of-scotland-district-race-series",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "218d61eb",
-    "name": "Goodwood Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
-    "postcode": null,
-    "date": "2026-06-10",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42564-goodwood-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "d9ad1367",
-    "name": "Goodwood Youth Road Bike (8yrs-13yrs) Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 7.6 miles | P917/7.6",
-    "postcode": null,
-    "date": "2026-06-10",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41586-goodwood-youth-road-bike-8-yrs-13-yrs-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "6f74e14f",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-06-16",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45727-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "0a6d83ce",
     "name": "Cleveland Coureurs Club 10",
     "type": "Time Trial",
@@ -247,19 +182,6 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "9fd3c0cf",
-    "name": "Cleveland Coureurs Club 10",
-    "type": "Time Trial",
-    "region": "North East",
-    "venue": "North Yorkshire | 10 miles | T10C",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51275-cleveland-coureurs-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-03T01:04:08.000Z"
-  },
-  {
     "id": "2988ec73",
     "name": "Goodwood Time Trial League",
     "type": "Time Trial",
@@ -336,6 +258,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45741-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "820c390e",
+    "name": "Cleveland Coureurs Club 10",
+    "type": "Time Trial",
+    "region": "North East",
+    "venue": "North Yorkshire | 10 miles | T10C",
+    "postcode": null,
+    "date": "2026-07-22",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51275-cleveland-coureurs-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-03T01:04:08.000Z"
   },
   {
     "id": "d57e0f8e",
@@ -427,6 +362,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45749-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "5cae65ef",
+    "name": "Cleveland Coureurs Club 10",
+    "type": "Time Trial",
+    "region": "North East",
+    "venue": "North Yorkshire | 10 miles | T10C",
+    "postcode": null,
+    "date": "2026-08-12",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51279-cleveland-coureurs-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-12T01:04:08.000Z"
   },
   {
     "id": "c15f49a4",

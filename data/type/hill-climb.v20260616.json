@@ -1,44 +1,5 @@
 [
   {
-    "id": "b6beb5b0",
-    "name": "Horwich Cycling Club Club Matchmoor HC",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Greater Manchester | 1.5 miles | LL808 | Matchmoor Lane Hc",
-    "postcode": null,
-    "date": "2026-06-09",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51726-horwich-cycling-club-club-matchmoor-hc",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-25T01:04:08.000Z"
-  },
-  {
-    "id": "5ada804c",
-    "name": "hill climb project round 7",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Cheshire East | 6 miles | J9/7 | Cat & Fiddle",
-    "postcode": null,
-    "date": "2026-06-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51694-hill-climb-project-round-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:04:08.000Z"
-  },
-  {
-    "id": "3bcd0368",
-    "name": "Horwich Cycling Club Club 1",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Lancashire | 1 miles | LL809 | Sheephouse Lane Hc",
-    "postcode": null,
-    "date": "2026-06-16",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51728-horwich-cycling-club-club-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-25T01:04:08.000Z"
-  },
-  {
     "id": "5fcd0cd9",
     "name": "Longstone Edge Hill Climb",
     "type": "Hill Climb",
