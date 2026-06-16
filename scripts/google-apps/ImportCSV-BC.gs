@@ -126,7 +126,10 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
     // Build map of existing event IDs to row numbers for duplicate detection
     const existingEventIds = new Map(); // eventId -> rowNumber
     sheetData.forEach((row, index) => {
-      const url = row[4] || '';
+      let url = row[4] ? row[4].toString().trim() : '';
+      if (url.startsWith('/events')) {
+        url = 'https://www.britishcycling.org.uk' + url;
+      }
       const eventId = extractBCEventId(url);
       if (eventId) {
         existingEventIds.set(eventId, index + 1); // +1 because sheet rows are 1-based
@@ -135,14 +138,23 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
 
     const now = formatDateTime(new Date());
     const newRows = [];
+    const pendingNewRowByEventId = new Map(); // eventId -> index in newRows (CSV duplicates)
     const rowsToUpdate = []; // Array of {rowNumber, data} for existing events
     let excludedEventsCount = 0;
+    let csvDuplicateCount = 0;
 
     // Process each CSV row
     csvData.forEach(row => {
       const displayDate = normalizeDate(row[0]);
       const name = normalizeEventName(row[1]); // Preserve case for display
-      const rawUrl = row[4] ? row[4].toString().trim() : '';
+      let rawUrl = row[4] ? row[4].toString().trim() : '';
+
+      // Normalize URL before ID extraction (relative and absolute paths must match)
+      if (rawUrl.startsWith('/events')) {
+        rawUrl = 'https://www.britishcycling.org.uk' + rawUrl;
+        row[4] = rawUrl;
+      }
+
       const eventId = extractBCEventId(rawUrl);
 
       if (isBCExcludedEventUrl(rawUrl, 'https://www.britishcycling.org.uk', folderId)) {
@@ -162,11 +174,6 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         row[3] = removeSpacesBeforeCommas(row[3].toString().trim());
       }
 
-      // Normalize URL for British Cycling links
-      if (rawUrl.startsWith('/events')) {
-        row[4] = 'https://www.britishcycling.org.uk' + rawUrl;
-      }
-
       // Map region to correct name (Column F = Region)
       if (row[5]) {
         row[5] = mapBCRegion(row[5]);
@@ -179,9 +186,18 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         row[5] = 'London & South East'; // Column F (Region)
       }
 
-      // Add timestamps for new events
-      row.push(now); // Date Created
-      row.push('');  // Date Updated (will be set for updates)
+      // Build fixed 8-column sheet row (A–H). Do not use row.push() — CSV may have
+      // extra columns that would push Date Created/Updated into the wrong column.
+      const sheetRow = [
+        row[0],           // Column A: Event Date
+        row[1],           // Column B: Event Name
+        row[2] || '',     // Column C: Event Type
+        row[3] || '',     // Column D: Location
+        row[4] || '',     // Column E: URL
+        row[5] || '',     // Column F: Region
+        now,              // Column G: Date Created
+        ''                // Column H: Date Updated
+      ];
 
       // Check if this event ID already exists
       if (eventId && existingEventIds.has(eventId)) {
@@ -190,25 +206,25 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         
         // Preserve the existing Event Type field (Column C) from the sheet
         const existingEventType = existingRowData[2] || ''; // Column C (index 2)
-        row[2] = existingEventType; // Keep the existing event type, don't overwrite
+        sheetRow[2] = existingEventType; // Keep the existing event type, don't overwrite
         
         // Apply London region logic if Event Name or Location contains "London"
-        const eventName = row[1] || ''; // Column B (Event Name) from CSV
-        const location = row[3] || ''; // Column D (Location) from CSV
-        if (eventName.toString().toLowerCase().includes('london') || location.toString().toLowerCase().includes('london')) {
-          row[5] = 'London & South East'; // Column F (Region) - override with London region
+        const updateEventName = sheetRow[1] || '';
+        const updateLocation = sheetRow[3] || '';
+        if (updateEventName.toString().toLowerCase().includes('london') || updateLocation.toString().toLowerCase().includes('london')) {
+          sheetRow[5] = 'London & South East'; // Column F (Region) - override with London region
         } else {
           // Preserve the existing Region field (Column F) from the sheet if not London
           const existingRegion = existingRowData[5] || ''; // Column F (index 5)
-          row[5] = existingRegion; // Keep the existing region, don't overwrite
+          sheetRow[5] = existingRegion; // Keep the existing region, don't overwrite
         }
         
         // Preserve the existing Date Created field (Column G) from the sheet
         const existingDateCreated = existingRowData[6] || ''; // Column G (index 6)
-        row[6] = existingDateCreated; // Keep the existing date created, don't overwrite
+        sheetRow[6] = existingDateCreated; // Keep the existing date created, don't overwrite
         
         // Set Date Updated for existing events
-        row[7] = now; // Column H: Date Updated
+        sheetRow[7] = now; // Column H: Date Updated
         
         // Compare data to see if anything has changed (only debug first few)
         const shouldDebug = rowsToUpdate.length < 3; // Only debug first 3 comparisons
@@ -216,15 +232,24 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
           Logger.log(`🔍 Checking event ID ${eventId} in row ${existingRowNumber}`);
         }
         
-        if (hasDataChanged(existingRowData, row, shouldDebug)) {
+        if (hasDataChanged(existingRowData, sheetRow, shouldDebug)) {
           Logger.log(`🔄 Updating existing BC event ID ${eventId} in row ${existingRowNumber} (data changed)`);
-          rowsToUpdate.push({ rowNumber: existingRowNumber, data: row });
+          rowsToUpdate.push({ rowNumber: existingRowNumber, data: sheetRow });
         } else {
           Logger.log(`ℹ️ BC event ID ${eventId} in row ${existingRowNumber} unchanged, skipping update`);
         }
+      } else if (eventId && pendingNewRowByEventId.has(eventId)) {
+        // Same BC event ID appeared again in this CSV — do not append a second row
+        const pendingIndex = pendingNewRowByEventId.get(eventId);
+        newRows[pendingIndex] = sheetRow;
+        csvDuplicateCount += 1;
+        Logger.log(`↺ Duplicate BC event ID ${eventId} in CSV — keeping latest row (not adding again)`);
       } else {
-        // New event - add to new rows
-        newRows.push(row);
+        // New event - add to new rows and track ID for the rest of this import
+        if (eventId) {
+          pendingNewRowByEventId.set(eventId, newRows.length);
+        }
+        newRows.push(sheetRow);
       }
     });
 
@@ -252,6 +277,9 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
       Logger.log(`📊 Import summary: ${newRows.length} new, ${rowsToUpdate.length} updated`);
     }
     Logger.log(`🚫 Events found and excluded: ${excludedEventsCount}`);
+    if (csvDuplicateCount > 0) {
+      Logger.log(`↺ CSV duplicate rows skipped: ${csvDuplicateCount}`);
+    }
     Logger.log('✅ ImportCSV-BC finished');
   } catch (error) {
     Logger.log("❌ Error importing events: " + error.message);
