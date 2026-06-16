@@ -13,6 +13,19 @@
     "last_updated": "2026-05-17T17:35:04.000Z"
   },
   {
+    "id": "1cb81636",
+    "name": "Milton Keynes BMX Racing Club Summer Series 2026 Round 3",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2026-06-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337674/milton-keynes-bmx-racing-club-summer-series-2026-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-16T10:23:44.413Z"
+  },
+  {
     "id": "4936bca4",
     "name": "BMX East Summer Series 2026 Round 6",
     "type": "BMX",
@@ -115,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337474/andover-bmx-club-coach-led-racing-summer-medal-mania-1-2026",
     "source": "Google Sheet",
     "last_updated": "2026-06-12T01:15:24.000Z"
+  },
+  {
+    "id": "f1268909",
+    "name": "British Cycling Pathway Development Centre BMX/SX - West Midlands #7 Derby",
+    "type": "BMX",
+    "region": "East Midlands",
+    "venue": "Derby BMX Track, Derbyshire",
+    "postcode": null,
+    "date": "2026-06-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337391/british-cycling-pathway-development-centre-bmxsx---west-midlands-7-derby",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-16T10:23:44.425Z"
   },
   {
     "id": "abbf12df",
