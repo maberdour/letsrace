@@ -1313,6 +1313,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "d4d79ed8",
+    "name": "Quarrington Hill Hill Climb",
+    "type": "Hill Climb",
+    "region": "Yorkshire & Humber",
+    "venue": "THC21 | Quarrington Hill",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51158-quarrington-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-15T01:04:08.000Z"
+  },
+  {
     "id": "c3256e2e",
     "name": "Redbridge CC Banks Lane Hill Climb",
     "type": "Hill Climb",

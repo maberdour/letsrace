@@ -18,7 +18,7 @@
     },
     "cyclo-cross": {
       "name": "Cyclo Cross",
-      "count": 32
+      "count": 27
     },
     "speedway": {
       "name": "Speedway",
@@ -30,9 +30,9 @@
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 178
+      "count": 179
     }
   },
-  "last_build": "2026-06-16T10:23:44.696Z",
-  "total_events": 640
+  "last_build": "2026-06-16T16:41:33.248Z",
+  "total_events": 636
 }

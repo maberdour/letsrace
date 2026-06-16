@@ -92,15 +92,15 @@
       "last_updated": "2026-06-12T01:15:24.000Z"
     },
     {
-      "id": "59c6e628",
-      "name": "Central Region Circuit Series Round 5",
-      "type": "Road",
-      "region": "Central",
-      "venue": "Hillingdon Cycle Circuit, Middlesex",
+      "id": "39ae7a4b",
+      "name": "Delamere Forest MTB Cluster - Advanced riders",
+      "type": "MTB",
+      "region": "North West",
+      "venue": "Forestry Commission Delamere Forest Park, Cheshire",
       "postcode": null,
-      "date": "2026-08-23",
+      "date": "2026-06-23",
       "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/336860/central-region-circuit-series-round-5",
+      "url": "https://www.britishcycling.org.uk/events/details/336541/delamere-forest-mtb-cluster---advanced-riders",
       "source": "Google Sheet",
       "last_updated": "2026-06-14T11:00:10.000Z"
     },
@@ -127,58 +127,6 @@
       "date": "2026-06-27",
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/335764/british-cycling-north-east-track-cluster-",
-      "source": "Google Sheet",
-      "last_updated": "2026-06-14T11:00:10.000Z"
-    },
-    {
-      "id": "8ad4328d",
-      "name": "British Cycling North East Track Cluster",
-      "type": "Track",
-      "region": "North East",
-      "venue": "Middlesbrough Velodrome, Middlesbrough",
-      "postcode": null,
-      "date": "2026-07-18",
-      "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/335765/british-cycling-north-east-track-cluster-",
-      "source": "Google Sheet",
-      "last_updated": "2026-06-14T11:00:10.000Z"
-    },
-    {
-      "id": "98ea696f",
-      "name": "British Cycling North East Track Cluster",
-      "type": "Track",
-      "region": "North East",
-      "venue": "Middlesbrough Velodrome, Middlesbrough",
-      "postcode": null,
-      "date": "2026-08-15",
-      "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/335766/british-cycling-north-east-track-cluster-",
-      "source": "Google Sheet",
-      "last_updated": "2026-06-14T11:00:10.000Z"
-    },
-    {
-      "id": "356a7bf4",
-      "name": "British Cycling North East Track Cluster",
-      "type": "Track",
-      "region": "North East",
-      "venue": "Middlesbrough Velodrome, Middlesbrough",
-      "postcode": null,
-      "date": "2026-09-05",
-      "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/335767/british-cycling-north-east-track-cluster-",
-      "source": "Google Sheet",
-      "last_updated": "2026-06-14T11:00:10.000Z"
-    },
-    {
-      "id": "39ae7a4b",
-      "name": "Delamere Forest MTB Cluster - Advanced riders",
-      "type": "MTB",
-      "region": "North West",
-      "venue": "Forestry Commission Delamere Forest Park, Cheshire",
-      "postcode": null,
-      "date": "2026-06-23",
-      "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/336541/delamere-forest-mtb-cluster---advanced-riders",
       "source": "Google Sheet",
       "last_updated": "2026-06-14T11:00:10.000Z"
     },
@@ -248,6 +196,19 @@
       "last_updated": "2026-06-14T11:00:10.000Z"
     },
     {
+      "id": "8ad4328d",
+      "name": "British Cycling North East Track Cluster",
+      "type": "Track",
+      "region": "North East",
+      "venue": "Middlesbrough Velodrome, Middlesbrough",
+      "postcode": null,
+      "date": "2026-07-18",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/335765/british-cycling-north-east-track-cluster-",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-14T11:00:10.000Z"
+    },
+    {
       "id": "a9165ec5",
       "name": "Castletown CRIT",
       "type": "Road",
@@ -283,6 +244,45 @@
       "date": "2026-08-01",
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/331481/mossley-crt-limitless-",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-14T11:00:10.000Z"
+    },
+    {
+      "id": "98ea696f",
+      "name": "British Cycling North East Track Cluster",
+      "type": "Track",
+      "region": "North East",
+      "venue": "Middlesbrough Velodrome, Middlesbrough",
+      "postcode": null,
+      "date": "2026-08-15",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/335766/british-cycling-north-east-track-cluster-",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-14T11:00:10.000Z"
+    },
+    {
+      "id": "59c6e628",
+      "name": "Central Region Circuit Series Round 5",
+      "type": "Road",
+      "region": "Central",
+      "venue": "Hillingdon Cycle Circuit, Middlesex",
+      "postcode": null,
+      "date": "2026-08-23",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/336860/central-region-circuit-series-round-5",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-14T11:00:10.000Z"
+    },
+    {
+      "id": "356a7bf4",
+      "name": "British Cycling North East Track Cluster",
+      "type": "Track",
+      "region": "North East",
+      "venue": "Middlesbrough Velodrome, Middlesbrough",
+      "postcode": null,
+      "date": "2026-09-05",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/335767/british-cycling-north-east-track-cluster-",
       "source": "Google Sheet",
       "last_updated": "2026-06-14T11:00:10.000Z"
     },
@@ -339,56 +339,17 @@
       "last_updated": "2026-06-14T11:00:10.000Z"
     },
     {
-      "id": "a8163023",
-      "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-      "type": "Cyclo Cross",
-      "region": "West Midlands",
-      "venue": "Shrewsbury Sports Village, Shropshire",
+      "id": "d4d79ed8",
+      "name": "Quarrington Hill Hill Climb",
+      "type": "Hill Climb",
+      "region": "Yorkshire & Humber",
+      "venue": "THC21 | Quarrington Hill",
       "postcode": null,
-      "date": "2026-08-07",
+      "date": "2026-09-20",
       "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/337392/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
+      "url": "https://www.cyclingtimetrials.org.uk/events/51158-quarrington-hill-hill-climb",
       "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.386Z"
-    },
-    {
-      "id": "7e939101",
-      "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-      "type": "Cyclo Cross",
-      "region": "West Midlands",
-      "venue": "Shrewsbury Sports Village, Shropshire",
-      "postcode": null,
-      "date": "2026-08-14",
-      "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/337393/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-      "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.397Z"
-    },
-    {
-      "id": "554687a4",
-      "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-      "type": "Cyclo Cross",
-      "region": "West Midlands",
-      "venue": "Shrewsbury Sports Village, Shropshire",
-      "postcode": null,
-      "date": "2026-08-21",
-      "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/337395/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-      "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.401Z"
-    },
-    {
-      "id": "38b107a3",
-      "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-      "type": "Cyclo Cross",
-      "region": "West Midlands",
-      "venue": "Shrewsbury Sports Village, Shropshire",
-      "postcode": null,
-      "date": "2026-08-28",
-      "start_time": "23:00",
-      "url": "https://www.britishcycling.org.uk/events/details/337396/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-      "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.408Z"
+      "last_updated": "2026-06-15T01:04:08.000Z"
     },
     {
       "id": "1cb81636",
@@ -401,7 +362,7 @@
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/337674/milton-keynes-bmx-racing-club-summer-series-2026-round-3",
       "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.413Z"
+      "last_updated": "2026-06-16T09:23:21.000Z"
     },
     {
       "id": "f1268909",
@@ -414,7 +375,7 @@
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/337391/british-cycling-pathway-development-centre-bmxsx---west-midlands-7-derby",
       "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.425Z"
+      "last_updated": "2026-06-16T09:23:21.000Z"
     },
     {
       "id": "a8163023",
@@ -427,7 +388,7 @@
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/337392/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
       "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.431Z"
+      "last_updated": "2026-06-16T15:41:10.000Z"
     },
     {
       "id": "7e939101",
@@ -440,7 +401,7 @@
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/337393/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
       "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.440Z"
+      "last_updated": "2026-06-16T15:41:10.000Z"
     },
     {
       "id": "554687a4",
@@ -453,7 +414,7 @@
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/337395/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
       "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.449Z"
+      "last_updated": "2026-06-16T15:41:10.000Z"
     },
     {
       "id": "38b107a3",
@@ -466,10 +427,10 @@
       "start_time": "23:00",
       "url": "https://www.britishcycling.org.uk/events/details/337396/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
       "source": "Google Sheet",
-      "last_updated": "2026-06-16T10:23:44.463Z"
+      "last_updated": "2026-06-16T15:41:10.000Z"
     }
   ],
-  "last_build": "2026-06-16T10:23:44.694Z",
-  "total_new_events": 36,
+  "last_build": "2026-06-16T16:41:33.247Z",
+  "total_new_events": 33,
   "cutoff_date": "2026-06-09"
 }

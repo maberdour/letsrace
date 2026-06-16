@@ -23,7 +23,7 @@
     "start_time": "23:00",
     "url": "https://www.britishcycling.org.uk/events/details/337674/milton-keynes-bmx-racing-club-summer-series-2026-round-3",
     "source": "Google Sheet",
-    "last_updated": "2026-06-16T10:23:44.413Z"
+    "last_updated": "2026-06-16T09:23:21.000Z"
   },
   {
     "id": "4936bca4",
@@ -140,7 +140,7 @@
     "start_time": "23:00",
     "url": "https://www.britishcycling.org.uk/events/details/337391/british-cycling-pathway-development-centre-bmxsx---west-midlands-7-derby",
     "source": "Google Sheet",
-    "last_updated": "2026-06-16T10:23:44.425Z"
+    "last_updated": "2026-06-16T09:23:21.000Z"
   },
   {
     "id": "abbf12df",
@@ -224,7 +224,7 @@
     "id": "ae04c825",
     "name": "Scottish Regional BMX Racing Series 2026 Round 7",
     "type": "BMX",
-    "region": "ï»¿Scotland",
+    "region": "Scotland",
     "venue": "Clydebank BMX Track, Dunbartonshire",
     "postcode": null,
     "date": "2026-07-11",
@@ -289,7 +289,7 @@
     "id": "ec74b39a",
     "name": "Scottish Regional BMX Racing Series 2026 Round 8",
     "type": "BMX",
-    "region": "ï»¿Scotland",
+    "region": "Scotland",
     "venue": "Glasgow BMX Centre, Glasgow",
     "postcode": null,
     "date": "2026-07-18",
