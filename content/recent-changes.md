@@ -14,3 +14,44 @@ Jun 3 - bug - Fixed duplicate entry logic in the data submission process.
 
 19 Feb 2026 - bug - Applied default region filters on the New Events page load.
 
+19 Feb 2026 - bug - Fixed an issue with the overnight build trigger and scheduled job.
+
+19 Feb 2026 - enhancement - Added a national events filter to the website in response to user feedback. 
+
+11 Dec 2025 - bug - London & South East CX events appearing in Eastern, corrected region mapping.
+
+11 Dec 2025 - Fixed issue where deleted events were reappearing in subsequent updates.
+
+11 Dec 2025 - enhancement - Updated homepage grid titles for clarity.
+
+11 Dec 2025 - enhancement - Added Speedway event type to the website.
+
+06 Nov 2025 - bug - Implemented email alerts for failed nightly processes.
+
+06 Nov 2025 - enhancement - Enhanced messaging when no events match filter criteria.
+
+06 Nov 2025 - enhancement - Implemented user feedback form on the website.
+
+
+06 Nov 2025 - enhancement - Updated FAQ with new content and clarifications.
+
+04 Feb 2026 - enhancement - Enhanced data capture macro to be more resilient to URL structure changes.
+
+04 Feb 2026 - Added URL configuration list to the CTT macro for better maintainability.
+
+04 Feb 2026 - bug - Fixed issue with the CTT macro and updated selectors.
+
+04 Feb 2026 - bug - Fixed mobile filter UI so region selections persist correctly.
+
+02 Jan 2026 - bug - Cleaned up and standardized text formatting across the site.
+
+02 Jan 2026 - bug - Updated the 'New events' button styling and behavior.
+
+02 Jan 2026 - bug - Resolved SSL certificate configuration issues.
+
+01 Oct 2025 - bug - Fixed the build process to run only once per day.
+
+
+
+
+
