@@ -49,8 +49,12 @@ call "%~dp0test-macro-wait.bat" "%MACRO_NAME%" %WAIT_SECS% !MACRO_START_EPOCH!
 rem taskkill often returns 128 when Chrome already exited (closeBrowser=1); do not propagate that to the caller.
 taskkill /IM chrome.exe /F >nul 2>&1
 
+if "%LETSRACE_MACRO_POSTWAIT_GRACE_SECS%"=="" set "LETSRACE_MACRO_POSTWAIT_GRACE_SECS=5"
+timeout /t %LETSRACE_MACRO_POSTWAIT_GRACE_SECS% >nul
+
 call "%~dp0check-macro-result.bat" "%MACRO_NAME%" !MACRO_START_EPOCH! %WAIT_SECS%
-if not errorlevel 1 (
+set "CHECK_RC=!ERRORLEVEL!"
+if "!CHECK_RC!"=="0" (
   call :log "INFO: %MACRO_NAME% succeeded on attempt !ATTEMPT! at %date% %time%"
   endlocal & exit /b 0
 )
@@ -60,7 +64,7 @@ if !ATTEMPT! geq %MAX_ATTEMPTS% (
   endlocal & exit /b 1
 )
 
-call :log "WARN: %MACRO_NAME% attempt !ATTEMPT! did not succeed; retrying in %RETRY_DELAY%s"
+call :log "WARN: %MACRO_NAME% attempt !ATTEMPT! did not succeed (check=!CHECK_RC!); retrying in %RETRY_DELAY%s"
 timeout /t %RETRY_DELAY% >nul
 goto attempt_loop
 

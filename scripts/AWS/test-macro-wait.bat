@@ -56,11 +56,44 @@ if exist "%UIVISION_LOG_DIR%" (
 )
 
 tasklist /FI "IMAGENAME eq chrome.exe" 2>NUL | find /I "chrome.exe" >NUL
-if errorlevel 1 (
+if not errorlevel 1 goto :poll_sleep
+
+rem Chrome exited; give UI.Vision/Drive a moment to flush the terminal log line.
+set "CHROME_FLUSH_SECS=10"
+if not "%LETSRACE_CHROME_EXIT_FLUSH_SECS%"=="" set "CHROME_FLUSH_SECS=%LETSRACE_CHROME_EXIT_FLUSH_SECS%"
+set /a grace_elapsed=0
+
+:chrome_exit_grace
+if exist "%UIVISION_LOG_DIR%" (
+  powershell -NoProfile -Command ^
+    "$d = '%UIVISION_LOG_DIR%'; $grace = %UIVISION_LOG_GRACE_SECS%; $minEpoch = [int]'%START_EPOCH%'; $minDate = [DateTimeOffset]::FromUnixTimeSeconds($minEpoch).LocalDateTime.AddSeconds(-$grace);" ^
+    "try {" ^
+    "  $f = Get-ChildItem -Path $d -Filter 'log-*.txt' -File -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1;" ^
+    "  if (-not $f) { exit 2 }" ^
+    "  if ($f.LastWriteTime -lt $minDate) { exit 2 }" ^
+    "  $head = Get-Content -Path $f.FullName -ErrorAction SilentlyContinue -TotalCount 40;" ^
+    "  $tail = Get-Content -Path $f.FullName -ErrorAction SilentlyContinue -Tail 250;" ^
+    "  $text = (($head + $tail) -join \"`n\");" ^
+    "  $expectedPlaying = 'Playing macro %MACRO_FILE%';" ^
+    "  if ($text -match [regex]::Escape($expectedPlaying)) {" ^
+    "    if ($text -match 'Macro completed' -or $text -match 'Macro failed' -or $text -match 'Error #\\d+') { exit 0 }" ^
+    "  }" ^
+    "  exit 3" ^
+    "} catch { exit 4 }"
+  if not errorlevel 1 (
+    set "DONE_REASON=LOG_DONE"
+    goto :waitdone
+  )
+)
+if !grace_elapsed! geq !CHROME_FLUSH_SECS! (
   set "DONE_REASON=CHROME_EXIT"
   goto :waitdone
 )
+timeout /t 1 >nul
+set /a grace_elapsed+=1
+goto :chrome_exit_grace
 
+:poll_sleep
 timeout /t !POLL! >nul
 set /a elapsed+=!POLL!
 goto :waitloop
