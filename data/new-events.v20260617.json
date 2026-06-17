@@ -415,9 +415,35 @@
       "url": "https://www.britishcycling.org.uk/events/details/337396/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
       "source": "Google Sheet",
       "last_updated": "2026-06-16T15:41:10.000Z"
+    },
+    {
+      "id": "bbd28ab8",
+      "name": "British Cycling Pathway Development Centre Gravity - Northampton DeVo #154",
+      "type": "MTB",
+      "region": "Central",
+      "venue": "Northampton Bike Park, Northampton",
+      "postcode": null,
+      "date": "2026-06-20",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337385/british-cycling-pathway-development-centre-gravity---northampton-devo-154",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-17T14:32:16.000Z"
+    },
+    {
+      "id": "d060d1cb",
+      "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #155",
+      "type": "MTB",
+      "region": "Central",
+      "venue": "Whippy Trails, Rickmansworth.",
+      "postcode": null,
+      "date": "2026-07-04",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337386/british-cycling-pathway-development-centre-gravity---whippendell-devo-155-",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-17T14:32:16.000Z"
     }
   ],
-  "last_build": "2026-06-17T03:09:14.560Z",
-  "total_new_events": 32,
+  "last_build": "2026-06-17T15:33:42.701Z",
+  "total_new_events": 34,
   "cutoff_date": "2026-06-10"
 }
