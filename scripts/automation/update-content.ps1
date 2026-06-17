@@ -8,6 +8,7 @@ Description:
   Currently supported:
     - content/page-introductions.md -> updates <p class="intro-text"> in pages/{type}/index.html
     - content/FAQ.md -> updates <div id="faq-list">...</div> in pages/faq.html
+    - content/recent-changes.md -> updates content in pages/recent-changes.html
 
 Notes:
   - No external modules required. Pure PowerShell.
@@ -185,9 +186,146 @@ function Update-FaqFromMd {
     }
 }
 
+function Process-InlineMarkdown {
+    param([string]$text)
+    $text = [regex]::Replace($text, '\*\*(.+?)\*\*', '<strong>$1</strong>')
+    $text = [regex]::Replace($text, '\[(.+?)\]\((.+?)\)', '<a href="$2">$1</a>')
+    return $text
+}
+
+function Convert-MarkdownToHtml {
+    param([string]$md)
+    if (-not $md) { return '' }
+
+    $lines = $md -split "`r?`n"
+    $output = New-Object System.Collections.Generic.List[string]
+    $inList = $false
+    $currentParagraph = New-Object System.Collections.Generic.List[string]
+
+    foreach ($rawLine in $lines) {
+        $line = $rawLine.Trim()
+
+        if (-not $line) {
+            if ($currentParagraph.Count -gt 0) {
+                $paraText = ($currentParagraph -join ' ').Trim()
+                if ($paraText) { [void]$output.Add("<p>$paraText</p>") }
+                $currentParagraph.Clear()
+            }
+            if ($inList) {
+                [void]$output.Add('</ul>')
+                $inList = $false
+            }
+            continue
+        }
+
+        if ($line -match '^#\s+(.+)$') {
+            if ($currentParagraph.Count -gt 0) {
+                $paraText = ($currentParagraph -join ' ').Trim()
+                if ($paraText) { [void]$output.Add("<p>$paraText</p>") }
+                $currentParagraph.Clear()
+            }
+            if ($inList) {
+                [void]$output.Add('</ul>')
+                $inList = $false
+            }
+            [void]$output.Add("<h1>$($matches[1])</h1>")
+            continue
+        }
+
+        if ($line -match '^##\s+(.+)$') {
+            if ($currentParagraph.Count -gt 0) {
+                $paraText = ($currentParagraph -join ' ').Trim()
+                if ($paraText) { [void]$output.Add("<p>$paraText</p>") }
+                $currentParagraph.Clear()
+            }
+            if ($inList) {
+                [void]$output.Add('</ul>')
+                $inList = $false
+            }
+            [void]$output.Add("<h2>$($matches[1])</h2>")
+            continue
+        }
+
+        if ($line -match '^-\s+(.+)$') {
+            if ($currentParagraph.Count -gt 0) {
+                $paraText = ($currentParagraph -join ' ').Trim()
+                if ($paraText) { [void]$output.Add("<p>$paraText</p>") }
+                $currentParagraph.Clear()
+            }
+            if (-not $inList) {
+                [void]$output.Add('<ul>')
+                $inList = $true
+            }
+            [void]$output.Add("  <li>$($matches[1])</li>")
+            continue
+        }
+
+        [void]$currentParagraph.Add($line)
+    }
+
+    if ($currentParagraph.Count -gt 0) {
+        $paraText = ($currentParagraph -join ' ').Trim()
+        if ($paraText) { [void]$output.Add("<p>$paraText</p>") }
+    }
+    if ($inList) {
+        [void]$output.Add('</ul>')
+    }
+
+    $html = ($output -join "`n      `n      ").Trim()
+    $html = Process-InlineMarkdown $html
+    $html = [regex]::Replace($html, "`n{3,}", "`n`n")
+    return $html.Trim()
+}
+
+function Replace-GeneralContentInHtml {
+    param(
+        [string]$html,
+        [string]$h1Text,
+        [string]$newContent
+    )
+    if (-not $html -or -not $newContent) { return $html }
+
+    $contentToInsert = [regex]::Replace($newContent, '<h1>.*?</h1>\s*', '', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase).Trim()
+    $escapedH1 = [regex]::Escape($h1Text)
+    $pattern = "(<div\s+class=[`"']general-content[`"']>\s*<h1>$escapedH1</h1>)\s*([\s\S]*?)(\s*</div>)"
+
+    if ($html -match $pattern) {
+        return [regex]::Replace(
+            $html,
+            $pattern,
+            "`$1`n      `n      $contentToInsert`n    `$3",
+            [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
+        )
+    }
+
+    return $html
+}
+
+function Update-RecentChangesFromMd {
+    $mdPath = Join-Path $RepoRoot 'content/recent-changes.md'
+    $md = Get-FileUtf8 $mdPath
+    if (-not $md) { Write-Host "[recent-changes] Skipped: $mdPath not found"; return }
+
+    $htmlContent = Convert-MarkdownToHtml -md $md
+    if (-not $htmlContent) { Write-Host "[recent-changes] Skipped: no content parsed"; return }
+
+    $pagePath = Join-Path $RepoRoot 'pages/recent-changes.html'
+    $html = Get-FileUtf8 $pagePath
+    if (-not $html) { Write-Host "[recent-changes] Missing page: pages/recent-changes.html"; return }
+
+    $updated = Replace-GeneralContentInHtml -html $html -h1Text 'Recent Changes' -newContent $htmlContent
+    if ($updated -ne $html) {
+        Set-FileUtf8 -Path $pagePath -Content $updated
+        Write-Host "[recent-changes] Updated: pages/recent-changes.html"
+    } else {
+        Write-Host "[recent-changes] No change: pages/recent-changes.html"
+    }
+}
+
 try {
     Update-IntroTextFromMd
     Update-FaqFromMd
+    Update-RecentChangesFromMd
     Write-Host "Content update complete."
 } catch {
     Write-Error $_

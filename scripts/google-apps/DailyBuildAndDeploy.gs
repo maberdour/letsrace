@@ -162,10 +162,24 @@ function dailyBuild() {
       Logger.log(`⚠️ Skipping About page injection due to error: ${e.message}`);
     }
 
+    // Step 11c: Build Recent Changes page HTML update from content/recent-changes.md
+    let recentChangesUpdate = null;
+    try {
+      recentChangesUpdate = buildRecentChangesHtmlUpdate();
+      if (recentChangesUpdate) {
+        Logger.log('📝 Recent Changes page update prepared');
+      } else {
+        Logger.log('ℹ️ No Recent Changes page update prepared');
+      }
+    } catch (e) {
+      Logger.log(`⚠️ Skipping Recent Changes page injection due to error: ${e.message}`);
+    }
+
     // Merge extra files
     const extraFiles = introHtmlUpdates.slice();
     if (faqUpdate) extraFiles.push(faqUpdate);
     if (aboutUpdate) extraFiles.push(aboutUpdate);
+    if (recentChangesUpdate) extraFiles.push(recentChangesUpdate);
 
     // Step 12: Commit all files to GitHub in a single batch (including manifest and extra HTML updates)
     const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename, extraFiles);
@@ -830,6 +844,58 @@ function replaceAboutContentInHtml(html, newContent) {
   }
   
   Logger.log('ℹ️ Could not find <div class="general-content"> with <h1>About</h1> in pages/about.html. Skipping update.');
+  return html;
+}
+
+/**
+ * Build updated Recent Changes page HTML by parsing content/recent-changes.md and injecting into pages/recent-changes.html
+ */
+function buildRecentChangesHtmlUpdate() {
+  const md = fetchRepoFileRaw('content/recent-changes.md');
+  if (!md) {
+    Logger.log('ℹ️ recent-changes.md not found, skipping');
+    return null;
+  }
+  const htmlContent = convertMarkdownToHtml(md);
+  if (!htmlContent || htmlContent.trim() === '') {
+    Logger.log('ℹ️ No Recent Changes content parsed, skipping');
+    return null;
+  }
+  const pagePath = 'pages/recent-changes.html';
+  const html = fetchRepoFileRaw(pagePath);
+  if (!html) {
+    Logger.log(`ℹ️ ${pagePath} not found, skipping`);
+    return null;
+  }
+  const updated = replaceRecentChangesContentInHtml(html, htmlContent);
+  if (updated && updated !== html) {
+    return {
+      path: `/${pagePath}`,
+      content: updated,
+      message: 'chore(content): update Recent Changes page content from recent-changes.md'
+    };
+  }
+  return null;
+}
+
+/**
+ * Replace content within <div class="general-content">...</div> in Recent Changes page HTML
+ */
+function replaceRecentChangesContentInHtml(html, newContent) {
+  if (!html || !newContent) return html;
+
+  let contentToInsert = newContent.replace(/<h1>.*?<\/h1>\s*/gi, '').trim();
+
+  const pattern = /(<div\s+class=["']general-content["']>\s*<h1>Recent Changes<\/h1>)\s*([\s\S]*?)(\s*<\/div>)/i;
+
+  if (pattern.test(html)) {
+    const newHtml = html.replace(pattern, (match, beforeContent, oldContent, afterContent) => {
+      return `${beforeContent}\n      \n      ${contentToInsert}\n    ${afterContent}`;
+    });
+    return newHtml;
+  }
+
+  Logger.log('ℹ️ Could not find <div class="general-content"> with <h1>Recent Changes</h1> in pages/recent-changes.html. Skipping update.');
   return html;
 }
 

@@ -12,6 +12,12 @@ description: "Standards for content creation, updates, and management in LetsRac
 - Maintain separation between content (markdown) and presentation (HTML)
 - Keep `about.md` in version control for content history
 
+## Recent Changes Page Content
+- Source content in `content/recent-changes.md` (markdown format, same rules as About)
+- Use `scripts/automation/update-content.ps1` for local preview
+- Nightly build (`DailyBuildAndDeploy.gs`) injects content into `pages/recent-changes.html` when markdown changes
+- Keep `recent-changes.md` in version control for content history
+
 ## Markdown Support
 - Use basic markdown formatting:
   - `# Heading` → `<h1>Heading</h1>`

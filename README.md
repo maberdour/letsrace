@@ -40,6 +40,16 @@ The About page content can be updated without a full repository push:
    ```
    Or simply double-click `pull-about.bat`
 
+### Updating the Recent Changes Page
+The Recent Changes page (`/pages/recent-changes.html`) is built from markdown, same as About and FAQ:
+
+1. Edit `content/recent-changes.md` with your changes
+2. Preview locally:
+   ```powershell
+   pwsh -File scripts/automation/update-content.ps1
+   ```
+3. Commit the markdown (and updated HTML if previewing locally), or let the nightly build update the HTML automatically
+
 ### Adding New Events
 Events are automatically fetched from British Cycling and Cycling Time Trials via nightly automation:
 
@@ -70,6 +80,7 @@ Events are automatically fetched from British Cycling and Cycling Time Trials vi
 - `assets/js/events-page.js` - Event page system
 - `assets/js/cache.js` - Caching system
 - `content/about.md` - About page content
+- `content/recent-changes.md` - Recent Changes page content (site fixes and improvements)
 
 ## 📚 Documentation
 
@@ -82,6 +93,7 @@ Events are automatically fetched from British Cycling and Cycling Time Trials vi
 
 ### Available Scripts
 - `scripts/automation/pull-about.ps1` - Update About page from markdown
+- `scripts/automation/update-content.ps1` - Update FAQ, Recent Changes, and page intros from markdown
 - `scripts/automation/auto-git-push.ps1` - Automated git operations
 - `scripts/google-apps/` - Google Apps Scripts for data processing
 

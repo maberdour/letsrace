@@ -316,6 +316,10 @@ p {
   margin-right: auto;
 }
 
+.new-events .new-events-link + .new-events-link {
+  margin-top: 0.75rem;
+}
+
 .new-events .new-events-link:hover {
   background: #0077cc;
   color: white;
