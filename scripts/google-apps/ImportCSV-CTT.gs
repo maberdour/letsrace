@@ -150,7 +150,7 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
     csvData.forEach(row => {
       const displayDate = normalizeDate(row[0]);
       const name = normalizeEventName(row[1]); // Preserve case for display
-      const eventType = row[2] || '';
+      const eventType = normalizeCTTSheetEventType(row[2] || '');
       let courseInfo = row[3] || '';
       const rawUrl = row[4] ? row[4].toString().trim() : '';
       const eventId = extractCTTEventId(rawUrl);
@@ -264,6 +264,17 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
     Logger.log("❌ Error importing CTT events: " + error.message);
     throw error;
   }
+}
+
+/**
+ * Maps legacy CTT CSV event types to canonical sheet labels.
+ */
+function normalizeCTTSheetEventType(eventType) {
+  const normalized = (eventType || '').toString().trim();
+  if (normalized === 'Closed Circuit') {
+    return 'Closed Circuit TT';
+  }
+  return normalized;
 }
 
 /**

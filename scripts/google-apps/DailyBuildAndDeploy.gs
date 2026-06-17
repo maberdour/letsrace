@@ -257,7 +257,7 @@ function processSheetData(sheetData) {
         return;
       }
       
-      // Normalize type (pass event name for Go-Ride discipline detection, and URL for Closed Circuit source detection)
+      // Normalize type (pass event name for Go-Ride discipline detection)
       const normalizedType = normalizeType(row[COLUMNS.TYPE], row[COLUMNS.NAME], row[COLUMNS.URL]);
       if (!normalizedType) {
         skippedRows.push({
@@ -1353,23 +1353,6 @@ function normalizeType(typeValue, eventName = null, eventUrl = null) {
     return normalized;
   }
   
-  // Special handling for Closed Circuit - depends on source
-  if (normalized.toLowerCase() === 'closed circuit') {
-    if (eventUrl && eventUrl.includes('cyclingtimetrials.org.uk')) {
-      // CTT import -> Time Trial
-      Logger.log(`🔍 Closed Circuit from CTT: "${eventName}" -> categorized as Time Trial`);
-      return 'Time Trial';
-    } else if (eventUrl && eventUrl.includes('britishcycling.org.uk')) {
-      // BC import -> Road
-      Logger.log(`🔍 Closed Circuit from BC: "${eventName}" -> categorized as Road`);
-      return 'Road';
-    } else {
-      // Default to Road if source cannot be determined
-      Logger.log(`⚠️ Closed Circuit with unknown source: "${eventName}" -> defaulting to Road`);
-      return 'Road';
-    }
-  }
-  
   // Common variants
   const variants = {
     'cyclo-cross': 'Cyclo Cross',
@@ -1389,7 +1372,9 @@ function normalizeType(typeValue, eventName = null, eventUrl = null) {
     'track': 'Track',
     'track league': 'Track',
     'road': 'Road',
+    'circuit race': 'Road',
     'town centre crit': 'Road',
+    'closed circuit tt': 'Time Trial',
     'speedway': 'Speedway',
     'cycle speedway': 'Speedway'
   };

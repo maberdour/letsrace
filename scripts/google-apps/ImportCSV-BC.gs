@@ -186,6 +186,11 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         row[5] = 'London & South East'; // Column F (Region)
       }
 
+      // Map legacy BC label to canonical sheet label
+      if (row[2]) {
+        row[2] = normalizeBCSheetEventType(row[2]);
+      }
+
       // Build fixed 8-column sheet row (A–H). Do not use row.push() — CSV may have
       // extra columns that would push Date Created/Updated into the wrong column.
       const sheetRow = [
@@ -434,6 +439,17 @@ function extractBCEventId(url) {
   // /events/details/322407/
   const bcMatch = url.match(/\/events\/details\/(\d+)\/?/);
   return bcMatch ? bcMatch[1] : '';
+}
+
+/**
+ * Maps legacy BC CSV event types to canonical sheet labels.
+ */
+function normalizeBCSheetEventType(eventType) {
+  const normalized = (eventType || '').toString().trim();
+  if (normalized === 'Closed Circuit') {
+    return 'Circuit Race';
+  }
+  return normalized;
 }
 
 /**

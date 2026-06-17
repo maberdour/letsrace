@@ -20,6 +20,7 @@ The system consists of:
      - `ImportCSV-BC.gs` (`appendNewEvents_ByDateAndName_WithDateFix`) imports `event_data.csv` from Google Drive (British Cycling events) into the `Events` sheet.  
      - `ImportCSV-CTT.gs` (`appendNewCTTEvents_ByDateAndName_WithDateFix`) imports `ctt_event_data.csv` from Google Drive (CTT events) into the same sheet.  
    - These scripts normalize dates, regions, URLs and handle duplicate detection based on BC/CTT event IDs, updating or inserting rows with timestamps.
+   - Column C stores **source discipline labels** (e.g. `Circuit Race`, `Closed Circuit TT`) which are distinct per data source; see [README-DailyBuild.md](../scripts/google-apps/README-DailyBuild.md#sheet-type--canonical-type) for the full mapping to canonical site types.
 
 2. **Daily Build (Google Sheet → JSON files)**  
    - The `dailyBuild()` function in `DailyBuildAndDeploy.gs` runs on a 03:30 Europe/London time-based trigger and generates JSON files from the `Events` sheet:  

@@ -158,11 +158,32 @@ Each event is normalized to the following JSON schema:
 
 ### Data Normalization
 
-- **Types**: Mapped to canonical list with common variants supported
+- **Types**: Mapped to canonical list with common variants supported (see [Sheet type → canonical type](#sheet-type--canonical-type) below)
 - **Regions**: Canonicalized using predefined mappings
 - **Dates**: Converted to ISO format (YYYY-MM-DD) in Europe/London timezone
 - **IDs**: Deterministic SHA-1 hash based on name, date, and venue
 - **Whitespace**: Trimmed and condensed
+
+### Sheet type → canonical type
+
+Column C in the Events sheet holds **source discipline labels** from British Cycling and CTT imports. `normalizeType()` in `DailyBuildAndDeploy.gs` maps these to the eight canonical site types used in JSON output.
+
+| Sheet label (Column C) | Canonical type |
+|------------------------|----------------|
+| Road | Road |
+| Circuit Race | Road |
+| Town Centre Crit | Road |
+| Go-Ride | Road (or detected from event name) |
+| Track, Track League | Track |
+| BMX, BMX Freestyle | BMX |
+| MTB XC, MTB DH, MTB 4X, MTB Enduro | MTB |
+| Cyclo-Cross | Cyclo Cross |
+| Speedway | Speedway |
+| Time Trial | Time Trial |
+| Closed Circuit TT | Time Trial |
+| Hill-Climb, Hill Climb | Hill Climb |
+
+Import scripts remap legacy scraped labels before writing new rows: BC `Closed Circuit` → `Circuit Race`; CTT `Closed Circuit` → `Closed Circuit TT`. The CTT UI.Vision macro reads its label from `URLS-CTT.csv` (repo copy: `scripts/UIvision/datasources/URLS-CTT.csv`; live copy on H: drive must stay in sync).
 
 ## Event Types
 
