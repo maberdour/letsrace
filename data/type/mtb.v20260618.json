@@ -507,6 +507,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "d7fa6dc8",
+    "name": "SouthernXC Round 4 - Clanfield",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Clanfielld Cross Course, Clanfield",
+    "postcode": null,
+    "date": "2026-07-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337717/southernxc-round-4---clanfield",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-18T07:51:15.000Z"
+  },
+  {
     "id": "43514973",
     "name": "Malvern Cycle Sport Go-Ride Race July",
     "type": "MTB",

@@ -26,6 +26,19 @@
     "last_updated": "2026-01-17T03:15:25.000Z"
   },
   {
+    "id": "2c654eca",
+    "name": "WLCYS club confined grass track omnium",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Xcite Linlithgow Leisure Centre, Linlithgow",
+    "postcode": null,
+    "date": "2026-06-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337065/wlcys-club-confined-grass-track-omnium",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-18T07:51:15.000Z"
+  },
+  {
     "id": "a7840d3c",
     "name": "Yorkshire Cyclo-cross Summer Series Round 4",
     "type": "Cyclo Cross",
