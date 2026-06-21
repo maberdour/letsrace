@@ -1,18 +1,5 @@
 [
   {
-    "id": "34cce50b",
-    "name": "Scottish League Series - Round 4",
-    "type": "Speedway",
-    "region": "Scotland",
-    "venue": "Fife Fastbowl, Dunfermline",
-    "postcode": null,
-    "date": "2026-06-14",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331693/scottish-league-series---round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-28T03:15:26.000Z"
-  },
-  {
     "id": "3fc04c49",
     "name": "Scottish Development League",
     "type": "Speedway",
