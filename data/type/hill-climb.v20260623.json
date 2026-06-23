@@ -1,57 +1,5 @@
 [
   {
-    "id": "3bcd0368",
-    "name": "Horwich Cycling Club Club 1",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Lancashire | 1 miles | LL809 | Sheephouse Lane Hc",
-    "postcode": null,
-    "date": "2026-06-16",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51728-horwich-cycling-club-club-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-25T01:04:08.000Z"
-  },
-  {
-    "id": "5fcd0cd9",
-    "name": "Longstone Edge Hill Climb",
-    "type": "Hill Climb",
-    "region": "East Midlands",
-    "venue": "Derbyshire | 1.1 miles | OHC22 | Longstone Edge",
-    "postcode": null,
-    "date": "2026-06-17",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41706-longstone-edge-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "614f6def",
-    "name": "Longstone Edge Hill Climb (Youths)",
-    "type": "Hill Climb",
-    "region": "East Midlands",
-    "venue": "Derbyshire | 1.1 miles | OHC22 | Longstone Edge",
-    "postcode": null,
-    "date": "2026-06-17",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/47754-longstone-edge-hill-climb-youths",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "1215fe70",
-    "name": "Bradfield Hill Climb",
-    "type": "Hill Climb",
-    "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 704 yards | OHC15 | Bradfield",
-    "postcode": null,
-    "date": "2026-06-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41605-bradfield-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "ffa13227",
     "name": "Rundlestone Hill Climb",
     "type": "Hill Climb",
@@ -1324,6 +1272,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/41538-porlock-toll-road-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "d4d79ed8",
+    "name": "Quarrington Hill Hill Climb",
+    "type": "Hill Climb",
+    "region": "Yorkshire & Humber",
+    "venue": "THC21 | Quarrington Hill",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51158-quarrington-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-15T01:04:08.000Z"
   },
   {
     "id": "c3256e2e",
