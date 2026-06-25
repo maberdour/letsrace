@@ -1,44 +1,5 @@
 [
   {
-    "id": "e6a27fdc",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-06-23",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45730-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "8a06d026",
-    "name": "Goodwood TT league incorporating the VTTA Southern Closed Circuit Championship",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
-    "postcode": null,
-    "date": "2026-06-24",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46316-goodwood-tt-league-incorporating-the-vtta-southern-closed-circuit-championship",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "c1bb15ec",
-    "name": "Goodwood Youth Road Bike (8yrs-13yrs) Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 7.6 miles | P917/7.6",
-    "postcode": null,
-    "date": "2026-06-24",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42587-goodwood-youth-road-bike-8-yrs-13-yrs-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "5cd436c4",
     "name": "Andover Wheelers Club 10",
     "type": "Time Trial",
