@@ -1,31 +1,5 @@
 [
   {
-    "id": "1215fe70",
-    "name": "Bradfield Hill Climb",
-    "type": "Hill Climb",
-    "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 704 yards | OHC15 | Bradfield",
-    "postcode": null,
-    "date": "2026-06-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41605-bradfield-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "ffa13227",
-    "name": "Rundlestone Hill Climb",
-    "type": "Hill Climb",
-    "region": "South West",
-    "venue": "Devon | 1.8 miles | Rundlestone",
-    "postcode": null,
-    "date": "2026-06-25",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/50352-rundlestone-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-23T09:23:07.000Z"
-  },
-  {
     "id": "86f3212b",
     "name": "Scrabster Hill Climb",
     "type": "Hill Climb",
