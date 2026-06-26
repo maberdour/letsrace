@@ -130,6 +130,19 @@
     "last_updated": "2026-05-17T17:35:04.000Z"
   },
   {
+    "id": "8cef072f",
+    "name": "British Cycling Pathway BMX SX RSR #2 North 2026.",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "Blackpool BMX Track, Blackpool",
+    "postcode": null,
+    "date": "2026-07-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337992/british-cycling-pathway-bmx-sx-rsr-2-north-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-26T08:55:07.000Z"
+  },
+  {
     "id": "ae04c825",
     "name": "Scottish Regional BMX Racing Series 2026 Round 7",
     "type": "BMX",
@@ -284,6 +297,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334516/braintree-bmx-rd12-2026-summer-series",
     "source": "Google Sheet",
     "last_updated": "2026-05-17T17:35:04.000Z"
+  },
+  {
+    "id": "538956e2",
+    "name": "Lloyds BMX National Series 2026 Round 9 & 10 - Derby",
+    "type": "BMX",
+    "region": "East Midlands",
+    "venue": "Derby BMX Track, Derbyshire",
+    "postcode": null,
+    "date": "2026-08-01",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337994/lloyds-bmx-national-series-2026-round-9--10---derby",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-26T08:55:07.000Z"
   },
   {
     "id": "9b7d53f2",
