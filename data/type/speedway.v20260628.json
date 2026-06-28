@@ -1,18 +1,5 @@
 [
   {
-    "id": "e5a7c8ad",
-    "name": "The Scottish Cup",
-    "type": "Speedway",
-    "region": "Scotland",
-    "venue": "Tweedbank MUST Cycle Track, Galashiels",
-    "postcode": null,
-    "date": "2026-06-21",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337504/the-scottish-cup",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-20T01:15:24.000Z"
-  },
-  {
     "id": "3fc04c49",
     "name": "Scottish Development League",
     "type": "Speedway",
