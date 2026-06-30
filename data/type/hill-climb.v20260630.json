@@ -1,44 +1,5 @@
 [
   {
-    "id": "ffa13227",
-    "name": "Rundlestone Hill Climb",
-    "type": "Hill Climb",
-    "region": "South West",
-    "venue": "Devon | 1.8 miles | Rundlestone",
-    "postcode": null,
-    "date": "2026-06-25",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/50352-rundlestone-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-23T09:23:07.000Z"
-  },
-  {
-    "id": "86f3212b",
-    "name": "Scrabster Hill Climb",
-    "type": "Hill Climb",
-    "region": "Scotland",
-    "venue": "Highland Council | 2 miles | WN2/01 | Scrabster",
-    "postcode": null,
-    "date": "2026-06-28",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/43280-scrabster-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "5406a791",
-    "name": "Winster Hill Climb",
-    "type": "Hill Climb",
-    "region": "East Midlands",
-    "venue": "Derbyshire | 528 yards | AHC/9 | Winster Hill Climb",
-    "postcode": null,
-    "date": "2026-06-29",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41548-winster-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "d0131313",
     "name": "Whitelow Lane Hill Climb",
     "type": "Hill Climb",
