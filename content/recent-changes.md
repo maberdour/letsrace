@@ -1,14 +1,16 @@
 # Recent Changes
 
-Jun 17 - enhancement - Closed Circuit dual-category for BC and CTT, renamed to Closed Circuit TT (CTT) and Circuit Races (BC).
+01 Jul - Added suport for Pump Track events, merged into BMX and Pump Track Events page.
 
-Jun 17 - enhancement - Built a new Recent Changes page showing latest site modifications.
+17 Jun - enhancement - Closed Circuit dual-category for BC and CTT, renamed to Closed Circuit TT (CTT) and Circuit Races (BC).
 
-Jun 16 - bug - Fixed issue with data insertion logic.
+17 Jun - enhancement - Built a new Recent Changes page showing latest site modifications.
 
-Jun 9 - enhancement - Page sizes are too large, optimized all pages.
+16 Jun - bug - Fixed issue with data insertion logic.
 
-Jun 3 - bug - Fixed duplicate entry logic in the data submission process.
+09 Jun - enhancement - Page sizes are too large, optimized all pages.
+
+03 Jun - bug - Fixed duplicate entry logic in the data submission process.
 
 05 Mar 2026 - Updated BC macro to properly iterate through paginated results.
 
