@@ -105,6 +105,32 @@
       "last_updated": "2026-06-26T08:55:07.000Z"
     },
     {
+      "id": "4e5e3639",
+      "name": "Flying Bikes 2026 Pump Track 3",
+      "type": "BMX",
+      "region": "Scotland",
+      "venue": "Strathpeffer Community Park, Strathpeffer",
+      "postcode": null,
+      "date": "2026-07-08",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337501/flying-bikes-2026-pump-track-3",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-26T08:55:07.000Z"
+    },
+    {
+      "id": "cc616ccb",
+      "name": "Flying Bikes 2026 Pump Track 4",
+      "type": "BMX",
+      "region": "Scotland",
+      "venue": "Strathpeffer Community Park, Strathpeffer",
+      "postcode": null,
+      "date": "2026-07-15",
+      "start_time": "23:00",
+      "url": "https://www.britishcycling.org.uk/events/details/337502/flying-bikes-2026-pump-track-4",
+      "source": "Google Sheet",
+      "last_updated": "2026-06-26T08:55:07.000Z"
+    },
+    {
       "id": "a1794e20",
       "name": "Cyclopark GCSE Assessment for Club Riders",
       "type": "Road",
@@ -209,7 +235,7 @@
       "last_updated": "2026-07-01T01:15:24.000Z"
     }
   ],
-  "last_build": "2026-07-01T03:09:14.917Z",
-  "total_new_events": 16,
+  "last_build": "2026-07-01T07:29:38.048Z",
+  "total_new_events": 18,
   "cutoff_date": "2026-06-24"
 }
