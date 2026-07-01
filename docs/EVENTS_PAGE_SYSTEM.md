@@ -41,7 +41,7 @@ The system consists of:
 
 - `road` - Road cycling events
 - `track` - Track cycling events  
-- `bmx` - BMX events
+- `bmx` - BMX and pump track events (sheet label `Pump Track` maps to canonical type `BMX`)
 - `mtb` - Mountain bike events
 - `cyclo-cross` - Cyclo-cross events
 - `time-trial` - Time trial events

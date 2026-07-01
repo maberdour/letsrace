@@ -194,7 +194,7 @@ function getDisciplineName(pageType) {
   const disciplineMap = {
     'road': 'Road',
     'track': 'Track',
-    'bmx': 'BMX',
+    'bmx': 'BMX and Pump Track',
     'mtb': 'MTB',
     'cyclo-cross': 'Cyclo-Cross',
     'speedway': 'Speedway',

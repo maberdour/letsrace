@@ -27,7 +27,7 @@ description: "File organization and naming conventions for LetsRace"
 - Separate data by event type in `data/type/` directory
 
 ## Event Types
-- Road, Track, BMX, MTB, Cyclo-Cross, Speedway, Time Trial, Hill Climb
+- Road, Track, BMX (includes Pump Track), MTB, Cyclo-Cross, Speedway, Time Trial, Hill Climb
 - Use consistent naming across all files
 - Map variations to canonical types in Google Apps Scripts
 - Use kebab-case for URL paths (e.g., `/pages/cyclo-cross/`)

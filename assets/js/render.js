@@ -37,7 +37,7 @@ function renderHeader(title) {
     { href: isInSubdirectory ? '/pages/road/' : 'pages/road/', text: 'Road', current: currentPage === 'road' },
     { href: isInSubdirectory ? '/pages/track/' : 'pages/track/', text: 'Track', current: currentPage === 'track' },
     { href: isInSubdirectory ? '/pages/mtb/' : 'pages/mtb/', text: 'MTB', current: currentPage === 'mtb' },
-    { href: isInSubdirectory ? '/pages/bmx/' : 'pages/bmx/', text: 'BMX', current: currentPage === 'bmx' },
+    { href: isInSubdirectory ? '/pages/bmx/' : 'pages/bmx/', text: 'BMX and Pump Track', current: currentPage === 'bmx' },
     { href: isInSubdirectory ? '/pages/cyclo-cross/' : 'pages/cyclo-cross/', text: 'Cyclo-Cross', current: currentPage === 'cyclo-cross' },
     { href: isInSubdirectory ? '/pages/time-trial/' : 'pages/time-trial/', text: 'Time Trial', current: currentPage === 'time-trial' },
     { href: isInSubdirectory ? '/pages/hill-climb/' : 'pages/hill-climb/', text: 'Hill Climb', current: currentPage === 'hill-climb' },
@@ -124,7 +124,7 @@ function createBurgerMenu() {
       <li><a href="/pages/road/" class="${currentPageKey === 'road' ? 'current' : ''}">Road</a></li>
       <li><a href="/pages/track/" class="${currentPageKey === 'track' ? 'current' : ''}">Track</a></li>
       <li><a href="/pages/mtb/" class="${currentPageKey === 'mtb' ? 'current' : ''}">MTB</a></li>
-      <li><a href="/pages/bmx/" class="${currentPageKey === 'bmx' ? 'current' : ''}">BMX</a></li>
+      <li><a href="/pages/bmx/" class="${currentPageKey === 'bmx' ? 'current' : ''}">BMX and Pump Track</a></li>
       <li><a href="/pages/cyclo-cross/" class="${currentPageKey === 'cyclo-cross' ? 'current' : ''}">Cyclo-Cross</a></li>
       <li><a href="/pages/time-trial/" class="${currentPageKey === 'time-trial' ? 'current' : ''}">Time Trial</a></li>
       <li><a href="/pages/hill-climb/" class="${currentPageKey === 'hill-climb' ? 'current' : ''}">Hill Climb</a></li>

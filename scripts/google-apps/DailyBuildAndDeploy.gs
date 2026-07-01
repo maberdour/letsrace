@@ -1377,6 +1377,11 @@ function detectDisciplineFromName(eventName) {
     return 'Cyclo Cross';
   }
   
+  // Check for Pump Track (before generic "track" match)
+  if (nameLower.includes('pump track')) {
+    return 'BMX';
+  }
+
   // Check for BMX
   if (nameLower.includes('bmx')) {
     return 'BMX';
@@ -1435,6 +1440,7 @@ function normalizeType(typeValue, eventName = null, eventUrl = null) {
     'mtb enduro': 'MTB',
     'bmx': 'BMX',
     'bmx freestyle': 'BMX',
+    'pump track': 'BMX',
     'track': 'Track',
     'track league': 'Track',
     'road': 'Road',
@@ -1451,8 +1457,16 @@ function normalizeType(typeValue, eventName = null, eventUrl = null) {
     Logger.log(`🔍 Go-Ride event detected: "${eventName}" -> categorized as ${detectedDiscipline}`);
     return detectedDiscipline;
   }
+
+  // Events with "pump track" in the name belong with BMX regardless of sheet label
+  if (eventName && eventName.toLowerCase().includes('pump track')) {
+    return 'BMX';
+  }
   
-  return variants[normalized.toLowerCase()] || null;
+  const mapped = variants[normalized.toLowerCase()];
+  if (mapped) return mapped;
+
+  return null;
 }
 
 /**

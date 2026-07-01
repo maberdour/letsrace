@@ -166,7 +166,7 @@ Each event is normalized to the following JSON schema:
 
 ### Sheet type → canonical type
 
-Column C in the Events sheet holds **source discipline labels** from British Cycling and CTT imports. `normalizeType()` in `DailyBuildAndDeploy.gs` maps these to the eight canonical site types used in JSON output.
+`normalizeType()` maps sheet labels to canonical types. Events whose name contains “pump track” are always assigned to BMX, even if the sheet label is different (e.g. legacy `MTB` rows).
 
 | Sheet label (Column C) | Canonical type |
 |------------------------|----------------|
@@ -175,7 +175,7 @@ Column C in the Events sheet holds **source discipline labels** from British Cyc
 | Town Centre Crit | Road |
 | Go-Ride | Road (or detected from event name) |
 | Track, Track League | Track |
-| BMX, BMX Freestyle | BMX |
+| BMX, BMX Freestyle, Pump Track | BMX |
 | MTB XC, MTB DH, MTB 4X, MTB Enduro | MTB |
 | Cyclo-Cross | Cyclo Cross |
 | Speedway | Speedway |

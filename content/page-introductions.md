@@ -5,7 +5,7 @@ Events on closed circuits, for ages 6 to 16. At the younger entry levels any typ
 Events on indoor and outdoor velodromes for ages 6 to 16. Track bikes with a fixed gear and no brakes are required. Venues may require riders to complete an accreditation session before they can race, contact organisers for details.
 
 # BMX
-All types of BMX events for ages 6 to 16.
+All types of BMX and pump track events for ages 6 to 16.
 
 # MTB
 All types of MTB events for ages 6 to 16.

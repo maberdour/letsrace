@@ -46,7 +46,7 @@ if /I "%CLOSE_BROWSER%"=="1" set "LAUNCH_URL=%LAUNCH_URL%&closeBrowser=1"
 
 rem Timestamp for unique chrome log file
 set "START_EPOCH="
-for /f %%a in ('powershell -NoProfile -Command "[int][double]::Parse((Get-Date -UFormat %%s))"') do set "START_EPOCH=%%a"
+for /f %%a in ('"%~dp0get-unix-epoch.bat"') do set "START_EPOCH=%%a"
 
 set "CHROME_LOG_FILE=%CHROME_LOG_DIR%\chrome-uivision-%MACRO_NAME%-%START_EPOCH%.log"
 rem Make sure chrome isn't already running (avoids profile conflicts).

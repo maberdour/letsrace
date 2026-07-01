@@ -40,7 +40,7 @@ set "ATTEMPT=0"
 :attempt_loop
 set /a ATTEMPT+=1
 
-for /f %%a in ('powershell -NoProfile -Command "[int][double]::Parse((Get-Date -UFormat %%s))"') do set "MACRO_START_EPOCH=%%a"
+for /f %%a in ('"%~dp0get-unix-epoch.bat"') do set "MACRO_START_EPOCH=%%a"
 
 taskkill /IM chrome.exe /F >nul 2>&1
 call :log "INFO: %MACRO_NAME% attempt !ATTEMPT! of %MAX_ATTEMPTS% launching at %date% %time% (profile ""%PROFILE%"")"
