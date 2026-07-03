@@ -1,148 +1,5 @@
 [
   {
-    "id": "dd035b46",
-    "name": "Aberdeenshire Dirt Crit race 1 - knockburn",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Knockburn Loch & Outdoor Centre - Aberdeen, Scotland",
-    "postcode": null,
-    "date": "2026-06-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336071/aberdeenshire-dirt-crit-race-1---knockburn",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-28T01:15:25.000Z"
-  },
-  {
-    "id": "0361e91f",
-    "name": "Beastway Series 2026 - Round 4 - Series finale and prize-giving",
-    "type": "MTB",
-    "region": "Eastern",
-    "venue": "Redbridge Cycling Centre, Ilford",
-    "postcode": null,
-    "date": "2026-06-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336201/beastway-series-2026---round-4---series-finale-and-prize-giving",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-13T01:15:25.000Z"
-  },
-  {
-    "id": "ed243647",
-    "name": "BFCC Racing XCC Series 2026 - Race 2",
-    "type": "MTB",
-    "region": "London & South East",
-    "venue": "Bedgebury Forest, Kent",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337226/bfcc-racing-xcc-series-2026---race-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-09T01:15:24.000Z"
-  },
-  {
-    "id": "6385c08f",
-    "name": "British Cycling Swinley Forest MTB Cluster #6 (Cancelled)",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "The Summit",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330996/british-cycling-swinley-forest-mtb-cluster-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-10T03:15:26.000Z"
-  },
-  {
-    "id": "d34fe5fc",
-    "name": "Lloyds National Downhill Series 2026 Round 3 - Glencoe",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Glencoe MTB Track, Argyll",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330466/lloyds-national-downhill-series-2026-round-3---glencoe",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-19T03:15:33.000Z"
-  },
-  {
-    "id": "26e4ea4f",
-    "name": "NE XCMTB 2026 Round 5",
-    "type": "MTB",
-    "region": "North East",
-    "venue": "Hamsterley Forest, Hamsterley",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333718/ne-xcmtb-2026-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-25T10:12:31.000Z"
-  },
-  {
-    "id": "a625f2f9",
-    "name": "Scarborough Cycling Festival - North of England Championships - Crank It Classic XCO 2026",
-    "type": "MTB",
-    "region": "Yorkshire & Humber",
-    "venue": "Olivers Mount, Scarborough",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330557/scarborough-cycling-festival---north-of-england-championships---crank-it-classic-xco-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-19T03:15:26.000Z"
-  },
-  {
-    "id": "123f0fbe",
-    "name": "Crickley Flyers Go-Ride Race Series Round 2",
-    "type": "MTB",
-    "region": "South",
-    "venue": "417 Bike Park, Gloucester",
-    "postcode": null,
-    "date": "2026-06-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329537/crickley-flyers-go-ride-race-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "8c80ecaf",
-    "name": "Welsh XC Series 2026 powered by DualFuel - Round 4 Forest of Dean",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2026-06-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332681/welsh-xc-series-2026-powered-by-dualfuel---round-4-forest-of-dean",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-24T03:15:24.000Z"
-  },
-  {
-    "id": "f5f439e9",
-    "name": "Midweek MTB Madness 2026 - Tawd Valley",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Tawd Valley Park, Skelmersdale",
-    "postcode": null,
-    "date": "2026-07-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336129/midweek-mtb-madness-2026---tawd-valley",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-09T01:15:23.000Z"
-  },
-  {
-    "id": "f26d75cb",
-    "name": "British Cycling Pathway Development Centre - MTB XC Hamsterley Forest #9",
-    "type": "MTB",
-    "region": "North East",
-    "venue": "Hamsterley Forest, Hamsterley",
-    "postcode": null,
-    "date": "2026-07-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335277/british-cycling-pathway-development-centre---mtb-xc-hamsterley-forest-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
     "id": "d060d1cb",
     "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #155",
     "type": "MTB",
@@ -297,6 +154,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332205/lloyds-2026-national-mtb-cross-country-championships",
     "source": "Google Sheet",
     "last_updated": "2026-02-11T03:15:24.000Z"
+  },
+  {
+    "id": "6ef458b4",
+    "name": "BFCC Racing XCC Series 2026 - Race 3",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Bedgebury Forest, Kent",
+    "postcode": null,
+    "date": "2026-07-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338144/bfcc-racing-xcc-series-2026---race-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-30T01:15:24.000Z"
   },
   {
     "id": "d0034345",
@@ -468,6 +338,19 @@
     "last_updated": "2025-12-19T03:15:33.000Z"
   },
   {
+    "id": "9478c8e1",
+    "name": "South West Club Cluster of Coaching - MTB 3",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton, Devon",
+    "postcode": null,
+    "date": "2026-08-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338091/south-west-club-cluster-of-coaching---mtb-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-27T01:15:27.000Z"
+  },
+  {
     "id": "2ceb8227",
     "name": "Lloyds National 4X Series Round 8",
     "type": "MTB",
@@ -518,19 +401,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/332880/b-buddies-off-road-tt-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "c60a8242",
-    "name": "DMR Pump Track Challenge",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Eastnor Castle Deer Park, Herefordshire",
-    "postcode": null,
-    "date": "2026-08-20",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326844/dmr-pump-track-challenge",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-25T02:15:24.000Z"
   },
   {
     "id": "3e3b23b3",
@@ -622,6 +492,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331425/pearce-cycles-dh-series-2026-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "d8c8f6d1",
+    "name": "Cranked CC - Mini DH 2026 - Glentress",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Glentress Forest, Scottish Borders",
+    "postcode": null,
+    "date": "2026-08-30",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337675/cranked-cc---mini-dh-2026---glentress",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-02T01:15:24.000Z"
   },
   {
     "id": "9ac34a0a",
