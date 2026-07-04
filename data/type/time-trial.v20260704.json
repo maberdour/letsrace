@@ -1,70 +1,5 @@
 [
   {
-    "id": "5cd436c4",
-    "name": "Andover Wheelers Club 10",
-    "type": "Time Trial",
-    "region": "South",
-    "venue": "Hampshire | 10 miles | Pthruxton 10",
-    "postcode": null,
-    "date": "2026-06-30",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/49714-andover-wheelers-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-18T17:39:48.000Z"
-  },
-  {
-    "id": "a1c7a6ef",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-06-30",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45733-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "14f8c18c",
-    "name": "Give It Another Go - Female Only TT",
-    "type": "Time Trial",
-    "region": "Scotland",
-    "venue": "Croy Village Hall, Inverness",
-    "postcode": null,
-    "date": "2026-06-30",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331865/give-it-another-go---female-only-tt",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-09T03:15:24.000Z"
-  },
-  {
-    "id": "bd7a295b",
-    "name": "Westerley Cycling Club Wednesday Series 10 - Round 6",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "Greater London | 10 miles | hillingdon",
-    "postcode": null,
-    "date": "2026-07-01",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45037-westerley-cycling-club-wednesday-series-10-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "fc5d6eaf",
-    "name": "MFCC Croachy 10-Mile TT (Regional Championship Event)",
-    "type": "Time Trial",
-    "region": "Scotland",
-    "venue": "Farr Community Hall, Farr",
-    "postcode": null,
-    "date": "2026-07-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332132/mfcc-croachy-10-mile-tt-regional-championship-event",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-09T03:15:24.000Z"
-  },
-  {
     "id": "d6883c7c",
     "name": "Bicester Millennium CC Club 25",
     "type": "Time Trial",
@@ -104,15 +39,15 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "2988ec73",
-    "name": "Goodwood Time Trial League",
+    "id": "7bf1d6d0",
+    "name": "Goodwood Time Trial League/ inc. The Re Run Run VTTA Age Group (Southern) Championship",
     "type": "Time Trial",
     "region": "London & South East",
     "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
     "postcode": null,
     "date": "2026-07-15",
     "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42779-goodwood-time-trial-league",
+    "url": "https://www.cyclingtimetrials.org.uk/events/42779-goodwood-time-trial-league-inc-the-re-run-run-vtta-age-group-southern-championship",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
@@ -258,6 +193,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45029-westerley-cycling-club-wednesday-series-10-round-8",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "4a9ec9c9",
+    "name": "Burghead Triangle 2UP TTT",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Roseisle Hall, Roseisle",
+    "postcode": null,
+    "date": "2026-08-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337831/burghead-triangle-2up-ttt-",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-02T01:15:24.000Z"
   },
   {
     "id": "12c8def6",

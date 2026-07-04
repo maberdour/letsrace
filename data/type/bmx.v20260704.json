@@ -1,122 +1,5 @@
 [
   {
-    "id": "38530ba6",
-    "name": "Andover BMX Club Coach Led Racing Summer Medal Mania #1 2026",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Andover BMX Club, Andover",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337474/andover-bmx-club-coach-led-racing-summer-medal-mania-1-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-12T01:15:24.000Z"
-  },
-  {
-    "id": "f1268909",
-    "name": "British Cycling Pathway Development Centre BMX/SX - West Midlands #7 Derby",
-    "type": "BMX",
-    "region": "East Midlands",
-    "venue": "Derby BMX Track, Derbyshire",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337391/british-cycling-pathway-development-centre-bmxsx---west-midlands-7-derby",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-16T09:23:21.000Z"
-  },
-  {
-    "id": "2526c93b",
-    "name": "Nuneaton BMX Round 1 2026 Series",
-    "type": "BMX",
-    "region": "West Midlands",
-    "venue": "Nuneaton BMX Track, Warwickshire",
-    "postcode": null,
-    "date": "2026-06-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337754/nuneaton-bmx-round-1-2026-series",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-20T01:15:24.000Z"
-  },
-  {
-    "id": "abbf12df",
-    "name": "British Cycling Pathway Development Centre BMX/SX - North School Games Selection #1",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "Manchester BMX Track, Lancashire",
-    "postcode": null,
-    "date": "2026-06-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336933/british-cycling-pathway-development-centre-bmxsx---north-school-games-selection-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "f36e90ae",
-    "name": "Peterborough bmx summer series - RD3",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2026-06-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337719/peterborough-bmx-summer-series---rd3",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-20T01:15:24.000Z"
-  },
-  {
-    "id": "325674c5",
-    "name": "South West BMX Regional Series 2026 - Round 7, Bath",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Bath BMX Track, BATH",
-    "postcode": null,
-    "date": "2026-06-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336710/south-west-bmx-regional-series-2026---round-7-bath",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-21T01:15:29.000Z"
-  },
-  {
-    "id": "67d6d80e",
-    "name": "Braintree BMX RD8 2026 Summer Series",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Braintree BMX Track, Essex",
-    "postcode": null,
-    "date": "2026-07-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334512/braintree-bmx-rd8-2026-summer-series",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
-    "id": "616acc6b",
-    "name": "BMX Race National Championships 2026",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2026-07-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336709/bmx-race-national-championships-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-28T01:15:25.000Z"
-  },
-  {
-    "id": "6d3813a8",
-    "name": "Lloyds BMX National Series 2026 Round 7 & 8 - Cardiff",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Cardiff BMX Club, Wales",
-    "postcode": null,
-    "date": "2026-07-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336708/lloyds-bmx-national-series-2026-round-7--8---cardiff",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-28T01:15:25.000Z"
-  },
-  {
     "id": "30a7786b",
     "name": "Braintree BMX RD9 2026 Summer Series",
     "type": "BMX",
@@ -130,6 +13,19 @@
     "last_updated": "2026-05-17T17:35:04.000Z"
   },
   {
+    "id": "4e5e3639",
+    "name": "Flying Bikes 2026 Pump Track 3",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Strathpeffer Community Park, Strathpeffer",
+    "postcode": null,
+    "date": "2026-07-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337501/flying-bikes-2026-pump-track-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-26T08:55:07.000Z"
+  },
+  {
     "id": "8cef072f",
     "name": "British Cycling Pathway BMX SX RSR #2 North 2026.",
     "type": "BMX",
@@ -141,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337992/british-cycling-pathway-bmx-sx-rsr-2-north-2026",
     "source": "Google Sheet",
     "last_updated": "2026-06-26T08:55:07.000Z"
+  },
+  {
+    "id": "7cb6401f",
+    "name": "Knightwood BMX Club 2026 Summer Series (Round 3)",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Knightwood BMX, Hampshire",
+    "postcode": null,
+    "date": "2026-07-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338208/knightwood-bmx-club-2026-summer-series-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-04T01:15:24.000Z"
   },
   {
     "id": "ae04c825",
@@ -208,6 +117,45 @@
     "last_updated": "2026-05-17T17:35:04.000Z"
   },
   {
+    "id": "cc616ccb",
+    "name": "Flying Bikes 2026 Pump Track 4",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Strathpeffer Community Park, Strathpeffer",
+    "postcode": null,
+    "date": "2026-07-15",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337502/flying-bikes-2026-pump-track-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-26T08:55:07.000Z"
+  },
+  {
+    "id": "a4d737df",
+    "name": "Gilwern Pump Track Jam",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Gilwern Pump Track, Abergavenny",
+    "postcode": null,
+    "date": "2026-07-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336068/gilwern-pump-track-jam-",
+    "source": "Google Sheet",
+    "last_updated": "2026-05-28T01:15:25.000Z"
+  },
+  {
+    "id": "d3d5cfbd",
+    "name": "Milton Keynes BMX Racing Club Summer Series 2026 Round 4",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2026-07-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338300/milton-keynes-bmx-racing-club-summer-series-2026-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-04T01:15:24.000Z"
+  },
+  {
     "id": "ec74b39a",
     "name": "Scottish Regional BMX Racing Series 2026 Round 8",
     "type": "BMX",
@@ -273,6 +221,19 @@
     "last_updated": "2026-05-17T17:35:04.000Z"
   },
   {
+    "id": "aeb1ecec",
+    "name": "Nuneaton BMX Round 2 2026 Series",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Nuneaton BMX Track, Warwickshire",
+    "postcode": null,
+    "date": "2026-07-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338272/nuneaton-bmx-round-2-2026-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-04T01:15:24.000Z"
+  },
+  {
     "id": "f0542492",
     "name": "Go-Ride Racing - BMX Race track skills @Cyclopark #2",
     "type": "BMX",
@@ -284,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/336923/go-ride-racing---bmx-race-track-skills-cyclopark-2",
     "source": "Google Sheet",
     "last_updated": "2026-06-01T01:15:26.000Z"
+  },
+  {
+    "id": "b9a37de4",
+    "name": "LLYNFI BMX SUMMER RACE",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Llynfi BMX Racing Club, bRIDGEND",
+    "postcode": null,
+    "date": "2026-07-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338044/llynfi-bmx-summer-race",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-30T01:15:24.000Z"
   },
   {
     "id": "b754eab4",
@@ -388,6 +362,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334519/braintree-bmx-rd15-2026-summer-series",
     "source": "Google Sheet",
     "last_updated": "2026-05-17T17:35:04.000Z"
+  },
+  {
+    "id": "c60a8242",
+    "name": "DMR Pump Track Challenge",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Eastnor Castle Deer Park, Herefordshire",
+    "postcode": null,
+    "date": "2026-08-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/326844/dmr-pump-track-challenge",
+    "source": "Google Sheet",
+    "last_updated": "2025-09-25T02:15:24.000Z"
   },
   {
     "id": "056834c4",
