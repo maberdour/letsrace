@@ -1,31 +1,5 @@
 [
   {
-    "id": "f82829c2",
-    "name": "BRECHIN EQUESTRIAN SUMMER CROSS - NORTH EAST CYCLOCROSS SUMMER SERIES: ROUND 1 (Cancelled)",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Brechin Equestrian Centre, Angus",
-    "postcode": null,
-    "date": "2026-07-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336760/brechin-equestrian-summer-cross---north-east-cyclocross-summer-series-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-28T01:15:25.000Z"
-  },
-  {
-    "id": "32561367",
-    "name": "Rapha Summercross - Rd 1",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333665/rapha-summercross---rd-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:15:25.000Z"
-  },
-  {
     "id": "09385927",
     "name": "Yorkshire Cyclo-cross Summer Series Round 5",
     "type": "Cyclo Cross",
