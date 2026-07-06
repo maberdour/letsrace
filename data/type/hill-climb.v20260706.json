@@ -1,31 +1,5 @@
 [
   {
-    "id": "5406a791",
-    "name": "Winster Hill Climb",
-    "type": "Hill Climb",
-    "region": "East Midlands",
-    "venue": "Derbyshire | 528 yards | AHC/9 | Winster Hill Climb",
-    "postcode": null,
-    "date": "2026-06-29",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41548-winster-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "d0131313",
-    "name": "Whitelow Lane Hill Climb",
-    "type": "Hill Climb",
-    "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 1 miles | OHC21 | Whitelow Lane",
-    "postcode": null,
-    "date": "2026-07-03",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41917-whitelow-lane-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "56361a61",
     "name": "Vector Racing - Prospect Hill Summer Hill Climb",
     "type": "Hill Climb",
@@ -1350,6 +1324,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42783-bowden-hill-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "04ad4266",
+    "name": "Redhill CC Toy's Hill Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Kent | 1.8 miles | GH/30 | Toy's Hill",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52725-redhill-cc-toys-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-05T01:04:08.000Z"
   },
   {
     "id": "c9321828",
