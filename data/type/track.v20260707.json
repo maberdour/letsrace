@@ -1,135 +1,5 @@
 [
   {
-    "id": "1b40d1e8",
-    "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #7",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-06-30",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334090/british-cycling-pathway-development-centre---track-sprint-manchester-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-27T03:15:25.000Z"
-  },
-  {
-    "id": "cab6c8da",
-    "name": "Convene Track League - Round 12",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329696/convene-track-league---round-12",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-25T03:15:26.000Z"
-  },
-  {
-    "id": "81c3f24c",
-    "name": "Brooks Cycles Track League 2026 #9",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Lyme Valley Stadium, Staffordshire",
-    "postcode": null,
-    "date": "2026-07-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333565/brooks-cycles-track-league-2026-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "cc0aecc6",
-    "name": "Friday Night Track League 2026 Night 5",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Halesowen A&CC, West Midlands",
-    "postcode": null,
-    "date": "2026-07-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335456/friday-night-track-league-2026-night-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-24T01:15:24.000Z"
-  },
-  {
-    "id": "3d27e0bf",
-    "name": "Welwyn Track League 2026 #10",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-07-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333760/welwyn-track-league-2026-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "eba3ec85",
-    "name": "West Midlands Outdoor Track Cluster Programme 2026 (12)",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Halesowen A & CC, West Midlands",
-    "postcode": null,
-    "date": "2026-07-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335102/west-midlands-outdoor-track-cluster-programme-2026-12",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
-    "id": "858a365a",
-    "name": "East Markham Grasstrack",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Rayner's Field, Newark",
-    "postcode": null,
-    "date": "2026-07-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331816/east-markham-grasstrack",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-12T01:15:24.000Z"
-  },
-  {
-    "id": "ebe40413",
-    "name": "Reading Track League #8",
-    "type": "Track",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-07-06",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334320/reading-track-league-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "5979ed6e",
-    "name": "West Riding Track League No 8 2026",
-    "type": "Track",
-    "region": "Yorkshire & Humber",
-    "venue": "Woodhouse Gove School, England",
-    "postcode": null,
-    "date": "2026-07-06",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335822/west-riding-track-league-no-8-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-12T01:15:24.000Z"
-  },
-  {
-    "id": "5f760761",
-    "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Endurance #7",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-07-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332925/british-cycling-talent-pathway-track-development-centre---manchester---endurance-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
     "id": "eb2dd777",
     "name": "Convene Track League - Round 13",
     "type": "Track",
@@ -546,17 +416,17 @@
     "last_updated": "2026-05-12T01:15:24.000Z"
   },
   {
-    "id": "b9be1ab9",
-    "name": "Welwyn Track Open Meeting #2",
+    "id": "7875534a",
+    "name": "Welwyn Track League 2025 #13",
     "type": "Track",
     "region": "Eastern",
     "venue": "Gosling Sports Stadium, Hertfordshire",
     "postcode": null,
     "date": "2026-07-24",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337219/welwyn-track-open-meeting-2",
+    "url": "https://www.britishcycling.org.uk/events/details/333763/welwyn-track-league-2025-13",
     "source": "Google Sheet",
-    "last_updated": "2026-06-18T07:51:15.000Z"
+    "last_updated": "2026-03-24T10:46:54.000Z"
   },
   {
     "id": "8a008947",
@@ -702,17 +572,17 @@
     "last_updated": "2026-04-22T01:15:26.000Z"
   },
   {
-    "id": "bb4f40dd",
-    "name": "Welwyn Track League 2025 #13",
+    "id": "4536cb25",
+    "name": "Welwyn Track Open Meeting #2",
     "type": "Track",
     "region": "Eastern",
     "venue": "Gosling Sports Stadium, Hertfordshire",
     "postcode": null,
     "date": "2026-07-31",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333763/welwyn-track-league-2025-13",
+    "url": "https://www.britishcycling.org.uk/events/details/337219/welwyn-track-open-meeting-2",
     "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
+    "last_updated": "2026-06-18T07:51:15.000Z"
   },
   {
     "id": "ddf6e2bc",
@@ -1636,6 +1506,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330880/monday-night-track-league-2026-round-28",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "2a6ee3e1",
+    "name": "Lloyds National Track Series - Round 3 - Derby",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2027-01-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337793/lloyds-national-track-series---round-3---derby",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-03T01:15:24.000Z"
   },
   {
     "id": "300aee47",
