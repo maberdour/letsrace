@@ -1,109 +1,5 @@
 [
   {
-    "id": "f26d75cb",
-    "name": "British Cycling Pathway Development Centre - MTB XC Hamsterley Forest #9",
-    "type": "MTB",
-    "region": "North East",
-    "venue": "Hamsterley Forest, Hamsterley",
-    "postcode": null,
-    "date": "2026-07-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335277/british-cycling-pathway-development-centre---mtb-xc-hamsterley-forest-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
-    "id": "d060d1cb",
-    "name": "British Cycling Pathway Development Centre Gravity - Whippendell DeVo #155",
-    "type": "MTB",
-    "region": "Central",
-    "venue": "Whippy Trails, Rickmansworth.",
-    "postcode": null,
-    "date": "2026-07-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337386/british-cycling-pathway-development-centre-gravity---whippendell-devo-155-",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-17T14:32:16.000Z"
-  },
-  {
-    "id": "747041e2",
-    "name": "Lloyds 2026 National MTB Cross Country Series Round 5",
-    "type": "MTB",
-    "region": "﻿Wales",
-    "venue": "Margam Country Park, South Wales",
-    "postcode": null,
-    "date": "2026-07-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331427/lloyds-2026-national-mtb-cross-country-series-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-17T03:15:25.000Z"
-  },
-  {
-    "id": "7193ba6a",
-    "name": "Delamere Forest MTB Club Youth Session - Girls Focus Session July 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Delamere Forest, Cheshire",
-    "postcode": null,
-    "date": "2026-07-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337375/delamere-forest-mtb-club-youth-session---girls-focus-session-july-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "662df955",
-    "name": "Delamere Forest MTB Club Youth Session - July 26",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Delamere Forest, Cheshire",
-    "postcode": null,
-    "date": "2026-07-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336877/delamere-forest-mtb-club-youth-session---july--26",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "204a1b0e",
-    "name": "Delamere Forest MTB Cluster - Intermediate riders July 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Forestry Commission Delamere Forest Park, Cheshire",
-    "postcode": null,
-    "date": "2026-07-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337376/delamere-forest-mtb-cluster---intermediate-riders-july-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "6db99f12",
-    "name": "B-BUDDIES Off-Road TT 7",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-07-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332876/b-buddies-off-road-tt-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "a4916c4c",
-    "name": "British Cycling Pathway Development Centre - MTB XC Hamsterley Forest #10",
-    "type": "MTB",
-    "region": "North East",
-    "venue": "Hamsterley Forest, Hamsterley",
-    "postcode": null,
-    "date": "2026-07-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335278/british-cycling-pathway-development-centre---mtb-xc-hamsterley-forest-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
     "id": "3a0eda45",
     "name": "Welsh Mountain Bike Championships (inc Welsh XC Series powered by DualFuel round 5) Llangollen",
     "type": "MTB",
@@ -299,6 +195,19 @@
     "last_updated": "2026-06-10T01:15:26.000Z"
   },
   {
+    "id": "9a1726e8",
+    "name": "SXC Series 2026 Rd4: Lochore",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Lochore Meadows Country Park, Scotland",
+    "postcode": null,
+    "date": "2026-08-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338207/sxc-series-2026-rd4-lochore",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-08T01:15:24.000Z"
+  },
+  {
     "id": "d826c011",
     "name": "B-BUDDIES Summer Skills Challenge Round 2",
     "type": "MTB",
@@ -429,6 +338,32 @@
     "last_updated": "2025-11-27T03:15:28.000Z"
   },
   {
+    "id": "c7af23a2",
+    "name": "Rippers Quad Eliminator",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Eastnor Castle Deer Park, Herefordshire",
+    "postcode": null,
+    "date": "2026-08-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327437/rippers-quad-eliminator",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-04T01:15:24.000Z"
+  },
+  {
+    "id": "0250c341",
+    "name": "Rippers Slalom",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Eastnor Castle Deer Park, Herefordshire",
+    "postcode": null,
+    "date": "2026-08-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327477/rippers-slalom",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-04T01:15:24.000Z"
+  },
+  {
     "id": "8c18a846",
     "name": "Schwalbe Downhill",
     "type": "MTB",
@@ -468,6 +403,19 @@
     "last_updated": "2025-11-27T03:15:28.000Z"
   },
   {
+    "id": "0ee70ca7",
+    "name": "Rippers Downhill",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Eastnor Castle Deer Park, Herefordshire",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/327480/rippers-downhill",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-04T01:15:24.000Z"
+  },
+  {
     "id": "49d288ca",
     "name": "Falkirk Schools MTB Championships 2026",
     "type": "MTB",
@@ -505,6 +453,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331425/pearce-cycles-dh-series-2026-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "d8c8f6d1",
+    "name": "Cranked CC - Mini DH 2026 - Glentress",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Glentress Forest, Scottish Borders",
+    "postcode": null,
+    "date": "2026-08-30",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337675/cranked-cc---mini-dh-2026---glentress",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-02T01:15:24.000Z"
   },
   {
     "id": "9ac34a0a",
@@ -780,11 +741,11 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
-    "id": "4b6ce9b4",
+    "id": "a3bd126f",
     "name": "British Cycling Pathway Development Centre MTB - South #3",
     "type": "MTB",
     "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
+    "venue": "Forest of Dean, Gloucestershire",
     "postcode": null,
     "date": "2026-11-14",
     "start_time": "00:00",
