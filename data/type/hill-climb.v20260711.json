@@ -1,18 +1,5 @@
 [
   {
-    "id": "56361a61",
-    "name": "Vector Racing - Prospect Hill Summer Hill Climb",
-    "type": "Hill Climb",
-    "region": "North East",
-    "venue": "Northumberland | 1584 yards | MH21 | Prospect Hill",
-    "postcode": null,
-    "date": "2026-07-10",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42307-vector-racing-prospect-hill-summer-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "0b0ae5e5",
     "name": "Poole Wheelers Cycling Club - Creech Hill Climb - Round 2",
     "type": "Hill Climb",
@@ -1324,6 +1311,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42783-bowden-hill-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "04ad4266",
+    "name": "Redhill CC Toy's Hill Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Kent | 1.8 miles | GH/30 | Toy's Hill",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52725-redhill-cc-toys-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-05T01:04:08.000Z"
   },
   {
     "id": "c9321828",
