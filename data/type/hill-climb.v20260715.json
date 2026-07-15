@@ -1,44 +1,5 @@
 [
   {
-    "id": "56361a61",
-    "name": "Vector Racing - Prospect Hill Summer Hill Climb",
-    "type": "Hill Climb",
-    "region": "North East",
-    "venue": "Northumberland | 1584 yards | MH21 | Prospect Hill",
-    "postcode": null,
-    "date": "2026-07-10",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42307-vector-racing-prospect-hill-summer-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "0b0ae5e5",
-    "name": "Poole Wheelers Cycling Club - Creech Hill Climb - Round 2",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Dorset | 915 yards | P Creech | Creech Hill",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/52355-poole-wheelers-cycling-club-creech-hill-climb-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-09T01:04:08.000Z"
-  },
-  {
-    "id": "93404c19",
-    "name": "Royal Dean Forest Cycle Club Club 2.3",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Gloucestershire | 2.3 miles | UHC514 | Cats Hill",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/48564-royal-dean-forest-cycle-club-club-2-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T09:04:22.000Z"
-  },
-  {
     "id": "50d6ccad",
     "name": "Lincoln Wheelers CC Club Hillclimb",
     "type": "Hill Climb",
@@ -1155,6 +1116,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46272-gravesend-cc-club-1",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "ff30714e",
+    "name": "Hardwick Hall Hill Climb",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "Derbyshire | 704 yards | OHC11 | Hardwick Hall",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52708-hardwick-hall-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-15T01:04:09.000Z"
   },
   {
     "id": "f32f6a62",

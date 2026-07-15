@@ -1,83 +1,5 @@
 [
   {
-    "id": "6db99f12",
-    "name": "B-BUDDIES Off-Road TT 7",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-07-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332876/b-buddies-off-road-tt-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "a4916c4c",
-    "name": "British Cycling Pathway Development Centre - MTB XC Hamsterley Forest #10",
-    "type": "MTB",
-    "region": "North East",
-    "venue": "Hamsterley Forest, Hamsterley",
-    "postcode": null,
-    "date": "2026-07-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335278/british-cycling-pathway-development-centre---mtb-xc-hamsterley-forest-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
-    "id": "3a0eda45",
-    "name": "Welsh Mountain Bike Championships (inc Welsh XC Series powered by DualFuel round 5) Llangollen",
-    "type": "MTB",
-    "region": "﻿Wales",
-    "venue": "One Giant Leap, Wales",
-    "postcode": null,
-    "date": "2026-07-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331599/welsh-mountain-bike-championships-inc-welsh-xc-series-powered-by-dualfuel-round-5-llangollen",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "e2cfad29",
-    "name": "MIJ Downhill 2026 Round 3",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2026-07-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331596/mij-downhill-2026-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "d7fa6dc8",
-    "name": "SouthernXC Round 4 - Clanfield",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Clanfielld Cross Course, Clanfield",
-    "postcode": null,
-    "date": "2026-07-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337717/southernxc-round-4---clanfield",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-18T07:51:15.000Z"
-  },
-  {
-    "id": "43514973",
-    "name": "Malvern Cycle Sport Go-Ride Race July",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Storridge Farm, Storridge",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334084/malvern-cycle-sport-go-ride-race-july",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-31T07:30:06.000Z"
-  },
-  {
     "id": "52a5814c",
     "name": "Lloyds 2026 National MTB Cross Country Championships",
     "type": "MTB",
@@ -219,6 +141,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337389/xcr-round-3-supported-by-wheal-jane",
     "source": "Google Sheet",
     "last_updated": "2026-06-10T01:15:26.000Z"
+  },
+  {
+    "id": "9a1726e8",
+    "name": "SXC Series 2026 Rd4: Lochore",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Lochore Meadows Country Park, Scotland",
+    "postcode": null,
+    "date": "2026-08-02",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338207/sxc-series-2026-rd4-lochore",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-08T01:15:24.000Z"
   },
   {
     "id": "d826c011",
