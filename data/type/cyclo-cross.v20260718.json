@@ -1,31 +1,5 @@
 [
   {
-    "id": "2ba6eb71",
-    "name": "Rapha Summercross - Rd 3",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333775/rapha-summercross---rd-3-",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:15:25.000Z"
-  },
-  {
-    "id": "9dfb35a7",
-    "name": "South London Go-Ride Racing League - Race 9 of 9",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Hayes Primary School, Bromley",
-    "postcode": null,
-    "date": "2026-07-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332712/south-london-go-ride-racing-league---race-9-of-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-24T03:15:24.000Z"
-  },
-  {
     "id": "02826c93",
     "name": "WCC Summer Cyclocross Series Round 2",
     "type": "Cyclo Cross",
@@ -232,6 +206,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330352/south-west-club-cluster-of-coaching---circuit-6-and-cx-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "6a3ff396",
+    "name": "East Kent Cyclo Cross League Round 1 #SandwichTechCross - Tim Mountford Memorial",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Sandwich Technology School, Kent",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338429/east-kent-cyclo-cross-league-round-1-sandwichtechcross---tim-mountford-memorial-",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-18T01:15:24.000Z"
   },
   {
     "id": "b802f20f",

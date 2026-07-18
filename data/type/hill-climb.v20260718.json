@@ -1,57 +1,5 @@
 [
   {
-    "id": "0b0ae5e5",
-    "name": "Poole Wheelers Cycling Club - Creech Hill Climb - Round 2",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Dorset | 915 yards | P Creech | Creech Hill",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/52355-poole-wheelers-cycling-club-creech-hill-climb-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-09T01:04:08.000Z"
-  },
-  {
-    "id": "93404c19",
-    "name": "Royal Dean Forest Cycle Club Club 2.3",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Gloucestershire | 2.3 miles | UHC514 | Cats Hill",
-    "postcode": null,
-    "date": "2026-07-15",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/48564-royal-dean-forest-cycle-club-club-2-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T09:04:22.000Z"
-  },
-  {
-    "id": "50d6ccad",
-    "name": "Lincoln Wheelers CC Club Hillclimb",
-    "type": "Hill Climb",
-    "region": "East Midlands",
-    "venue": "Lincolnshire | 669 yards | CLWHC/1 | Coleby Hill Climb",
-    "postcode": null,
-    "date": "2026-07-16",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/48076-lincoln-wheelers-cc-club-hillclimb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-25T10:12:43.000Z"
-  },
-  {
-    "id": "a45bbc3d",
-    "name": "Pendle Forest CC Club 1.8",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Lancashire | 1.8 miles | LL811 | Pendle Forest Hc - Skipton Old Road",
-    "postcode": null,
-    "date": "2026-07-16",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46115-pendle-forest-cc-club-1-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "b2420a99",
     "name": "Plymouth Corinthians 3.1",
     "type": "Hill Climb",
@@ -1144,6 +1092,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "ff30714e",
+    "name": "Hardwick Hall Hill Climb",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "Derbyshire | 704 yards | OHC11 | Hardwick Hall",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52708-hardwick-hall-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-15T01:04:09.000Z"
+  },
+  {
     "id": "f32f6a62",
     "name": "Lakes Road Club The Struggle Hill Climb (NLTTA Championship)",
     "type": "Hill Climb",
@@ -2104,6 +2065,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42052-steyning-bostal-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "69855baf",
+    "name": "Wytham Woods Hill Climb",
+    "type": "Hill Climb",
+    "region": "Central",
+    "venue": "Oxfordshire | 1 miles | HHC035",
+    "postcode": null,
+    "date": "2026-10-17",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52771-wytham-woods-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:04:08.000Z"
   },
   {
     "id": "6c047725",
