@@ -1,55 +1,16 @@
 [
   {
-    "id": "2ba6eb71",
-    "name": "Rapha Summercross - Rd 3",
+    "id": "f482a1a1",
+    "name": "Middlesbrough Mega Cross Round 1",
     "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
+    "region": "North East",
+    "venue": "Middlesbrough Velodrome, Middlesbrough",
     "postcode": null,
-    "date": "2026-07-17",
+    "date": "2026-07-30",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333775/rapha-summercross---rd-3-",
+    "url": "https://www.britishcycling.org.uk/events/details/338874/middlesbrough-mega-cross-round-1",
     "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:15:25.000Z"
-  },
-  {
-    "id": "9dfb35a7",
-    "name": "South London Go-Ride Racing League - Race 9 of 9",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Hayes Primary School, Bromley",
-    "postcode": null,
-    "date": "2026-07-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332712/south-london-go-ride-racing-league---race-9-of-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-24T03:15:24.000Z"
-  },
-  {
-    "id": "02826c93",
-    "name": "WCC Summer Cyclocross Series Round 2",
-    "type": "Cyclo Cross",
-    "region": "Wales",
-    "venue": "Riverside Park, Cardiff",
-    "postcode": null,
-    "date": "2026-07-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335680/wcc-summer-cyclocross-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-04T01:15:24.000Z"
-  },
-  {
-    "id": "122d8b3f",
-    "name": "Yorkshire Cyclo-cross Summer Series Round 6",
-    "type": "Cyclo Cross",
-    "region": "Yorkshire & Humber",
-    "venue": "Wyke Community Sports Village - Bradford, Bradford",
-    "postcode": null,
-    "date": "2026-07-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334794/yorkshire-cyclo-cross-summer-series-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-18T01:15:27.000Z"
+    "last_updated": "2026-07-21T01:15:24.000Z"
   },
   {
     "id": "fb35a9a7",
@@ -232,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330352/south-west-club-cluster-of-coaching---circuit-6-and-cx-1",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "6a3ff396",
+    "name": "East Kent Cyclo Cross League Round 1 #SandwichTechCross - Tim Mountford Memorial",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Sandwich Technology School, Kent",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338429/east-kent-cyclo-cross-league-round-1-sandwichtechcross---tim-mountford-memorial-",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-18T01:15:24.000Z"
   },
   {
     "id": "b802f20f",
