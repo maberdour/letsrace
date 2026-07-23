@@ -56,3 +56,4 @@ description: "File organization and naming conventions for LetsRace"
 - Use deterministic SHA-1 hashing for event IDs
 - Normalize data types and regions to canonical forms
 - Filter to future events only (from today onwards)
+- Skip sheet rows with Column I = `Exclude` in the daily build

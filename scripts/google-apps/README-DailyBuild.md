@@ -23,6 +23,7 @@ This Google Apps Script stack keeps the LetsRace.cc site updated every night. Ti
 ## Features
 
 - **Data Processing**: Reads events from Google Sheet and normalizes data
+- **Manual exclusions**: Skips rows with Column I set to `Exclude` (e.g. adult races miscategorised as Youth)
 - **Future Events Only**: Filters to events from today onwards (Europe/London timezone)
 - **Type Partitioning**: Creates separate JSON files for each event type
 - **Facets Index**: Builds searchable index with counts and regions
@@ -45,6 +46,7 @@ The full nightly pipeline runs as follows (all times Europe/London):
 2. **03:30 – Daily build and deploy**  
    - The `dailyBuild()` trigger runs (configured by `createDailyTrigger()`):  
      - Reads all events from the `Events` sheet  
+     - Skips rows marked `Exclude` in Column I  
      - Normalizes and filters to future events  
      - Generates versioned JSON files per type and the facets index  
      - Updates `manifest.json` to point to the latest versions  
@@ -134,7 +136,11 @@ The script expects a Google Sheet with the following columns (no header row):
 | D | 3 | Location |
 | E | 4 | URL |
 | F | 5 | Region |
-| G | 6 | Date Added |
+| G | 6 | Date Created (used as `last_updated` in JSON) |
+| H | 7 | Date Updated (written by ImportCSV; ignored by daily build) |
+| I | 8 | Exclude flag — set to `Exclude` to omit the row from the site build |
+
+**Column I (`Exclude`)**: When you spot a race that should not appear on the site (for example an adult race wrongly scraped as Youth), set Column I to `Exclude`. The daily build skips that row silently (no email alert). ImportCSV scripts only write columns A–H, so the flag is preserved when the same event is re-imported.
 
 ### Output Format
 
@@ -244,6 +250,7 @@ Regions are mapped to standardized names:
 
 The script includes comprehensive error handling:
 
+- Rows with Column I = `Exclude` are logged and skipped (intentional; no email alert)
 - Invalid dates are logged and skipped
 - Unknown event types are logged and skipped
 - GitHub API errors are logged with full response details

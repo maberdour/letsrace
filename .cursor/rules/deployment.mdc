@@ -36,6 +36,7 @@ When the user asks about a regenerated GitHub PAT (e.g. `letsrace-daily-build`),
 
 ## Data Processing
 - Filter events to future dates only
+- Skip rows with Column I = `Exclude`
 - Normalize event types and regions
 - Generate versioned JSON files
 - Create searchable facets index
@@ -57,7 +58,8 @@ When the user asks about a regenerated GitHub PAT (e.g. `letsrace-daily-build`),
 - Rotate tokens if previously committed to repository
 
 ## Data Schema Requirements
-- Input: Google Sheet with columns A-G (Date, Name, Type, Location, URL, Region, Date Added)
+- Input: Google Sheet with columns A–I (Date, Name, Type, Location, URL, Region, Date Created, Date Updated, Exclude)
+- Column I: set to `Exclude` to omit a row from the nightly site build (manual; preserved by ImportCSV)
 - Output: Normalized JSON with consistent schema
 - Event IDs: Deterministic SHA-1 hash based on name, date, and venue
 - Date format: YYYY-MM-DD in Europe/London timezone

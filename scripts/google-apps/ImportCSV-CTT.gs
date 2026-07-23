@@ -186,7 +186,8 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
         finalRegion = 'London & South East';
       }
 
-      // Create the row for the sheet: Date, Name, Event Type, Location (Full Course Info), URL, Region, Date Created, Date Updated
+      // Create the row for the sheet: Date, Name, Event Type, Location, URL, Region, Date Created, Date Updated (A–H only).
+      // Column I (Exclude) is manual — updates use getRange(..., data.length) with length 8 so it is preserved.
       const sheetRow = [
         displayDate,           // Column A: Event Date
         removeSpacesBeforeCommas(name),  // Column B: Event Name (cleaned)

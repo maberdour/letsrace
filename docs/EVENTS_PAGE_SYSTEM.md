@@ -19,11 +19,12 @@ The system consists of:
    - Time-based triggers in Google Apps Script run the ImportCSV scripts:  
      - `ImportCSV-BC.gs` (`appendNewEvents_ByDateAndName_WithDateFix`) imports `event_data.csv` from Google Drive (British Cycling events) into the `Events` sheet.  
      - `ImportCSV-CTT.gs` (`appendNewCTTEvents_ByDateAndName_WithDateFix`) imports `ctt_event_data.csv` from Google Drive (CTT events) into the same sheet.  
-   - These scripts normalize dates, regions, URLs and handle duplicate detection based on BC/CTT event IDs, updating or inserting rows with timestamps.
+   - These scripts normalize dates, regions, URLs and handle duplicate detection based on BC/CTT event IDs, updating or inserting rows with timestamps (columns A–H only; Column I is left untouched).
    - Column C stores **source discipline labels** (e.g. `Circuit Race`, `Closed Circuit TT`) which are distinct per data source; see [README-DailyBuild.md](../scripts/google-apps/README-DailyBuild.md#sheet-type--canonical-type) for the full mapping to canonical site types.
+   - Column I is a manual **Exclude** flag: set the cell to `Exclude` to keep a row in the sheet but omit it from the nightly site build (useful when an adult race was scraped as Youth by mistake).
 
 2. **Daily Build (Google Sheet → JSON files)**  
-   - The `dailyBuild()` function in `DailyBuildAndDeploy.gs` runs on a 03:30 Europe/London time-based trigger and generates JSON files from the `Events` sheet:  
+   - The `dailyBuild()` function in `DailyBuildAndDeploy.gs` runs on a 03:30 Europe/London time-based trigger and generates JSON files from the `Events` sheet (skipping any row with Column I = `Exclude`):  
      - `/data/manifest.json` - Points to today's versioned files  
      - `/data/index/facets.vYYYYMMDD.json` - Search metadata  
      - `/data/type/{type}.vYYYYMMDD.json` - Event data per type

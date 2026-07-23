@@ -193,6 +193,8 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
 
       // Build fixed 8-column sheet row (A–H). Do not use row.push() — CSV may have
       // extra columns that would push Date Created/Updated into the wrong column.
+      // Column I (Exclude) is manual and must not be written here — updates use
+      // getRange(..., data.length) with length 8 so Column I is preserved.
       const sheetRow = [
         row[0],           // Column A: Event Date
         row[1],           // Column B: Event Name

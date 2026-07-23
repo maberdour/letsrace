@@ -6,6 +6,7 @@
  * 
  * Features:
  * - Reads events from Google Sheet and normalizes data
+ * - Skips rows marked Exclude in Column I (manual site exclusions)
  * - Filters to future events only (Europe/London timezone)
  * - Creates per-type JSON shards and facets index
  * - Commits files to GitHub via Contents API
@@ -55,7 +56,9 @@ const COLUMNS = {
   LOCATION: 3,
   URL: 4,
   REGION: 5,
-  DATE_ADDED: 6
+  DATE_ADDED: 6,
+  // Column H (index 7) = Date Updated — written by ImportCSV; unused by daily build
+  EXCLUDE: 8 // Column I — set to "Exclude" to omit from the site build
 };
 
 /**
@@ -229,6 +232,14 @@ function processSheetData(sheetData) {
   
   sheetData.forEach((row, index) => {
     try {
+      // Skip rows manually marked Exclude in Column I (do not email-alert; intentional)
+      const excludeFlag = String(row[COLUMNS.EXCLUDE] || '').trim().toLowerCase();
+      if (excludeFlag === 'exclude') {
+        Logger.log(`⛔ Row ${index + 1}: Excluded via Column I - "${row[COLUMNS.NAME] || 'Unknown'}"`);
+        skipped++;
+        return;
+      }
+
       // Skip empty rows or rows with missing required fields
       if (!row[COLUMNS.EVENT_DATE] || !row[COLUMNS.NAME] || !row[COLUMNS.TYPE] || !row[COLUMNS.LOCATION] || !row[COLUMNS.URL] || !row[COLUMNS.REGION]) {
         const missingFields = [];
