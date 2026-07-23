@@ -5,6 +5,12 @@ description: "Standards for content creation, updates, and management in LetsRac
 
 # Content Management Rules
 
+## Social / SEO Metadata
+- Source: `content/page-metadata.md`
+- Nightly build (`DailyBuildAndDeploy.gs` Step 11d) injects title, description, Open Graph, Twitter Card, canonical URL, and WebSite JSON-LD into public HTML pages
+- Edit the markdown and push to `main`; do not hand-edit OG/Twitter tags in HTML (they will be overwritten)
+- Share image path: `images/Social-Share.png`
+
 ## About Page Content
 - Source content in `content/about.md` (markdown format)
 - Use `pull-about.ps1` script for updates

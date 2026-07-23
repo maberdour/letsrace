@@ -50,11 +50,28 @@ The full nightly pipeline runs as follows (all times Europe/London):
      - Normalizes and filters to future events  
      - Generates versioned JSON files per type and the facets index  
      - Updates `manifest.json` to point to the latest versions  
+     - Injects markdown content into HTML when it differs from the live pages:  
+       - `content/page-introductions.md` → discipline page intros  
+       - `content/FAQ.md` → FAQ page  
+       - `content/about.md` → About page  
+       - `content/recent-changes.md` → Recent Changes page  
+       - `content/page-metadata.md` → titles, descriptions, Open Graph, Twitter Card, canonical URLs, WebSite JSON-LD  
      - Commits everything to GitHub (`main` branch), which GitHub Pages then serves
 
 3. **Frontend consumption**  
    - Event pages (e.g. Road, Track, BMX) load `/data/manifest.json` and the appropriate type/facets JSON on each page view  
    - The event lists are rendered client‑side from these static JSON files.
+
+### Social / SEO metadata (`content/page-metadata.md`)
+
+Edit titles and share descriptions in markdown only. Push to `main`; the next nightly build applies them to every listed page’s `<head>`.
+
+- Heading = public path (`/` for homepage, `/pages/road/`, `/pages/faq.html`, …)
+- Fields: `title`, `description`; optional `og_title` / `og_description` (homepage uses these)
+- `# Defaults` holds site URL, site name, share image path, OG type, and Twitter card type
+- Share image file: `images/Social-Share.png` (referenced as absolute `https://www.letsrace.cc/images/Social-Share.png`)
+
+After changing `DailyBuildAndDeploy.gs`, paste the updated script into the Google Apps Script project once so the nightly trigger uses the new Step 11d.
 
 ## File Structure
 

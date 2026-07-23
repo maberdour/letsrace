@@ -178,11 +178,23 @@ function dailyBuild() {
       Logger.log(`⚠️ Skipping Recent Changes page injection due to error: ${e.message}`);
     }
 
-    // Merge extra files
-    const extraFiles = introHtmlUpdates.slice();
-    if (faqUpdate) extraFiles.push(faqUpdate);
-    if (aboutUpdate) extraFiles.push(aboutUpdate);
-    if (recentChangesUpdate) extraFiles.push(recentChangesUpdate);
+    // Merge content extras first (intros / FAQ / About / Recent Changes)
+    const contentExtras = introHtmlUpdates.slice();
+    if (faqUpdate) contentExtras.push(faqUpdate);
+    if (aboutUpdate) contentExtras.push(aboutUpdate);
+    if (recentChangesUpdate) contentExtras.push(recentChangesUpdate);
+
+    // Step 11d: Apply social/SEO metadata from content/page-metadata.md
+    // Runs after other HTML updates so the same nightly commit keeps one version per path.
+    let metadataUpdates = [];
+    try {
+      metadataUpdates = buildPageMetadataHtmlUpdates(contentExtras);
+      Logger.log(`📝 Metadata updates prepared for ${metadataUpdates.length} page(s)`);
+    } catch (e) {
+      Logger.log(`⚠️ Skipping page metadata injection due to error: ${e.message}`);
+    }
+
+    const extraFiles = mergeExtraFilesByPath(contentExtras, metadataUpdates);
 
     // Step 12: Commit all files to GitHub in a single batch (including manifest and extra HTML updates)
     const committedFiles = commitFilesToGitHub(partitionedData, facets, dateString, newEvents, newEventsFilename, manifest, homepageStats, homepageStatsFilename, extraFiles);
@@ -908,6 +920,237 @@ function replaceRecentChangesContentInHtml(html, newContent) {
 
   Logger.log('ℹ️ Could not find <div class="general-content"> with <h1>Recent Changes</h1> in pages/recent-changes.html. Skipping update.');
   return html;
+}
+
+/**
+ * Merge extra HTML file updates by path. Later entries overwrite earlier ones
+ * for the same path (used so metadata can layer on intro/FAQ/About updates).
+ */
+function mergeExtraFilesByPath(baseFiles, overlayFiles) {
+  const byPath = {};
+  const order = [];
+
+  function add(list) {
+    (list || []).forEach(f => {
+      if (!f || !f.path) return;
+      const key = f.path;
+      if (!byPath[key]) order.push(key);
+      byPath[key] = f;
+    });
+  }
+
+  add(baseFiles);
+  add(overlayFiles);
+  return order.map(k => byPath[k]);
+}
+
+/**
+ * Build HTML head updates (title, description, OG, Twitter, canonical, JSON-LD)
+ * from content/page-metadata.md. Applies on top of any same-night HTML extras.
+ * @param {Array<{path:string, content:string}>} priorExtraFiles
+ * @return {Array<{path:string, content:string, message:string}>}
+ */
+function buildPageMetadataHtmlUpdates(priorExtraFiles) {
+  const md = fetchRepoFileRaw('content/page-metadata.md');
+  if (!md) {
+    Logger.log('ℹ️ page-metadata.md not found, skipping');
+    return [];
+  }
+
+  const parsed = parsePageMetadataMarkdown(md);
+  const defaults = parsed.defaults || {};
+  const siteUrl = (defaults.site_url || 'https://www.letsrace.cc').replace(/\/$/, '');
+  const siteName = defaults.site_name || 'LetsRace.cc';
+  const imagePath = defaults.image || '/images/Social-Share.png';
+  const ogImage = imagePath.indexOf('http') === 0 ? imagePath : siteUrl + (imagePath.charAt(0) === '/' ? imagePath : '/' + imagePath);
+  const ogType = defaults.og_type || 'website';
+  const twitterCard = defaults.twitter_card || 'summary_large_image';
+
+  const priorByRepoPath = {};
+  (priorExtraFiles || []).forEach(f => {
+    if (!f || !f.path || typeof f.content !== 'string') return;
+    const repoPath = f.path.replace(/^\//, '');
+    priorByRepoPath[repoPath] = f.content;
+  });
+
+  const updates = [];
+  const publicPaths = Object.keys(parsed.pages || {});
+
+  publicPaths.forEach(publicPath => {
+    const pageMeta = parsed.pages[publicPath] || {};
+    const repoPath = metadataPublicPathToRepoFile(publicPath);
+    if (!repoPath) {
+      Logger.log(`ℹ️ Skipping metadata for unmapped path: ${publicPath}`);
+      return;
+    }
+
+    let html = priorByRepoPath[repoPath];
+    if (!html) {
+      html = fetchRepoFileRaw(repoPath);
+    }
+    if (!html) {
+      Logger.log(`ℹ️ Skipping metadata: page not found ${repoPath}`);
+      return;
+    }
+
+    const title = (pageMeta.title || '').trim();
+    const description = (pageMeta.description || '').trim();
+    if (!title || !description) {
+      Logger.log(`ℹ️ Skipping metadata for ${publicPath}: missing title or description`);
+      return;
+    }
+
+    const ogTitle = (pageMeta.og_title || title).trim();
+    const ogDescription = (pageMeta.og_description || description).trim();
+    const canonicalUrl = siteUrl + (publicPath === '/' ? '/' : publicPath);
+
+    const updated = applyPageMetadataToHtml(html, {
+      title: title,
+      description: description,
+      ogTitle: ogTitle,
+      ogDescription: ogDescription,
+      canonicalUrl: canonicalUrl,
+      ogImage: ogImage,
+      ogType: ogType,
+      siteName: siteName,
+      twitterCard: twitterCard,
+      siteUrl: siteUrl
+    });
+
+    if (updated && updated !== html) {
+      updates.push({
+        path: '/' + repoPath,
+        content: updated,
+        message: `chore(content): update social metadata for ${publicPath}`
+      });
+    } else {
+      Logger.log(`ℹ️ No metadata change needed for ${repoPath}`);
+    }
+  });
+
+  return updates;
+}
+
+/**
+ * Map a public URL path from page-metadata.md to a repo-relative HTML file.
+ * / -> index.html
+ * /pages/road/ -> pages/road/index.html
+ * /pages/faq.html -> pages/faq.html
+ */
+function metadataPublicPathToRepoFile(publicPath) {
+  if (!publicPath) return null;
+  let p = String(publicPath).trim();
+  if (p === '/') return 'index.html';
+  if (p.charAt(0) === '/') p = p.substring(1);
+  if (p.charAt(p.length - 1) === '/') return p + 'index.html';
+  return p;
+}
+
+/**
+ * Parse content/page-metadata.md into { defaults: {}, pages: { '/path': { title, description, ... } } }.
+ */
+function parsePageMetadataMarkdown(md) {
+  const result = { defaults: {}, pages: {} };
+  let current = null; // 'defaults' or public path string
+  const lines = String(md || '').split(/\r?\n/);
+
+  lines.forEach(line => {
+    const heading = line.match(/^#\s+(.+)\s*$/);
+    if (heading) {
+      const name = heading[1].trim();
+      if (/^defaults$/i.test(name)) {
+        current = 'defaults';
+      } else {
+        current = name;
+        if (!result.pages[current]) result.pages[current] = {};
+      }
+      return;
+    }
+
+    const kv = line.match(/^([a-z_]+):\s*(.*)$/i);
+    if (!kv || !current) return;
+    const key = kv[1].toLowerCase();
+    const value = kv[2].trim();
+    if (current === 'defaults') {
+      result.defaults[key] = value;
+    } else {
+      result.pages[current][key] = value;
+    }
+  });
+
+  return result;
+}
+
+function escapeHtmlAttrMeta(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;');
+}
+
+/**
+ * Replace title, description, and the marked social-sharing block in page HTML.
+ */
+function applyPageMetadataToHtml(html, meta) {
+  if (!html || !meta) return html;
+
+  let content = html;
+
+  content = content.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtmlAttrMeta(meta.title)}</title>`);
+
+  if (/<meta\s+name=["']description["']\s+content=["'][^"']*["']\s*\/?>/i.test(content)) {
+    content = content.replace(
+      /<meta\s+name=["']description["']\s+content=["'][^"']*["']\s*\/?>/i,
+      `<meta name="description" content="${escapeHtmlAttrMeta(meta.description)}" />`
+    );
+  } else {
+    content = content.replace(
+      /(<title>[^<]*<\/title>)/i,
+      `$1\n  <meta name="description" content="${escapeHtmlAttrMeta(meta.description)}" />`
+    );
+  }
+
+  // Remove prior marked block, legacy OG/Twitter block, orphaned tags, canonical, WebSite JSON-LD
+  content = content.replace(/\s*<!--\s*Open Graph \/ social sharing\s*-->[\s\S]*?<!--\s*End social sharing meta\s*-->\s*/i, '\n');
+  content = content.replace(/\s*<!--\s*Open Graph \/ social sharing\s*-->[\s\S]*?<meta\s+name=["']twitter:image["'][^>]*>\s*/i, '\n');
+  content = content.replace(/^\s*<meta\s+(?:property=["']og:[^"']+["']|name=["']twitter:[^"']+["'])\s+content=["'][^"']*["']\s*\/?>\s*$/gim, '');
+  content = content.replace(/^\s*<link\s+rel=["']canonical["']\s+href=["'][^"']*["']\s*\/?>\s*$/gim, '');
+  content = content.replace(/\s*<script\s+type=["']application\/ld\+json["']>\s*\{[\s\S]*?"@type"\s*:\s*"WebSite"[\s\S]*?<\/script>\s*/i, '\n');
+
+  const jsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: meta.siteName,
+    url: meta.siteUrl.replace(/\/$/, '') + '/'
+  }, null, 2);
+
+  const block = [
+    '  <!-- Open Graph / social sharing -->',
+    `  <link rel="canonical" href="${escapeHtmlAttrMeta(meta.canonicalUrl)}">`,
+    `  <meta property="og:title" content="${escapeHtmlAttrMeta(meta.ogTitle)}">`,
+    `  <meta property="og:description" content="${escapeHtmlAttrMeta(meta.ogDescription)}">`,
+    `  <meta property="og:image" content="${escapeHtmlAttrMeta(meta.ogImage)}">`,
+    `  <meta property="og:url" content="${escapeHtmlAttrMeta(meta.canonicalUrl)}">`,
+    `  <meta property="og:type" content="${escapeHtmlAttrMeta(meta.ogType)}">`,
+    `  <meta property="og:site_name" content="${escapeHtmlAttrMeta(meta.siteName)}">`,
+    `  <meta name="twitter:card" content="${escapeHtmlAttrMeta(meta.twitterCard)}">`,
+    `  <meta name="twitter:title" content="${escapeHtmlAttrMeta(meta.ogTitle)}">`,
+    `  <meta name="twitter:description" content="${escapeHtmlAttrMeta(meta.ogDescription)}">`,
+    `  <meta name="twitter:image" content="${escapeHtmlAttrMeta(meta.ogImage)}">`,
+    '  <script type="application/ld+json">',
+    jsonLd.split('\n').map(line => '  ' + line).join('\n'),
+    '  </script>',
+    '  <!-- End social sharing meta -->'
+  ].join('\n');
+
+  const descMatch = content.match(/<meta\s+name=["']description["']\s+content=["'][^"']*["']\s*\/?>/i);
+  if (!descMatch) {
+    Logger.log('ℹ️ No description meta found after update; skipping social block insert');
+    return content;
+  }
+
+  const insertAt = content.indexOf(descMatch[0]) + descMatch[0].length;
+  content = content.slice(0, insertAt) + '\n' + block + content.slice(insertAt);
+  return content;
 }
 
 /**

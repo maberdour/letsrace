@@ -29,6 +29,15 @@ maberdour.github.io/
 
 ## 📝 Content Management
 
+### Social share metadata (titles, Open Graph, Twitter)
+Source of truth: `content/page-metadata.md`.
+
+1. Edit titles / descriptions for the paths you care about
+2. Commit and push to `main`
+3. The nightly daily build (`DailyBuildAndDeploy.gs`) updates every listed page’s `<head>` automatically
+
+Share image: `images/Social-Share.png` (about 1200×630 works well for large previews).
+
 ### Updating the About Page
 The About page content can be updated without a full repository push:
 
@@ -39,6 +48,7 @@ The About page content can be updated without a full repository push:
    .\pull-about.ps1
    ```
    Or simply double-click `pull-about.bat`
+   Or push `content/about.md` and let the nightly build inject it.
 
 ### Updating the Recent Changes Page
 The Recent Changes page (`/pages/recent-changes.html`) is built from markdown, same as About and FAQ:
@@ -81,6 +91,7 @@ Events are automatically fetched from British Cycling and Cycling Time Trials vi
 - `assets/js/cache.js` - Caching system
 - `content/about.md` - About page content
 - `content/recent-changes.md` - Recent Changes page content (site fixes and improvements)
+- `content/page-metadata.md` - Page titles, meta descriptions, and social share tags
 
 ## 📚 Documentation
 
