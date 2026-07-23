@@ -1,5 +1,9 @@
 # Recent Changes
 
+23 Jul - Applied an exclusion field to handle events that organisers have incorrectly categorised as Youth events
+
+16 Jul - If a nightly data collection macro fails, it will now automatically re-run up to 3 times before exiting.
+
 01 Jul - Added suport for Pump Track events, merged into BMX and Pump Track Events page.
 
 17 Jun - enhancement - Closed Circuit dual-category for BC and CTT, renamed to Closed Circuit TT (CTT) and Circuit Races (BC).
