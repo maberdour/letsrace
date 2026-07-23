@@ -14,3 +14,7 @@ ID: 4
 Q: Where can I add an event entry?
 A: Not here! This site aggregates event information from the CTT and British Cycling websites. Add your event there and it will appear here within 24hrs of being live on those websites, if not then email hello@letsrace.cc
 
+ID: 5
+Q: Why are some senior-only events listed?
+A: Sometimes race organisers incorrectly classify their event as open for Youth entries when it is not. When these are spotted, they are removed from LetsRace.cc but occasionally one may slip through the net. Please use the feedback form to let me know if you spot one!
+
