@@ -1066,19 +1066,6 @@
     "last_updated": "2026-07-16T01:15:25.000Z"
   },
   {
-    "id": "6fe2a517",
-    "name": "Lloyds National Track Series - Round 1 - Black Line GP",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337794/lloyds-national-track-series---round-1---black-line-gp",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-26T08:55:07.000Z"
-  },
-  {
     "id": "4e08d13e",
     "name": "British Cycling North of England Go-Ride Track Cluster",
     "type": "Track",
@@ -1170,19 +1157,6 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
-    "id": "2395b8bd",
-    "name": "Lloyds National Track Series - Round 2 (National Omnium & Madison Championships) - Manchester",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-12-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336130/lloyds-national-track-series---round-2-national-omnium--madison-championships---manchester",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-26T08:55:07.000Z"
-  },
-  {
     "id": "2bdc0c26",
     "name": "Monday Night Track League 2026 Round 28",
     "type": "Track",
@@ -1194,19 +1168,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/330880/monday-night-track-league-2026-round-28",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "2a6ee3e1",
-    "name": "Lloyds National Track Series - Round 3 - Derby",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Velodrome, Derby",
-    "postcode": null,
-    "date": "2027-01-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337793/lloyds-national-track-series---round-3---derby",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-03T01:15:24.000Z"
   },
   {
     "id": "300aee47",
