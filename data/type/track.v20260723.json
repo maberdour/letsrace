@@ -1,187 +1,5 @@
 [
   {
-    "id": "6e2fa0c4",
-    "name": "Brooks Cycles Track League 2026 #11",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Lyme Valley Stadium, Staffordshire",
-    "postcode": null,
-    "date": "2026-07-16",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333567/brooks-cycles-track-league-2026-11",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "d5254eda",
-    "name": "Friday Night Track League 2026 Night 7",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Halesowen A&CC, West Midlands",
-    "postcode": null,
-    "date": "2026-07-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335458/friday-night-track-league-2026-night-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-24T01:15:24.000Z"
-  },
-  {
-    "id": "e5eca1b4",
-    "name": "Welwyn Track League 2026 #12",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-07-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333762/welwyn-track-league-2026-12",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "8ad4328d",
-    "name": "British Cycling North East Track Cluster",
-    "type": "Track",
-    "region": "North East",
-    "venue": "Middlesbrough Velodrome, Middlesbrough",
-    "postcode": null,
-    "date": "2026-07-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335765/british-cycling-north-east-track-cluster-",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "911cfe34",
-    "name": "British Cycling Pathway Development Centre Track - Lee Valley",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337829/british-cycling-pathway-development-centre-track---lee-valley-",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-21T01:15:24.000Z"
-  },
-  {
-    "id": "d865b378",
-    "name": "Sprint and Pursuit League - Round 3",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330162/sprint-and-pursuit-league---round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-15T03:15:24.000Z"
-  },
-  {
-    "id": "6fc89fe1",
-    "name": "West Midlands Outdoor Track Cluster Programme 2026 (14)",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Halesowen A & CC, West Midlands",
-    "postcode": null,
-    "date": "2026-07-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335098/west-midlands-outdoor-track-cluster-programme-2026-14",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
-    "id": "bdc59a0e",
-    "name": "FHHV Vets Dernyfest and Keirin Cup",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332081/fhhv-vets-dernyfest-and-keirin-cup",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "086d32b9",
-    "name": "Reading Track League #10",
-    "type": "Track",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-07-20",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334322/reading-track-league-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "f4672e79",
-    "name": "West Riding Track league No 10 2026",
-    "type": "Track",
-    "region": "Yorkshire & Humber",
-    "venue": "Woodhouse Gove School, England",
-    "postcode": null,
-    "date": "2026-07-20",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335824/west-riding-track-league-no-10-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-12T01:15:24.000Z"
-  },
-  {
-    "id": "f5ceac83",
-    "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Sprint and Endurance - Pre Tr",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-07-21",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332926/british-cycling-talent-pathway-track-development-centre---manchester---sprint-and-endurance---pre-track-nationals-prep-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "0e96b30f",
-    "name": "Convene Track League - Round 15",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329699/convene-track-league---round-15",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-25T03:15:26.000Z"
-  },
-  {
-    "id": "3a9dd6b1",
-    "name": "Middlesbrough Track League Race 8 (Cancelled)",
-    "type": "Track",
-    "region": "North East",
-    "venue": "Middlesbrough Sports Village, Middlesbrough",
-    "postcode": null,
-    "date": "2026-07-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333425/middlesbrough-track-league-race-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-11T01:15:25.000Z"
-  },
-  {
-    "id": "9dd2af7d",
-    "name": "Brooks Cycles Track League 2026 #12",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Lyme Valley Stadium, Staffordshire",
-    "postcode": null,
-    "date": "2026-07-23",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333568/brooks-cycles-track-league-2026-12",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
     "id": "b7815076",
     "name": "Friday Night Track League 2026 Night 8",
     "type": "Track",
@@ -221,8 +39,8 @@
     "last_updated": "2026-03-24T10:46:54.000Z"
   },
   {
-    "id": "8a008947",
-    "name": "OMEGA TRACK",
+    "id": "4107b0cc",
+    "name": "OMEGA TRACK (Cancelled)",
     "type": "Track",
     "region": "South",
     "venue": "Mountbatten Centre, Hampshire",
@@ -793,6 +611,19 @@
     "last_updated": "2025-12-25T03:15:26.000Z"
   },
   {
+    "id": "1c4205b4",
+    "name": "British Cycling Lee Valley | Youth Track Cluster Session #1",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-09-03",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338741/british-cycling-lee-valley--youth-track-cluster-session-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:15:25.000Z"
+  },
+  {
     "id": "cace758e",
     "name": "Brooks Cycles Track League 2026 #18",
     "type": "Track",
@@ -884,6 +715,19 @@
     "last_updated": "2025-12-25T03:15:26.000Z"
   },
   {
+    "id": "4c09dda7",
+    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 2",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-09-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338742/british-cycling-lee-valley--youth-track-cluster-session--2",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:15:25.000Z"
+  },
+  {
     "id": "7c85849e",
     "name": "Peter Waghorn Trophy - Open Track Meeting",
     "type": "Track",
@@ -960,6 +804,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329707/convene-track-league---round-23",
     "source": "Google Sheet",
     "last_updated": "2025-12-25T03:15:26.000Z"
+  },
+  {
+    "id": "420fde4a",
+    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 3",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-09-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338743/british-cycling-lee-valley--youth-track-cluster-session--3",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:15:25.000Z"
   },
   {
     "id": "56e0eb4f",
@@ -1105,6 +962,19 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "7ccec7ca",
+    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 4",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-10-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338744/british-cycling-lee-valley--youth-track-cluster-session--4",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:15:25.000Z"
+  },
+  {
     "id": "f0db7baa",
     "name": "Monday Night Track League 2026 Round 20",
     "type": "Track",
@@ -1116,6 +986,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330872/monday-night-track-league-2026-round-20",
     "source": "Google Sheet",
     "last_updated": "2026-01-12T03:15:24.000Z"
+  },
+  {
+    "id": "eb91802e",
+    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 5",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-10-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338745/british-cycling-lee-valley--youth-track-cluster-session--5",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:15:25.000Z"
   },
   {
     "id": "ffafb267",
@@ -1168,6 +1051,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330875/monday-night-track-league-2026-round-23",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "0039a3b5",
+    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 6",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-11-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338746/british-cycling-lee-valley--youth-track-cluster-session--6",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:15:25.000Z"
   },
   {
     "id": "6fe2a517",
