@@ -130,15 +130,15 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "e2ef6c50",
-    "name": "Bristol South Cycling Club Hill Climb",
+    "id": "fded064f",
+    "name": "Bristol South Cycling Club Dundry Hell Climb",
     "type": "Hill Climb",
     "region": "South",
     "venue": "Bristol City, Bristol | 2 miles | UCH377",
     "postcode": null,
     "date": "2026-08-12",
     "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46940-bristol-south-cycling-club-hill-climb",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46940-bristol-south-cycling-club-dundry-hell-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
@@ -661,6 +661,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/41484-reservoir-road-ulley-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "187bb86f",
+    "name": "S/Yarcombe - Andy Mapson memorial",
+    "type": "Hill Climb",
+    "region": "South West",
+    "venue": "Devon | 1 miles | S/YARCOMBE",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52786-s-yarcombe-andy-mapson-memorial",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-19T01:04:08.000Z"
   },
   {
     "id": "66438ed8",
@@ -1376,6 +1389,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/41734-jim-forbes-memorial-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "544c9622",
+    "name": "Kettering CC Hill Climb",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "Leicestershire | 1 miles | NH9",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52782-kettering-cc-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-19T01:04:08.000Z"
   },
   {
     "id": "42c075b4",
