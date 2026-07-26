@@ -1,57 +1,5 @@
 [
   {
-    "id": "7a3b96c4",
-    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #49",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-07-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337155/british-cycling-pathway-development-centre-gravity---forest-of-dean-49",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-02T01:15:25.000Z"
-  },
-  {
-    "id": "da0d0d2e",
-    "name": "Delamere Forest MTB Cluster - Advanced riders July 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Forestry Commission Delamere Forest Park, Cheshire",
-    "postcode": null,
-    "date": "2026-07-21",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337377/delamere-forest-mtb-cluster---advanced-riders-july-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "53a94e4e",
-    "name": "B-BUDDIES Summer Skills Challenge Round 1",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hicks Lodge Cycle Centre, Leicestershire",
-    "postcode": null,
-    "date": "2026-07-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336763/b-buddies-summer-skills-challenge-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-24T01:15:24.000Z"
-  },
-  {
-    "id": "ff2d264a",
-    "name": "B-BUDDIES Off-Road TT 8",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-07-23",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332877/b-buddies-off-road-tt-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
     "id": "a539ef12",
     "name": "Woody's Summer Downhill",
     "type": "MTB",
@@ -104,8 +52,8 @@
     "last_updated": "2026-07-08T01:15:24.000Z"
   },
   {
-    "id": "d826c011",
-    "name": "B-BUDDIES Summer Skills Challenge Round 2",
+    "id": "ad8e21d2",
+    "name": "B-BUDDIES Summer Skills Challenge Round 2 (Cancelled)",
     "type": "MTB",
     "region": "East Midlands",
     "venue": "Hicks Lodge Cycle Centre, Leicestershire",
@@ -195,8 +143,8 @@
     "last_updated": "2026-05-12T01:15:24.000Z"
   },
   {
-    "id": "c20eb620",
-    "name": "B-BUDDIES Summer Skills Challenge Round 3",
+    "id": "9a541a80",
+    "name": "B-BUDDIES Summer Skills Challenge Round 3 (Cancelled)",
     "type": "MTB",
     "region": "East Midlands",
     "venue": "Hicks Lodge Cycle Centre, Leicestershire",
@@ -245,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327437/rippers-quad-eliminator",
     "source": "Google Sheet",
     "last_updated": "2026-07-04T01:15:24.000Z"
+  },
+  {
+    "id": "b207aa83",
+    "name": "BFCC Racing XCC Series 2026 - Race 4",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Bedgebury Forest, Kent",
+    "postcode": null,
+    "date": "2026-08-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338947/bfcc-racing-xcc-series-2026---race-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-24T01:15:25.000Z"
   },
   {
     "id": "0250c341",
@@ -364,6 +325,32 @@
     "last_updated": "2026-07-02T01:15:24.000Z"
   },
   {
+    "id": "a6b7af4b",
+    "name": "Delamere Forest MTB Club Youth Session - Girls Focus Session August",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-08-30",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338593/delamere-forest-mtb-club-youth-session---girls-focus-session-august",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-21T01:15:24.000Z"
+  },
+  {
+    "id": "09795b6a",
+    "name": "Delamere Forest MTB Club Youth Session August 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-08-30",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338592/delamere-forest-mtb-club-youth-session-august-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-21T01:15:24.000Z"
+  },
+  {
     "id": "9ac34a0a",
     "name": "Fenland Flyer Gravel Time Trial - Mildenhall Cycling Mini-Fest",
     "type": "MTB",
@@ -414,6 +401,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337792/british-cycling-pathway-development-centre-mtb---south-1-",
     "source": "Google Sheet",
     "last_updated": "2026-06-24T01:15:24.000Z"
+  },
+  {
+    "id": "4a8668f7",
+    "name": "Peaty's Steel City Downhill 2026",
+    "type": "MTB",
+    "region": "Yorkshire & Humber",
+    "venue": "Greno Woods, Sheffield",
+    "postcode": null,
+    "date": "2026-09-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339029/peatys-steel-city-downhill-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-25T01:15:26.000Z"
   },
   {
     "id": "7309cfff",
@@ -492,6 +492,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331426/pearce-cycles-dh-series-2026-round-4",
     "source": "Google Sheet",
     "last_updated": "2026-01-20T03:15:25.000Z"
+  },
+  {
+    "id": "2172b3bb",
+    "name": "321 Racing- Mini DH",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Bike Park Kernow, Cornwall",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338296/321-racing--mini-dh",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-22T01:15:24.000Z"
   },
   {
     "id": "22607a00",
