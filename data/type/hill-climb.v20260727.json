@@ -1,31 +1,5 @@
 [
   {
-    "id": "b2420a99",
-    "name": "Plymouth Corinthians 3.1",
-    "type": "Hill Climb",
-    "region": "South West",
-    "venue": "Devon | 3.2 miles | S/Chillaton",
-    "postcode": null,
-    "date": "2026-07-26",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/44580-plymouth-corinthians-3-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "9cabb964",
-    "name": "Firle Beacon Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "East Sussex | 1 miles | GH/84 | Firle Beacon",
-    "postcode": null,
-    "date": "2026-07-27",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/47441-firle-beacon-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "398712b4",
     "name": "hill climb project round 14",
     "type": "Hill Climb",
@@ -50,6 +24,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/50069-epsom-cc-box-hill-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:47:10.000Z"
+  },
+  {
+    "id": "8efa3ef3",
+    "name": "Bristol South Cycling Club Dundry Hell Climb",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Bristol City, Bristol | 2 miles | UCH377",
+    "postcode": null,
+    "date": "2026-08-05",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46940-bristol-south-cycling-club-dundry-hell-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
     "id": "8dfa3937",
@@ -126,19 +113,6 @@
     "date": "2026-08-09",
     "start_time": "23:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/42232-stockton-wheelers-cc-reeth-to-tan-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "e2ef6c50",
-    "name": "Bristol South Cycling Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Bristol City, Bristol | 2 miles | UCH377",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46940-bristol-south-cycling-club-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
