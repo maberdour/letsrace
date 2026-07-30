@@ -1,18 +1,5 @@
 [
   {
-    "id": "f482a1a1",
-    "name": "Middlesbrough Mega Cross Round 1",
-    "type": "Cyclo Cross",
-    "region": "North East",
-    "venue": "Middlesbrough Velodrome, Middlesbrough",
-    "postcode": null,
-    "date": "2026-07-30",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338874/middlesbrough-mega-cross-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-21T01:15:24.000Z"
-  },
-  {
     "id": "fb35a9a7",
     "name": "Rapha Summercross - Rd 4",
     "type": "Cyclo Cross",
@@ -50,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/335679/cyclocross-reigate-2026",
     "source": "Google Sheet",
     "last_updated": "2026-05-07T01:15:24.000Z"
+  },
+  {
+    "id": "acac903a",
+    "name": "C&CCC Summer CX Training",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Pittville Park, Gloucestershire",
+    "postcode": null,
+    "date": "2026-08-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339163/cccc-summer-cx-training",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
     "id": "e92554a6",
@@ -130,6 +130,19 @@
     "last_updated": "2026-06-24T01:15:24.000Z"
   },
   {
+    "id": "b5f180a0",
+    "name": "Scottish Cycling R.A.C.E National Cyclocross Session 230826",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Callendar Park, Scotland",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338205/scottish-cycling-race-national-cyclocross-session-230826",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-23T01:15:24.000Z"
+  },
+  {
     "id": "e00802cf",
     "name": "North East Summer Cross - Round 3 (Camperdown)",
     "type": "Cyclo Cross",
@@ -154,6 +167,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337396/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
     "source": "Google Sheet",
     "last_updated": "2026-06-16T15:41:10.000Z"
+  },
+  {
+    "id": "945f1e0f",
+    "name": "Challenge Tires London and South East CX League - Round 01",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Stanmer Park, East Sussex",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339165/challenge-tires-london-and-south-east-cx-league---round-01",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
     "id": "9ef10f9c",
@@ -208,6 +234,19 @@
     "last_updated": "2026-07-18T01:15:24.000Z"
   },
   {
+    "id": "be37add4",
+    "name": "Challenge Tires London and South East CX League - Round 02",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Pippingford Park, East Sussex",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339166/challenge-tires-london-and-south-east-cx-league---round-02",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
     "id": "b802f20f",
     "name": "Autumn 2026 Nocturnal Cross Series Event 2",
     "type": "Cyclo Cross",
@@ -219,6 +258,58 @@
     "url": "https://www.britishcycling.org.uk/events/details/338302/autumn-2026-nocturnal-cross-series-event-2",
     "source": "Google Sheet",
     "last_updated": "2026-07-07T01:15:24.000Z"
+  },
+  {
+    "id": "0de7bce9",
+    "name": "Grity NDCXL26 R1 hosted by Matlock CC",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Alfreton Park, Derbyshire",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339068/grity-ndcxl26-r1-hosted-by-matlock-cc",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "5f7e27b0",
+    "name": "Challenge Tires London and South East CX League - Round 03",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Crystal Palace Park, London",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339167/challenge-tires-london-and-south-east-cx-league---round-03",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "cd32c836",
+    "name": "Challenge Tires London and South East CX League - Round 04",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339168/challenge-tires-london-and-south-east-cx-league---round-04",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "247a4d2d",
+    "name": "Leicester Cyclo-Cross League Round 1: Leicester Forest CC",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Western Park, Leicester",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338943/leicester-cyclo-cross-league-round-1-leicester-forest-cc",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-24T01:15:25.000Z"
   },
   {
     "id": "6373c5c3",
@@ -234,6 +325,19 @@
     "last_updated": "2026-07-07T01:15:24.000Z"
   },
   {
+    "id": "61b27f18",
+    "name": "Challenge Tires London and South East CX League - Round 05",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Bedfont Lakes Country Park, Feltham",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339169/challenge-tires-london-and-south-east-cx-league---round-05",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
     "id": "0590592c",
     "name": "Autumn 2026 Nocturnal Cross Series Event 4",
     "type": "Cyclo Cross",
@@ -245,5 +349,83 @@
     "url": "https://www.britishcycling.org.uk/events/details/338304/autumn-2026-nocturnal-cross-series-event-4",
     "source": "Google Sheet",
     "last_updated": "2026-07-07T01:15:24.000Z"
+  },
+  {
+    "id": "b50d5e80",
+    "name": "Challenge Tires London and South East CX League - Round 06",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "The Schools at Somerhill, Kent",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339170/challenge-tires-london-and-south-east-cx-league---round-06",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "d0794142",
+    "name": "Challenge Tires London and South East CX League - Round 07",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "East Bysshe Cross Country Course, Lingfield",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339171/challenge-tires-london-and-south-east-cx-league---round-07",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "04259fc5",
+    "name": "Challenge Tires London and South East CX League - Round 08",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Redbridge Cycling Centre, Ilford",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339172/challenge-tires-london-and-south-east-cx-league---round-08",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "bc9bb484",
+    "name": "Challenge Tires London and South East CX League - Round 09",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Canada Heights Mx venue, kent",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339173/challenge-tires-london-and-south-east-cx-league---round-09",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "b9e3c6a5",
+    "name": "Challenge Tires London and South East CX League - Round 10",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Preston Park Cycle Track, Sussex",
+    "postcode": null,
+    "date": "2027-01-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339174/challenge-tires-london-and-south-east-cx-league---round-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "366c0b0a",
+    "name": "Challenge Tires London and South East CX League - Round 11",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2027-01-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339175/challenge-tires-london-and-south-east-cx-league---round-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
   }
 ]

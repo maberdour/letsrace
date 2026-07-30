@@ -1,57 +1,5 @@
 [
   {
-    "id": "20600c0b",
-    "name": "White Rose Youth League 2026 Finale",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "Wyke Community Sports Village Road Circuit, West Yorkshire",
-    "postcode": null,
-    "date": "2026-07-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332943/white-rose-youth-league-2026-finale",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-06T10:43:30.000Z"
-  },
-  {
-    "id": "e73bc39d",
-    "name": "Team RL360 Isle of Man Youth Cycling League 2026 # 14",
-    "type": "Road",
-    "region": "North West",
-    "venue": "National Sports Centre, Isle of Man",
-    "postcode": null,
-    "date": "2026-07-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334448/team-rl360-isle-of-man-youth-cycling-league-2026--14",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "339bcf5a",
-    "name": "PNE Mountbatten Circuit Series #8",
-    "type": "Road",
-    "region": "South",
-    "venue": "Mountbatten Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-07-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331074/pne-mountbatten-circuit-series-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "69e99904",
-    "name": "Castle Combe Summer Series 2026 - Round 10",
-    "type": "Road",
-    "region": "South",
-    "venue": "Castle Combe Race Circuit, Wiltshire",
-    "postcode": null,
-    "date": "2026-07-30",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330184/castle-combe-summer-series-2026---round-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:15:25.000Z"
-  },
-  {
     "id": "7d5d80a1",
     "name": "Banbury Star Festival of Racing inc CYCL and ORRL",
     "type": "Road",
@@ -117,6 +65,19 @@
     "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
+    "id": "fad79269",
+    "name": "Litherland Circuit League 2026 - #2",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Litherland Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-08-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338750/litherland-circuit-league-2026---2",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-24T01:15:25.000Z"
+  },
+  {
     "id": "f591b759",
     "name": "PORTSMOUTH EVENING CIRCUITS",
     "type": "Road",
@@ -141,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338693/carlisle-summer-holiday-coaching-youth-de-riders",
     "source": "Google Sheet",
     "last_updated": "2026-07-21T01:15:24.000Z"
+  },
+  {
+    "id": "8e53450e",
+    "name": "Lloyds National Disability and Para-Cycling Road Series - Round 4 - Circuit Race - Torbay Velopark",
+    "type": "Road",
+    "region": "South West",
+    "venue": "Torbay Velopark, Devon",
+    "postcode": null,
+    "date": "2026-08-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338023/lloyds-national-disability-and-para-cycling-road-series---round-4---circuit-race---torbay-velopark",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-10T01:15:24.000Z"
   },
   {
     "id": "cb64d9e4",
@@ -182,6 +156,19 @@
     "last_updated": "2026-04-09T01:15:25.000Z"
   },
   {
+    "id": "62c2e1ff",
+    "name": "Litherland Circuit League 2026 - #3",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Litherland Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-08-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338752/litherland-circuit-league-2026---3",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-24T01:15:25.000Z"
+  },
+  {
     "id": "79090942",
     "name": "PNE Mountbatten Circuit Series #9",
     "type": "Road",
@@ -193,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/331075/pne-mountbatten-circuit-series-9",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "801ee871",
+    "name": "Cream First Crits - Round 16",
+    "type": "Road",
+    "region": "South West",
+    "venue": "Torbay Velopark, Devon",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339032/cream-first-crits---round-16",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-25T01:15:26.000Z"
   },
   {
     "id": "d5a3e8c3",
@@ -284,6 +284,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332501/the-richard-moore-youth-race-series-2026---round-5",
     "source": "Google Sheet",
     "last_updated": "2026-03-24T10:46:54.000Z"
+  },
+  {
+    "id": "22bfd250",
+    "name": "Litherland Circuit League 2026 - #4",
+    "type": "Road",
+    "region": "North West",
+    "venue": "Litherland Circuit, Lancashire",
+    "postcode": null,
+    "date": "2026-08-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338753/litherland-circuit-league-2026---4",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-24T01:15:25.000Z"
   },
   {
     "id": "8899c9c8",
@@ -390,15 +403,15 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
-    "id": "8f9f86dd",
-    "name": "The Colchester Centurion / Trevor Baker Memorial Races",
+    "id": "453fac81",
+    "name": "The Colchester Centurion",
     "type": "Road",
     "region": "Eastern",
     "venue": "Colchester Northern Gateway, Essex",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331930/the-colchester-centurion--trevor-baker-memorial-races",
+    "url": "https://www.britishcycling.org.uk/events/details/331930/the-colchester-centurion-",
     "source": "Google Sheet",
     "last_updated": "2026-02-12T03:15:26.000Z"
   },
@@ -453,6 +466,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329936/susies-circuits",
     "source": "Google Sheet",
     "last_updated": "2026-01-09T03:15:25.000Z"
+  },
+  {
+    "id": "36e8ecfc",
+    "name": "White Lake GP",
+    "type": "Road",
+    "region": "South West",
+    "venue": "RNAS Merryfield, Somerset",
+    "postcode": null,
+    "date": "2026-09-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338785/white-lake-gp",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-24T01:15:25.000Z"
   },
   {
     "id": "31732715",
