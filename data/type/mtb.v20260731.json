@@ -1,18 +1,5 @@
 [
   {
-    "id": "a539ef12",
-    "name": "Woody's Summer Downhill",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Woodys Bike Park, Cornwall",
-    "postcode": null,
-    "date": "2026-07-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335049/woodys-summer-downhill",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
     "id": "2ac2fd1c",
     "name": "Lloyds National Enduro & E-Enduro Championships 2026 - Powered by Cycle 360",
     "type": "MTB",
@@ -52,8 +39,8 @@
     "last_updated": "2026-07-08T01:15:24.000Z"
   },
   {
-    "id": "d826c011",
-    "name": "B-BUDDIES Summer Skills Challenge Round 2",
+    "id": "ad8e21d2",
+    "name": "B-BUDDIES Summer Skills Challenge Round 2 (Cancelled)",
     "type": "MTB",
     "region": "East Midlands",
     "venue": "Hicks Lodge Cycle Centre, Leicestershire",
@@ -143,8 +130,8 @@
     "last_updated": "2026-05-12T01:15:24.000Z"
   },
   {
-    "id": "c20eb620",
-    "name": "B-BUDDIES Summer Skills Challenge Round 3",
+    "id": "9a541a80",
+    "name": "B-BUDDIES Summer Skills Challenge Round 3 (Cancelled)",
     "type": "MTB",
     "region": "East Midlands",
     "venue": "Hicks Lodge Cycle Centre, Leicestershire",
@@ -193,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/327437/rippers-quad-eliminator",
     "source": "Google Sheet",
     "last_updated": "2026-07-04T01:15:24.000Z"
+  },
+  {
+    "id": "b207aa83",
+    "name": "BFCC Racing XCC Series 2026 - Race 4",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Bedgebury Forest, Kent",
+    "postcode": null,
+    "date": "2026-08-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338947/bfcc-racing-xcc-series-2026---race-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-24T01:15:25.000Z"
   },
   {
     "id": "0250c341",
@@ -390,6 +390,19 @@
     "last_updated": "2026-06-24T01:15:24.000Z"
   },
   {
+    "id": "4a8668f7",
+    "name": "Peaty's Steel City Downhill 2026",
+    "type": "MTB",
+    "region": "Yorkshire & Humber",
+    "venue": "Greno Woods, Sheffield",
+    "postcode": null,
+    "date": "2026-09-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339029/peatys-steel-city-downhill-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-25T01:15:26.000Z"
+  },
+  {
     "id": "7309cfff",
     "name": "SWXC Round 5 (XCO - Supported by Fibrefusion )",
     "type": "MTB",
@@ -479,6 +492,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338296/321-racing--mini-dh",
     "source": "Google Sheet",
     "last_updated": "2026-07-22T01:15:24.000Z"
+  },
+  {
+    "id": "6b3f65c9",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #50",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339241/british-cycling-pathway-development-centre-gravity---forest-of-dean-50",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
     "id": "22607a00",
@@ -572,6 +598,19 @@
     "last_updated": "2026-02-27T03:15:25.000Z"
   },
   {
+    "id": "0f13bc24",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #51",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-10-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339242/british-cycling-pathway-development-centre-gravity---forest-of-dean-51",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
     "id": "6803a5fd",
     "name": "MIJ Downhill 2026 Round 5",
     "type": "MTB",
@@ -635,6 +674,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337797/british-cycling-pathway-development-centre-mtb---south-3",
     "source": "Google Sheet",
     "last_updated": "2026-06-24T01:15:24.000Z"
+  },
+  {
+    "id": "63771b42",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #52",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339243/british-cycling-pathway-development-centre-gravity---forest-of-dean-52",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
     "id": "2d52dbde",
