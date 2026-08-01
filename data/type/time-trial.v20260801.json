@@ -1,70 +1,5 @@
 [
   {
-    "id": "d57e0f8e",
-    "name": "Andover Wheelers Club 10",
-    "type": "Time Trial",
-    "region": "South",
-    "venue": "Hampshire | 10 miles | Pthruxton 10",
-    "postcode": null,
-    "date": "2026-07-28",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/49716-andover-wheelers-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-18T17:39:48.000Z"
-  },
-  {
-    "id": "293823fa",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-07-28",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45744-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "d73a854a",
-    "name": "Goodwood 7.6 ml Youth (7yrs-13yrs) Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 7.6 miles | P917/7.6",
-    "postcode": null,
-    "date": "2026-07-29",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41881-goodwood-7-6-ml-youth-7-yrs-13-yrs-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "34267c52",
-    "name": "Goodwood Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
-    "postcode": null,
-    "date": "2026-07-29",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42880-goodwood-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "d75a16c7",
-    "name": "Westerley Cycling Club Wednesday Series 10 - Round 8",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "Greater London | 10 miles | hillingdon",
-    "postcode": null,
-    "date": "2026-07-29",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45029-westerley-cycling-club-wednesday-series-10-round-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "4a9ec9c9",
     "name": "Burghead Triangle 2UP TTT",
     "type": "Time Trial",
@@ -117,32 +52,6 @@
     "last_updated": "2026-06-12T01:04:08.000Z"
   },
   {
-    "id": "c15f49a4",
-    "name": "Goodwood 7.6ml Time Trial League( 07yr-13yr)",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 7.6 miles | P917/7.6",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42803-goodwood-7-6-ml-time-trial-league-07-yr-13-yr",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "ff9b0a0b",
-    "name": "Goodwood Heritage Bikes & 10-mile Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46279-goodwood-heritage-bikes-10-mile-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "eca03519",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 9",
     "type": "Time Trial",
@@ -152,6 +61,32 @@
     "date": "2026-08-12",
     "start_time": "23:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/45039-westerley-cycling-club-wednesday-series-10-round-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "f8d4c65d",
+    "name": "Goodwood 7.6ml Time Trial League( 07yr-13yr)",
+    "type": "Time Trial",
+    "region": "London & South East",
+    "venue": "West Sussex | 7.6 miles | P917/7.6",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/42803-goodwood-7-6-ml-time-trial-league-07-yr-13-yr",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "6487ec08",
+    "name": "Goodwood Heritage Bikes & 10-mile Time Trial League",
+    "type": "Time Trial",
+    "region": "London & South East",
+    "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46279-goodwood-heritage-bikes-10-mile-time-trial-league",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
@@ -284,6 +219,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46008-ht-2026-tt-r-4",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "6bb95e70",
+    "name": "Ronnie Macdonald Memorial 10TT/Scottish National 10TT",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Milton Bowling Club, Milton",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337156/ronnie-macdonald-memorial-10ttscottish-national-10tt",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
     "id": "88a02f43",
