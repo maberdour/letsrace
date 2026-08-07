@@ -30,7 +30,7 @@
     "MTB": 50,
     "Cyclo Cross": 40,
     "Speedway": 3,
-    "Time Trial": 20,
+    "Time Trial": 18,
     "Hill Climb": 173,
     "Wales": 18,
     "South": 56,
@@ -39,7 +39,7 @@
     "North East": 21,
     "Central": 27,
     "North West": 57,
-    "Scotland": 41,
+    "Scotland": 39,
     "Eastern": 30,
     "West Midlands": 33,
     "﻿Scotland": 1,
@@ -108,7 +108,6 @@
     "Hill Climb|South West": 21,
     "Hill Climb|North West": 10,
     "Cyclo Cross|Wales": 1,
-    "Time Trial|Scotland": 2,
     "Cyclo Cross|Yorkshire & Humber": 4,
     "Hill Climb|West Midlands ": 1,
     "Cyclo Cross|South West": 1,
@@ -124,8 +123,8 @@
     "MTB": 8,
     "Cyclo Cross": 1,
     "Speedway": 1,
-    "Time Trial": 3,
+    "Time Trial": 2,
     "Hill Climb": 2
   },
-  "last_build": "2026-08-07T16:23:18.875Z"
+  "last_build": "2026-08-07T16:36:21.037Z"
 }
