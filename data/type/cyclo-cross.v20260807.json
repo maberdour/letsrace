@@ -1,31 +1,5 @@
 [
   {
-    "id": "fb35a9a7",
-    "name": "Rapha Summercross - Rd 4",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-07-31",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333776/rapha-summercross---rd-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:15:25.000Z"
-  },
-  {
-    "id": "a8163023",
-    "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Shrewsbury Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-08-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337392/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-16T15:41:10.000Z"
-  },
-  {
     "id": "058d948e",
     "name": "Cyclocross Reigate 2026",
     "type": "Cyclo Cross",
@@ -52,8 +26,21 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
-    "id": "e92554a6",
-    "name": "North East Summer Cross - Round 2 (Camperdown)",
+    "id": "a9db2e07",
+    "name": "Middlesbrough Mega Cross Round 2",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Middlesbrough Velodrome, Middlesbrough",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339287/middlesbrough-mega-cross-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:15:24.000Z"
+  },
+  {
+    "id": "8fbc2df7",
+    "name": "North East Summer Cross - Round 2 (Camperdown) (Cancelled)",
     "type": "Cyclo Cross",
     "region": "Scotland",
     "venue": "Camperdown Country Park Cycle Centre, Angus",
@@ -78,8 +65,8 @@
     "last_updated": "2026-06-16T15:41:10.000Z"
   },
   {
-    "id": "5db8899f",
-    "name": "Cyclopark Summer CX 2026",
+    "id": "7f92634e",
+    "name": "Cyclopark Summer CX 2026 (Cancelled)",
     "type": "Cyclo Cross",
     "region": "London & South East",
     "venue": "Cyclopark, Kent",
@@ -143,8 +130,21 @@
     "last_updated": "2026-07-23T01:15:24.000Z"
   },
   {
-    "id": "e00802cf",
-    "name": "North East Summer Cross - Round 3 (Camperdown)",
+    "id": "ed50b093",
+    "name": "Middlesbrough Mega Cross Round 3",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Middlesbrough Velodrome, Middlesbrough",
+    "postcode": null,
+    "date": "2026-08-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339291/middlesbrough-mega-cross-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:15:24.000Z"
+  },
+  {
+    "id": "9cc5bb35",
+    "name": "North East Summer Cross - Round 3 (Camperdown) (Cancelled)",
     "type": "Cyclo Cross",
     "region": "Scotland",
     "venue": "Camperdown Country Park Cycle Centre, Angus",
@@ -167,6 +167,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337396/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
     "source": "Google Sheet",
     "last_updated": "2026-06-16T15:41:10.000Z"
+  },
+  {
+    "id": "0e1f2562",
+    "name": "Newbury Velo x West Berkshire Scouts Go-Ride Summer CX",
+    "type": "Cyclo Cross",
+    "region": "Central",
+    "venue": "Goldwell Park, Berkshire",
+    "postcode": null,
+    "date": "2026-09-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339368/newbury-velo-x-west-berkshire-scouts-go-ride-summer-cx",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-01T01:15:25.000Z"
   },
   {
     "id": "945f1e0f",
@@ -232,6 +245,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/338429/east-kent-cyclo-cross-league-round-1-sandwichtechcross---tim-mountford-memorial-",
     "source": "Google Sheet",
     "last_updated": "2026-07-18T01:15:24.000Z"
+  },
+  {
+    "id": "799e28e0",
+    "name": "Fenland Clarion Go-Ride Cross Races",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Embankment Athletics Track, Cambs",
+    "postcode": null,
+    "date": "2026-09-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339289/fenland-clarion-go-ride-cross-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:15:24.000Z"
+  },
+  {
+    "id": "7d10ba53",
+    "name": "Box Valley Cross - Eastern League 26/27 Rd 3",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Park Farm, Near Sudbury",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339371/box-valley-cross---eastern-league-2627-rd-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-01T01:15:25.000Z"
   },
   {
     "id": "be37add4",
@@ -325,6 +364,19 @@
     "last_updated": "2026-07-07T01:15:24.000Z"
   },
   {
+    "id": "2f436b76",
+    "name": "Fenland Clarion Go-Ride Cross Races",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Embankment Athletics Track, Cambs",
+    "postcode": null,
+    "date": "2026-10-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339290/fenland-clarion-go-ride-cross-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:15:24.000Z"
+  },
+  {
     "id": "61b27f18",
     "name": "Challenge Tires London and South East CX League - Round 05",
     "type": "Cyclo Cross",
@@ -390,6 +442,19 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "3cb9dbb5",
+    "name": "Fenland Clarion Go-Ride Cross Races",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Embankment Athletics Track, Cambs",
+    "postcode": null,
+    "date": "2026-11-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339292/fenland-clarion-go-ride-cross-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:15:24.000Z"
+  },
+  {
     "id": "bc9bb484",
     "name": "Challenge Tires London and South East CX League - Round 09",
     "type": "Cyclo Cross",
@@ -401,6 +466,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/339173/challenge-tires-london-and-south-east-cx-league---round-09",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "58666eda",
+    "name": "South East Regional Champs 2026",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339239/south-east-regional-champs-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:15:24.000Z"
+  },
+  {
+    "id": "3dcfdfc8",
+    "name": "Fenland Clarion Go-Ride Cross Races",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Embankment Athletics Track, Cambs",
+    "postcode": null,
+    "date": "2026-12-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339293/fenland-clarion-go-ride-cross-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
     "id": "b9e3c6a5",

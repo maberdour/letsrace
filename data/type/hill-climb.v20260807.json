@@ -1,83 +1,5 @@
 [
   {
-    "id": "398712b4",
-    "name": "hill climb project round 14",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Cheshire East | 1 miles | J9/21 | Tegg's Nose",
-    "postcode": null,
-    "date": "2026-07-31",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51692-hill-climb-project-round-14",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:04:08.000Z"
-  },
-  {
-    "id": "a84b77b9",
-    "name": "Epsom CC Box Hill Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "Surrey | 1.7 miles | GH/40",
-    "postcode": null,
-    "date": "2026-08-04",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/50069-epsom-cc-box-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:47:10.000Z"
-  },
-  {
-    "id": "8efa3ef3",
-    "name": "Bristol South Cycling Club Dundry Hell Climb",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Bristol City, Bristol | 2 miles | UCH377",
-    "postcode": null,
-    "date": "2026-08-05",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46940-bristol-south-cycling-club-dundry-hell-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "8dfa3937",
-    "name": "Royal Dean Forest Cycle Club Club 2.3",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Gloucestershire | 2.3 miles | UHC515 | Fetter Hill",
-    "postcode": null,
-    "date": "2026-08-05",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/48562-royal-dean-forest-cycle-club-club-2-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T09:04:22.000Z"
-  },
-  {
-    "id": "b4b1f9d3",
-    "name": "Bromsgrove Olympique CC Hill Climb",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "Worcestershire | 1 miles | KH12 | Winwood Heath Road",
-    "postcode": null,
-    "date": "2026-08-06",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51640-bromsgrove-olympique-cc-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-05T01:04:08.000Z"
-  },
-  {
-    "id": "30425784",
-    "name": "hill climb project round 15",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Cheshire East | 6 miles | J9/7 | Cat & Fiddle",
-    "postcode": null,
-    "date": "2026-08-07",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51700-hill-climb-project-round-15",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:04:08.000Z"
-  },
-  {
     "id": "c6531aba",
     "name": "Beachy Head Hill Climb",
     "type": "Hill Climb",
@@ -195,11 +117,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fe960e79",
+    "id": "bdd49690",
     "name": "Fife Midweek 18 - Hill Climb",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "1 miles | WE1/04",
+    "venue": "1 miles | WE01/04",
     "postcode": null,
     "date": "2026-08-19",
     "start_time": "23:00",
@@ -245,6 +167,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42106-kildale-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "c49f5325",
+    "name": "Daneway Hill Hill Climb",
+    "type": "Hill Climb",
+    "region": "South",
+    "venue": "Gloucestershire | 862 yards | UHC42 | Daneway Hill",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52822-daneway-hill-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:04:10.000Z"
   },
   {
     "id": "3e5e6cad",
@@ -299,17 +234,43 @@
     "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
-    "id": "8ad61bbf",
+    "id": "19835e8b",
+    "name": "ERC Hill Climb Series - Arthurs Seat",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Edinburgh | 1390 yards | WE01/03 | Arthurs Seat",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52826-erc-hill-climb-series-arthurs-seat",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-02T01:04:08.000Z"
+  },
+  {
+    "id": "fa6abe72",
     "name": "Fife Midweek 19 - Hill Climb",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "2 miles | WE2/01 | Falkland Hill Climb",
+    "venue": "2 miles | WE02/01 | Falkland Hill Climb",
     "postcode": null,
     "date": "2026-08-26",
     "start_time": "23:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/48749-fife-midweek-19-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
+    "id": "161e4faf",
+    "name": "Hastings & St. Leonards CC Ascent of Battery Hill",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "1 miles | QHC/16",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52815-hastings-st-leonards-cc-ascent-of-battery-hill",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:04:10.000Z"
   },
   {
     "id": "da3cc5d5",
@@ -479,6 +440,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45902-chippenham-district-wheelers-club-roberts-tankard-bowden-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "4139a4a4",
+    "name": "ERC Hill Climb Series - Kaimes Road",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Edinburgh | 757 yards | WE01/06 | Kaimes Road Hill Climb",
+    "postcode": null,
+    "date": "2026-09-02",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52828-erc-hill-climb-series-kaimes-road",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-02T01:04:08.000Z"
   },
   {
     "id": "78a77e3b",
@@ -962,6 +936,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "7ac69267",
+    "name": "ERC Hill Climb Series - The Yak",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "East Lothian Council | 2.2 miles | WE02/02 | Yak Hill Climb",
+    "postcode": null,
+    "date": "2026-09-16",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52830-erc-hill-climb-series-the-yak",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-02T01:04:08.000Z"
+  },
+  {
     "id": "9381328a",
     "name": "Allen Valley Velo - Allendale",
     "type": "Hill Climb",
@@ -1066,6 +1053,19 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
+    "id": "5810fe31",
+    "name": "Ferryhill Wheelers hill climb",
+    "type": "Hill Climb",
+    "region": "Yorkshire & Humber",
+    "venue": "THC21 | Quarrington Hill",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51158-ferryhill-wheelers-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-15T01:04:08.000Z"
+  },
+  {
     "id": "cced0a8c",
     "name": "Gravesend CC Club 1",
     "type": "Hill Climb",
@@ -1157,19 +1157,6 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "d4d79ed8",
-    "name": "Quarrington Hill Hill Climb",
-    "type": "Hill Climb",
-    "region": "Yorkshire & Humber",
-    "venue": "THC21 | Quarrington Hill",
-    "postcode": null,
-    "date": "2026-09-20",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51158-quarrington-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-15T01:04:08.000Z"
-  },
-  {
     "id": "c3256e2e",
     "name": "Redbridge CC Banks Lane Hill Climb",
     "type": "Hill Climb",
@@ -1183,15 +1170,15 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "09d10e8f",
-    "name": "South Shields Velo Cycling Club Hill Climb (Club Members Only)",
+    "id": "babcfa8c",
+    "name": "South Shields Velo CC (Club Members Only)",
     "type": "Hill Climb",
     "region": "North East",
     "venue": "Tyne and Wear | 1214 yards | MH3 | Shanky Bank",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/52589-south-shields-velo-cycling-club-hill-climb-club-members-only",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52589-south-shields-velo-cc-club-members-only",
     "source": "Google Sheet",
     "last_updated": "2026-06-01T01:04:12.000Z"
   },
@@ -1233,6 +1220,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/50108-droitwich-cycling-club-club-hillclimb",
     "source": "Google Sheet",
     "last_updated": "2026-03-18T17:39:48.000Z"
+  },
+  {
+    "id": "9e13373d",
+    "name": "ERC Hill Climb Series - Flotterstone",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Midlothian | 3.5 miles | WE03/01 | Flotterstone Hill Climb",
+    "postcode": null,
+    "date": "2026-09-23",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52832-erc-hill-climb-series-flotterstone",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-02T01:04:08.000Z"
   },
   {
     "id": "18565efc",
@@ -1283,19 +1283,6 @@
     "date": "2026-09-26",
     "start_time": "23:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/41646-velo-club-cumbria-whinlatter-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "23ed0ef4",
-    "name": "Arthurs Seat Hill Climb",
-    "type": "Hill Climb",
-    "region": "Scotland",
-    "venue": "Edinburgh | 1 miles | WE1/03 | Arthurs Seat",
-    "postcode": null,
-    "date": "2026-09-27",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42380-arthurs-seat-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
@@ -1376,6 +1363,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/52782-kettering-cc-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-07-19T01:04:08.000Z"
+  },
+  {
+    "id": "6e43458c",
+    "name": "Neal Doggest Memorial",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Edinburgh | 1390 yards | WE01/03 | Arthurs Seat",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/42380-neal-doggest-memorial",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
     "id": "42c075b4",
@@ -1768,15 +1768,15 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "e7a7c7d5",
-    "name": "Firle Beacon Hill Climb",
+    "id": "667320bb",
+    "name": "East Sussex CA Firle Beacon Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
     "venue": "East Sussex | 1 miles | GH/84 | Firle Beacon",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42342-firle-beacon-hill-climb",
+    "url": "https://www.cyclingtimetrials.org.uk/events/42342-east-sussex-ca-firle-beacon-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },

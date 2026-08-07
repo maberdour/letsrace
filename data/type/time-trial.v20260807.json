@@ -1,31 +1,5 @@
 [
   {
-    "id": "4a9ec9c9",
-    "name": "Burghead Triangle 2UP TTT",
-    "type": "Time Trial",
-    "region": "Scotland",
-    "venue": "Roseisle Hall, Roseisle",
-    "postcode": null,
-    "date": "2026-08-02",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337831/burghead-triangle-2up-ttt-",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-02T01:15:24.000Z"
-  },
-  {
-    "id": "12c8def6",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | H2.5/10",
-    "postcode": null,
-    "date": "2026-08-04",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45746-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "5f117302",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -39,45 +13,6 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "5cae65ef",
-    "name": "Cleveland Coureurs Club 10",
-    "type": "Time Trial",
-    "region": "North East",
-    "venue": "North Yorkshire | 10 miles | T10C",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51279-cleveland-coureurs-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-12T01:04:08.000Z"
-  },
-  {
-    "id": "c15f49a4",
-    "name": "Goodwood 7.6ml Time Trial League( 07yr-13yr)",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 7.6 miles | P917/7.6",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42803-goodwood-7-6-ml-time-trial-league-07-yr-13-yr",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "ff9b0a0b",
-    "name": "Goodwood Heritage Bikes & 10-mile Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46279-goodwood-heritage-bikes-10-mile-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "eca03519",
     "name": "Westerley Cycling Club Wednesday Series 10 - Round 9",
     "type": "Time Trial",
@@ -87,6 +22,32 @@
     "date": "2026-08-12",
     "start_time": "23:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/45039-westerley-cycling-club-wednesday-series-10-round-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "f8d4c65d",
+    "name": "Goodwood 7.6ml Time Trial League( 07yr-13yr)",
+    "type": "Time Trial",
+    "region": "London & South East",
+    "venue": "West Sussex | 7.6 miles | P917/7.6",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/42803-goodwood-7-6-ml-time-trial-league-07-yr-13-yr",
+    "source": "Google Sheet",
+    "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "6487ec08",
+    "name": "Goodwood Heritage Bikes & 10-mile Time Trial League",
+    "type": "Time Trial",
+    "region": "London & South East",
+    "venue": "West Sussex | 10 miles | P917/10 | Goodwood Circuit",
+    "postcode": null,
+    "date": "2026-08-13",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/46279-goodwood-heritage-bikes-10-mile-time-trial-league",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
@@ -115,6 +76,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45752-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "02098ef6",
+    "name": "Cleveland Coureurs Club 10",
+    "type": "Time Trial",
+    "region": "North East",
+    "venue": "North Yorkshire | 10 miles | T10C",
+    "postcode": null,
+    "date": "2026-08-19",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51279-cleveland-coureurs-club-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-12T01:04:08.000Z"
   },
   {
     "id": "b07b8012",
@@ -182,11 +156,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "9372092c",
+    "id": "5ccf6659",
     "name": "Kent CA Closed Circuit 10",
     "type": "Time Trial",
     "region": "London & South East",
-    "venue": "Kent | 10 miles | Q10/42",
+    "venue": "Kent | 10 miles | Q10/42 | Betteshanger",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "23:00",
@@ -245,6 +219,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45760-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "22be42fd",
+    "name": "Cloddach Hilly TT / North Olympic Championships",
+    "type": "Time Trial",
+    "region": "Scotland",
+    "venue": "Pluscarden Hall, Moray",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339552/cloddach-hilly-tt--north-olympic-championships-",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-06T01:15:24.000Z"
   },
   {
     "id": "a749c46d",
