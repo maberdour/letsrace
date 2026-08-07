@@ -1,5 +1,7 @@
 # Recent Changes
 
+07 Aug - Fixed issue with British Cycling Hill Climb events being listed on the Time Trials page. 
+
 23 Jul - Applied an exclusion field to handle events that organisers have incorrectly categorised as Youth events
 
 16 Jul - If a nightly data collection macro fails, it will now automatically re-run up to 3 times before exiting.
