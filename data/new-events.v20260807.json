@@ -66,11 +66,11 @@
       "last_updated": "2026-07-31T01:04:10.000Z"
     },
     {
-      "id": "c49f5325",
+      "id": "13f91e34",
       "name": "Daneway Hill Hill Climb",
       "type": "Hill Climb",
       "region": "South",
-      "venue": "Gloucestershire | 862 yards | UHC42 | Daneway Hill",
+      "venue": "862 yards | Daneway Hill",
       "postcode": null,
       "date": "2026-08-23",
       "start_time": "23:00",
@@ -79,11 +79,11 @@
       "last_updated": "2026-07-31T01:04:10.000Z"
     },
     {
-      "id": "19835e8b",
+      "id": "230764d0",
       "name": "ERC Hill Climb Series - Arthurs Seat",
       "type": "Hill Climb",
       "region": "Scotland",
-      "venue": "Edinburgh | 1390 yards | WE01/03 | Arthurs Seat",
+      "venue": "1390 yards | Arthurs Seat",
       "postcode": null,
       "date": "2026-08-26",
       "start_time": "23:00",
@@ -105,11 +105,11 @@
       "last_updated": "2026-07-31T01:15:24.000Z"
     },
     {
-      "id": "4139a4a4",
+      "id": "7a4e496f",
       "name": "ERC Hill Climb Series - Kaimes Road",
       "type": "Hill Climb",
       "region": "Scotland",
-      "venue": "Edinburgh | 757 yards | WE01/06 | Kaimes Road Hill Climb",
+      "venue": "757 yards | Kaimes Road Hill Climb",
       "postcode": null,
       "date": "2026-09-02",
       "start_time": "23:00",
@@ -131,11 +131,11 @@
       "last_updated": "2026-08-01T01:15:25.000Z"
     },
     {
-      "id": "7ac69267",
+      "id": "6198989e",
       "name": "ERC Hill Climb Series - The Yak",
       "type": "Hill Climb",
       "region": "Scotland",
-      "venue": "East Lothian Council | 2.2 miles | WE02/02 | Yak Hill Climb",
+      "venue": "2.2 miles | Yak Hill Climb",
       "postcode": null,
       "date": "2026-09-16",
       "start_time": "23:00",
@@ -170,11 +170,11 @@
       "last_updated": "2026-08-01T01:15:25.000Z"
     },
     {
-      "id": "9e13373d",
+      "id": "24d3b661",
       "name": "ERC Hill Climb Series - Flotterstone",
       "type": "Hill Climb",
       "region": "Scotland",
-      "venue": "Midlothian | 3.5 miles | WE03/01 | Flotterstone Hill Climb",
+      "venue": "3.5 miles | Flotterstone Hill Climb",
       "postcode": null,
       "date": "2026-09-23",
       "start_time": "23:00",
@@ -326,7 +326,7 @@
       "last_updated": "2026-08-06T01:15:24.000Z"
     }
   ],
-  "last_build": "2026-08-07T16:36:21.058Z",
+  "last_build": "2026-08-07T17:00:56.772Z",
   "total_new_events": 25,
   "cutoff_date": "2026-07-31"
 }
