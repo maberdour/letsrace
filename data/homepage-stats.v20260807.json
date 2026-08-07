@@ -26,13 +26,13 @@
     },
     "time-trial": {
       "name": "Time Trial",
-      "count": 22
+      "count": 20
     },
     "hill-climb": {
       "name": "Hill Climb",
-      "count": 171
+      "count": 173
     }
   },
-  "last_build": "2026-08-07T03:09:18.295Z",
+  "last_build": "2026-08-07T16:23:18.883Z",
   "total_events": 435
 }

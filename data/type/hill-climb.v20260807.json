@@ -182,6 +182,19 @@
     "last_updated": "2026-07-31T01:04:10.000Z"
   },
   {
+    "id": "b07b8012",
+    "name": "MFCC Glendoe Hill Climb (Regional Championship Event)",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Fort Augustus Village Hall, Highland",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332210/mfcc-glendoe-hill-climb-regional-championship-event",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-02T03:15:25.000Z"
+  },
+  {
     "id": "3e5e6cad",
     "name": "Sleaford Wheelers Hill Climb",
     "type": "Hill Climb",
@@ -1272,6 +1285,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/52725-redhill-cc-toys-hill-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-07-05T01:04:08.000Z"
+  },
+  {
+    "id": "eef04523",
+    "name": "The Logie Kirk Hill Climb Inc. Scottish National and Scottish Student Championships",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Logie Kirk, Stirlingshire",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337946/the-logie-kirk-hill-climb-inc-scottish-national-and-scottish-student-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-07T01:15:24.000Z"
   },
   {
     "id": "c9321828",

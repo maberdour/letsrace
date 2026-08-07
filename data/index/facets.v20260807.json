@@ -30,8 +30,8 @@
     "MTB": 50,
     "Cyclo Cross": 40,
     "Speedway": 3,
-    "Time Trial": 22,
-    "Hill Climb": 171,
+    "Time Trial": 20,
+    "Hill Climb": 173,
     "Wales": 18,
     "South": 56,
     "London & South East": 73,
@@ -82,7 +82,7 @@
     "Road|East Midlands": 2,
     "BMX|North West": 9,
     "Road|Yorkshire & Humber": 2,
-    "Hill Climb|Scotland": 7,
+    "Hill Climb|Scotland": 9,
     "Hill Climb|South": 23,
     "MTB|East Midlands": 7,
     "BMX|West Midlands": 3,
@@ -92,7 +92,6 @@
     "Track|South": 1,
     "Track|East Midlands": 4,
     "MTB|London & South East": 1,
-    "Time Trial|Scotland": 4,
     "Hill Climb|East Midlands": 12,
     "Speedway|North East": 1,
     "Road|Central": 5,
@@ -109,6 +108,7 @@
     "Hill Climb|South West": 21,
     "Hill Climb|North West": 10,
     "Cyclo Cross|Wales": 1,
+    "Time Trial|Scotland": 2,
     "Cyclo Cross|Yorkshire & Humber": 4,
     "Hill Climb|West Midlands ": 1,
     "Cyclo Cross|South West": 1,
@@ -124,8 +124,8 @@
     "MTB": 8,
     "Cyclo Cross": 1,
     "Speedway": 1,
-    "Time Trial": 4,
-    "Hill Climb": 1
+    "Time Trial": 3,
+    "Hill Climb": 2
   },
-  "last_build": "2026-08-07T03:09:18.289Z"
+  "last_build": "2026-08-07T16:23:18.875Z"
 }
