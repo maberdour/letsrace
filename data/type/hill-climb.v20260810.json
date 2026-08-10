@@ -1,114 +1,10 @@
 [
   {
-    "id": "a84b77b9",
-    "name": "Epsom CC Box Hill Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "Surrey | 1.7 miles | GH/40",
-    "postcode": null,
-    "date": "2026-08-04",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/50069-epsom-cc-box-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:47:10.000Z"
-  },
-  {
-    "id": "8efa3ef3",
-    "name": "Bristol South Cycling Club Dundry Hell Climb",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Bristol City, Bristol | 2 miles | UCH377",
-    "postcode": null,
-    "date": "2026-08-05",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46940-bristol-south-cycling-club-dundry-hell-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "8dfa3937",
-    "name": "Royal Dean Forest Cycle Club Club 2.3",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "Gloucestershire | 2.3 miles | UHC515 | Fetter Hill",
-    "postcode": null,
-    "date": "2026-08-05",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/48562-royal-dean-forest-cycle-club-club-2-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T09:04:22.000Z"
-  },
-  {
-    "id": "b4b1f9d3",
-    "name": "Bromsgrove Olympique CC Hill Climb",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "Worcestershire | 1 miles | KH12 | Winwood Heath Road",
-    "postcode": null,
-    "date": "2026-08-06",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51640-bromsgrove-olympique-cc-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-05T01:04:08.000Z"
-  },
-  {
-    "id": "30425784",
-    "name": "hill climb project round 15",
-    "type": "Hill Climb",
-    "region": "North West",
-    "venue": "Cheshire East | 6 miles | J9/7 | Cat & Fiddle",
-    "postcode": null,
-    "date": "2026-08-07",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51700-hill-climb-project-round-15",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-16T01:04:08.000Z"
-  },
-  {
-    "id": "c6531aba",
-    "name": "Beachy Head Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "East Sussex | 3 miles | GS/833 | Beachy Head",
-    "postcode": null,
-    "date": "2026-08-09",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46663-beachy-head-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "78442ee0",
-    "name": "Beachy Head World Championship Penny Farthing Hill Climb Time Trial",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "East Sussex | 3 miles | GS/833 | Beachy Head",
-    "postcode": null,
-    "date": "2026-08-09",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45598-beachy-head-world-championship-penny-farthing-hill-climb-time-trial",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "62962878",
-    "name": "Stockton Wheelers CC Reeth to Tan Hill Hill Climb",
-    "type": "Hill Climb",
-    "region": "North East",
-    "venue": "North Yorkshire | 11 miles | THC30 | Tan Hill",
-    "postcode": null,
-    "date": "2026-08-09",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42232-stockton-wheelers-cc-reeth-to-tan-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "06320a53",
+    "id": "cc5da27c",
     "name": "Eastbourne Rovers CC Firle Beacon Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "East Sussex | 1 miles | GH/84 | Firle Beacon",
+    "venue": "1 miles | Firle Beacon",
     "postcode": null,
     "date": "2026-08-13",
     "start_time": "23:00",
@@ -130,11 +26,11 @@
     "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
-    "id": "4b20e493",
+    "id": "eb166d7c",
     "name": "Birmingham Midland Cycling Club Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Warwickshire | 1 miles | KH32/1.4",
+    "venue": "1 miles | KH32/1.4",
     "postcode": null,
     "date": "2026-08-16",
     "start_time": "23:00",
@@ -156,11 +52,11 @@
     "last_updated": "2026-03-24T10:47:10.000Z"
   },
   {
-    "id": "d099cf71",
+    "id": "79591f33",
     "name": "Redditch Road & Path CC Club 1",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Warwickshire | 1 miles | KH11",
+    "venue": "1 miles | KH11",
     "postcode": null,
     "date": "2026-08-18",
     "start_time": "23:00",
@@ -169,11 +65,11 @@
     "last_updated": "2026-03-04T08:31:13.000Z"
   },
   {
-    "id": "94d96e9d",
+    "id": "1bef8f67",
     "name": "C C Bexley - STANSTED HILL Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Kent | 1 miles | QHC/5 | STANSTED HILL",
+    "venue": "1 miles | STANSTED HILL",
     "postcode": null,
     "date": "2026-08-19",
     "start_time": "23:00",
@@ -195,24 +91,11 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
-    "id": "8dc607e8",
-    "name": "Hastings & St. Leonards CC Ascent of Battery Hill",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "1 miles | QHC/16",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/52815-hastings-st-leonards-cc-ascent-of-battery-hill",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-31T01:04:10.000Z"
-  },
-  {
-    "id": "87213afa",
+    "id": "47e692ad",
     "name": "Royal Dean Forest Cycle Club Club 1.59",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1.6 miles | UHC513 | Bigsweir",
+    "venue": "1.6 miles | Bigsweir",
     "postcode": null,
     "date": "2026-08-19",
     "start_time": "23:00",
@@ -221,11 +104,11 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
-    "id": "a52d471b",
+    "id": "c4d88ec0",
     "name": "Wrekinsport CC Club Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Telford and Wrekin | 1707 yards | D0/14 | Willomoor Bank Hill Climb",
+    "venue": "1707 yards | Willomoor Bank Hill Climb",
     "postcode": null,
     "date": "2026-08-19",
     "start_time": "23:00",
@@ -234,11 +117,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "4aeab439",
+    "id": "b28f17d4",
     "name": "Kildale Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "North Yorkshire | 1056 yards | THC35 | Kildale",
+    "venue": "1056 yards | Kildale",
     "postcode": null,
     "date": "2026-08-22",
     "start_time": "23:00",
@@ -247,11 +130,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "c49f5325",
+    "id": "13f91e34",
     "name": "Daneway Hill Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 862 yards | UHC42 | Daneway Hill",
+    "venue": "862 yards | Daneway Hill",
     "postcode": null,
     "date": "2026-08-23",
     "start_time": "23:00",
@@ -260,11 +143,24 @@
     "last_updated": "2026-07-31T01:04:10.000Z"
   },
   {
-    "id": "3e5e6cad",
+    "id": "b07b8012",
+    "name": "MFCC Glendoe Hill Climb (Regional Championship Event)",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Fort Augustus Village Hall, Highland",
+    "postcode": null,
+    "date": "2026-08-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/332210/mfcc-glendoe-hill-climb-regional-championship-event",
+    "source": "Google Sheet",
+    "last_updated": "2026-03-02T03:15:25.000Z"
+  },
+  {
+    "id": "57b1129e",
     "name": "Sleaford Wheelers Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Lincolnshire | 1338 yards | CHC/1 | Leadenham",
+    "venue": "1338 yards | Leadenham",
     "postcode": null,
     "date": "2026-08-23",
     "start_time": "23:00",
@@ -273,11 +169,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "49606427",
+    "id": "06ec9f23",
     "name": "BMCC Ditchling Beacon Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "East Sussex | 1 miles | GH/90 | Ditchling Beacon",
+    "venue": "1 miles | Ditchling Beacon",
     "postcode": null,
     "date": "2026-08-25",
     "start_time": "23:00",
@@ -299,11 +195,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "0484585c",
+    "id": "ebd6238c",
     "name": "HRC Hill Climb - Round 21",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 1 miles | PHC91 | Knights Hill",
+    "venue": "1 miles | Knights Hill",
     "postcode": null,
     "date": "2026-08-25",
     "start_time": "23:00",
@@ -312,11 +208,11 @@
     "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
-    "id": "19835e8b",
+    "id": "230764d0",
     "name": "ERC Hill Climb Series - Arthurs Seat",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "Edinburgh | 1390 yards | WE01/03 | Arthurs Seat",
+    "venue": "1390 yards | Arthurs Seat",
     "postcode": null,
     "date": "2026-08-26",
     "start_time": "23:00",
@@ -325,11 +221,11 @@
     "last_updated": "2026-08-02T01:04:08.000Z"
   },
   {
-    "id": "fa6abe72",
+    "id": "559c68f6",
     "name": "Fife Midweek 19 - Hill Climb",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "2 miles | WE02/01 | Falkland Hill Climb",
+    "venue": "WE02/01 | Falkland Hill Climb",
     "postcode": null,
     "date": "2026-08-26",
     "start_time": "23:00",
@@ -338,11 +234,24 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
-    "id": "da3cc5d5",
+    "id": "161e4faf",
+    "name": "Hastings & St. Leonards CC Ascent of Battery Hill",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "1 miles | QHC/16",
+    "postcode": null,
+    "date": "2026-08-26",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52815-hastings-st-leonards-cc-ascent-of-battery-hill",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-31T01:04:10.000Z"
+  },
+  {
+    "id": "c91d6dda",
     "name": "Crawley Wheelers Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 2 miles | GH/85",
+    "venue": "2 miles | GH/85",
     "postcode": null,
     "date": "2026-08-27",
     "start_time": "23:00",
@@ -351,11 +260,11 @@
     "last_updated": "2026-03-24T10:47:10.000Z"
   },
   {
-    "id": "1c12b5bb",
+    "id": "e3a3d1fc",
     "name": "Dursley Road Club Club Stouts Hill - Round 1",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1742 yards | UH15 | Stouts Hill Climb",
+    "venue": "1742 yards | Stouts Hill Climb",
     "postcode": null,
     "date": "2026-08-27",
     "start_time": "23:00",
@@ -364,11 +273,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "f22067fa",
+    "id": "2c922aac",
     "name": "Five Chimneys Hill Climb Course Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Shropshire | 1496 yards | D0/20 | Five Chimneys Hill Climb Course",
+    "venue": "1496 yards | Five Chimneys Hill Climb Course",
     "postcode": null,
     "date": "2026-08-27",
     "start_time": "23:00",
@@ -377,11 +286,24 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "a486e5b8",
+    "id": "b5b0419e",
+    "name": "Manchester Wheelers Club 1.7",
+    "type": "Hill Climb",
+    "region": "North West",
+    "venue": "1.7 miles | Brickworks",
+    "postcode": null,
+    "date": "2026-08-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52848-manchester-wheelers-club-1-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-10T01:04:09.000Z"
+  },
+  {
+    "id": "3e2f6b7c",
     "name": "Stouts Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1742 yards | UH15 | Stouts Hill Climb",
+    "venue": "1742 yards | Stouts Hill Climb",
     "postcode": null,
     "date": "2026-08-29",
     "start_time": "23:00",
@@ -390,11 +312,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "efb45080",
+    "id": "f56405d5",
     "name": "Billy Lane Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "County Durham | 1 miles | THC40 | Billy Lane",
+    "venue": "1 miles | Billy Lane",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "23:00",
@@ -403,11 +325,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0a77e85e",
+    "id": "8b6a1f8f",
     "name": "Farnham RC Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1 miles | HHC018",
+    "venue": "1 miles | HHC018",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "23:00",
@@ -416,11 +338,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "350ce908",
+    "id": "8b6a3636",
     "name": "BMCC Mill Hill Hill Climb #2",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 3 miles | GH/94 | Mill Hill",
+    "venue": "3 miles | Mill Hill",
     "postcode": null,
     "date": "2026-09-01",
     "start_time": "23:00",
@@ -429,11 +351,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fc1426d0",
+    "id": "6fac039c",
     "name": "Chelmer/Ford CC Hill Climb",
     "type": "Hill Climb",
     "region": "Eastern",
-    "venue": "Essex | 810 yards | EH/07 | North Hill",
+    "venue": "810 yards | North Hill",
     "postcode": null,
     "date": "2026-09-01",
     "start_time": "23:00",
@@ -442,11 +364,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "7bf17b2b",
+    "id": "3db6bb9b",
     "name": "Gloucester City Cycling Club Portway Hillclimb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1320 yards | UHC73 | Portway",
+    "venue": "1320 yards | Portway",
     "postcode": null,
     "date": "2026-09-01",
     "start_time": "23:00",
@@ -455,11 +377,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "7700dde1",
+    "id": "b17c6283",
     "name": "Green Moor Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 1 miles | OHC17 | Green Moor",
+    "venue": "1 miles | Green Moor",
     "postcode": null,
     "date": "2026-09-01",
     "start_time": "23:00",
@@ -468,11 +390,11 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
-    "id": "d3e3deee",
+    "id": "204e87bb",
     "name": "Pontypool Road Cycling Club Club Round 20",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Torfaen Principal Area | 2 miles | RH51 - PLASCOED PONTYPOOL",
+    "venue": "2 miles | RH51 - PLASCOED PONTYPOOL",
     "postcode": null,
     "date": "2026-09-01",
     "start_time": "23:00",
@@ -481,11 +403,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "33e0ddac",
+    "id": "fd97e90c",
     "name": "Worcester St. Johns CC Club 1",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Worcestershire | 1 miles | KH43",
+    "venue": "1 miles | KH43",
     "postcode": null,
     "date": "2026-09-01",
     "start_time": "23:00",
@@ -494,11 +416,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "0c05747f",
+    "id": "09bfb436",
     "name": "Chippenham & District Wheelers Club Roberts Tankard - Bowden Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Wiltshire | 1.2 miles | UHC80 | Bowden Hill",
+    "venue": "1.2 miles | Bowden Hill",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "23:00",
@@ -507,11 +429,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "4139a4a4",
+    "id": "7a4e496f",
     "name": "ERC Hill Climb Series - Kaimes Road",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "Edinburgh | 757 yards | WE01/06 | Kaimes Road Hill Climb",
+    "venue": "757 yards | Kaimes Road Hill Climb",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "23:00",
@@ -520,11 +442,11 @@
     "last_updated": "2026-08-02T01:04:08.000Z"
   },
   {
-    "id": "78a77e3b",
+    "id": "8fc13344",
     "name": "Merthyr CC Club 0.7",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Merthyr Tydfil County Borough | 2.5 miles | RCHC/23P | Vaynor Rd - Pontsticill",
+    "venue": "2.5 miles | Vaynor Rd - Pontsticill",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "23:00",
@@ -533,11 +455,11 @@
     "last_updated": "2026-03-23T09:23:07.000Z"
   },
   {
-    "id": "eef982f4",
+    "id": "072322ec",
     "name": "Shropshire CCA Club Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Shropshire | 845 yards | D3HC/5 | Homer Bank Hill Climb",
+    "venue": "845 yards | Homer Bank Hill Climb",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "23:00",
@@ -546,11 +468,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "6df7e944",
+    "id": "0a8757f6",
     "name": "Ystwyth CC Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Ceredigion | 1637 yards | D0/19 | Clarach Bay Hill Climb B4572",
+    "venue": "1637 yards | Clarach Bay Hill Climb B4572",
     "postcode": null,
     "date": "2026-09-02",
     "start_time": "23:00",
@@ -559,11 +481,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "f0072eaf",
+    "id": "18631262",
     "name": "Dursley Road Club Club Stouts Hill - Round 2",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1742 yards | UH15 | Stouts Hill Climb",
+    "venue": "1742 yards | Stouts Hill Climb",
     "postcode": null,
     "date": "2026-09-03",
     "start_time": "23:00",
@@ -572,11 +494,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "b90f9cfa",
+    "id": "d2896f8b",
     "name": "Stratford Cycling Club Club 1.3",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1.3 miles | KH28 | Saintbury Hill",
+    "venue": "1.3 miles | Saintbury Hill",
     "postcode": null,
     "date": "2026-09-03",
     "start_time": "23:00",
@@ -585,11 +507,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "5ffceb2c",
+    "id": "538fbdbc",
     "name": "Wickham League - Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1056 yards | P829HC",
+    "venue": "1056 yards | P829HC",
     "postcode": "P829HC",
     "date": "2026-09-03",
     "start_time": "23:00",
@@ -598,11 +520,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "f59860da",
+    "id": "a4daecc8",
     "name": "Burton Dassett Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Warwickshire | 1 miles | KH5",
+    "venue": "1 miles | KH5",
     "postcode": null,
     "date": "2026-09-05",
     "start_time": "23:00",
@@ -611,11 +533,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "1fbc83c5",
+    "id": "41189e92",
     "name": "Farnborough & Camberley CC Club Hill Climb TT",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1672 yards | HHC018a",
+    "venue": "1672 yards | HHC018a",
     "postcode": null,
     "date": "2026-09-05",
     "start_time": "23:00",
@@ -624,11 +546,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "ef9f7b4c",
+    "id": "2a6f7184",
     "name": "Goyt Lane Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 1.2 miles | J9/17 | Goyt Lane",
+    "venue": "1.2 miles | Goyt Lane",
     "postcode": null,
     "date": "2026-09-05",
     "start_time": "23:00",
@@ -637,11 +559,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "db0375b6",
+    "id": "24113167",
     "name": "Burnt Dick Hill - Hill Climb",
     "type": "Hill Climb",
     "region": "Eastern",
-    "venue": "Essex | 722 yards | EH/18 | Burnt Dick Hill",
+    "venue": "722 yards | Burnt Dick Hill",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -650,11 +572,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "7ed2207c",
+    "id": "9905e7cc",
     "name": "North Tyneside Riders - Winter's Gibbet Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "Northumberland | 2.3 miles | MH9 | Winters Gibbet",
+    "venue": "2.3 miles | Winters Gibbet",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -663,11 +585,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "27fd09e0",
+    "id": "b82f400a",
     "name": "Reservoir Road, Ulley Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 704 yards | OHC24 | Reservior Road, Ulley",
+    "venue": "704 yards | Reservior Road, Ulley",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -676,11 +598,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "187bb86f",
+    "id": "56c6912d",
     "name": "S/Yarcombe - Andy Mapson memorial",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Devon | 1 miles | S/YARCOMBE",
+    "venue": "1 miles | S/YARCOMBE",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -689,11 +611,11 @@
     "last_updated": "2026-07-19T01:04:08.000Z"
   },
   {
-    "id": "66438ed8",
+    "id": "195372cd",
     "name": "Sychnant Pass Hill Climb Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Conwy Principal Area | 1003 yards | D600/5 | Sychnant Pass Hill Climb",
+    "venue": "1003 yards | Sychnant Pass Hill Climb",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -702,11 +624,11 @@
     "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
-    "id": "1c436f3e",
+    "id": "e82263e9",
     "name": "UH23 The Ridge Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1.1 miles | UH23 | Cockercombe Hill",
+    "venue": "1.1 miles | Cockercombe Hill",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -715,11 +637,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "332c2995",
+    "id": "1428983d",
     "name": "Watership Down Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 845 yards | HHC009",
+    "venue": "845 yards | HHC009",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -728,11 +650,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "15016450",
+    "id": "16d6ddd2",
     "name": "Wolf Cycles Great Dunn Fell Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Cumbria | 4 miles | L826 | Great Dun Fell",
+    "venue": "4 miles | Great Dun Fell",
     "postcode": null,
     "date": "2026-09-06",
     "start_time": "23:00",
@@ -741,11 +663,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "4d67bd99",
+    "id": "cecafb25",
     "name": "Chepstow Cycling Club Club 0.54",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 950 yards | RH55 | Castleford",
+    "venue": "950 yards | Castleford",
     "postcode": null,
     "date": "2026-09-08",
     "start_time": "23:00",
@@ -754,11 +676,11 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
-    "id": "7cdf94a9",
+    "id": "e0da2917",
     "name": "Dambusters Club 17 - Round 13",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Powys | 3.2 miles | RH54 - CWMDAUDDWR",
+    "venue": "3.2 miles | RH54 - CWMDAUDDWR",
     "postcode": null,
     "date": "2026-09-10",
     "start_time": "23:00",
@@ -780,11 +702,11 @@
     "last_updated": "2026-04-05T01:04:08.000Z"
   },
   {
-    "id": "118151ec",
+    "id": "b6e93ad9",
     "name": "Peachfield Road Hill Climb - Great Malvern Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Worcestershire | 1338 yards | KH48 | Peachfield Road Hill Climb - Great Malvern",
+    "venue": "1338 yards | Peachfield Road Hill Climb - Great Malvern",
     "postcode": null,
     "date": "2026-09-10",
     "start_time": "23:00",
@@ -793,11 +715,11 @@
     "last_updated": "2026-04-08T01:04:11.000Z"
   },
   {
-    "id": "44055a77",
+    "id": "1ea46775",
     "name": "Port Talbot Whs CC 2026 Club Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Neath Port Talbot | 1.6 miles | RH/9 | Neath Bank",
+    "venue": "1.6 miles | Neath Bank",
     "postcode": null,
     "date": "2026-09-10",
     "start_time": "23:00",
@@ -806,11 +728,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "9923d49d",
+    "id": "bd13ac13",
     "name": "AeroCoach Gravel Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Herefordshire | 1.3 miles | KH47/BR",
+    "venue": "1.3 miles | KH47/BR",
     "postcode": null,
     "date": "2026-09-12",
     "start_time": "23:00",
@@ -819,11 +741,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "a7661637",
+    "id": "4e2ef599",
     "name": "Brickworks Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Cheshire East | 1.7 miles | J9/8 | Brickworks",
+    "venue": "1.7 miles | Brickworks",
     "postcode": null,
     "date": "2026-09-12",
     "start_time": "23:00",
@@ -832,11 +754,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "f3a0353b",
+    "id": "9bd5fda7",
     "name": "Cowley Road Condors CC Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Oxfordshire | 1056 yards | HHC021",
+    "venue": "1056 yards | HHC021",
     "postcode": null,
     "date": "2026-09-12",
     "start_time": "23:00",
@@ -845,11 +767,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "55628958",
+    "id": "93acfdc2",
     "name": "Protech Velo - Paradise Bank",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "County Durham | 1 miles | MH26 | Paradise Bank",
+    "venue": "1 miles | Paradise Bank",
     "postcode": null,
     "date": "2026-09-12",
     "start_time": "23:00",
@@ -858,11 +780,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1e1d30b1",
+    "id": "5dce5a08",
     "name": "Sir William Hill Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 1.3 miles | OHC25 | Sir William Hill",
+    "venue": "1.3 miles | Sir William Hill",
     "postcode": null,
     "date": "2026-09-12",
     "start_time": "23:00",
@@ -871,11 +793,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "e2d99bd9",
+    "id": "4ce4ff59",
     "name": "Wotton Hill Climb Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1.4 miles | UH14 | Wotton Hill Climb",
+    "venue": "1.4 miles | Wotton Hill Climb",
     "postcode": null,
     "date": "2026-09-12",
     "start_time": "23:00",
@@ -884,11 +806,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0d42f7d2",
+    "id": "1bf8ab6f",
     "name": "Border City Wheeler's CC Hartside Moor Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Cumbria | 5.3 miles | L804 | Hartside Moor",
+    "venue": "5.3 miles | Hartside Moor",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -897,11 +819,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0608d69e",
+    "id": "a488c488",
     "name": "Cragg Vale Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "West Yorkshire | 5 miles | V9916 | Cragg Vale",
+    "venue": "5 miles | Cragg Vale",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -910,11 +832,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "3982b38b",
+    "id": "a51ac329",
     "name": "Crowcombe Hill Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1056 yards | UH22 | Crowcombe Hill",
+    "venue": "1056 yards | Crowcombe Hill",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -923,11 +845,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0a60025e",
+    "id": "9171452b",
     "name": "Green Moor Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 1 miles | OHC17 | Green Moor",
+    "venue": "1 miles | Green Moor",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -936,11 +858,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "42818a04",
+    "id": "cb4e96c5",
     "name": "Len Pascoe Memorial Mt. Wellington Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Cornwall | 1373 yards | Mt. Wellington",
+    "venue": "1373 yards | Mt. Wellington",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -949,11 +871,11 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
-    "id": "b551ee8b",
+    "id": "7c7382f0",
     "name": "Mid Devon CC - Widecombe Hill Climb (event 2)",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Devon | 1672 yards | Widecombe",
+    "venue": "1672 yards | Widecombe",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -962,11 +884,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fdd3b2cc",
+    "id": "f628b24e",
     "name": "Mid Devon CC Haytor Climb (event 1)",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Devon | 3.2 miles | S20 | Haytor",
+    "venue": "3.2 miles | Haytor",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -975,11 +897,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1b50d7e0",
+    "id": "e6443dbb",
     "name": "Nebo Road Hillclimb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Conwy Principal Area | 3 miles | D600/3 | Nebo Hill Climb",
+    "venue": "3 miles | Nebo Hill Climb",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -988,11 +910,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "8ca73e78",
+    "id": "301a547b",
     "name": "Streatley Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Berkshire | 880 yards | HHC005",
+    "venue": "880 yards | HHC005",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
@@ -1001,11 +923,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "7ac69267",
+    "id": "6198989e",
     "name": "ERC Hill Climb Series - The Yak",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "East Lothian Council | 2.2 miles | WE02/02 | Yak Hill Climb",
+    "venue": "2.2 miles | Yak Hill Climb",
     "postcode": null,
     "date": "2026-09-16",
     "start_time": "23:00",
@@ -1014,11 +936,11 @@
     "last_updated": "2026-08-02T01:04:08.000Z"
   },
   {
-    "id": "9381328a",
+    "id": "5d91b7ec",
     "name": "Allen Valley Velo - Allendale",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "Northumberland | 2.4 miles | MH24 | Allendale",
+    "venue": "2.4 miles | Allendale",
     "postcode": null,
     "date": "2026-09-19",
     "start_time": "23:00",
@@ -1027,11 +949,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "89a79995",
+    "id": "6c5fce92",
     "name": "Bushcombe Lane Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Gloucestershire | 1338 yards | UH73 | Bushcombe Lane",
+    "venue": "1338 yards | Bushcombe Lane",
     "postcode": null,
     "date": "2026-09-19",
     "start_time": "23:00",
@@ -1040,11 +962,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "31119177",
+    "id": "ffd981ae",
     "name": "Kingston Wheelers John Bornhoft Memorial Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Surrey | 1 miles | GH/42 | Leith Hill",
+    "venue": "1 miles | Leith Hill",
     "postcode": null,
     "date": "2026-09-19",
     "start_time": "23:00",
@@ -1053,11 +975,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "b72f5b76",
+    "id": "1780dbbb",
     "name": "Mill Lee Road Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 528 yards | OHC18 | Mill Lee Road",
+    "venue": "528 yards | Mill Lee Road",
     "postcode": null,
     "date": "2026-09-19",
     "start_time": "23:00",
@@ -1066,11 +988,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fcdf593d",
+    "id": "803d6aa7",
     "name": "Pea Royd Lane Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 880 yards | OHC9 | Pea Royd Lane",
+    "venue": "880 yards | Pea Royd Lane",
     "postcode": null,
     "date": "2026-09-19",
     "start_time": "23:00",
@@ -1079,11 +1001,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "a26dd024",
+    "id": "bac5621b",
     "name": "Ashurst Beacon Hill Climb Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Lancashire | 1.7 miles | D11/0 | Ashurst Beacon Hill Climb",
+    "venue": "1.7 miles | Ashurst Beacon Hill Climb",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1092,11 +1014,11 @@
     "last_updated": "2026-03-31T07:30:47.000Z"
   },
   {
-    "id": "f42ac3c3",
+    "id": "fd5a3dab",
     "name": "Brereton Whs Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Staffordshire | 1 miles | KH21",
+    "venue": "1 miles | KH21",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1105,11 +1027,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "34452bc0",
+    "id": "3aeb1f6b",
     "name": "Cancelled - moved to 18th October",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Devon | 1.2 miles | Stoke Hill",
+    "venue": "1.2 miles | Stoke Hill",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1118,11 +1040,24 @@
     "last_updated": "2026-02-27T09:04:22.000Z"
   },
   {
-    "id": "cced0a8c",
+    "id": "5810fe31",
+    "name": "Ferryhill Wheelers hill climb",
+    "type": "Hill Climb",
+    "region": "Yorkshire & Humber",
+    "venue": "THC21 | Quarrington Hill",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/51158-ferryhill-wheelers-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-06-15T01:04:08.000Z"
+  },
+  {
+    "id": "7b447694",
     "name": "Gravesend CC Club 1",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Kent | 1 miles | QHC/1 | Exdown Hill",
+    "venue": "1 miles | Exdown Hill",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1131,11 +1066,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "ff30714e",
+    "id": "03fef8f7",
     "name": "Hardwick Hall Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 704 yards | OHC11 | Hardwick Hall",
+    "venue": "704 yards | Hardwick Hall",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1144,11 +1079,11 @@
     "last_updated": "2026-07-15T01:04:09.000Z"
   },
   {
-    "id": "f32f6a62",
+    "id": "12f757b5",
     "name": "Lakes Road Club The Struggle Hill Climb (NLTTA Championship)",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Cumbria | 2.7 miles | L827 | The Struggle",
+    "venue": "2.7 miles | The Struggle",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1157,11 +1092,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "a75a7959",
+    "id": "1bccbec4",
     "name": "Leamington C & AC Club Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Warwickshire | 1 miles | KH6",
+    "venue": "1 miles | KH6",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1183,11 +1118,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "6098f02b",
+    "id": "e194a355",
     "name": "Porlock Main Road Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1.6 miles | UH18 | Porlock Hill",
+    "venue": "1.6 miles | Porlock Hill",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1196,11 +1131,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "7e5374cb",
+    "id": "3883db71",
     "name": "Porlock Toll Road Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 4.1 miles | UH10 | Porlock Toll Road",
+    "venue": "4.1 miles | Porlock Toll Road",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1209,24 +1144,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "d4d79ed8",
-    "name": "Quarrington Hill Hill Climb",
-    "type": "Hill Climb",
-    "region": "Yorkshire & Humber",
-    "venue": "THC21 | Quarrington Hill",
-    "postcode": null,
-    "date": "2026-09-20",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/51158-quarrington-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-15T01:04:08.000Z"
-  },
-  {
-    "id": "c3256e2e",
+    "id": "9901e4eb",
     "name": "Redbridge CC Banks Lane Hill Climb",
     "type": "Hill Climb",
     "region": "Eastern",
-    "venue": "Essex | 1496 yards | EH/01 | Banks Lane",
+    "venue": "1496 yards | Banks Lane",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1235,11 +1157,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "babcfa8c",
+    "id": "41097378",
     "name": "South Shields Velo CC (Club Members Only)",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "Tyne and Wear | 1214 yards | MH3 | Shanky Bank",
+    "venue": "1214 yards | Shanky Bank",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1248,11 +1170,11 @@
     "last_updated": "2026-06-01T01:04:12.000Z"
   },
   {
-    "id": "c4a62fa4",
+    "id": "0efc5e1a",
     "name": "Walbury Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Berkshire | 1.2 miles | HHC020A",
+    "venue": "1.2 miles | HHC020A",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1261,11 +1183,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1bb39489",
+    "id": "7a0a2b0b",
     "name": "Winwood Heath Road Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Worcestershire | 1 miles | KH12 | Winwood Heath Road",
+    "venue": "1 miles | Winwood Heath Road",
     "postcode": null,
     "date": "2026-09-20",
     "start_time": "23:00",
@@ -1274,11 +1196,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "8db16d13",
+    "id": "5423302a",
     "name": "Droitwich Cycling Club Club Hillclimb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Worcestershire | 1 miles | KH43",
+    "venue": "1 miles | KH43",
     "postcode": null,
     "date": "2026-09-22",
     "start_time": "23:00",
@@ -1287,11 +1209,11 @@
     "last_updated": "2026-03-18T17:39:48.000Z"
   },
   {
-    "id": "9e13373d",
+    "id": "24d3b661",
     "name": "ERC Hill Climb Series - Flotterstone",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "Midlothian | 3.5 miles | WE03/01 | Flotterstone Hill Climb",
+    "venue": "3.5 miles | Flotterstone Hill Climb",
     "postcode": null,
     "date": "2026-09-23",
     "start_time": "23:00",
@@ -1300,11 +1222,11 @@
     "last_updated": "2026-08-02T01:04:08.000Z"
   },
   {
-    "id": "18565efc",
+    "id": "586ed629",
     "name": "Addiscombe CC Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Surrey | 1 miles | GH/38",
+    "venue": "1 miles | GH/38",
     "postcode": null,
     "date": "2026-09-26",
     "start_time": "23:00",
@@ -1313,11 +1235,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "96fad5a5",
+    "id": "07185305",
     "name": "Bowden Hill Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Wiltshire | 1.2 miles | UH80 | Bowden Hill",
+    "venue": "1.2 miles | Bowden Hill",
     "postcode": null,
     "date": "2026-09-26",
     "start_time": "23:00",
@@ -1326,11 +1248,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "04ad4266",
+    "id": "4c85c385",
     "name": "Redhill CC Toy's Hill Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Kent | 1.8 miles | GH/30 | Toy's Hill",
+    "venue": "1.8 miles | Toy's Hill",
     "postcode": null,
     "date": "2026-09-26",
     "start_time": "23:00",
@@ -1339,11 +1261,24 @@
     "last_updated": "2026-07-05T01:04:08.000Z"
   },
   {
-    "id": "c9321828",
+    "id": "eef04523",
+    "name": "The Logie Kirk Hill Climb Inc. Scottish National and Scottish Student Championships",
+    "type": "Hill Climb",
+    "region": "Scotland",
+    "venue": "Logie Kirk, Stirlingshire",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337946/the-logie-kirk-hill-climb-inc-scottish-national-and-scottish-student-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-07T01:15:24.000Z"
+  },
+  {
+    "id": "99e8d0fc",
     "name": "Velo Club Cumbria Whinlatter Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Cumbria | 1.7 miles | L824 | Whinlatter",
+    "venue": "1.7 miles | Whinlatter",
     "postcode": null,
     "date": "2026-09-26",
     "start_time": "23:00",
@@ -1352,11 +1287,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "9f532e62",
+    "id": "f224cecf",
     "name": "Birmingham Midland Maxstoke Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Warwickshire | 1 miles | KH32/1.4",
+    "venue": "1 miles | KH32/1.4",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1365,11 +1300,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "c90cb32d",
+    "id": "b0638ac2",
     "name": "Green Moor Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 1 miles | OHC17 | Green Moor",
+    "venue": "1 miles | Green Moor",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1378,11 +1313,11 @@
     "last_updated": "2026-04-10T01:04:09.000Z"
   },
   {
-    "id": "ade1ed83",
+    "id": "a2423134",
     "name": "GS Metro - Hedley On The Hill",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "Northumberland | 1.1 miles | MH11 | Hedley On The Hill",
+    "venue": "1.1 miles | Hedley On The Hill",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1391,11 +1326,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "a842bcb8",
+    "id": "6cc44159",
     "name": "Ingleby Bank Hill Climb (Teesside District & VTTA North Championship)",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "North Yorkshire | 1549 yards | THC33 | Clay Bank",
+    "venue": "1549 yards | Clay Bank",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1404,11 +1339,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1697ba3b",
+    "id": "b0927203",
     "name": "Jim Forbes Memorial Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 880 yards | J9/1 | Peaslows",
+    "venue": "880 yards | Peaslows",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1417,11 +1352,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "544c9622",
+    "id": "adff44ba",
     "name": "Kettering CC Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Leicestershire | 1 miles | NH9",
+    "venue": "1 miles | NH9",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1430,11 +1365,11 @@
     "last_updated": "2026-07-19T01:04:08.000Z"
   },
   {
-    "id": "6e43458c",
+    "id": "7a181613",
     "name": "Neal Doggest Memorial",
     "type": "Hill Climb",
     "region": "Scotland",
-    "venue": "Edinburgh | 1390 yards | WE01/03 | Arthurs Seat",
+    "venue": "1390 yards | Arthurs Seat",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1443,11 +1378,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "42c075b4",
+    "id": "3f535334",
     "name": "The Burway Hill Climb",
     "type": "Hill Climb",
     "region": "West Midlands",
-    "venue": "Shropshire | 1 miles | D0/5 | The Burway Open Hill Climb",
+    "venue": "1 miles | The Burway Open Hill Climb",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1456,11 +1391,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "4f9909b5",
+    "id": "81376247",
     "name": "The Ravenna Rumble on the Trundle",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 1 miles | PHC91 | Knights Hill",
+    "venue": "1 miles | Knights Hill",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1469,11 +1404,11 @@
     "last_updated": "2026-07-29T01:04:19.000Z"
   },
   {
-    "id": "9833dc88",
+    "id": "8149ead7",
     "name": "Topp Cycling Mountain TT",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Powys | 2.4 miles | RH11 | Llangynidr",
+    "venue": "2.4 miles | Llangynidr",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1482,11 +1417,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "17b096a0",
+    "id": "17426bf2",
     "name": "Wightlink CRT Charity Hill Climbs Championship",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Isle of Wight | 1654 yards | BLACKGANG A",
+    "venue": "1654 yards | BLACKGANG A",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1495,11 +1430,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "30c3050b",
+    "id": "8cb46a8d",
     "name": "Wigmore CC Open Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Kent | 1 miles | QHC/11 | Hollingbourne Hill",
+    "venue": "1 miles | Hollingbourne Hill",
     "postcode": null,
     "date": "2026-09-27",
     "start_time": "23:00",
@@ -1508,11 +1443,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "ff507261",
+    "id": "fdbfe535",
     "name": "Belmont Hill Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "North Somerset | 1408 yards | UH45 | Belmont Hill",
+    "venue": "1408 yards | Belmont Hill",
     "postcode": null,
     "date": "2026-10-03",
     "start_time": "23:00",
@@ -1521,11 +1456,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "b70a6a97",
+    "id": "2d514b08",
     "name": "Big Bear Bike's Rosedale Chimney Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "North Yorkshire | 1 miles | THC56",
+    "venue": "1 miles | THC56",
     "postcode": null,
     "date": "2026-10-03",
     "start_time": "23:00",
@@ -1534,11 +1469,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "2b5f2eb2",
+    "id": "a2ea0383",
     "name": "Mam Nick Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 1.3 miles | OHC10 | Mam Nick",
+    "venue": "1.3 miles | Mam Nick",
     "postcode": null,
     "date": "2026-10-03",
     "start_time": "23:00",
@@ -1547,11 +1482,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "5ded2f76",
+    "id": "36f0dcab",
     "name": "Otley CC Two Stage Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "North Yorkshire | 1.2 miles | V8910/V897 | Guise Cliff / Norwood Edge",
+    "venue": "1.2 miles | Guise Cliff / Norwood Edge",
     "postcode": null,
     "date": "2026-10-03",
     "start_time": "23:00",
@@ -1560,11 +1495,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "03640177",
+    "id": "64015680",
     "name": "Rossendale RC Crown Point Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Lancashire | 1 miles | L801 | Crown Point",
+    "venue": "1 miles | Crown Point",
     "postcode": null,
     "date": "2026-10-03",
     "start_time": "23:00",
@@ -1573,11 +1508,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "9f26458d",
+    "id": "43c5261d",
     "name": "Sussex CA Bostal Blaster",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 1 miles | GH/92 | Steyning Bostal",
+    "venue": "1 miles | Steyning Bostal",
     "postcode": null,
     "date": "2026-10-03",
     "start_time": "23:00",
@@ -1586,11 +1521,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "082b5144",
+    "id": "94cba8bc",
     "name": "Bay Hill Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Kent | 880 yards | QHC/8 | Bay Hill",
+    "venue": "880 yards | Bay Hill",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1599,11 +1534,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "9d9dbc35",
+    "id": "391eace8",
     "name": "Brighton Excelsior CC Steyning Bostal Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 1 miles | GH/92 | Steyning Bostal",
+    "venue": "1 miles | Steyning Bostal",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1612,11 +1547,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0e011eed",
+    "id": "7b8c42fc",
     "name": "Cycle Club Sudbury - Watson's Hill 'Falling Leaves' Hill Climb.",
     "type": "Hill Climb",
     "region": "Eastern",
-    "venue": "Suffolk | 528 yards | BHC/1 | Semer Hill",
+    "venue": "528 yards | Semer Hill",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1625,11 +1560,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "a575ccbd",
+    "id": "1f42e424",
     "name": "Denbies Vineyard (Dorking) Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Surrey | 1 miles | GH/45 | Denbies Vineyard (Dorking)",
+    "venue": "1 miles | Denbies Vineyard (Dorking)",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1638,11 +1573,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "9f111f1a",
+    "id": "0bcbff96",
     "name": "Gravesend CC Club 0.8",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Kent | 1408 yards | QHC/6 | Cobhambury",
+    "venue": "1408 yards | Cobhambury",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1651,11 +1586,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1624da35",
+    "id": "ba92ec18",
     "name": "Hemel Hempstead CC Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Buckinghamshire | 1.5 miles | FHC/4 - IVINGHOE BEACON",
+    "venue": "1.5 miles | FHC/4 - IVINGHOE BEACON",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1664,11 +1599,11 @@
     "last_updated": "2026-04-16T01:04:08.000Z"
   },
   {
-    "id": "8b7db50b",
+    "id": "4c0ae46b",
     "name": "Horseshoe Pass Hill Climb",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Denbighshire | 2.3 miles | DHC/1 | Horseshoe Pass Hill Climb A542",
+    "venue": "2.3 miles | Horseshoe Pass Hill Climb A542",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1677,11 +1612,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0c8e5948",
+    "id": "56eae927",
     "name": "Monsal Head Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 528 yards | OHC3 | Monsal Head",
+    "venue": "528 yards | Monsal Head",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1690,11 +1625,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1eac3925",
+    "id": "dc2b8353",
     "name": "North Hampshire RC Club Sydmonton Hil climb 0.5 Miles",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 845 yards | HHC009",
+    "venue": "845 yards | HHC009",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1703,11 +1638,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "ac80973d",
+    "id": "b2b2def4",
     "name": "North Road Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Bath and North East Somerset | 1338 yards | UH50 | North Road",
+    "venue": "1338 yards | North Road",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1716,11 +1651,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "f1ce0689",
+    "id": "3bc5c1f8",
     "name": "S/Lee Moor HC",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Plymouth | 3.8 miles | S/Lee Moor HC",
+    "venue": "3.8 miles | S/Lee Moor HC",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1729,11 +1664,24 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0d21954b",
+    "id": "812b5387",
+    "name": "Sowerby Sunday Club (SSC) Wass Bank HC",
+    "type": "Hill Climb",
+    "region": "North East",
+    "venue": "1707 yards | V392",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/44253-sowerby-sunday-club-ssc-wass-bank-hc",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-08T01:04:08.000Z"
+  },
+  {
+    "id": "f31375e5",
     "name": "Sunderland Clarion - Kibblesworth Bank",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "Tyne and Wear | 1 miles | MH20 | Kibblesworth Bank",
+    "venue": "1 miles | Kibblesworth Bank",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1742,11 +1690,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "95f22dab",
+    "id": "7a0a2e9d",
     "name": "Sussex Revolution Velo Club Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 2 miles | GH/85",
+    "venue": "2 miles | GH/85",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1755,11 +1703,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "4e0a02a1",
+    "id": "6013e196",
     "name": "The Zig-Zag Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Dorset | 2.4 miles | P ZIGZag HC | Zig-Zag",
+    "venue": "2.4 miles | Zig-Zag",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1768,11 +1716,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "d7defc08",
+    "id": "23a230e4",
     "name": "VC Walcot Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Bath and North East Somerset | 880 yards | UH35 | VC Walcot",
+    "venue": "880 yards | VC Walcot",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1781,11 +1729,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "50b5c945",
+    "id": "bfcee376",
     "name": "Welsh Championship HC - The Tumble",
     "type": "Hill Climb",
     "region": "Wales",
-    "venue": "Monmouthshire | 3 miles | RH/10X | The Tumble",
+    "venue": "3 miles | The Tumble",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1794,11 +1742,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "d3cf5db3",
+    "id": "d1cb767c",
     "name": "West Pennine RC Blackstone Edge Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Greater Manchester | 2 miles | L823 | Blackstone Edge",
+    "venue": "2 miles | Blackstone Edge",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1807,11 +1755,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "43134945",
+    "id": "556ed7c8",
     "name": "Yeovil Cycling Club Club Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1197 yards | UHC56 | Ham Hill",
+    "venue": "1197 yards | Ham Hill",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
@@ -1820,11 +1768,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "07b0e941",
+    "id": "d4d9ef5c",
     "name": "Butts Lane Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "East Sussex | 1144 yards | GH/96 | Butts Lane",
+    "venue": "1144 yards | Butts Lane",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
@@ -1833,24 +1781,24 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "e7a7c7d5",
-    "name": "Firle Beacon Hill Climb",
+    "id": "034f1114",
+    "name": "East Sussex CA Firle Beacon Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "East Sussex | 1 miles | GH/84 | Firle Beacon",
+    "venue": "1 miles | Firle Beacon",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42342-firle-beacon-hill-climb",
+    "url": "https://www.cyclingtimetrials.org.uk/events/42342-east-sussex-ca-firle-beacon-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "276a744d",
+    "id": "261b13f1",
     "name": "HHC050 Brightstone Lane Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Hampshire | 1531 yards | HHC050",
+    "venue": "1531 yards | HHC050",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
@@ -1859,11 +1807,11 @@
     "last_updated": "2026-03-12T08:07:08.000Z"
   },
   {
-    "id": "5f979a33",
+    "id": "8eca1e47",
     "name": "Hinton Hill Climb - Double Header with UH93",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "South Gloucestershire | 880 yards | UH90 | Hinton Hill",
+    "venue": "880 yards | Hinton Hill",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
@@ -1872,11 +1820,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "52c13262",
+    "id": "37607c1d",
     "name": "Jackson Bridge Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "West Yorkshire | 1602 yards | V9912 | Jackson Bridge",
+    "venue": "1602 yards | Jackson Bridge",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
@@ -1885,11 +1833,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "1831b8f4",
+    "id": "ffc632d7",
     "name": "Keith Abbott Memorial Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "West Yorkshire | 1496 yards | V9917 | Scotchman Lane",
+    "venue": "1496 yards | Scotchman Lane",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
@@ -1898,11 +1846,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "b3424aaf",
+    "id": "8534b1e3",
     "name": "Sand Hill Hill Climb - Double Header with UH90",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "South Gloucestershire | 1232 yards | UH93 | Sands Hill",
+    "venue": "1232 yards | Sands Hill",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
@@ -1911,11 +1859,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "f6d2a39a",
+    "id": "f6b0ee4a",
     "name": "Zurbaran Racing Wear Bank Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "County Durham | 1.1 miles | THC43",
+    "venue": "1.1 miles | THC43",
     "postcode": null,
     "date": "2026-10-10",
     "start_time": "23:00",
@@ -1924,11 +1872,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "e455c887",
+    "id": "0492cecf",
     "name": "BEC CC Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Surrey | 1 miles | GH/31 | Titsey Hill / White Lane",
+    "venue": "1 miles | Titsey Hill / White Lane",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -1937,11 +1885,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "e7c1de1b",
+    "id": "2cba5bd3",
     "name": "Bib Lane Hill Climb",
     "type": "Hill Climb",
     "region": "Yorkshire & Humber",
-    "venue": "South Yorkshire | 528 yards | OHC2 | Bib Lane",
+    "venue": "528 yards | Bib Lane",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -1950,11 +1898,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "e02025ea",
+    "id": "c90d175f",
     "name": "Catford Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "Kent | 1 miles | GH/32 | Yorks Hill",
+    "venue": "1 miles | Yorks Hill",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -1963,11 +1911,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "ca999677",
+    "id": "9d59d828",
     "name": "Lancashire Road Club The Rake Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Greater Manchester | 1408 yards | L812 | The Rake",
+    "venue": "1408 yards | The Rake",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -1976,11 +1924,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "a61b2d13",
+    "id": "f3ab5ef9",
     "name": "Outlands - Peth Bank Hill Climb",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "County Durham | 1654 yards | MH2 | Peth Bank",
+    "venue": "1654 yards | Peth Bank",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -1989,11 +1937,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0bda6943",
+    "id": "46b4d7ce",
     "name": "Palterton Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 1584 yards | OHC12 | Palterton",
+    "venue": "1584 yards | Palterton",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2002,11 +1950,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "a319a99e",
+    "id": "0e8351aa",
     "name": "Rugby Racing Cycling Club Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Northamptonshire | 1 miles | KH35",
+    "venue": "1 miles | KH35",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2015,11 +1963,11 @@
     "last_updated": "2026-03-05T08:44:32.000Z"
   },
   {
-    "id": "6a91ac37",
+    "id": "71b17f1a",
     "name": "Sid Valley CC - Peak Hill - Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Devon | 1.1 miles | Peak Hill",
+    "venue": "1.1 miles | Peak Hill",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2028,11 +1976,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "faa8182a",
+    "id": "9fe97a1c",
     "name": "Snake Pass Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 3.3 miles | J9/5 | Snake Pass",
+    "venue": "3.3 miles | Snake Pass",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2041,11 +1989,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "5da888b9",
+    "id": "db348dc8",
     "name": "The Shaftesbury Mott Street Hill Climb",
     "type": "Hill Climb",
     "region": "Eastern",
-    "venue": "Essex | 1021 yards | EH/11 | Mott Street",
+    "venue": "1021 yards | Mott Street",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2054,11 +2002,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "89875049",
+    "id": "590fd23e",
     "name": "University of Exeter Cycling Club Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Devon | 2.3 miles | S/MAMHEAD",
+    "venue": "2.3 miles | S/MAMHEAD",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2067,11 +2015,11 @@
     "last_updated": "2026-04-26T01:04:09.000Z"
   },
   {
-    "id": "d22000be",
+    "id": "7a0c859f",
     "name": "Westclose Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1.2 miles | UH20 | Westclose",
+    "venue": "1.2 miles | Westclose",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2080,11 +2028,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "c8a72fa3",
+    "id": "1bd7735c",
     "name": "Whiteleaf Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Buckinghamshire | 1408 yards | HHC036",
+    "venue": "1408 yards | HHC036",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2093,11 +2041,11 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
-    "id": "64d5aec8",
+    "id": "e3dc015e",
     "name": "Yeovil Cycling Club Club Hill Climb - Reserve Date",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 1197 yards | UHC56 | Ham Hill",
+    "venue": "1197 yards | Ham Hill",
     "postcode": null,
     "date": "2026-10-11",
     "start_time": "23:00",
@@ -2106,12 +2054,12 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "8528686e",
+    "id": "70135c85",
     "name": "Dean Hill Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "Wiltshire | 880 yards | P14HC | Dean Hill",
-    "postcode": "P14HC",
+    "venue": "880 yards | Dean Hill",
+    "postcode": null,
     "date": "2026-10-17",
     "start_time": "23:00",
     "url": "https://www.cyclingtimetrials.org.uk/events/45400-dean-hill-hill-climb",
@@ -2119,11 +2067,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "dc4df94b",
+    "id": "d7b435aa",
     "name": "Steyning - Titch Hill Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 3 miles | GH/99 | Steyning - Titch Hill",
+    "venue": "3 miles | Steyning - Titch Hill",
     "postcode": null,
     "date": "2026-10-17",
     "start_time": "23:00",
@@ -2132,11 +2080,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "c8578423",
+    "id": "3b722272",
     "name": "Steyning Bostal Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "West Sussex | 1 miles | GH/92 | Steyning Bostal",
+    "venue": "1 miles | Steyning Bostal",
     "postcode": null,
     "date": "2026-10-17",
     "start_time": "23:00",
@@ -2145,11 +2093,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "69855baf",
+    "id": "0609154c",
     "name": "Wytham Woods Hill Climb",
     "type": "Hill Climb",
     "region": "Central",
-    "venue": "Oxfordshire | 1 miles | HHC035",
+    "venue": "1 miles | HHC035",
     "postcode": null,
     "date": "2026-10-17",
     "start_time": "23:00",
@@ -2158,11 +2106,11 @@
     "last_updated": "2026-07-16T01:04:08.000Z"
   },
   {
-    "id": "6c047725",
+    "id": "fe9054ad",
     "name": "Bank Road Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 686 yards | AHC/6 | Bank Road",
+    "venue": "686 yards | Bank Road",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2171,11 +2119,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "26dc9fe2",
+    "id": "62d32a05",
     "name": "BCC Tom's Hill Hill Climb",
     "type": "Hill Climb",
     "region": "Eastern",
-    "venue": "Hertfordshire | 1 miles | FHC/2 | Tom's Hill",
+    "venue": "1 miles | Tom's Hill",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2184,11 +2132,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "0a6f717d",
+    "id": "6a851546",
     "name": "Burrington Combe Hill Climb - WTTA Series Finale",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "North Somerset | 1.9 miles | UH26 | Burrington Combe",
+    "venue": "1.9 miles | Burrington Combe",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2197,11 +2145,11 @@
     "last_updated": "2026-05-05T01:04:08.000Z"
   },
   {
-    "id": "be64497e",
+    "id": "c66add0d",
     "name": "Ditchling Beacon Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "East Sussex | 1 miles | GH/90 | Ditchling Beacon",
+    "venue": "1 miles | Ditchling Beacon",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2210,11 +2158,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "33e495dd",
+    "id": "bfd74df3",
     "name": "Exeter Wheelers - Stoke Hill - Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Devon | 1.2 miles | Stoke Hill",
+    "venue": "1.2 miles | Stoke Hill",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2223,11 +2171,11 @@
     "last_updated": "2026-04-10T01:04:09.000Z"
   },
   {
-    "id": "e0eae39b",
+    "id": "9ff857a8",
     "name": "Muckle Cycle Club - Prospect Hill",
     "type": "Hill Climb",
     "region": "North East",
-    "venue": "Northumberland | 1584 yards | MH21 | Prospect Hill",
+    "venue": "1584 yards | Prospect Hill",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2236,11 +2184,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "95c9a109",
+    "id": "4f318c84",
     "name": "North Lancashire RC Nick O Pendle Hill Climb",
     "type": "Hill Climb",
     "region": "North West",
-    "venue": "Lancashire | 1 miles | L806 | Nick O Pendle",
+    "venue": "1 miles | Nick O Pendle",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2249,11 +2197,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "332dce66",
+    "id": "00d57024",
     "name": "Riber Hill Climb",
     "type": "Hill Climb",
     "region": "East Midlands",
-    "venue": "Derbyshire | 1232 yards | AHC/1 | Riber",
+    "venue": "1232 yards | Riber",
     "postcode": null,
     "date": "2026-10-18",
     "start_time": "23:00",
@@ -2262,11 +2210,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "37b31df9",
+    "id": "9265e9de",
     "name": "Cambridge University CC Hill Climb",
     "type": "Hill Climb",
     "region": "Eastern",
-    "venue": "Cambridgeshire | 1355 yards | EH/13 | Worts Causeway",
+    "venue": "1355 yards | Worts Causeway",
     "postcode": null,
     "date": "2026-10-25",
     "start_time": "23:00",
@@ -2275,11 +2223,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "09ac8dae",
+    "id": "71900d5a",
     "name": "RTTC National Hill Climb Championship",
     "type": "Hill Climb",
     "region": "South West",
-    "venue": "Somerset | 4.1 miles | UH10 | Porlock Toll Road",
+    "venue": "4.1 miles | Porlock Toll Road",
     "postcode": null,
     "date": "2026-10-25",
     "start_time": "23:00",
