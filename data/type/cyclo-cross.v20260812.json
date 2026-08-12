@@ -1,44 +1,5 @@
 [
   {
-    "id": "a8163023",
-    "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Shrewsbury Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-08-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337392/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-16T15:41:10.000Z"
-  },
-  {
-    "id": "058d948e",
-    "name": "Cyclocross Reigate 2026",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Cyclo Cross Reigate, Surrey",
-    "postcode": null,
-    "date": "2026-08-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335679/cyclocross-reigate-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-07T01:15:24.000Z"
-  },
-  {
-    "id": "acac903a",
-    "name": "C&CCC Summer CX Training",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339163/cccc-summer-cx-training",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-30T01:15:25.000Z"
-  },
-  {
     "id": "a9db2e07",
     "name": "Middlesbrough Mega Cross Round 2",
     "type": "Cyclo Cross",
@@ -52,8 +13,8 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
-    "id": "e92554a6",
-    "name": "North East Summer Cross - Round 2 (Camperdown)",
+    "id": "8fbc2df7",
+    "name": "North East Summer Cross - Round 2 (Camperdown) (Cancelled)",
     "type": "Cyclo Cross",
     "region": "Scotland",
     "venue": "Camperdown Country Park Cycle Centre, Angus",
@@ -78,8 +39,8 @@
     "last_updated": "2026-06-16T15:41:10.000Z"
   },
   {
-    "id": "5db8899f",
-    "name": "Cyclopark Summer CX 2026",
+    "id": "7f92634e",
+    "name": "Cyclopark Summer CX 2026 (Cancelled)",
     "type": "Cyclo Cross",
     "region": "London & South East",
     "venue": "Cyclopark, Kent",
@@ -156,8 +117,8 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
-    "id": "e00802cf",
-    "name": "North East Summer Cross - Round 3 (Camperdown)",
+    "id": "9cc5bb35",
+    "name": "North East Summer Cross - Round 3 (Camperdown) (Cancelled)",
     "type": "Cyclo Cross",
     "region": "Scotland",
     "venue": "Camperdown Country Park Cycle Centre, Angus",
