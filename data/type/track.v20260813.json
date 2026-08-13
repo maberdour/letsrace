@@ -1,96 +1,5 @@
 [
   {
-    "id": "e4fb7aa3",
-    "name": "Brooks Cycles Track League 2026 #14",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Lyme Valley Stadium, Staffordshire",
-    "postcode": null,
-    "date": "2026-08-06",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333570/brooks-cycles-track-league-2026-14",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "edc14257",
-    "name": "Welwyn Track League 2026 #14",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-08-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333764/welwyn-track-league-2026-14",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "1b287bd7",
-    "name": "Condor Women's League - Round 5",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-08-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329741/condor-womens-league---round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "4df0cef0",
-    "name": "Reading Track League #13",
-    "type": "Track",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-08-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334325/reading-track-league-13",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "09f38bc2",
-    "name": "British Cycling Talent Pathway Track Development Centre - Manchester - Endurance #8",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-08-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332931/british-cycling-talent-pathway-track-development-centre---manchester----endurance-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "ef7028d6",
-    "name": "Convene Track League - Round 18",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329702/convene-track-league---round-18",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-25T03:15:26.000Z"
-  },
-  {
-    "id": "1a3ca6b2",
-    "name": "Brooks Cycles Track League 2026 #15",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Lyme Valley Stadium, Staffordshire",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333571/brooks-cycles-track-league-2026-15",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
     "id": "b4465a26",
     "name": "Welwyn Track League 2026 #15",
     "type": "Track",
@@ -520,6 +429,19 @@
     "last_updated": "2026-02-03T03:15:28.000Z"
   },
   {
+    "id": "c95b65a3",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #1",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339762/british-cycling-pathway-development-centre-track---lee-valley-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
     "id": "f36b3ab5",
     "name": "Monday Night Track League 2026 Round 14",
     "type": "Track",
@@ -663,6 +585,19 @@
     "last_updated": "2025-12-25T03:15:26.000Z"
   },
   {
+    "id": "c38ebf1b",
+    "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #5",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339848/british-cycling-pathway-development-centre-para-cycling-track---derby-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-13T01:15:26.000Z"
+  },
+  {
     "id": "c004a262",
     "name": "Monday Night Track League 2026 Round 16",
     "type": "Track",
@@ -676,6 +611,19 @@
     "last_updated": "2026-01-07T03:15:54.000Z"
   },
   {
+    "id": "11afdcda",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #2",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339763/british-cycling-pathway-development-centre-track---lee-valley-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
     "id": "3ebccc34",
     "name": "Monday Night Track League 2026 Round 17",
     "type": "Track",
@@ -687,6 +635,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330869/monday-night-track-league-2026-round-17",
     "source": "Google Sheet",
     "last_updated": "2026-01-07T03:15:54.000Z"
+  },
+  {
+    "id": "fd79fe2d",
+    "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #6",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339849/british-cycling-pathway-development-centre-para-cycling-track---derby-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-13T01:15:26.000Z"
   },
   {
     "id": "0aed4c9b",
@@ -767,6 +728,19 @@
     "last_updated": "2026-07-16T01:15:25.000Z"
   },
   {
+    "id": "d45752f6",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #3",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339764/british-cycling-pathway-development-centre-track---lee-valley-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
     "id": "ffafb267",
     "name": "Monday Night Track League 2026 Round 21",
     "type": "Track",
@@ -804,6 +778,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330874/monday-night-track-league-2026-round-22",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "b0d41992",
+    "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #7",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339850/british-cycling-pathway-development-centre-para-cycling-track---derby-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-13T01:15:26.000Z"
   },
   {
     "id": "b33ba8e8",
@@ -858,6 +845,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "4a18f7fa",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #4",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339766/british-cycling-pathway-development-centre-track---lee-valley-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
     "id": "7df0e1bf",
     "name": "Monday Night Track League 2026 Round 25",
     "type": "Track",
@@ -869,6 +869,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330877/monday-night-track-league-2026-round-25",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "b1b08d3f",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #5",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339767/british-cycling-pathway-development-centre-track---lee-valley-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
   },
   {
     "id": "e43e671d",
@@ -949,6 +962,58 @@
     "last_updated": "2026-05-12T01:15:24.000Z"
   },
   {
+    "id": "3ee00fdb",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #6",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339768/british-cycling-pathway-development-centre-track---lee-valley-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
+    "id": "357632ec",
+    "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #8",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2027-01-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339851/british-cycling-pathway-development-centre-para-cycling-track---derby-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-13T01:15:26.000Z"
+  },
+  {
+    "id": "11c4d2a5",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #7",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339769/british-cycling-pathway-development-centre-track---lee-valley-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
+    "id": "8ff536ad",
+    "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #9",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2027-02-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339852/british-cycling-pathway-development-centre-para-cycling-track---derby-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-13T01:15:26.000Z"
+  },
+  {
     "id": "577b5fe8",
     "name": "Monsters of Track - Round 4",
     "type": "Track",
@@ -962,6 +1027,19 @@
     "last_updated": "2026-05-12T01:15:24.000Z"
   },
   {
+    "id": "0fe885a3",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #8",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339770/british-cycling-pathway-development-centre-track---lee-valley-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
     "id": "b13a3535",
     "name": "Monsters of Track - Round 5",
     "type": "Track",
@@ -973,5 +1051,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/334789/monsters-of-track---round-5",
     "source": "Google Sheet",
     "last_updated": "2026-05-12T01:15:24.000Z"
+  },
+  {
+    "id": "b2ee7423",
+    "name": "British Cycling Pathway Development Centre Track - Lee Valley #9",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339772/british-cycling-pathway-development-centre-track---lee-valley-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
   }
 ]

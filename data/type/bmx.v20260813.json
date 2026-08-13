@@ -1,96 +1,5 @@
 [
   {
-    "id": "643af171",
-    "name": "Bath BMX Summer Series 2026 Round 5",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Bath BMX Track, BATH",
-    "postcode": null,
-    "date": "2026-08-06",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339159/bath-bmx-summer-series-2026-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-30T01:15:25.000Z"
-  },
-  {
-    "id": "ee67974e",
-    "name": "Bournemouth BMX SUmmer Formula Rd 4",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Bournemouth BMX Track, Hampshire",
-    "postcode": null,
-    "date": "2026-08-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338621/bournemouth-bmx-summer-formula-rd-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-16T01:15:25.000Z"
-  },
-  {
-    "id": "e814c8e9",
-    "name": "BMX East Summer Series 2026 Round 8",
-    "type": "BMX",
-    "region": "Central",
-    "venue": "Milton Keynes BMX Track, Milton Keynes",
-    "postcode": null,
-    "date": "2026-08-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334032/bmx-east-summer-series-2026-round-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-26T03:15:25.000Z"
-  },
-  {
-    "id": "905e2b80",
-    "name": "Braintree BMX RD14 2026 Summer Series",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Braintree BMX Track, Essex",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334518/braintree-bmx-rd14-2026-summer-series",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-17T17:35:04.000Z"
-  },
-  {
-    "id": "a9532510",
-    "name": "British Cycling Pathway Development Centre BMX XC - East Anglia Group #23",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339476/british-cycling-pathway-development-centre-bmx-xc---east-anglia-group--23",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-04T01:15:25.000Z"
-  },
-  {
-    "id": "01630fa7",
-    "name": "British Cycling Pathway Development Centre BMX XC - East Anglia Group 2 #24",
-    "type": "BMX",
-    "region": "Eastern",
-    "venue": "Peterborough BMX Track, PETERBOROUGH",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339477/british-cycling-pathway-development-centre-bmx-xc---east-anglia-group-2-24",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-04T01:15:25.000Z"
-  },
-  {
-    "id": "a4288ac4",
-    "name": "Centurions late Summer Series - R1",
-    "type": "BMX",
-    "region": "Scotland",
-    "venue": "Cumbernauld Centurions BMX Club, North Lanarkshire",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338946/centurions-late-summer-series---r1",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-24T01:15:25.000Z"
-  },
-  {
     "id": "e8508cb9",
     "name": "British Cycling Pathway Development Centre PLUS BMX - South Zone 1 25-26 #FF10",
     "type": "BMX",
@@ -104,6 +13,19 @@
     "last_updated": "2026-07-29T01:15:23.000Z"
   },
   {
+    "id": "72e0047e",
+    "name": "Flyers Fast Friday Round 3",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Telford Flyers BMX Club., Telford",
+    "postcode": null,
+    "date": "2026-08-14",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339703/flyers-fast-friday-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
     "id": "014ab1b4",
     "name": "British Cycling Pathway BMX SX RSR #3 South West 2026",
     "type": "BMX",
@@ -115,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339283/british-cycling-pathway-bmx-sx-rsr-3-south-west-2026",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "5a984e18",
+    "name": "Nuneaton BMX Round 3 2026 Series",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Nuneaton BMX Track, Warwickshire",
+    "postcode": null,
+    "date": "2026-08-15",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339438/nuneaton-bmx-round-3-2026-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-06T01:15:24.000Z"
   },
   {
     "id": "d5b9c790",
@@ -141,6 +76,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332043/british-cycling-pathway-development-centre-bmx---south-west-15-tiverton-bmx-club",
     "source": "Google Sheet",
     "last_updated": "2026-02-03T03:15:28.000Z"
+  },
+  {
+    "id": "f72e85e7",
+    "name": "Peterborough bmx club race RD5",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Peterborough BMX Track, PETERBOROUGH",
+    "postcode": null,
+    "date": "2026-08-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339548/peterborough-bmx-club-race-rd5",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-06T01:15:24.000Z"
   },
   {
     "id": "2faae687",
@@ -351,6 +299,19 @@
     "last_updated": "2026-07-09T01:15:26.000Z"
   },
   {
+    "id": "d587e572",
+    "name": "Nuneaton BMX Round 4 2026 Series",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Nuneaton BMX Track, Warwickshire",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339439/nuneaton-bmx-round-4-2026-series",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-06T01:15:24.000Z"
+  },
+  {
     "id": "329ddb45",
     "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 2",
     "type": "BMX",
@@ -362,6 +323,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/338387/fjbc-zetland-park-autumn-pump-track-series-2026-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-07-09T01:15:26.000Z"
+  },
+  {
+    "id": "51fa4208",
+    "name": "2026 Midlands Regional BMX Championships - Nuneaton",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Nuneaton BMX Track, Warwickshire",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338812/2026-midlands-regional-bmx-championships---nuneaton",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
+    "id": "60f93965",
+    "name": "BMX East Region Championship - Norwich",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Norwich Flyers BMX Track, Norfolk",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339551/bmx-east-region-championship---norwich",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-06T01:15:24.000Z"
   },
   {
     "id": "056834c4",
