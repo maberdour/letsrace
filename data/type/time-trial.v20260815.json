@@ -1,70 +1,5 @@
 [
   {
-    "id": "1871f577",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | Weston on the Green Airfield",
-    "postcode": null,
-    "date": "2026-08-11",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45749-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "92c661f0",
-    "name": "Westerley Cycling Club Wednesday Series 10 - Round 9",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "10 miles | Hillingdon Cycle Circuit",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45039-westerley-cycling-club-wednesday-series-10-round-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "46d46bb4",
-    "name": "Goodwood 7.6ml Time Trial League( 07yr-13yr)",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "7.6 miles | Goodwood Motor Circuit",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/42803-goodwood-7-6-ml-time-trial-league-07-yr-13-yr",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "e197e22f",
-    "name": "Goodwood Heritage Bikes & 10-mile Time Trial League",
-    "type": "Time Trial",
-    "region": "London & South East",
-    "venue": "10 miles | Goodwood Circuit",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46279-goodwood-heritage-bikes-10-mile-time-trial-league",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "f1d2647b",
-    "name": "Achnasheen 25 (incorporating Scottish National Championship) (Cancelled)",
-    "type": "Time Trial",
-    "region": "﻿Scotland",
-    "venue": "Garve Village Hall, Ross-Shire",
-    "postcode": null,
-    "date": "2026-08-16",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333108/achnasheen-25-incorporating-scottish-national-championship",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-28T03:15:25.000Z"
-  },
-  {
     "id": "01bb71b1",
     "name": "Bicester Millennium CC Club 10",
     "type": "Time Trial",
@@ -193,6 +128,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/45760-bicester-millennium-cc-club-10",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "8f670e3c",
+    "name": "PPYCC Youth Hill Climb",
+    "type": "Time Trial",
+    "region": "London & South East",
+    "venue": "Stanmer Park, Brighton",
+    "postcode": null,
+    "date": "2026-09-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339549/ppycc-youth-hill-climb-",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-15T01:15:24.000Z"
   },
   {
     "id": "a749c46d",
