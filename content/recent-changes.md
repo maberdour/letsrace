@@ -1,5 +1,9 @@
 # Recent Changes
 
+16 Aug - Fixed an issue with British Cycling Hill Climb listings
+
+09 Aug - Improved formatting of Time Trial event data
+
 07 Aug - Fixed issue with British Cycling Hill Climb events being listed on the Time Trials page. 
 
 23 Jul - Applied an exclusion field to handle events that organisers have incorrectly categorised as Youth events
