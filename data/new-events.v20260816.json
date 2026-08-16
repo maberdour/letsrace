@@ -289,7 +289,7 @@
     {
       "id": "8f670e3c",
       "name": "PPYCC Youth Hill Climb",
-      "type": "Time Trial",
+      "type": "Hill Climb",
       "region": "London & South East",
       "venue": "Stanmer Park, Brighton",
       "postcode": null,
@@ -313,7 +313,7 @@
       "last_updated": "2026-08-15T01:15:24.000Z"
     }
   ],
-  "last_build": "2026-08-16T03:09:20.346Z",
+  "last_build": "2026-08-16T14:34:25.870Z",
   "total_new_events": 24,
   "cutoff_date": "2026-08-09"
 }

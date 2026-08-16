@@ -728,6 +728,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "8f670e3c",
+    "name": "PPYCC Youth Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Stanmer Park, Brighton",
+    "postcode": null,
+    "date": "2026-09-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339549/ppycc-youth-hill-climb-",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-15T01:15:24.000Z"
+  },
+  {
     "id": "93acfdc2",
     "name": "Protech Velo - Paradise Bank",
     "type": "Hill Climb",
