@@ -1,49 +1,10 @@
 [
   {
-    "id": "cc5da27c",
-    "name": "Eastbourne Rovers CC Firle Beacon Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "1 miles | Firle Beacon",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/47136-eastbourne-rovers-cc-firle-beacon-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
-    "id": "66699cce",
-    "name": "Bynea Cycling Club Hill Climb Championship",
-    "type": "Hill Climb",
-    "region": "Wales",
-    "venue": "2 miles | RCHC/21T",
-    "postcode": null,
-    "date": "2026-08-14",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/49825-bynea-cycling-club-hill-climb-championship",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-18T17:39:48.000Z"
-  },
-  {
-    "id": "eb166d7c",
-    "name": "Birmingham Midland Cycling Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "1 miles | KH32/1.4",
-    "postcode": null,
-    "date": "2026-08-16",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/49565-birmingham-midland-cycling-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T08:31:13.000Z"
-  },
-  {
-    "id": "0784510e",
+    "id": "75992677",
     "name": "Epsom CC Club Hill Climb",
     "type": "Hill Climb",
     "region": "London & South East",
-    "venue": "1 miles | GH/41",
+    "venue": "1074 yards | GH/41",
     "postcode": null,
     "date": "2026-08-18",
     "start_time": "23:00",
@@ -286,6 +247,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "b5b0419e",
+    "name": "Manchester Wheelers Club 1.7",
+    "type": "Hill Climb",
+    "region": "North West",
+    "venue": "1.7 miles | Brickworks",
+    "postcode": null,
+    "date": "2026-08-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52848-manchester-wheelers-club-1-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-10T01:04:09.000Z"
+  },
+  {
     "id": "3e2f6b7c",
     "name": "Stouts Hill Climb",
     "type": "Hill Climb",
@@ -312,11 +286,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "8b6a1f8f",
+    "id": "4381e85e",
     "name": "Farnham RC Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "1 miles | HHC018",
+    "venue": "1672 yards | HHC018a",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "23:00",
@@ -754,6 +728,19 @@
     "last_updated": "2026-02-16T08:29:52.000Z"
   },
   {
+    "id": "8f670e3c",
+    "name": "PPYCC Youth Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Stanmer Park, Brighton",
+    "postcode": null,
+    "date": "2026-09-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339549/ppycc-youth-hill-climb-",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-15T01:15:24.000Z"
+  },
+  {
     "id": "93acfdc2",
     "name": "Protech Velo - Paradise Bank",
     "type": "Hill Climb",
@@ -856,6 +843,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/48566-len-pascoe-memorial-mt-wellington-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T09:04:22.000Z"
+  },
+  {
+    "id": "bca71707",
+    "name": "Lincoln Hill, Ironbridge Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "528 yards | Lincoln Hill, Ironbridge",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52846-lincoln-hill-ironbridge-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-09T01:04:08.000Z"
   },
   {
     "id": "7c7382f0",
@@ -1287,6 +1287,19 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "4f6ce3ba",
+    "name": "Clwb Beicio'r Bala Hill Climb 0.79",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "1390 yards | College Hill, Bala Hill Climb",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52855-clwb-beicior-bala-hill-climb-0-79",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-14T01:04:08.000Z"
+  },
+  {
     "id": "b0638ac2",
     "name": "Green Moor Hill Climb",
     "type": "Hill Climb",
@@ -1454,6 +1467,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42993-big-bear-bikes-rosedale-chimney-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "8a8f7f26",
+    "name": "Dulwich Paragon CC Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "1553 yards | GH/35",
+    "postcode": null,
+    "date": "2026-10-03",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52761-dulwich-paragon-cc-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-08T01:04:08.000Z"
   },
   {
     "id": "a2ea0383",
@@ -1831,6 +1857,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42769-keith-abbott-memorial-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "273967c0",
+    "name": "Melton Olympic CC Hill Climb",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "1302 yards | Terrace Hill",
+    "postcode": null,
+    "date": "2026-10-10",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/47657-melton-olympic-cc-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-14T01:04:08.000Z"
   },
   {
     "id": "8534b1e3",
