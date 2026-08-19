@@ -1,83 +1,5 @@
 [
   {
-    "id": "acac903a",
-    "name": "C&CCC Summer CX Training",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-08-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339163/cccc-summer-cx-training",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-30T01:15:25.000Z"
-  },
-  {
-    "id": "a9db2e07",
-    "name": "Middlesbrough Mega Cross Round 2",
-    "type": "Cyclo Cross",
-    "region": "North East",
-    "venue": "Middlesbrough Velodrome, Middlesbrough",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339287/middlesbrough-mega-cross-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-31T01:15:24.000Z"
-  },
-  {
-    "id": "8fbc2df7",
-    "name": "North East Summer Cross - Round 2 (Camperdown) (Cancelled)",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Camperdown Country Park Cycle Centre, Angus",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335671/north-east-summer-cross---round-2-camperdown",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-04T01:15:25.000Z"
-  },
-  {
-    "id": "7e939101",
-    "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Shrewsbury Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-08-14",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337393/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-16T15:41:10.000Z"
-  },
-  {
-    "id": "7f92634e",
-    "name": "Cyclopark Summer CX 2026 (Cancelled)",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-08-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336303/cyclopark-summer-cx-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-24T01:15:24.000Z"
-  },
-  {
-    "id": "55675cd9",
-    "name": "Cheltenham & County Cycling Clubs Summer CX Race 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-08-16",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334931/cheltenham--county-cycling-clubs-summer-cx-race-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-14T01:15:24.000Z"
-  },
-  {
     "id": "554687a4",
     "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
     "type": "Cyclo Cross",
@@ -91,8 +13,8 @@
     "last_updated": "2026-06-16T15:41:10.000Z"
   },
   {
-    "id": "232a73af",
-    "name": "Sotonia Summer CX Race #2",
+    "id": "4280004c",
+    "name": "Sotonia Summer CX Race #2 (Cancelled)",
     "type": "Cyclo Cross",
     "region": "South",
     "venue": "Southampton Sports Centre, Hampshire",
@@ -180,6 +102,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339165/challenge-tires-london-and-south-east-cx-league---round-01",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "d5e5fe93",
+    "name": "Springfield Cross - Eastern League 2026/27 Rd 1",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Springfield Hall Park, Chelmsford",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339335/springfield-cross---eastern-league-202627-rd-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-15T01:15:24.000Z"
   },
   {
     "id": "9ef10f9c",

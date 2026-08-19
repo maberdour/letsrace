@@ -1,18 +1,5 @@
 [
   {
-    "id": "9a541a80",
-    "name": "B-BUDDIES Summer Skills Challenge Round 3 (Cancelled)",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hicks Lodge Cycle Centre, Leicestershire",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337068/b-buddies-summer-skills-challenge-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-02T01:15:25.000Z"
-  },
-  {
     "id": "1a890333",
     "name": "B-BUDDIES Off-Road TT 10",
     "type": "MTB",
@@ -427,6 +414,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/336537/okeford-champs",
     "source": "Google Sheet",
     "last_updated": "2026-05-21T01:15:29.000Z"
+  },
+  {
+    "id": "67652fd7",
+    "name": "Poldice Downhill Race",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Poldice, Cornwall",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339953/poldice-downhill-race",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-18T01:15:24.000Z"
+  },
+  {
+    "id": "20eb227d",
+    "name": "Poldice Junior Downhill",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Poldice, Cornwall",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339954/poldice-junior-downhill",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-18T01:15:24.000Z"
   },
   {
     "id": "6d13b048",
