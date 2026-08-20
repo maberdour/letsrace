@@ -1,70 +1,5 @@
 [
   {
-    "id": "a9db2e07",
-    "name": "Middlesbrough Mega Cross Round 2",
-    "type": "Cyclo Cross",
-    "region": "North East",
-    "venue": "Middlesbrough Velodrome, Middlesbrough",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339287/middlesbrough-mega-cross-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-31T01:15:24.000Z"
-  },
-  {
-    "id": "8fbc2df7",
-    "name": "North East Summer Cross - Round 2 (Camperdown) (Cancelled)",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Camperdown Country Park Cycle Centre, Angus",
-    "postcode": null,
-    "date": "2026-08-13",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335671/north-east-summer-cross---round-2-camperdown",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-04T01:15:25.000Z"
-  },
-  {
-    "id": "7e939101",
-    "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Shrewsbury Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-08-14",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337393/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-16T15:41:10.000Z"
-  },
-  {
-    "id": "7f92634e",
-    "name": "Cyclopark Summer CX 2026 (Cancelled)",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Cyclopark, Kent",
-    "postcode": null,
-    "date": "2026-08-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336303/cyclopark-summer-cx-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-24T01:15:24.000Z"
-  },
-  {
-    "id": "55675cd9",
-    "name": "Cheltenham & County Cycling Clubs Summer CX Race 2026",
-    "type": "Cyclo Cross",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-08-16",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334931/cheltenham--county-cycling-clubs-summer-cx-race-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-14T01:15:24.000Z"
-  },
-  {
     "id": "554687a4",
     "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
     "type": "Cyclo Cross",
@@ -78,8 +13,8 @@
     "last_updated": "2026-06-16T15:41:10.000Z"
   },
   {
-    "id": "232a73af",
-    "name": "Sotonia Summer CX Race #2",
+    "id": "4280004c",
+    "name": "Sotonia Summer CX Race #2 (Cancelled)",
     "type": "Cyclo Cross",
     "region": "South",
     "venue": "Southampton Sports Centre, Hampshire",
@@ -169,6 +104,19 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "d5e5fe93",
+    "name": "Springfield Cross - Eastern League 2026/27 Rd 1",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Springfield Hall Park, Chelmsford",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339335/springfield-cross---eastern-league-202627-rd-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-15T01:15:24.000Z"
+  },
+  {
     "id": "9ef10f9c",
     "name": "WCC Summer Cyclocross Series Round 3",
     "type": "Cyclo Cross",
@@ -180,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/335729/wcc-summer-cyclocross-series-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-05-09T01:15:23.000Z"
+  },
+  {
+    "id": "993dbe33",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 1",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-09-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339854/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "0cb19c09",
@@ -208,6 +169,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "d6542df0",
+    "name": "CXNE 2026/27 Round 1",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Middlesbrough Sports Village, Middlesbrough",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338526/cxne-202627-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "6a3ff396",
     "name": "East Kent Cyclo Cross League Round 1 #SandwichTechCross - Tim Mountford Memorial",
     "type": "Cyclo Cross",
@@ -219,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338429/east-kent-cyclo-cross-league-round-1-sandwichtechcross---tim-mountford-memorial-",
     "source": "Google Sheet",
     "last_updated": "2026-07-18T01:15:24.000Z"
+  },
+  {
+    "id": "ccce23a2",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 2",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-09-15",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339857/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "799e28e0",
@@ -260,6 +247,32 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "47a2562d",
+    "name": "CXNE 2026/27 Round 2",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Caedmon School, North Yorkshire",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338527/cxne-202627-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "3bec2fc6",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 3",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-09-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339858/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "b802f20f",
     "name": "Autumn 2026 Nocturnal Cross Series Event 2",
     "type": "Cyclo Cross",
@@ -271,6 +284,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338302/autumn-2026-nocturnal-cross-series-event-2",
     "source": "Google Sheet",
     "last_updated": "2026-07-07T01:15:24.000Z"
+  },
+  {
+    "id": "ced967cb",
+    "name": "2026 Inch Park CX",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Inch Park - Edinburgh, Scotland",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338650/2026-inch-park-cx",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "0de7bce9",
@@ -299,6 +325,45 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "58169296",
+    "name": "CXNE 2026/27 Round 3",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Gypsies Green, Tyne and Wear",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338528/cxne-202627-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "dd4d4f41",
+    "name": "Loopy in Lovat",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Lovat Farm, Inverness-shire",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338622/loopy-in-lovat",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "667910ce",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 4",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-09-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339859/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "cd32c836",
     "name": "Challenge Tires London and South East CX League - Round 04",
     "type": "Cyclo Cross",
@@ -312,6 +377,32 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "acde0a50",
+    "name": "CXNE 2026/27 Round 4",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Hetton Lyons Country Park, Tyne and Wear",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338529/cxne-202627-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "04e05da8",
+    "name": "HUPcc Scottish Cyclocross Series R1: Muir of Ord",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Black Isle Showground, Muir of Ord",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338978/hupcc-scottish-cyclocross-series-r1-muir-of-ord",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "247a4d2d",
     "name": "Leicester Cyclo-Cross League Round 1: Leicester Forest CC",
     "type": "Cyclo Cross",
@@ -323,6 +414,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338943/leicester-cyclo-cross-league-round-1-leicester-forest-cc",
     "source": "Google Sheet",
     "last_updated": "2026-07-24T01:15:25.000Z"
+  },
+  {
+    "id": "d1078c09",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 5",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-10-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339860/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "6373c5c3",
@@ -364,6 +468,45 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "3ff4ef5b",
+    "name": "CXNE 2026/27 Round 5",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Thorp Academy, Ryton",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338530/cxne-202627-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "345b08e9",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 6",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-10-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339861/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "c089ccce",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 7",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-10-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339862/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "0590592c",
     "name": "Autumn 2026 Nocturnal Cross Series Event 4",
     "type": "Cyclo Cross",
@@ -390,6 +533,32 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "53fecbfb",
+    "name": "CXNE 2026/27 Round 6",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Kirkley Cycles, Northumberland",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338531/cxne-202627-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "5c25f736",
+    "name": "HUPcc Scottish Cyclocross Series Round 2: Camperdown Park",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Camperdown Country Park Cycle Centre, Angus",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336575/hupcc-scottish-cyclocross-series-round-2-camperdown-park",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "d0794142",
     "name": "Challenge Tires London and South East CX League - Round 07",
     "type": "Cyclo Cross",
@@ -401,6 +570,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/339171/challenge-tires-london-and-south-east-cx-league---round-07",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "e8ba7750",
+    "name": "CXNE 2026/27 Round 7",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Gypsies Green, Tyne and Wear",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338532/cxne-202627-round-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "f08bb5d9",
+    "name": "HUPcc Scottish Cyclocross Series R3",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Knockburn Loch & Outdoor Centre - Aberdeen, Scotland",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338980/hupcc-scottish-cyclocross-series-r3",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "04259fc5",
@@ -429,6 +624,32 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
+    "id": "dae7d3f2",
+    "name": "CXNE 2026/27 Round 8",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Kirkley Cycles, Northumberland",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338533/cxne-202627-round-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "873c1cf8",
+    "name": "HUPcc Scottish Cyclocross Series R4",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Chatelherault Country Park, Hamilton",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338981/hupcc-scottish-cyclocross-series-r4",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "bc9bb484",
     "name": "Challenge Tires London and South East CX League - Round 09",
     "type": "Cyclo Cross",
@@ -440,6 +661,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/339173/challenge-tires-london-and-south-east-cx-league---round-09",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "9a878ab8",
+    "name": "CXNE 2026/27 Round 9",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Gypsies Green, Tyne and Wear",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338534/cxne-202627-round-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "0f28e8a6",
+    "name": "HUPcc Scottish Cyclocross Championships (inc R5)",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Gartmore House, Stirling",
+    "postcode": null,
+    "date": "2026-12-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338982/hupcc-scottish-cyclocross-championships-inc-r5",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "58666eda",
@@ -479,6 +726,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/339174/challenge-tires-london-and-south-east-cx-league---round-10",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "fa05ac41",
+    "name": "HUPcc Scottish Cyclocross Series R6 - Irvine",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Irvine Beach Park, North Ayrshire",
+    "postcode": null,
+    "date": "2027-01-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338983/hupcc-scottish-cyclocross-series-r6---irvine",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "3ef48300",
+    "name": "HUPcc Scottish Cyclocross Series R7: Back to Bo'ness",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Bo'ness Foreshore, Falkirk",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338984/hupcc-scottish-cyclocross-series-r7-back-to-boness-",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "366c0b0a",
