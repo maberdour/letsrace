@@ -1,109 +1,5 @@
 [
   {
-    "id": "66699cce",
-    "name": "Bynea Cycling Club Hill Climb Championship",
-    "type": "Hill Climb",
-    "region": "Wales",
-    "venue": "2 miles | RCHC/21T",
-    "postcode": null,
-    "date": "2026-08-14",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/49825-bynea-cycling-club-hill-climb-championship",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-18T17:39:48.000Z"
-  },
-  {
-    "id": "eb166d7c",
-    "name": "Birmingham Midland Cycling Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "1 miles | KH32/1.4",
-    "postcode": null,
-    "date": "2026-08-16",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/49565-birmingham-midland-cycling-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T08:31:13.000Z"
-  },
-  {
-    "id": "0784510e",
-    "name": "Epsom CC Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "1 miles | GH/41",
-    "postcode": null,
-    "date": "2026-08-18",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/50073-epsom-cc-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:47:10.000Z"
-  },
-  {
-    "id": "79591f33",
-    "name": "Redditch Road & Path CC Club 1",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "1 miles | KH11",
-    "postcode": null,
-    "date": "2026-08-18",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/46683-redditch-road-path-cc-club-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T08:31:13.000Z"
-  },
-  {
-    "id": "1bef8f67",
-    "name": "C C Bexley - STANSTED HILL Hill Climb",
-    "type": "Hill Climb",
-    "region": "London & South East",
-    "venue": "1 miles | STANSTED HILL",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/43685-c-c-bexley-stansted-hill-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
-    "id": "bdd49690",
-    "name": "Fife Midweek 18 - Hill Climb",
-    "type": "Hill Climb",
-    "region": "Scotland",
-    "venue": "1 miles | WE01/04",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/48746-fife-midweek-18-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T09:04:22.000Z"
-  },
-  {
-    "id": "47e692ad",
-    "name": "Royal Dean Forest Cycle Club Club 1.59",
-    "type": "Hill Climb",
-    "region": "South",
-    "venue": "1.6 miles | Bigsweir",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/48556-royal-dean-forest-cycle-club-club-1-59",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T09:04:22.000Z"
-  },
-  {
-    "id": "c4d88ec0",
-    "name": "Wrekinsport CC Club Hill Climb",
-    "type": "Hill Climb",
-    "region": "West Midlands",
-    "venue": "1707 yards | Willomoor Bank Hill Climb",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/47748-wrekinsport-cc-club-hill-climb",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-04T08:59:21.000Z"
-  },
-  {
     "id": "b28f17d4",
     "name": "Kildale Hill Climb",
     "type": "Hill Climb",
@@ -130,8 +26,8 @@
     "last_updated": "2026-07-31T01:04:10.000Z"
   },
   {
-    "id": "b07b8012",
-    "name": "MFCC Glendoe Hill Climb (Regional Championship Event)",
+    "id": "f981a40d",
+    "name": "MFCC Glendoe Hill Climb (Regional Championship Event) (Cancelled)",
     "type": "Hill Climb",
     "region": "Scotland",
     "venue": "Fort Augustus Village Hall, Highland",
@@ -312,11 +208,11 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "8b6a1f8f",
+    "id": "4381e85e",
     "name": "Farnham RC Hill Climb",
     "type": "Hill Climb",
     "region": "South",
-    "venue": "1 miles | HHC018",
+    "venue": "1672 yards | HHC018a",
     "postcode": null,
     "date": "2026-08-30",
     "start_time": "23:00",
@@ -752,6 +648,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/46069-cowley-road-condors-cc-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-16T08:29:52.000Z"
+  },
+  {
+    "id": "8f670e3c",
+    "name": "PPYCC Youth Hill Climb",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "Stanmer Park, Brighton",
+    "postcode": null,
+    "date": "2026-09-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339549/ppycc-youth-hill-climb-",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-15T01:15:24.000Z"
   },
   {
     "id": "93acfdc2",
@@ -1298,6 +1207,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42483-birmingham-midland-maxstoke-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "4f6ce3ba",
+    "name": "Clwb Beicio'r Bala Hill Climb 0.79",
+    "type": "Hill Climb",
+    "region": "Wales",
+    "venue": "1390 yards | College Hill, Bala Hill Climb",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/52855-clwb-beicior-bala-hill-climb-0-79",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-14T01:04:08.000Z"
   },
   {
     "id": "b0638ac2",
@@ -1857,6 +1779,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42769-keith-abbott-memorial-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "273967c0",
+    "name": "Melton Olympic CC Hill Climb",
+    "type": "Hill Climb",
+    "region": "East Midlands",
+    "venue": "1302 yards | Terrace Hill",
+    "postcode": null,
+    "date": "2026-10-10",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/47657-melton-olympic-cc-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-14T01:04:08.000Z"
   },
   {
     "id": "8534b1e3",

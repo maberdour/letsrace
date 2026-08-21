@@ -1,96 +1,5 @@
 [
   {
-    "id": "b4465a26",
-    "name": "Welwyn Track League 2026 #15",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-08-14",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333765/welwyn-track-league-2026-15",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "98ea696f",
-    "name": "British Cycling North East Track Cluster",
-    "type": "Track",
-    "region": "North East",
-    "venue": "Middlesbrough Velodrome, Middlesbrough",
-    "postcode": null,
-    "date": "2026-08-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335766/british-cycling-north-east-track-cluster-",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "d1e8da19",
-    "name": "Reading Track League #14",
-    "type": "Track",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-08-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334326/reading-track-league-14",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "6bc122eb",
-    "name": "British Cycling Pathway Development Centre - Track Sprint Manchester #9",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-08-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334092/british-cycling-pathway-development-centre---track-sprint-manchester-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-27T03:15:25.000Z"
-  },
-  {
-    "id": "126bdbf3",
-    "name": "Convene Track League - Round 19",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329703/convene-track-league---round-19",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-25T03:15:26.000Z"
-  },
-  {
-    "id": "ec7de4a5",
-    "name": "Brooks Cycles Track League 2026 #16",
-    "type": "Track",
-    "region": "West Midlands",
-    "venue": "Lyme Valley Stadium, Staffordshire",
-    "postcode": null,
-    "date": "2026-08-20",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333572/brooks-cycles-track-league-2026-16",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
-    "id": "8d3ab3b6",
-    "name": "Welwyn Track League 2026 #16",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-08-21",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/333766/welwyn-track-league-2026-16",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-24T10:46:54.000Z"
-  },
-  {
     "id": "bf5338d3",
     "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #5",
     "type": "Track",
@@ -104,8 +13,8 @@
     "last_updated": "2026-03-28T03:15:25.000Z"
   },
   {
-    "id": "e3d8e790",
-    "name": "OMEGA TRACK",
+    "id": "ce039a92",
+    "name": "OMEGA TRACK (Cancelled)",
     "type": "Track",
     "region": "South",
     "venue": "Mountbatten Centre, Hampshire",
@@ -1025,6 +934,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/334788/monsters-of-track---round-4",
     "source": "Google Sheet",
     "last_updated": "2026-05-12T01:15:24.000Z"
+  },
+  {
+    "id": "dd31b2dd",
+    "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #10",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Velodrome, Derby",
+    "postcode": null,
+    "date": "2027-02-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339853/british-cycling-pathway-development-centre-para-cycling-track---derby-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "0fe885a3",
