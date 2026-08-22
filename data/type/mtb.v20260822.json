@@ -1,109 +1,5 @@
 [
   {
-    "id": "9a541a80",
-    "name": "B-BUDDIES Summer Skills Challenge Round 3 (Cancelled)",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hicks Lodge Cycle Centre, Leicestershire",
-    "postcode": null,
-    "date": "2026-08-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337068/b-buddies-summer-skills-challenge-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-02T01:15:25.000Z"
-  },
-  {
-    "id": "1a890333",
-    "name": "B-BUDDIES Off-Road TT 10",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-08-20",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332880/b-buddies-off-road-tt-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "3e3b23b3",
-    "name": "Lloyds National Dual Slalom Championships",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Eastnor Castle Deer Park, Herefordshire",
-    "postcode": null,
-    "date": "2026-08-21",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327317/lloyds-national-dual-slalom-championships",
-    "source": "Google Sheet",
-    "last_updated": "2025-11-27T03:15:28.000Z"
-  },
-  {
-    "id": "c7af23a2",
-    "name": "Rippers Quad Eliminator",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Eastnor Castle Deer Park, Herefordshire",
-    "postcode": null,
-    "date": "2026-08-21",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327437/rippers-quad-eliminator",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-04T01:15:24.000Z"
-  },
-  {
-    "id": "b207aa83",
-    "name": "BFCC Racing XCC Series 2026 - Race 4",
-    "type": "MTB",
-    "region": "London & South East",
-    "venue": "Bedgebury Forest, Kent",
-    "postcode": null,
-    "date": "2026-08-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338947/bfcc-racing-xcc-series-2026---race-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-24T01:15:25.000Z"
-  },
-  {
-    "id": "0250c341",
-    "name": "Rippers Slalom",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Eastnor Castle Deer Park, Herefordshire",
-    "postcode": null,
-    "date": "2026-08-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/327477/rippers-slalom",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-04T01:15:24.000Z"
-  },
-  {
-    "id": "8c18a846",
-    "name": "Schwalbe Downhill",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Eastnor Castle Deer Park, Herefordshire",
-    "postcode": null,
-    "date": "2026-08-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/326845/schwalbe-downhill",
-    "source": "Google Sheet",
-    "last_updated": "2025-09-25T02:15:24.000Z"
-  },
-  {
-    "id": "85ad62b5",
-    "name": "Scottish Championships & SDA Series 2026 Round 4",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Glencoe MTB Track, Argyll",
-    "postcode": null,
-    "date": "2026-08-22",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329840/scottish-championships--sda-series-2026-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-14T03:15:28.000Z"
-  },
-  {
     "id": "a48004b6",
     "name": "Lloyds National 4X Championships",
     "type": "MTB",
@@ -390,6 +286,32 @@
     "last_updated": "2026-02-10T03:15:24.000Z"
   },
   {
+    "id": "16537cee",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Plas y Brenin - Conwy, Conwy",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337355/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "c15f5eab",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Plas y Brenin - Conwy, Conwy",
+    "postcode": null,
+    "date": "2026-09-26",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/337356/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "22e2c67f",
     "name": "Gravity Mini Rnd4 Revolution Bikepark",
     "type": "MTB",
@@ -429,6 +351,32 @@
     "last_updated": "2026-05-21T01:15:29.000Z"
   },
   {
+    "id": "67652fd7",
+    "name": "Poldice Downhill Race",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Poldice, Cornwall",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339953/poldice-downhill-race",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-18T01:15:24.000Z"
+  },
+  {
+    "id": "20eb227d",
+    "name": "Poldice Junior Downhill",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Poldice, Cornwall",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339954/poldice-junior-downhill",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-18T01:15:24.000Z"
+  },
+  {
     "id": "6d13b048",
     "name": "B-BUDDIES Off-Road TT 13",
     "type": "MTB",
@@ -455,6 +403,19 @@
     "last_updated": "2026-04-30T01:15:25.000Z"
   },
   {
+    "id": "813a08df",
+    "name": "Go Ride Racing - MTB North Wales Series - Round 5 - Nant BH (Dyffryn Conwy MTB Club) FINAL",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340117/go-ride-racing---mtb-north-wales-series---round-5---nant-bh-dyffryn-conwy-mtb-club-final",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "f53d2eaa",
     "name": "Racers Guild Racing - Works Components Super Cup '26. Round 4, New Line.",
     "type": "MTB",
@@ -468,6 +429,19 @@
     "last_updated": "2026-08-11T01:15:25.000Z"
   },
   {
+    "id": "25117cdf",
+    "name": "Flying Bikes 2026 Dirt Crit 1",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Strathpeffer Community Park, Strathpeffer",
+    "postcode": null,
+    "date": "2026-10-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339611/flying-bikes-2026-dirt-crit-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
     "id": "88fe9607",
     "name": "B-BUDDIES Off-Road TT 14",
     "type": "MTB",
@@ -479,6 +453,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/332885/b-buddies-off-road-tt-14",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "cebe7c96",
+    "name": "Flying Bikes 2026 Dirt Crit 2",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Strathpeffer Community Park, Strathpeffer",
+    "postcode": null,
+    "date": "2026-10-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339704/flying-bikes-2026-dirt-crit-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
     "id": "0f13bc24",
@@ -520,6 +507,32 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "d16a7da6",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-10-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340153/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "59e702f5",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-10-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340154/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "4f23e255",
     "name": "British Cycling Pathway Development Centre MTB - South #2",
     "type": "MTB",
@@ -544,6 +557,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/332870/b-buddies-off-road-halloween-special-time-trial",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "1c7c72a7",
+    "name": "Flying Bikes 2026 Dirt Crit 3",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Strathpeffer Community Park, Strathpeffer",
+    "postcode": null,
+    "date": "2026-10-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339705/flying-bikes-2026-dirt-crit-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "b75ca384",
+    "name": "Flying Bikes 2026 Dirt Crit 4",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Strathpeffer Community Park, Strathpeffer",
+    "postcode": null,
+    "date": "2026-11-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339706/flying-bikes-2026-dirt-crit-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
     "id": "a3bd126f",
@@ -572,6 +611,32 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "bfcaebaa",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-11-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340155/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "a881e379",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-11-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340156/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
     "id": "2d52dbde",
     "name": "Crickley Flyers Go-Ride Race Series Round 4",
     "type": "MTB",
@@ -583,6 +648,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/329539/crickley-flyers-go-ride-race-series-round-4-",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "cb7eeddb",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Plas y Brenin - Conwy, Conwy",
+    "postcode": null,
+    "date": "2026-12-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340157/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "9c6c3637",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Plas y Brenin - Conwy, Conwy",
+    "postcode": null,
+    "date": "2026-12-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340158/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "3ad12912",
