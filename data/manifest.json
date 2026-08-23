@@ -1,19 +1,19 @@
 {
   "type": {
-    "road": "/data/type/road.v20260822.json",
-    "track": "/data/type/track.v20260822.json",
-    "bmx": "/data/type/bmx.v20260822.json",
-    "mtb": "/data/type/mtb.v20260822.json",
-    "cyclo-cross": "/data/type/cyclo-cross.v20260822.json",
-    "speedway": "/data/type/speedway.v20260822.json",
-    "time-trial": "/data/type/time-trial.v20260822.json",
-    "hill-climb": "/data/type/hill-climb.v20260822.json"
+    "road": "/data/type/road.v20260823.json",
+    "track": "/data/type/track.v20260823.json",
+    "bmx": "/data/type/bmx.v20260823.json",
+    "mtb": "/data/type/mtb.v20260823.json",
+    "cyclo-cross": "/data/type/cyclo-cross.v20260823.json",
+    "speedway": "/data/type/speedway.v20260823.json",
+    "time-trial": "/data/type/time-trial.v20260823.json",
+    "hill-climb": "/data/type/hill-climb.v20260823.json"
   },
   "index": {
-    "facets": "/data/index/facets.v20260822.json"
+    "facets": "/data/index/facets.v20260823.json"
   },
   "homepage": {
-    "stats": "/data/homepage-stats.v20260822.json"
+    "stats": "/data/homepage-stats.v20260823.json"
   },
-  "new_events": "/data/new-events.v20260822.json"
+  "new_events": "/data/new-events.v20260823.json"
 }
