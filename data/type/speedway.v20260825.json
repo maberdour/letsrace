@@ -1,18 +1,5 @@
 [
   {
-    "id": "02f8827e",
-    "name": "Scottish League Series - Round 5",
-    "type": "Speedway",
-    "region": "North East",
-    "venue": "cramlington learning village, Cramlington",
-    "postcode": null,
-    "date": "2026-08-23",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332644/scottish-league-series---round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-18T17:39:34.000Z"
-  },
-  {
     "id": "54662398",
     "name": "North and Scotland League",
     "type": "Speedway",
