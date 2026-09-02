@@ -1,44 +1,5 @@
 [
   {
-    "id": "ed50b093",
-    "name": "Middlesbrough Mega Cross Round 3",
-    "type": "Cyclo Cross",
-    "region": "North East",
-    "venue": "Middlesbrough Velodrome, Middlesbrough",
-    "postcode": null,
-    "date": "2026-08-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339291/middlesbrough-mega-cross-round-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-31T01:15:24.000Z"
-  },
-  {
-    "id": "9cc5bb35",
-    "name": "North East Summer Cross - Round 3 (Camperdown) (Cancelled)",
-    "type": "Cyclo Cross",
-    "region": "Scotland",
-    "venue": "Camperdown Country Park Cycle Centre, Angus",
-    "postcode": null,
-    "date": "2026-08-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335672/north-east-summer-cross---round-3-camperdown-",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-29T01:15:25.000Z"
-  },
-  {
-    "id": "38b107a3",
-    "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Shrewsbury Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-08-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337396/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-16T15:41:10.000Z"
-  },
-  {
     "id": "0e1f2562",
     "name": "Newbury Velo x West Berkshire Scouts Go-Ride Summer CX",
     "type": "Cyclo Cross",
@@ -221,15 +182,15 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
-    "id": "9e414479",
-    "name": "Wessex Cyclocross League Round 2",
+    "id": "6790d7fb",
+    "name": "Wessex Cyclocross League Round 2 - Sotonia CC",
     "type": "Cyclo Cross",
     "region": "South",
     "venue": "Southampton Sports Centre, Hampshire",
     "postcode": null,
     "date": "2026-09-13",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340231/wessex-cyclocross-league-round-2",
+    "url": "https://www.britishcycling.org.uk/events/details/340231/wessex-cyclocross-league-round-2---sotonia-cc",
     "source": "Google Sheet",
     "last_updated": "2026-08-25T01:15:24.000Z"
   },
@@ -323,6 +284,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338527/cxne-202627-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "2e90553d",
+    "name": "Lincolnshire Cyclo-cross 2026/2027 Race #1 (Lincoln Cycling Club, Hanworth) - 20th Sept 2026",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Hanworth Country Park, Lincoln",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340481/lincolnshire-cyclo-cross-20262027-race-1-lincoln-cycling-club-hanworth---20th-sept-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-28T01:15:24.000Z"
   },
   {
     "id": "e87a40ab",
@@ -455,6 +429,19 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
+    "id": "f3e869db",
+    "name": "Welwyn Cross - Eastern League 2026/27 Rd 4",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Stanborough Park, Hertfordshire",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340374/welwyn-cross----eastern-league-202627-rd-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-27T01:15:25.000Z"
+  },
+  {
     "id": "667910ce",
     "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 4",
     "type": "Cyclo Cross",
@@ -546,28 +533,28 @@
     "last_updated": "2026-08-25T01:15:24.000Z"
   },
   {
-    "id": "83114eeb",
-    "name": "Shimano Lazer WMCCL Round #6 - HA&CC Baggeridge Cyclo Cross",
+    "id": "9dd8b710",
+    "name": "Shimano Lazer WMCCL Round #5 - HA&CC Baggeridge Cyclo Cross",
     "type": "Cyclo Cross",
     "region": "West Midlands",
     "venue": "Baggeridge Country Park, West Midlands",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340118/shimano-lazer-wmccl-round-6---hacc-baggeridge-cyclo-cross",
+    "url": "https://www.britishcycling.org.uk/events/details/340118/shimano-lazer-wmccl-round-5---hacc-baggeridge-cyclo-cross",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
-    "id": "6d6b50d6",
-    "name": "Welsh Cyclo-Cross League Round 3 - The Foxley Trot",
+    "id": "6f256ae6",
+    "name": "Welsh Cyclo-Cross League Round 3 - The Foxley Cross",
     "type": "Cyclo Cross",
     "region": "Wales",
     "venue": "Foxley Estate, Hereford",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339863/welsh-cyclo-cross-league-round-3---the-foxley-trot",
+    "url": "https://www.britishcycling.org.uk/events/details/339863/welsh-cyclo-cross-league-round-3---the-foxley-cross",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
@@ -741,6 +728,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "9e95b91c",
+    "name": "Leicester Cyclo-Cross League Round 3: promoted by MI Racing",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Stable House, Lutterworth",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340326/leicester-cyclo-cross-league-round-3-promoted-by-mi-racing",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-26T01:15:25.000Z"
+  },
+  {
     "id": "d0794142",
     "name": "Challenge Tires London and South East CX League - Round 07",
     "type": "Cyclo Cross",
@@ -858,6 +858,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "f13252f7",
+    "name": "Leicester Cyclo-Cross League Round 4: promoted by MI Racing",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Stable House, Lutterworth",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340329/leicester-cyclo-cross-league-round-4-promoted-by-mi-racing",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-26T01:15:25.000Z"
+  },
+  {
     "id": "692d06b0",
     "name": "Welsh Cyclo-Cross League Round 5 - The Mountain View Mamba",
     "type": "Cyclo Cross",
@@ -910,6 +923,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "a34189dd",
+    "name": "Shimano Lazer WMCCL 2026/27 Round 10 - Newport Shropshire Lilleshall",
+    "type": "Cyclo Cross",
+    "region": "West Midlands",
+    "venue": "Lilleshall National Sports and Conferencing Centre, Lilleshall",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339609/shimano-lazer-wmccl-202627-round-10---newport-shropshire-lilleshall",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-26T01:15:25.000Z"
+  },
+  {
     "id": "ec1a8296",
     "name": "Welsh Cyclo-Cross League Round 6 - The Pembrey Pasaboble",
     "type": "Cyclo Cross",
@@ -934,6 +960,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338982/hupcc-scottish-cyclocross-championships-inc-r5",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "f80242c1",
+    "name": "Shimano Lazer WMCCL 2026/27 R11",
+    "type": "Cyclo Cross",
+    "region": "West Midlands",
+    "venue": "Stable House, Lutterworth",
+    "postcode": null,
+    "date": "2026-12-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339610/shimano-lazer-wmccl-202627-r11",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-26T01:15:25.000Z"
   },
   {
     "id": "58666eda",
