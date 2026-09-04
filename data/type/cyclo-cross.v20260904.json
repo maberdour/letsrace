@@ -1,18 +1,5 @@
 [
   {
-    "id": "38b107a3",
-    "name": "Shrewsbury Sports Village Friday Night Cyclo X presented by Mid Shropshire Wheelers",
-    "type": "Cyclo Cross",
-    "region": "West Midlands",
-    "venue": "Shrewsbury Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-08-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337396/shrewsbury-sports-village-friday-night-cyclo-x-presented-by-mid-shropshire-wheelers",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-16T15:41:10.000Z"
-  },
-  {
     "id": "0e1f2562",
     "name": "Newbury Velo x West Berkshire Scouts Go-Ride Summer CX",
     "type": "Cyclo Cross",
@@ -299,6 +286,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "2e90553d",
+    "name": "Lincolnshire Cyclo-cross 2026/2027 Race #1 (Lincoln Cycling Club, Hanworth) - 20th Sept 2026",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Hanworth Country Park, Lincoln",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340481/lincolnshire-cyclo-cross-20262027-race-1-lincoln-cycling-club-hanworth---20th-sept-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-28T01:15:24.000Z"
+  },
+  {
     "id": "e87a40ab",
     "name": "Shimano Lazer WMMCL 2026/27 Round 3",
     "type": "Cyclo Cross",
@@ -533,15 +533,15 @@
     "last_updated": "2026-08-25T01:15:24.000Z"
   },
   {
-    "id": "83114eeb",
-    "name": "Shimano Lazer WMCCL Round #6 - HA&CC Baggeridge Cyclo Cross",
+    "id": "9dd8b710",
+    "name": "Shimano Lazer WMCCL Round #5 - HA&CC Baggeridge Cyclo Cross",
     "type": "Cyclo Cross",
     "region": "West Midlands",
     "venue": "Baggeridge Country Park, West Midlands",
     "postcode": null,
     "date": "2026-10-04",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340118/shimano-lazer-wmccl-round-6---hacc-baggeridge-cyclo-cross",
+    "url": "https://www.britishcycling.org.uk/events/details/340118/shimano-lazer-wmccl-round-5---hacc-baggeridge-cyclo-cross",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
@@ -962,11 +962,11 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
-    "id": "834d318f",
+    "id": "f80242c1",
     "name": "Shimano Lazer WMCCL 2026/27 R11",
     "type": "Cyclo Cross",
     "region": "West Midlands",
-    "venue": "Berryfields, Warwickshire",
+    "venue": "Stable House, Lutterworth",
     "postcode": null,
     "date": "2026-12-05",
     "start_time": "00:00",
