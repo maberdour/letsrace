@@ -156,6 +156,19 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "f93490d9",
+    "name": "Delamere Forest MTB Club Youth Session Sept 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340229/delamere-forest-mtb-club-youth-session-sept-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "22607a00",
     "name": "Lloyds National 4X Series Round 10",
     "type": "MTB",
@@ -364,6 +377,19 @@
     "last_updated": "2026-08-27T01:15:25.000Z"
   },
   {
+    "id": "22e7dc6e",
+    "name": "Black Isle Mountain Bike Club Dirt Crit 2026",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Learnie Red Rock Trails, Rosemarkie",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340691/black-isle-mountain-bike-club-dirt-crit-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "88fe9607",
     "name": "B-BUDDIES Off-Road TT 14",
     "type": "MTB",
@@ -507,6 +533,19 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
+    "id": "c383582b",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340406/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "eba9d2bc",
     "name": "B-BUDDIES Race League 2026/2027 R3",
     "type": "MTB",
@@ -570,6 +609,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340156/beicio-cymru-under-12s-development-centres---xco-mtb",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "d1571709",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340407/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "2d52dbde",

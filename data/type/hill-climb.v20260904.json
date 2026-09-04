@@ -1001,15 +1001,15 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
-    "id": "fdbfe535",
-    "name": "Belmont Hill Hill Climb",
+    "id": "f440a83a",
+    "name": "Belmont Hill Climb",
     "type": "Hill Climb",
     "region": "South West",
     "venue": "1408 yards | Belmont Hill",
     "postcode": null,
     "date": "2026-10-03",
     "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/41722-belmont-hill-hill-climb",
+    "url": "https://www.cyclingtimetrials.org.uk/events/41722-belmont-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
@@ -1703,6 +1703,19 @@
     "last_updated": "2026-07-16T01:04:08.000Z"
   },
   {
+    "id": "0609154c",
+    "name": "Wytham Woods Hill Climb",
+    "type": "Hill Climb",
+    "region": "Central",
+    "venue": "1 miles | HHC035",
+    "postcode": null,
+    "date": "2026-10-17",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/54675-wytham-woods-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:09:10.000Z"
+  },
+  {
     "id": "fe9054ad",
     "name": "Bank Road Hill Climb",
     "type": "Hill Climb",
@@ -1753,6 +1766,19 @@
     "url": "https://www.cyclingtimetrials.org.uk/events/42960-ditchling-beacon-hill-climb",
     "source": "Google Sheet",
     "last_updated": "2026-02-04T08:59:21.000Z"
+  },
+  {
+    "id": "fbe0fbf3",
+    "name": "East London Velo Hill Climb 2026",
+    "type": "Hill Climb",
+    "region": "London & South East",
+    "venue": "1021 yards | Mott Street",
+    "postcode": null,
+    "date": "2026-10-18",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/54694-east-london-velo-hill-climb-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:09:10.000Z"
   },
   {
     "id": "bfd74df3",

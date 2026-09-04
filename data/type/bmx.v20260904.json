@@ -13,6 +13,32 @@
     "last_updated": "2026-08-14T01:15:24.000Z"
   },
   {
+    "id": "e14c6854",
+    "name": "BMX FS School Games National Championships",
+    "type": "BMX",
+    "region": "East Midlands",
+    "venue": "Loughborough University, Leicestershire",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340739/bmx-fs-school-games-national-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "ca407943",
+    "name": "BMX National School Games Finals 2026 Derby BMX Club",
+    "type": "BMX",
+    "region": "East Midlands",
+    "venue": "Derby BMX Track, Derbyshire",
+    "postcode": null,
+    "date": "2026-09-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340426/bmx-national-school-games-finals-2026-derby-bmx-club",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "d587e572",
     "name": "Nuneaton BMX Round 4 2026 Series",
     "type": "BMX",
@@ -39,17 +65,17 @@
     "last_updated": "2026-08-25T01:15:24.000Z"
   },
   {
-    "id": "329ddb45",
-    "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 2",
+    "id": "959caccf",
+    "name": "2026 South West Championships",
     "type": "BMX",
-    "region": "Scotland",
-    "venue": "Zetland Park, Falkirk",
+    "region": "South West",
+    "venue": "Tiverton BMX Club, Devon",
     "postcode": null,
-    "date": "2026-09-11",
+    "date": "2026-09-12",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338387/fjbc-zetland-park-autumn-pump-track-series-2026-round-2",
+    "url": "https://www.britishcycling.org.uk/events/details/340688/2026-south-west-championships",
     "source": "Google Sheet",
-    "last_updated": "2026-07-09T01:15:26.000Z"
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "51fa4208",
@@ -91,6 +117,19 @@
     "last_updated": "2026-01-20T03:15:25.000Z"
   },
   {
+    "id": "8152cd2b",
+    "name": "South BMX Regional Championships 2026",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Peckham BMX Club, London",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340656/south-bmx-regional-championships-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "b34ae7a3",
     "name": "Brixton BMX 45th Year Anniversary Club Race",
     "type": "BMX",
@@ -130,15 +169,15 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
-    "id": "774b8f48",
-    "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 4",
+    "id": "8104fde1",
+    "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 2",
     "type": "BMX",
     "region": "Scotland",
     "venue": "Zetland Park, Falkirk",
     "postcode": null,
-    "date": "2026-09-25",
+    "date": "2026-10-02",
     "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338389/fjbc-zetland-park-autumn-pump-track-series-2026-round-4-",
+    "url": "https://www.britishcycling.org.uk/events/details/338387/fjbc-zetland-park-autumn-pump-track-series-2026-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-07-09T01:15:26.000Z"
   },
@@ -154,5 +193,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/340114/welsh-bmx-championships-2026",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "68957801",
+    "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 4",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Zetland Park, Falkirk",
+    "postcode": null,
+    "date": "2026-10-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338389/fjbc-zetland-park-autumn-pump-track-series-2026-round-4-",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-09T01:15:26.000Z"
   }
 ]
