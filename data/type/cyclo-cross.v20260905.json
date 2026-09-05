@@ -1,18 +1,5 @@
 [
   {
-    "id": "0e1f2562",
-    "name": "Newbury Velo x West Berkshire Scouts Go-Ride Summer CX",
-    "type": "Cyclo Cross",
-    "region": "Central",
-    "venue": "Goldwell Park, Berkshire",
-    "postcode": null,
-    "date": "2026-09-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339368/newbury-velo-x-west-berkshire-scouts-go-ride-summer-cx",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-01T01:15:25.000Z"
-  },
-  {
     "id": "945f1e0f",
     "name": "Challenge Tires London and South East CX League - Round 01",
     "type": "Cyclo Cross",
@@ -156,6 +143,19 @@
     "last_updated": "2026-07-18T01:15:24.000Z"
   },
   {
+    "id": "b9be768f",
+    "name": "Muddy Monsters Norwich - Round #3",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Easton College, Norfolk",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340653/muddy-monsters-norwich---round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "68b78cd2",
     "name": "NWCCA 2026/27 Round 1 - Wythenshawe Park",
     "type": "Cyclo Cross",
@@ -180,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339601/shimano-lazer-wmccl-202627-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "134a60e9",
+    "name": "SWCX 2026/27 Round 1",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Torbay Velopark, Devon",
+    "postcode": null,
+    "date": "2026-09-13",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338090/swcx-202627-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "6790d7fb",
@@ -299,6 +312,19 @@
     "last_updated": "2026-08-28T01:15:24.000Z"
   },
   {
+    "id": "b20a1614",
+    "name": "Scottish Cycling R.A.C.E. National Cyclocross Session 200926",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Chatelherault Country Park - Hamilton, Scotland",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340314/scottish-cycling-race-national-cyclocross-session-200926",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "e87a40ab",
     "name": "Shimano Lazer WMMCL 2026/27 Round 3",
     "type": "Cyclo Cross",
@@ -323,6 +349,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339812/welsh-cyclo-cross-league-round-1---the-risca-rumba",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "a36d3e66",
+    "name": "Yorkshire Cyclo-cross Championships Round 1",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Thornes Park Stadium, West Yorkshire",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340372/yorkshire-cyclo-cross-championships-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "3bec2fc6",
@@ -403,6 +442,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "bedfe7f3",
+    "name": "Lincolnshire Cyclo-cross 2026/2027 Race #2 (Sleaford Wheelers, Newton) - 27th Sept 2026",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Newton Rd, Newton",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340482/lincolnshire-cyclo-cross-20262027-race-2-sleaford-wheelers-newton---27th-sept-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "dd4d4f41",
     "name": "Loopy in Lovat",
     "type": "Cyclo Cross",
@@ -414,6 +466,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338622/loopy-in-lovat",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "4726bb1a",
+    "name": "SWCX 2026/27 Round 2",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Redruth School, Cornwall",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338421/swcx-202627-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "a406f72f",
@@ -440,6 +505,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/340374/welwyn-cross----eastern-league-202627-rd-4",
     "source": "Google Sheet",
     "last_updated": "2026-08-27T01:15:25.000Z"
+  },
+  {
+    "id": "ab1df7af",
+    "name": "Wessex Cyclocross League Round 3 - Reading CC, Bill Higson Memorial CX",
+    "type": "Cyclo Cross",
+    "region": "Central",
+    "venue": "Prospect Park, Berkshire",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340518/wessex-cyclocross-league-round-3---reading-cc-bill-higson-memorial-cx",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "acc87011",
+    "name": "Western Cyclo Cross League Round 1 - Season 2026/27",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Pittville Park, Gloucestershire",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336925/western-cyclo-cross-league-round-1---season-202627",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "667910ce",
@@ -520,6 +611,19 @@
     "last_updated": "2026-07-24T01:15:25.000Z"
   },
   {
+    "id": "f8739913",
+    "name": "Lincolnshire Cyclo-cross 2026/2027 Race #3 (Lincoln Wheelers, Nettleham) - 4th October 2026",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Nettleham Police HQ, Lincolnshire",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340483/lincolnshire-cyclo-cross-20262027-race-3-lincoln-wheelers-nettleham---4th-october-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "3edd88cd",
     "name": "NWCCA 2026/27 Round 3 - Leverhulme Park",
     "type": "Cyclo Cross",
@@ -546,6 +650,19 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
+    "id": "476d9d8a",
+    "name": "SWCX 2026/27 Round 3",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Saltash School, Saltash",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340534/swcx-202627-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "6f256ae6",
     "name": "Welsh Cyclo-Cross League Round 3 - The Foxley Cross",
     "type": "Cyclo Cross",
@@ -557,6 +674,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339863/welsh-cyclo-cross-league-round-3---the-foxley-cross",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "b2ba1123",
+    "name": "Yorkshire Cyclo-cross Championships Round 2",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Woodside Cycle Centre, England",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340417/yorkshire-cyclo-cross-championships-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "d1078c09",
@@ -598,6 +728,19 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
+    "id": "80560206",
+    "name": "Grity NDCXL 26 R3 Hosted by Focus Rides",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Walesby Activity Centre, Nottinghamshire",
+    "postcode": null,
+    "date": "2026-10-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340479/grity-ndcxl-26-r3-hosted-by-focus-rides",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "61b27f18",
     "name": "Challenge Tires London and South East CX League - Round 05",
     "type": "Cyclo Cross",
@@ -624,6 +767,123 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "95238823",
+    "name": "Lincolnshire Cyclo-cross 2026/2027 Race #4 (Scunthorpe RC, Normanby Hall) - 11th October 2026",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Scunthorpe and District Pony Club Cross, Scunthorpe",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340484/lincolnshire-cyclo-cross-20262027-race-4-scunthorpe-rc-normanby-hall---11th-october-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "f59bc454",
+    "name": "NWCCA 2026/27 Round 4 - Towneley Park",
+    "type": "Cyclo Cross",
+    "region": "North West",
+    "venue": "Towneley Park, Lancashire",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/331720/nwcca-202627-round-4---towneley-park",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "60722a51",
+    "name": "Scottish Cycling R.A.C.E. National Cyclocross Session 111026",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Camperdown Country Park Cycle Centre, Angus",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340740/scottish-cycling-race-national-cyclocross-session-111026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "8abf377a",
+    "name": "Shimano Lazer WMCCL Round 6 2026/27 Princethorpe CX",
+    "type": "Cyclo Cross",
+    "region": "West Midlands",
+    "venue": "Princethorpe College, Rugby",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340528/shimano-lazer-wmccl-round-6-202627-princethorpe-cx",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "6da5ac4b",
+    "name": "SWCX 2026/27 Round 4",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Wadebridge Showground, Cornwall",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338423/swcx-202627-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "50154d3e",
+    "name": "VC Revolution Cross - Eastern League 2026/27 Rd 5",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Valley Green Farm, Mount Bures",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340375/vc-revolution-cross----eastern-league-202627-rd-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "6f8e379c",
+    "name": "Wessex Cyclocross League Round 5 - Pedalon & NHRC",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Milestones Museum, Basingstoke",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340520/wessex-cyclocross-league-round-5---pedalon--nhrc",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "6e66a29e",
+    "name": "Western Cyclo Cross League Round 4 - Season 2026/27",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Manor Farm, Bristol",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336927/western-cyclo-cross-league-round-4---season-202627",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "719979f6",
+    "name": "Yorkshire Cyclo-cross Championships Round 3",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Craven Cattle Marts, North Yorkshire",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340418/yorkshire-cyclo-cross-championships-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "345b08e9",
     "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 6",
     "type": "Cyclo Cross",
@@ -637,6 +897,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "20209ffb",
+    "name": "Lloyds Cyclo-cross National Trophy Series 2026/27 Round 1",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Moorways Leisure Centre, Derbyshire",
+    "postcode": null,
+    "date": "2026-10-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338909/lloyds-cyclo-cross-national-trophy-series-202627-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "1424d519",
     "name": "East Kent Cyclo Cross League Round 2 #DukeofYorksCross",
     "type": "Cyclo Cross",
@@ -648,6 +921,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340011/east-kent-cyclo-cross-league-round-2-dukeofyorkscross",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "ed459ae4",
+    "name": "Muddy Monsters Norwich - Round #4",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Earlham Park, Norfolk",
+    "postcode": null,
+    "date": "2026-10-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340654/muddy-monsters-norwich---round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "c089ccce",
@@ -741,6 +1027,32 @@
     "last_updated": "2026-08-26T01:15:25.000Z"
   },
   {
+    "id": "5d35e7fd",
+    "name": "Lincolnshire Cyclo-cross 2026/2027 Race #5 (Witham Wheelers, Stroxton) - 25th October 2026",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Church Farm, Grantham",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340529/lincolnshire-cyclo-cross-20262027-race-5-witham-wheelers-stroxton---25th-october-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "665e0ca5",
+    "name": "Yorkshire Cyclo-cross Championships Round 4",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Temple Newsam Park, Leeds",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340419/yorkshire-cyclo-cross-championships-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "d0794142",
     "name": "Challenge Tires London and South East CX League - Round 07",
     "type": "Cyclo Cross",
@@ -780,6 +1092,32 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "b9d9ee4f",
+    "name": "Lee Valley Cross - Eastern League 2026/27 Rd 6",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Redbridge Cycling Centre, Ilford",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340376/lee-valley-cross----eastern-league-202627-rd-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "89dd58da",
+    "name": "Lincolnshire Cyclo-cross 2026/2027 Race #6 (Spalding CC, Beckbank) - 1st November 2026",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "The Moat, Splading",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340530/lincolnshire-cyclo-cross-20262027-race-6-spalding-cc-beckbank---1st-november-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "1d3daaae",
     "name": "Shimano Lazer WMCCL 2026/27 R8 Wolverhampton Wheelers",
     "type": "Cyclo Cross",
@@ -793,6 +1131,19 @@
     "last_updated": "2026-08-22T01:15:25.000Z"
   },
   {
+    "id": "7800c13a",
+    "name": "SWCX 2026/27 Round 5",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338424/swcx-202627-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "df0d0fb5",
     "name": "Welsh Cyclo-Cross League Round 4 - The Builth Boogie",
     "type": "Cyclo Cross",
@@ -804,6 +1155,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/339864/welsh-cyclo-cross-league-round-4---the-builth-boogie",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "fad0d33a",
+    "name": "Wessex Cyclocross League Round 7 - Newbury Velo - Chris Boulton Celebration CX",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Cannon Heath Down, Hampshire",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340522/wessex-cyclocross-league-round-7---newbury-velo---chris-boulton-celebration-cx",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "bb463bd0",
+    "name": "Yorkshire Cyclo-cross Championships Round 5",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Oaks Lane Car Park, Barnsley",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340420/yorkshire-cyclo-cross-championships-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "bad88150",
+    "name": "Rapha Muddy Hell",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Herne Hill Velodrome, London",
+    "postcode": null,
+    "date": "2026-11-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340737/rapha-muddy-hell",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "04259fc5",
@@ -858,6 +1248,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "fddb54c6",
+    "name": "Iceni Old Buckenham Cross - Eastern League 2026/27 Rd 7",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Old Buckenham Country Park, Attleborough",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340377/iceni-old-buckenham-cross---eastern-league-202627-rd-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "f13252f7",
     "name": "Leicester Cyclo-Cross League Round 4: promoted by MI Racing",
     "type": "Cyclo Cross",
@@ -871,6 +1274,32 @@
     "last_updated": "2026-08-26T01:15:25.000Z"
   },
   {
+    "id": "3140d16a",
+    "name": "Lincolnshire Cyclo-cross Association 2026/2027 Race #7 (Ellmore Factory Racing) 15th Nov 2026 Hanwor",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Hanworth Country Park, Lincoln",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340531/lincolnshire-cyclo-cross-association-20262027-race-7-ellmore-factory-racing-15th-nov-2026-hanworth-country-park",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "c1b0b9a6",
+    "name": "SWCX 2026/27 Round 6",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Escot Park, Devon",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338425/swcx-202627-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "692d06b0",
     "name": "Welsh Cyclo-Cross League Round 5 - The Mountain View Mamba",
     "type": "Cyclo Cross",
@@ -882,6 +1311,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339902/welsh-cyclo-cross-league-round-5---the-mountain-view-mamba",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "1344a1f5",
+    "name": "Yorkshire Cyclo-cross Championships Round 6",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Pontefract Racecourse / Pontefract Park, West Yorkshire",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340421/yorkshire-cyclo-cross-championships-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "8c1ddf98",
@@ -923,6 +1365,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "f0a5a0b4",
+    "name": "Lincolnshire Cyclo-cross Association 2026/2027 Race #8 (Louth Cycle Centre, South Elkington) 22nd No",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Hanworth Country Park, Lincoln",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340532/lincolnshire-cyclo-cross-association-20262027-race-8-louth-cycle-centre-south-elkington-22nd-nov-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "a34189dd",
     "name": "Shimano Lazer WMCCL 2026/27 Round 10 - Newport Shropshire Lilleshall",
     "type": "Cyclo Cross",
@@ -936,6 +1391,32 @@
     "last_updated": "2026-08-26T01:15:25.000Z"
   },
   {
+    "id": "7f587dc0",
+    "name": "Stow Scramble - Eastern League 2026/27 Rd 8",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Haughley Park, Bury St Edmunds",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340378/stow-scramble---eastern-league-202627-rd-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "672f7783",
+    "name": "SWCX 2026/27 Round 7",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Arlington Court National Trust, Devon",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338422/swcx-202627-round-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "ec1a8296",
     "name": "Welsh Cyclo-Cross League Round 6 - The Pembrey Pasaboble",
     "type": "Cyclo Cross",
@@ -947,6 +1428,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/339903/welsh-cyclo-cross-league-round-6---the-pembrey-pasaboble",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "c765c697",
+    "name": "Yorkshire Cyclo-cross Championships Round 7",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Jenkinson Grove, Doncaster",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340422/yorkshire-cyclo-cross-championships-round-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "8f9d443e",
+    "name": "SWCX 2026/27 Round 8",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Exeter Bike Park, Devon",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338426/swcx-202627-round-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "0f28e8a6",
@@ -988,6 +1495,19 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
+    "id": "8dda54fd",
+    "name": "SWCX 2026/27 Round 9 incorporating South West Regional Championships",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338427/swcx-202627-round-9-incorporating-south-west-regional-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "9047ca91",
     "name": "Welsh Cyclo-Cross League Round 7 Inc Welsh Championships - The Chepstow Cha Cha!",
     "type": "Cyclo Cross",
@@ -1014,6 +1534,32 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
+    "id": "b718509d",
+    "name": "SWCX 2026/27 Round 10",
+    "type": "Cyclo Cross",
+    "region": "South West",
+    "venue": "Perranporth Airfield, Cornwall",
+    "postcode": null,
+    "date": "2026-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338428/swcx-202627-round-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "0ab00b5c",
+    "name": "West Suffolk Cross - Eastern League 2026/27 Rd 10",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "West Stow Country Park, West Stow",
+    "postcode": null,
+    "date": "2026-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340380/west-suffolk-cross----eastern-league-202627-rd-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "a30a9c2c",
     "name": "NovaCross",
     "type": "Cyclo Cross",
@@ -1025,6 +1571,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340258/novacross",
     "source": "Google Sheet",
     "last_updated": "2026-08-25T01:15:24.000Z"
+  },
+  {
+    "id": "49152638",
+    "name": "Grity NDCXL 26 R6 Hosted by Focus Rides",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Walesby Activity Centre, Nottinghamshire",
+    "postcode": null,
+    "date": "2027-01-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340480/grity-ndcxl-26-r6-hosted-by-focus-rides-",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "b9e3c6a5",
@@ -1053,6 +1612,32 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "18d54624",
+    "name": "Lincolnshire Cyclo-cross Association 2026/2027 Race #9 (Velo Club Lincoln) - 3rd Jan 2027",
+    "type": "Cyclo Cross",
+    "region": "East Midlands",
+    "venue": "Abbey Farm, Lincoln",
+    "postcode": null,
+    "date": "2027-01-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340533/lincolnshire-cyclo-cross-association-20262027-race-9-velo-club-lincoln---3rd-jan-2027",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "6ae8925d",
+    "name": "Yorkshire Cyclo-cross Championships Round 8",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Peel Park, Bradford",
+    "postcode": null,
+    "date": "2027-01-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340423/yorkshire-cyclo-cross-championships-round-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "3ef48300",
     "name": "HUPcc Scottish Cyclocross Series R7: Back to Bo'ness",
     "type": "Cyclo Cross",
@@ -1064,6 +1649,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338984/hupcc-scottish-cyclocross-series-r7-back-to-boness-",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "eaf12f42",
+    "name": "Yorkshire Cyclo-cross Championships Round 9",
+    "type": "Cyclo Cross",
+    "region": "Yorkshire & Humber",
+    "venue": "Phlashetts Wood, Well Bedale",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340424/yorkshire-cyclo-cross-championships-round-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "366c0b0a",
