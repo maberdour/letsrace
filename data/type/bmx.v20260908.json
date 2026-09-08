@@ -1,5 +1,18 @@
 [
   {
+    "id": "f76cfa70",
+    "name": "Centurions late Summer Series - R3",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Cumbernauld Centurions BMX Club, North Lanarkshire",
+    "postcode": null,
+    "date": "2026-09-09",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340256/centurions-late-summer-series---r3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "959caccf",
     "name": "2026 South West Championships",
     "type": "BMX",
@@ -11,6 +24,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340688/2026-south-west-championships",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "0695386b",
+    "name": "British Cycling Pathway BMX SX RSR #3 Eastern 2026.",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2026-09-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340897/british-cycling-pathway-bmx-sx-rsr-3-eastern-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "51fa4208",
@@ -65,6 +91,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "5685e7b8",
+    "name": "Centurions late Summer Series - R4",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Cumbernauld Centurions BMX Club, North Lanarkshire",
+    "postcode": null,
+    "date": "2026-09-16",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340741/centurions-late-summer-series---r4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "b34ae7a3",
     "name": "Brixton BMX 45th Year Anniversary Club Race",
     "type": "BMX",
@@ -91,6 +130,19 @@
     "last_updated": "2026-07-09T01:15:26.000Z"
   },
   {
+    "id": "cd1cdda5",
+    "name": "Knightwood BMX Club 2026 Summer Series (Round 6)",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Knightwood BMX, Hampshire",
+    "postcode": null,
+    "date": "2026-09-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340793/knightwood-bmx-club-2026-summer-series-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "78459598",
     "name": "Brixton BMX 45th Year Anniversary Club Race",
     "type": "BMX",
@@ -102,6 +154,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/340200/brixton-bmx-45th-year-anniversary-club-race",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "615b69f1",
+    "name": "The Scottish Open Championships 2026",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Clydebank BMX Track, Dunbartonshire",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340792/the-scottish-open-championships-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "66cc6285",
+    "name": "BMX East Winter Series 2026/2027 Round 1",
+    "type": "BMX",
+    "region": "Eastern",
+    "venue": "Royston BMX Track, Hertfordshire",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340896/bmx-east-winter-series-20262027-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "8104fde1",

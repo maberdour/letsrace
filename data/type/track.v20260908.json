@@ -312,6 +312,32 @@
     "last_updated": "2026-01-07T03:15:54.000Z"
   },
   {
+    "id": "076d7532",
+    "name": "Newport Omnium Race Night #1",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340313/newport-omnium-race-night-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "9df3b66a",
+    "name": "Geraint Thomas Velodrome - Sprint Night #1",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340693/geraint-thomas-velodrome---sprint-night-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "a7ca65a2",
     "name": "British Cycling North of England Go-Ride Track Cluster",
     "type": "Track",
@@ -351,6 +377,19 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "a8868dd9",
+    "name": "Newport Omnium Race Night #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340315/newport-omnium-race-night-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "7ccec7ca",
     "name": "British Cycling Lee Valley | Youth Track Cluster Session # 4",
     "type": "Track",
@@ -377,6 +416,19 @@
     "last_updated": "2026-01-12T03:15:24.000Z"
   },
   {
+    "id": "719c24f7",
+    "name": "Newport Omnium Race Night #3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340316/newport-omnium-race-night-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "eb91802e",
     "name": "British Cycling Lee Valley | Youth Track Cluster Session # 5",
     "type": "Track",
@@ -388,6 +440,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338745/british-cycling-lee-valley--youth-track-cluster-session--5",
     "source": "Google Sheet",
     "last_updated": "2026-07-16T01:15:25.000Z"
+  },
+  {
+    "id": "4f0fec04",
+    "name": "Geraint Thomas Velodrome - Sprint Night #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340694/geraint-thomas-velodrome---sprint-night-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "d45752f6",
@@ -429,6 +494,19 @@
     "last_updated": "2026-01-13T03:15:25.000Z"
   },
   {
+    "id": "2ee2843c",
+    "name": "Newport Omnium Race Night #4",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340317/newport-omnium-race-night-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "ab7c99ad",
     "name": "Monsters of Track - Round 1",
     "type": "Track",
@@ -453,6 +531,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330874/monday-night-track-league-2026-round-22",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "54752d10",
+    "name": "Newport Omnium Race Night #5",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340318/newport-omnium-race-night-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "358fec65",
+    "name": "Geraint Thomas Velodrome - Sprint Night #3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340695/geraint-thomas-velodrome---sprint-night-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "b0d41992",
@@ -494,6 +598,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "d66106da",
+    "name": "Newport Omnium Race Night #6",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340319/newport-omnium-race-night-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "0039a3b5",
     "name": "British Cycling Lee Valley | Youth Track Cluster Session # 6",
     "type": "Track",
@@ -533,6 +650,32 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "ac2effe8",
+    "name": "Newport Omnium Race Night #7",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340320/newport-omnium-race-night-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "cbe7f8b7",
+    "name": "Geraint Thomas Velodrome - Sprint Night #4",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340696/geraint-thomas-velodrome---sprint-night-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "4a18f7fa",
     "name": "British Cycling Pathway Development Centre Track - Lee Valley #4",
     "type": "Track",
@@ -559,6 +702,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "ffda8b99",
+    "name": "Newport Omnium Race Night #8",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340321/newport-omnium-race-night-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "b1b08d3f",
     "name": "British Cycling Pathway Development Centre Track - Lee Valley #5",
     "type": "Track",
@@ -583,6 +739,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330878/monday-night-track-league-2026-round-26",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "d435c42c",
+    "name": "Newport Omnium Race Night #9",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340322/newport-omnium-race-night-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "4ee1f205",
+    "name": "Geraint Thomas Velodrome - Keirin Night #1",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340697/geraint-thomas-velodrome---keirin-night-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "e12652dc",
@@ -635,6 +817,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/330879/monday-night-track-league-2026-round-27",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "0eca5db8",
+    "name": "Newport Omnium Race Night #10",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340323/newport-omnium-race-night-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "2bdc0c26",

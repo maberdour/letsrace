@@ -624,6 +624,19 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
+    "id": "68ebfca7",
+    "name": "Western Cyclo Cross League Round 3 - Season 2026/27",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Stroud Leisure Centre, Gloucestershire",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336926/western-cyclo-cross-league-round-3---season-202627",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "b2ba1123",
     "name": "Yorkshire Cyclo-cross Championships Round 2",
     "type": "Cyclo Cross",
@@ -1404,6 +1417,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "b8541936",
+    "name": "Leicester Cyclo-Cross League Round 5: promoted by RFW",
+    "type": "Cyclo Cross",
+    "region": "Central",
+    "venue": "West Glebe Park, Northants",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340327/leicester-cyclo-cross-league-round-5-promoted-by-rfw",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "f0a5a0b4",
     "name": "Lincolnshire Cyclo-cross Association 2026/2027 Race #8 (Louth Cycle Centre, South Elkington) 22nd No",
     "type": "Cyclo Cross",
@@ -1753,5 +1779,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/339175/challenge-tires-london-and-south-east-cx-league---round-11",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "2f47f5aa",
+    "name": "Milton Cross - Eastern League 2026/27 Rd 12",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Milton Country Park, Milton",
+    "postcode": null,
+    "date": "2027-01-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340382/milton-cross---eastern-league-202627-rd-12",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   }
 ]

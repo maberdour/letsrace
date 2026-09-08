@@ -858,6 +858,32 @@
     "last_updated": "2026-02-04T08:59:21.000Z"
   },
   {
+    "id": "415a838b",
+    "name": "Coventry Cycling Club Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "1 miles | KH5",
+    "postcode": null,
+    "date": "2026-10-03",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/54760-coventry-cycling-club-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:46:12.000Z"
+  },
+  {
+    "id": "515e8911",
+    "name": "Coventry Cycling Club Hill Climb",
+    "type": "Hill Climb",
+    "region": "West Midlands",
+    "venue": "1 miles | KH6",
+    "postcode": null,
+    "date": "2026-10-03",
+    "start_time": "23:00",
+    "url": "https://www.cyclingtimetrials.org.uk/events/54762-coventry-cycling-club-hill-climb",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:46:12.000Z"
+  },
+  {
     "id": "8a8f7f26",
     "name": "Dulwich Paragon CC Hill Climb",
     "type": "Hill Climb",
