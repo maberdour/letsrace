@@ -1,57 +1,5 @@
 [
   {
-    "id": "267c6ea9",
-    "name": "British Cycling Pathway Development Centre MTB - South #1",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-09-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337792/british-cycling-pathway-development-centre-mtb---south-1-",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-24T01:15:24.000Z"
-  },
-  {
-    "id": "ffb048a5",
-    "name": "Go-Ride Racing - MTB North Wales Series- 5 Sept 2026- Round 4- Oneplanet Adventure (Oneplanet Advent",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Llandegla Forest, Wrexham",
-    "postcode": null,
-    "date": "2026-09-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340233/go-ride-racing---mtb-north-wales-series--5-sept-2026--round-4--oneplanet-adventure-oneplanet-adventure-bike-club-",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-27T01:15:25.000Z"
-  },
-  {
-    "id": "4a8668f7",
-    "name": "Peaty's Steel City Downhill 2026",
-    "type": "MTB",
-    "region": "Yorkshire & Humber",
-    "venue": "Greno Woods, Sheffield",
-    "postcode": null,
-    "date": "2026-09-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339029/peatys-steel-city-downhill-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-25T01:15:26.000Z"
-  },
-  {
-    "id": "7309cfff",
-    "name": "SWXC Round 5 (XCO - Supported by Fibrefusion )",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Old hill bike Park, Cornwall",
-    "postcode": null,
-    "date": "2026-09-06",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331971/swxc-round-5-xco---supported-by-fibrefusion-",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-12T01:15:24.000Z"
-  },
-  {
     "id": "2c57d517",
     "name": "B-BUDDIES Race League 2026/2027 R1",
     "type": "MTB",
@@ -156,6 +104,19 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
+    "id": "f93490d9",
+    "name": "Delamere Forest MTB Club Youth Session Sept 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340229/delamere-forest-mtb-club-youth-session-sept-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "22607a00",
     "name": "Lloyds National 4X Series Round 10",
     "type": "MTB",
@@ -232,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329538/crickley-flyers-go-ride-race-series-round-3-",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "dce65cbc",
+    "name": "Dialled In Downhill - Glenlivet",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Bike Glenlivet, Tomintoul",
+    "postcode": null,
+    "date": "2026-09-27",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340989/dialled-in-downhill---glenlivet",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-10T01:15:24.000Z"
   },
   {
     "id": "46f48268",
@@ -362,6 +336,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340373/beicio-cymru-pathway-development-centres---xco-mtb---fod",
     "source": "Google Sheet",
     "last_updated": "2026-08-27T01:15:25.000Z"
+  },
+  {
+    "id": "22e7dc6e",
+    "name": "Black Isle Mountain Bike Club Dirt Crit 2026",
+    "type": "MTB",
+    "region": "Scotland",
+    "venue": "Learnie Red Rock Trails, Rosemarkie",
+    "postcode": null,
+    "date": "2026-10-11",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340691/black-isle-mountain-bike-club-dirt-crit-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "88fe9607",
@@ -507,6 +494,19 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
+    "id": "c383582b",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340406/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
     "id": "eba9d2bc",
     "name": "B-BUDDIES Race League 2026/2027 R3",
     "type": "MTB",
@@ -570,6 +570,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340156/beicio-cymru-under-12s-development-centres---xco-mtb",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "d1571709",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340407/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
     "id": "2d52dbde",
