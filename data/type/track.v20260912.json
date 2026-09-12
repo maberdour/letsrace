@@ -1,135 +1,5 @@
 [
   {
-    "id": "774f75ee",
-    "name": "Ashwell End of Summer Grass Track Event (including 10km Madison)",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "The Godschalk Grass Velodrome, Hertfordshire",
-    "postcode": null,
-    "date": "2026-09-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331723/ashwell-end-of-summer-grass-track-event-including-10km-madison",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-03T03:15:28.000Z"
-  },
-  {
-    "id": "356a7bf4",
-    "name": "British Cycling North East Track Cluster",
-    "type": "Track",
-    "region": "North East",
-    "venue": "Middlesbrough Velodrome, Middlesbrough",
-    "postcode": null,
-    "date": "2026-09-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335767/british-cycling-north-east-track-cluster-",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-14T11:00:10.000Z"
-  },
-  {
-    "id": "fcb4c60d",
-    "name": "Derby Arena Track Season Opener",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Arena, Derby",
-    "postcode": null,
-    "date": "2026-09-05",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338748/derby-arena-track-season-opener",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-24T01:15:25.000Z"
-  },
-  {
-    "id": "acacd7e3",
-    "name": "Monday Night Track League 2026 Round 13",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-09-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330865/monday-night-track-league-2026-round-13",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-07T03:15:54.000Z"
-  },
-  {
-    "id": "272a4f77",
-    "name": "Reading Track League #16",
-    "type": "Track",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-09-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334328/reading-track-league-16",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-09T01:15:25.000Z"
-  },
-  {
-    "id": "d765c8ef",
-    "name": "Convene Track League - Round 22",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-09-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329706/convene-track-league---round-22",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-25T03:15:26.000Z"
-  },
-  {
-    "id": "4c09dda7",
-    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 2",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-09-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338742/british-cycling-lee-valley--youth-track-cluster-session--2",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-16T01:15:25.000Z"
-  },
-  {
-    "id": "7c85849e",
-    "name": "Peter Waghorn Trophy - Open Track Meeting",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "Gosling Sports Stadium, Hertfordshire",
-    "postcode": null,
-    "date": "2026-09-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337220/peter-waghorn-trophy---open-track-meeting",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-20T01:15:24.000Z"
-  },
-  {
-    "id": "c4a035e9",
-    "name": "Condor Women's League - Round 6",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-09-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329742/condor-womens-league---round-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "21665f26",
-    "name": "NGTS - Spalding CC Grass Track 2026 (Incl Open 800m National Championship)",
-    "type": "Track",
-    "region": "Eastern",
-    "venue": "The Snowden Field, Lincs",
-    "postcode": null,
-    "date": "2026-09-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331936/ngts---spalding-cc-grass-track-2026-incl-open-800m-national-championship",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-03T03:15:28.000Z"
-  },
-  {
     "id": "c95b65a3",
     "name": "British Cycling Pathway Development Centre Track - Lee Valley #1",
     "type": "Track",
@@ -247,6 +117,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "21a2008d",
+    "name": "British Pumptrack Series Round3",
+    "type": "Track",
+    "region": "West Midlands",
+    "venue": "Redditch BMX Track, Redditch",
+    "postcode": null,
+    "date": "2026-09-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341011/british-pumptrack-series-round3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "75127f55",
     "name": "Monday Night Track League 2026 Round 15",
     "type": "Track",
@@ -312,6 +195,32 @@
     "last_updated": "2026-01-07T03:15:54.000Z"
   },
   {
+    "id": "7c94830d",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #1 (567103)",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-09-29",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340769/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-1-567103",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-10T01:15:24.000Z"
+  },
+  {
+    "id": "803a3d74",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-01",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341020/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "11afdcda",
     "name": "British Cycling Pathway Development Centre Track - Lee Valley #2",
     "type": "Track",
@@ -351,6 +260,32 @@
     "last_updated": "2026-01-07T03:15:54.000Z"
   },
   {
+    "id": "7b958b0e",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #2 (567103)",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-10-06",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340770/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-2-567103",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "eebab626",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341021/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "fd79fe2d",
     "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #6",
     "type": "Track",
@@ -375,6 +310,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/330870/monday-night-track-league-2026-round-18",
     "source": "Google Sheet",
     "last_updated": "2026-01-07T03:15:54.000Z"
+  },
+  {
+    "id": "076d7532",
+    "name": "Newport Omnium Race Night #1",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340313/newport-omnium-race-night-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "e96a10cc",
+    "name": "Beicio Cymru Pathway Development Centre - Track - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-15",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341027/beicio-cymru-pathway-development-centre---track---newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "9df3b66a",
+    "name": "Geraint Thomas Velodrome - Sprint Night #1",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340693/geraint-thomas-velodrome---sprint-night-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "a7ca65a2",
@@ -416,6 +390,45 @@
     "last_updated": "2026-01-10T03:15:26.000Z"
   },
   {
+    "id": "a8868dd9",
+    "name": "Newport Omnium Race Night #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340315/newport-omnium-race-night-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "c27542c7",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #3 (567103)",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-10-20",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340772/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-3-567103",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "c321a1be",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341028/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "7ccec7ca",
     "name": "British Cycling Lee Valley | Youth Track Cluster Session # 4",
     "type": "Track",
@@ -442,6 +455,19 @@
     "last_updated": "2026-01-12T03:15:24.000Z"
   },
   {
+    "id": "719c24f7",
+    "name": "Newport Omnium Race Night #3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340316/newport-omnium-race-night-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "eb91802e",
     "name": "British Cycling Lee Valley | Youth Track Cluster Session # 5",
     "type": "Track",
@@ -453,6 +479,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338745/british-cycling-lee-valley--youth-track-cluster-session--5",
     "source": "Google Sheet",
     "last_updated": "2026-07-16T01:15:25.000Z"
+  },
+  {
+    "id": "4f0fec04",
+    "name": "Geraint Thomas Velodrome - Sprint Night #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340694/geraint-thomas-velodrome---sprint-night-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "d45752f6",
@@ -494,6 +533,32 @@
     "last_updated": "2026-01-13T03:15:25.000Z"
   },
   {
+    "id": "2ee2843c",
+    "name": "Newport Omnium Race Night #4",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340317/newport-omnium-race-night-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "3d0d3137",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341024/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "ab7c99ad",
     "name": "Monsters of Track - Round 1",
     "type": "Track",
@@ -518,6 +583,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/330874/monday-night-track-league-2026-round-22",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "54752d10",
+    "name": "Newport Omnium Race Night #5",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340318/newport-omnium-race-night-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "ea8fa3d8",
+    "name": "Beicio Cymru Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341025/beicio-cymru-pathway-development-centre---track-endurance---newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "358fec65",
+    "name": "Geraint Thomas Velodrome - Sprint Night #3",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340695/geraint-thomas-velodrome---sprint-night-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "b0d41992",
@@ -559,6 +663,32 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "d66106da",
+    "name": "Newport Omnium Race Night #6",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340319/newport-omnium-race-night-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "0c1866d2",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341026/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "0039a3b5",
     "name": "British Cycling Lee Valley | Youth Track Cluster Session # 6",
     "type": "Track",
@@ -598,6 +728,45 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "ac2effe8",
+    "name": "Newport Omnium Race Night #7",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340320/newport-omnium-race-night-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "fe768cc0",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341029/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "cbe7f8b7",
+    "name": "Geraint Thomas Velodrome - Sprint Night #4",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340696/geraint-thomas-velodrome---sprint-night-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "4a18f7fa",
     "name": "British Cycling Pathway Development Centre Track - Lee Valley #4",
     "type": "Track",
@@ -624,6 +793,32 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "ffda8b99",
+    "name": "Newport Omnium Race Night #8",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340321/newport-omnium-race-night-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "9b1957fb",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341030/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "b1b08d3f",
     "name": "British Cycling Pathway Development Centre Track - Lee Valley #5",
     "type": "Track",
@@ -648,6 +843,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/330878/monday-night-track-league-2026-round-26",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "d435c42c",
+    "name": "Newport Omnium Race Night #9",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340322/newport-omnium-race-night-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "93925946",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341031/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "4ee1f205",
+    "name": "Geraint Thomas Velodrome - Keirin Night #1",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340697/geraint-thomas-velodrome---keirin-night-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
     "id": "e12652dc",
@@ -700,6 +934,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/330879/monday-night-track-league-2026-round-27",
     "source": "Google Sheet",
     "last_updated": "2026-03-04T20:04:10.000Z"
+  },
+  {
+    "id": "0eca5db8",
+    "name": "Newport Omnium Race Night #10",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340323/newport-omnium-race-night-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "9e18e35d",
+    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-12-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341032/beicio-cymru---pathway-development-centre---track-endurance----newport",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
   },
   {
     "id": "2bdc0c26",

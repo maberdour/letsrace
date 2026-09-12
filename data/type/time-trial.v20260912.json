@@ -1,18 +1,5 @@
 [
   {
-    "id": "09e28889",
-    "name": "Bicester Millennium CC Club 10",
-    "type": "Time Trial",
-    "region": "Central",
-    "venue": "10 miles | Weston on the Green Airfield",
-    "postcode": null,
-    "date": "2026-09-08",
-    "start_time": "23:00",
-    "url": "https://www.cyclingtimetrials.org.uk/events/45760-bicester-millennium-cc-club-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-16T08:29:52.000Z"
-  },
-  {
     "id": "a749c46d",
     "name": "Bicester Millennium CC Club 5",
     "type": "Time Trial",
