@@ -1,57 +1,5 @@
 [
   {
-    "id": "2c57d517",
-    "name": "B-BUDDIES Race League 2026/2027 R1",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Snibston Colliery Park, Coalville",
-    "postcode": null,
-    "date": "2026-09-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336763/b-buddies-race-league-20262027-r1",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-24T01:15:24.000Z"
-  },
-  {
-    "id": "9e61cec7",
-    "name": "Lloyds National Downhill Series 2026 Round 5 - Fort William",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Fort William, Inverness-shire",
-    "postcode": null,
-    "date": "2026-09-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330468/lloyds-national-downhill-series-2026-round-5---fort-william",
-    "source": "Google Sheet",
-    "last_updated": "2025-12-19T03:15:33.000Z"
-  },
-  {
-    "id": "76a6939a",
-    "name": "MIJ Downhill 2026 Round 4",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Worcester Lodge, Coleford",
-    "postcode": null,
-    "date": "2026-09-13",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/331597/mij-downhill-2026-round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "7b7c8483",
-    "name": "B-BUDDIES Off-Road TT 12",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-09-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332883/b-buddies-off-road-tt-12",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
     "id": "f0c25ab5",
     "name": "Lloyds National 4X Series Round 9",
     "type": "MTB",
@@ -416,32 +364,6 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
-    "id": "d16a7da6",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-10-24",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340153/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "59e702f5",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-10-24",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340154/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
     "id": "4f23e255",
     "name": "British Cycling Pathway Development Centre MTB - South #2",
     "type": "MTB",
@@ -466,6 +388,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/332870/b-buddies-off-road-halloween-special-time-trial",
     "source": "Google Sheet",
     "last_updated": "2026-02-27T03:15:25.000Z"
+  },
+  {
+    "id": "3db433d8",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-10-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340153/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "14970bf6",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2026-10-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340154/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "1c7c72a7",
@@ -663,6 +611,32 @@
     "last_updated": "2026-08-28T01:15:24.000Z"
   },
   {
+    "id": "8ac3ab8f",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2027-01-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340159/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "1893c0cc",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2027-01-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340160/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
     "id": "0e9e2ffb",
     "name": "B-BUDDIES Race League 2026/2027 R6",
     "type": "MTB",
@@ -674,6 +648,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/340412/b-buddies-race-league-20262027-r6",
     "source": "Google Sheet",
     "last_updated": "2026-08-28T01:15:24.000Z"
+  },
+  {
+    "id": "f4378d3f",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2027-02-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340161/beicio-cymru-pathway-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "a3f4548c",
+    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
+    "type": "MTB",
+    "region": "Wales",
+    "venue": "Nant Bwlch yr Haearn, Trefriw",
+    "postcode": null,
+    "date": "2027-02-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340162/beicio-cymru-under-12s-development-centres---xco-mtb",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-12T01:15:25.000Z"
   },
   {
     "id": "763e0f10",
