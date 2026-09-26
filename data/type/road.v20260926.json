@@ -1,57 +1,5 @@
 [
   {
-    "id": "84a0d2e0",
-    "name": "Newbold Dash 2026",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Newbold Comyn, Warwickshire",
-    "postcode": null,
-    "date": "2026-09-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339807/newbold-dash-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
-    "id": "e3f709ab",
-    "name": "West Thames Saturday RND 1",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2026-09-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339404/west-thames-saturday-rnd-1-",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
-    "id": "faf702be",
-    "name": "OMEGA PORTSMOUTH CIRCUITS",
-    "type": "Road",
-    "region": "South",
-    "venue": "Mountbatten Centre, Hampshire",
-    "postcode": null,
-    "date": "2026-09-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329932/omega-portsmouth-circuits",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-09T03:15:25.000Z"
-  },
-  {
-    "id": "8a2f6938",
-    "name": "West Thames Saturday RND 2",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2026-09-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340202/west-thames-saturday-rnd-2-",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
     "id": "0a36183c",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #1",
     "type": "Road",
@@ -284,5 +232,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/337271/mossley-crt-limitless-",
     "source": "Google Sheet",
     "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
+    "id": "0122e0d7",
+    "name": "SWCX - Womens & Youth Coaching",
+    "type": "Road",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2026-12-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341580/swcx---womens--youth-coaching",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
   }
 ]
