@@ -767,15 +767,15 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
-    "id": "7a61f18a",
-    "name": "Western Cyclo Cross League Round 5 - Bradford on Avon - Season 2026/27",
+    "id": "8d66c7e9",
+    "name": "Western Cyclo Cross League Round 4 - Bradford on Avon - Season 2026/27",
     "type": "Cyclo Cross",
     "region": "South",
     "venue": "Widbrook Wood, Bradford on Avon",
     "postcode": null,
     "date": "2026-11-01",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336928/western-cyclo-cross-league-round-5---bradford-on-avon---season-202627",
+    "url": "https://www.britishcycling.org.uk/events/details/336928/western-cyclo-cross-league-round-4---bradford-on-avon---season-202627",
     "source": "Google Sheet",
     "last_updated": "2026-09-19T01:15:29.000Z"
   },
@@ -947,6 +947,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339902/welsh-cyclo-cross-league-round-5---the-mountain-view-mamba",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "016efee7",
+    "name": "Wessex Cyclocross League Round 8 - Andover Supercross",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Charlton Sports and Leisure Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340523/wessex-cyclocross-league-round-8---andover-supercross",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
     "id": "1344a1f5",

@@ -52,6 +52,19 @@
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
+    "id": "ec73b881",
+    "name": "Yorkshire and North East BMX Talent Development Centre (Coaching)",
+    "type": "BMX",
+    "region": "North East",
+    "venue": "The Hub Club (Barnard Castle BMX), County Durham",
+    "postcode": null,
+    "date": "2026-10-04",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341480/yorkshire-and-north-east-bmx-talent-development-centre-coaching",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
     "id": "00449f97",
     "name": "Racing Under The Roof 2026/27 Round One",
     "type": "BMX",
@@ -102,6 +115,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341350/bmx-east-winter-series-20262027-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-09-22T01:15:34.000Z"
+  },
+  {
+    "id": "11a86a9e",
+    "name": "Deep South 2026-27 Round 1",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Knightwood BMX, Hampshire",
+    "postcode": null,
+    "date": "2026-10-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340796/deep-south-2026-27-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
     "id": "3eb6a705",

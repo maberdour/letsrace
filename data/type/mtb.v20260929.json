@@ -247,6 +247,19 @@
     "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
+    "id": "406d1f8a",
+    "name": "100% Mini Downhill Nov 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336991/100-mini-downhill-nov-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
     "id": "c383582b",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
     "type": "MTB",
@@ -349,6 +362,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/329539/crickley-flyers-go-ride-race-series-round-4-",
     "source": "Google Sheet",
     "last_updated": "2026-01-08T03:15:25.000Z"
+  },
+  {
+    "id": "a6b48cc8",
+    "name": "100% Mini Downhill Dec 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336992/100-mini-downhill-dec-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
     "id": "74fee45a",
