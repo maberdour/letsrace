@@ -1,70 +1,5 @@
 [
   {
-    "id": "c38ebf1b",
-    "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #5",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Velodrome, Derby",
-    "postcode": null,
-    "date": "2026-09-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339848/british-cycling-pathway-development-centre-para-cycling-track---derby-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-13T01:15:26.000Z"
-  },
-  {
-    "id": "c004a262",
-    "name": "Monday Night Track League 2026 Round 16",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-09-28",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330868/monday-night-track-league-2026-round-16",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-07T03:15:54.000Z"
-  },
-  {
-    "id": "7c94830d",
-    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #1 (567103)",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
-    "postcode": null,
-    "date": "2026-09-29",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340769/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-1-567103",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-10T01:15:24.000Z"
-  },
-  {
-    "id": "803a3d74",
-    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-10-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341020/beicio-cymru---pathway-development-centre---track-endurance----newport",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-12T01:15:25.000Z"
-  },
-  {
-    "id": "cebb6d1a",
-    "name": "Derby Arena Youth Track League Event 9",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Velodrome, Derby",
-    "postcode": null,
-    "date": "2026-10-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340893/derby-arena-youth-track-league-event-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-22T01:15:34.000Z"
-  },
-  {
     "id": "91be1fa2",
     "name": "2026/27 Glasgow Track League Round 1",
     "type": "Track",
@@ -364,6 +299,19 @@
     "last_updated": "2026-09-23T01:15:25.000Z"
   },
   {
+    "id": "57bf6aa1",
+    "name": "Geraint Thomas Velodrome - Sprint Night #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-10-24",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340694/geraint-thomas-velodrome---sprint-night-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "f0db7baa",
     "name": "Monday Night Track League 2026 Round 20",
     "type": "Track",
@@ -429,19 +377,6 @@
     "last_updated": "2026-09-23T01:15:25.000Z"
   },
   {
-    "id": "4f0fec04",
-    "name": "Geraint Thomas Velodrome - Sprint Night #2",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-10-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340694/geraint-thomas-velodrome---sprint-night-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-08T11:45:53.000Z"
-  },
-  {
     "id": "d45752f6",
     "name": "British Cycling Pathway Development Centre Track - Lee Valley #3",
     "type": "Track",
@@ -505,6 +440,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341024/beicio-cymru---pathway-development-centre---track-endurance----newport",
     "source": "Google Sheet",
     "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "e363cd44",
+    "name": "London Youth Track League 2026-7: Round 1",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-11-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341012/london-youth-track-league-2026-7-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
     "id": "ab7c99ad",
@@ -611,6 +559,19 @@
     "last_updated": "2026-08-13T01:15:26.000Z"
   },
   {
+    "id": "a57f889e",
+    "name": "British Cycling Talent Pathway Track RSR #1 South & Southwest (Boys & Girls)",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341036/british-cycling-talent-pathway-track-rsr-1-south--southwest-boys--girls",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
+  },
+  {
     "id": "81cb0e5e",
     "name": "British Cycling Pathway Development Centre - Track Derby Arena #4",
     "type": "Track",
@@ -687,6 +648,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340895/derby-arena-youth-track-league-event-11",
     "source": "Google Sheet",
     "last_updated": "2026-09-22T01:15:34.000Z"
+  },
+  {
+    "id": "b58e9a4d",
+    "name": "London Youth Track League 2026-7: Round 2",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-11-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341013/london-youth-track-league-2026-7-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
     "id": "8907dda0",
@@ -830,6 +804,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341030/beicio-cymru---pathway-development-centre---track-endurance----newport",
     "source": "Google Sheet",
     "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "e1c95a36",
+    "name": "London Youth Track League 2026-7: Round 3",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-12-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341014/london-youth-track-league-2026-7-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
     "id": "185852e8",
@@ -1014,6 +1001,19 @@
     "last_updated": "2026-09-12T01:15:25.000Z"
   },
   {
+    "id": "1db89718",
+    "name": "London Youth Track League 2026-7: Round 4",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-12-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341015/london-youth-track-league-2026-7-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
+  },
+  {
     "id": "2bdc0c26",
     "name": "Monday Night Track League 2026 Round 28",
     "type": "Track",
@@ -1038,6 +1038,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341038/british-cycling-talent-pathway-track-rsr-3-south--southwest-boys--girls",
     "source": "Google Sheet",
     "last_updated": "2026-09-18T01:15:25.000Z"
+  },
+  {
+    "id": "3976501d",
+    "name": "London Youth Track League 2026-7: Round 5",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-01-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341016/london-youth-track-league-2026-7-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
     "id": "300aee47",
@@ -1090,6 +1103,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339768/british-cycling-pathway-development-centre-track---lee-valley-6",
     "source": "Google Sheet",
     "last_updated": "2026-08-11T01:15:25.000Z"
+  },
+  {
+    "id": "4244a7a5",
+    "name": "London Youth Track League 2026-7: Round 6",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-01-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341017/london-youth-track-league-2026-7-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
     "id": "357632ec",
@@ -1170,6 +1196,19 @@
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
+    "id": "157d8626",
+    "name": "London Youth Track League 2026-7: Round 7",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-02-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341018/london-youth-track-league-2026-7-round-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
+  },
+  {
     "id": "8ff536ad",
     "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #9",
     "type": "Track",
@@ -1246,6 +1285,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340780/british-cycling-pathway-development-centre---track-derby-arena-9",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "1267a1d0",
+    "name": "London Youth Track League 2026-7: Round 8",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2027-02-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341019/london-youth-track-league-2026-7-round-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
     "id": "b13a3535",

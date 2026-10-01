@@ -1,122 +1,5 @@
 [
   {
-    "id": "16537cee",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Plas y Brenin - Conwy, Conwy",
-    "postcode": null,
-    "date": "2026-09-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337355/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "c15f5eab",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Plas y Brenin - Conwy, Conwy",
-    "postcode": null,
-    "date": "2026-09-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337356/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "22e2c67f",
-    "name": "Gravity Mini Rnd4 Revolution Bikepark",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Revolution Bike Park, Powys",
-    "postcode": null,
-    "date": "2026-09-26",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334738/gravity-mini-rnd4-revolution-bikepark",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-04T01:15:24.000Z"
-  },
-  {
-    "id": "4292e5ad",
-    "name": "Crickley Flyers Go-Ride Race Series Round 3",
-    "type": "MTB",
-    "region": "South",
-    "venue": "417 Bike Park, Gloucester",
-    "postcode": null,
-    "date": "2026-09-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329538/crickley-flyers-go-ride-race-series-round-3-",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "dce65cbc",
-    "name": "Dialled In Downhill - Glenlivet",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Bike Glenlivet, Tomintoul",
-    "postcode": null,
-    "date": "2026-09-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340989/dialled-in-downhill---glenlivet",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-10T01:15:24.000Z"
-  },
-  {
-    "id": "46f48268",
-    "name": "Okeford Champs",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Okeford Hill Bike Park, Dorset",
-    "postcode": null,
-    "date": "2026-09-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336537/okeford-champs",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-21T01:15:29.000Z"
-  },
-  {
-    "id": "67652fd7",
-    "name": "Poldice Downhill Race",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Poldice, Cornwall",
-    "postcode": null,
-    "date": "2026-09-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339953/poldice-downhill-race",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-18T01:15:24.000Z"
-  },
-  {
-    "id": "20eb227d",
-    "name": "Poldice Junior Downhill",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Poldice, Cornwall",
-    "postcode": null,
-    "date": "2026-09-27",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339954/poldice-junior-downhill",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-18T01:15:24.000Z"
-  },
-  {
-    "id": "6d13b048",
-    "name": "B-BUDDIES Off-Road TT 13",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-10-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332884/b-buddies-off-road-tt-13",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
     "id": "87c64647",
     "name": "B-BUDDIES Race League 2026/2027 R2",
     "type": "MTB",
@@ -286,6 +169,19 @@
     "last_updated": "2026-06-24T01:15:24.000Z"
   },
   {
+    "id": "7898cf18",
+    "name": "Woodlandriders racing winter series 2026-2027 Round 1",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341667/woodlandriders-racing-winter-series-2026-2027-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-01T01:15:25.000Z"
+  },
+  {
     "id": "290e6ff8",
     "name": "B-BUDDIES Off Road Halloween Special Time Trial",
     "type": "MTB",
@@ -349,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339706/flying-bikes-2026-dirt-crit-4",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "406d1f8a",
+    "name": "100% Mini Downhill Nov 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336991/100-mini-downhill-nov-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
     "id": "c383582b",
@@ -455,6 +364,32 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "cab2e0c1",
+    "name": "Woodlandriders racing winter series 2026-2027 Round 2",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341668/woodlandriders-racing-winter-series-2026-2027-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-01T01:15:25.000Z"
+  },
+  {
+    "id": "a6b48cc8",
+    "name": "100% Mini Downhill Dec 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336992/100-mini-downhill-dec-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
     "id": "74fee45a",
     "name": "B-BUDDIES Race League 2026/2027 R4",
     "type": "MTB",
@@ -544,6 +479,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340160/beicio-cymru-under-12s-development-centres---xco-mtb",
     "source": "Google Sheet",
     "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "e6db2778",
+    "name": "Woodlandriders racing winter series 2026-2027 Round 3",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2027-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341669/woodlandriders-racing-winter-series-2026-2027-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-01T01:15:25.000Z"
   },
   {
     "id": "0e9e2ffb",
