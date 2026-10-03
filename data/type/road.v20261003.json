@@ -1,5 +1,18 @@
 [
   {
+    "id": "88cc4ee0",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #1",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-10-05",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341662/british-cycling-pathway-development-centre-circuit---palmer-park-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-03T17:08:31.000Z"
+  },
+  {
     "id": "2dd004bc",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #2",
     "type": "Road",
@@ -52,6 +65,19 @@
     "last_updated": "2026-05-21T01:15:29.000Z"
   },
   {
+    "id": "dec88705",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #2",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-10-12",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341663/british-cycling-pathway-development-centre-circuit---palmer-park-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-03T17:08:31.000Z"
+  },
+  {
     "id": "f81f3cde",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #3",
     "type": "Road",
@@ -102,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/336689/hillingdon-slipstreamers-autumn-series-2026-2",
     "source": "Google Sheet",
     "last_updated": "2026-05-21T01:15:29.000Z"
+  },
+  {
+    "id": "462d5b69",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #3",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-10-19",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341664/british-cycling-pathway-development-centre-circuit---palmer-park-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-03T17:08:31.000Z"
   },
   {
     "id": "7c63901c",
@@ -193,6 +232,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341274/british-cycling-pathway-circuit-rsr---midlands-boys-and-girls-1",
     "source": "Google Sheet",
     "last_updated": "2026-09-18T01:15:25.000Z"
+  },
+  {
+    "id": "2a13de85",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #4",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-10-26",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341665/british-cycling-pathway-development-centre-circuit---palmer-park-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-03T17:08:31.000Z"
   },
   {
     "id": "b4bad121",
@@ -312,19 +364,6 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
-    "id": "9147059c",
-    "name": "British Cycling Pathway Development Centre Circuit - Preston Park, Brighton #1",
-    "type": "Road",
-    "region": "London & South East",
-    "venue": "Preston Park Velodrome, The Ride, Brighton",
-    "postcode": null,
-    "date": "2026-11-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341608/british-cycling-pathway-development-centre-circuit---preston-park-brighton-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
     "id": "f71eb7aa",
     "name": "Pre National Trophy Cyclo-X Coaching clinic",
     "type": "Road",
@@ -336,6 +375,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341273/pre-national-trophy-cyclo-x-coaching-clinic",
     "source": "Google Sheet",
     "last_updated": "2026-09-18T01:15:25.000Z"
+  },
+  {
+    "id": "deb864cd",
+    "name": "South East Club Cluster (Circuit) #1 - Preston Park, Brighton",
+    "type": "Road",
+    "region": "London & South East",
+    "venue": "Preston Park Velodrome, The Ride, Brighton",
+    "postcode": null,
+    "date": "2026-11-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341608/south-east-club-cluster-circuit-1---preston-park-brighton",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
     "id": "a80cde11",
@@ -390,15 +442,15 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
-    "id": "c1776fc5",
-    "name": "British Cycling Pathway Development Centre Circuit - Preston Park, Brighton #2",
+    "id": "c2c163fb",
+    "name": "South East Club Cluster (Circuit) #2 - Preston Park, Brighton",
     "type": "Road",
     "region": "London & South East",
     "venue": "Preston Park Velodrome, The Ride, Brighton",
     "postcode": null,
     "date": "2026-11-28",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341609/british-cycling-pathway-development-centre-circuit---preston-park-brighton-2",
+    "url": "https://www.britishcycling.org.uk/events/details/341609/south-east-club-cluster-circuit-2---preston-park-brighton",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
@@ -455,15 +507,15 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
-    "id": "a1cb5c35",
-    "name": "British Cycling Pathway Development Centre Circuit - Preston Park, Brighton #3",
+    "id": "7bb1759b",
+    "name": "South East Club Cluster (Circuit) #3 - Preston Park, Brighton",
     "type": "Road",
     "region": "London & South East",
     "venue": "Preston Park Velodrome, The Ride, Brighton",
     "postcode": null,
     "date": "2026-12-12",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341610/british-cycling-pathway-development-centre-circuit---preston-park-brighton-3",
+    "url": "https://www.britishcycling.org.uk/events/details/341610/south-east-club-cluster-circuit-3---preston-park-brighton",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
@@ -494,41 +546,41 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
-    "id": "a5448572",
-    "name": "British Cycling Pathway Development Centre Circuit - Preston Park, Brighton #4",
+    "id": "cb25d421",
+    "name": "South East Club Cluster (Circuit) #4 - Preston Park, Brighton",
     "type": "Road",
     "region": "London & South East",
     "venue": "Preston Park Velodrome, The Ride, Brighton",
     "postcode": null,
     "date": "2027-01-09",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341611/british-cycling-pathway-development-centre-circuit---preston-park-brighton-4",
+    "url": "https://www.britishcycling.org.uk/events/details/341611/south-east-club-cluster-circuit-4---preston-park-brighton",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
-    "id": "68492e1e",
-    "name": "British Cycling Pathway Development Centre Circuit - Preston Park, Brighton #5",
+    "id": "6ad647c4",
+    "name": "South East Club Cluster (Circuit) #5 - Preston Park, Brighton",
     "type": "Road",
     "region": "London & South East",
     "venue": "Preston Park Velodrome, The Ride, Brighton",
     "postcode": null,
     "date": "2027-01-23",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341612/british-cycling-pathway-development-centre-circuit---preston-park-brighton-5",
+    "url": "https://www.britishcycling.org.uk/events/details/341612/south-east-club-cluster-circuit-5---preston-park-brighton",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
-    "id": "5009ee3f",
-    "name": "British Cycling Pathway Development Centre Circuit - Preston Park, Brighton #6",
+    "id": "90762178",
+    "name": "South East Club Cluster (Circuit) #6 - Preston Park, Brighton",
     "type": "Road",
     "region": "London & South East",
     "venue": "Preston Park Velodrome, The Ride, Brighton",
     "postcode": null,
     "date": "2027-02-06",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341613/british-cycling-pathway-development-centre-circuit---preston-park-brighton-6",
+    "url": "https://www.britishcycling.org.uk/events/details/341613/south-east-club-cluster-circuit-6---preston-park-brighton-",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
@@ -546,15 +598,15 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
-    "id": "a06ae5ea",
-    "name": "British Cycling Pathway Development Centre Circuit - Preston Park, Brighton #7",
+    "id": "19154835",
+    "name": "South East Club Cluster (Circuit) #7 - Preston Park, Brighton",
     "type": "Road",
     "region": "London & South East",
     "venue": "Preston Park Velodrome, The Ride, Brighton",
     "postcode": null,
     "date": "2027-02-20",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341614/british-cycling-pathway-development-centre-circuit---preston-park-brighton-7",
+    "url": "https://www.britishcycling.org.uk/events/details/341614/south-east-club-cluster-circuit-7---preston-park-brighton-",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
   }
