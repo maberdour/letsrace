@@ -1,70 +1,5 @@
 [
   {
-    "id": "6d13b048",
-    "name": "B-BUDDIES Off-Road TT 13",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-10-01",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332884/b-buddies-off-road-tt-13",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "87c64647",
-    "name": "B-BUDDIES Race League 2026/2027 R2",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Asfordby Football Club, Melton Mowbray",
-    "postcode": null,
-    "date": "2026-10-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337067/b-buddies-race-league-20262027-r2",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-02T01:15:25.000Z"
-  },
-  {
-    "id": "1e539595",
-    "name": "Scottish Enduro Series 2026 and the Scottish Enduro Championships 2026 - Round 4 (Fort William)",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Fort William, Inverness-shire",
-    "postcode": null,
-    "date": "2026-10-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334396/scottish-enduro-series-2026-and-the-scottish-enduro-championships-2026---round-4-fort-william",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-30T01:15:25.000Z"
-  },
-  {
-    "id": "813a08df",
-    "name": "Go Ride Racing - MTB North Wales Series - Round 5 - Nant BH (Dyffryn Conwy MTB Club) FINAL",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-10-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340117/go-ride-racing---mtb-north-wales-series---round-5---nant-bh-dyffryn-conwy-mtb-club-final",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "f53d2eaa",
-    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 4, New Line.",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Stile Cop, Staffordshire",
-    "postcode": null,
-    "date": "2026-10-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339612/racers-guild-racing---works-components-super-cup-26-round-4-new-line",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-11T01:15:25.000Z"
-  },
-  {
     "id": "25117cdf",
     "name": "Flying Bikes 2026 Dirt Crit 1",
     "type": "MTB",
@@ -182,6 +117,19 @@
     "last_updated": "2026-06-24T01:15:24.000Z"
   },
   {
+    "id": "7898cf18",
+    "name": "Woodlandriders racing winter series 2026-2027 Round 1",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-10-25",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341667/woodlandriders-racing-winter-series-2026-2027-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-01T01:15:25.000Z"
+  },
+  {
     "id": "290e6ff8",
     "name": "B-BUDDIES Off Road Halloween Special Time Trial",
     "type": "MTB",
@@ -245,6 +193,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339706/flying-bikes-2026-dirt-crit-4",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "406d1f8a",
+    "name": "100% Mini Downhill Nov 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336991/100-mini-downhill-nov-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
     "id": "c383582b",
@@ -351,6 +312,32 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "cab2e0c1",
+    "name": "Woodlandriders racing winter series 2026-2027 Round 2",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341668/woodlandriders-racing-winter-series-2026-2027-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-01T01:15:25.000Z"
+  },
+  {
+    "id": "a6b48cc8",
+    "name": "100% Mini Downhill Dec 2026",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336992/100-mini-downhill-dec-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
     "id": "74fee45a",
     "name": "B-BUDDIES Race League 2026/2027 R4",
     "type": "MTB",
@@ -440,6 +427,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340160/beicio-cymru-under-12s-development-centres---xco-mtb",
     "source": "Google Sheet",
     "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "e6db2778",
+    "name": "Woodlandriders racing winter series 2026-2027 Round 3",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Gawton Downhill, Tavistock",
+    "postcode": null,
+    "date": "2027-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341669/woodlandriders-racing-winter-series-2026-2027-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-01T01:15:25.000Z"
   },
   {
     "id": "0e9e2ffb",
