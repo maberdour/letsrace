@@ -1,70 +1,5 @@
 [
   {
-    "id": "87c64647",
-    "name": "B-BUDDIES Race League 2026/2027 R2",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Asfordby Football Club, Melton Mowbray",
-    "postcode": null,
-    "date": "2026-10-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337067/b-buddies-race-league-20262027-r2",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-02T01:15:25.000Z"
-  },
-  {
-    "id": "1e539595",
-    "name": "Scottish Enduro Series 2026 and the Scottish Enduro Championships 2026 - Round 4 (Fort William)",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Fort William, Inverness-shire",
-    "postcode": null,
-    "date": "2026-10-03",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334396/scottish-enduro-series-2026-and-the-scottish-enduro-championships-2026---round-4-fort-william",
-    "source": "Google Sheet",
-    "last_updated": "2026-04-30T01:15:25.000Z"
-  },
-  {
-    "id": "813a08df",
-    "name": "Go Ride Racing - MTB North Wales Series - Round 5 - Nant BH (Dyffryn Conwy MTB Club) FINAL",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-10-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340117/go-ride-racing---mtb-north-wales-series---round-5---nant-bh-dyffryn-conwy-mtb-club-final",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "f53d2eaa",
-    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 4, New Line.",
-    "type": "MTB",
-    "region": "West Midlands",
-    "venue": "Stile Cop, Staffordshire",
-    "postcode": null,
-    "date": "2026-10-04",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339612/racers-guild-racing---works-components-super-cup-26-round-4-new-line",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-11T01:15:25.000Z"
-  },
-  {
-    "id": "25117cdf",
-    "name": "Flying Bikes 2026 Dirt Crit 1",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Strathpeffer Community Park, Strathpeffer",
-    "postcode": null,
-    "date": "2026-10-09",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339611/flying-bikes-2026-dirt-crit-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-21T01:15:24.000Z"
-  },
-  {
     "id": "961529db",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
     "type": "MTB",
@@ -128,6 +63,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339242/british-cycling-pathway-development-centre-gravity---forest-of-dean-51",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "61e2f2e1",
+    "name": "Delamere Forest MTB Club Youth Session - Oct 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-10-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341361/delamere-forest-mtb-club-youth-session---oct-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-08T01:15:24.000Z"
   },
   {
     "id": "6803a5fd",
@@ -232,6 +180,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339705/flying-bikes-2026-dirt-crit-3",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "8c18e82e",
+    "name": "Racers Guild Racing - Works Components Super Cup '26. Round 5, Little Bringe..",
+    "type": "MTB",
+    "region": "West Midlands",
+    "venue": "Stile Cop, Staffordshire",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341797/racers-guild-racing---works-components-super-cup-26-round-5-little-bringe",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
     "id": "b75ca384",
@@ -455,6 +416,19 @@
     "last_updated": "2026-08-28T01:15:24.000Z"
   },
   {
+    "id": "d37491bd",
+    "name": "Soggy Bottom Series Round 1 2027",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341765/soggy-bottom-series-round-1-2027",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-07T01:15:29.000Z"
+  },
+  {
     "id": "8ac3ab8f",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
     "type": "MTB",
@@ -492,6 +466,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341669/woodlandriders-racing-winter-series-2026-2027-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-10-01T01:15:25.000Z"
+  },
+  {
+    "id": "5fade0de",
+    "name": "Soggy Bottom Series Round 2 2027",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Grammarcombe Woods, Devon",
+    "postcode": null,
+    "date": "2027-02-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341766/soggy-bottom-series-round-2-2027",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
     "id": "0e9e2ffb",
@@ -546,6 +533,19 @@
     "last_updated": "2026-08-28T01:15:24.000Z"
   },
   {
+    "id": "17520398",
+    "name": "Soggy Bottom Series Round 3 2027 The Winter Wakeup",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Newnham Park, Plymouth",
+    "postcode": null,
+    "date": "2027-03-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341767/soggy-bottom-series-round-3-2027-the-winter-wakeup",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-07T01:15:29.000Z"
+  },
+  {
     "id": "7b7b0aab",
     "name": "B-BUDDIES Race League 2026/2027 R8",
     "type": "MTB",
@@ -557,6 +557,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340414/b-buddies-race-league-20262027-r8",
     "source": "Google Sheet",
     "last_updated": "2026-08-28T01:15:24.000Z"
+  },
+  {
+    "id": "77027ae2",
+    "name": "Soggy Bottom Series Round 4 (Incorporating South West Regional Champs)",
+    "type": "MTB",
+    "region": "South West",
+    "venue": "Grammarcombe woods, Devon",
+    "postcode": null,
+    "date": "2027-04-18",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341907/soggy-bottom-series-round-4-incorporating-south-west-regional-champs",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
     "id": "c2df2cde",
