@@ -260,6 +260,19 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
+    "id": "8dce512f",
+    "name": "Go-Ride Autumn Road Omnium",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Hillingdon Cycle Circuit, Hayes",
+    "postcode": null,
+    "date": "2026-11-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341436/go-ride-autumn-road-omnium",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-12T07:30:36.000Z"
+  },
+  {
     "id": "3fcde76d",
     "name": "Mossley CRT Limitless",
     "type": "Road",

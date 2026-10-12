@@ -520,19 +520,6 @@
     "last_updated": "2026-09-12T01:15:25.000Z"
   },
   {
-    "id": "0039a3b5",
-    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 6",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-11-19",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338746/british-cycling-lee-valley--youth-track-cluster-session--6",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-16T01:15:25.000Z"
-  },
-  {
     "id": "3debdaf1",
     "name": "Derby Arena Youth Track League Event 11",
     "type": "Track",
@@ -791,6 +778,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341031/beicio-cymru---pathway-development-centre---track-endurance----newport",
     "source": "Google Sheet",
     "last_updated": "2026-09-12T01:15:25.000Z"
+  },
+  {
+    "id": "57e1a718",
+    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 6",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-12-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338746/british-cycling-lee-valley--youth-track-cluster-session--6",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-16T01:15:25.000Z"
   },
   {
     "id": "ffe3a1aa",

@@ -324,9 +324,22 @@
       "url": "https://www.britishcycling.org.uk/events/details/341943/british-cycling-pathway-development-centre-gravity---forest-of-dean-54",
       "source": "Google Sheet",
       "last_updated": "2026-10-10T01:15:27.000Z"
+    },
+    {
+      "id": "8dce512f",
+      "name": "Go-Ride Autumn Road Omnium",
+      "type": "Road",
+      "region": "Central",
+      "venue": "Hillingdon Cycle Circuit, Hayes",
+      "postcode": null,
+      "date": "2026-11-07",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/341436/go-ride-autumn-road-omnium",
+      "source": "Google Sheet",
+      "last_updated": "2026-10-12T07:30:36.000Z"
     }
   ],
-  "last_build": "2026-10-12T03:09:19.603Z",
-  "total_new_events": 25,
+  "last_build": "2026-10-12T08:30:49.246Z",
+  "total_new_events": 26,
   "cutoff_date": "2026-10-05"
 }
