@@ -1,70 +1,5 @@
 [
   {
-    "id": "2dd004bc",
-    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #2",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Sundorne Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-10-07",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340907/british-cycling-pathway-development-centre-circuit---shrewsbury-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-17T01:15:26.000Z"
-  },
-  {
-    "id": "d448da3f",
-    "name": "British Cycling Pathway Development Centre Circuit - York #2",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "York Sport Cycle Circuit, North Yorkshire",
-    "postcode": null,
-    "date": "2026-10-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341484/british-cycling-pathway-development-centre-circuit---york-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
-    "id": "57c6d5fa",
-    "name": "CCA Carlisle Winter Club Cluster of Coaching (Circuit ) #2",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Carlisle Cycle Circuit, Carlisle",
-    "postcode": null,
-    "date": "2026-10-08",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340803/cca-carlisle-winter-club-cluster-of-coaching-circuit--2",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
-    "id": "65afb675",
-    "name": "Hillingdon Slipstreamers Autumn Series 2026 #1",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2026-10-10",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336688/hillingdon-slipstreamers-autumn-series-2026-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-21T01:15:29.000Z"
-  },
-  {
-    "id": "dec88705",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #2",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-10-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341663/british-cycling-pathway-development-centre-circuit---palmer-park-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-03T17:08:31.000Z"
-  },
-  {
     "id": "f81f3cde",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #3",
     "type": "Road",
@@ -323,6 +258,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340807/cca-carlisle-winter-club-cluster-of-coaching-circuit--6",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "8dce512f",
+    "name": "Go-Ride Autumn Road Omnium",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Hillingdon Cycle Circuit, Hayes",
+    "postcode": null,
+    "date": "2026-11-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341436/go-ride-autumn-road-omnium",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-12T07:30:36.000Z"
   },
   {
     "id": "3fcde76d",
