@@ -25,8 +25,8 @@
   ],
   "counts": {
     "Road": 42,
-    "Track": 98,
-    "BMX": 32,
+    "Track": 97,
+    "BMX": 34,
     "MTB": 46,
     "Cyclo Cross": 84,
     "Speedway": 0,
@@ -35,10 +35,10 @@
     "Central": 15,
     "West Midlands": 9,
     "East Midlands": 46,
-    "Wales": 48,
+    "Wales": 47,
     "Scotland": 29,
     "South": 23,
-    "London & South East": 41,
+    "London & South East": 43,
     "South West": 27,
     "North West": 41,
     "Eastern": 22,
@@ -47,7 +47,7 @@
     "Cyclo Cross|Central": 6,
     "Road|West Midlands": 2,
     "MTB|East Midlands": 10,
-    "Track|Wales": 30,
+    "Track|Wales": 29,
     "BMX|Scotland": 3,
     "MTB|Scotland": 3,
     "Track|Scotland": 14,
@@ -94,7 +94,8 @@
     "BMX|North West": 6,
     "BMX|West Midlands": 1,
     "MTB|West Midlands": 1,
-    "BMX|East Midlands": 1
+    "BMX|East Midlands": 1,
+    "BMX|London & South East": 2
   },
   "counts_national": {
     "Road": 1,
@@ -106,5 +107,5 @@
     "Time Trial": 0,
     "Hill Climb": 1
   },
-  "last_build": "2026-10-13T03:09:22.422Z"
+  "last_build": "2026-10-13T13:00:20.905Z"
 }

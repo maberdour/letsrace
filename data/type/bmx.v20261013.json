@@ -195,6 +195,19 @@
     "last_updated": "2026-10-01T01:15:25.000Z"
   },
   {
+    "id": "6182add0",
+    "name": "The London BMX Winter Series 2026-2027 Round 2",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Peckham bmx Track in Burgess Park, england",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341993/the-london-bmx-winter-series-2026-2027-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-13T12:00:04.000Z"
+  },
+  {
     "id": "55e15a41",
     "name": "Racing Under The Roof 2026/27 Round Two",
     "type": "BMX",
@@ -245,6 +258,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341351/bmx-east-winter-series-20262027-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-09-22T01:15:34.000Z"
+  },
+  {
+    "id": "7f6e46bf",
+    "name": "The London BMX Winter Series 2026-2027 Round 3",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Brixton BMX Track, LONDON",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341994/the-london-bmx-winter-series-2026-2027-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-13T12:00:04.000Z"
   },
   {
     "id": "6ceffaf0",
