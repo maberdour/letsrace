@@ -1,44 +1,5 @@
 [
   {
-    "id": "00449f97",
-    "name": "Racing Under The Roof 2026/27 Round One",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-10-11",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340409/racing-under-the-roof-202627-round-one-",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-19T01:15:29.000Z"
-  },
-  {
-    "id": "61fb2e69",
-    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 26-27 FF #1",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Gosport BMX Club, Hampshire",
-    "postcode": null,
-    "date": "2026-10-16",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341710/british-cycling-pathway-development-centre-bmx---south-zone-1-26-27-ff-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-30T01:15:24.000Z"
-  },
-  {
-    "id": "68957801",
-    "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 4",
-    "type": "BMX",
-    "region": "Scotland",
-    "venue": "Zetland Park, Falkirk",
-    "postcode": null,
-    "date": "2026-10-16",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338389/fjbc-zetland-park-autumn-pump-track-series-2026-round-4-",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-09T01:15:26.000Z"
-  },
-  {
     "id": "1af27a52",
     "name": "Bristol, Burnham & Cardiff Winter Series Rnd1",
     "type": "BMX",
@@ -130,6 +91,19 @@
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
+    "id": "63f88edd",
+    "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 4",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Zetland Park, Falkirk",
+    "postcode": null,
+    "date": "2026-10-23",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338389/fjbc-zetland-park-autumn-pump-track-series-2026-round-4-",
+    "source": "Google Sheet",
+    "last_updated": "2026-07-09T01:15:26.000Z"
+  },
+  {
     "id": "90b3daba",
     "name": "British Cycling Pathway Development Centre BMX - South Zone 1 26-27 DEV CENTRE #1",
     "type": "BMX",
@@ -169,6 +143,32 @@
     "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
+    "id": "1ecb1732",
+    "name": "British Cycling Pathway Development Centre BMX/SX - North #24 Dragon Riders BMX Club Rhyl",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Dragon Riders BMX Club, Denbighshire",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341940/british-cycling-pathway-development-centre-bmxsx---north-24-dragon-riders-bmx-club-rhyl",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-10T01:15:27.000Z"
+  },
+  {
+    "id": "a997a9ee",
+    "name": "British Cycling Pathway Development Centre BMX/SX - West Midlands #8 Birmingham",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Birmingham BMX Club, Birmingham",
+    "postcode": null,
+    "date": "2026-11-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342013/british-cycling-pathway-development-centre-bmxsx---west-midlands-8-birmingham",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
+  },
+  {
     "id": "8c52996e",
     "name": "Braintree BMX RD 2 Winter Series",
     "type": "BMX",
@@ -193,6 +193,45 @@
     "url": "https://www.britishcycling.org.uk/events/details/341318/birmingham-bmx---winter-series-round-1-202627",
     "source": "Google Sheet",
     "last_updated": "2026-10-01T01:15:25.000Z"
+  },
+  {
+    "id": "6182add0",
+    "name": "The London BMX Winter Series 2026-2027 Round 2",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Peckham bmx Track in Burgess Park, england",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341993/the-london-bmx-winter-series-2026-2027-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-13T12:00:04.000Z"
+  },
+  {
+    "id": "55e15a41",
+    "name": "Racing Under The Roof 2026/27 Round Two",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340852/racing-under-the-roof-202627-round-two",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-10T01:15:27.000Z"
+  },
+  {
+    "id": "48957a24",
+    "name": "Aberdeenshire Pump Track Race Series - Transition Extreme - Race 3",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Transition Extreme - Scotland, Scotland",
+    "postcode": null,
+    "date": "2026-11-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341968/aberdeenshire-pump-track-race-series---transition-extreme---race-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-15T01:15:24.000Z"
   },
   {
     "id": "aaf01a38",
@@ -232,6 +271,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341351/bmx-east-winter-series-20262027-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-09-22T01:15:34.000Z"
+  },
+  {
+    "id": "7f6e46bf",
+    "name": "The London BMX Winter Series 2026-2027 Round 3",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Brixton BMX Track, LONDON",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341994/the-london-bmx-winter-series-2026-2027-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-13T12:00:04.000Z"
   },
   {
     "id": "6ceffaf0",
@@ -286,6 +338,19 @@
     "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
+    "id": "d37744f2",
+    "name": "Racing Under The Roof 2026/27 Round Three",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2027-01-10",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340899/racing-under-the-roof-202627-round-three-",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-10T01:15:27.000Z"
+  },
+  {
     "id": "6ef2a08d",
     "name": "BMX East Winter Series 2026/2027 Round 5",
     "type": "BMX",
@@ -325,6 +390,19 @@
     "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
+    "id": "6621db53",
+    "name": "Racing Under The Roof 2026/27 Round Four",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2027-02-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341908/racing-under-the-roof-202627-round-four",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-10T01:15:27.000Z"
+  },
+  {
     "id": "853fb083",
     "name": "Exeter 26/27 Winter Round 4",
     "type": "BMX",
@@ -362,5 +440,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/341341/braintree-bmx-rd-6-winter-series",
     "source": "Google Sheet",
     "last_updated": "2026-10-07T01:15:29.000Z"
+  },
+  {
+    "id": "a98f4dc9",
+    "name": "Racing Under The Roof 2026/27 Round Five",
+    "type": "BMX",
+    "region": "North West",
+    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
+    "postcode": null,
+    "date": "2027-03-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341909/racing-under-the-roof-202627-round-five",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-10T01:15:27.000Z"
   }
 ]
