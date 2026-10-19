@@ -1,83 +1,5 @@
 [
   {
-    "id": "dec88705",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #2",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-10-12",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341663/british-cycling-pathway-development-centre-circuit---palmer-park-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-03T17:08:31.000Z"
-  },
-  {
-    "id": "f81f3cde",
-    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #3",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Sundorne Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-10-14",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340908/british-cycling-pathway-development-centre-circuit---shrewsbury-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-17T01:15:26.000Z"
-  },
-  {
-    "id": "3b0832d9",
-    "name": "British Cycling Pathway Development Centre Circuit - York #3",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "York Sport Cycle Circuit, North Yorkshire",
-    "postcode": null,
-    "date": "2026-10-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341485/british-cycling-pathway-development-centre-circuit---york-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
-    "id": "e368121c",
-    "name": "CCA Carlisle Winter Club Cluster of Coaching (Circuit ) #3",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Carlisle Cycle Circuit, Carlisle",
-    "postcode": null,
-    "date": "2026-10-15",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340804/cca-carlisle-winter-club-cluster-of-coaching-circuit--3",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
-    "id": "11c54798",
-    "name": "Hillingdon Slipstreamers Autumn Series 2026 #2",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2026-10-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336689/hillingdon-slipstreamers-autumn-series-2026-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-21T01:15:29.000Z"
-  },
-  {
-    "id": "462d5b69",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #3",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-10-19",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341664/british-cycling-pathway-development-centre-circuit---palmer-park-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-03T17:08:31.000Z"
-  },
-  {
     "id": "7c63901c",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #4",
     "type": "Road",
@@ -115,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340805/cca-carlisle-winter-club-cluster-of-coaching-circuit--4",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "f4ba2324",
+    "name": "Family Glow Ride",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Ackers Adventure, Golden Hillock Rd, Small Heath, Birmingham",
+    "postcode": null,
+    "date": "2026-10-22",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342095/family-glow-ride",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
   },
   {
     "id": "eae03a3d",
@@ -247,6 +182,19 @@
     "last_updated": "2026-05-21T01:15:29.000Z"
   },
   {
+    "id": "a07f5721",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #5",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-11-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341987/british-cycling-pathway-development-centre-circuit---shrewsbury-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
+  },
+  {
     "id": "27803cb4",
     "name": "British Cycling Pathway Development Centre Circuit - York #6",
     "type": "Road",
@@ -273,6 +221,19 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
+    "id": "8dce512f",
+    "name": "Go-Ride Autumn Road Omnium",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Hillingdon Cycle Circuit, Hayes",
+    "postcode": null,
+    "date": "2026-11-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341436/go-ride-autumn-road-omnium",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-12T07:30:36.000Z"
+  },
+  {
     "id": "3fcde76d",
     "name": "Mossley CRT Limitless",
     "type": "Road",
@@ -284,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337270/mossley-crt-limitless-",
     "source": "Google Sheet",
     "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
+    "id": "ab6889d4",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #6",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-11-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341988/british-cycling-pathway-development-centre-circuit---shrewsbury-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
   },
   {
     "id": "1ef60f84",
@@ -338,6 +312,19 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
+    "id": "91ba9cd5",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #7",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-11-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341989/british-cycling-pathway-development-centre-circuit---shrewsbury-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
+  },
+  {
     "id": "6d02afbf",
     "name": "CCA Carlisle Winter Club Cluster of Coaching (Circuit ) #8",
     "type": "Road",
@@ -364,6 +351,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "cfef5eb7",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #8",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-11-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341990/british-cycling-pathway-development-centre-circuit---shrewsbury-8",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
+  },
+  {
     "id": "d75e8bbd",
     "name": "CCA Carlisle Winter Club Cluster of Coaching (Circuit ) #9",
     "type": "Road",
@@ -388,6 +388,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341609/south-east-club-cluster-circuit-2---preston-park-brighton",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "88be73e7",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #9",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-12-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341991/british-cycling-pathway-development-centre-circuit---shrewsbury-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
   },
   {
     "id": "35fce7e9",
@@ -427,6 +440,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341580/swcx---womens--youth-coaching",
     "source": "Google Sheet",
     "last_updated": "2026-09-26T01:15:25.000Z"
+  },
+  {
+    "id": "55af3fa8",
+    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #10",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "Sundorne Sports Village, Shropshire",
+    "postcode": null,
+    "date": "2026-12-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341992/british-cycling-pathway-development-centre-circuit---shrewsbury-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-16T01:15:25.000Z"
   },
   {
     "id": "93e780bf",

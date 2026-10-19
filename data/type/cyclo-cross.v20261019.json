@@ -1,57 +1,5 @@
 [
   {
-    "id": "345b08e9",
-    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 6",
-    "type": "Cyclo Cross",
-    "region": "Wales",
-    "venue": "Risca Leisure Centre, Newport",
-    "postcode": null,
-    "date": "2026-10-13",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339861/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "20209ffb",
-    "name": "Lloyds Cyclo-cross National Trophy Series 2026/27 Round 1",
-    "type": "Cyclo Cross",
-    "region": "East Midlands",
-    "venue": "Moorways Leisure Centre, Derbyshire",
-    "postcode": null,
-    "date": "2026-10-17",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338909/lloyds-cyclo-cross-national-trophy-series-202627-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
-    "id": "1424d519",
-    "name": "East Kent Cyclo Cross League Round 2 #DukeofYorksCross",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Duke of York's Military School, Dover",
-    "postcode": null,
-    "date": "2026-10-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340011/east-kent-cyclo-cross-league-round-2-dukeofyorkscross",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-21T01:15:24.000Z"
-  },
-  {
-    "id": "ed459ae4",
-    "name": "Muddy Monsters Norwich - Round #4",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Earlham Park, Norfolk",
-    "postcode": null,
-    "date": "2026-10-18",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340654/muddy-monsters-norwich---round-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
     "id": "c089ccce",
     "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 7",
     "type": "Cyclo Cross",
@@ -403,6 +351,19 @@
     "last_updated": "2026-09-06T01:15:25.000Z"
   },
   {
+    "id": "2f53ca43",
+    "name": "Muddy Monsters Herts and Beds at Ashwell",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "CC Ashwell Track,, Herts",
+    "postcode": null,
+    "date": "2026-11-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342073/muddy-monsters-herts-and-beds-at-ashwell",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-19T01:15:25.000Z"
+  },
+  {
     "id": "bad88150",
     "name": "Rapha Muddy Hell",
     "type": "Cyclo Cross",
@@ -689,11 +650,11 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
-    "id": "672f7783",
+    "id": "8d30ca6e",
     "name": "SWCX 2026/27 Round 7",
     "type": "Cyclo Cross",
     "region": "South West",
-    "venue": "Arlington Court National Trust, Devon",
+    "venue": "National Trust, Barnstaple",
     "postcode": null,
     "date": "2026-11-22",
     "start_time": "00:00",
@@ -843,6 +804,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340991/leicester-cyclo-cross-league-round-6-promoted-by-mi-racing---incorporating-east-midlands-championships",
     "source": "Google Sheet",
     "last_updated": "2026-09-17T01:15:26.000Z"
+  },
+  {
+    "id": "0135a52e",
+    "name": "North of England Cyclo-cross Regional Championships",
+    "type": "Cyclo Cross",
+    "region": "North West",
+    "venue": "Witton Park Pavilion, Blackburn",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/339952/north-of-england-cyclo-cross-regional-championships",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-19T01:15:25.000Z"
   },
   {
     "id": "58666eda",
