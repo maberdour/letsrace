@@ -26,6 +26,19 @@
     "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
+    "id": "46aa29d9",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #5 (567103)",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-10-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342218/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-5-567103",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-25T12:46:18.000Z"
+  },
+  {
     "id": "eb91802e",
     "name": "British Cycling Lee Valley | Youth Track Cluster Session # 5",
     "type": "Track",
@@ -520,11 +533,11 @@
     "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
-    "id": "185852e8",
+    "id": "96ac04a6",
     "name": "2026/27 Glasgow Track League Round 8",
     "type": "Track",
     "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "venue": "#LNF",
     "postcode": null,
     "date": "2026-12-04",
     "start_time": "00:00",

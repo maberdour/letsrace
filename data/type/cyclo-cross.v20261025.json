@@ -286,6 +286,19 @@
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
+    "id": "a6c3a096",
+    "name": "East Kent Cyclo Cross League Round 3 #FarthingloeCross",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Farthingloe Barn, Kent",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341793/east-kent-cyclo-cross-league-round-3-farthingloecross",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-25T12:46:18.000Z"
+  },
+  {
     "id": "873c1cf8",
     "name": "HUPcc Scottish Cyclocross Series R4",
     "type": "Cyclo Cross",
@@ -388,6 +401,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340523/wessex-cyclocross-league-round-8---andover-supercross",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "c3a3b1ea",
+    "name": "Western Cyclo Cross League Round 5 - Season 2026/27",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Somerdale Pavilion, Bristol",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/336929/western-cyclo-cross-league-round-5---season-202627",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-25T12:46:18.000Z"
   },
   {
     "id": "1344a1f5",
@@ -741,6 +767,19 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
+    "id": "674e4a4e",
+    "name": "East Kent Cyclo Cross League Round 4 #LyddenHillCross",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Lydden Hill, Canterbury",
+    "postcode": null,
+    "date": "2026-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341794/east-kent-cyclo-cross-league-round-4-lyddenhillcross",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-25T12:46:18.000Z"
+  },
+  {
     "id": "b718509d",
     "name": "SWCX 2026/27 Round 10",
     "type": "Cyclo Cross",
@@ -871,6 +910,19 @@
     "last_updated": "2026-10-10T01:15:27.000Z"
   },
   {
+    "id": "00f6907b",
+    "name": "East Kent Cyclo Cross League Round 5 #BetteshangerCross",
+    "type": "Cyclo Cross",
+    "region": "London & South East",
+    "venue": "Betteshanger Country Park, Kent",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341795/east-kent-cyclo-cross-league-round-5-betteshangercross",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-25T12:46:18.000Z"
+  },
+  {
     "id": "3ef48300",
     "name": "HUPcc Scottish Cyclocross Series R7: Back to Bo'ness",
     "type": "Cyclo Cross",
@@ -895,6 +947,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340381/lannock-cross---eastern-league-202627-rd-11",
     "source": "Google Sheet",
     "last_updated": "2026-09-19T01:15:29.000Z"
+  },
+  {
+    "id": "38158e9f",
+    "name": "Wessex Cyclocross League Round 12 - Crow Cross",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Gaddens Close Farm, Ringwood",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "#lnf",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-25T12:46:18.000Z"
   },
   {
     "id": "eaf12f42",

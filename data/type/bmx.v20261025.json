@@ -13,6 +13,19 @@
     "last_updated": "2026-10-21T01:15:26.000Z"
   },
   {
+    "id": "8c5c3d04",
+    "name": "Exeter 26/27 Winter Round 1",
+    "type": "BMX",
+    "region": "South West",
+    "venue": "Exeter BMX Track, Devon",
+    "postcode": null,
+    "date": "2026-10-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341226/exeter-2627-winter-round-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-18T01:15:25.000Z"
+  },
+  {
     "id": "de32ef21",
     "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 4",
     "type": "BMX",
