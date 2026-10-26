@@ -1,55 +1,42 @@
 [
   {
-    "id": "f3441509",
+    "id": "5702c39c",
+    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 26-27 FF #2",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-10-30",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342252/british-cycling-pathway-development-centre-bmx---south-zone-1-26-27-ff-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-21T01:15:26.000Z"
+  },
+  {
+    "id": "8c5c3d04",
     "name": "Exeter 26/27 Winter Round 1",
     "type": "BMX",
     "region": "South West",
     "venue": "Exeter BMX Track, Devon",
     "postcode": null,
-    "date": "2026-10-23",
-    "start_time": "23:00",
+    "date": "2026-10-30",
+    "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/341226/exeter-2627-winter-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
-    "id": "63f88edd",
+    "id": "de32ef21",
     "name": "FJBC Zetland Park Autumn Pump Track Series 2026 Round 4",
     "type": "BMX",
     "region": "Scotland",
     "venue": "Zetland Park, Falkirk",
     "postcode": null,
-    "date": "2026-10-23",
-    "start_time": "23:00",
+    "date": "2026-10-30",
+    "start_time": "00:00",
     "url": "https://www.britishcycling.org.uk/events/details/338389/fjbc-zetland-park-autumn-pump-track-series-2026-round-4-",
     "source": "Google Sheet",
     "last_updated": "2026-07-09T01:15:26.000Z"
-  },
-  {
-    "id": "90b3daba",
-    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 26-27 DEV CENTRE #1",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Andover BMX Track, Hampshire",
-    "postcode": null,
-    "date": "2026-10-25",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341709/british-cycling-pathway-development-centre-bmx---south-zone-1-26-27-dev-centre-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-30T01:15:24.000Z"
-  },
-  {
-    "id": "dc95b793",
-    "name": "WELSH BMX CHAMPIONSHIPS 2026",
-    "type": "BMX",
-    "region": "Wales",
-    "venue": "Llynfi BMX Racing Club, bRIDGEND",
-    "postcode": null,
-    "date": "2026-10-25",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340114/welsh-bmx-championships-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-21T01:15:24.000Z"
   },
   {
     "id": "e30b9601",
@@ -104,6 +91,19 @@
     "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
+    "id": "5f59e203",
+    "name": "Deep South 2026-27 Round 2",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-11-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342247/deep-south-2026-27-round-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-20T01:15:24.000Z"
+  },
+  {
     "id": "081f4e4d",
     "name": "Birmingham BMX - Winter Series Round 1 2026/27",
     "type": "BMX",
@@ -115,6 +115,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341318/birmingham-bmx---winter-series-round-1-202627",
     "source": "Google Sheet",
     "last_updated": "2026-10-01T01:15:25.000Z"
+  },
+  {
+    "id": "33724764",
+    "name": "Milton Keynes BMX Racing Club Winter Series 26/27 Round 3",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342324/milton-keynes-bmx-racing-club-winter-series-2627-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-23T01:15:26.000Z"
   },
   {
     "id": "6182add0",
@@ -208,6 +221,32 @@
     "last_updated": "2026-10-13T12:00:04.000Z"
   },
   {
+    "id": "e597523c",
+    "name": "Deep South 2026-27 Round 3",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Andover BMX Track, Hampshire",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342248/deep-south-2026-27-round-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-20T01:15:24.000Z"
+  },
+  {
+    "id": "1ecd1fca",
+    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 26-27 FF #3",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-12-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342253/british-cycling-pathway-development-centre-bmx---south-zone-1-26-27-ff-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-21T01:15:26.000Z"
+  },
+  {
     "id": "6ceffaf0",
     "name": "Braintree BMX RD 3 Winter Series",
     "type": "BMX",
@@ -219,6 +258,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341338/braintree-bmx-rd-3-winter-series",
     "source": "Google Sheet",
     "last_updated": "2026-10-07T01:15:29.000Z"
+  },
+  {
+    "id": "38f46bb0",
+    "name": "British Cycling Pathway Development Centre BMX - South Zone 1 26-27 DEV CENTRE #2",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Gosport BMX Club, Hampshire",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342254/british-cycling-pathway-development-centre-bmx---south-zone-1-26-27-dev-centre-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-21T01:15:26.000Z"
   },
   {
     "id": "85ff2679",
@@ -260,6 +312,19 @@
     "last_updated": "2026-10-07T01:15:29.000Z"
   },
   {
+    "id": "fcdfb003",
+    "name": "Milton Keynes BMX Racing Club Winter Series 26/27 Round 4",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2027-01-03",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342325/milton-keynes-bmx-racing-club-winter-series-2627-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-23T01:15:26.000Z"
+  },
+  {
     "id": "d37744f2",
     "name": "Racing Under The Roof 2026/27 Round Three",
     "type": "BMX",
@@ -299,6 +364,19 @@
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
+    "id": "a6968131",
+    "name": "Deep South 2026-27 Round 4",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Bath BMX Track, BATH",
+    "postcode": null,
+    "date": "2027-01-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342249/deep-south-2026-27-round-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-20T01:15:24.000Z"
+  },
+  {
     "id": "84aa34f0",
     "name": "Braintree BMX RD 5 Winter Series",
     "type": "BMX",
@@ -310,6 +388,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341340/braintree-bmx-rd-5-winter-series",
     "source": "Google Sheet",
     "last_updated": "2026-10-07T01:15:29.000Z"
+  },
+  {
+    "id": "a46b2354",
+    "name": "Deep South 2026-27 Round 5",
+    "type": "BMX",
+    "region": "South",
+    "venue": "Bournemouth BMX Track, Hampshire",
+    "postcode": null,
+    "date": "2027-02-07",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342250/deep-south-2026-27-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-20T01:15:24.000Z"
   },
   {
     "id": "6621db53",
@@ -349,6 +440,32 @@
     "url": "https://www.britishcycling.org.uk/events/details/341354/bmx-east-winter-series-20262027-round-6-",
     "source": "Google Sheet",
     "last_updated": "2026-09-22T01:15:34.000Z"
+  },
+  {
+    "id": "2263b255",
+    "name": "Deep South 2026-27 Round 6",
+    "type": "BMX",
+    "region": "London & South East",
+    "venue": "Runnymede BMX Track, Surrey",
+    "postcode": null,
+    "date": "2027-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342251/deep-south-2026-27-round-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-20T01:15:24.000Z"
+  },
+  {
+    "id": "e4c7799a",
+    "name": "Milton Keynes BMX Racing Club Winter Series 26/27 Round 5",
+    "type": "BMX",
+    "region": "Central",
+    "venue": "Milton Keynes BMX Track, Milton Keynes",
+    "postcode": null,
+    "date": "2027-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342326/milton-keynes-bmx-racing-club-winter-series-2627-round-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-23T01:15:26.000Z"
   },
   {
     "id": "63924ddd",
