@@ -11,8 +11,21 @@
  * - URL normalization for CTT links
  * - County to UK region mapping
  * - Parsing of concatenated course information
+ * - Course code → title lookup for event card location display
  * - Timestamp tracking for imported events
  */
+
+/**
+ * Maps CTT course codes to display titles (keys are lowercase for matching).
+ */
+const CTT_COURSE_CODE_TITLES = {
+  'h2.5/10': 'Weston on the Green Airfield',
+  'hillingdon': 'Hillingdon Cycle Circuit',
+  'p917/7.6': 'Goodwood Motor Circuit',
+  't10c': 'Croft Circuit',
+  'pthruxton 10': 'Thruxton Circuits',
+  'rc10/21b': 'Brawdy Airfield'
+};
 
 const CTT_EXCLUDED_URLS_FILENAME = 'URL-Exclusion-List.txt';
 
@@ -167,8 +180,9 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
       // Clean course info to remove spaces before commas
       courseInfo = removeSpacesBeforeCommas(courseInfo.toString().trim());
 
-      // Parse course information to extract region (but keep full course info as location)
+      // Parse course information to extract region before reformatting location for display
       const { region } = parseCourseInfo(courseInfo);
+      courseInfo = formatCourseLocation(courseInfo);
 
       // Normalize the date in Column A to display format
       row[0] = displayDate;
@@ -192,7 +206,7 @@ function appendNewCTTEvents_ByDateAndName_WithDateFix() {
         displayDate,           // Column A: Event Date
         removeSpacesBeforeCommas(name),  // Column B: Event Name (cleaned)
         eventType,             // Column C: Event Type
-        courseInfo,            // Column D: Location (Full course info, already cleaned)
+        courseInfo,            // Column D: Location (distance | course title)
         row[4],                // Column E: URL
         finalRegion,           // Column F: Region
         now,                   // Column G: Date Created (for new events)
@@ -299,6 +313,41 @@ function parseCourseInfo(courseInfo) {
   const region = getRegionFromCounty(county);
   
   return { region };
+}
+
+/**
+ * Formats course info for the sheet Location column (event card venue).
+ * Output: "Distance | Course Title"
+ * - Drops county when present (3+ pipe-separated parts)
+ * - Replaces known course codes with display titles
+ * - Uses an existing course name (4th part) when present and code is unknown
+ * @param {string} courseInfo - Raw/cleaned course information from CSV
+ * @return {string} Formatted location string
+ */
+function formatCourseLocation(courseInfo) {
+  if (!courseInfo) return '';
+
+  let parts = courseInfo
+    .toString()
+    .split('|')
+    .map(part => part.trim())
+    .filter(Boolean);
+
+  // County | Distance | Code [| Name] → drop county so cards show Distance | Title
+  if (parts.length >= 3) {
+    parts = parts.slice(1);
+  }
+
+  if (parts.length === 0) return '';
+  if (parts.length === 1) return parts[0];
+
+  const distance = parts[0];
+  const courseCode = parts[1];
+  const existingName = parts[2] || '';
+  const lookedUpTitle = CTT_COURSE_CODE_TITLES[courseCode.toLowerCase()];
+  const title = lookedUpTitle || existingName || courseCode;
+
+  return `${distance} | ${title}`;
 }
 
 /**

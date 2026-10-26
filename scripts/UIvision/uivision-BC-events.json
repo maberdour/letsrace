@@ -69,6 +69,90 @@
       "Description": "Open the URL from CSV"
     },
     {
+      "Command": "pause",
+      "Target": "4000",
+      "Value": "",
+      "Description": "Give any Cloudflare challenge time to render"
+    },
+    {
+      "Command": "executeScript",
+      "Target": "return /just a moment|security validation|security verification|verify you are human/i.test(document.title + ' ' + (document.body ? document.body.innerText : '')) ? 1 : 0;",
+      "Value": "cfChallenge",
+      "Description": "Detect Cloudflare 'Performing security validation' page"
+    },
+    {
+      "Command": "store",
+      "Target": "0",
+      "Value": "cfAttempt",
+      "Description": ""
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${cfChallenge} == 1 && ${cfAttempt} < 3",
+      "Value": "",
+      "Description": "Try up to 3 times to pass the Cloudflare check"
+    },
+    {
+      "Command": "echo",
+      "Target": "Cloudflare challenge detected for ${regionName} (attempt ${cfAttempt}) - clicking 'Verify you are human'",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "store",
+      "Target": "true",
+      "Value": "!errorignore",
+      "Description": "Don't fail the macro if the checkbox text isn't found (e.g. challenge auto-solved)"
+    },
+    {
+      "Command": "XClick",
+      "Target": "xpath=(//h1|//h2)[1]",
+      "Value": "",
+      "Description": "Focus the page at the heading above the Turnstile widget"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_TAB}",
+      "Value": "",
+      "Description": "Tab onto the 'Verify you are human' checkbox (it is in a closed shadow root + cross-origin iframe, so no locator can target it)"
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_SPACE}",
+      "Value": "",
+      "Description": "Tick the checkbox"
+    },
+    {
+      "Command": "store",
+      "Target": "false",
+      "Value": "!errorignore",
+      "Description": "Restore normal error handling"
+    },
+    {
+      "Command": "pause",
+      "Target": "8000",
+      "Value": "",
+      "Description": "Wait for Cloudflare to verify and redirect"
+    },
+    {
+      "Command": "executeScript",
+      "Target": "return /just a moment|security validation|security verification|verify you are human/i.test(document.title + ' ' + (document.body ? document.body.innerText : '')) ? 1 : 0;",
+      "Value": "cfChallenge",
+      "Description": "Re-check whether the challenge is still showing"
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(${cfAttempt}) + 1;",
+      "Value": "cfAttempt",
+      "Description": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": "",
+      "Description": "End Cloudflare challenge loop"
+    },
+    {
       "Command": "store",
       "Target": "60",
       "Value": "!TIMEOUT_WAIT",

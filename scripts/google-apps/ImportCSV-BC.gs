@@ -186,9 +186,9 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         row[5] = 'London & South East'; // Column F (Region)
       }
 
-      // Map legacy BC label to canonical sheet label
-      if (row[2]) {
-        row[2] = normalizeBCSheetEventType(row[2]);
+      // Map legacy BC label to canonical sheet label (Hill Climb from event name)
+      if (row[2] || row[1]) {
+        row[2] = normalizeBCSheetEventType(row[2], row[1]);
       }
 
       // Build fixed 8-column sheet row (A–H). Do not use row.push() — CSV may have
@@ -211,9 +211,12 @@ function appendNewEvents_ByDateAndName_WithDateFix() {
         const existingRowNumber = existingEventIds.get(eventId);
         const existingRowData = sheetData[existingRowNumber - 1]; // Convert to 0-based index
         
-        // Preserve the existing Event Type field (Column C) from the sheet
+        // Preserve the existing Event Type field (Column C) from the sheet,
+        // except when the name remapped BC Time Trial → Hill Climb
         const existingEventType = existingRowData[2] || ''; // Column C (index 2)
-        sheetRow[2] = existingEventType; // Keep the existing event type, don't overwrite
+        if (sheetRow[2] !== 'Hill Climb') {
+          sheetRow[2] = existingEventType; // Keep the existing event type, don't overwrite
+        }
         
         // Apply London region logic if Event Name or Location contains "London"
         const updateEventName = sheetRow[1] || '';
@@ -445,8 +448,15 @@ function extractBCEventId(url) {
 
 /**
  * Maps legacy BC CSV event types to canonical sheet labels.
+ * BC lists hill climbs under Time Trial; use the event name when present.
+ * @param {string} eventType - Scraped BC type cell
+ * @param {string} [eventName] - Event title from the listing
+ * @return {string} Canonical sheet event type
  */
-function normalizeBCSheetEventType(eventType) {
+function normalizeBCSheetEventType(eventType, eventName) {
+  if (eventName && /\bhill[\s-]?climb\b/i.test(eventName.toString())) {
+    return 'Hill Climb';
+  }
   const normalized = (eventType || '').toString().trim();
   if (normalized === 'Closed Circuit') {
     return 'Circuit Race';

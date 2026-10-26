@@ -206,7 +206,7 @@ Each event is normalized to the following JSON schema:
 | Closed Circuit TT | Time Trial |
 | Hill-Climb, Hill Climb | Hill Climb |
 
-Import scripts remap legacy scraped labels before writing new rows: BC `Closed Circuit` → `Circuit Race`; CTT `Closed Circuit` → `Closed Circuit TT`. The CTT UI.Vision macro reads its label from `URLS-CTT.csv` (repo copy: `scripts/UIvision/datasources/URLS-CTT.csv`; live copy on H: drive must stay in sync).
+Import scripts remap legacy scraped labels before writing new rows: BC `Closed Circuit` → `Circuit Race`; BC event names containing “Hill Climb” → `Hill Climb` (BC lists these under Time Trial); CTT `Closed Circuit` → `Closed Circuit TT`. The CTT UI.Vision macro reads its label from `URLS-CTT.csv` (repo copy: `scripts/UIvision/datasources/URLS-CTT.csv`; live copy on H: drive must stay in sync).
 
 ## Event Types
 
