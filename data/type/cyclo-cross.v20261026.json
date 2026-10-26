@@ -234,15 +234,15 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
-    "id": "785ec957",
-    "name": "Muddy Monsters 2026/27 - Welwyn rounds",
+    "id": "8f358ae4",
+    "name": "Muddy Monsters 2026/27 - Round 2 - Welwyn",
     "type": "Cyclo Cross",
     "region": "Eastern",
     "venue": "Gosling Sports Stadium, Hertfordshire",
     "postcode": null,
     "date": "2026-11-14",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/342189/muddy-monsters-202627---welwyn-rounds",
+    "url": "https://www.britishcycling.org.uk/events/details/342189/muddy-monsters-202627---round-2---welwyn",
     "source": "Google Sheet",
     "last_updated": "2026-10-20T01:15:24.000Z"
   },
@@ -273,15 +273,15 @@
     "last_updated": "2026-09-06T01:15:25.000Z"
   },
   {
-    "id": "dae7d3f2",
-    "name": "CXNE 2026/27 Round 8",
+    "id": "0c541193",
+    "name": "CXNE 2026/27 Round 7",
     "type": "Cyclo Cross",
     "region": "North East",
     "venue": "Kirkley Cycles, Northumberland",
     "postcode": null,
     "date": "2026-11-15",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338533/cxne-202627-round-8",
+    "url": "https://www.britishcycling.org.uk/events/details/338533/cxne-202627-round-7",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
@@ -468,15 +468,15 @@
     "last_updated": "2026-07-30T01:15:25.000Z"
   },
   {
-    "id": "9a878ab8",
-    "name": "CXNE 2026/27 Round 9",
+    "id": "30fea102",
+    "name": "CXNE 2026/27 Round 8",
     "type": "Cyclo Cross",
     "region": "North East",
     "venue": "Gypsies Green, Tyne and Wear",
     "postcode": null,
     "date": "2026-11-22",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338534/cxne-202627-round-9",
+    "url": "https://www.britishcycling.org.uk/events/details/338534/cxne-202627-round-8",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
   },
@@ -609,6 +609,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340800/lloyds-cyclo-cross-national-trophy-series-202627-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-09-06T01:15:25.000Z"
+  },
+  {
+    "id": "7a537d2a",
+    "name": "CXNE 2026/27 Round 9",
+    "type": "Cyclo Cross",
+    "region": "North East",
+    "venue": "Kirkley Cycles, Northumberland",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/338531/cxne-202627-round-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-08-20T01:15:25.000Z"
   },
   {
     "id": "a482731f",
@@ -962,6 +975,19 @@
     "last_updated": "2026-10-25T12:46:18.000Z"
   },
   {
+    "id": "38158e9f",
+    "name": "Wessex Cyclocross League Round 12 - Crow Cross",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Gaddens Close Farm, Ringwood",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340527/wessex-cyclocross-league-round-12---crow-cross",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-26T10:15:21.000Z"
+  },
+  {
     "id": "eaf12f42",
     "name": "Yorkshire Cyclo-cross Championships Round 9",
     "type": "Cyclo Cross",
@@ -1012,5 +1038,18 @@
     "url": "https://www.britishcycling.org.uk/events/details/340382/milton-cross---eastern-league-202627-rd-12",
     "source": "Google Sheet",
     "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "a2014cfe",
+    "name": "Muddy Monsters 2026/27 - Round 6 - Welwyn",
+    "type": "Cyclo Cross",
+    "region": "Eastern",
+    "venue": "Gosling Sports Stadium, Hertfordshire",
+    "postcode": null,
+    "date": "2027-02-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342351/muddy-monsters-202627---round-6---welwyn",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-26T10:15:21.000Z"
   }
 ]

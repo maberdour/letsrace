@@ -91,6 +91,19 @@
     "last_updated": "2026-05-21T01:15:29.000Z"
   },
   {
+    "id": "6a0a5aa0",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #5",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-11-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342041/british-cycling-pathway-development-centre-circuit---palmer-park-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-26T10:15:21.000Z"
+  },
+  {
     "id": "a07f5721",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #5",
     "type": "Road",
@@ -156,6 +169,19 @@
     "last_updated": "2026-06-14T11:00:10.000Z"
   },
   {
+    "id": "97a8bf32",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #6",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-11-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342042/british-cycling-pathway-development-centre-circuit---palmer-park-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-26T10:15:21.000Z"
+  },
+  {
     "id": "ab6889d4",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #6",
     "type": "Road",
@@ -219,6 +245,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341575/south-west-club-cluster-coaching-session---circuit-7",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "7783b137",
+    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #7",
+    "type": "Road",
+    "region": "Central",
+    "venue": "Palmer Park Sports Stadium, Berkshire",
+    "postcode": null,
+    "date": "2026-11-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342043/british-cycling-pathway-development-centre-circuit---palmer-park-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-26T10:15:21.000Z"
   },
   {
     "id": "91ba9cd5",
