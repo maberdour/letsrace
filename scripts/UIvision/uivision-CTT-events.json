@@ -76,15 +76,39 @@
     },
     {
       "Command": "store",
+      "Target": "10",
+      "Value": "!TIMEOUT_WAIT",
+      "Description": "Wait up to 10s for the cookies popup"
+    },
+    {
+      "Command": "store",
+      "Target": "true",
+      "Value": "!errorignore",
+      "Description": "Don't fail the macro if the cookies popup doesn't appear"
+    },
+    {
+      "Command": "click",
+      "Target": "css=button[data-test-id=\"hidePrivacyPanel\"]",
+      "Value": "",
+      "Description": "Dismiss the cookies popup via its 'Confirm Settings' button"
+    },
+    {
+      "Command": "store",
+      "Target": "false",
+      "Value": "!errorignore",
+      "Description": "Restore normal error handling"
+    },
+    {
+      "Command": "store",
       "Target": "60",
       "Value": "!TIMEOUT_WAIT",
       "Description": "Allow up to 60s for initial page load"
     },
     {
       "Command": "waitForElementPresent",
-      "Target": "xpath=//span[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] uppercase leading-tight text-neutral-950 dark:text-neutral-300')]",
+      "Target": "xpath=//span[contains(@class, 'block archivo_e255c303-module__RfbGYW__className text-[13pt] md:text-[14pt] xl:text-[15pt] font-[900] uppercase leading-tight text-neutral-950 dark:text-neutral-300')] | //*[contains(text(), 'No Events Found')]",
       "Value": "",
-      "Description": "Wait until at least one CTT event row is visible"
+      "Description": "Wait until at least one CTT event row is visible, or the 'No Events Found' message (empty list is valid; row loop then runs 0 times)"
     },
     {
       "Command": "store",
