@@ -1,70 +1,5 @@
 [
   {
-    "id": "4f23e255",
-    "name": "British Cycling Pathway Development Centre MTB - South #2",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Pittville Park, Gloucestershire",
-    "postcode": null,
-    "date": "2026-10-24",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/337796/british-cycling-pathway-development-centre-mtb---south-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-06-24T01:15:24.000Z"
-  },
-  {
-    "id": "7898cf18",
-    "name": "Woodlandriders racing winter series 2026-2027 Round 1",
-    "type": "MTB",
-    "region": "South West",
-    "venue": "Gawton Downhill, Tavistock",
-    "postcode": null,
-    "date": "2026-10-25",
-    "start_time": "23:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341667/woodlandriders-racing-winter-series-2026-2027-round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-01T01:15:25.000Z"
-  },
-  {
-    "id": "290e6ff8",
-    "name": "B-BUDDIES Off Road Halloween Special Time Trial",
-    "type": "MTB",
-    "region": "East Midlands",
-    "venue": "Hick's Lodge, Ashby-De-La-Zouch",
-    "postcode": null,
-    "date": "2026-10-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/332870/b-buddies-off-road-halloween-special-time-trial",
-    "source": "Google Sheet",
-    "last_updated": "2026-02-27T03:15:25.000Z"
-  },
-  {
-    "id": "3db433d8",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-10-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340153/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "14970bf6",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-10-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340154/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
     "id": "1c7c72a7",
     "name": "Flying Bikes 2026 Dirt Crit 3",
     "type": "MTB",
@@ -299,6 +234,19 @@
     "last_updated": "2026-01-29T03:15:26.000Z"
   },
   {
+    "id": "179f7b85",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2026-12-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342423/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-29T03:15:24.000Z"
+  },
+  {
     "id": "838db60c",
     "name": "B-BUDDIES Race League 2026/2027 R5",
     "type": "MTB",
@@ -364,6 +312,19 @@
     "last_updated": "2026-09-12T01:15:25.000Z"
   },
   {
+    "id": "66c79058",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2027-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342424/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-29T03:15:24.000Z"
+  },
+  {
     "id": "e6db2778",
     "name": "Woodlandriders racing winter series 2026-2027 Round 3",
     "type": "MTB",
@@ -401,6 +362,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340412/b-buddies-race-league-20262027-r6",
     "source": "Google Sheet",
     "last_updated": "2026-08-28T01:15:24.000Z"
+  },
+  {
+    "id": "743363c5",
+    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2027-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342425/beicio-cymru-pathway-development-centres---xco-mtb---fod",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-29T03:15:24.000Z"
   },
   {
     "id": "f4378d3f",
