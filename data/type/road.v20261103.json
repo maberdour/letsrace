@@ -1,109 +1,5 @@
 [
   {
-    "id": "2a13de85",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #4",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341665/british-cycling-pathway-development-centre-circuit---palmer-park-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-03T17:08:31.000Z"
-  },
-  {
-    "id": "c7de17e8",
-    "name": "British Cycling Pathway Road RSR - Midlands Boys and Girls #1",
-    "type": "Road",
-    "region": "East Midlands",
-    "venue": "Mallory Park Circuit, Leicestershire",
-    "postcode": null,
-    "date": "2026-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341274/british-cycling-pathway-road-rsr---midlands-boys-and-girls-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-18T01:15:25.000Z"
-  },
-  {
-    "id": "b4bad121",
-    "name": "British Cycling Pathway South East/Eastern Circuit RSR #1 (Boys)",
-    "type": "Road",
-    "region": "Eastern",
-    "venue": "Redbridge Cycling Centre, Ilford",
-    "postcode": null,
-    "date": "2026-10-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341275/british-cycling-pathway-south-easteastern-circuit-rsr-1-boys",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-18T01:15:25.000Z"
-  },
-  {
-    "id": "4dadcbba",
-    "name": "British Cycling Pathway Development Centre Circuit - York #5",
-    "type": "Road",
-    "region": "Yorkshire & Humber",
-    "venue": "York Sport Cycle Circuit, North Yorkshire",
-    "postcode": null,
-    "date": "2026-10-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341487/british-cycling-pathway-development-centre-circuit---york-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
-    "id": "bde1c878",
-    "name": "CCA Carlisle Winter Club Cluster of Coaching (Circuit ) #5",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Carlisle Cycle Circuit, Carlisle",
-    "postcode": null,
-    "date": "2026-10-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340806/cca-carlisle-winter-club-cluster-of-coaching-circuit--5",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
-    "id": "0e13a2b7",
-    "name": "British Cycling Talent Pathway Circuit RSR #1 South (Girls)",
-    "type": "Road",
-    "region": "South",
-    "venue": "Moredon Sports Village - Swindon, Swindon",
-    "postcode": null,
-    "date": "2026-10-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341035/british-cycling-talent-pathway-circuit-rsr-1-south-girls",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-17T01:15:26.000Z"
-  },
-  {
-    "id": "88d93510",
-    "name": "Hillingdon Slipstreamers Autumn Series 2026 #4",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Hillingdon Cycle Circuit, Middlesex",
-    "postcode": null,
-    "date": "2026-10-31",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336691/hillingdon-slipstreamers-autumn-series-2026-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-21T01:15:29.000Z"
-  },
-  {
-    "id": "6a0a5aa0",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #5",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-11-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/342041/british-cycling-pathway-development-centre-circuit---palmer-park-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-26T10:15:21.000Z"
-  },
-  {
     "id": "a07f5721",
     "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #5",
     "type": "Road",
@@ -167,6 +63,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/337270/mossley-crt-limitless-",
     "source": "Google Sheet",
     "last_updated": "2026-06-14T11:00:10.000Z"
+  },
+  {
+    "id": "60573054",
+    "name": "British Cycling Pathway North Boys and Girls Circuit RSR #1",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-11-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341268/british-cycling-pathway-north-boys-and-girls-circuit-rsr-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
     "id": "97a8bf32",
@@ -325,6 +234,19 @@
     "last_updated": "2026-09-29T07:08:00.000Z"
   },
   {
+    "id": "94559bf5",
+    "name": "British Cycling Pathway Development Centre Para-cycling Road - Leeds Brownlee Centre #1",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2026-11-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342613/british-cycling-pathway-development-centre-para-cycling-road---leeds-brownlee-centre-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-03T03:15:25.000Z"
+  },
+  {
     "id": "c2c163fb",
     "name": "South East Club Cluster (Circuit) #2 - Preston Park, Brighton",
     "type": "Road",
@@ -466,6 +388,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341611/south-east-club-cluster-circuit-4---preston-park-brighton",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "206cba82",
+    "name": "British Cycling Pathway Development Centre Para-cycling Road - Leeds Brownlee Centre #2",
+    "type": "Road",
+    "region": "Yorkshire & Humber",
+    "venue": "Brownlee Centre Cycle Circuit, West Yorkshire",
+    "postcode": null,
+    "date": "2027-01-16",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342614/british-cycling-pathway-development-centre-para-cycling-road---leeds-brownlee-centre-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-03T03:15:25.000Z"
   },
   {
     "id": "6ad647c4",
