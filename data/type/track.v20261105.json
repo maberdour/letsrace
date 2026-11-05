@@ -1,109 +1,5 @@
 [
   {
-    "id": "eb91802e",
-    "name": "British Cycling Lee Valley | Youth Track Cluster Session # 5",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-10-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/338745/british-cycling-lee-valley--youth-track-cluster-session--5",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-16T01:15:25.000Z"
-  },
-  {
-    "id": "01c56b66",
-    "name": "Derby Arena Youth Track League Event 10",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Velodrome, Derby",
-    "postcode": null,
-    "date": "2026-10-29",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340894/derby-arena-youth-track-league-event-10",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-22T01:15:34.000Z"
-  },
-  {
-    "id": "21e1ab6b",
-    "name": "2026/27 Glasgow Track League Round 5",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2026-10-30",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341261/202627-glasgow-track-league-round-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-23T01:15:25.000Z"
-  },
-  {
-    "id": "d45752f6",
-    "name": "British Cycling Pathway Development Centre Track - Lee Valley #3",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-11-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339764/british-cycling-pathway-development-centre-track---lee-valley-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-11T01:15:25.000Z"
-  },
-  {
-    "id": "d8de9e15",
-    "name": "British Cycling Talent Pathway Track RSR North Boys and Girls #2",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester",
-    "postcode": null,
-    "date": "2026-11-01",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341711/british-cycling-talent-pathway-track-rsr-north-boys-and-girls-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-03T17:08:31.000Z"
-  },
-  {
-    "id": "f0012544",
-    "name": "British Cycling Pathway Development Centre - Track Derby Arena #3",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Arena, Derby",
-    "postcode": null,
-    "date": "2026-11-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340774/british-cycling-pathway-development-centre---track-derby-arena-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
-    "id": "ffafb267",
-    "name": "Monday Night Track League 2026 Round 21",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-11-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330873/monday-night-track-league-2026-round-21",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-13T03:15:25.000Z"
-  },
-  {
-    "id": "2ee2843c",
-    "name": "Newport Omnium Race Night #4",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-11-02",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340317/newport-omnium-race-night-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-08T11:45:53.000Z"
-  },
-  {
     "id": "3d0d3137",
     "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
     "type": "Track",
@@ -572,19 +468,6 @@
     "last_updated": "2026-07-16T01:15:25.000Z"
   },
   {
-    "id": "ffe3a1aa",
-    "name": "2026/27 Glasgow Track League Round 9",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2026-12-11",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341265/202627-glasgow-track-league-round-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-23T01:15:25.000Z"
-  },
-  {
     "id": "4ee1f205",
     "name": "Geraint Thomas Velodrome - Keirin Night #1",
     "type": "Track",
@@ -715,6 +598,19 @@
     "last_updated": "2026-03-04T20:04:10.000Z"
   },
   {
+    "id": "4065c4c8",
+    "name": "Geraint Thomas Velodrome - Sprint Night #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-01-02",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/340694/geraint-thomas-velodrome---sprint-night-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
     "id": "b098870c",
     "name": "British Cycling Talent Pathway Track RSR #3 South & Southwest (Boys & Girls)",
     "type": "Track",
@@ -741,6 +637,19 @@
     "last_updated": "2026-09-26T01:15:25.000Z"
   },
   {
+    "id": "895ac1dc",
+    "name": "2026/27 Glasgow Track League Round 11",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2027-01-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341265/202627-glasgow-track-league-round-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-23T01:15:25.000Z"
+  },
+  {
     "id": "300aee47",
     "name": "Monsters of Track - Round 3",
     "type": "Track",
@@ -765,19 +674,6 @@
     "url": "https://www.britishcycling.org.uk/events/details/340777/british-cycling-pathway-development-centre---track-derby-arena-6",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
-    "id": "a3a825bf",
-    "name": "British Cycling Pathway RSR Track - Midlands Boys and Girls #4",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Arena, Derby",
-    "postcode": null,
-    "date": "2027-01-16",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341271/british-cycling-pathway-rsr-track---midlands-boys-and-girls-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
     "id": "45b8e409",
@@ -884,15 +780,15 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
-    "id": "7ebb7544",
-    "name": "British Cycling Pathway RSR Track - North and Midlands Boys and Girls #5",
+    "id": "d6a154c3",
+    "name": "British Cycling Pathway RSR Track - North and Midlands Boys and Girls #4",
     "type": "Track",
     "region": "East Midlands",
     "venue": "Derby Arena, Derby",
     "postcode": null,
     "date": "2027-01-30",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341272/british-cycling-pathway-rsr-track---north-and-midlands-boys-and-girls-5",
+    "url": "https://www.britishcycling.org.uk/events/details/341272/british-cycling-pathway-rsr-track---north-and-midlands-boys-and-girls-4",
     "source": "Google Sheet",
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
@@ -1092,6 +988,19 @@
     "last_updated": "2026-08-11T01:15:25.000Z"
   },
   {
+    "id": "109ef9bf",
+    "name": "National Youth Omnium 2027 - Round 1 - Glasgow",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2027-02-28",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342429/national-youth-omnium-2027---round-1---glasgow",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-05T03:15:26.000Z"
+  },
+  {
     "id": "79ede36f",
     "name": "British Cycling Pathway Development Centre - Track Derby Arena #10",
     "type": "Track",
@@ -1116,6 +1025,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/342093/icebreaker-2027-youth-endurance-series-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-10-27T03:15:25.000Z"
+  },
+  {
+    "id": "2d8d0338",
+    "name": "British Cycling Pathway RSR Track - Midlands Boys and Girls #5",
+    "type": "Track",
+    "region": "East Midlands",
+    "venue": "Derby Arena, Derby",
+    "postcode": null,
+    "date": "2027-03-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341271/british-cycling-pathway-rsr-track---midlands-boys-and-girls-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
     "id": "4630f7a1",
