@@ -1,44 +1,5 @@
 [
   {
-    "id": "b75ca384",
-    "name": "Flying Bikes 2026 Dirt Crit 4",
-    "type": "MTB",
-    "region": "Scotland",
-    "venue": "Strathpeffer Community Park, Strathpeffer",
-    "postcode": null,
-    "date": "2026-11-06",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339706/flying-bikes-2026-dirt-crit-4",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-21T01:15:24.000Z"
-  },
-  {
-    "id": "406d1f8a",
-    "name": "100% Mini Downhill Nov 2026",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
-    "postcode": null,
-    "date": "2026-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/336991/100-mini-downhill-nov-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
-    "id": "c383582b",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340406/beicio-cymru-pathway-development-centres---xco-mtb---fod",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
     "id": "eba9d2bc",
     "name": "B-BUDDIES Race League 2026/2027 R3",
     "type": "MTB",
@@ -76,6 +37,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339243/british-cycling-pathway-development-centre-gravity---forest-of-dean-52",
     "source": "Google Sheet",
     "last_updated": "2026-07-30T01:15:25.000Z"
+  },
+  {
+    "id": "645389c6",
+    "name": "Delamere Forest MTB Club Youth Session - Nov 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-11-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342322/delamere-forest-mtb-club-youth-session---nov-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-11T03:15:25.000Z"
   },
   {
     "id": "bfcaebaa",
@@ -167,6 +141,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/336992/100-mini-downhill-dec-2026",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "77a2f2c1",
+    "name": "Delamere Forest MTB Club Youth Session - Dec 2026",
+    "type": "MTB",
+    "region": "North West",
+    "venue": "Delamere Forest, Cheshire",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342952/delamere-forest-mtb-club-youth-session---dec-2026",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-11T03:15:25.000Z"
   },
   {
     "id": "74fee45a",
@@ -299,6 +286,19 @@
     "last_updated": "2026-09-12T01:15:25.000Z"
   },
   {
+    "id": "c1e44457",
+    "name": "100% Mini Downhill January 2027",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
+    "postcode": null,
+    "date": "2027-01-31",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342773/100-mini-downhill-january-2027",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-12T03:15:24.000Z"
+  },
+  {
     "id": "66c79058",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
     "type": "MTB",
@@ -364,6 +364,19 @@
     "last_updated": "2026-10-29T03:15:24.000Z"
   },
   {
+    "id": "bd07a1cd",
+    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #54",
+    "type": "MTB",
+    "region": "South",
+    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "postcode": null,
+    "date": "2027-02-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/341943/british-cycling-pathway-development-centre-gravity---forest-of-dean-54",
+    "source": "Google Sheet",
+    "last_updated": "2026-10-10T01:15:27.000Z"
+  },
+  {
     "id": "f4378d3f",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
     "type": "MTB",
@@ -390,17 +403,17 @@
     "last_updated": "2026-09-12T01:15:25.000Z"
   },
   {
-    "id": "59b1ca8a",
-    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #54",
+    "id": "167247d4",
+    "name": "100% Mini Downhill February 2027",
     "type": "MTB",
     "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
+    "venue": "Pedalabikeaway Cycle Centre - Coleford, Coleford",
     "postcode": null,
     "date": "2027-02-28",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341943/british-cycling-pathway-development-centre-gravity---forest-of-dean-54",
+    "url": "https://www.britishcycling.org.uk/events/details/342833/100-mini-downhill-february-2027",
     "source": "Google Sheet",
-    "last_updated": "2026-10-10T01:15:27.000Z"
+    "last_updated": "2026-11-12T03:15:24.000Z"
   },
   {
     "id": "763e0f10",
@@ -455,6 +468,19 @@
     "last_updated": "2026-08-28T01:15:24.000Z"
   },
   {
+    "id": "dbdaa79b",
+    "name": "BFCC RACING Series 2027 - Race 1",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Bedgebury Forest, Kent",
+    "postcode": null,
+    "date": "2027-04-10",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342838/bfcc-racing-series-2027---race-1",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "77027ae2",
     "name": "Soggy Bottom Series Round 4 (Incorporating South West Regional Champs)",
     "type": "MTB",
@@ -481,6 +507,19 @@
     "last_updated": "2026-08-28T01:15:24.000Z"
   },
   {
+    "id": "3afaec57",
+    "name": "BFCC RACING Series 2027 - Race 2",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Bedgebury Forest, Kent",
+    "postcode": null,
+    "date": "2027-05-08",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342839/bfcc-racing-series-2027---race-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "4243d4ca",
     "name": "B-BUDDIES Race League 2026/2027 R10",
     "type": "MTB",
@@ -492,5 +531,31 @@
     "url": "https://www.britishcycling.org.uk/events/details/340416/b-buddies-race-league-20262027-r10",
     "source": "Google Sheet",
     "last_updated": "2026-08-28T01:15:24.000Z"
+  },
+  {
+    "id": "de4424b1",
+    "name": "BFCC RACING Series 2027 - Race 4",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Bedgebury Forest, Kent",
+    "postcode": null,
+    "date": "2027-07-17",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342840/bfcc-racing-series-2027---race-4",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
+    "id": "5b6887f4",
+    "name": "BFCC RACING Series 2027 - Race 5",
+    "type": "MTB",
+    "region": "London & South East",
+    "venue": "Bedgebury Forest, Kent",
+    "postcode": null,
+    "date": "2027-08-21",
+    "start_time": "23:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342841/bfcc-racing-series-2027---race-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
   }
 ]
