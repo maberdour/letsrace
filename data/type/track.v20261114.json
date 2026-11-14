@@ -1,70 +1,5 @@
 [
   {
-    "id": "ab7c99ad",
-    "name": "Monsters of Track - Round 1",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2026-11-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/334775/monsters-of-track---round-1",
-    "source": "Google Sheet",
-    "last_updated": "2026-05-12T01:15:24.000Z"
-  },
-  {
-    "id": "022e380b",
-    "name": "Monday Night Track League 2026 Round 22",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330874/monday-night-track-league-2026-round-22",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "54752d10",
-    "name": "Newport Omnium Race Night #5",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-11-09",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340318/newport-omnium-race-night-5",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-08T11:45:53.000Z"
-  },
-  {
-    "id": "ea8fa3d8",
-    "name": "Beicio Cymru Pathway Development Centre - Track Endurance - Newport",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-11-12",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341025/beicio-cymru-pathway-development-centre---track-endurance---newport",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-12T01:15:25.000Z"
-  },
-  {
-    "id": "0c5dd77d",
-    "name": "2026/27 Glasgow Track League Round 6",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2026-11-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341262/202627-glasgow-track-league-round-6",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-23T01:15:25.000Z"
-  },
-  {
     "id": "42cff23b",
     "name": "British Cycling Pathway RSR Track - Midlands & Sprint Boys and Girls #2",
     "type": "Track",
@@ -156,6 +91,19 @@
     "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
+    "id": "b9b3271a",
+    "name": "Beicio Cymru Pathway Development Centre - Road (Circuit) - Marsh Tracks",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-11-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343089/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "0c1866d2",
     "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
     "type": "Track",
@@ -234,6 +182,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "cbfa5f7d",
+    "name": "British Cycling Pathway Southeast and Eastern Track RSR #2 (Boys and Girls)",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343116/british-cycling-pathway-southeast-and-eastern-track-rsr-2-boys-and-girls",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "b52edb74",
     "name": "Monday Night Track League 2026 Round 24",
     "type": "Track",
@@ -258,6 +219,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340320/newport-omnium-race-night-7",
     "source": "Google Sheet",
     "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "163ccb37",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #9",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-11-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343106/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-9",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
   },
   {
     "id": "fe768cc0",
@@ -338,6 +312,19 @@
     "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
+    "id": "0310af9a",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #10",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-12-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343107/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "9b1957fb",
     "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
     "type": "Track",
@@ -416,6 +403,19 @@
     "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
+    "id": "6b4501f3",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #11",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-12-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343108/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "93925946",
     "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
     "type": "Track",
@@ -481,6 +481,19 @@
     "last_updated": "2026-01-08T03:15:25.000Z"
   },
   {
+    "id": "529a2eee",
+    "name": "British Cycling Pathway Regional School of Racing - Track Sprint #2 North",
+    "type": "Track",
+    "region": "Scotland",
+    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
+    "postcode": null,
+    "date": "2026-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343105/british-cycling-pathway-regional-school-of-racing---track-sprint-2-north",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "a9b0cc45",
     "name": "British Cycling Talent Pathway Track RSR #2 South & Southwest (Boys & Girls)",
     "type": "Track",
@@ -531,6 +544,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340323/newport-omnium-race-night-10",
     "source": "Google Sheet",
     "last_updated": "2026-09-08T11:45:53.000Z"
+  },
+  {
+    "id": "1206c767",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #12",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2026-12-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343109/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-12",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
   },
   {
     "id": "9e18e35d",
@@ -598,6 +624,19 @@
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
+    "id": "eabe907b",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #13",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2027-01-05",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343111/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-13",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "3976501d",
     "name": "London Youth Track League 2026-7: Round 5",
     "type": "Track",
@@ -650,6 +689,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "20b69f8b",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #14",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2027-01-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343112/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-14",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "45b8e409",
     "name": "Icebreaker 2027 Youth Endurance Series Round 1",
     "type": "Track",
@@ -687,6 +739,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/342074/icebreaker-2027-youth-sprint-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-10-27T03:15:25.000Z"
+  },
+  {
+    "id": "1e93a06a",
+    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #15",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
+    "postcode": null,
+    "date": "2027-01-19",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343113/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-15",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
   },
   {
     "id": "4244a7a5",

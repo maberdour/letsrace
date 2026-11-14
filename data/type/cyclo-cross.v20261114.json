@@ -1,70 +1,5 @@
 [
   {
-    "id": "b00a7b8f",
-    "name": "Lloyds Cyclo-cross National Trophy Series 2026/27 Round 2",
-    "type": "Cyclo Cross",
-    "region": "Wales",
-    "venue": "Pontypool Park, Torfaen",
-    "postcode": null,
-    "date": "2026-11-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340798/lloyds-cyclo-cross-national-trophy-series-202627-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-06T01:15:25.000Z"
-  },
-  {
-    "id": "2f53ca43",
-    "name": "Muddy Monsters Herts and Beds at Ashwell",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "CC Ashwell Track,, Herts",
-    "postcode": null,
-    "date": "2026-11-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/342073/muddy-monsters-herts-and-beds-at-ashwell",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-19T01:15:25.000Z"
-  },
-  {
-    "id": "bad88150",
-    "name": "Rapha Muddy Hell",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Herne Hill Velodrome, London",
-    "postcode": null,
-    "date": "2026-11-07",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340737/rapha-muddy-hell",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
-    "id": "04259fc5",
-    "name": "Challenge Tires London and South East CX League - Round 08",
-    "type": "Cyclo Cross",
-    "region": "London & South East",
-    "venue": "Redbridge Cycling Centre, Ilford",
-    "postcode": null,
-    "date": "2026-11-08",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339172/challenge-tires-london-and-south-east-cx-league---round-08",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-30T01:15:25.000Z"
-  },
-  {
-    "id": "3cb9dbb5",
-    "name": "Fenland Clarion Go-Ride Cross Races",
-    "type": "Cyclo Cross",
-    "region": "Eastern",
-    "venue": "Embankment Athletics Track, Cambs",
-    "postcode": null,
-    "date": "2026-11-13",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339292/fenland-clarion-go-ride-cross-races",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-31T01:15:24.000Z"
-  },
-  {
     "id": "8f358ae4",
     "name": "Muddy Monsters 2026/27 - Round 2 - Welwyn",
     "type": "Cyclo Cross",
@@ -260,6 +195,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "962aacb8",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 10",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-11-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342258/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-10",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
+  },
+  {
     "id": "8c1ddf98",
     "name": "Grity NDCXL 26 R5 hosted by Derby Mercury RC",
     "type": "Cyclo Cross",
@@ -325,11 +273,11 @@
     "last_updated": "2026-09-08T11:45:53.000Z"
   },
   {
-    "id": "f0a5a0b4",
+    "id": "af1e1aab",
     "name": "Lincolnshire Cyclo-cross Association 2026/2027 Race #8 (Louth Cycle Centre, South Elkington) 22nd No",
     "type": "Cyclo Cross",
     "region": "East Midlands",
-    "venue": "Hanworth Country Park, Lincoln",
+    "venue": "South Elkington, Louth",
     "postcode": null,
     "date": "2026-11-22",
     "start_time": "00:00",
@@ -338,17 +286,30 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
-    "id": "28d990e0",
-    "name": "NWCCA 2026/27 Round 8 - 'Another Fine Mess' @ Ulverston Sports Club",
+    "id": "2322cf78",
+    "name": "NWCCA 2023/27 Round 8 - Aidan Worden Memorial - 'Another Fine Mess' @ Ulverston Sports Club",
     "type": "Cyclo Cross",
     "region": "North West",
     "venue": "Glaxo Sport Club, Ulverston",
     "postcode": null,
     "date": "2026-11-22",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339949/nwcca-202627-round-8---another-fine-mess--ulverston-sports-club",
+    "url": "https://www.britishcycling.org.uk/events/details/339949/nwcca-202327-round-8---aidan-worden-memorial---another-fine-mess--ulverston-sports-club",
     "source": "Google Sheet",
     "last_updated": "2026-10-27T03:15:25.000Z"
+  },
+  {
+    "id": "a6c32312",
+    "name": "Scottish Cycling R.A.C.E. National Cyclocross Session 221126",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Gartmore House, Stirling",
+    "postcode": null,
+    "date": "2026-11-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342510/scottish-cycling-race-national-cyclocross-session-221126",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-11T03:15:25.000Z"
   },
   {
     "id": "a34189dd",
@@ -442,6 +403,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "bcbc9663",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 11",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-11-24",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342259/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-14T03:15:24.000Z"
+  },
+  {
     "id": "568361c5",
     "name": "Lloyds Cyclo-cross National Trophy Series 2026/27 Round 3",
     "type": "Cyclo Cross",
@@ -492,6 +466,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/338426/swcx-202627-round-8",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "966b5002",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 12",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-12-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342260/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-12",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-14T03:15:24.000Z"
   },
   {
     "id": "0f28e8a6",
@@ -598,6 +585,19 @@
     "last_updated": "2026-07-31T01:15:24.000Z"
   },
   {
+    "id": "bd72e24b",
+    "name": "South of England Cyclo Cross Championships/Wessex Round 10/Western Round 9 (038/EN/009/2009",
+    "type": "Cyclo Cross",
+    "region": "South",
+    "venue": "Southampton Sports Centre, Hampshire",
+    "postcode": null,
+    "date": "2026-12-06",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342982/south-of-england-cyclo-cross-championshipswessex-round-10western-round-9-038en0092009-",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-10T03:15:29.000Z"
+  },
+  {
     "id": "8dda54fd",
     "name": "SWCX 2026/27 Round 9 incorporating South West Regional Championships",
     "type": "Cyclo Cross",
@@ -622,6 +622,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339986/welsh-cyclo-cross-league-round-7-inc-welsh-championships---the-chepstow-cha-cha",
     "source": "Google Sheet",
     "last_updated": "2026-08-21T01:15:24.000Z"
+  },
+  {
+    "id": "7da09925",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 13",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-12-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342261/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-13",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-14T03:15:24.000Z"
   },
   {
     "id": "3dcfdfc8",
@@ -674,6 +687,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340380/west-suffolk-cross----eastern-league-202627-rd-10",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "ac3e06e9",
+    "name": "Cwmcarn Paragon Cyclo-Cross Coaching Sessions 2026 14",
+    "type": "Cyclo Cross",
+    "region": "Wales",
+    "venue": "Risca Leisure Centre, Newport",
+    "postcode": null,
+    "date": "2026-12-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342262/cwmcarn-paragon-cyclo-cross-coaching-sessions-2026-14",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-14T03:15:24.000Z"
   },
   {
     "id": "8ed72f42",
@@ -921,6 +947,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340424/yorkshire-cyclo-cross-championships-round-9",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "cddd30d5",
+    "name": "Irvine Cyclocross National Trophy U12 Races",
+    "type": "Cyclo Cross",
+    "region": "Scotland",
+    "venue": "Irvine Beach Park, North Ayrshire",
+    "postcode": null,
+    "date": "2027-01-23",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342998/irvine-cyclocross-national-trophy-u12-races",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-12T03:15:24.000Z"
   },
   {
     "id": "11ca51df",
