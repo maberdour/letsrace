@@ -1,44 +1,5 @@
 [
   {
-    "id": "18a8b5a0",
-    "name": "Knightwood BMX Club 2026 Winter Series (Round 2)",
-    "type": "BMX",
-    "region": "South",
-    "venue": "Knightwood BMX, Hampshire",
-    "postcode": null,
-    "date": "2026-11-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/342909/knightwood-bmx-club-2026-winter-series-round-2",
-    "source": "Google Sheet",
-    "last_updated": "2026-11-10T03:15:29.000Z"
-  },
-  {
-    "id": "df72120b",
-    "name": "NMD Winter Race Series Round 1 - Tiverton",
-    "type": "BMX",
-    "region": "South West",
-    "venue": "Tiverton BMX Club, Devon",
-    "postcode": null,
-    "date": "2026-11-14",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341938/nmd-winter-race-series-round-1---tiverton",
-    "source": "Google Sheet",
-    "last_updated": "2026-11-04T03:15:37.000Z"
-  },
-  {
-    "id": "55e15a41",
-    "name": "Racing Under The Roof 2026/27 Round Two",
-    "type": "BMX",
-    "region": "North West",
-    "venue": "National Cycling Centre - Indoor BMX Track, Manchester",
-    "postcode": null,
-    "date": "2026-11-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340852/racing-under-the-roof-202627-round-two",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-10T01:15:27.000Z"
-  },
-  {
     "id": "48957a24",
     "name": "Aberdeenshire Pump Track Race Series - Transition Extreme - Race 3",
     "type": "BMX",
@@ -63,6 +24,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341227/exeter-2627-winter-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-09-18T01:15:25.000Z"
+  },
+  {
+    "id": "09b32f26",
+    "name": "Bristol, Burnham & Cardiff Winter Series Rnd 2",
+    "type": "BMX",
+    "region": "Wales",
+    "venue": "Cardiff BMX Club, Wales",
+    "postcode": null,
+    "date": "2026-11-21",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343058/bristol-burnham--cardiff-winter-series-rnd-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-11T03:15:25.000Z"
   },
   {
     "id": "0178c950",
@@ -143,6 +117,19 @@
     "last_updated": "2026-10-30T03:15:25.000Z"
   },
   {
+    "id": "bc63632b",
+    "name": "British Cycling Pathway Development Centre BMX/SX - West Midlands #9 Telford",
+    "type": "BMX",
+    "region": "West Midlands",
+    "venue": "Telford Flyers, Telford",
+    "postcode": null,
+    "date": "2026-11-29",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343238/british-cycling-pathway-development-centre-bmxsx---west-midlands-9-telford",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-17T03:15:26.000Z"
+  },
+  {
     "id": "e597523c",
     "name": "Deep South 2026-27 Round 3",
     "type": "BMX",
@@ -167,6 +154,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/342219/peterborough-winter-series-rd1",
     "source": "Google Sheet",
     "last_updated": "2026-10-20T01:15:24.000Z"
+  },
+  {
+    "id": "ec33d24c",
+    "name": "Rock Up And Ride Roslin Pump Track R1",
+    "type": "BMX",
+    "region": "Scotland",
+    "venue": "Roslin Pump Track, Roslin",
+    "postcode": null,
+    "date": "2026-12-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343114/rock-up-and-ride-roslin-pump-track-r1",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-13T03:15:24.000Z"
   },
   {
     "id": "1ecd1fca",
