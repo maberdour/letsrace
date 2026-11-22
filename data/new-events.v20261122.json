@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "id": "bc63632b",
+      "name": "British Cycling Pathway Development Centre BMX/SX - West Midlands #9 Telford",
+      "type": "BMX",
+      "region": "West Midlands",
+      "venue": "Telford Flyers, Telford",
+      "postcode": null,
+      "date": "2026-11-29",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343238/british-cycling-pathway-development-centre-bmxsx---west-midlands-9-telford",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-17T03:15:26.000Z"
+    },
+    {
+      "id": "9dac4a90",
+      "name": "Kenilworth Common Boxing Day Cross 2026",
+      "type": "Cyclo Cross",
+      "region": "West Midlands",
+      "venue": "Kenilworth Common, Kenilworth",
+      "postcode": null,
+      "date": "2026-12-26",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343271/kenilworth-common-boxing-day-cross-2026",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-19T03:15:25.000Z"
+    },
+    {
+      "id": "aae5a3e9",
+      "name": "RFSA S1 | RAF Shawbury",
+      "type": "Road",
+      "region": "West Midlands",
+      "venue": "RAF Shawbury - Hanger 59, Shrewsbury",
+      "postcode": null,
+      "date": "2026-12-12",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343340/rfsa-s1--raf-shawbury",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-21T03:15:28.000Z"
+    }
+  ],
+  "last_build": "2026-11-22T04:09:14.083Z",
+  "total_new_events": 3,
+  "cutoff_date": "2026-11-15"
+}
