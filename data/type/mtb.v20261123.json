@@ -1,57 +1,5 @@
 [
   {
-    "id": "63771b42",
-    "name": "British Cycling Pathway Development Centre Gravity - Forest of Dean #52",
-    "type": "MTB",
-    "region": "South",
-    "venue": "Forest of Dean Cycle Centre, Cannop, Coleford",
-    "postcode": null,
-    "date": "2026-11-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/339243/british-cycling-pathway-development-centre-gravity---forest-of-dean-52",
-    "source": "Google Sheet",
-    "last_updated": "2026-07-30T01:15:25.000Z"
-  },
-  {
-    "id": "645389c6",
-    "name": "Delamere Forest MTB Club Youth Session - Nov 2026",
-    "type": "MTB",
-    "region": "North West",
-    "venue": "Delamere Forest, Cheshire",
-    "postcode": null,
-    "date": "2026-11-15",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/342322/delamere-forest-mtb-club-youth-session---nov-2026",
-    "source": "Google Sheet",
-    "last_updated": "2026-11-11T03:15:25.000Z"
-  },
-  {
-    "id": "bfcaebaa",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340155/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "a881e379",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340156/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
     "id": "d1571709",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
     "type": "MTB",
