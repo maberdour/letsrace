@@ -1,0 +1,85 @@
+{
+  "events": [
+    {
+      "id": "9dac4a90",
+      "name": "Kenilworth Common Boxing Day Cross 2026",
+      "type": "Cyclo Cross",
+      "region": "West Midlands",
+      "venue": "Kenilworth Common, Kenilworth",
+      "postcode": null,
+      "date": "2026-12-26",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343271/kenilworth-common-boxing-day-cross-2026",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-19T03:15:25.000Z"
+    },
+    {
+      "id": "aae5a3e9",
+      "name": "RFSA S1 | RAF Shawbury",
+      "type": "Road",
+      "region": "West Midlands",
+      "venue": "RAF Shawbury - Hanger 59, Shrewsbury",
+      "postcode": null,
+      "date": "2026-12-12",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343340/rfsa-s1--raf-shawbury",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-21T03:15:28.000Z"
+    },
+    {
+      "id": "03d62c39",
+      "name": "British Cycling Pathway Development Centre Circuit - York #9",
+      "type": "Road",
+      "region": "Yorkshire & Humber",
+      "venue": "York Sport Cycle Circuit, North Yorkshire",
+      "postcode": null,
+      "date": "2026-11-26",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343456/british-cycling-pathway-development-centre-circuit---york-9",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-26T03:15:25.000Z"
+    },
+    {
+      "id": "af01439c",
+      "name": "British Cycling Pathway Development Centre BMX XC - East Anglia Group 2 #30",
+      "type": "BMX",
+      "region": "Eastern",
+      "venue": "The New Cangle Community Primary School, Haverhill",
+      "postcode": null,
+      "date": "2026-12-20",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343464/british-cycling-pathway-development-centre-bmx-xc---east-anglia-group-2-30",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-26T03:15:25.000Z"
+    },
+    {
+      "id": "35a6df0e",
+      "name": "British Cycling Talent Pathway Track RSR North Boys and Girls #3",
+      "type": "Track",
+      "region": "North West",
+      "venue": "National Cycling Centre, Manchester",
+      "postcode": null,
+      "date": "2027-01-17",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343455/british-cycling-talent-pathway-track-rsr-north-boys-and-girls-3",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-26T03:15:25.000Z"
+    },
+    {
+      "id": "2c283a74",
+      "name": "British Cycling Talent Pathway Track RSR North Boys and Girls #5",
+      "type": "Track",
+      "region": "North West",
+      "venue": "National Cycling Centre, Manchester",
+      "postcode": null,
+      "date": "2027-02-14",
+      "start_time": "00:00",
+      "url": "https://www.britishcycling.org.uk/events/details/343457/british-cycling-talent-pathway-track-rsr-north-boys-and-girls-5",
+      "source": "Google Sheet",
+      "last_updated": "2026-11-26T03:15:25.000Z"
+    }
+  ],
+  "last_build": "2026-11-26T04:09:20.330Z",
+  "total_new_events": 6,
+  "cutoff_date": "2026-11-19"
+}

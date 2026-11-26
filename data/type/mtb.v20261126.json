@@ -1,31 +1,5 @@
 [
   {
-    "id": "bfcaebaa",
-    "name": "Beicio Cymru Pathway Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340155/beicio-cymru-pathway-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
-    "id": "a881e379",
-    "name": "Beicio Cymru Under 12s Development Centres - XCO MTB",
-    "type": "MTB",
-    "region": "Wales",
-    "venue": "Nant Bwlch yr Haearn, Trefriw",
-    "postcode": null,
-    "date": "2026-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340156/beicio-cymru-under-12s-development-centres---xco-mtb",
-    "source": "Google Sheet",
-    "last_updated": "2026-08-20T01:15:25.000Z"
-  },
-  {
     "id": "d1571709",
     "name": "Beicio Cymru Pathway Development Centres - XCO MTB - FoD",
     "type": "MTB",
