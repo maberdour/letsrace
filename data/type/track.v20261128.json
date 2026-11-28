@@ -1,122 +1,5 @@
 [
   {
-    "id": "8907dda0",
-    "name": "2026/27 Glasgow Track League Round 7",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2026-11-20",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341263/202627-glasgow-track-league-round-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-23T01:15:25.000Z"
-  },
-  {
-    "id": "e3dd417f",
-    "name": "British Cycling Pathway RSR Track - Midlands Boys and Girls #3",
-    "type": "Track",
-    "region": "East Midlands",
-    "venue": "Derby Arena, Derby",
-    "postcode": null,
-    "date": "2026-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341270/british-cycling-pathway-rsr-track---midlands-boys-and-girls-3",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-18T01:15:25.000Z"
-  },
-  {
-    "id": "4e08d13e",
-    "name": "British Cycling North of England Go-Ride Track Cluster",
-    "type": "Track",
-    "region": "North West",
-    "venue": "Manchester Velodrome, Lancashire",
-    "postcode": null,
-    "date": "2026-11-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/329513/british-cycling-north-of-england-go-ride-track-cluster",
-    "source": "Google Sheet",
-    "last_updated": "2026-01-08T03:15:25.000Z"
-  },
-  {
-    "id": "cbfa5f7d",
-    "name": "British Cycling Pathway Southeast and Eastern Track RSR #2 (Boys and Girls)",
-    "type": "Track",
-    "region": "London & South East",
-    "venue": "Lee Valley Velodrome, London",
-    "postcode": null,
-    "date": "2026-11-22",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/343116/british-cycling-pathway-southeast-and-eastern-track-rsr-2-boys-and-girls",
-    "source": "Google Sheet",
-    "last_updated": "2026-11-13T03:15:24.000Z"
-  },
-  {
-    "id": "b52edb74",
-    "name": "Monday Night Track League 2026 Round 24",
-    "type": "Track",
-    "region": "North West",
-    "venue": "National Cycling Centre, Manchester, Manchester",
-    "postcode": null,
-    "date": "2026-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/330876/monday-night-track-league-2026-round-24",
-    "source": "Google Sheet",
-    "last_updated": "2026-03-04T20:04:10.000Z"
-  },
-  {
-    "id": "ac2effe8",
-    "name": "Newport Omnium Race Night #7",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340320/newport-omnium-race-night-7",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-08T11:45:53.000Z"
-  },
-  {
-    "id": "163ccb37",
-    "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #9",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Marsh Tracks Cycle Circuit - Rhyl, Wales",
-    "postcode": null,
-    "date": "2026-11-24",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/343106/beicio-cymru-pathway-development-centre---road-circuit---marsh-tracks-9",
-    "source": "Google Sheet",
-    "last_updated": "2026-11-13T03:15:24.000Z"
-  },
-  {
-    "id": "fe768cc0",
-    "name": "Beicio Cymru - Pathway Development Centre - Track Endurance - Newport",
-    "type": "Track",
-    "region": "Wales",
-    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
-    "postcode": null,
-    "date": "2026-11-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341029/beicio-cymru---pathway-development-centre---track-endurance----newport",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-12T01:15:25.000Z"
-  },
-  {
-    "id": "a26872e4",
-    "name": "2026 Scottish National Track Championships and Support races (incl. Para)",
-    "type": "Track",
-    "region": "Scotland",
-    "venue": "Sir Chris Hoy Velodrome - Glasgow, Scotland",
-    "postcode": null,
-    "date": "2026-11-27",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341445/2026-scottish-national-track-championships-and-support-races-incl-para",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-10T01:15:27.000Z"
-  },
-  {
     "id": "cbe7f8b7",
     "name": "Geraint Thomas Velodrome - Sprint Night #4",
     "type": "Track",
@@ -351,6 +234,19 @@
     "last_updated": "2026-11-13T03:15:24.000Z"
   },
   {
+    "id": "cf49143d",
+    "name": "British Cycling Pathway South East / Eastern Track RSR#3 (Girls and Boys)",
+    "type": "Track",
+    "region": "London & South East",
+    "venue": "Lee Valley Velodrome, London",
+    "postcode": null,
+    "date": "2026-12-13",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343514/british-cycling-pathway-south-east--eastern-track-rsr3-girls-and-boys",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-28T03:15:27.000Z"
+  },
+  {
     "id": "a9b0cc45",
     "name": "British Cycling Talent Pathway Track RSR #2 South & Southwest (Boys & Girls)",
     "type": "Track",
@@ -481,6 +377,19 @@
     "last_updated": "2026-09-18T01:15:25.000Z"
   },
   {
+    "id": "938b70bc",
+    "name": "Newport Omnium Race Night #11",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-01-04",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342910/newport-omnium-race-night-11",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
+  },
+  {
     "id": "eabe907b",
     "name": "Beicio Cymru Pathway Development Centre - Road Circuit - Marsh Tracks #13",
     "type": "Track",
@@ -520,6 +429,19 @@
     "last_updated": "2026-09-23T01:15:25.000Z"
   },
   {
+    "id": "cc6d7b08",
+    "name": "Geraint Thomas Velodrome - Sprint Night #5",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-01-09",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342920/geraint-thomas-velodrome---sprint-night-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
+  },
+  {
     "id": "300aee47",
     "name": "Monsters of Track - Round 3",
     "type": "Track",
@@ -544,6 +466,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340777/british-cycling-pathway-development-centre---track-derby-arena-6",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "6194ba09",
+    "name": "Newport Omnium Race Night #12",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-01-11",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342911/newport-omnium-race-night-12",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
   },
   {
     "id": "20b69f8b",
@@ -585,6 +520,19 @@
     "last_updated": "2026-08-11T01:15:25.000Z"
   },
   {
+    "id": "35a6df0e",
+    "name": "British Cycling Talent Pathway Track RSR North Boys and Girls #3",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2027-01-17",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343455/british-cycling-talent-pathway-track-rsr-north-boys-and-girls-3",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-26T03:15:25.000Z"
+  },
+  {
     "id": "cd4747c6",
     "name": "Icebreaker 2027 Youth Sprint Series Round 1",
     "type": "Track",
@@ -596,6 +544,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/342074/icebreaker-2027-youth-sprint-series-round-1",
     "source": "Google Sheet",
     "last_updated": "2026-10-27T03:15:25.000Z"
+  },
+  {
+    "id": "21e09c47",
+    "name": "Newport Omnium Race Night #13",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-01-18",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342912/newport-omnium-race-night-13",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
   },
   {
     "id": "1e93a06a",
@@ -676,6 +637,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "3abe2342",
+    "name": "Newport Omnium Race Night #14",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-01-25",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342913/newport-omnium-race-night-14",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
+  },
+  {
     "id": "d6a154c3",
     "name": "British Cycling Pathway RSR Track - North and Midlands Boys and Girls #4",
     "type": "Track",
@@ -702,17 +676,30 @@
     "last_updated": "2026-08-11T01:15:25.000Z"
   },
   {
-    "id": "4b1ae2ff",
-    "name": "Team Ohten Youth Olympic Omnium",
+    "id": "a9decb2b",
+    "name": "WattShop Ohten Youth Olympic Omnium",
     "type": "Track",
     "region": "East Midlands",
     "venue": "Derby Arena, Derby",
     "postcode": null,
     "date": "2027-01-31",
     "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341531/team-ohten-youth-olympic-omnium",
+    "url": "https://www.britishcycling.org.uk/events/details/341531/wattshop-ohten-youth-olympic-omnium",
     "source": "Google Sheet",
     "last_updated": "2026-10-23T01:15:26.000Z"
+  },
+  {
+    "id": "e63f99e9",
+    "name": "Newport Omnium Race Night #15",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-02-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342914/newport-omnium-race-night-15",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
   },
   {
     "id": "157d8626",
@@ -780,6 +767,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "ee70affd",
+    "name": "Newport Omnium Race Night #16",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-02-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342915/newport-omnium-race-night-16",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
+  },
+  {
     "id": "33021d2d",
     "name": "Icebreaker 2027 Youth Endurance Series Round 2",
     "type": "Track",
@@ -791,6 +791,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/342091/icebreaker-2027-youth-endurance-series-round-2",
     "source": "Google Sheet",
     "last_updated": "2026-10-27T03:15:25.000Z"
+  },
+  {
+    "id": "2c283a74",
+    "name": "British Cycling Talent Pathway Track RSR North Boys and Girls #5",
+    "type": "Track",
+    "region": "North West",
+    "venue": "National Cycling Centre, Manchester",
+    "postcode": null,
+    "date": "2027-02-14",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343457/british-cycling-talent-pathway-track-rsr-north-boys-and-girls-5",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-26T03:15:25.000Z"
   },
   {
     "id": "bf76c103",
@@ -806,6 +819,19 @@
     "last_updated": "2026-10-27T03:15:25.000Z"
   },
   {
+    "id": "746d8f2c",
+    "name": "Newport Omnium Race Night #17",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-02-15",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342916/newport-omnium-race-night-17",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
+  },
+  {
     "id": "dd31b2dd",
     "name": "British Cycling Pathway Development Centre Para-cycling Track - Derby #10",
     "type": "Track",
@@ -817,6 +843,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/339853/british-cycling-pathway-development-centre-para-cycling-track---derby-10",
     "source": "Google Sheet",
     "last_updated": "2026-08-20T01:15:25.000Z"
+  },
+  {
+    "id": "9793e3d6",
+    "name": "Geraint Thomas Velodrome - Keirin Night #2",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-02-20",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342921/geraint-thomas-velodrome---keirin-night-2",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
   },
   {
     "id": "0fe885a3",
@@ -845,6 +884,19 @@
     "last_updated": "2026-09-04T08:44:09.000Z"
   },
   {
+    "id": "4c07c096",
+    "name": "Newport Omnium Race Night #18",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-02-22",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342917/newport-omnium-race-night-18",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
+  },
+  {
     "id": "1267a1d0",
     "name": "London Youth Track League 2026-7: Round 8",
     "type": "Track",
@@ -856,6 +908,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/341019/london-youth-track-league-2026-7-round-8",
     "source": "Google Sheet",
     "last_updated": "2026-09-26T01:15:25.000Z"
+  },
+  {
+    "id": "48d82e07",
+    "name": "Geraint Thomas Velodrome - Sprint Night #6",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-02-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342922/geraint-thomas-velodrome---sprint-night-6",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
   },
   {
     "id": "b13a3535",
@@ -897,6 +962,19 @@
     "last_updated": "2026-11-05T03:15:26.000Z"
   },
   {
+    "id": "ad9162c9",
+    "name": "Newport Omnium Race Night #19",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-03-01",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342918/newport-omnium-race-night-19",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
+  },
+  {
     "id": "79ede36f",
     "name": "British Cycling Pathway Development Centre - Track Derby Arena #10",
     "type": "Track",
@@ -908,6 +986,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340781/british-cycling-pathway-development-centre---track-derby-arena-10",
     "source": "Google Sheet",
     "last_updated": "2026-09-04T08:44:09.000Z"
+  },
+  {
+    "id": "60170317",
+    "name": "Newport Omnium Race Night #20",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-03-08",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342919/newport-omnium-race-night-20",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
   },
   {
     "id": "4ff4535b",
@@ -947,6 +1038,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/342094/icebreaker-2027-youth-sprint-series-round-3",
     "source": "Google Sheet",
     "last_updated": "2026-10-27T03:15:25.000Z"
+  },
+  {
+    "id": "deea29cd",
+    "name": "Geraint Thomas Velodrome - Sprint Night #7",
+    "type": "Track",
+    "region": "Wales",
+    "venue": "Geraint Thomas National Velodrome of Wales, Wales",
+    "postcode": null,
+    "date": "2027-03-27",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/342923/geraint-thomas-velodrome---sprint-night-7",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-27T03:15:27.000Z"
   },
   {
     "id": "47e59625",

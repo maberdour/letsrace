@@ -1,57 +1,5 @@
 [
   {
-    "id": "49767f26",
-    "name": "Hell of Hallyburton - Deeper into Hell",
-    "type": "Road",
-    "region": "Scotland",
-    "venue": "Hallyburton Forrest, Perthshire",
-    "postcode": null,
-    "date": "2026-11-21",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/335677/hell-of-hallyburton---deeper-into-hell",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-04T08:44:09.000Z"
-  },
-  {
-    "id": "b518ba5d",
-    "name": "British Cycling Pathway Development Centre Circuit - Palmer Park #8",
-    "type": "Road",
-    "region": "Central",
-    "venue": "Palmer Park Sports Stadium, Berkshire",
-    "postcode": null,
-    "date": "2026-11-23",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/342768/british-cycling-pathway-development-centre-circuit---palmer-park-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-11-04T03:15:37.000Z"
-  },
-  {
-    "id": "cfef5eb7",
-    "name": "British Cycling Pathway Development Centre Circuit - Shrewsbury #8",
-    "type": "Road",
-    "region": "West Midlands",
-    "venue": "Sundorne Sports Village, Shropshire",
-    "postcode": null,
-    "date": "2026-11-25",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/341990/british-cycling-pathway-development-centre-circuit---shrewsbury-8",
-    "source": "Google Sheet",
-    "last_updated": "2026-10-16T01:15:25.000Z"
-  },
-  {
-    "id": "d75e8bbd",
-    "name": "CCA Carlisle Winter Club Cluster of Coaching (Circuit ) #9",
-    "type": "Road",
-    "region": "North West",
-    "venue": "Carlisle Cycle Circuit, Carlisle",
-    "postcode": null,
-    "date": "2026-11-26",
-    "start_time": "00:00",
-    "url": "https://www.britishcycling.org.uk/events/details/340810/cca-carlisle-winter-club-cluster-of-coaching-circuit--9",
-    "source": "Google Sheet",
-    "last_updated": "2026-09-29T07:08:00.000Z"
-  },
-  {
     "id": "94559bf5",
     "name": "British Cycling Pathway Development Centre Para-cycling Road - Leeds Brownlee Centre #1",
     "type": "Road",
@@ -180,6 +128,19 @@
     "url": "https://www.britishcycling.org.uk/events/details/340812/cca-carlisle-winter-club-cluster-of-coaching-circuit--11",
     "source": "Google Sheet",
     "last_updated": "2026-09-29T07:08:00.000Z"
+  },
+  {
+    "id": "14f49272",
+    "name": "Regional Freestyle Academy - Session1 - RAF Shawbury",
+    "type": "Road",
+    "region": "West Midlands",
+    "venue": "RAF Shawbury - Hanger 59, Shrewsbury",
+    "postcode": null,
+    "date": "2026-12-12",
+    "start_time": "00:00",
+    "url": "https://www.britishcycling.org.uk/events/details/343340/regional-freestyle-academy---session1---raf-shawbury",
+    "source": "Google Sheet",
+    "last_updated": "2026-11-21T03:15:28.000Z"
   },
   {
     "id": "7bb1759b",
